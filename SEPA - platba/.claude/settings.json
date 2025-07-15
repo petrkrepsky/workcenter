@@ -6,34 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "say “mám hotovo”"
-          }
-        ]
-      },
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "say “mám hotovo”"
-          }
-        ]
-      },
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "say “mám hotovo”"
-          }
-        ]
-      },
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "say “mám hotovo”"
+            "command": "say \"mám hotovo\""
           }
         ]
       }
@@ -44,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "say “mám hotovo”"
+            "command": "say \"mám hotovo\""
           }
         ]
       }
