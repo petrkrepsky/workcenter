@@ -1,0 +1,110 @@
+{
+  "domainName": "Bank Guarantee",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44405",
+      "artifactName": "Bank Guarantee"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133403",
+      "artifactName": "Bank Guarantee"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111325",
+      "artifactName": "Bank Guarantee Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30372",
+      "artifactName": "Bank Guarantee"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215137",
+      "artifactName": "Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215158",
+      "artifactName": "Bank Guarantee"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215144",
+      "artifactName": "Bank Guarantee"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215162",
+      "artifactName": "Bank Guarantee"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "47535",
+      "artifactName": "Bank Guarantee"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43877",
+      "artifactName": "Bank Guarantee Payout"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33425",
+      "artifactName": "Bank Guarantee Issuance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30428",
+      "artifactName": "Customer Collateral"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38512",
+      "artifactName": "Customer Payment Task"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48132",
+      "artifactName": "Bank Guarantee Definition"
+    },
+    {
+      "artifactType": "Bank Guarantee SD Overview",
+      "bizzsemantic": "353926",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Bank Guarantee",
+      "bizzsemantic": "47449",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Bank Guarantee",
+      "bizzsemantic": "53756",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Bank Guarantee API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

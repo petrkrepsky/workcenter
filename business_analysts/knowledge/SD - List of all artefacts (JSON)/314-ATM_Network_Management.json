@@ -1,0 +1,50 @@
+{
+  "domainName": "ATM Network Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42253",
+      "artifactName": "ATM Network"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133236",
+      "artifactName": "ATM Network"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111039",
+      "artifactName": "ATM Network Management"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131050",
+      "artifactName": "ATM Network Management"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208635",
+      "artifactName": "ATM Network Management"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208642",
+      "artifactName": "ATM Network Management"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208640",
+      "artifactName": "ATM Network Management"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domainName": "Branch Currency Distribution",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33904",
+      "artifactName": "Branch Currency"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "131820",
+      "artifactName": "Cash Distribution"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111283",
+      "artifactName": "Cash Distribution"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38394",
+      "artifactName": "Cash Distribution"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216003",
+      "artifactName": "Branch Currency"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216012",
+      "artifactName": "Cash Distribution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216019",
+      "artifactName": "Cash Distribution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216007",
+      "artifactName": "Cash Distribution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106559",
+      "artifactName": "Inventory Provisioning"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110274",
+      "artifactName": "Inventory Distribution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109982",
+      "artifactName": "Distribution Planning"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110575",
+      "artifactName": "Distribution Vehicle"
+    },
+    {
+      "artifactType": "Branch Currency Distribution SD Overview",
+      "bizzsemantic": "353701",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Branch Currency",
+      "bizzsemantic": "49558",
+      "artifactName": "Distribution Control"
+    },
+    {
+      "artifactType": "Branch Currency",
+      "bizzsemantic": "53595",
+      "artifactName": "Distribution BOM"
+    },
+    {
+      "artifactType": "Branch Currency",
+      "bizzsemantic": "",
+      "artifactName": "Distribution API"
+    }
+  ]
+}

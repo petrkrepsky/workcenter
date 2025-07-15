@@ -1,0 +1,90 @@
+{
+  "domainName": "Market Research",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34938",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30736",
+      "artifactName": "General Market Research"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111494",
+      "artifactName": "General Market Research"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217816",
+      "artifactName": "Market"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217799",
+      "artifactName": "General Market Research"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217807",
+      "artifactName": "General Market Research"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217783",
+      "artifactName": "General Market Research"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "Market Research SD Overview",
+      "bizzsemantic": "353765",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Market Research",
+      "bizzsemantic": "29221",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Market Research",
+      "bizzsemantic": "30737",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29220",
+      "artifactName": "General Market Research"
+    },
+    {
+      "artifactType": "Market Research API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

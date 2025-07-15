@@ -1,0 +1,90 @@
+{
+  "domainName": "Corporate Payroll Services",
+  "artifacts": [
+    {
+      "artifactType": "Corporate Payroll Services SD Overview",
+      "bizzsemantic": "353905",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32364",
+      "artifactName": "Corporate Payroll"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90550",
+      "artifactName": "Employee Payment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35319",
+      "artifactName": "Employee Payment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216703",
+      "artifactName": "Corporate Payroll"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216705",
+      "artifactName": "Employee Payment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216716",
+      "artifactName": "Employee Payment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216711",
+      "artifactName": "Employee Payment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32859",
+      "artifactName": "Production Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35800",
+      "artifactName": "Corporate Payroll"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39321",
+      "artifactName": "Employee Payroll Details"
+    },
+    {
+      "artifactType": "Corporate Payroll",
+      "bizzsemantic": "35320",
+      "artifactName": "Services Control"
+    },
+    {
+      "artifactType": "Corporate Payroll",
+      "bizzsemantic": "45822",
+      "artifactName": "Services BOM"
+    },
+    {
+      "artifactType": "Corporate Payroll",
+      "bizzsemantic": "",
+      "artifactName": "Services API"
+    }
+  ]
+}

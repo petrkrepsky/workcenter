@@ -1,0 +1,90 @@
+{
+  "domainName": "Regulatory Compliance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46420",
+      "artifactName": "Regulatory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29167",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110976",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42785",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "152798",
+      "artifactName": "Regulatory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "152774",
+      "artifactName": "Regulatory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "152778",
+      "artifactName": "Regulatory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "152790",
+      "artifactName": "Regulatory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "152794",
+      "artifactName": "Regulatory Assessments"
+    },
+    {
+      "artifactType": "Regulatory Compliance SD Overview",
+      "bizzsemantic": "353869",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Regulatory",
+      "bizzsemantic": "42786",
+      "artifactName": "Compliance Control"
+    },
+    {
+      "artifactType": "Regulatory",
+      "bizzsemantic": "29168",
+      "artifactName": "Compliance BOM"
+    },
+    {
+      "artifactType": "Regulatory",
+      "bizzsemantic": "",
+      "artifactName": "Compliance API"
+    }
+  ]
+}

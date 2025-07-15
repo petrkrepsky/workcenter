@@ -1,0 +1,100 @@
+{
+  "domainName": "Customer Position",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41136",
+      "artifactName": "Customer Position"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40684",
+      "artifactName": "Customer Position"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111124",
+      "artifactName": "Customer Position State_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29081",
+      "artifactName": "Customer Position State"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58090",
+      "artifactName": "Monitor"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58175",
+      "artifactName": "State"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58201",
+      "artifactName": "Indicator"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209956",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209977",
+      "artifactName": "Customer Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209982",
+      "artifactName": "Customer Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209984",
+      "artifactName": "Customer Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63795",
+      "artifactName": "Collateral"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108995",
+      "artifactName": "Credit"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108530",
+      "artifactName": "Cashflow"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Customer Position SD Overview",
+      "bizzsemantic": "350297",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Position",
+      "bizzsemantic": "29082",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Customer Position",
+      "bizzsemantic": "40685",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Customer Position",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domainName": "Factoring",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29650",
+      "artifactName": "Factoring"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133153",
+      "artifactName": "Factoring"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111107",
+      "artifactName": "Factoring Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29973",
+      "artifactName": "Factoring Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207970",
+      "artifactName": "Factoring_SD_Operations"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207986",
+      "artifactName": "Factoring"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207973",
+      "artifactName": "Factoring"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207994",
+      "artifactName": "Factoring"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38044",
+      "artifactName": "Account Receivable"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34814",
+      "artifactName": "Account Receivable"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39833",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36601",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "Factoring SD Overview",
+      "bizzsemantic": "353972",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Factoring Control",
+      "bizzsemantic": "29974",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Factoring BOM",
+      "bizzsemantic": "53192",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Factoring API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

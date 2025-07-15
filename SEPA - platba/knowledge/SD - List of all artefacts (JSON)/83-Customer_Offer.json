@@ -1,0 +1,150 @@
+{
+  "domainName": "Customer Offer",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39968",
+      "artifactName": "Customer Offer"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "31897",
+      "artifactName": "Customer Offer"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111197",
+      "artifactName": "Customer Offer"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46578",
+      "artifactName": "Customer Offer Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215100",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215071",
+      "artifactName": "Customer Offer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215115",
+      "artifactName": "Customer Offer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215083",
+      "artifactName": "Customer Offer"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105660",
+      "artifactName": "Product Initialization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107120",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109791",
+      "artifactName": "Correspondence and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41721",
+      "artifactName": "Booking"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63795",
+      "artifactName": "Collateral"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "101126",
+      "artifactName": "Audit"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108385",
+      "artifactName": "Compliance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105845",
+      "artifactName": "Underwriting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108995",
+      "artifactName": "Credit"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104092",
+      "artifactName": "Disclosures"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Customer Offer SD Overview",
+      "bizzsemantic": "353857",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Offer",
+      "bizzsemantic": "46579",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Customer Offer",
+      "bizzsemantic": "31898",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105108",
+      "artifactName": "Facility Application"
+    },
+    {
+      "artifactType": "Customer Offer API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

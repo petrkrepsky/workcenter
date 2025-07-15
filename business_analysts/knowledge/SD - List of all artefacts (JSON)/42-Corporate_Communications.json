@@ -1,0 +1,50 @@
+{
+  "domainName": "Corporate Communications",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38474",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "131303",
+      "artifactName": "Enterprise Communication"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111237",
+      "artifactName": "Enterprise Communication"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130230",
+      "artifactName": "Enterprise Communication"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215312",
+      "artifactName": "Enterprise Communication"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215319",
+      "artifactName": "Enterprise Communication"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215304",
+      "artifactName": "Enterprise Communication"
+    }
+  ]
+}

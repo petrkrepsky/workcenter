@@ -1,0 +1,90 @@
+{
+  "domainName": "Trading Book Oversight",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42958",
+      "artifactName": "Trading Book"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133372",
+      "artifactName": "Trading Position"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111181",
+      "artifactName": "Trading Position"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35009",
+      "artifactName": "Trading Position"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "141466",
+      "artifactName": "Trading Book"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "141449",
+      "artifactName": "Trading Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "141463",
+      "artifactName": "Trading Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "141473",
+      "artifactName": "Trading Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41606",
+      "artifactName": "Trading Book Risk"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45918",
+      "artifactName": "Trading Book Analysis and"
+    },
+    {
+      "artifactType": "Trading Book Oversight SD Overview",
+      "bizzsemantic": "353698",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Trading Book",
+      "bizzsemantic": "46668",
+      "artifactName": "Oversight Control"
+    },
+    {
+      "artifactType": "Trading Book",
+      "bizzsemantic": "53124",
+      "artifactName": "Oversight BOM"
+    },
+    {
+      "artifactType": "Trading Book",
+      "bizzsemantic": "",
+      "artifactName": "Oversight API"
+    }
+  ]
+}

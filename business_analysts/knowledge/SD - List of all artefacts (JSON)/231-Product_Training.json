@@ -1,0 +1,100 @@
+{
+  "domainName": "Product Training",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39991",
+      "artifactName": "Product Training"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130910",
+      "artifactName": "Product Training"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111449",
+      "artifactName": "Product Training"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32765",
+      "artifactName": "Product Training Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214301",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214330",
+      "artifactName": "Product Training"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214314",
+      "artifactName": "Product Training"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214297",
+      "artifactName": "Product Training"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109735",
+      "artifactName": "Service Evaluation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108337",
+      "artifactName": "Service Delivery"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105637",
+      "artifactName": "Service Scheduling"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108291",
+      "artifactName": "Content Development"
+    },
+    {
+      "artifactType": "Product Training SD Overview",
+      "bizzsemantic": "346292",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Training",
+      "bizzsemantic": "49542",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Product Training",
+      "bizzsemantic": "53199",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Product Training API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domainName": "Branch Location Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35932",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132189",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111470",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38538",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143093",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143104",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143085",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143074",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109034",
+      "artifactName": "Customer Liaison"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108258",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108122",
+      "artifactName": "Staff and Location Planning"
+    },
+    {
+      "artifactType": "Branch Location Management SD Overview",
+      "bizzsemantic": "353880",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Branch Location",
+      "bizzsemantic": "49318",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Branch Location",
+      "bizzsemantic": "53302",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "Branch Location",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

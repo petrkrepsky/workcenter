@@ -1,0 +1,105 @@
+{
+  "domainName": "Position Management",
+  "artifacts": [
+    {
+      "artifactType": "Position Management SD Overview",
+      "bizzsemantic": "353843",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37194",
+      "artifactName": "Position"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32645",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111369",
+      "artifactName": "Financlal Position State_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "48420",
+      "artifactName": "Financial Position State"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58090",
+      "artifactName": "Monitor"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58175",
+      "artifactName": "State"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58201",
+      "artifactName": "Indicator"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "172210",
+      "artifactName": "Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "172201",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "172208",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "172191",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105520",
+      "artifactName": "Transaction Application"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104059",
+      "artifactName": "Trial Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104059",
+      "artifactName": "Trial Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105520",
+      "artifactName": "Transaction Application"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Position",
+      "bizzsemantic": "48421",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Position",
+      "bizzsemantic": "32646",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "Position Management",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

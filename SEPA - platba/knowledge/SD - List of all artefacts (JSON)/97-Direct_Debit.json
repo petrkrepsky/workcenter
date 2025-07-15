@@ -1,0 +1,110 @@
+{
+  "domainName": "Direct Debit",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32677",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133116",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111055",
+      "artifactName": "Direct Debit Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42559",
+      "artifactName": "Direct Debit Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218120",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218107",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218148",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218135",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107781",
+      "artifactName": "Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106741",
+      "artifactName": "Payment Tracking"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105149",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107888",
+      "artifactName": "Funds Available Check"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110782",
+      "artifactName": "Verify Mandate"
+    },
+    {
+      "artifactType": "Direct Debit SD Overview",
+      "bizzsemantic": "344304",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Direct Debit Control",
+      "bizzsemantic": "49348",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Direct Debit BOM",
+      "bizzsemantic": "53696",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32621",
+      "artifactName": "Batch Debit"
+    },
+    {
+      "artifactType": "Direct Debit API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

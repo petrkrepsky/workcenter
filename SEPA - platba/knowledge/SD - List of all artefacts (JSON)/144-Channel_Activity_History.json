@@ -1,0 +1,90 @@
+{
+  "domainName": "Channel Activity History",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38870",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "44170",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111116",
+      "artifactName": "Channel Activity Log_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45271",
+      "artifactName": "Channel Activity Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "199873",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "199882",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "199891",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "199887",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65732",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Channel Activity History SD Overview",
+      "bizzsemantic": "351130",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Channel Activity",
+      "bizzsemantic": "45272",
+      "artifactName": "History Control"
+    },
+    {
+      "artifactType": "Channel Activity",
+      "bizzsemantic": "47235",
+      "artifactName": "History BOM"
+    },
+    {
+      "artifactType": "Channel Activity",
+      "bizzsemantic": "",
+      "artifactName": "History API"
+    }
+  ]
+}

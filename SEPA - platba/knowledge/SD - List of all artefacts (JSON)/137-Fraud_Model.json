@@ -1,0 +1,110 @@
+{
+  "domainName": "Fraud Model",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41042",
+      "artifactName": "Fraud Model"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32219",
+      "artifactName": "Fraud Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111162",
+      "artifactName": "Fraud Model Specification_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30454",
+      "artifactName": "Fraud Model Specification"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "117538",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "117543",
+      "artifactName": "Fraud Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "117551",
+      "artifactName": "Fraud Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "117549",
+      "artifactName": "Fraud Model"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65882",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65893",
+      "artifactName": "Testing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65886",
+      "artifactName": "Functional Requirements"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Fraud Model SD Overview",
+      "bizzsemantic": "353744",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Fraud Model Control",
+      "bizzsemantic": "30455",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Fraud Model BOM",
+      "bizzsemantic": "32220",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Fraud Model API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

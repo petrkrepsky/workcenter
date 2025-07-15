@@ -1,0 +1,110 @@
+{
+  "domainName": "Consumer Advisory Services",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44522",
+      "artifactName": "Consumer Advisory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40218",
+      "artifactName": "Consumer Advice"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111093",
+      "artifactName": "Consumer Advice Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38993",
+      "artifactName": "Consumer Advice Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166836",
+      "artifactName": "Consumer Advisory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166812",
+      "artifactName": "Consumer Advice"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166795",
+      "artifactName": "Consumer Advice"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166807",
+      "artifactName": "Consumer Advice"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109853",
+      "artifactName": "Product Guidance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105325",
+      "artifactName": "Tax Optimization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107533",
+      "artifactName": "Financial Planning"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Consumer Advisory Services SD Overview",
+      "bizzsemantic": "353772",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Consumer Advisory",
+      "bizzsemantic": "38994",
+      "artifactName": "Services Control"
+    },
+    {
+      "artifactType": "Consumer Advisory",
+      "bizzsemantic": "40219",
+      "artifactName": "Services BOM"
+    },
+    {
+      "artifactType": "Consumer Advisory",
+      "bizzsemantic": "",
+      "artifactName": "Services API"
+    }
+  ]
+}

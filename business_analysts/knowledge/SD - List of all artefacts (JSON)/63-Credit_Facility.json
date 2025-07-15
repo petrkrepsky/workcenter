@@ -1,0 +1,120 @@
+{
+  "domainName": "Credit Facility",
+  "artifacts": [
+    {
+      "artifactType": "Credit Facility SD Overview",
+      "bizzsemantic": "350361",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40622",
+      "artifactName": "Credit Facility"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "46338",
+      "artifactName": "Credit Line"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111273",
+      "artifactName": "Credit Line Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39035",
+      "artifactName": "Credit Line Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207689",
+      "artifactName": "Credit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207665",
+      "artifactName": "Credit Line"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207681",
+      "artifactName": "Credit Line"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207672",
+      "artifactName": "Credit Line"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108863",
+      "artifactName": "Maintenance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105417",
+      "artifactName": "Repayment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "Credit Facility",
+      "bizzsemantic": "39036",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Credit Facility BOM",
+      "bizzsemantic": "46339",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Credit Facility API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

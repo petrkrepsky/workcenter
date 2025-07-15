@@ -1,0 +1,90 @@
+{
+  "domainName": "Contact Routing",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41059",
+      "artifactName": "Contact Routing"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30411",
+      "artifactName": "Customer Servicing"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111199",
+      "artifactName": "Customer Servicing"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39722",
+      "artifactName": "Customer Servicing"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58134",
+      "artifactName": "Allocate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58168",
+      "artifactName": "Allocation"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58217",
+      "artifactName": "Criteria"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207160",
+      "artifactName": "Contact"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207175",
+      "artifactName": "Customer Servicing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207190",
+      "artifactName": "Customer Servicing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207169",
+      "artifactName": "Customer Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105871",
+      "artifactName": "Allocation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "149526",
+      "artifactName": "Customer Behavior Models"
+    },
+    {
+      "artifactType": "Contact Routing SD Overview",
+      "bizzsemantic": "350204",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Contact Routing",
+      "bizzsemantic": "39723",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Contact Routing",
+      "bizzsemantic": "30412",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Contact Routing API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

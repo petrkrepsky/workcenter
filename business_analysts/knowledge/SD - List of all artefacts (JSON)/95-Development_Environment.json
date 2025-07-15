@@ -1,0 +1,50 @@
+{
+  "domainName": "Development Environment",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47827",
+      "artifactName": "Development"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133245",
+      "artifactName": "Development Environment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111031",
+      "artifactName": "Development Environment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130094",
+      "artifactName": "Development Environment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218631",
+      "artifactName": "Development Environment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218635",
+      "artifactName": "Development Environment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218633",
+      "artifactName": "Development Environment"
+    }
+  ]
+}

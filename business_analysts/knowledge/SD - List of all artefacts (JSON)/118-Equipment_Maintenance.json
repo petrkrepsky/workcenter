@@ -1,0 +1,50 @@
+{
+  "domainName": "Equipment Maintenance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47550",
+      "artifactName": "Equipment"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132225",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111007",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133398",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58078",
+      "artifactName": "Maintain"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58166",
+      "artifactName": "Maintenance Arrangement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173629",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173644",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173640",
+      "artifactName": "Office Equipment"
+    }
+  ]
+}

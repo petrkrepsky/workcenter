@@ -1,0 +1,110 @@
+{
+  "domainName": "Card Financial Settlement",
+  "artifacts": [
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42808",
+      "artifactName": "Card Financial Settlement"
+    },
+    {
+      "artifactType": "Card Financial Settlement SD Overview",
+      "bizzsemantic": "353807",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34230",
+      "artifactName": "Card Financial"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "45909",
+      "artifactName": "Card Financial Settlement"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110978",
+      "artifactName": "Card Financial Settlement"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42808",
+      "artifactName": "Card Financial Settlement"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163158",
+      "artifactName": "Card Financial"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163140",
+      "artifactName": "Card Financial Settlement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163145",
+      "artifactName": "Card Financial Settlement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163147",
+      "artifactName": "Card Financial Settlement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105111",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109984",
+      "artifactName": "Instruction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107941",
+      "artifactName": "Processing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108524",
+      "artifactName": "Consolidation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Card Financial",
+      "bizzsemantic": "42809",
+      "artifactName": "Settlement Control"
+    },
+    {
+      "artifactType": "Card Financial",
+      "bizzsemantic": "45910",
+      "artifactName": "Settlement BOM"
+    },
+    {
+      "artifactType": "Card Financial",
+      "bizzsemantic": "",
+      "artifactName": "Settlement API"
+    }
+  ]
+}

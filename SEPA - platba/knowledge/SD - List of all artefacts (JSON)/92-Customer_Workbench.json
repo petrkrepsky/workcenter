@@ -1,0 +1,110 @@
+{
+  "domainName": "Customer Workbench",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34733",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "43858",
+      "artifactName": "Customer Workbench"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110974",
+      "artifactName": "Customer Workbench"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37812",
+      "artifactName": "Customer Workbench"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158492",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158494",
+      "artifactName": "Customer Workbench"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158486",
+      "artifactName": "Customer Workbench"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158473",
+      "artifactName": "Customer Workbench"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104689",
+      "artifactName": "Contact"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105700",
+      "artifactName": "Browsing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110622",
+      "artifactName": "Broadcast"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108034",
+      "artifactName": "SW Update"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Customer Workbench SD Overview",
+      "bizzsemantic": "353770",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "37813",
+      "artifactName": "Workbench Control"
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "43859",
+      "artifactName": "Workbench BOM"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "158478",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "Customer Workbench",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

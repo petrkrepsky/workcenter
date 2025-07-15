@@ -1,0 +1,95 @@
+{
+  "domainName": "Sub Custodian Agreement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41356",
+      "artifactName": "Sub Custodian"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "59390",
+      "artifactName": "Sub Custodian"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "59421",
+      "artifactName": "Sub Custodian"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30064",
+      "artifactName": "Sub Custodian Agreement"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58124",
+      "artifactName": "Agree Terms"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58070",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58227",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "59406",
+      "artifactName": "Sub Custodian"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "59393",
+      "artifactName": "Sub Custodian"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "59425",
+      "artifactName": "Sub Custodian"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "59388",
+      "artifactName": "Sub Custodian"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45546",
+      "artifactName": "Policy Term"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48604",
+      "artifactName": "Regulatory Term"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36912",
+      "artifactName": "Legal Term"
+    },
+    {
+      "artifactType": "Sub Custodian Agreement SD Overview",
+      "bizzsemantic": "353851",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Sub Custodian",
+      "bizzsemantic": "44541",
+      "artifactName": "Agreement Control"
+    },
+    {
+      "artifactType": "Sub Custodian",
+      "bizzsemantic": "53717",
+      "artifactName": "Agreement BOM"
+    },
+    {
+      "artifactType": "Sub Custodian",
+      "bizzsemantic": "",
+      "artifactName": "Agreement API"
+    }
+  ]
+}

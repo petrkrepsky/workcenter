@@ -1,0 +1,95 @@
+{
+  "domainName": "Business Unit Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30964",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "39225",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111005",
+      "artifactName": "Business Unit Management"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43464",
+      "artifactName": "Business Unit Management"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162376",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162387",
+      "artifactName": "Business Unit Management"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162395",
+      "artifactName": "Business Unit Management"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162401",
+      "artifactName": "Business Unit Management"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "68267",
+      "artifactName": "Performance"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64532",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "Business Unit Management SD Overview",
+      "bizzsemantic": "353687",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Business Unit",
+      "bizzsemantic": "43465",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Business Unit",
+      "bizzsemantic": "39226",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "Business Unit",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

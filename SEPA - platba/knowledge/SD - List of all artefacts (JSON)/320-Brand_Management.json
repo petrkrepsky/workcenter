@@ -1,0 +1,100 @@
+{
+  "domainName": "Brand Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40124",
+      "artifactName": "Brand Management"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "31715",
+      "artifactName": "Brand"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "64508",
+      "artifactName": "Brand Management Plan_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41471",
+      "artifactName": "Brand Management Plan"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "64542",
+      "artifactName": "Brand"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "64544",
+      "artifactName": "Brand Management"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "64530",
+      "artifactName": "Brand Management"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "64506",
+      "artifactName": "Brand Management"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64536",
+      "artifactName": "Brand Advice"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64532",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "Brand Management SD Overview",
+      "bizzsemantic": "353883",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Brand Management",
+      "bizzsemantic": "41472",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Brand Management",
+      "bizzsemantic": "31716",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Brand Management",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

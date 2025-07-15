@@ -1,0 +1,105 @@
+{
+  "domainName": "Card Case",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30796",
+      "artifactName": "Card Case"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29991",
+      "artifactName": "Card Case"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111359",
+      "artifactName": "Card Case Procedure_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29596",
+      "artifactName": "Card Case Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214671",
+      "artifactName": "Card Case_SD_Operations"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214675",
+      "artifactName": "Card Case"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214667",
+      "artifactName": "Card Case"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214652",
+      "artifactName": "Card Case"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109050",
+      "artifactName": "Resolution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107759",
+      "artifactName": "Arbitration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106405",
+      "artifactName": "Chargeback"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108524",
+      "artifactName": "Consolidation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Card Case SD Overview",
+      "bizzsemantic": "353912",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Card Case Control",
+      "bizzsemantic": "29597",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Card Case BOM",
+      "bizzsemantic": "29992",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Card Case API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

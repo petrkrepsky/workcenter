@@ -1,0 +1,90 @@
+{
+  "domainName": "Financial Market Research",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38415",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "43004",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111291",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30920",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218368",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218383",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218374",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218379",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "81442",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "Financial Market Research SD Overview",
+      "bizzsemantic": "353666",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Financial Market",
+      "bizzsemantic": "30921",
+      "artifactName": "Research Control"
+    },
+    {
+      "artifactType": "Financial Market",
+      "bizzsemantic": "43005",
+      "artifactName": "Research BOM"
+    },
+    {
+      "artifactType": "Financial Market",
+      "bizzsemantic": "",
+      "artifactName": "Research API"
+    }
+  ]
+}

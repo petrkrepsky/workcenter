@@ -1,0 +1,110 @@
+{
+  "domainName": "Customer Behavior Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41791",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34820",
+      "artifactName": "Customer Behavior Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111231",
+      "artifactName": "Customer Behavior Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46136",
+      "artifactName": "Customer Behavior Model"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161442",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161449",
+      "artifactName": "Customer Behavior Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161446",
+      "artifactName": "Customer Behavior Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161452",
+      "artifactName": "Customer Behavior Model"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65882",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65893",
+      "artifactName": "Testing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65886",
+      "artifactName": "Functional Requirements"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Customer Behavior Models SD Overview",
+      "bizzsemantic": "353682",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Behavior",
+      "bizzsemantic": "46137",
+      "artifactName": "Models Control"
+    },
+    {
+      "artifactType": "Customer Behavior",
+      "bizzsemantic": "34821",
+      "artifactName": "Models BOM"
+    },
+    {
+      "artifactType": "Customer Behavior",
+      "bizzsemantic": "",
+      "artifactName": "Models API"
+    }
+  ]
+}

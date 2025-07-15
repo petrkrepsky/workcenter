@@ -1,0 +1,50 @@
+{
+  "domainName": "Channel Portfolio",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33256",
+      "artifactName": "Channel Portfolio"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "115824",
+      "artifactName": "Channel Portfolio"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111468",
+      "artifactName": "Channel Portfolio Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "115838",
+      "artifactName": "Channel Portfolio Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115812",
+      "artifactName": "Channel Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115816",
+      "artifactName": "Channel Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115828",
+      "artifactName": "Channel Portfolio"
+    }
+  ]
+}

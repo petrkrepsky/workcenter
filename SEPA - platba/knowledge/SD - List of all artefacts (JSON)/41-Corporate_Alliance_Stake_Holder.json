@@ -1,0 +1,50 @@
+{
+  "domainName": "Corporate Alliance/Stake Holder",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48575",
+      "artifactName": "Corporate Alliance"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "81969",
+      "artifactName": "Alliance Partner"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "81989",
+      "artifactName": "Alliance Partner"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "81971",
+      "artifactName": "Alliance Partner"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81980",
+      "artifactName": "Alliance Partner"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81992",
+      "artifactName": "Alliance Partner"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81973",
+      "artifactName": "Alliance Partner"
+    }
+  ]
+}

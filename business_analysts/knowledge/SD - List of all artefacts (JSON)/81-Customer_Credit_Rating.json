@@ -1,0 +1,110 @@
+{
+  "domainName": "Customer Credit Rating",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43153",
+      "artifactName": "Customer Credit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "46768",
+      "artifactName": "Customer Credit Rating"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111500",
+      "artifactName": "Customer Credit Rating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "28912",
+      "artifactName": "Customer Credit Rating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58090",
+      "artifactName": "Monitor"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58175",
+      "artifactName": "State"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58201",
+      "artifactName": "Indicator"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163831",
+      "artifactName": "Customer Credit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163848",
+      "artifactName": "Customer Credit Rating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163843",
+      "artifactName": "Customer Credit Rating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163813",
+      "artifactName": "Customer Credit Rating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109139",
+      "artifactName": "External Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109755",
+      "artifactName": "Internal Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104332",
+      "artifactName": "Alerts"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "149526",
+      "artifactName": "Customer Behavior Models"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Customer Credit Rating SD Overview",
+      "bizzsemantic": "343386",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Credit",
+      "bizzsemantic": "28913",
+      "artifactName": "Rating Control"
+    },
+    {
+      "artifactType": "Customer Credit",
+      "bizzsemantic": "46769",
+      "artifactName": "Rating BOM"
+    },
+    {
+      "artifactType": "Customer Credit",
+      "bizzsemantic": "",
+      "artifactName": "Rating API"
+    }
+  ]
+}

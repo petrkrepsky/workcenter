@@ -1,0 +1,100 @@
+{
+  "domainName": "Product Quality Assurance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40811",
+      "artifactName": "Product Quality"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38088",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110992",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "33378",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209872",
+      "artifactName": "Product Quality"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209889",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209892",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209896",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107823",
+      "artifactName": "Usability Checks"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106342",
+      "artifactName": "Processing Error and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107507",
+      "artifactName": "Resiliency and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106753",
+      "artifactName": "Functional Consistency"
+    },
+    {
+      "artifactType": "Product Quality Assurance SD Overview",
+      "bizzsemantic": "347952",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Quality",
+      "bizzsemantic": "49297",
+      "artifactName": "Assurance Control"
+    },
+    {
+      "artifactType": "Product Quality",
+      "bizzsemantic": "53346",
+      "artifactName": "Assurance BOM"
+    },
+    {
+      "artifactType": "Product Quality",
+      "bizzsemantic": "",
+      "artifactName": "Assurance API"
+    }
+  ]
+}

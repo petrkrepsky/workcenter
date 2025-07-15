@@ -1,0 +1,50 @@
+{
+  "domainName": "Building Maintenance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40075",
+      "artifactName": "Building"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "67710",
+      "artifactName": "Building"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "75634",
+      "artifactName": "Building Maintenance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "75626",
+      "artifactName": "Building Maintenance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58078",
+      "artifactName": "Maintain"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58166",
+      "artifactName": "Maintenance Arrangement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "75642",
+      "artifactName": "Building Maintenance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "75628",
+      "artifactName": "Building Maintenance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "75638",
+      "artifactName": "Building Maintenance"
+    }
+  ]
+}

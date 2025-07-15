@@ -1,0 +1,95 @@
+{
+  "domainName": "Stock Lending and Repos",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48297",
+      "artifactName": "Stock Lending and"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133051",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111071",
+      "artifactName": "Repo Transaction_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31302",
+      "artifactName": "Repo Transaction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217688",
+      "artifactName": "Stock Lending and"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217658",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217660",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217655",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42431",
+      "artifactName": "Repo Transaction Security"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29554",
+      "artifactName": "Repo Transaction Cash"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36969",
+      "artifactName": "Repo Transaction Initiation"
+    },
+    {
+      "artifactType": "Stock Lending and Repos SD Overview",
+      "bizzsemantic": "353749",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Stock Lending and",
+      "bizzsemantic": "31303",
+      "artifactName": "Repos Control"
+    },
+    {
+      "artifactType": "Stock Lending and",
+      "bizzsemantic": "53480",
+      "artifactName": "Repos BOM"
+    },
+    {
+      "artifactType": "Stock Lending and",
+      "bizzsemantic": "",
+      "artifactName": "Repos API"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "domainName": "Corporate Strategy",
+  "artifacts": [
+    {
+      "artifactType": "Asset",
+      "bizzsemantic": "42779",
+      "artifactName": "Corporate Strategy"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "105354",
+      "artifactName": "Enterprise"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111407",
+      "artifactName": "Enterprise Strategy_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133321",
+      "artifactName": "Enterprise Strategy"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218392",
+      "artifactName": "Enterprise"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218389",
+      "artifactName": "Enterprise"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218387",
+      "artifactName": "Enterprise"
+    }
+  ]
+}

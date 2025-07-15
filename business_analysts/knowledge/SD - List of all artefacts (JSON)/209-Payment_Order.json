@@ -1,0 +1,95 @@
+{
+  "domainName": "Payment Order",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35550",
+      "artifactName": "Payment Order"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "28712",
+      "artifactName": "Payment Order"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111229",
+      "artifactName": "Payment Order"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30597",
+      "artifactName": "Payment Order Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211297",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211294",
+      "artifactName": "Payment Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211306",
+      "artifactName": "Payment Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211288",
+      "artifactName": "Payment Order"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109137",
+      "artifactName": "Execution Initiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106880",
+      "artifactName": "Order Confirmation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Payment Order SD Overview",
+      "bizzsemantic": "353942",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Payment Order",
+      "bizzsemantic": "30598",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Payment Order",
+      "bizzsemantic": "28713",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Payment Order API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

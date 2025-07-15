@@ -1,0 +1,50 @@
+{
+  "domainName": "Employee Assignment",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43900",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "59181",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "59162",
+      "artifactName": "Employee Allocation_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "59166",
+      "artifactName": "Employee Allocation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58134",
+      "artifactName": "Allocate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "59179",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "59168",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "59170",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58168",
+      "artifactName": "Allocation"
+    }
+  ]
+}

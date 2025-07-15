@@ -1,0 +1,105 @@
+{
+  "domainName": "IT Standards And Guidelines",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35425",
+      "artifactName": "IT Standards And"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132935",
+      "artifactName": "Technology Standards"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111285",
+      "artifactName": "Technology Standards"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "44206",
+      "artifactName": "Technology Standards"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166293",
+      "artifactName": "IT Standards And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166321",
+      "artifactName": "Technology Standards"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166304",
+      "artifactName": "Technology Standards"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166323",
+      "artifactName": "Technology Standards"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108603",
+      "artifactName": "Production Environment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107623",
+      "artifactName": "Production Platforms and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108109",
+      "artifactName": "Product Testing and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109894",
+      "artifactName": "Development Toolingand"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109706",
+      "artifactName": "IT Policies and Guidelines"
+    },
+    {
+      "artifactType": "IT Standards And Guidelines SD Overview",
+      "bizzsemantic": "353966",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "IT Standards And",
+      "bizzsemantic": "49313",
+      "artifactName": "Guidelines Control"
+    },
+    {
+      "artifactType": "IT Standards And",
+      "bizzsemantic": "53365",
+      "artifactName": "Guidelines BOM"
+    },
+    {
+      "artifactType": "IT Standards And",
+      "bizzsemantic": "",
+      "artifactName": "Guidelines API"
+    }
+  ]
+}

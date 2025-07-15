@@ -1,0 +1,95 @@
+{
+  "domainName": "Product Combination",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43096",
+      "artifactName": "Product Combination"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132907",
+      "artifactName": "Product Combination"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111277",
+      "artifactName": "Product Combination"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35018",
+      "artifactName": "Product Combination"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218708",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218706",
+      "artifactName": "Product Combination"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218720",
+      "artifactName": "Product Combination"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218712",
+      "artifactName": "Product Combination"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109127",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107511",
+      "artifactName": "Transfer Pricing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108639",
+      "artifactName": "Embedded Product Control"
+    },
+    {
+      "artifactType": "Product Combination SD Overview",
+      "bizzsemantic": "353614",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product",
+      "bizzsemantic": "49509",
+      "artifactName": "Combination Control"
+    },
+    {
+      "artifactType": "Product",
+      "bizzsemantic": "53916",
+      "artifactName": "Combination BOM"
+    },
+    {
+      "artifactType": "Product Combination",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

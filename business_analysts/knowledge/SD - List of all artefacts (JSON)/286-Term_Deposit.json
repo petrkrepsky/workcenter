@@ -1,0 +1,150 @@
+{
+  "domainName": "Term Deposit",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30653",
+      "artifactName": "Term Deposit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "37791",
+      "artifactName": "Term Deposit"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111271",
+      "artifactName": "Term Deposit Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29934",
+      "artifactName": "Term Deposit Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143815",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143800",
+      "artifactName": "Term Deposit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143820",
+      "artifactName": "Term Deposit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143827",
+      "artifactName": "Term Deposit"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63758",
+      "artifactName": "Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91578",
+      "artifactName": "Deposits and Withdrawals"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91584",
+      "artifactName": "Account Sweep"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91576",
+      "artifactName": "Account Lien"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Term Deposit SD Overview",
+      "bizzsemantic": "353856",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Term Deposit",
+      "bizzsemantic": "29935",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Term Deposit BOM",
+      "bizzsemantic": "37792",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110265",
+      "artifactName": "Rollover"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "Term Deposit API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "domainName": "Continuity Planning",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29351",
+      "artifactName": "Continuity Planning"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133317",
+      "artifactName": "Enterprise Continuity"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111135",
+      "artifactName": "Enterprise Continuity"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133123",
+      "artifactName": "Enterprise Continuity"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210991",
+      "artifactName": "Enterprise Continuity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210982",
+      "artifactName": "Enterprise Continuity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210988",
+      "artifactName": "Enterprise Continuity"
+    }
+  ]
+}

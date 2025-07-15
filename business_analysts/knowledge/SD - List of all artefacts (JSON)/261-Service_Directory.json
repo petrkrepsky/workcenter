@@ -1,0 +1,110 @@
+{
+  "domainName": "Service Directory",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46148",
+      "artifactName": "Service Directory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90592",
+      "artifactName": "Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111205",
+      "artifactName": "Service Directory"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42454",
+      "artifactName": "Service Directory Entry"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217835",
+      "artifactName": "Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217831",
+      "artifactName": "Service Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217844",
+      "artifactName": "Service Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217818",
+      "artifactName": "Service Directory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45148",
+      "artifactName": "Arrangement Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46883",
+      "artifactName": "Service Delivery Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30713",
+      "artifactName": "Access Control Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43452",
+      "artifactName": "Sales Servicing Properties"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36844",
+      "artifactName": "Relationship Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31885",
+      "artifactName": "Product Access Servicing"
+    },
+    {
+      "artifactType": "Service Directory SD Overview",
+      "bizzsemantic": "353737",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Service Directory",
+      "bizzsemantic": "49960",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Service Directory",
+      "bizzsemantic": "53046",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Service Directory API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

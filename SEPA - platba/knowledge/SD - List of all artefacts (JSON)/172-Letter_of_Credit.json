@@ -1,0 +1,110 @@
+{
+  "domainName": "Letter of Credit",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38418",
+      "artifactName": "Letter of Credit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "85344",
+      "artifactName": "Letter Of Credit"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "85349",
+      "artifactName": "Letter Of Credit"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37581",
+      "artifactName": "Letter Of Credit"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "85338",
+      "artifactName": "Letter of"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "85370",
+      "artifactName": "Letter Of Credit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "85374",
+      "artifactName": "Letter Of Credit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "85331",
+      "artifactName": "Letter Of Credit"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48786",
+      "artifactName": "Letter of Credit Payout"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "47814",
+      "artifactName": "Seller Obligation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38691",
+      "artifactName": "Letter of Credit Issuance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41142",
+      "artifactName": "Customer Collateral"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32583",
+      "artifactName": "Customer Payment Task"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43164",
+      "artifactName": "Letter of Credit Definition"
+    },
+    {
+      "artifactType": "Letter of Credit SD Overview",
+      "bizzsemantic": "353917",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Letter of Credit",
+      "bizzsemantic": "38980",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Letter of Credit",
+      "bizzsemantic": "53214",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Letter of Credit API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

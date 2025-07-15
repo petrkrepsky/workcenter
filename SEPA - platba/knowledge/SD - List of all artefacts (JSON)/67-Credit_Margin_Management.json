@@ -1,0 +1,50 @@
+{
+  "domainName": "Credit/Margin Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44301",
+      "artifactName": "Credit and Margin"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "119895",
+      "artifactName": "Credit And Margins"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111043",
+      "artifactName": "Credit And Margins"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "119898",
+      "artifactName": "Credit And Margins"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119893",
+      "artifactName": "Credit And Margins"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119889",
+      "artifactName": "Credit And Margins"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119906",
+      "artifactName": "Credit And Margins"
+    }
+  ]
+}

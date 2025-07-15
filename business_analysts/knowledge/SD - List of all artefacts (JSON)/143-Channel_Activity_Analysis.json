@@ -1,0 +1,115 @@
+{
+  "domainName": "Channel Activity Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34254",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "44170",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111431",
+      "artifactName": "Channel Activity Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32174",
+      "artifactName": "Channel Activity Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212863",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212851",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212871",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212873",
+      "artifactName": "Channel Activity"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105134",
+      "artifactName": "Device Error"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109725",
+      "artifactName": "Bot"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110689",
+      "artifactName": "Merchant Behavior"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104542",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108096",
+      "artifactName": "Merchant Fraud"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108564",
+      "artifactName": "Customer Fraud"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "212887",
+      "artifactName": "Channel Activity Analysis"
+    },
+    {
+      "artifactType": "Channel Activity Analysis SD Overview",
+      "bizzsemantic": "345119",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Channel Activity",
+      "bizzsemantic": "32175",
+      "artifactName": "Analysis Control"
+    },
+    {
+      "artifactType": "Channel Activity",
+      "bizzsemantic": "44171",
+      "artifactName": "Analysis BOM"
+    },
+    {
+      "artifactType": "Channel Activity",
+      "bizzsemantic": "",
+      "artifactName": "Analysis API"
+    }
+  ]
+}

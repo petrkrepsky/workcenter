@@ -1,0 +1,120 @@
+{
+  "domainName": "Card Clearing",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36804",
+      "artifactName": "Card Clearing"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33199",
+      "artifactName": "Card Clearing"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111015",
+      "artifactName": "Card Clearing Procedure_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43617",
+      "artifactName": "Card Clearing Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214880",
+      "artifactName": "Card"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214848",
+      "artifactName": "Card Clearing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214858",
+      "artifactName": "Card Clearing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214866",
+      "artifactName": "Card Clearing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "98795",
+      "artifactName": "Routing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "78023",
+      "artifactName": "Reconciliation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110778",
+      "artifactName": "Matching"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108118",
+      "artifactName": "Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104585",
+      "artifactName": "FX Conversion"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106223",
+      "artifactName": "Addressing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106491",
+      "artifactName": "Capture"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Card Clearing SD Overview",
+      "bizzsemantic": "353903",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Card Clearing",
+      "bizzsemantic": "43618",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Card Clearing BOM",
+      "bizzsemantic": "33200",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Card Clearing API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "domainName": "Consumer Investments",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45432",
+      "artifactName": "Consumer"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34742",
+      "artifactName": "Consumer Securities Order"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110990",
+      "artifactName": "Managed Investment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41311",
+      "artifactName": "Consumer Securities Order"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216444",
+      "artifactName": "Consumer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216421",
+      "artifactName": "Transaction_Instantiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216428",
+      "artifactName": "Transaction_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216441",
+      "artifactName": "Transaction_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104675",
+      "artifactName": "Order Initiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108049",
+      "artifactName": "Funding Check"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108385",
+      "artifactName": "Compliance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106890",
+      "artifactName": "Quote"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "Consumer Investments SD Overview",
+      "bizzsemantic": "353867",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Consumer",
+      "bizzsemantic": "41312",
+      "artifactName": "Investments Control"
+    },
+    {
+      "artifactType": "Consumer",
+      "bizzsemantic": "34743",
+      "artifactName": "Investments BOM"
+    },
+    {
+      "artifactType": "Consumer",
+      "bizzsemantic": "",
+      "artifactName": "Investments API"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "domainName": "Custody Administration",
+  "artifacts": [
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41019",
+      "artifactName": "Custody Facility"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32270",
+      "artifactName": "Custody"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130902",
+      "artifactName": "Custody"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111403",
+      "artifactName": "Custody Facility_ Analytics"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41019",
+      "artifactName": "Custody Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162621",
+      "artifactName": "Custody"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162616",
+      "artifactName": "Custody"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162607",
+      "artifactName": "Custody Facility_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "162599",
+      "artifactName": "Custody Facility_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108118",
+      "artifactName": "Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110523",
+      "artifactName": "Securities Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108059",
+      "artifactName": "Dividendsand Interest"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109249",
+      "artifactName": "Safe Keeping"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109096",
+      "artifactName": "Settlement"
+    },
+    {
+      "artifactType": "Custody Administration SD Overview",
+      "bizzsemantic": "353979",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Custody",
+      "bizzsemantic": "49437",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Custody",
+      "bizzsemantic": "53472",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "Custody",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "domainName": "Corporate Treasury Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41635",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "37292",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111279",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132093",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210124",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210121",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210134",
+      "artifactName": "Corporate Treasury"
+    }
+  ]
+}

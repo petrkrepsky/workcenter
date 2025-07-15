@@ -1,0 +1,100 @@
+{
+  "domainName": "Fiduciary Agreement",
+  "artifacts": [
+    {
+      "artifactType": "Fiduciary Agreement SD Overview",
+      "bizzsemantic": "348830",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46792",
+      "artifactName": "Fiduciary Agreement"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90574",
+      "artifactName": "Fiduciary Relationship"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111301",
+      "artifactName": "Fiduciary Agreement"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41600",
+      "artifactName": "Fiduciary Relationship"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207507",
+      "artifactName": "Fiduciary"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207536",
+      "artifactName": "Fiduciary Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207521",
+      "artifactName": "Fiduciary Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207541",
+      "artifactName": "Fiduciary Relationship"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108171",
+      "artifactName": "Assessment and Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108118",
+      "artifactName": "Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109127",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107120",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "Fiduciary",
+      "bizzsemantic": "49465",
+      "artifactName": "Agreement Control"
+    },
+    {
+      "artifactType": "Fiduciary",
+      "bizzsemantic": "53688",
+      "artifactName": "Agreement BOM"
+    },
+    {
+      "artifactType": "Fiduciary Agreement",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

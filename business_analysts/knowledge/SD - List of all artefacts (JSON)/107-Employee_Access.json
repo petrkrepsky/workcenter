@@ -1,0 +1,50 @@
+{
+  "domainName": "Employee Access",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36898",
+      "artifactName": "Employee Access"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "111561",
+      "artifactName": "Employee Access"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111091",
+      "artifactName": "Employee Access"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "111555",
+      "artifactName": "Employee Access"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "111536",
+      "artifactName": "Employee Access"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "111543",
+      "artifactName": "Employee Access"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "111547",
+      "artifactName": "Employee Access"
+    }
+  ]
+}

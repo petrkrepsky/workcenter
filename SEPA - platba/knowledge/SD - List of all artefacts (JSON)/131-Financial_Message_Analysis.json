@@ -1,0 +1,50 @@
+{
+  "domainName": "Financial Message Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30650",
+      "artifactName": "Financial Message"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "81372",
+      "artifactName": "Financial Network Gateway"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "81389",
+      "artifactName": "Financial Network Gateway"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "81384",
+      "artifactName": "Financial Network Gateway"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81380",
+      "artifactName": "Financial Network Gateway"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81378",
+      "artifactName": "Financial Network Gateway"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81386",
+      "artifactName": "Financial Network Gateway"
+    }
+  ]
+}

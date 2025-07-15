@@ -1,0 +1,100 @@
+{
+  "domainName": "Accounts Receivable",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33800",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133205",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111166",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31422",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212511",
+      "artifactName": "Accounts"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212528",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212540",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212545",
+      "artifactName": "Accounts Receivable"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109050",
+      "artifactName": "Resolution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105111",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110435",
+      "artifactName": "Customer Negotiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104171",
+      "artifactName": "Receivables Evaluation"
+    },
+    {
+      "artifactType": "Accounts Receivable SD Overview",
+      "bizzsemantic": "351837",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Accounts",
+      "bizzsemantic": "49402",
+      "artifactName": "Receivable Control"
+    },
+    {
+      "artifactType": "Accounts",
+      "bizzsemantic": "52971",
+      "artifactName": "Receivable BOM"
+    },
+    {
+      "artifactType": "Accounts Receivable",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

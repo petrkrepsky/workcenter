@@ -1,0 +1,95 @@
+{
+  "domainName": "Customer Access Entitlement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30136",
+      "artifactName": "Customer Access"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "36516",
+      "artifactName": "Customer Access Profile"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111083",
+      "artifactName": "Customer Access Profile"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39622",
+      "artifactName": "Customer Access Profile"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58124",
+      "artifactName": "Agree Terms"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58070",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58227",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163441",
+      "artifactName": "Customer Access"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163456",
+      "artifactName": "Customer Access Profile"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163471",
+      "artifactName": "Customer Access Profile"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163443",
+      "artifactName": "Customer Access Profile"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105978",
+      "artifactName": "Preferences"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105316",
+      "artifactName": "Restrictions"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Customer Access Entitlement SD Overview",
+      "bizzsemantic": "353841",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Access",
+      "bizzsemantic": "39623",
+      "artifactName": "Entitlement Control"
+    },
+    {
+      "artifactType": "Customer Access",
+      "bizzsemantic": "36517",
+      "artifactName": "Entitlement BOM"
+    },
+    {
+      "artifactType": "Customer Access",
+      "bizzsemantic": "",
+      "artifactName": "Entitlement API"
+    }
+  ]
+}

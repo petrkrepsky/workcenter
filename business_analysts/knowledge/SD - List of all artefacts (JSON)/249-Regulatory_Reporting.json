@@ -1,0 +1,100 @@
+{
+  "domainName": "Regulatory Reporting",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38933",
+      "artifactName": "Regulatory Reporting"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29167",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110966",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39504",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218531",
+      "artifactName": "Regulatory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218537",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218541",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218512",
+      "artifactName": "Regulatory Compliance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110577",
+      "artifactName": "Enquiries"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104250",
+      "artifactName": "Authoring"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108524",
+      "artifactName": "Consolidation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "152794",
+      "artifactName": "Regulatory Assessments"
+    },
+    {
+      "artifactType": "Regulatory Reporting SD Overview",
+      "bizzsemantic": "353677",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Regulatory",
+      "bizzsemantic": "39505",
+      "artifactName": "Reporting Control"
+    },
+    {
+      "artifactType": "Regulatory",
+      "bizzsemantic": "32073",
+      "artifactName": "Reporting BOM"
+    },
+    {
+      "artifactType": "Regulatory Reporting",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}
