@@ -1,0 +1,110 @@
+{
+  "domainName": "Product Broker Agreement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40829",
+      "artifactName": "Product Broker"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "43844",
+      "artifactName": "Broker"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111373",
+      "artifactName": "Broker Agreement_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "33443",
+      "artifactName": "Broker Agreement"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58124",
+      "artifactName": "Agree Terms"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58070",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58227",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176108",
+      "artifactName": "Product Broker"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176111",
+      "artifactName": "Broker"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176119",
+      "artifactName": "Broker"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176117",
+      "artifactName": "Broker"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67895",
+      "artifactName": "Policy Terms"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67897",
+      "artifactName": "Regulatory Terms"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67884",
+      "artifactName": "Legal Terms"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67872",
+      "artifactName": "Legal Terms and"
+    },
+    {
+      "artifactType": "Product Broker Agreement SD Overview",
+      "bizzsemantic": "353780",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Broker",
+      "bizzsemantic": "33444",
+      "artifactName": "Agreement Control"
+    },
+    {
+      "artifactType": "Product Broker",
+      "bizzsemantic": "43845",
+      "artifactName": "Agreement BOM"
+    },
+    {
+      "artifactType": "Product Broker",
+      "bizzsemantic": "",
+      "artifactName": "Agreement API"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "domainName": "Branch Currency Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48817",
+      "artifactName": "Branch Currency"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "121906",
+      "artifactName": "Branch Cash"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111321",
+      "artifactName": "Branch Cash Allocation_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36667",
+      "artifactName": "Branch Cash Allocation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58134",
+      "artifactName": "Allocate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58168",
+      "artifactName": "Allocation"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58217",
+      "artifactName": "Criteria"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "121912",
+      "artifactName": "Branch Currency"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "121922",
+      "artifactName": "Branch Cash"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "121940",
+      "artifactName": "Branch Cash"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "121919",
+      "artifactName": "Branch Cash"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107727",
+      "artifactName": "Inventory Allocation"
+    },
+    {
+      "artifactType": "Branch Currency Management SD Overview",
+      "bizzsemantic": "353941",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Branch Currency",
+      "bizzsemantic": "49292",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Branch Currency",
+      "bizzsemantic": "53681",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "Branch Currency",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

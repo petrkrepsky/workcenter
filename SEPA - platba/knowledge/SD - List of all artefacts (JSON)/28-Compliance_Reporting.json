@@ -1,0 +1,95 @@
+{
+  "domainName": "Compliance Reporting",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39304",
+      "artifactName": "Compliance"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133102",
+      "artifactName": "Compliance Reporting"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111085",
+      "artifactName": "Compliance Reporting"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43219",
+      "artifactName": "Compliance Reporting"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207648",
+      "artifactName": "Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207651",
+      "artifactName": "Compliance Reporting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207625",
+      "artifactName": "Compliance Reporting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207645",
+      "artifactName": "Compliance Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109099",
+      "artifactName": "Remediation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106708",
+      "artifactName": "Compliance Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108524",
+      "artifactName": "Consolidation"
+    },
+    {
+      "artifactType": "Compliance Reporting SD Overview",
+      "bizzsemantic": "353649",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Compliance",
+      "bizzsemantic": "49472",
+      "artifactName": "Reporting Control"
+    },
+    {
+      "artifactType": "Compliance",
+      "bizzsemantic": "53543",
+      "artifactName": "Reporting BOM"
+    },
+    {
+      "artifactType": "Compliance Reporting",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

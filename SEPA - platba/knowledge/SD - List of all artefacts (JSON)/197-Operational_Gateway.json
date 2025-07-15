@@ -1,0 +1,95 @@
+{
+  "domainName": "Operational Gateway",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32276",
+      "artifactName": "Operational Gateway"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "71673",
+      "artifactName": "Operational Gateway"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "71680",
+      "artifactName": "Operational Gateway"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35021",
+      "artifactName": "Operational Gateway"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71665",
+      "artifactName": "Operational"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71676",
+      "artifactName": "Operational Gateway"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71696",
+      "artifactName": "Operational Gateway"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71661",
+      "artifactName": "Operational Gateway"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34894",
+      "artifactName": "Inbound Message Function"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32153",
+      "artifactName": "Outbound With Response"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40699",
+      "artifactName": "Outbound Message"
+    },
+    {
+      "artifactType": "Operational Gateway SD Overview",
+      "bizzsemantic": "353977",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Operational",
+      "bizzsemantic": "49973",
+      "artifactName": "Gateway Control"
+    },
+    {
+      "artifactType": "Operational",
+      "bizzsemantic": "53781",
+      "artifactName": "Gateway BOM"
+    },
+    {
+      "artifactType": "Operational Gateway",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

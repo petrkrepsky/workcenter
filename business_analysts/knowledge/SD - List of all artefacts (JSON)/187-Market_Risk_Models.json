@@ -1,0 +1,50 @@
+{
+  "domainName": "Market Risk Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36018",
+      "artifactName": "Market Risk Models"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133312",
+      "artifactName": "Market Risk Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111381",
+      "artifactName": "Market Risk Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133262",
+      "artifactName": "Market Risk Model"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214527",
+      "artifactName": "Market Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214522",
+      "artifactName": "Market Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214511",
+      "artifactName": "Market Risk Model"
+    }
+  ]
+}

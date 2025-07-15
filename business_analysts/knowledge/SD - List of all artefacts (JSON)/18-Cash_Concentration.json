@@ -1,0 +1,90 @@
+{
+  "domainName": "Cash Concentration",
+  "artifacts": [
+    {
+      "artifactType": "Cash Concentration SD Overview",
+      "bizzsemantic": "353724",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41205",
+      "artifactName": "Cash Concentration"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90572",
+      "artifactName": "Account Balance Sweeping"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215892",
+      "artifactName": "Cash"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215906",
+      "artifactName": "Account Balance Sweeping"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215888",
+      "artifactName": "Account Balance Sweeping"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215902",
+      "artifactName": "Account Balance Sweeping"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41468",
+      "artifactName": "Cash Position Monitoring"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40042",
+      "artifactName": "Cash Concentration"
+    },
+    {
+      "artifactType": "Cash Concentration",
+      "bizzsemantic": "36221",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Cash Concentration",
+      "bizzsemantic": "39069",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29943",
+      "artifactName": "Account Balance Sweeping"
+    },
+    {
+      "artifactType": "Cash Concentration",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

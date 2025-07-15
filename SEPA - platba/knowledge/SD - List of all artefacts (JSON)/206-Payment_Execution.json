@@ -1,0 +1,95 @@
+{
+  "domainName": "Payment Execution",
+  "artifacts": [
+    {
+      "artifactType": "Payment Execution SD Overview",
+      "bizzsemantic": "353631",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39023",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "37509",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111329",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43629",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184215",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184225",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184221",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184223",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109826",
+      "artifactName": "Payment Execution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105171",
+      "artifactName": "Payment Mechanism"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "184217",
+      "artifactName": "Accessed Financial"
+    },
+    {
+      "artifactType": "Payment Execution",
+      "bizzsemantic": "43630",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Payment Execution",
+      "bizzsemantic": "37510",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Payment Execution",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "domainName": "Public Reference Data Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46474",
+      "artifactName": "Public Reference"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "61788",
+      "artifactName": "Global Standard"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "61790",
+      "artifactName": "Global Standard"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45962",
+      "artifactName": "Global Standard"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "61769",
+      "artifactName": "Public Reference Data"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "61798",
+      "artifactName": "Global Standard"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "61802",
+      "artifactName": "Global Standard"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "61793",
+      "artifactName": "Global Standard"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "61800",
+      "artifactName": "Global Reference Data"
+    },
+    {
+      "artifactType": "Public Reference Data Management SD Overview",
+      "bizzsemantic": "352580",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Public Reference",
+      "bizzsemantic": "49418",
+      "artifactName": "Data Management"
+    },
+    {
+      "artifactType": "Public Reference",
+      "bizzsemantic": "53862",
+      "artifactName": "Data Management"
+    },
+    {
+      "artifactType": "Public Reference Data",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

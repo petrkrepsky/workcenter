@@ -1,0 +1,125 @@
+{
+  "domainName": "System Development",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41965",
+      "artifactName": "System"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40286",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111130",
+      "artifactName": "IT System Development"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "40470",
+      "artifactName": "IT System Development"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58047",
+      "artifactName": "Develop"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58162",
+      "artifactName": "Development"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58205",
+      "artifactName": "Deliverable"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209640",
+      "artifactName": "System"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209653",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209617",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209656",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104699",
+      "artifactName": "Usage Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105757",
+      "artifactName": "Testing Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105369",
+      "artifactName": "Software and Data"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105552",
+      "artifactName": "Technical Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107343",
+      "artifactName": "Functional Specification"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65877",
+      "artifactName": "Corporate Architecture"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "System Development SD Overview",
+      "bizzsemantic": "347858",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "System",
+      "bizzsemantic": "40471",
+      "artifactName": "Development"
+    },
+    {
+      "artifactType": "System",
+      "bizzsemantic": "40287",
+      "artifactName": "Development BOM"
+    },
+    {
+      "artifactType": "System Development",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

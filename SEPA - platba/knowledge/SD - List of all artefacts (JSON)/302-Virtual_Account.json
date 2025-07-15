@@ -1,0 +1,135 @@
+{
+  "domainName": "Virtual Account",
+  "artifacts": [
+    {
+      "artifactType": "Virtual Account SD Overview",
+      "bizzsemantic": "353900",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45513",
+      "artifactName": "Virtual Account"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90589",
+      "artifactName": "Virtual Account"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42952",
+      "artifactName": "Virtual Account Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217093",
+      "artifactName": "Virtual"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217089",
+      "artifactName": "Virtual Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217099",
+      "artifactName": "Virtual Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217121",
+      "artifactName": "Virtual Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40045",
+      "artifactName": "Virtual Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41905",
+      "artifactName": "Virtual Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104176",
+      "artifactName": "Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108317",
+      "artifactName": "Credit Transfer"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110292",
+      "artifactName": "Standing Order"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "66700",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "Virtual Account",
+      "bizzsemantic": "49339",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Virtual Account",
+      "bizzsemantic": "53551",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45537",
+      "artifactName": "Amount Block"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "Virtual Account API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "domainName": "Private Placement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48252",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133150",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111313",
+      "artifactName": "Private Placement Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34823",
+      "artifactName": "Private Placement Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208405",
+      "artifactName": "Private"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208410",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208420",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208400",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39298",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43620",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33806",
+      "artifactName": "Private Placement"
+    },
+    {
+      "artifactType": "Private Placement SD Overview",
+      "bizzsemantic": "353646",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Private Placement",
+      "bizzsemantic": "48250",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Private Placement",
+      "bizzsemantic": "52998",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Private Placement API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

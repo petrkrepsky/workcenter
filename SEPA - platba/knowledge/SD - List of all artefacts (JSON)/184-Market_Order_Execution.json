@@ -1,0 +1,105 @@
+{
+  "domainName": "Market Order Execution",
+  "artifacts": [
+    {
+      "artifactType": "Market Order Execution SD Overview",
+      "bizzsemantic": "353834",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47408",
+      "artifactName": "Market Order"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "46702",
+      "artifactName": "Market Trade"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111347",
+      "artifactName": "Market Trade Transaction_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "40558",
+      "artifactName": "Market Trade Transaction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212305",
+      "artifactName": "Market Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212299",
+      "artifactName": "Market Trade"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212301",
+      "artifactName": "Market Trade"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212310",
+      "artifactName": "Market Trade"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108051",
+      "artifactName": "Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106004",
+      "artifactName": "Trade Initiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106890",
+      "artifactName": "Quote"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "Market Order",
+      "bizzsemantic": "40559",
+      "artifactName": "Execution Control"
+    },
+    {
+      "artifactType": "Market Order",
+      "bizzsemantic": "46703",
+      "artifactName": "Execution BOM"
+    },
+    {
+      "artifactType": "Market Order",
+      "bizzsemantic": "",
+      "artifactName": "Execution API"
+    }
+  ]
+}

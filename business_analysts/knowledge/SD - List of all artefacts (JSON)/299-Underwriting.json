@@ -1,0 +1,95 @@
+{
+  "domainName": "Underwriting",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44666",
+      "artifactName": "Underwriting"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30508",
+      "artifactName": "Underwriting"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111474",
+      "artifactName": "Underwriting Assessment_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37963",
+      "artifactName": "Underwriting Assessment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173421",
+      "artifactName": "Underwriting_SD_Operatio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173427",
+      "artifactName": "Underwriting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173416",
+      "artifactName": "Underwriting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173433",
+      "artifactName": "Underwriting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Underwriting SD Overview",
+      "bizzsemantic": "353632",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Underwriting",
+      "bizzsemantic": "37964",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Underwriting BOM",
+      "bizzsemantic": "30509",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Underwriting API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

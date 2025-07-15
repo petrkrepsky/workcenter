@@ -1,0 +1,100 @@
+{
+  "domainName": "Corporate Tax Advisory",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29854",
+      "artifactName": "Corporate Tax"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "35562",
+      "artifactName": "Corporate Tax Advisory"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111259",
+      "artifactName": "Corporate Tax Advisory"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "48849",
+      "artifactName": "Corporate Tax Advisory"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217980",
+      "artifactName": "Corporate Tax"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217977",
+      "artifactName": "Corporate Tax Advisory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217991",
+      "artifactName": "Corporate Tax Advisory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217971",
+      "artifactName": "Corporate Tax Advisory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105325",
+      "artifactName": "Tax Optimization"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Corporate Tax Advisory SD Overview",
+      "bizzsemantic": "343488",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Corporate Tax",
+      "bizzsemantic": "48850",
+      "artifactName": "Advisory Control"
+    },
+    {
+      "artifactType": "Corporate Tax",
+      "bizzsemantic": "35563",
+      "artifactName": "Advisory BOM"
+    },
+    {
+      "artifactType": "Corporate Tax",
+      "bizzsemantic": "",
+      "artifactName": "Advisory API"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "domainName": "ATM Network Operations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43391",
+      "artifactName": "ATM Network"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133236",
+      "artifactName": "ATM Network"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111227",
+      "artifactName": "ATM Network Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43033",
+      "artifactName": "ATM Network Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217937",
+      "artifactName": "ATM Network"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217922",
+      "artifactName": "ATM Network Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217928",
+      "artifactName": "ATM Network Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217942",
+      "artifactName": "ATM Network Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106136",
+      "artifactName": "Financial Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104065",
+      "artifactName": "Financial Document"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107611",
+      "artifactName": "Cash Distribution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105732",
+      "artifactName": "Device Tracking"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105498",
+      "artifactName": "Network Operation"
+    },
+    {
+      "artifactType": "ATM Network Operations SD Overview",
+      "bizzsemantic": "353760",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ATM Network",
+      "bizzsemantic": "49397",
+      "artifactName": "Operations Control"
+    },
+    {
+      "artifactType": "ATM Network",
+      "bizzsemantic": "53919",
+      "artifactName": "Operations BOM"
+    },
+    {
+      "artifactType": "ATM Network",
+      "bizzsemantic": "",
+      "artifactName": "Operations API"
+    }
+  ]
+}

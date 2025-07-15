@@ -1,0 +1,95 @@
+{
+  "domainName": "Trade Confirmation Matching",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42813",
+      "artifactName": "Trade Confirmation"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133339",
+      "artifactName": "Trade Matching"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111311",
+      "artifactName": "Trade Matching Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30142",
+      "artifactName": "Trade Matching Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216767",
+      "artifactName": "Trade Confirmation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216769",
+      "artifactName": "Trade Matching Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216753",
+      "artifactName": "Trade Matching Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216763",
+      "artifactName": "Trade Matching Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30902",
+      "artifactName": "Unmatched Market Trade"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37063",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37214",
+      "artifactName": "Transaction Reporting"
+    },
+    {
+      "artifactType": "Trade Confirmation Matching SD Overview",
+      "bizzsemantic": "353888",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Trade Confirmation",
+      "bizzsemantic": "30143",
+      "artifactName": "Matching Control"
+    },
+    {
+      "artifactType": "Trade Confirmation",
+      "bizzsemantic": "53257",
+      "artifactName": "Matching BOM"
+    },
+    {
+      "artifactType": "Trade Confirmation",
+      "bizzsemantic": "",
+      "artifactName": "Matching API"
+    }
+  ]
+}

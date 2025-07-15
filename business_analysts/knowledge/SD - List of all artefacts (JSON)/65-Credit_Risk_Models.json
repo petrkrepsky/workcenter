@@ -1,0 +1,95 @@
+{
+  "domainName": "Credit Risk Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46456",
+      "artifactName": "Credit Risk Models"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132096",
+      "artifactName": "Credit Risk Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111331",
+      "artifactName": "Credit Risk Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32225",
+      "artifactName": "Credit Risk Model"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218326",
+      "artifactName": "Credit Risk"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218342",
+      "artifactName": "Credit Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218313",
+      "artifactName": "Credit Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218322",
+      "artifactName": "Credit Risk Model"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65882",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65893",
+      "artifactName": "Testing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65886",
+      "artifactName": "Functional Requirements"
+    },
+    {
+      "artifactType": "Credit Risk Models SD Overview",
+      "bizzsemantic": "346425",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Credit Risk Models",
+      "bizzsemantic": "49271",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Credit Risk Models",
+      "bizzsemantic": "53925",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Credit Risk Models",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

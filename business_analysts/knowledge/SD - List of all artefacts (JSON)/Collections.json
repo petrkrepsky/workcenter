@@ -1,0 +1,105 @@
+{
+  "domainName": "Collections",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44734",
+      "artifactName": "Collections"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "89919",
+      "artifactName": "Collateral Asset Liquidation"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "89908",
+      "artifactName": "Collateral Asset Liquidation"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46028",
+      "artifactName": "Collateral Asset Liquidation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "89953",
+      "artifactName": "Collections_SD_Operations"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "89913",
+      "artifactName": "Collateral Asset Liquidation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "89923",
+      "artifactName": "Collateral Asset Liquidation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "89947",
+      "artifactName": "Collateral Asset Liquidation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "89955",
+      "artifactName": "Debt Factoring"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "89927",
+      "artifactName": "Collections Account Update"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "89905",
+      "artifactName": "Collateral Liquidation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "89949",
+      "artifactName": "Collateral Valuation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "89933",
+      "artifactName": "Collections Assessment"
+    },
+    {
+      "artifactType": "Collections SD Overview",
+      "bizzsemantic": "348347",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Collections Control",
+      "bizzsemantic": "49535",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Collections BOM",
+      "bizzsemantic": "53219",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Collections API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

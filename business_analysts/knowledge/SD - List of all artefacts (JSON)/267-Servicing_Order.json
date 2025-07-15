@@ -1,0 +1,90 @@
+{
+  "domainName": "Servicing Order",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32295",
+      "artifactName": "Servicing Order"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "44792",
+      "artifactName": "Servicing Order"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111482",
+      "artifactName": "Servicing Order"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45694",
+      "artifactName": "Servicing Order Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214741",
+      "artifactName": "Servicing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214743",
+      "artifactName": "Servicing Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214749",
+      "artifactName": "Servicing Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214751",
+      "artifactName": "Servicing Order"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Servicing Order SD Overview",
+      "bizzsemantic": "353898",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Servicing Order",
+      "bizzsemantic": "45695",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Servicing Order",
+      "bizzsemantic": "44793",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Servicing Order API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

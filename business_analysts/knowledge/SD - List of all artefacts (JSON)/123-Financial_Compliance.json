@@ -1,0 +1,50 @@
+{
+  "domainName": "Financial Compliance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38656",
+      "artifactName": "Financial"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132115",
+      "artifactName": "Financial Compliance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111309",
+      "artifactName": "Financial Compliance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132108",
+      "artifactName": "Financial Compliance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214488",
+      "artifactName": "Financial Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214484",
+      "artifactName": "Financial Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214505",
+      "artifactName": "Financial Compliance"
+    }
+  ]
+}

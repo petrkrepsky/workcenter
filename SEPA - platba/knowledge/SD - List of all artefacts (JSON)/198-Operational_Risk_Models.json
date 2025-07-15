@@ -1,0 +1,50 @@
+{
+  "domainName": "Operational Risk Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47895",
+      "artifactName": "Operational Risk"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130679",
+      "artifactName": "Opertional Risk Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111075",
+      "artifactName": "Opertional Risk Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131800",
+      "artifactName": "Opertional Risk Model"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210630",
+      "artifactName": "Opertional Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210638",
+      "artifactName": "Opertional Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210632",
+      "artifactName": "Opertional Risk Model"
+    }
+  ]
+}

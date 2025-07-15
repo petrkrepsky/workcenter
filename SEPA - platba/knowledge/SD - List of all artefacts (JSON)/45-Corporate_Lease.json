@@ -1,0 +1,90 @@
+{
+  "domainName": "Corporate Lease",
+  "artifacts": [
+    {
+      "artifactType": "Corporate Lease SD Overview",
+      "bizzsemantic": "353707",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32008",
+      "artifactName": "Corporate Lease"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90546",
+      "artifactName": "Corporate Lease"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111081",
+      "artifactName": "Corporate Lease Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34870",
+      "artifactName": "Corporate Lease Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215852",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215861",
+      "artifactName": "Corporate Lease"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215837",
+      "artifactName": "Corporate Lease"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215833",
+      "artifactName": "Corporate Lease"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106952",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106759",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "Corporate Lease",
+      "bizzsemantic": "49362",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Corporate Lease",
+      "bizzsemantic": "53790",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Corporate Lease API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

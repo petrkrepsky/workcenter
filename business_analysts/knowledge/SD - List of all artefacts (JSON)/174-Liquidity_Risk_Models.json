@@ -1,0 +1,50 @@
+{
+  "domainName": "Liquidity Risk Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34224",
+      "artifactName": "Liquidity Risk"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133389",
+      "artifactName": "Liquidity Risk Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111451",
+      "artifactName": "Liquidity Risk Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133365",
+      "artifactName": "Liquidity Risk Model"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "193299",
+      "artifactName": "Liquidity Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "193310",
+      "artifactName": "Liquidity Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "193317",
+      "artifactName": "Liquidity Risk Model"
+    }
+  ]
+}

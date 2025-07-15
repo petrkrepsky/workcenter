@@ -1,0 +1,105 @@
+{
+  "domainName": "Customer Campaign Execution",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40236",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "31284",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111395",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46124",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218022",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218028",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218010",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218030",
+      "artifactName": "Customer Campaign"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107655",
+      "artifactName": "Analysis Feedback"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106236",
+      "artifactName": "Execution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109971",
+      "artifactName": "Candidate Selection"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Customer Campaign Execution SD Overview",
+      "bizzsemantic": "353774",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "46125",
+      "artifactName": "Campaign"
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "37146",
+      "artifactName": "Campaign"
+    },
+    {
+      "artifactType": "Customer Campaign",
+      "bizzsemantic": "",
+      "artifactName": "Execution API"
+    }
+  ]
+}

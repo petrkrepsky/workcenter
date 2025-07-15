@@ -1,0 +1,115 @@
+{
+  "domainName": "Segment Direction",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42646",
+      "artifactName": "Segment Direction"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33719",
+      "artifactName": "Segment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111319",
+      "artifactName": "Segment Strategy_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37830",
+      "artifactName": "Segment Strategy"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58219",
+      "artifactName": "Goal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156531",
+      "artifactName": "Segment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156541",
+      "artifactName": "Segment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156554",
+      "artifactName": "Segment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156552",
+      "artifactName": "Segment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106820",
+      "artifactName": "Initiative"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64532",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Segment Direction SD Overview",
+      "bizzsemantic": "349003",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Segment Direction",
+      "bizzsemantic": "37831",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Segment Direction",
+      "bizzsemantic": "33720",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Segment Direction",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

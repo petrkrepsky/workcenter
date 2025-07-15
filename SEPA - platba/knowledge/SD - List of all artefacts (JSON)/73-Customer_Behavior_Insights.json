@@ -1,0 +1,105 @@
+{
+  "domainName": "Customer Behavior Insights",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34917",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "42849",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111293",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43085",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161131",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161154",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161152",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161156",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105515",
+      "artifactName": "Insight"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "149526",
+      "artifactName": "Customer Behavior Models"
+    },
+    {
+      "artifactType": "Customer Behavior Insights SD Overview",
+      "bizzsemantic": "344662",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Behavior",
+      "bizzsemantic": "43086",
+      "artifactName": "Insights Control"
+    },
+    {
+      "artifactType": "Customer Behavior",
+      "bizzsemantic": "42850",
+      "artifactName": "Insights BOM"
+    },
+    {
+      "artifactType": "Customer Behavior",
+      "bizzsemantic": "",
+      "artifactName": "Insights API"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "domainName": "Customer Event History",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47633",
+      "artifactName": "Customer Event"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "37075",
+      "artifactName": "Customer Event"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110958",
+      "artifactName": "Customer Event Log_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36901",
+      "artifactName": "Customer Event Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137070",
+      "artifactName": "Customer Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137083",
+      "artifactName": "Customer Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137086",
+      "artifactName": "Customer Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137058",
+      "artifactName": "Customer Event"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108232",
+      "artifactName": "Life"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107382",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108341",
+      "artifactName": "Product Processing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104179",
+      "artifactName": "Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67603",
+      "artifactName": "Sales"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110631",
+      "artifactName": "Relationship"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Customer Event History SD Overview",
+      "bizzsemantic": "353658",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Event",
+      "bizzsemantic": "36902",
+      "artifactName": "History Control"
+    },
+    {
+      "artifactType": "Customer Event",
+      "bizzsemantic": "37076",
+      "artifactName": "History BOM"
+    },
+    {
+      "artifactType": "Customer Event",
+      "bizzsemantic": "",
+      "artifactName": "History API"
+    }
+  ]
+}

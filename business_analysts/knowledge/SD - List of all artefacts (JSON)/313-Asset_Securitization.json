@@ -1,0 +1,95 @@
+{
+  "domainName": "Asset Securitization",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47465",
+      "artifactName": "Asset Securitization"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132316",
+      "artifactName": "Asset Securitization"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111367",
+      "artifactName": "Asset Securitization"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42207",
+      "artifactName": "Asset Securitization"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "174298",
+      "artifactName": "Asset"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "174309",
+      "artifactName": "Asset Securitization"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "174321",
+      "artifactName": "Asset Securitization"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "174325",
+      "artifactName": "Asset Securitization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110280",
+      "artifactName": "Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104384",
+      "artifactName": "Securitization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104556",
+      "artifactName": "Selection"
+    },
+    {
+      "artifactType": "Asset Securitization SD Overview",
+      "bizzsemantic": "346786",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Asset Securitization",
+      "bizzsemantic": "49390",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Asset Securitization",
+      "bizzsemantic": "53514",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Asset Securitization",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

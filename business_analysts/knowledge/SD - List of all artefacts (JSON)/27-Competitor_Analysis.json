@@ -1,0 +1,95 @@
+{
+  "domainName": "Competitor Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33057",
+      "artifactName": "Competitor Analysis"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38982",
+      "artifactName": "Competitor"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111191",
+      "artifactName": "Competitor Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34031",
+      "artifactName": "Competitor Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163194",
+      "artifactName": "Competitor"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163182",
+      "artifactName": "Competitor"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163180",
+      "artifactName": "Competitor"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "163200",
+      "artifactName": "Competitor"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106098",
+      "artifactName": "Analysis Algorithm"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "Competitor Analysis SD Overview",
+      "bizzsemantic": "353865",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Competitor Analysis",
+      "bizzsemantic": "34032",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Competitor Analysis",
+      "bizzsemantic": "38983",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Competitor Analysis",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

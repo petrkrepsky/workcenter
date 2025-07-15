@@ -1,0 +1,140 @@
+{
+  "domainName": "Credit Card",
+  "artifacts": [
+    {
+      "artifactType": "Credit Card SD Overview",
+      "bizzsemantic": "353853",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40448",
+      "artifactName": "Credit Card"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "46653",
+      "artifactName": "Credit Card"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110970",
+      "artifactName": "Credit Card Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41953",
+      "artifactName": "Credit Card Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166350",
+      "artifactName": "Credit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166354",
+      "artifactName": "Credit Card"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166388",
+      "artifactName": "Credit Card"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166369",
+      "artifactName": "Credit Card"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106188",
+      "artifactName": "Credit Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105675",
+      "artifactName": "Card Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105417",
+      "artifactName": "Repayment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63755",
+      "artifactName": "Billing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108118",
+      "artifactName": "Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Credit Card Control",
+      "bizzsemantic": "41954",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Credit Card BOM",
+      "bizzsemantic": "46654",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "Credit Card API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

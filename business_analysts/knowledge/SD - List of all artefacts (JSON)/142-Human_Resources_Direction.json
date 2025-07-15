@@ -1,0 +1,50 @@
+{
+  "domainName": "Human Resources Direction",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35089",
+      "artifactName": "Human Resources"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132297",
+      "artifactName": "Human Resources"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110964",
+      "artifactName": "Human Resources"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133361",
+      "artifactName": "Human Resources"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210483",
+      "artifactName": "Human Resources"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210478",
+      "artifactName": "Human Resources"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210490",
+      "artifactName": "Human Resources"
+    }
+  ]
+}

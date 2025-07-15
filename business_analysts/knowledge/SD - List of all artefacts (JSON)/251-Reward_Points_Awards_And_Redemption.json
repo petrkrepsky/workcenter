@@ -1,0 +1,90 @@
+{
+  "domainName": "Reward Points Awards And Redemption",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41096",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "55840",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "55825",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41612",
+      "artifactName": "Reward Points Transaction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "55833",
+      "artifactName": "Reward Points Awards And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "55807",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "55823",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "55815",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "55827",
+      "artifactName": "Redemption"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "55811",
+      "artifactName": "Award"
+    },
+    {
+      "artifactType": "Reward Points Awards And Redemption SD Overview",
+      "bizzsemantic": "347642",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Reward Points",
+      "bizzsemantic": "49325",
+      "artifactName": "Awards And"
+    },
+    {
+      "artifactType": "Reward Points",
+      "bizzsemantic": "53352",
+      "artifactName": "Awards And"
+    },
+    {
+      "artifactType": "Reward Points",
+      "bizzsemantic": "",
+      "artifactName": "Awards And"
+    }
+  ]
+}

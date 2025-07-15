@@ -1,0 +1,110 @@
+{
+  "domainName": "Market Data Switch Operation",
+  "artifacts": [
+    {
+      "artifactType": "Market Data Switch Operation SD Overview",
+      "bizzsemantic": "353877",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104641",
+      "artifactName": "Distribution"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35659",
+      "artifactName": "Market Data Switch"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "47074",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111019",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36712",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115214",
+      "artifactName": "Market Data Switch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115211",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115239",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115198",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104189",
+      "artifactName": "Feed Upload"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104641",
+      "artifactName": "Distribution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107047",
+      "artifactName": "Internal Publication"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "Market Data Switch",
+      "bizzsemantic": "36713",
+      "artifactName": "Operation Control"
+    },
+    {
+      "artifactType": "Market Data Switch",
+      "bizzsemantic": "47075",
+      "artifactName": "Operation BOM"
+    },
+    {
+      "artifactType": "Market Data Switch",
+      "bizzsemantic": "",
+      "artifactName": "Operation API"
+    }
+  ]
+}

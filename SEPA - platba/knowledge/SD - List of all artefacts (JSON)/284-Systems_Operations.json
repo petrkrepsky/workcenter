@@ -1,0 +1,50 @@
+{
+  "domainName": "Systems Operations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41350",
+      "artifactName": "Systems Operations"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40286",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111223",
+      "artifactName": "IT System Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133224",
+      "artifactName": "IT System Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217432",
+      "artifactName": "IT System Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217441",
+      "artifactName": "IT System Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217449",
+      "artifactName": "IT System Operating"
+    }
+  ]
+}

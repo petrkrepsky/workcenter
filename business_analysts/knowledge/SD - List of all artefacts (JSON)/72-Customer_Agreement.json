@@ -1,0 +1,115 @@
+{
+  "domainName": "Customer Agreement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32862",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "47446",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "77466",
+      "artifactName": "Customer Agreement_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "33981",
+      "artifactName": "Customer Agreement"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58124",
+      "artifactName": "Agree Terms"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58070",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58227",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77492",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77484",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77486",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77479",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67895",
+      "artifactName": "Policy Terms"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67897",
+      "artifactName": "Regulatory Terms"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67884",
+      "artifactName": "Legal Terms"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67872",
+      "artifactName": "Legal Terms and"
+    },
+    {
+      "artifactType": "Customer Agreement SD Overview",
+      "bizzsemantic": "346112",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "33982",
+      "artifactName": "Agreement Control"
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "47447",
+      "artifactName": "Agreement BOM"
+    },
+    {
+      "artifactType": "19 March 2021_Proposed a new BQ:",
+      "bizzsemantic": "346099",
+      "artifactName": "Customer Arrangement (independent of any products)"
+    },
+    {
+      "artifactType": "Customer Agreement",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

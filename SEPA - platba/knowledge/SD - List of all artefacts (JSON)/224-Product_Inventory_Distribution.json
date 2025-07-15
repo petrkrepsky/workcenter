@@ -1,0 +1,100 @@
+{
+  "domainName": "Product Inventory Distribution",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42907",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133277",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111077",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39765",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213501",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213490",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213467",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213472",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106611",
+      "artifactName": "Mailing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104641",
+      "artifactName": "Distribution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110542",
+      "artifactName": "Provisioning"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104155",
+      "artifactName": "Oversight"
+    },
+    {
+      "artifactType": "Product Inventory Distribution SD Overview",
+      "bizzsemantic": "344826",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Inventory",
+      "bizzsemantic": "49453",
+      "artifactName": "Distribution Control"
+    },
+    {
+      "artifactType": "Product Inventory",
+      "bizzsemantic": "52977",
+      "artifactName": "Distribution BOM"
+    },
+    {
+      "artifactType": "Product Inventory",
+      "bizzsemantic": "",
+      "artifactName": "Distribution API"
+    }
+  ]
+}

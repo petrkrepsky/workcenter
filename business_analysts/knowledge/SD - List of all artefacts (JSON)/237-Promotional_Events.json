@@ -1,0 +1,110 @@
+{
+  "domainName": "Promotional Events",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43209",
+      "artifactName": "Promotional Events"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "28924",
+      "artifactName": "Promotional Event"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111275",
+      "artifactName": "Promotional Event"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "40251",
+      "artifactName": "Promotional Event"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216028",
+      "artifactName": "Promotional"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216046",
+      "artifactName": "Promotional Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216051",
+      "artifactName": "Promotional Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216060",
+      "artifactName": "Promotional Event"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105631",
+      "artifactName": "Participation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110601",
+      "artifactName": "Impact Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106799",
+      "artifactName": "Market Tracking"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Promotional Events SD Overview",
+      "bizzsemantic": "353709",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Promotional Events",
+      "bizzsemantic": "40252",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Promotional Events",
+      "bizzsemantic": "28925",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Promotional Events",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

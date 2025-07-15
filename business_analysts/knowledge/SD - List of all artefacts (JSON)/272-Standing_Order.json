@@ -1,0 +1,85 @@
+{
+  "domainName": "Standing Order",
+  "artifacts": [
+    {
+      "artifactType": "Standing Order SD Overview",
+      "bizzsemantic": "353920",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34129",
+      "artifactName": "Standing Order"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "42864",
+      "artifactName": "Standing Order"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36175",
+      "artifactName": "Standing Order Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215439",
+      "artifactName": "Standing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215430",
+      "artifactName": "Standing Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215427",
+      "artifactName": "Standing Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215433",
+      "artifactName": "Standing Order"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35264",
+      "artifactName": "Standing Order Fulfillment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107977",
+      "artifactName": "Standing Order Payment"
+    },
+    {
+      "artifactType": "Standing Order",
+      "bizzsemantic": "36176",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Standing Order",
+      "bizzsemantic": "42865",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Standing Order API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

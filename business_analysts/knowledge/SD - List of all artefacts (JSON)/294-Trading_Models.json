@@ -1,0 +1,50 @@
+{
+  "domainName": "Trading Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35328",
+      "artifactName": "Trading Models"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130532",
+      "artifactName": "Trading Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111158",
+      "artifactName": "Trading Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132361",
+      "artifactName": "Trading Model Specification"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218738",
+      "artifactName": "Trading Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218740",
+      "artifactName": "Trading Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218735",
+      "artifactName": "Trading Model"
+    }
+  ]
+}

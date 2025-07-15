@@ -1,0 +1,50 @@
+{
+  "domainName": "Corporate Relationship",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41082",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133221",
+      "artifactName": "Corporate Partner"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111249",
+      "artifactName": "Corporate Partner"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133027",
+      "artifactName": "Corporate Partner"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216960",
+      "artifactName": "Corporate Partner"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216973",
+      "artifactName": "Corporate Partner"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216977",
+      "artifactName": "Corporate Partner"
+    }
+  ]
+}

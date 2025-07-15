@@ -1,0 +1,105 @@
+{
+  "domainName": "Servicing Event History",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30330",
+      "artifactName": "Servicing Event"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34303",
+      "artifactName": "Servicing Event"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111257",
+      "artifactName": "Servicing Event Log_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "47595",
+      "artifactName": "Servicing Event Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "195945",
+      "artifactName": "Servicing Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "195942",
+      "artifactName": "Servicing Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "195924",
+      "artifactName": "Servicing Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "195954",
+      "artifactName": "Servicing Event"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106483",
+      "artifactName": "Servicing Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105365",
+      "artifactName": "Issue"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "98822",
+      "artifactName": "Session"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104941",
+      "artifactName": "Assignment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Servicing Event History SD Overview",
+      "bizzsemantic": "353678",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Servicing Event",
+      "bizzsemantic": "47596",
+      "artifactName": "History Control"
+    },
+    {
+      "artifactType": "Servicing Event",
+      "bizzsemantic": "34304",
+      "artifactName": "History BOM"
+    },
+    {
+      "artifactType": "Servicing Event",
+      "bizzsemantic": "",
+      "artifactName": "History API"
+    }
+  ]
+}

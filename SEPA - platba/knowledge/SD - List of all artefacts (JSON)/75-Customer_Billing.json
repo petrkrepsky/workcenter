@@ -1,0 +1,100 @@
+{
+  "domainName": "Customer Billing",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42033",
+      "artifactName": "Customer Billing"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "41908",
+      "artifactName": "Customer Billing"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "72378",
+      "artifactName": "Customer Billing"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "48060",
+      "artifactName": "Customer Billing Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "72341",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "72382",
+      "artifactName": "Customer Billing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "72356",
+      "artifactName": "Customer Billing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "72347",
+      "artifactName": "Customer Billing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63758",
+      "artifactName": "Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "72365",
+      "artifactName": "Tracking and Reminders"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "72371",
+      "artifactName": "Invoicing"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Customer Billing SD Overview",
+      "bizzsemantic": "346003",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Billing",
+      "bizzsemantic": "48061",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Customer Billing",
+      "bizzsemantic": "41909",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Customer Billing API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "domainName": "Archive Services",
+  "artifacts": [
+    {
+      "artifactType": "Archive Services SD Overview",
+      "bizzsemantic": "353939",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45697",
+      "artifactName": "Archive Services"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "76590",
+      "artifactName": "Archive"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "76600",
+      "artifactName": "Archive Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43327",
+      "artifactName": "Archive Operating Session"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "76610",
+      "artifactName": "Archive"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "76614",
+      "artifactName": "Archive Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "76598",
+      "artifactName": "Archive Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "76616",
+      "artifactName": "Archive Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37642",
+      "artifactName": "Document Retrieval"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46662",
+      "artifactName": "Document Maintenance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43256",
+      "artifactName": "Document Capture"
+    },
+    {
+      "artifactType": "Archive Services",
+      "bizzsemantic": "44717",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Archive Services",
+      "bizzsemantic": "53859",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Archive Services API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "domainName": "Collateral Asset Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37744",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "37203",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111211",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38668",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216586",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216580",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216584",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216578",
+      "artifactName": "Collateral Asset"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108863",
+      "artifactName": "Maintenance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107278",
+      "artifactName": "Valuation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "Collateral Asset Administration SD Overview",
+      "bizzsemantic": "353840",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Collateral Asset",
+      "bizzsemantic": "38669",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Collateral Asset",
+      "bizzsemantic": "37204",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "Collateral Asset",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

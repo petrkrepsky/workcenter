@@ -1,0 +1,95 @@
+{
+  "domainName": "Currency Exchange",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46441",
+      "artifactName": "Currency Exchange"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133405",
+      "artifactName": "Currency Exchange"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111349",
+      "artifactName": "Currency Exchange"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37464",
+      "artifactName": "Currency Exchange"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211260",
+      "artifactName": "Currency"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211267",
+      "artifactName": "Currency Exchange"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211274",
+      "artifactName": "Currency Exchange"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211278",
+      "artifactName": "Currency Exchange"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109746",
+      "artifactName": "Document Handling"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104279",
+      "artifactName": "FX Transaction Capture"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110672",
+      "artifactName": "FX Transaction Pricing"
+    },
+    {
+      "artifactType": "Currency Exchange SD Overview",
+      "bizzsemantic": "353830",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Currency Exchange",
+      "bizzsemantic": "49481",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Currency Exchange",
+      "bizzsemantic": "53535",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Currency Exchange",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

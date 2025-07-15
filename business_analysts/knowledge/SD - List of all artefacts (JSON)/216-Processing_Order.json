@@ -1,0 +1,95 @@
+{
+  "domainName": "Processing Order",
+  "artifacts": [
+    {
+      "artifactType": "Processing Order SD Overview",
+      "bizzsemantic": "351423",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Processing Order API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Processing Order",
+      "bizzsemantic": "36770",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Processing Order API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33179",
+      "artifactName": "Processing Order"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40274",
+      "artifactName": "Processing Order"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111099",
+      "artifactName": "Processing Order"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36769",
+      "artifactName": "Processing Order"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210176",
+      "artifactName": "Processing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210183",
+      "artifactName": "Processing Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210181",
+      "artifactName": "Processing Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210187",
+      "artifactName": "Processing Order"
+    },
+    {
+      "artifactType": "Processing Order",
+      "bizzsemantic": "36770",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Processing Order",
+      "bizzsemantic": "40275",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Processing Order API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

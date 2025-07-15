@@ -1,0 +1,115 @@
+{
+  "domainName": "Corporate Trust Services",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46859",
+      "artifactName": "Corporate Trust"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90553",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111445",
+      "artifactName": "Trust Services"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29048",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157260",
+      "artifactName": "Corporate Trust"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157290",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157282",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157295",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35438",
+      "artifactName": "Escrow Account Fulfillment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39689",
+      "artifactName": "Debt Trustee Fulfillment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46535",
+      "artifactName": "Corporate Debt Issue"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31516",
+      "artifactName": "Trust Estate, Inheritance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29298",
+      "artifactName": "Trust Tax and Expense"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39783",
+      "artifactName": "Trust Court Administration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37169",
+      "artifactName": "Trust Asset Maintenance"
+    },
+    {
+      "artifactType": "Corporate Trust Services SD Overview",
+      "bizzsemantic": "353794",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Corporate Trust",
+      "bizzsemantic": "34216",
+      "artifactName": "Services Control"
+    },
+    {
+      "artifactType": "Corporate Trust",
+      "bizzsemantic": "53648",
+      "artifactName": "Services BOM"
+    },
+    {
+      "artifactType": "Corporate Trust",
+      "bizzsemantic": "",
+      "artifactName": "Services API"
+    }
+  ]
+}

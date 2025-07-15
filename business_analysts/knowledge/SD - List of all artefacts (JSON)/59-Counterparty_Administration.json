@@ -1,0 +1,90 @@
+{
+  "domainName": "Counterparty Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48219",
+      "artifactName": "Counterparty"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132164",
+      "artifactName": "Counterparty"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111295",
+      "artifactName": "Counterparty"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42773",
+      "artifactName": "Counterparty Directory"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214531",
+      "artifactName": "Counterparty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214547",
+      "artifactName": "Counterparty Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214551",
+      "artifactName": "Counterparty Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214557",
+      "artifactName": "Counterparty Directory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45484",
+      "artifactName": "Counterparty Permitted"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42661",
+      "artifactName": "Counterparty Entity"
+    },
+    {
+      "artifactType": "Counterparty Administration SD Overview",
+      "bizzsemantic": "353801",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Counterparty",
+      "bizzsemantic": "43557",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Counterparty",
+      "bizzsemantic": "53416",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "Counterparty",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "domainName": "Card Authorization",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44578",
+      "artifactName": "Card Authorization"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "43061",
+      "artifactName": "Credit Card Authorization"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111059",
+      "artifactName": "Credit Card Authorization"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37477",
+      "artifactName": "Credit Card Authorization"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208125",
+      "artifactName": "Card"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208136",
+      "artifactName": "Credit Card Authorization"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208118",
+      "artifactName": "Credit Card Authorization"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208152",
+      "artifactName": "Credit Card Authorization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108439",
+      "artifactName": "Stand In"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107749",
+      "artifactName": "Fraud Check"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107158",
+      "artifactName": "Credit Check"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67613",
+      "artifactName": "Authentication"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104223",
+      "artifactName": "Device Check"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "208154",
+      "artifactName": "Negative File"
+    },
+    {
+      "artifactType": "Card Authorization SD Overview",
+      "bizzsemantic": "353639",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Card Authorization",
+      "bizzsemantic": "37478",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Card Authorization",
+      "bizzsemantic": "43062",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105291",
+      "artifactName": "Authorization"
+    },
+    {
+      "artifactType": "Card Authorization",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

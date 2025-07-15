@@ -1,0 +1,95 @@
+{
+  "domainName": "Cheque Lock Box",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45481",
+      "artifactName": "Cheque Lock Box"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133087",
+      "artifactName": "Lock Box"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110988",
+      "artifactName": "Lock Box Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32358",
+      "artifactName": "Lock Box Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "194380",
+      "artifactName": "Cheque Lock"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "194359",
+      "artifactName": "Lock Box"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "194377",
+      "artifactName": "Lock Box"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "194362",
+      "artifactName": "Lock Box"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41220",
+      "artifactName": "Lock Box Reporting and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33404",
+      "artifactName": "Check Clearing and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34532",
+      "artifactName": "Paper Check Processing"
+    },
+    {
+      "artifactType": "Cheque Lock Box SD Overview",
+      "bizzsemantic": "353907",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Cheque Lock Box",
+      "bizzsemantic": "32359",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Cheque Lock Box",
+      "bizzsemantic": "53714",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Cheque Lock Box API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

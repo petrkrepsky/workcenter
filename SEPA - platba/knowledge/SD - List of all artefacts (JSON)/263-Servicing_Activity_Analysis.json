@@ -1,0 +1,95 @@
+{
+  "domainName": "Servicing Activity Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46634",
+      "artifactName": "Servicing Activity"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "48379",
+      "artifactName": "Servicing Root Cause"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111443",
+      "artifactName": "Servicing Root Cause"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "47883",
+      "artifactName": "Servicing Root Cause"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212810",
+      "artifactName": "Servicing Activity"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212823",
+      "artifactName": "Servicing Root Cause"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212818",
+      "artifactName": "Servicing Root Cause"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212820",
+      "artifactName": "Servicing Root Cause"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110263",
+      "artifactName": "Root Cause Algorithm"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "212813",
+      "artifactName": "Servicing Activity Analysis"
+    },
+    {
+      "artifactType": "Servicing Activity Analysis SD Overview",
+      "bizzsemantic": "345794",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Servicing Activity",
+      "bizzsemantic": "47884",
+      "artifactName": "Analysis Control"
+    },
+    {
+      "artifactType": "Servicing Activity",
+      "bizzsemantic": "48380",
+      "artifactName": "Analysis BOM"
+    },
+    {
+      "artifactType": "Servicing Activity",
+      "bizzsemantic": "",
+      "artifactName": "Analysis API"
+    }
+  ]
+}

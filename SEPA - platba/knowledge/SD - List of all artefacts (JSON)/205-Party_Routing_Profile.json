@@ -1,0 +1,100 @@
+{
+  "domainName": "Party Routing Profile",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31558",
+      "artifactName": "Party Routing Profile"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33103",
+      "artifactName": "Party"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110962",
+      "artifactName": "Party Measurement_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38882",
+      "artifactName": "Party State"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58090",
+      "artifactName": "Monitor"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58175",
+      "artifactName": "State"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58201",
+      "artifactName": "Indicator"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218575",
+      "artifactName": "Party Routing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218605",
+      "artifactName": "Party State_Instantiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218584",
+      "artifactName": "Party State_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218582",
+      "artifactName": "Party State_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104234",
+      "artifactName": "Alert"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105216",
+      "artifactName": "Rating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105001",
+      "artifactName": "Status"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Party Routing Profile SD Overview",
+      "bizzsemantic": "353662",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Party Routing",
+      "bizzsemantic": "38883",
+      "artifactName": "Profile Control"
+    },
+    {
+      "artifactType": "Party Routing",
+      "bizzsemantic": "33104",
+      "artifactName": "Profile BOM"
+    },
+    {
+      "artifactType": "Party Routing Profile",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

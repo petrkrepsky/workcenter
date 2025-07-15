@@ -1,0 +1,105 @@
+{
+  "domainName": "Product Directory",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34953",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111061",
+      "artifactName": "Product Directory Entry_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39047",
+      "artifactName": "Product Directory Entry"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207852",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207838",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207835",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207815",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65882",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104179",
+      "artifactName": "Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104558",
+      "artifactName": "Sales and Marketing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104867",
+      "artifactName": "Operations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Product Directory SD Overview",
+      "bizzsemantic": "353982",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Directory",
+      "bizzsemantic": "39048",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Product Directory",
+      "bizzsemantic": "46199",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "46198",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "Product Directory API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

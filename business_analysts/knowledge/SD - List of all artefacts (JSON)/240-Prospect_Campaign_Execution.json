@@ -1,0 +1,100 @@
+{
+  "domainName": "Prospect Campaign Execution",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47050",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34096",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111345",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36839",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210592",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210599",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210578",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210603",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107655",
+      "artifactName": "Analysis Feedback"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106236",
+      "artifactName": "Execution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109971",
+      "artifactName": "Candidate Selection"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Prospect Campaign Execution SD Overview",
+      "bizzsemantic": "353798",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Prospect Campaign",
+      "bizzsemantic": "36840",
+      "artifactName": "Execution Control"
+    },
+    {
+      "artifactType": "Prospect Campaign",
+      "bizzsemantic": "34097",
+      "artifactName": "Execution BOM"
+    },
+    {
+      "artifactType": "Prospect Campaign",
+      "bizzsemantic": "",
+      "artifactName": "Execution API"
+    }
+  ]
+}

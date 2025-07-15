@@ -1,0 +1,105 @@
+{
+  "domainName": "Fraud Diagnosis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31990",
+      "artifactName": "Fraud Diagnosis"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "43996",
+      "artifactName": "Fraud Diagnosis"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111126",
+      "artifactName": "Fraud Diagnosis Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39818",
+      "artifactName": "Fraud Diagnosis Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216089",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216126",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216117",
+      "artifactName": "Fraud Diagnosis_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216120",
+      "artifactName": "Fraud Diagnosis_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105256",
+      "artifactName": "Analyst Review"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109782",
+      "artifactName": "Economic Model"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104542",
+      "artifactName": "Customer Behavior"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "210084",
+      "artifactName": "Fraud Models"
+    },
+    {
+      "artifactType": "Fraud Diagnosis SD Overview",
+      "bizzsemantic": "353871",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Fraud Diagnosis",
+      "bizzsemantic": "39819",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Fraud Diagnosis",
+      "bizzsemantic": "43997",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Fraud Diagnosis API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

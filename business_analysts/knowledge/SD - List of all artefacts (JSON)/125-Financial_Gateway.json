@@ -1,0 +1,95 @@
+{
+  "domainName": "Financial Gateway",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29241",
+      "artifactName": "Financial Gateway"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "43422",
+      "artifactName": "Financial Gateway"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111385",
+      "artifactName": "Financial Gateway"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39804",
+      "artifactName": "Financial Gateway"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215282",
+      "artifactName": "Financial"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215262",
+      "artifactName": "Financial Gateway"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215287",
+      "artifactName": "Financial Gateway"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215273",
+      "artifactName": "Financial Gateway"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84408",
+      "artifactName": "Outbound"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84396",
+      "artifactName": "Inbound"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Financial Gateway SD Overview",
+      "bizzsemantic": "353914",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Financial Gateway",
+      "bizzsemantic": "39805",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Financial Gateway",
+      "bizzsemantic": "43423",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Financial Gateway",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

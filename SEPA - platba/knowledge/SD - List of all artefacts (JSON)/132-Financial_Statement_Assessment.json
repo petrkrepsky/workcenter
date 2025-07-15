@@ -1,0 +1,100 @@
+{
+  "domainName": "Financial Statement Assessment",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43431",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90544",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111379",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "48438",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "164192",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "164205",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "164187",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "164194",
+      "artifactName": "Financial Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31864",
+      "artifactName": "Sensitivity Test"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42634",
+      "artifactName": "Risk Test"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39194",
+      "artifactName": "Liquidity and Cash Flow"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38939",
+      "artifactName": "Asset and Liability"
+    },
+    {
+      "artifactType": "Financial Statement Assessment SD Overview",
+      "bizzsemantic": "353769",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Financial Statement",
+      "bizzsemantic": "49720",
+      "artifactName": "Assessment Control"
+    },
+    {
+      "artifactType": "Financial Statement",
+      "bizzsemantic": "53562",
+      "artifactName": "Assessment BOM"
+    },
+    {
+      "artifactType": "Financial Statement",
+      "bizzsemantic": "",
+      "artifactName": "Assessment API"
+    }
+  ]
+}

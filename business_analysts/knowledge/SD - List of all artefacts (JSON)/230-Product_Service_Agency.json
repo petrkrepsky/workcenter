@@ -1,0 +1,95 @@
+{
+  "domainName": "Product Service Agency",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42294",
+      "artifactName": "Product Service"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "116306",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111225",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32865",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58124",
+      "artifactName": "Agree Terms"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58070",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58227",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "116318",
+      "artifactName": "Product Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "116316",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "116329",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "116335",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46650",
+      "artifactName": "Policy Term"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42416",
+      "artifactName": "Regulatory Term"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40081",
+      "artifactName": "Legal Term"
+    },
+    {
+      "artifactType": "Product Service Agency SD Overview",
+      "bizzsemantic": "353616",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Service",
+      "bizzsemantic": "47267",
+      "artifactName": "Agency Control"
+    },
+    {
+      "artifactType": "Product Service",
+      "bizzsemantic": "53106",
+      "artifactName": "Agency BOM"
+    },
+    {
+      "artifactType": "Product Service",
+      "bizzsemantic": "",
+      "artifactName": "Agency API"
+    }
+  ]
+}

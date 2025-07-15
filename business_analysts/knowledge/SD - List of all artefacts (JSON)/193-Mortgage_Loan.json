@@ -1,0 +1,150 @@
+{
+  "domainName": "Mortgage Loan",
+  "artifacts": [
+    {
+      "artifactType": "Mortgage Loan SD Overview",
+      "bizzsemantic": "343174",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31825",
+      "artifactName": "Mortgage Loan"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "73282",
+      "artifactName": "Mortgage Loan"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "73291",
+      "artifactName": "Mortgage Loan Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36142",
+      "artifactName": "Mortgage Loan Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "73264",
+      "artifactName": "Mortgage"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "73274",
+      "artifactName": "Mortgage Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "73257",
+      "artifactName": "Mortgage Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "73284",
+      "artifactName": "Mortgage Loan"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63764",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63795",
+      "artifactName": "Collateral"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63788",
+      "artifactName": "Financial Accounting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63755",
+      "artifactName": "Billing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63758",
+      "artifactName": "Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63738",
+      "artifactName": "Withdrawals"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63790",
+      "artifactName": "Deposits"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63801",
+      "artifactName": "Sweep"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63768",
+      "artifactName": "Lien"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "Mortgage Loan",
+      "bizzsemantic": "49563",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Mortgage Loan",
+      "bizzsemantic": "53037",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "Mortgage Loan API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

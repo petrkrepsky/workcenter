@@ -1,0 +1,130 @@
+{
+  "domainName": "ECM And DCM",
+  "artifacts": [
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "31858",
+      "artifactName": "ECM And DCM"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111011",
+      "artifactName": "ECM And DCM Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32512",
+      "artifactName": "ECM And DCM Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "154309",
+      "artifactName": "ECM And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "154318",
+      "artifactName": "ECM And DCM"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "154321",
+      "artifactName": "ECM And DCM"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "154335",
+      "artifactName": "ECM And DCM"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110280",
+      "artifactName": "Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109798",
+      "artifactName": "Prospectus"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105762",
+      "artifactName": "Instrument Definition"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "81442",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "ECM And DCM SD Overview",
+      "bizzsemantic": "353949",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ECM And DCM",
+      "bizzsemantic": "32513",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "ECM And DCM",
+      "bizzsemantic": "31859",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40135",
+      "artifactName": "ECM And DCM"
+    },
+    {
+      "artifactType": "ECM And DCM API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

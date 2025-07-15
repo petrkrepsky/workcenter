@@ -1,0 +1,105 @@
+{
+  "domainName": "Trader Position Operations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34514",
+      "artifactName": "Trader Position"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133059",
+      "artifactName": "Traded Position"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111101",
+      "artifactName": "Traded Position"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36563",
+      "artifactName": "Traded Position Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218947",
+      "artifactName": "Trader Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218965",
+      "artifactName": "Traded Position Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218972",
+      "artifactName": "Traded Position Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218970",
+      "artifactName": "Traded Position Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46276",
+      "artifactName": "Trade Deal Blotter Function"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48808",
+      "artifactName": "Trade Capture and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "47762",
+      "artifactName": "Trade Quote and Pricing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41374",
+      "artifactName": "Trader Security Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45163",
+      "artifactName": "Trader Trading"
+    },
+    {
+      "artifactType": "Trader Position Operations SD Overview",
+      "bizzsemantic": "353636",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Trader Position",
+      "bizzsemantic": "49809",
+      "artifactName": "Operations Control"
+    },
+    {
+      "artifactType": "Trader Position",
+      "bizzsemantic": "53177",
+      "artifactName": "Operations BOM"
+    },
+    {
+      "artifactType": "Trader Position",
+      "bizzsemantic": "",
+      "artifactName": "Operations API"
+    }
+  ]
+}

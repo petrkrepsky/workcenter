@@ -1,0 +1,85 @@
+{
+  "domainName": "Trade and Price Reporting",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44349",
+      "artifactName": "Trade and Price"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132946",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111502",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30579",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211375",
+      "artifactName": "Trade and Price"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211377",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211384",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211387",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35158",
+      "artifactName": "Transaction Reporting"
+    },
+    {
+      "artifactType": "Trade and Price Reporting SD Overview",
+      "bizzsemantic": "353804",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Trade and Price",
+      "bizzsemantic": "30580",
+      "artifactName": "Reporting Control"
+    },
+    {
+      "artifactType": "Trade and Price",
+      "bizzsemantic": "53004",
+      "artifactName": "Reporting BOM"
+    },
+    {
+      "artifactType": "Trade and Price",
+      "bizzsemantic": "",
+      "artifactName": "Reporting API"
+    }
+  ]
+}

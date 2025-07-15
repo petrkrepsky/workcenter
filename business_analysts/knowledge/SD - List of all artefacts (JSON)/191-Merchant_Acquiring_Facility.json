@@ -1,0 +1,135 @@
+{
+  "domainName": "Merchant Acquiring Facility",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42530",
+      "artifactName": "Merchant Acquiring"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "28739",
+      "artifactName": "Merchant Acquiring"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111472",
+      "artifactName": "Merchant Arrangement_"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209456",
+      "artifactName": "Merchant Acquiring"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209438",
+      "artifactName": "Arrangement_Instantiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209435",
+      "artifactName": "Arrangement_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "181947",
+      "artifactName": "Arrangement_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109096",
+      "artifactName": "Settlement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106405",
+      "artifactName": "Chargeback"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107496",
+      "artifactName": "Clearing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109949",
+      "artifactName": "Merchant Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106962",
+      "artifactName": "Participant Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108063",
+      "artifactName": "Participant Account"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Merchant Acquiring Facility SD Overview",
+      "bizzsemantic": "353619",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Merchant Acquiring",
+      "bizzsemantic": "45391",
+      "artifactName": "Facility Control"
+    },
+    {
+      "artifactType": "Merchant Acquiring",
+      "bizzsemantic": "28740",
+      "artifactName": "Facility BOM"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45390",
+      "artifactName": "Merchant Acquiring Facility"
+    },
+    {
+      "artifactType": "Merchant Acquiring",
+      "bizzsemantic": "",
+      "artifactName": "Facility API"
+    }
+  ]
+}

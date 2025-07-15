@@ -1,0 +1,50 @@
+{
+  "domainName": "Financial Control",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35553",
+      "artifactName": "Financial Control"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132997",
+      "artifactName": "Financial Control"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111457",
+      "artifactName": "Financial Control"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131570",
+      "artifactName": "Financial Control"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151723",
+      "artifactName": "Financial Control"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151725",
+      "artifactName": "Financial Control"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151716",
+      "artifactName": "Financial Control"
+    }
+  ]
+}

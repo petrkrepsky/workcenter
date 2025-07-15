@@ -1,0 +1,50 @@
+{
+  "domainName": "Bank Portfolio Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47735",
+      "artifactName": "Bank Portfolio"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32421",
+      "artifactName": "Asset And Liability Portfolio"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "58784",
+      "artifactName": "Asset And Liability Portfolio"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "58775",
+      "artifactName": "Asset And Liability Portfolio"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "58786",
+      "artifactName": "Asset And Liability Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "58768",
+      "artifactName": "Asset And Liability Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "58791",
+      "artifactName": "Asset And Liability Portfolio"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "domainName": "Limit And Exposure Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46631",
+      "artifactName": "Limit and Exposure"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132951",
+      "artifactName": "Limit And Exposure"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111089",
+      "artifactName": "Limit And Exposure"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132955",
+      "artifactName": "Limit And Exposure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213007",
+      "artifactName": "Limit And Exposure"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213013",
+      "artifactName": "Limit And Exposure"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213005",
+      "artifactName": "Limit And Exposure"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "domainName": "Legal Compliance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45783",
+      "artifactName": "Legal Compliance"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34090",
+      "artifactName": "Legal Compliance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110998",
+      "artifactName": "Legal Compliance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34696",
+      "artifactName": "Legal Compliance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170335",
+      "artifactName": "Legal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170344",
+      "artifactName": "Legal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170347",
+      "artifactName": "Legal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170357",
+      "artifactName": "Legal"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67872",
+      "artifactName": "Legal Terms and"
+    },
+    {
+      "artifactType": "Legal Compliance SD Overview",
+      "bizzsemantic": "345587",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Legal Compliance",
+      "bizzsemantic": "34697",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Legal Compliance",
+      "bizzsemantic": "34091",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Legal Compliance API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

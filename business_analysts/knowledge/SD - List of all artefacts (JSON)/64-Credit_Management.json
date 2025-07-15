@@ -1,0 +1,100 @@
+{
+  "domainName": "Credit Management",
+  "artifacts": [
+    {
+      "artifactType": "Credit Management SD Overview",
+      "bizzsemantic": "353695",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43774",
+      "artifactName": "Credit Management"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "41971",
+      "artifactName": "Credit Pricing"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111351",
+      "artifactName": "Credit Position"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115584",
+      "artifactName": "Credit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115559",
+      "artifactName": "Credit Pricing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115579",
+      "artifactName": "Credit Pricing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "115572",
+      "artifactName": "Credit Pricing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "115566",
+      "artifactName": "Financial Statements"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "Credit Management",
+      "bizzsemantic": "35828",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Credit Management",
+      "bizzsemantic": "41972",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35827",
+      "artifactName": "Credit Pricing"
+    },
+    {
+      "artifactType": "Credit Management",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

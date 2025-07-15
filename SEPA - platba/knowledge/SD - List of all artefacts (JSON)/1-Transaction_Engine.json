@@ -1,0 +1,90 @@
+{
+  "domainName": "Transaction Engine",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41033",
+      "artifactName": "Transaction Engine"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "48008",
+      "artifactName": "Transaction Schedule"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111425",
+      "artifactName": "Transaction Schedule"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36036",
+      "artifactName": "Transaction Schedule"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216486",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216510",
+      "artifactName": "Transaction Schedule"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216504",
+      "artifactName": "Transaction Schedule"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216506",
+      "artifactName": "Transaction Schedule"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "Transaction Engine SD Overview",
+      "bizzsemantic": "353850",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Transaction Engine",
+      "bizzsemantic": "36037",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Transaction Engine",
+      "bizzsemantic": "48009",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Transaction Engine",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}
