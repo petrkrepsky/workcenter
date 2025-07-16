@@ -1,0 +1,100 @@
+{
+  "domainName": "Bank Drafts",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45168",
+      "artifactName": "Bank Drafts"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133127",
+      "artifactName": "Bearer Document"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111183",
+      "artifactName": "Bearer Document"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36892",
+      "artifactName": "Bearer Document"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211157",
+      "artifactName": "Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211130",
+      "artifactName": "Bearer Document"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211145",
+      "artifactName": "Bearer Document"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211159",
+      "artifactName": "Bearer Document"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43507",
+      "artifactName": "Bank Guaranteed Payment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37443",
+      "artifactName": "Bearer Document Creation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48411",
+      "artifactName": "Customer Payment Task"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32391",
+      "artifactName": "Bank Guaranteed Payment"
+    },
+    {
+      "artifactType": "Bank Drafts SD Overview",
+      "bizzsemantic": "353730",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Bank Drafts Control",
+      "bizzsemantic": "49904",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Bank Drafts BOM",
+      "bizzsemantic": "53439",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Bank Drafts API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

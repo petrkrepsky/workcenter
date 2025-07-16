@@ -1,0 +1,100 @@
+{
+  "domainName": "Syndicated Loan",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31921",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132959",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111111",
+      "artifactName": "Syndicated Loan Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39118",
+      "artifactName": "Syndicated Loan Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216673",
+      "artifactName": "Syndicated"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216666",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216643",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216652",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109127",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104577",
+      "artifactName": "Origination"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109708",
+      "artifactName": "Syndicate Assembly"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108086",
+      "artifactName": "Structuring"
+    },
+    {
+      "artifactType": "Syndicated Loan SD Overview",
+      "bizzsemantic": "353862",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Syndicated Loan",
+      "bizzsemantic": "49423",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Syndicated Loan",
+      "bizzsemantic": "53653",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Syndicated Loan API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

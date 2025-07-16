@@ -1,0 +1,110 @@
+{
+  "domainName": "ACH Operations",
+  "artifacts": [
+    {
+      "artifactType": "ACH Operations SD Overview",
+      "bizzsemantic": "353975",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36614",
+      "artifactName": "ACH Operations"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "42084",
+      "artifactName": "ACH Fulfillment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "77979",
+      "artifactName": "ACH Fulfillment Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42117",
+      "artifactName": "ACH Fulfillment Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "78007",
+      "artifactName": "ACH"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "78002",
+      "artifactName": "ACH Operations Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77996",
+      "artifactName": "ACH Operations Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77975",
+      "artifactName": "ACH Operations Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "78019",
+      "artifactName": "Warehousing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "78025",
+      "artifactName": "Inbound ACH"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "78023",
+      "artifactName": "Reconciliation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "77990",
+      "artifactName": "Clearing and Settlement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "77994",
+      "artifactName": "Outbound ACH"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ACH Operations",
+      "bizzsemantic": "42118",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "ACH Operations",
+      "bizzsemantic": "42085",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "ACH Operations API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

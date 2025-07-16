@@ -1,0 +1,105 @@
+{
+  "domainName": "Market Information Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33336",
+      "artifactName": "Market Information"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29372",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111079",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37910",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137463",
+      "artifactName": "Market Information"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137448",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137445",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137429",
+      "artifactName": "Financial Market"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107781",
+      "artifactName": "Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105398",
+      "artifactName": "Improvement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108524",
+      "artifactName": "Consolidation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "81442",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "Market Information Management SD Overview",
+      "bizzsemantic": "353622",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Market Information",
+      "bizzsemantic": "37911",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Market Information",
+      "bizzsemantic": "29373",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "Market Information",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

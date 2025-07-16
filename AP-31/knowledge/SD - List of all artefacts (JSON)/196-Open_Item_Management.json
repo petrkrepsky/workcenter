@@ -1,0 +1,95 @@
+{
+  "domainName": "Open Item Management",
+  "artifacts": [
+    {
+      "artifactType": "Open Item Management SD Overview",
+      "bizzsemantic": "353803",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31686",
+      "artifactName": "Open Item"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "45429",
+      "artifactName": "Open Item"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111488",
+      "artifactName": "Open Item Procedure_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32090",
+      "artifactName": "Open Item Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210451",
+      "artifactName": "Open Item"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210441",
+      "artifactName": "Open Item"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210463",
+      "artifactName": "Open Item"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210468",
+      "artifactName": "Open Item"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108347",
+      "artifactName": "Tracking"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105417",
+      "artifactName": "Repayment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Open Item",
+      "bizzsemantic": "32091",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Open Item",
+      "bizzsemantic": "45430",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "Open Item",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

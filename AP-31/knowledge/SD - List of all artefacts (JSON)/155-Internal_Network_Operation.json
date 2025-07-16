@@ -1,0 +1,50 @@
+{
+  "domainName": "Internal Network Operation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33591",
+      "artifactName": "Internal Network"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133199",
+      "artifactName": "Internal Network"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111377",
+      "artifactName": "Internal Network Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133167",
+      "artifactName": "Internal Network Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212231",
+      "artifactName": "Internal Network Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212217",
+      "artifactName": "Internal Network Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212221",
+      "artifactName": "Internal Network Operating"
+    }
+  ]
+}

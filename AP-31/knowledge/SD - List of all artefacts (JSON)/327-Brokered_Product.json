@@ -1,0 +1,85 @@
+{
+  "domainName": "Brokered Product",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42491",
+      "artifactName": "Brokered Product"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130642",
+      "artifactName": "Brokered Product"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111153",
+      "artifactName": "Brokered Product Facility_"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215558",
+      "artifactName": "Brokered"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215560",
+      "artifactName": "Brokered Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215562",
+      "artifactName": "Brokered Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215539",
+      "artifactName": "Brokered Product"
+    },
+    {
+      "artifactType": "Brokered Product SD Overview",
+      "bizzsemantic": "353930",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Brokered Product",
+      "bizzsemantic": "31123",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Brokered Product",
+      "bizzsemantic": "53841",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31122",
+      "artifactName": "Brokered Product Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41323",
+      "artifactName": "Service Access"
+    },
+    {
+      "artifactType": "Brokered Product API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

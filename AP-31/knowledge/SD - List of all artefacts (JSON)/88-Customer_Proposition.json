@@ -1,0 +1,90 @@
+{
+  "domainName": "Customer Proposition",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44191",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130410",
+      "artifactName": "Customer Proposition"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111261",
+      "artifactName": "Customer Proposition"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58124",
+      "artifactName": "Agree Terms"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58070",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58227",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207933",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207941",
+      "artifactName": "Customer Proposition"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207951",
+      "artifactName": "Customer Proposition"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207961",
+      "artifactName": "Customer Proposition"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35081",
+      "artifactName": "Customer Defined Product"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48284",
+      "artifactName": "Bank Defined Product and"
+    },
+    {
+      "artifactType": "Customer Proposition SD Overview",
+      "bizzsemantic": "351231",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "43647",
+      "artifactName": "Proposition Control"
+    },
+    {
+      "artifactType": "Customer",
+      "bizzsemantic": "53931",
+      "artifactName": "Proposition BOM"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35166",
+      "artifactName": "Customer Proposition"
+    },
+    {
+      "artifactType": "Customer Proposition",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

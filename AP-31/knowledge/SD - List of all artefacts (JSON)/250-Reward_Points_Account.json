@@ -1,0 +1,90 @@
+{
+  "domainName": "Reward Points Account",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41999",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "55840",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111411",
+      "artifactName": "Reward Points Log_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30339",
+      "artifactName": "Reward Points Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208033",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208028",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208026",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208048",
+      "artifactName": "Reward Points"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106908",
+      "artifactName": "Expiration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106491",
+      "artifactName": "Capture"
+    },
+    {
+      "artifactType": "Reward Points Account SD Overview",
+      "bizzsemantic": "353634",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Reward Points",
+      "bizzsemantic": "49502",
+      "artifactName": "Account Control"
+    },
+    {
+      "artifactType": "Reward Points",
+      "bizzsemantic": "53502",
+      "artifactName": "Account BOM"
+    },
+    {
+      "artifactType": "Reward Points",
+      "bizzsemantic": "",
+      "artifactName": "Account API"
+    }
+  ]
+}

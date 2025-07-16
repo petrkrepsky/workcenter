@@ -1,0 +1,100 @@
+{
+  "domainName": "Product Portfolio",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36619",
+      "artifactName": "Product Portfolio"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29069",
+      "artifactName": "Product Portfolio"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111341",
+      "artifactName": "Product Portfolio Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30396",
+      "artifactName": "Product Portfolio Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146880",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146875",
+      "artifactName": "Product Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146891",
+      "artifactName": "Product Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146867",
+      "artifactName": "Product Portfolio"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106833",
+      "artifactName": "Performance Analysis"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "81442",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "Product Portfolio SD Overview",
+      "bizzsemantic": "353790",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Portfolio",
+      "bizzsemantic": "30397",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Product Portfolio",
+      "bizzsemantic": "29070",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Product Portfolio API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

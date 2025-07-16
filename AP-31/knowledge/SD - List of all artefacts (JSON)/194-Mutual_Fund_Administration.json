@@ -1,0 +1,120 @@
+{
+  "domainName": "Mutual Fund Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46265",
+      "artifactName": "Mutual Fund"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132371",
+      "artifactName": "Mutual Fund"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111172",
+      "artifactName": "Mutual Fund Administrative"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30009",
+      "artifactName": "Mutual Fund Administrative"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208206",
+      "artifactName": "Mutual Fund"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208232",
+      "artifactName": "Mutual Fund Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208216",
+      "artifactName": "Mutual Fund Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208221",
+      "artifactName": "Mutual Fund Administrative"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31199",
+      "artifactName": "Fund Management Fee"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45777",
+      "artifactName": "Fund Investor, Middle and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42764",
+      "artifactName": "Fund Inflows and Outflow"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30294",
+      "artifactName": "Fund Development Routine"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48169",
+      "artifactName": "Fund Financial Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46163",
+      "artifactName": "Fund Enrolment Routine"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36448",
+      "artifactName": "Fund Tax Administration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36288",
+      "artifactName": "Fund Accounting Routine"
+    },
+    {
+      "artifactType": "Mutual Fund Administration SD Overview",
+      "bizzsemantic": "353722",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Mutual Fund",
+      "bizzsemantic": "45942",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Mutual Fund",
+      "bizzsemantic": "53828",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "Mutual Fund",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

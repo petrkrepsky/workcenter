@@ -1,0 +1,90 @@
+{
+  "domainName": "Correspondent Bank Directory",
+  "artifacts": [
+    {
+      "artifactType": "Correspondent Bank Directory SD Overview",
+      "bizzsemantic": "343867",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48674",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30267",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "103293",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32433",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103314",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103312",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103299",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103325",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "Correspondent",
+      "bizzsemantic": "32434",
+      "artifactName": "Bank Directory"
+    },
+    {
+      "artifactType": "Correspondent",
+      "bizzsemantic": "30268",
+      "artifactName": "Bank Directory"
+    },
+    {
+      "artifactType": "Correspondent Bank",
+      "bizzsemantic": "",
+      "artifactName": "Directory API"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "domainName": "Commissions",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43291",
+      "artifactName": "Commissions"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130519",
+      "artifactName": "Commission"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111069",
+      "artifactName": "Commission Transaction_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29768",
+      "artifactName": "Commission Transaction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217887",
+      "artifactName": "Commissions_SD_Operati"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217870",
+      "artifactName": "Commission"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217880",
+      "artifactName": "Commission"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217898",
+      "artifactName": "Commission"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105111",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108817",
+      "artifactName": "Calculation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109052",
+      "artifactName": "Check"
+    },
+    {
+      "artifactType": "Commissions SD Overview",
+      "bizzsemantic": "353766",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Commissions",
+      "bizzsemantic": "49551",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Commissions BOM",
+      "bizzsemantic": "53246",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Commissions API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

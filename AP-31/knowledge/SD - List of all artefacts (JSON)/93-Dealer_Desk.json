@@ -1,0 +1,95 @@
+{
+  "domainName": "Dealer Desk",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42378",
+      "artifactName": "Dealer Desk"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90581",
+      "artifactName": "Dealer Desk"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110968",
+      "artifactName": "Trading Desk Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43309",
+      "artifactName": "Dealer Desk Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146400",
+      "artifactName": "Dealer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146402",
+      "artifactName": "Dealer Desk Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146412",
+      "artifactName": "Dealer Desk Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "146422",
+      "artifactName": "Dealer Desk Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35095",
+      "artifactName": "Dealer Desk Consolidated"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42144",
+      "artifactName": "Dealer Desk Trading"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43777",
+      "artifactName": "Information Feed"
+    },
+    {
+      "artifactType": "Dealer Desk SD Overview",
+      "bizzsemantic": "353640",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Dealer Desk Control",
+      "bizzsemantic": "49933",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Dealer Desk BOM",
+      "bizzsemantic": "53570",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Dealer Desk API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

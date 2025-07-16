@@ -1,0 +1,80 @@
+{
+  "domainName": "Document Services",
+  "artifacts": [
+    {
+      "artifactType": "Document Services SD Overview",
+      "bizzsemantic": "353726",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30399",
+      "artifactName": "Document Services"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "42704",
+      "artifactName": "Document Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "40442",
+      "artifactName": "Document Service"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80107",
+      "artifactName": "Document"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80077",
+      "artifactName": "Document Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80089",
+      "artifactName": "Document Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80100",
+      "artifactName": "Document Service"
+    },
+    {
+      "artifactType": "Document Services",
+      "bizzsemantic": "47861",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Document Services",
+      "bizzsemantic": "42705",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34786",
+      "artifactName": "Document Template"
+    },
+    {
+      "artifactType": "Document Services",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

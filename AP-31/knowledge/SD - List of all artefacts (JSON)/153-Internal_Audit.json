@@ -1,0 +1,85 @@
+{
+  "domainName": "Internal Audit",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34493",
+      "artifactName": "Internal Audit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "101162",
+      "artifactName": "Internal Audit"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "101139",
+      "artifactName": "Internal Audit"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30719",
+      "artifactName": "Internal Audit Assessment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "101128",
+      "artifactName": "Internal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "101144",
+      "artifactName": "Internal Audit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "101154",
+      "artifactName": "Internal Audit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "101156",
+      "artifactName": "Internal Audit"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "101126",
+      "artifactName": "Audit"
+    },
+    {
+      "artifactType": "Internal Audit SD Overview",
+      "bizzsemantic": "353628",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Internal Audit",
+      "bizzsemantic": "49283",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Internal Audit BOM",
+      "bizzsemantic": "53483",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Internal Audit API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

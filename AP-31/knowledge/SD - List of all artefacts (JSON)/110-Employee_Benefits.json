@@ -1,0 +1,50 @@
+{
+  "domainName": "Employee Benefits",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29196",
+      "artifactName": "Employee Benefits"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133239",
+      "artifactName": "Employee Benefits"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111399",
+      "artifactName": "Employee Benefits"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133343",
+      "artifactName": "Employee Benefits"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210338",
+      "artifactName": "Employee Benefits"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210330",
+      "artifactName": "Employee Benefits"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210323",
+      "artifactName": "Employee Benefits"
+    }
+  ]
+}

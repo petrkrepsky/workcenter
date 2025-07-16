@@ -1,0 +1,85 @@
+{
+  "domainName": "Direct Debits Service",
+  "artifacts": [
+    {
+      "artifactType": "Direct Debits Service SD Overview",
+      "bizzsemantic": "350501",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Direct Debits Service",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38821",
+      "artifactName": "Direct Debits"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38717",
+      "artifactName": "Direct Debits Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111496",
+      "artifactName": "Direct Debits Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38950",
+      "artifactName": "Direct Debits Service"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "203739",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "203748",
+      "artifactName": "Direct Debit Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "203744",
+      "artifactName": "Direct Debit Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "203746",
+      "artifactName": "Direct Debit Service"
+    },
+    {
+      "artifactType": "Direct Debits",
+      "bizzsemantic": "38951",
+      "artifactName": "Service Control"
+    },
+    {
+      "artifactType": "Direct Debits",
+      "bizzsemantic": "38718",
+      "artifactName": "Service BOM"
+    },
+    {
+      "artifactType": "Direct Debits Service",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

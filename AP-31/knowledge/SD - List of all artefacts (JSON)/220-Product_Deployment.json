@@ -1,0 +1,125 @@
+{
+  "domainName": "Product Deployment",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40177",
+      "artifactName": "Product Deployment"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40915",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111465",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46393",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58047",
+      "artifactName": "Develop"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58162",
+      "artifactName": "Development"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58205",
+      "artifactName": "Deliverable"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210691",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210651",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210664",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210676",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110401",
+      "artifactName": "Production Support"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65882",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104179",
+      "artifactName": "Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104558",
+      "artifactName": "Sales and Marketing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104905",
+      "artifactName": "HR Operations"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108201",
+      "artifactName": "IT Operations"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108047",
+      "artifactName": "Systems"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "Product Deployment SD Overview",
+      "bizzsemantic": "353688",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Deployment",
+      "bizzsemantic": "46394",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Product Deployment",
+      "bizzsemantic": "40916",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Product Deployment",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

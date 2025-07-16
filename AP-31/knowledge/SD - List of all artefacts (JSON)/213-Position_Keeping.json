@@ -1,0 +1,90 @@
+{
+  "domainName": "Position Keeping",
+  "artifacts": [
+    {
+      "artifactType": "Position Keeping SD Overview",
+      "bizzsemantic": "353715",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30315",
+      "artifactName": "Position Keeping"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32645",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111063",
+      "artifactName": "Financial Position Log_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38703",
+      "artifactName": "Financial Position Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212424",
+      "artifactName": "Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212413",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212418",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212432",
+      "artifactName": "Financial Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106136",
+      "artifactName": "Financial Transaction"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Position Keeping",
+      "bizzsemantic": "38704",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Position Keeping",
+      "bizzsemantic": "48677",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Position Keeping API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

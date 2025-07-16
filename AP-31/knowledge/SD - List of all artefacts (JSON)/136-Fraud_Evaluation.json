@@ -1,0 +1,95 @@
+{
+  "domainName": "Fraud Evaluation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39639",
+      "artifactName": "Fraud Evaluation"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32877",
+      "artifactName": "Fraud Evaluation"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111437",
+      "artifactName": "Fraud Evaluation"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45594",
+      "artifactName": "Fraud Evaluation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211428",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211453",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211443",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211418",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105943",
+      "artifactName": "Models"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109728",
+      "artifactName": "Rule Sets and Decision"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "210084",
+      "artifactName": "Fraud Models"
+    },
+    {
+      "artifactType": "Fraud Evaluation SD Overview",
+      "bizzsemantic": "353826",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Fraud Evaluation",
+      "bizzsemantic": "45595",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Fraud Evaluation",
+      "bizzsemantic": "32878",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Fraud Evaluation API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

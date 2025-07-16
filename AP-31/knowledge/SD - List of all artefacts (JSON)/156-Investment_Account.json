@@ -1,0 +1,110 @@
+{
+  "domainName": "Investment Account",
+  "artifacts": [
+    {
+      "artifactType": "Investment Account SD Overview",
+      "bizzsemantic": "353881",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41278",
+      "artifactName": "Investment Account"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30632",
+      "artifactName": "Investment Account"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46079",
+      "artifactName": "Investment Account Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217222",
+      "artifactName": "Investment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217220",
+      "artifactName": "Investment Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217187",
+      "artifactName": "Investment Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217218",
+      "artifactName": "Investment Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110305",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91578",
+      "artifactName": "Deposits and Withdrawals"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Investment Account",
+      "bizzsemantic": "46080",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Investment Account",
+      "bizzsemantic": "30633",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Investment Account",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

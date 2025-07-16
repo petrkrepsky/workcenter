@@ -1,0 +1,95 @@
+{
+  "domainName": "Program Trading",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31692",
+      "artifactName": "Program Trading"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132240",
+      "artifactName": "Program Trading"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111357",
+      "artifactName": "Program Trading Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36071",
+      "artifactName": "Program Trading Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218446",
+      "artifactName": "Program"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218439",
+      "artifactName": "Program Trading Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218441",
+      "artifactName": "Program Trading Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218426",
+      "artifactName": "Program Trading Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32005",
+      "artifactName": "Program Trade Execution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40939",
+      "artifactName": "Program Traded Portfolio"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "48312",
+      "artifactName": "Program Traded Portfolio"
+    },
+    {
+      "artifactType": "Program Trading SD Overview",
+      "bizzsemantic": "347249",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Program Trading",
+      "bizzsemantic": "42899",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Program Trading",
+      "bizzsemantic": "53373",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Program Trading API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

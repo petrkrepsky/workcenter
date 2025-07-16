@@ -1,0 +1,95 @@
+{
+  "domainName": "Suitability Checking",
+  "artifacts": [
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "31275",
+      "artifactName": "Suitability"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "103450",
+      "artifactName": "Suitability Assessment_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29517",
+      "artifactName": "Suitability Assessment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103479",
+      "artifactName": "Suitability"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103470",
+      "artifactName": "Suitability_Instantiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103458",
+      "artifactName": "Suitability_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "103474",
+      "artifactName": "Suitability_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "Suitability Checking SD Overview",
+      "bizzsemantic": "345246",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Suitability Checking",
+      "bizzsemantic": "29518",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Suitability Checking",
+      "bizzsemantic": "31276",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38647",
+      "artifactName": "Suitability Checking"
+    },
+    {
+      "artifactType": "Suitability Checking",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

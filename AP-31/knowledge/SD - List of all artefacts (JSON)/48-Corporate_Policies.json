@@ -1,0 +1,50 @@
+{
+  "domainName": "Corporate Policies",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46480",
+      "artifactName": "Corporate Policies"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130382",
+      "artifactName": "Corporate Policy"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111177",
+      "artifactName": "Corporate Policy"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133286",
+      "artifactName": "Corporate Policy"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156320",
+      "artifactName": "Corporate Policy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156311",
+      "artifactName": "Corporate Policy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156329",
+      "artifactName": "Corporate Policy"
+    }
+  ]
+}

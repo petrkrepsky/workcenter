@@ -1,0 +1,100 @@
+{
+  "domainName": "Contact Center Operations",
+  "artifacts": [
+    {
+      "artifactType": "Contact Center Operations SD Overview",
+      "bizzsemantic": "353908",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43894",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32319",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111168",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37607",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212738",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212761",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212765",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212744",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106269",
+      "artifactName": "Peak Load"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104941",
+      "artifactName": "Assignment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64532",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "Contact Center",
+      "bizzsemantic": "37608",
+      "artifactName": "Operations Control"
+    },
+    {
+      "artifactType": "Contact Center",
+      "bizzsemantic": "32320",
+      "artifactName": "Operations BOM"
+    },
+    {
+      "artifactType": "Contact Center",
+      "bizzsemantic": "",
+      "artifactName": "Operations API"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domainName": "Project Finance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43744",
+      "artifactName": "Project Finance"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132210",
+      "artifactName": "Project Finance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111025",
+      "artifactName": "Project Finance Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37587",
+      "artifactName": "Project Finance Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207860",
+      "artifactName": "Project"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207877",
+      "artifactName": "Project Finance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207864",
+      "artifactName": "Project Finance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207885",
+      "artifactName": "Project Finance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38876",
+      "artifactName": "Project Finance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33830",
+      "artifactName": "Project Finance Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41990",
+      "artifactName": "Project Finance SPV"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38794",
+      "artifactName": "Project Finance"
+    },
+    {
+      "artifactType": "Project Finance SD Overview",
+      "bizzsemantic": "353964",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Project Finance",
+      "bizzsemantic": "37588",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Project Finance",
+      "bizzsemantic": "53831",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Project Finance API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

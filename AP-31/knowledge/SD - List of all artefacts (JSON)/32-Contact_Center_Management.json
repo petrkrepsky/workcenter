@@ -1,0 +1,95 @@
+{
+  "domainName": "Contact Center Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40392",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "68275",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38120",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "68306",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "68265",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "68272",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "68288",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "68267",
+      "artifactName": "Performance"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64532",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "Contact Center Management SD Overview",
+      "bizzsemantic": "353810",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Contact Center",
+      "bizzsemantic": "38121",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Contact Center",
+      "bizzsemantic": "47491",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32319",
+      "artifactName": "Contact Center"
+    },
+    {
+      "artifactType": "Contact Center",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "domainName": "Notional Pooling",
+  "artifacts": [
+    {
+      "artifactType": "Notional Pooling SD Overview",
+      "bizzsemantic": "353954",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48546",
+      "artifactName": "Notional Pooling"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38996",
+      "artifactName": "Notional Pooling"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35342",
+      "artifactName": "Notional Pooling Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215736",
+      "artifactName": "Notional"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215749",
+      "artifactName": "Notional Pooling"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215757",
+      "artifactName": "Notional Pooling"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215759",
+      "artifactName": "Notional Pooling"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40022",
+      "artifactName": "Notional Account Interest"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34407",
+      "artifactName": "Notional Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37809",
+      "artifactName": "Notional Account"
+    },
+    {
+      "artifactType": "Notional Pooling",
+      "bizzsemantic": "35343",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Notional Pooling",
+      "bizzsemantic": "38997",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Notional Pooling API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

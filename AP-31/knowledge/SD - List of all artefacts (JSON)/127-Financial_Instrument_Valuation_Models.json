@@ -1,0 +1,50 @@
+{
+  "domainName": "Financial Instrument Valuation Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33097",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130832",
+      "artifactName": "Market Asset Valuation"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111267",
+      "artifactName": "Market Asset Valuation"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130624",
+      "artifactName": "Market Asset Valuation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208679",
+      "artifactName": "Market Asset Valuation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208694",
+      "artifactName": "Market Asset Valuation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208697",
+      "artifactName": "Market Asset Valuation"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domainName": "Product Matching",
+  "artifacts": [
+    {
+      "artifactType": "Product Matching SD Overview",
+      "bizzsemantic": "347055",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44814",
+      "artifactName": "Product Matching"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "42616",
+      "artifactName": "Product/ Customer"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111263",
+      "artifactName": "Product/ Customer"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29380",
+      "artifactName": "Product/ Customer"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128774",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128756",
+      "artifactName": "Product/ Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128764",
+      "artifactName": "Product/ Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128778",
+      "artifactName": "Product/ Customer"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104715",
+      "artifactName": "Bank and Campaign"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105808",
+      "artifactName": "Context Criteria"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104191",
+      "artifactName": "Product Eligibility"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104592",
+      "artifactName": "Product Type Selection"
+    },
+    {
+      "artifactType": "Product Matching",
+      "bizzsemantic": "49411",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Product Matching",
+      "bizzsemantic": "42617",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Product Matching API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

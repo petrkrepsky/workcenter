@@ -1,0 +1,95 @@
+{
+  "domainName": "Market Making",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34817",
+      "artifactName": "Market Making"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "71045",
+      "artifactName": "Market Making"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "71024",
+      "artifactName": "Market Making Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32939",
+      "artifactName": "Market Making Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71015",
+      "artifactName": "Market"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71028",
+      "artifactName": "Market Making"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71041",
+      "artifactName": "Market Making"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "71047",
+      "artifactName": "Market Making"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29659",
+      "artifactName": "Market Making Buy and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33937",
+      "artifactName": "Market Making Security"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33495",
+      "artifactName": "Market Making Quote"
+    },
+    {
+      "artifactType": "Market Making SD Overview",
+      "bizzsemantic": "344564",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Market Making",
+      "bizzsemantic": "32940",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Market Making",
+      "bizzsemantic": "53753",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Market Making API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

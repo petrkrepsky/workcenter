@@ -1,0 +1,90 @@
+{
+  "domainName": "Product Sales Support",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44680",
+      "artifactName": "Product Sales"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "131610",
+      "artifactName": "Product Sales Support"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110994",
+      "artifactName": "Product Sales Support"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34759",
+      "artifactName": "Product Sales Support"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "153580",
+      "artifactName": "Product Sales"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "153574",
+      "artifactName": "Product Sales Support"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "153582",
+      "artifactName": "Product Sales Support"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "153591",
+      "artifactName": "Product Sales Support"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32735",
+      "artifactName": "Staff Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45067",
+      "artifactName": "Staff Availability Tracking"
+    },
+    {
+      "artifactType": "Product Sales Support SD Overview",
+      "bizzsemantic": "348638",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Sales",
+      "bizzsemantic": "35417",
+      "artifactName": "Support Control"
+    },
+    {
+      "artifactType": "Product Sales",
+      "bizzsemantic": "53546",
+      "artifactName": "Support BOM"
+    },
+    {
+      "artifactType": "Product Sales",
+      "bizzsemantic": "",
+      "artifactName": "Support API"
+    }
+  ]
+}

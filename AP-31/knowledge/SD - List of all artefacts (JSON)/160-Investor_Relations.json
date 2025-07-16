@@ -1,0 +1,50 @@
+{
+  "domainName": "Investor Relations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31259",
+      "artifactName": "Investor Relations"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133155",
+      "artifactName": "Investor"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111213",
+      "artifactName": "Investor Membership_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130541",
+      "artifactName": "Investor Membership"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58039",
+      "artifactName": "Enroll"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58029",
+      "artifactName": "Membership"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137172",
+      "artifactName": "Investor"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137180",
+      "artifactName": "Investor"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "137165",
+      "artifactName": "Investor"
+    }
+  ]
+}

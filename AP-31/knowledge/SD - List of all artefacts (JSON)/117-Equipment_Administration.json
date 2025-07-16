@@ -1,0 +1,50 @@
+{
+  "domainName": "Equipment Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43461",
+      "artifactName": "Equipment"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132225",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111029",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133118",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212615",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212623",
+      "artifactName": "Office Equipment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212629",
+      "artifactName": "Office Equipment"
+    }
+  ]
+}

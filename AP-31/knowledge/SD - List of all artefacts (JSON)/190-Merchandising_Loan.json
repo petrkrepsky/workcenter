@@ -1,0 +1,150 @@
+{
+  "domainName": "Merchandising Loan",
+  "artifacts": [
+    {
+      "artifactType": "Merchandising Loan SD Overview",
+      "bizzsemantic": "353675",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41553",
+      "artifactName": "Merchandising Loan"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "63766",
+      "artifactName": "Merchandising Loan"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "63770",
+      "artifactName": "Merchandising Loan"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39707",
+      "artifactName": "Merchandising Loan"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63745",
+      "artifactName": "Merchandising"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63774",
+      "artifactName": "Merchandising Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63720",
+      "artifactName": "Merchandising Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63762",
+      "artifactName": "Merchandising Loan"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63764",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63795",
+      "artifactName": "Collateral"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63788",
+      "artifactName": "Financial Accounting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63755",
+      "artifactName": "Billing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63758",
+      "artifactName": "Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63738",
+      "artifactName": "Withdrawals"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63790",
+      "artifactName": "Deposits"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63801",
+      "artifactName": "Sweep"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63768",
+      "artifactName": "Lien"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "Merchandising Loan",
+      "bizzsemantic": "49332",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Merchandising Loan",
+      "bizzsemantic": "53610",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "Merchandising Loan",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

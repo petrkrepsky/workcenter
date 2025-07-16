@@ -1,0 +1,155 @@
+{
+  "domainName": "Consumer Loan",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42931",
+      "artifactName": "Consumer Loan"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33220",
+      "artifactName": "Consumer Loan"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111337",
+      "artifactName": "Loan Arrangement_"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213327",
+      "artifactName": "Consumer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213330",
+      "artifactName": "Consumer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213309",
+      "artifactName": "Consumer Loan_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213350",
+      "artifactName": "Consumer Loan_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108379",
+      "artifactName": "Restructuring"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105417",
+      "artifactName": "Repayment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105340",
+      "artifactName": "Withdrawal"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108863",
+      "artifactName": "Maintenance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104183",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Consumer Loan SD Overview",
+      "bizzsemantic": "352833",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Consumer Loan",
+      "bizzsemantic": "47557",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Consumer Loan",
+      "bizzsemantic": "33221",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "47556",
+      "artifactName": "Consumer Loan Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45537",
+      "artifactName": "Amount Block"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "Consumer Loan API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "domainName": "Corporate Treasury",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37090",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "37292",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111478",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35458",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "206921",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "206946",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "206938",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "206951",
+      "artifactName": "Corporate Treasury"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105813",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104384",
+      "artifactName": "Securitization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106215",
+      "artifactName": "Strategic Funding"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107642",
+      "artifactName": "Tactical Funding"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104150",
+      "artifactName": "Liquidity"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "Corporate Treasury SD Overview",
+      "bizzsemantic": "353837",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Corporate Treasury",
+      "bizzsemantic": "35459",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Corporate Treasury",
+      "bizzsemantic": "37293",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Corporate Treasury",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "domainName": "Interactive Help",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34001",
+      "artifactName": "Interactive Help"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "37521",
+      "artifactName": "interactive Help Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "80890",
+      "artifactName": "interactive Help Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31374",
+      "artifactName": "interactive Help Service"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80898",
+      "artifactName": "Interactive"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80896",
+      "artifactName": "Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80906",
+      "artifactName": "Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80867",
+      "artifactName": "Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "80874",
+      "artifactName": "Help Service Selection"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Interactive Help SD Overview",
+      "bizzsemantic": "353784",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Interactive Help",
+      "bizzsemantic": "31375",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Interactive Help",
+      "bizzsemantic": "37522",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Interactive Help API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

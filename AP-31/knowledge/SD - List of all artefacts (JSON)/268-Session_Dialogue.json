@@ -1,0 +1,130 @@
+{
+  "domainName": "Session Dialogue",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48273",
+      "artifactName": "Session Dialogue"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "41244",
+      "artifactName": "Customer Contact Session"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "67568",
+      "artifactName": "Customer Contact Session"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38720",
+      "artifactName": "Customer Contact Session"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "67586",
+      "artifactName": "Session"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "67579",
+      "artifactName": "Customer Contact Session"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "67588",
+      "artifactName": "Customer Contact Session"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "67581",
+      "artifactName": "Customer Contact Session"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67625",
+      "artifactName": "History"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67562",
+      "artifactName": "Intelligence"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67575",
+      "artifactName": "Order"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67592",
+      "artifactName": "Case"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67634",
+      "artifactName": "Product or Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67623",
+      "artifactName": "Offer"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67603",
+      "artifactName": "Sales"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67613",
+      "artifactName": "Authentication"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67609",
+      "artifactName": "Query"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Session Dialogue SD Overview",
+      "bizzsemantic": "348768",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Session Dialogue",
+      "bizzsemantic": "38721",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Session Dialogue",
+      "bizzsemantic": "41245",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Session Dialogue API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

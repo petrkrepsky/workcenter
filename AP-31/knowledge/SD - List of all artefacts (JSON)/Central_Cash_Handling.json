@@ -1,0 +1,90 @@
+{
+  "domainName": "Central Cash Handling",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29997",
+      "artifactName": "Central Cash"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133018",
+      "artifactName": "Central Cash"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111447",
+      "artifactName": "Central Cash Allocation_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37305",
+      "artifactName": "Central Cash Allocation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58134",
+      "artifactName": "Allocate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58168",
+      "artifactName": "Allocation"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58217",
+      "artifactName": "Criteria"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215183",
+      "artifactName": "Central Cash"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215194",
+      "artifactName": "Central Cash"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215210",
+      "artifactName": "Central Cash"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215205",
+      "artifactName": "Central Cash"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107797",
+      "artifactName": "Projection and Allocation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105072",
+      "artifactName": "Tracking and Allocation"
+    },
+    {
+      "artifactType": "Central Cash Handling SD Overview",
+      "bizzsemantic": "353929",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Central Cash",
+      "bizzsemantic": "49523",
+      "artifactName": "Handling Control"
+    },
+    {
+      "artifactType": "Central Cash",
+      "bizzsemantic": "53616",
+      "artifactName": "Handling BOM"
+    },
+    {
+      "artifactType": "Central Cash",
+      "bizzsemantic": "",
+      "artifactName": "Handling API"
+    }
+  ]
+}

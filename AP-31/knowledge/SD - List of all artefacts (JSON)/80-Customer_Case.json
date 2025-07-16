@@ -1,0 +1,100 @@
+{
+  "domainName": "Customer Case",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47339",
+      "artifactName": "Customer Case"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "36238",
+      "artifactName": "Customer Case"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111067",
+      "artifactName": "Customer Case"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37815",
+      "artifactName": "Customer Case Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216350",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216371",
+      "artifactName": "Customer Case"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216345",
+      "artifactName": "Customer Case"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216376",
+      "artifactName": "Customer Case"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109050",
+      "artifactName": "Resolution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107662",
+      "artifactName": "Determination"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105383",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Customer Case SD Overview",
+      "bizzsemantic": "353847",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Case",
+      "bizzsemantic": "37816",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Customer Case",
+      "bizzsemantic": "44158",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Customer Case API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

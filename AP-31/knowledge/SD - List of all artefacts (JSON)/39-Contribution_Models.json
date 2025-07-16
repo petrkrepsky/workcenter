@@ -1,0 +1,50 @@
+{
+  "domainName": "Contribution Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30496",
+      "artifactName": "Contribution Models"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "131875",
+      "artifactName": "Contribution Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111265",
+      "artifactName": "Contribution Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131601",
+      "artifactName": "Contribution Model"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159899",
+      "artifactName": "Contribution Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159903",
+      "artifactName": "Contribution Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159887",
+      "artifactName": "Contribution Model"
+    }
+  ]
+}

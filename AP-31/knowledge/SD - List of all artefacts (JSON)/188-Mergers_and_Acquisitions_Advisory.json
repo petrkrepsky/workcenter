@@ -1,0 +1,85 @@
+{
+  "domainName": "Mergers and Acquisitions Advisory",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29581",
+      "artifactName": "Mergers and"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "79677",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "79656",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36325",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58035",
+      "artifactName": "Advise"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58025",
+      "artifactName": "Advice"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58213",
+      "artifactName": "Topic"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217403",
+      "artifactName": "Mergers and Acquisitions"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217421",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217397",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217428",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35187",
+      "artifactName": "M&A Candidate Selection"
+    },
+    {
+      "artifactType": "Mergers and Acquisitions Advisory SD Overview",
+      "bizzsemantic": "350594",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Mergers and",
+      "bizzsemantic": "40119",
+      "artifactName": "Acquisitions"
+    },
+    {
+      "artifactType": "Mergers and",
+      "bizzsemantic": "53667",
+      "artifactName": "Acquisitions"
+    },
+    {
+      "artifactType": "Mergers and",
+      "bizzsemantic": "",
+      "artifactName": "Acquisitions Advisory"
+    }
+  ]
+}
