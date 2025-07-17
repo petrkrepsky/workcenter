@@ -1,0 +1,145 @@
+{
+  "domainName": "Current Account",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37122",
+      "artifactName": "Current Account"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29386",
+      "artifactName": "Current Account"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "91594",
+      "artifactName": "Current Account Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36676",
+      "artifactName": "Current Account Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "91605",
+      "artifactName": "Current"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "91596",
+      "artifactName": "Current Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "91540",
+      "artifactName": "Current Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "91610",
+      "artifactName": "Current Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63758",
+      "artifactName": "Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91578",
+      "artifactName": "Deposits and Withdrawals"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91584",
+      "artifactName": "Account Sweep"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91576",
+      "artifactName": "Account Lien"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Current Account SD Overview",
+      "bizzsemantic": "353893",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Current Account",
+      "bizzsemantic": "36677",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Current Account",
+      "bizzsemantic": "29387",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "Current Account API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "domainName": "Direct Debit Mandate",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46204",
+      "artifactName": "Direct Debit Mandate"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "45933",
+      "artifactName": "Direct Debit Mandate"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111209",
+      "artifactName": "Direct Debit Mandate"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30555",
+      "artifactName": "Direct Debit Mandate"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215463",
+      "artifactName": "Direct Debit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215474",
+      "artifactName": "Direct Debit Mandate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215466",
+      "artifactName": "Direct Debit Mandate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215472",
+      "artifactName": "Direct Debit Mandate"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106627",
+      "artifactName": "Mandate Registration"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Direct Debit Mandate SD Overview",
+      "bizzsemantic": "353944",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Direct Debit",
+      "bizzsemantic": "30556",
+      "artifactName": "Mandate Control"
+    },
+    {
+      "artifactType": "Direct Debit",
+      "bizzsemantic": "45934",
+      "artifactName": "Mandate BOM"
+    },
+    {
+      "artifactType": "Direct Debit Mandate",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

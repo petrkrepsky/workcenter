@@ -1,0 +1,110 @@
+{
+  "domainName": "Account Recovery",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35767",
+      "artifactName": "Account Recovery"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "47088",
+      "artifactName": "Account Recovery"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111164",
+      "artifactName": "Account Recovery"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "44660",
+      "artifactName": "Account Recovery"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216302",
+      "artifactName": "Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216323",
+      "artifactName": "Account Recovery"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216325",
+      "artifactName": "Account Recovery"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216327",
+      "artifactName": "Account Recovery"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108379",
+      "artifactName": "Restructuring"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108810",
+      "artifactName": "Negotiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107174",
+      "artifactName": "Planning"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110165",
+      "artifactName": "Writedown"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107672",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Account Recovery SD Overview",
+      "bizzsemantic": "353846",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Account Recovery",
+      "bizzsemantic": "44661",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Account Recovery",
+      "bizzsemantic": "47089",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Account Recovery",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

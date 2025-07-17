@@ -1,0 +1,105 @@
+{
+  "domainName": "Contact Handler",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41839",
+      "artifactName": "Contact Handler"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30864",
+      "artifactName": "Customer Contact"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "98827",
+      "artifactName": "Customer Contact"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "47405",
+      "artifactName": "Customer Contact"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "98793",
+      "artifactName": "Contact"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "98809",
+      "artifactName": "Customer Contact"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "98830",
+      "artifactName": "Customer Contact"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "98797",
+      "artifactName": "Customer Contact"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67625",
+      "artifactName": "History"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "98822",
+      "artifactName": "Session"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "98795",
+      "artifactName": "Routing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "67613",
+      "artifactName": "Authentication"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Contact Handler SD Overview",
+      "bizzsemantic": "353831",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Contact Handler",
+      "bizzsemantic": "47406",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Contact Handler",
+      "bizzsemantic": "30865",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Contact Handler API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

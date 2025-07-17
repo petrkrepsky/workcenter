@@ -1,0 +1,50 @@
+{
+  "domainName": "Financial Statements",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33561",
+      "artifactName": "Financial Statements"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132314",
+      "artifactName": "Financial Statements"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111103",
+      "artifactName": "Financial Statements"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130931",
+      "artifactName": "Financial Statements"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "145906",
+      "artifactName": "Financial Statements"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "145912",
+      "artifactName": "Financial Statements"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "145910",
+      "artifactName": "Financial Statements"
+    }
+  ]
+}

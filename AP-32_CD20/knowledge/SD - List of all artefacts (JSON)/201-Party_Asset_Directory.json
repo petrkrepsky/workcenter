@@ -1,0 +1,110 @@
+{
+  "domainName": "Party Asset Directory",
+  "artifacts": [
+    {
+      "artifactType": "Party Asset Directory SD Overview",
+      "bizzsemantic": "353816",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Party Asset Directory",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34169",
+      "artifactName": "Party Asset"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32084",
+      "artifactName": "Party Asset"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111045",
+      "artifactName": "Party Asset Directory"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30879",
+      "artifactName": "Party Asset Directory Entry"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212206",
+      "artifactName": "Party Asset"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212190",
+      "artifactName": "Party Asset Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212210",
+      "artifactName": "Party Asset Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212185",
+      "artifactName": "Party Asset Directory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43540",
+      "artifactName": "Asset Properties"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40867",
+      "artifactName": "Asset Estimated Value"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41724",
+      "artifactName": "Asset Title Ownership"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40099",
+      "artifactName": "Asset Type Classification"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "44625",
+      "artifactName": "Asset Location or"
+    },
+    {
+      "artifactType": "Party Asset",
+      "bizzsemantic": "30880",
+      "artifactName": "Directory Control"
+    },
+    {
+      "artifactType": "Party Asset",
+      "bizzsemantic": "32085",
+      "artifactName": "Directory BOM"
+    },
+    {
+      "artifactType": "Party Asset Directory",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

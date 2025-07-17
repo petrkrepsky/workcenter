@@ -1,0 +1,50 @@
+{
+  "domainName": "Discount Pricing",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34416",
+      "artifactName": "Discount Pricing"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "66367",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "66375",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "66364",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "66378",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "66384",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "66380",
+      "artifactName": "Productand Service"
+    }
+  ]
+}

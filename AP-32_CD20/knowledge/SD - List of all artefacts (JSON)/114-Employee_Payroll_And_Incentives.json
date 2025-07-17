@@ -1,0 +1,50 @@
+{
+  "domainName": "Employee Payroll And Incentives",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43961",
+      "artifactName": "Employee Payroll"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130398",
+      "artifactName": "Employee Payroll"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111327",
+      "artifactName": "Employee Payroll"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132103",
+      "artifactName": "Employee Payroll"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218788",
+      "artifactName": "Employee Payroll"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218792",
+      "artifactName": "Employee Payroll"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218786",
+      "artifactName": "Employee Payroll"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "domainName": "Sales Planning",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31032",
+      "artifactName": "Sales Planning"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133354",
+      "artifactName": "Marketing And Sales"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111375",
+      "artifactName": "Marketing And Sales"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133356",
+      "artifactName": "Marketing And Sales"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216287",
+      "artifactName": "Marketing And Sales"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216277",
+      "artifactName": "Marketing And Sales"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216290",
+      "artifactName": "Marketing And Sales"
+    }
+  ]
+}

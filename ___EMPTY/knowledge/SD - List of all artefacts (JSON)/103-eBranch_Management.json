@@ -1,0 +1,100 @@
+{
+  "domainName": "eBranch Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34844",
+      "artifactName": "eBranch"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "75731",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "48557",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "75733",
+      "artifactName": "eBranch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "75740",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "75742",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "75718",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "75712",
+      "artifactName": "Maintenance And"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "75703",
+      "artifactName": "Capacity Planning"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64532",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "eBranch Management SD Overview",
+      "bizzsemantic": "353734",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "eBranch",
+      "bizzsemantic": "48558",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "eBranch",
+      "bizzsemantic": "38833",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38832",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "eBranch Management",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

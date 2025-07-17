@@ -1,0 +1,95 @@
+{
+  "domainName": "Service Provider Operations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29686",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40535",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111490",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39109",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218292",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218288",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218275",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218304",
+      "artifactName": "Service Provider"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38034",
+      "artifactName": "Data Sharing Consents"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39200",
+      "artifactName": "Customer Requests"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39254",
+      "artifactName": "Tokens"
+    },
+    {
+      "artifactType": "Service Provider Operations SD Overview",
+      "bizzsemantic": "344731",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Service Provider",
+      "bizzsemantic": "39110",
+      "artifactName": "Operations Control"
+    },
+    {
+      "artifactType": "Service Provider",
+      "bizzsemantic": "40536",
+      "artifactName": "Operations BOM"
+    },
+    {
+      "artifactType": "Service Provider",
+      "bizzsemantic": "",
+      "artifactName": "Operations API"
+    }
+  ]
+}

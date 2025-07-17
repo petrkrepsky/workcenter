@@ -1,0 +1,50 @@
+{
+  "domainName": "Organization Direction",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37986",
+      "artifactName": "Organization"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "119859",
+      "artifactName": "Organization"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111353",
+      "artifactName": "Organization Strategy_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "119856",
+      "artifactName": "Organization Strategy"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119865",
+      "artifactName": "Organization"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119880",
+      "artifactName": "Organization"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119867",
+      "artifactName": "Organization"
+    }
+  ]
+}

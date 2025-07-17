@@ -1,0 +1,110 @@
+{
+  "domainName": "Card Network Participant Facility",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42759",
+      "artifactName": "Card Network"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40427",
+      "artifactName": "Card Network Participant"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111170",
+      "artifactName": "Card Network Participant"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "44639",
+      "artifactName": "Card Network Participant"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217381",
+      "artifactName": "Card Network Participant"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217358",
+      "artifactName": "Arrangement_Instantiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217376",
+      "artifactName": "Arrangement_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217385",
+      "artifactName": "Arrangement_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106962",
+      "artifactName": "Participant Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108063",
+      "artifactName": "Participant Account"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Card Network Participant Facility SD Overview",
+      "bizzsemantic": "353757",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Card Network",
+      "bizzsemantic": "44640",
+      "artifactName": "Participant Facility"
+    },
+    {
+      "artifactType": "Card Network",
+      "bizzsemantic": "40428",
+      "artifactName": "Participant Facility"
+    },
+    {
+      "artifactType": "Card Network",
+      "bizzsemantic": "",
+      "artifactName": "Participant Facility"
+    }
+  ]
+}

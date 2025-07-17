@@ -1,0 +1,90 @@
+{
+  "domainName": "Order Allocation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "28751",
+      "artifactName": "Order Allocation"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "81662",
+      "artifactName": "Securities Allocation"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "81648",
+      "artifactName": "Securities Allocation"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "40182",
+      "artifactName": "Securities Allocation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81658",
+      "artifactName": "Order"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81664",
+      "artifactName": "Securities Allocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81673",
+      "artifactName": "Securities Allocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "81686",
+      "artifactName": "Securities Allocation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38797",
+      "artifactName": "Update (Partially"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30805",
+      "artifactName": "Apply Order Allocation"
+    },
+    {
+      "artifactType": "Order Allocation SD Overview",
+      "bizzsemantic": "353968",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Order Allocation",
+      "bizzsemantic": "40183",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Order Allocation",
+      "bizzsemantic": "53063",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Order Allocation API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

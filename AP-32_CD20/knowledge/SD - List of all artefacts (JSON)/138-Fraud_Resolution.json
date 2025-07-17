@@ -1,0 +1,100 @@
+{
+  "domainName": "Fraud Resolution",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44725",
+      "artifactName": "Fraud Resolution"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "47179",
+      "artifactName": "Fraud Resolution"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111147",
+      "artifactName": "Fraud Resolution"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37105",
+      "artifactName": "Fraud Resolution"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214575",
+      "artifactName": "Fraud"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214599",
+      "artifactName": "Fraud Resolution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214601",
+      "artifactName": "Fraud Resolution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214596",
+      "artifactName": "Fraud Resolution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108782",
+      "artifactName": "Case Resolution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109276",
+      "artifactName": "Case Determination"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106831",
+      "artifactName": "Case Analysis"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Fraud Resolution SD Overview",
+      "bizzsemantic": "353958",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Fraud Resolution",
+      "bizzsemantic": "37106",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Fraud Resolution",
+      "bizzsemantic": "47180",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Fraud Resolution API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

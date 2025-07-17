@@ -1,0 +1,50 @@
+{
+  "domainName": "Contribution Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35231",
+      "artifactName": "Contribution"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133099",
+      "artifactName": "Contribution"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111421",
+      "artifactName": "Contribution Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133336",
+      "artifactName": "Contribution Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "148812",
+      "artifactName": "Contribution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "148808",
+      "artifactName": "Contribution"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "148825",
+      "artifactName": "Contribution"
+    }
+  ]
+}

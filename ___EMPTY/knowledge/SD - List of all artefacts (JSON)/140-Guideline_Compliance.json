@@ -1,0 +1,90 @@
+{
+  "domainName": "Guideline Compliance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41242",
+      "artifactName": "Guideline"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33480",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111393",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158246",
+      "artifactName": "Guideline"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158266",
+      "artifactName": "Guideline"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158269",
+      "artifactName": "Guideline"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "158272",
+      "artifactName": "Guideline"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "158264",
+      "artifactName": "Compliance Tests"
+    },
+    {
+      "artifactType": "Guideline Compliance SD Overview",
+      "bizzsemantic": "353650",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Guideline",
+      "bizzsemantic": "43713",
+      "artifactName": "Compliance Control"
+    },
+    {
+      "artifactType": "Guideline",
+      "bizzsemantic": "33481",
+      "artifactName": "Compliance BOM"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43712",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "Guideline Compliance",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domainName": "Card Terminal Operation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45274",
+      "artifactName": "Card Terminal"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40307",
+      "artifactName": "Card POS Network"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111401",
+      "artifactName": "Card POS Network"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "44058",
+      "artifactName": "Card POS Network"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159593",
+      "artifactName": "Card Terminal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159599",
+      "artifactName": "Card POS Network"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159575",
+      "artifactName": "Card POS Network"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159585",
+      "artifactName": "Card POS Network"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108925",
+      "artifactName": "Batch"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105291",
+      "artifactName": "Authorization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106491",
+      "artifactName": "Capture"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Card Terminal Operation SD Overview",
+      "bizzsemantic": "353894",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Card Terminal",
+      "bizzsemantic": "44059",
+      "artifactName": "Operation Control"
+    },
+    {
+      "artifactType": "Card Terminal",
+      "bizzsemantic": "40308",
+      "artifactName": "Operation BOM"
+    },
+    {
+      "artifactType": "Card Terminal",
+      "bizzsemantic": "",
+      "artifactName": "Operation API"
+    }
+  ]
+}

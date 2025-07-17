@@ -1,0 +1,95 @@
+{
+  "domainName": "Card Transaction Switch",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29401",
+      "artifactName": "Card Transaction"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38776",
+      "artifactName": "Card Transaction Switch"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111463",
+      "artifactName": "Card Transaction Switch"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "47889",
+      "artifactName": "Card Transaction Switch"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166148",
+      "artifactName": "Card Transaction"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166162",
+      "artifactName": "Card Transaction Switch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166153",
+      "artifactName": "Card Transaction Switch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "166155",
+      "artifactName": "Card Transaction Switch"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110414",
+      "artifactName": "Transaction Routing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104135",
+      "artifactName": "Transaction Capture"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Card Transaction Switch SD Overview",
+      "bizzsemantic": "353787",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Card Transaction",
+      "bizzsemantic": "47890",
+      "artifactName": "Switch Control"
+    },
+    {
+      "artifactType": "Card Transaction",
+      "bizzsemantic": "38777",
+      "artifactName": "Switch BOM"
+    },
+    {
+      "artifactType": "Card Transaction",
+      "bizzsemantic": "",
+      "artifactName": "Switch API"
+    }
+  ]
+}

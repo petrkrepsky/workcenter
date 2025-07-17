@@ -1,0 +1,80 @@
+{
+  "domainName": "Credit Card Position Keeping",
+  "artifacts": [
+    {
+      "artifactType": "Credit Card Position Keeping SD Overview",
+      "bizzsemantic": "353864",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48362",
+      "artifactName": "Credit Card Position"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "44276",
+      "artifactName": "Credit Card Position"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "40144",
+      "artifactName": "Credit Card Position Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63679",
+      "artifactName": "Credit Card Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63677",
+      "artifactName": "Credit Card Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63688",
+      "artifactName": "Credit Card Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "63691",
+      "artifactName": "Credit Card Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35878",
+      "artifactName": "Card Transaction Event"
+    },
+    {
+      "artifactType": "Credit Card Position",
+      "bizzsemantic": "40145",
+      "artifactName": "Keeping Control"
+    },
+    {
+      "artifactType": "Credit Card Position",
+      "bizzsemantic": "44277",
+      "artifactName": "Keeping BOM"
+    },
+    {
+      "artifactType": "Credit Card Position",
+      "bizzsemantic": "",
+      "artifactName": "Keeping API"
+    }
+  ]
+}

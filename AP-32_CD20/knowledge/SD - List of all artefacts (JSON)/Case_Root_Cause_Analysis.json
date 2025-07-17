@@ -1,0 +1,95 @@
+{
+  "domainName": "Case Root Cause Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43455",
+      "artifactName": "Case Root Cause"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130266",
+      "artifactName": "Customer Case Root"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111137",
+      "artifactName": "Customer Case Root"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30472",
+      "artifactName": "Customer Case Root"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "133974",
+      "artifactName": "Case Root Cause"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "133967",
+      "artifactName": "Customer Case Root"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "133978",
+      "artifactName": "Customer Case Root"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "133961",
+      "artifactName": "Customer Case Root"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108395",
+      "artifactName": "Credit and Fraud Related"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109016",
+      "artifactName": "Operations and Servicing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105727",
+      "artifactName": "Product and Service Issue"
+    },
+    {
+      "artifactType": "Case Root Cause Analysis SD Overview",
+      "bizzsemantic": "344083",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Case Root Cause",
+      "bizzsemantic": "49486",
+      "artifactName": "Analysis Control"
+    },
+    {
+      "artifactType": "Case Root Cause",
+      "bizzsemantic": "53086",
+      "artifactName": "Analysis BOM"
+    },
+    {
+      "artifactType": "Case Root Cause",
+      "bizzsemantic": "",
+      "artifactName": "Analysis API"
+    }
+  ]
+}

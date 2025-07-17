@@ -1,0 +1,50 @@
+{
+  "domainName": "Systems Assurance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30576",
+      "artifactName": "Systems Assurance"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40286",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111387",
+      "artifactName": "IT System Assessment_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130108",
+      "artifactName": "IT System Assessment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208263",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208267",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208265",
+      "artifactName": "IT System"
+    }
+  ]
+}

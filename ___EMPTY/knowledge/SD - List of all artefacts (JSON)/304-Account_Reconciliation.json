@@ -1,0 +1,90 @@
+{
+  "domainName": "Account Reconciliation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47768",
+      "artifactName": "Account"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132071",
+      "artifactName": "Account Reconciliation"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111000",
+      "artifactName": "Account Reconciliation"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43496",
+      "artifactName": "Account Reconciliation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210052",
+      "artifactName": "Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210062",
+      "artifactName": "Account Reconciliation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210060",
+      "artifactName": "Account Reconciliation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210055",
+      "artifactName": "Account Reconciliation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36586",
+      "artifactName": "Account Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28897",
+      "artifactName": "Account Resolution"
+    },
+    {
+      "artifactType": "Account Reconciliation SD Overview",
+      "bizzsemantic": "351324",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Account",
+      "bizzsemantic": "48365",
+      "artifactName": "Reconciliation"
+    },
+    {
+      "artifactType": "Account",
+      "bizzsemantic": "53401",
+      "artifactName": "Reconciliation BOM"
+    },
+    {
+      "artifactType": "Account",
+      "bizzsemantic": "",
+      "artifactName": "Reconciliation API"
+    }
+  ]
+}

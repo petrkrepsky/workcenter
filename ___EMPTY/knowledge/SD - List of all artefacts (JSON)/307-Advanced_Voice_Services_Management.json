@@ -1,0 +1,100 @@
+{
+  "domainName": "Advanced Voice Services Management",
+  "artifacts": [
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34976",
+      "artifactName": "Voice Channel"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111120",
+      "artifactName": "Voice Channel"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29611",
+      "artifactName": "Voice Channel"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151517",
+      "artifactName": "Advanced Voice Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151528",
+      "artifactName": "Voice Channel"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151526",
+      "artifactName": "Voice Channel"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151519",
+      "artifactName": "Voice Channel"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "75712",
+      "artifactName": "Maintenance And"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "75703",
+      "artifactName": "Capacity Planning"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64532",
+      "artifactName": "Guideline Compliance"
+    },
+    {
+      "artifactType": "Advanced Voice Services Management SD Overview",
+      "bizzsemantic": "353936",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Advanced Voice",
+      "bizzsemantic": "29612",
+      "artifactName": "Services"
+    },
+    {
+      "artifactType": "Advanced Voice",
+      "bizzsemantic": "45340",
+      "artifactName": "Services"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29564",
+      "artifactName": "Advanced Voice"
+    },
+    {
+      "artifactType": "Advanced Voice",
+      "bizzsemantic": "",
+      "artifactName": "Services Management"
+    }
+  ]
+}

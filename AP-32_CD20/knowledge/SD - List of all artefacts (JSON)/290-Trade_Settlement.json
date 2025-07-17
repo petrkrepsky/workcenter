@@ -1,0 +1,95 @@
+{
+  "domainName": "Trade Settlement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40555",
+      "artifactName": "Trade Settlement"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90537",
+      "artifactName": "Trade Settlement"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111160",
+      "artifactName": "Trade Settlement"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43657",
+      "artifactName": "Trade Settlement"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209512",
+      "artifactName": "Trade"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209507",
+      "artifactName": "Trade Settlement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209498",
+      "artifactName": "Trade Settlement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209489",
+      "artifactName": "Trade Settlement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31813",
+      "artifactName": "Market Trade Settlement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29913",
+      "artifactName": "Market Trade Securities"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33469",
+      "artifactName": "Market Trade Cash"
+    },
+    {
+      "artifactType": "Trade Settlement SD Overview",
+      "bizzsemantic": "353624",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Trade Settlement",
+      "bizzsemantic": "49713",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Trade Settlement",
+      "bizzsemantic": "53326",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Trade Settlement API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

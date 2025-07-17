@@ -1,0 +1,50 @@
+{
+  "domainName": "Counterparty Risk",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38665",
+      "artifactName": "Counterparty Risk"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "131336",
+      "artifactName": "Counterparty Credit Risk"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111391",
+      "artifactName": "Counterparty Credit Risk"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132962",
+      "artifactName": "Counterparty Credit Risk"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58090",
+      "artifactName": "Monitor"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216205",
+      "artifactName": "Counterparty Credit Risk"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216190",
+      "artifactName": "Counterparty Credit Risk"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216192",
+      "artifactName": "Counterparty Credit Risk"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58175",
+      "artifactName": "State"
+    }
+  ]
+}

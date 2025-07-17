@@ -1,0 +1,95 @@
+{
+  "domainName": "Merchant Relations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30772",
+      "artifactName": "Merchant Relations"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132069",
+      "artifactName": "Merchant Relationship"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111215",
+      "artifactName": "Merchant Relationship"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "33683",
+      "artifactName": "Merchant Relationship"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58124",
+      "artifactName": "Agree Terms"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58070",
+      "artifactName": "Agreement"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58227",
+      "artifactName": "Term"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159243",
+      "artifactName": "Merchant"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159247",
+      "artifactName": "Merchant Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159237",
+      "artifactName": "Merchant Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "159232",
+      "artifactName": "Merchant Relationship"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41024",
+      "artifactName": "Operational Term"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40200",
+      "artifactName": "Regulatory Term"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32600",
+      "artifactName": "Legal Term"
+    },
+    {
+      "artifactType": "Merchant Relations SD Overview",
+      "bizzsemantic": "353809",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Merchant Relations",
+      "bizzsemantic": "33684",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Merchant Relations",
+      "bizzsemantic": "53057",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Merchant Relations",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

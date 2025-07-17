@@ -1,0 +1,50 @@
+{
+  "domainName": "Recruitment",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48519",
+      "artifactName": "Recruitment"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132322",
+      "artifactName": "Recruitment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111287",
+      "artifactName": "Recruitment Procedure_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132287",
+      "artifactName": "Recruitment Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217054",
+      "artifactName": "Recruitment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217049",
+      "artifactName": "Recruitment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217051",
+      "artifactName": "Recruitment"
+    }
+  ]
+}

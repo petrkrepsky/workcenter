@@ -1,0 +1,50 @@
+{
+  "domainName": "Production Risk Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42574",
+      "artifactName": "Production Risk"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "73915",
+      "artifactName": "Production Risk Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "73904",
+      "artifactName": "Production Risk Model"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "73906",
+      "artifactName": "Production Risk Model"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "73892",
+      "artifactName": "Production Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "73898",
+      "artifactName": "Production Risk Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "73890",
+      "artifactName": "Production Risk Model"
+    }
+  ]
+}

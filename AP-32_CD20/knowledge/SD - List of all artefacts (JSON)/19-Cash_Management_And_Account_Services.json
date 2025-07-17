@@ -1,0 +1,140 @@
+{
+  "domainName": "Cash Management And Account Services",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36789",
+      "artifactName": "Cash Management"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33636",
+      "artifactName": "Cash Management And"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111427",
+      "artifactName": "Cash Management"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "47513",
+      "artifactName": "Cash Management And"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215388",
+      "artifactName": "Cash Management And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215362",
+      "artifactName": "Arrangement_Instantiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215366",
+      "artifactName": "Arrangement_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215360",
+      "artifactName": "Arrangement_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108943",
+      "artifactName": "Positive Pay"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63758",
+      "artifactName": "Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91578",
+      "artifactName": "Deposits and Withdrawals"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91584",
+      "artifactName": "Account Sweep"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91576",
+      "artifactName": "Account Lien"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Cash Management And Account Services SD Overview",
+      "bizzsemantic": "353950",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Cash Management",
+      "bizzsemantic": "47514",
+      "artifactName": "And Account"
+    },
+    {
+      "artifactType": "Cash Management",
+      "bizzsemantic": "33637",
+      "artifactName": "And Account"
+    },
+    {
+      "artifactType": "Cash Management",
+      "bizzsemantic": "",
+      "artifactName": "And Account Services"
+    }
+  ]
+}

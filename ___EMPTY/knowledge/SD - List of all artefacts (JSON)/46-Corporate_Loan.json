@@ -1,0 +1,155 @@
+{
+  "domainName": "Corporate Loan",
+  "artifacts": [
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40102",
+      "artifactName": "Corporate Loan"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111155",
+      "artifactName": "Loan Arrangement_"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217293",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217309",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217315",
+      "artifactName": "Corporate Loan_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217321",
+      "artifactName": "Corporate Loan_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108379",
+      "artifactName": "Restructuring"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105417",
+      "artifactName": "Repayment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105340",
+      "artifactName": "Withdrawal"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108863",
+      "artifactName": "Maintenance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104183",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Corporate Loan SD Overview",
+      "bizzsemantic": "353754",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Corporate Loan",
+      "bizzsemantic": "37766",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Corporate Loan",
+      "bizzsemantic": "40103",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37765",
+      "artifactName": "Corporate Loan Facility"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42505",
+      "artifactName": "Corporate Loan"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45537",
+      "artifactName": "Amount Block"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "Corporate Loan API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "domainName": "Employee Evaluation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37860",
+      "artifactName": "Employee Evaluation"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "59181",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111297",
+      "artifactName": "Employee Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133136",
+      "artifactName": "Employee Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173451",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173453",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173461",
+      "artifactName": "Employee"
+    }
+  ]
+}

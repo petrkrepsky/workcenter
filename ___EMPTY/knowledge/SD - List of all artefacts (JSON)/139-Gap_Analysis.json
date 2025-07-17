@@ -1,0 +1,50 @@
+{
+  "domainName": "Gap Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39139",
+      "artifactName": "Gap Analysis"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "131615",
+      "artifactName": "interest Rate Gap Risk"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111122",
+      "artifactName": "interest Rate Gap Risk"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133036",
+      "artifactName": "interest Rate Gap Risk"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216220",
+      "artifactName": "interest Rate Gap Risk"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216226",
+      "artifactName": "interest Rate Gap Risk"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216229",
+      "artifactName": "interest Rate Gap Risk"
+    }
+  ]
+}

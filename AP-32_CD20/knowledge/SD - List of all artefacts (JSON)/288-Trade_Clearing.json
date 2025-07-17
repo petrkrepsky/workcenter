@@ -1,0 +1,105 @@
+{
+  "domainName": "Trade Clearing",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30463",
+      "artifactName": "Trade Clearing"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90584",
+      "artifactName": "Trade Clearing"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111051",
+      "artifactName": "Trade Clearing"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29457",
+      "artifactName": "Trade Clearing Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184957",
+      "artifactName": "Trade"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184993",
+      "artifactName": "Trade Clearing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184980",
+      "artifactName": "Trade Clearing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "184995",
+      "artifactName": "Trade Clearing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40494",
+      "artifactName": "Market Trade Settlement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42068",
+      "artifactName": "Market Trade Out Trade"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42271",
+      "artifactName": "Market Trade Funds and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31489",
+      "artifactName": "Market Trade Confirmation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46953",
+      "artifactName": "Market Trade Matching"
+    },
+    {
+      "artifactType": "Trade Clearing SD Overview",
+      "bizzsemantic": "345507",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Trade Clearing",
+      "bizzsemantic": "29458",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Trade Clearing",
+      "bizzsemantic": "53016",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Trade Clearing API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

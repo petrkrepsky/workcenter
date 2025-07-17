@@ -1,0 +1,50 @@
+{
+  "domainName": "Market Data Switch Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36285",
+      "artifactName": "Market Data Switch"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "47074",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111269",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133284",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216086",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216078",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216066",
+      "artifactName": "Information Feed Switch"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    }
+  ]
+}

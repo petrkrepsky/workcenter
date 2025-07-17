@@ -1,0 +1,50 @@
+{
+  "domainName": "Business Unit Direction",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43285",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "39225",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "67751",
+      "artifactName": "Business Unit Strategy_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "67737",
+      "artifactName": "Business Unit Strategy"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "67740",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "67742",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "67744",
+      "artifactName": "Business Unit"
+    }
+  ]
+}

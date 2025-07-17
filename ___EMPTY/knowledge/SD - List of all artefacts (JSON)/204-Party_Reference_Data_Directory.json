@@ -1,0 +1,105 @@
+{
+  "domainName": "Party Reference Data Directory",
+  "artifacts": [
+    {
+      "artifactType": "Party Reference Data Directory SD Overview",
+      "bizzsemantic": "353620",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Party Reference",
+      "bizzsemantic": "45230",
+      "artifactName": "Data Directory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "48736",
+      "artifactName": "Party Reference Data"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111023",
+      "artifactName": "Party Reference Data"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42751",
+      "artifactName": "Party Reference Data"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212716",
+      "artifactName": "Party Reference Data"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212696",
+      "artifactName": "Party Reference Data"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212725",
+      "artifactName": "Party Reference Data"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212729",
+      "artifactName": "Party Reference Data"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107555",
+      "artifactName": "Reference"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104661",
+      "artifactName": "Bank Relations"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110282",
+      "artifactName": "Demographics"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106618",
+      "artifactName": "Associations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "Party Reference",
+      "bizzsemantic": "42752",
+      "artifactName": "Data Directory"
+    },
+    {
+      "artifactType": "Party Reference",
+      "bizzsemantic": "48737",
+      "artifactName": "Data Directory BOM"
+    },
+    {
+      "artifactType": "Party Reference Data",
+      "bizzsemantic": "",
+      "artifactName": "Directory API"
+    }
+  ]
+}

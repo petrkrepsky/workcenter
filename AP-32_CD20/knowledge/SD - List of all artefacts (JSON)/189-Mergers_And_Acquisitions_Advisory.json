@@ -1,0 +1,50 @@
+{
+  "domainName": "Mergers And Acquisitions Advisory",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29581",
+      "artifactName": "Mergers and"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "79677",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "79656",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36325",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "79652",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "79672",
+      "artifactName": "Mergers And Acquisition"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "79675",
+      "artifactName": "Mergers And Acquisition"
+    }
+  ]
+}

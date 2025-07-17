@@ -1,0 +1,110 @@
+{
+  "domainName": "Point of Service",
+  "artifacts": [
+    {
+      "artifactType": "Point of Service SD Overview",
+      "bizzsemantic": "353932",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43170",
+      "artifactName": "Point of Service"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "35414",
+      "artifactName": "Pointof Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111433",
+      "artifactName": "Point Of Service Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41811",
+      "artifactName": "Pointof Service Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215232",
+      "artifactName": "Pointof"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215238",
+      "artifactName": "Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215236",
+      "artifactName": "Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215248",
+      "artifactName": "Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108719",
+      "artifactName": "Assisted"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110826",
+      "artifactName": "Interaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104772",
+      "artifactName": "Inventory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107196",
+      "artifactName": "Automated"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108151",
+      "artifactName": "Cash Position"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Point of Service",
+      "bizzsemantic": "41812",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Point of Service",
+      "bizzsemantic": "35415",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Point of Service API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

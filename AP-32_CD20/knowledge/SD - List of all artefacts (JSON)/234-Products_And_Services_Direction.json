@@ -1,0 +1,50 @@
+{
+  "domainName": "Products And Services Direction",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33781",
+      "artifactName": "Products and"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133449",
+      "artifactName": "Products And Services"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111509",
+      "artifactName": "Products And Services"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133446",
+      "artifactName": "Products And Services"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151786",
+      "artifactName": "Products And Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151783",
+      "artifactName": "Products And Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "151804",
+      "artifactName": "Products And Services"
+    }
+  ]
+}

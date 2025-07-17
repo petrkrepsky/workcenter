@@ -1,0 +1,120 @@
+{
+  "domainName": "Issued Device Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30905",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110956",
+      "artifactName": "Issued Device Allocation_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37353",
+      "artifactName": "Issued Device Allocation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58134",
+      "artifactName": "Allocate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58168",
+      "artifactName": "Allocation"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58217",
+      "artifactName": "Criteria"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "197033",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "197035",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "197005",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "197054",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110410",
+      "artifactName": "Cheques Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107499",
+      "artifactName": "Reader Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106670",
+      "artifactName": "Biometric Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109494",
+      "artifactName": "Device Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105567",
+      "artifactName": "Question Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110699",
+      "artifactName": "Password Assignment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Issued Device Administration SD Overview",
+      "bizzsemantic": "353710",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Issued Device",
+      "bizzsemantic": "37354",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Issued Device",
+      "bizzsemantic": "29920",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29919",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33036",
+      "artifactName": "Token Assignment"
+    },
+    {
+      "artifactType": "Issued Device",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "domainName": "Delinquent Account Handling",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47264",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "47665",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111245",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "39900",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216250",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216236",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216256",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216245",
+      "artifactName": "Delinquent Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109050",
+      "artifactName": "Resolution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105111",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104689",
+      "artifactName": "Contact"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107672",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Delinquent Account Handling SD Overview",
+      "bizzsemantic": "353875",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Delinquent Account",
+      "bizzsemantic": "39901",
+      "artifactName": "Handling Control"
+    },
+    {
+      "artifactType": "Delinquent Account",
+      "bizzsemantic": "47666",
+      "artifactName": "Handling BOM"
+    },
+    {
+      "artifactType": "Delinquent Account",
+      "bizzsemantic": "",
+      "artifactName": "Handling API"
+    }
+  ]
+}

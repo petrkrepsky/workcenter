@@ -1,0 +1,110 @@
+{
+  "domainName": "Management Manual",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32915",
+      "artifactName": "Management Manual"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133215",
+      "artifactName": "Management Manual"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111243",
+      "artifactName": "Management Manual"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31966",
+      "artifactName": "Management Manual"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156907",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156919",
+      "artifactName": "Management Manual"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156912",
+      "artifactName": "Management Manual"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "156925",
+      "artifactName": "Management Manual"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104507",
+      "artifactName": "Operational Security"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108881",
+      "artifactName": "Staff Management"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108408",
+      "artifactName": "Operational and Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107050",
+      "artifactName": "Legaland Regulatory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107578",
+      "artifactName": "Employment Related"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105237",
+      "artifactName": "Company Missionand"
+    },
+    {
+      "artifactType": "Management Manual SD Overview",
+      "bizzsemantic": "353654",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Management",
+      "bizzsemantic": "49460",
+      "artifactName": "Manual Control"
+    },
+    {
+      "artifactType": "Management",
+      "bizzsemantic": "53049",
+      "artifactName": "Manual BOM"
+    },
+    {
+      "artifactType": "Management Manual",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

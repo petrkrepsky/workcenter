@@ -1,0 +1,50 @@
+{
+  "domainName": "Business Risk Models",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36466",
+      "artifactName": "Business Risk"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "64270",
+      "artifactName": "Business Operation Risk"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "64253",
+      "artifactName": "Business Operation Risk"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "64257",
+      "artifactName": "Business Operation Risk"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "64255",
+      "artifactName": "Business Operation Risk"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "64265",
+      "artifactName": "Business Operation Risk"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "64251",
+      "artifactName": "Business Operation Risk"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "domainName": "Interbank Relationship Management",
+  "artifacts": [
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "43579",
+      "artifactName": "Bank Relationship"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111461",
+      "artifactName": "Bank Relationship"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45277",
+      "artifactName": "Bank Relationship"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212157",
+      "artifactName": "Interbank Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212154",
+      "artifactName": "Bank Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212145",
+      "artifactName": "Bank Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212133",
+      "artifactName": "Bank Relationship"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104689",
+      "artifactName": "Contact"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Interbank Relationship Management SD Overview",
+      "bizzsemantic": "353820",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Interbank",
+      "bizzsemantic": "45278",
+      "artifactName": "Relationship"
+    },
+    {
+      "artifactType": "Interbank",
+      "bizzsemantic": "43580",
+      "artifactName": "Relationship"
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31849",
+      "artifactName": "Interbank"
+    },
+    {
+      "artifactType": "Interbank Relationship",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

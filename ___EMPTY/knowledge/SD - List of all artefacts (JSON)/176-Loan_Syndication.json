@@ -1,0 +1,85 @@
+{
+  "domainName": "Loan Syndication",
+  "artifacts": [
+    {
+      "artifactType": "Loan Syndication SD Overview",
+      "bizzsemantic": "353889",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Loan Syndication API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "47935",
+      "artifactName": "Loan Syndication"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32453",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111035",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29105",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161222",
+      "artifactName": "Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161207",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161219",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "161200",
+      "artifactName": "Syndicated Loan"
+    },
+    {
+      "artifactType": "Loan Syndication",
+      "bizzsemantic": "29106",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Loan Syndication",
+      "bizzsemantic": "32454",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Loan Syndication API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

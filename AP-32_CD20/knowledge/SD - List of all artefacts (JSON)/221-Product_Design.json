@@ -1,0 +1,115 @@
+{
+  "domainName": "Product Design",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44093",
+      "artifactName": "Product Design"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38088",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "65861",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45115",
+      "artifactName": "Productor Service"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "65869",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "65864",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "65879",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "65895",
+      "artifactName": "Productand Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65882",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65893",
+      "artifactName": "Testing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "65886",
+      "artifactName": "Functional Requirements"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65877",
+      "artifactName": "Corporate Architecture"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Product Design SD Overview",
+      "bizzsemantic": "350694",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Design",
+      "bizzsemantic": "45116",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Product Design",
+      "bizzsemantic": "44766",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Product Design API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

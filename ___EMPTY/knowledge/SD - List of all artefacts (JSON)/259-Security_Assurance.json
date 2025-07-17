@@ -1,0 +1,50 @@
+{
+  "domainName": "Security Assurance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46014",
+      "artifactName": "Security Assurance"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130018",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111409",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132898",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209722",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209728",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209720",
+      "artifactName": "Security Compliance"
+    }
+  ]
+}

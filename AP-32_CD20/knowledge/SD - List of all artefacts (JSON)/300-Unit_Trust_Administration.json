@@ -1,0 +1,110 @@
+{
+  "domainName": "Unit Trust Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39425",
+      "artifactName": "Unit Trust"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133391",
+      "artifactName": "Unit Trust"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111047",
+      "artifactName": "Unit Trust Administrative"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38598",
+      "artifactName": "Unit Trust Administrative"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213627",
+      "artifactName": "Unit Trust"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213648",
+      "artifactName": "Unit Trust Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213621",
+      "artifactName": "Unit Trust Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213664",
+      "artifactName": "Unit Trust Administrative"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34093",
+      "artifactName": "Fund Management Fee"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38788",
+      "artifactName": "Fund Investor, Middle and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "47001",
+      "artifactName": "Fund Financial Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34667",
+      "artifactName": "Fund Enrolment Routine"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32686",
+      "artifactName": "Fund Tax Administration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30118",
+      "artifactName": "Fund Accounting Routine"
+    },
+    {
+      "artifactType": "Unit Trust Administration SD Overview",
+      "bizzsemantic": "353783",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Unit Trust",
+      "bizzsemantic": "38599",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Unit Trust",
+      "bizzsemantic": "53911",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "Unit Trust",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

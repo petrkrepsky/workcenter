@@ -1,0 +1,105 @@
+{
+  "domainName": "Enterprise Architecture",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45011",
+      "artifactName": "Enterprise"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133120",
+      "artifactName": "Enterprise Architecture"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111145",
+      "artifactName": "Enterprise Architecture"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42990",
+      "artifactName": "Enterprise Architecture"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217599",
+      "artifactName": "Enterprise"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217615",
+      "artifactName": "Enterprise Architecture"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217624",
+      "artifactName": "Enterprise Architecture"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217626",
+      "artifactName": "Enterprise Architecture"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105484",
+      "artifactName": "Technology Infrastructure"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108679",
+      "artifactName": "Application Architecture"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109374",
+      "artifactName": "Information Architecture"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108573",
+      "artifactName": "Business Architecture"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107733",
+      "artifactName": "Organization"
+    },
+    {
+      "artifactType": "Enterprise Architecture SD Overview",
+      "bizzsemantic": "351558",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Enterprise",
+      "bizzsemantic": "49430",
+      "artifactName": "Architecture Control"
+    },
+    {
+      "artifactType": "Enterprise",
+      "bizzsemantic": "52982",
+      "artifactName": "Architecture BOM"
+    },
+    {
+      "artifactType": "Enterprise",
+      "bizzsemantic": "",
+      "artifactName": "Architecture API"
+    }
+  ]
+}

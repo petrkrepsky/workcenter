@@ -1,0 +1,95 @@
+{
+  "domainName": "Product Expert Sales Support",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32141",
+      "artifactName": "Product Expert"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30157",
+      "artifactName": "Sales Specialist Support"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111355",
+      "artifactName": "Sales Specialist Support"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46995",
+      "artifactName": "Sales Specialist Support"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213602",
+      "artifactName": "Product Expert Sales"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213604",
+      "artifactName": "Sales Specialist Support"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213585",
+      "artifactName": "Sales Specialist Support"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213609",
+      "artifactName": "Sales Specialist Support"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104941",
+      "artifactName": "Assignment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "Product Expert Sales Support SD Overview",
+      "bizzsemantic": "345336",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Expert",
+      "bizzsemantic": "46996",
+      "artifactName": "Sales Support"
+    },
+    {
+      "artifactType": "Product Expert",
+      "bizzsemantic": "30158",
+      "artifactName": "Sales Support BOM"
+    },
+    {
+      "artifactType": "Product Expert Sales",
+      "bizzsemantic": "",
+      "artifactName": "Support API"
+    }
+  ]
+}

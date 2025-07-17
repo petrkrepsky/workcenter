@@ -1,0 +1,100 @@
+{
+  "domainName": "Trust Services",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33076",
+      "artifactName": "Trust Services"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133140",
+      "artifactName": "Trust Services"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111097",
+      "artifactName": "Trust Services Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29048",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170992",
+      "artifactName": "Trust"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "171007",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "171009",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170990",
+      "artifactName": "Corporate Trust Services"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31516",
+      "artifactName": "Trust Estate, Inheritance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29298",
+      "artifactName": "Trust Tax and Expense"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39783",
+      "artifactName": "Trust Court Administration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37169",
+      "artifactName": "Trust Asset Maintenance"
+    },
+    {
+      "artifactType": "Trust Services SD Overview",
+      "bizzsemantic": "353696",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Trust Services",
+      "bizzsemantic": "29049",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Trust Services BOM",
+      "bizzsemantic": "52985",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Trust Services API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

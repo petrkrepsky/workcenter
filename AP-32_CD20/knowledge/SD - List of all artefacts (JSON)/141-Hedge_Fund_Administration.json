@@ -1,0 +1,125 @@
+{
+  "domainName": "Hedge Fund Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37932",
+      "artifactName": "Hedge Fund"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "77235",
+      "artifactName": "Hedge Fund"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "77232",
+      "artifactName": "Hedge Fund Administrative"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45549",
+      "artifactName": "Hedge Fund Administrative"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77252",
+      "artifactName": "Hedge Fund"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77258",
+      "artifactName": "Hedge Fund Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77272",
+      "artifactName": "Hedge Fund Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "77237",
+      "artifactName": "Hedge Fund Administrative"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35193",
+      "artifactName": "Fund Performance Fee"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38697",
+      "artifactName": "Fund Management Routine"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45648",
+      "artifactName": "Fund Investor, Middle and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "44663",
+      "artifactName": "Fund Inflows and Outflow"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33841",
+      "artifactName": "Fund Development Routine"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38256",
+      "artifactName": "Fund Financial Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29928",
+      "artifactName": "Fund Enrolment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "46228",
+      "artifactName": "Fund Tax Administration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32971",
+      "artifactName": "Fund Accounting Routine"
+    },
+    {
+      "artifactType": "Hedge Fund Administration SD Overview",
+      "bizzsemantic": "353728",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Hedge Fund",
+      "bizzsemantic": "47943",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Hedge Fund",
+      "bizzsemantic": "53801",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "Hedge Fund",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

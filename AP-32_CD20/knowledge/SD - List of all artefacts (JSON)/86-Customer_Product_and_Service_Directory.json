@@ -1,0 +1,85 @@
+{
+  "domainName": "Customer Product and Service Directory",
+  "artifacts": [
+    {
+      "artifactType": "Customer Product and Service Directory SD Overview",
+      "bizzsemantic": "344942",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41591",
+      "artifactName": "Customer Product"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90576",
+      "artifactName": "Customer Product And"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29709",
+      "artifactName": "Customer Product And"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218188",
+      "artifactName": "Customer Product and"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218178",
+      "artifactName": "Customer Product And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218164",
+      "artifactName": "Customer Product And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218183",
+      "artifactName": "Customer Product And"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39295",
+      "artifactName": "Service"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "41641",
+      "artifactName": "Product"
+    },
+    {
+      "artifactType": "Customer Product",
+      "bizzsemantic": "29710",
+      "artifactName": "and Service"
+    },
+    {
+      "artifactType": "Customer Product",
+      "bizzsemantic": "46626",
+      "artifactName": "and Service"
+    },
+    {
+      "artifactType": "Customer Product",
+      "bizzsemantic": "",
+      "artifactName": "and Service Directory"
+    }
+  ]
+}

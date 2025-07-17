@@ -1,0 +1,110 @@
+{
+  "domainName": "Advertising",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37299",
+      "artifactName": "Advertising"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33309",
+      "artifactName": "Advertising Campaign"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111343",
+      "artifactName": "Advertising Campaign"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "47100",
+      "artifactName": "Advertising Campaign"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212271",
+      "artifactName": "Advertising_SD_Operation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212284",
+      "artifactName": "Advertising Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212288",
+      "artifactName": "Advertising Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212294",
+      "artifactName": "Advertising Campaign"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109105",
+      "artifactName": "Campaign Direction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105406",
+      "artifactName": "Performance Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106799",
+      "artifactName": "Market Tracking"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Advertising SD Overview",
+      "bizzsemantic": "353812",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Advertising Control",
+      "bizzsemantic": "47101",
+      "artifactName": "Record Diagram"
+    },
+    {
+      "artifactType": "Advertising BOM",
+      "bizzsemantic": "33310",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Advertising API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

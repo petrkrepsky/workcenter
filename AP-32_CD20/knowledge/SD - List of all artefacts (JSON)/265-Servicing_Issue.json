@@ -1,0 +1,95 @@
+{
+  "domainName": "Servicing Issue",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33504",
+      "artifactName": "Servicing Issue"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "87344",
+      "artifactName": "Servicing Issue"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "87335",
+      "artifactName": "Servicing Issue"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29511",
+      "artifactName": "Servicing Issue Procedure"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87371",
+      "artifactName": "Servicing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87350",
+      "artifactName": "Servicing Issue"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87332",
+      "artifactName": "Servicing Issue"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87362",
+      "artifactName": "Servicing Issue"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34994",
+      "artifactName": "Production Issue"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36886",
+      "artifactName": "Production Issue"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39695",
+      "artifactName": "Production Issue Analysis"
+    },
+    {
+      "artifactType": "Servicing Issue SD Overview",
+      "bizzsemantic": "353947",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Servicing Issue",
+      "bizzsemantic": "29512",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Servicing Issue",
+      "bizzsemantic": "53307",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Servicing Issue API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

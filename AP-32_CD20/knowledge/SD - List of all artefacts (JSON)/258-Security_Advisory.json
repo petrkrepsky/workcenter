@@ -1,0 +1,50 @@
+{
+  "domainName": "Security Advisory",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36757",
+      "artifactName": "Security Advisory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130018",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111480",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133234",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216724",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216726",
+      "artifactName": "Security Compliance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "216738",
+      "artifactName": "Security Compliance"
+    }
+  ]
+}

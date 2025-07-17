@@ -1,0 +1,50 @@
+{
+  "domainName": "Employee Data Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40855",
+      "artifactName": "Employee Data"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "59181",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111251",
+      "artifactName": "Employee Directory Entry_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131718",
+      "artifactName": "Employee Directory Entry"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208506",
+      "artifactName": "Employee Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208509",
+      "artifactName": "Employee Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208494",
+      "artifactName": "Employee Directory"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    }
+  ]
+}

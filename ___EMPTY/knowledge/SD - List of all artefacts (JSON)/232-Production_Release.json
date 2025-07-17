@@ -1,0 +1,105 @@
+{
+  "domainName": "Production Release",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32518",
+      "artifactName": "Production Release"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29481",
+      "artifactName": "Production System"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111363",
+      "artifactName": "Production System"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43064",
+      "artifactName": "Production System"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176205",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176225",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176210",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "176195",
+      "artifactName": "Production"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104503",
+      "artifactName": "Operational Risk"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110378",
+      "artifactName": "Business Risk"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109576",
+      "artifactName": "Production Risk"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110049",
+      "artifactName": "Functional Risk"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "Production Release SD Overview",
+      "bizzsemantic": "353758",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Production Release",
+      "bizzsemantic": "43065",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Production Release",
+      "bizzsemantic": "29482",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Production Release",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "domainName": "Disbursement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41459",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "45758",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111049",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "33886",
+      "artifactName": "Disbursement Transaction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "155073",
+      "artifactName": "Disbursement_SD_Operati"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "155070",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "155061",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "155065",
+      "artifactName": "Disbursement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Disbursement SD Overview",
+      "bizzsemantic": "347238",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Disbursement",
+      "bizzsemantic": "33887",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Disbursement BOM",
+      "bizzsemantic": "45759",
+      "artifactName": "Diagram"
+    },
+    {
+      "artifactType": "Disbursement API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

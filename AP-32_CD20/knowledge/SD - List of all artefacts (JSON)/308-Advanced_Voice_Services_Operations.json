@@ -1,0 +1,95 @@
+{
+  "domainName": "Advanced Voice Services Operations",
+  "artifacts": [
+    {
+      "artifactType": "Advanced Voice Services Operations SD Overview",
+      "bizzsemantic": "342928",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37680",
+      "artifactName": "Advanced Voice"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34976",
+      "artifactName": "Voice Channel"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111476",
+      "artifactName": "Voice Channel Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46973",
+      "artifactName": "Voice Channel Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "126560",
+      "artifactName": "Advanced Voice Services"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "126562",
+      "artifactName": "Voice Channel Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "126579",
+      "artifactName": "Voice Channel Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "126570",
+      "artifactName": "Voice Channel Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84408",
+      "artifactName": "Outbound"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84396",
+      "artifactName": "Inbound"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Advanced Voice",
+      "bizzsemantic": "46974",
+      "artifactName": "Services Operations"
+    },
+    {
+      "artifactType": "Advanced Voice",
+      "bizzsemantic": "34977",
+      "artifactName": "Services Operations"
+    },
+    {
+      "artifactType": "Advanced Voice",
+      "bizzsemantic": "",
+      "artifactName": "Services Operations"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "domainName": "Branch Portfolio",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39935",
+      "artifactName": "Branch Portfolio"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "76777",
+      "artifactName": "Branch Network"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111435",
+      "artifactName": "Branch Network Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132919",
+      "artifactName": "Branch Network Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143754",
+      "artifactName": "Branch Network"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143746",
+      "artifactName": "Branch Network"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "143748",
+      "artifactName": "Branch Network"
+    }
+  ]
+}

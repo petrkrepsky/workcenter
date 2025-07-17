@@ -1,0 +1,80 @@
+{
+  "domainName": "Information Provider Operation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42204",
+      "artifactName": "Information Provider"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130980",
+      "artifactName": "Information Feed"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111281",
+      "artifactName": "Information Feed Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32609",
+      "artifactName": "Information Feed Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215783",
+      "artifactName": "Information Provider"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215789",
+      "artifactName": "Information Feed Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215776",
+      "artifactName": "Information Feed Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "215791",
+      "artifactName": "Information Feed Operating"
+    },
+    {
+      "artifactType": "Information Provider Operation SD Overview",
+      "bizzsemantic": "353704",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Information Provider",
+      "bizzsemantic": "44168",
+      "artifactName": "Operation Control"
+    },
+    {
+      "artifactType": "Information Provider",
+      "bizzsemantic": "53729",
+      "artifactName": "Operation BOM"
+    },
+    {
+      "artifactType": "Information Provider",
+      "bizzsemantic": "",
+      "artifactName": "Operation API"
+    }
+  ]
+}

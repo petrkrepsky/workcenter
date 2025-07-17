@@ -1,0 +1,50 @@
+{
+  "domainName": "Systems Help Desk",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37506",
+      "artifactName": "Systems Help Desk"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133228",
+      "artifactName": "Help Desk"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111185",
+      "artifactName": "Help Desk Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133232",
+      "artifactName": "Help Desk Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212797",
+      "artifactName": "Help Desk Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212788",
+      "artifactName": "Help Desk Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212783",
+      "artifactName": "Help Desk Operating"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "domainName": "Party Lifecycle Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29780",
+      "artifactName": "Party Lifecycle"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "41962",
+      "artifactName": "Party Relationship"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111087",
+      "artifactName": "Party Relationship"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "48337",
+      "artifactName": "Party Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209833",
+      "artifactName": "Party Lifecycle"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209826",
+      "artifactName": "Party Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209829",
+      "artifactName": "Party Relationship"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209849",
+      "artifactName": "Party Relationship"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109669",
+      "artifactName": "Precedents"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109162",
+      "artifactName": "Documentation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104915",
+      "artifactName": "Qualification"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "Party Lifecycle Management SD Overview",
+      "bizzsemantic": "353960",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Party Lifecycle",
+      "bizzsemantic": "48338",
+      "artifactName": "Management"
+    },
+    {
+      "artifactType": "Party Lifecycle",
+      "bizzsemantic": "41963",
+      "artifactName": "Management BOM"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35788",
+      "artifactName": "Identity Proofing"
+    },
+    {
+      "artifactType": "Party Lifecycle",
+      "bizzsemantic": "",
+      "artifactName": "Management API"
+    }
+  ]
+}

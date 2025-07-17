@@ -1,0 +1,105 @@
+{
+  "domainName": "Corporate Action",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "45490",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133191",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111139",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34867",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211209",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211219",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211202",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211214",
+      "artifactName": "Corporate Action"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33642",
+      "artifactName": "Security Spin-Off Action"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38879",
+      "artifactName": "Security Mergers and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40573",
+      "artifactName": "Security Rights Issue"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39197",
+      "artifactName": "Security Dividend Payment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "43654",
+      "artifactName": "Stock Split or Reversal"
+    },
+    {
+      "artifactType": "Corporate Action SD Overview",
+      "bizzsemantic": "353924",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Corporate Action",
+      "bizzsemantic": "34868",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Corporate Action",
+      "bizzsemantic": "53532",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Corporate Action API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

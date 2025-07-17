@@ -1,0 +1,90 @@
+{
+  "domainName": "Financial Accounting",
+  "artifacts": [
+    {
+      "artifactType": "Financial Accounting SD Overview",
+      "bizzsemantic": "353732",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "42346",
+      "artifactName": "Financial Accounting"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "39719",
+      "artifactName": "Financial Booking"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111484",
+      "artifactName": "Financial Booking Log_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31900",
+      "artifactName": "Financial Booking Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217570",
+      "artifactName": "Financial"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217563",
+      "artifactName": "Financial Booking"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217550",
+      "artifactName": "Financial Booking"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217578",
+      "artifactName": "Financial Booking"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109527",
+      "artifactName": "Ledger Posting"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Financial",
+      "bizzsemantic": "31901",
+      "artifactName": "Accounting Control"
+    },
+    {
+      "artifactType": "Financial",
+      "bizzsemantic": "39720",
+      "artifactName": "Accounting BOM"
+    },
+    {
+      "artifactType": "Financial Accounting",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

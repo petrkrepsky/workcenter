@@ -1,0 +1,105 @@
+{
+  "domainName": "Correspondence",
+  "artifacts": [
+    {
+      "artifactType": "Correspondence SD Overview",
+      "bizzsemantic": "353952",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32927",
+      "artifactName": "Correspondence"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40209",
+      "artifactName": "Correspondence"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "84379",
+      "artifactName": "Correspondence Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43141",
+      "artifactName": "Correspondence Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "84402",
+      "artifactName": "Correspondence_SD_Oper"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "84375",
+      "artifactName": "Correspondence Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "84413",
+      "artifactName": "Correspondence Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "84394",
+      "artifactName": "Correspondence Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84396",
+      "artifactName": "Inbound"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84415",
+      "artifactName": "Block Mailing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84368",
+      "artifactName": "Outbound With Response"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84408",
+      "artifactName": "Outbound"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Correspondence",
+      "bizzsemantic": "43142",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Correspondence",
+      "bizzsemantic": "40210",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Correspondence API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

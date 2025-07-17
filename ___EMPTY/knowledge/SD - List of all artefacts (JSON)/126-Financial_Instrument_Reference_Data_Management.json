@@ -1,0 +1,105 @@
+{
+  "domainName": "Financial Instrument Reference Data Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40174",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132327",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111453",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45815",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210283",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210298",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210300",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210313",
+      "artifactName": "Financial Instrument"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32962",
+      "artifactName": "Warrant Instrument"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32249",
+      "artifactName": "Option Instrument property"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30742",
+      "artifactName": "Futures Instrument"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35045",
+      "artifactName": "Equity Instrument property"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33229",
+      "artifactName": "Debt Instrument property"
+    },
+    {
+      "artifactType": "Financial Instrument Reference Data Management SD Overview",
+      "bizzsemantic": "353778",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Financial Instrument",
+      "bizzsemantic": "45816",
+      "artifactName": "Reference Data"
+    },
+    {
+      "artifactType": "Financial Instrument",
+      "bizzsemantic": "53887",
+      "artifactName": "Reference Data"
+    },
+    {
+      "artifactType": "Financial Instrument",
+      "bizzsemantic": "",
+      "artifactName": "Reference Data"
+    }
+  ]
+}
