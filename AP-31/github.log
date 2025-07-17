@@ -1,0 +1,124 @@
+# GitHub Issue Log - AP-31 Analysis Phase
+
+**Date:** 2025-07-17  
+**JIRA ID:** AP-31  
+**GIT ID:** #2  
+**Task:** Přehled FX derivátů (FX Derivatives Overview)  
+
+## Analysis Phase Summary
+
+### Files Analyzed
+
+#### Input Files (/input):
+1. **AP-31_business_idea.md** - Business requirements document
+2. **AP-31_solution_design.md** - Technical solution design
+3. **US 5901 - Přehled FX derivátů v portfoliu.jpg** - Architecture diagram
+4. **US 5901 - Přehled FX derivátů v portfoliu 2.jpeg** - Architecture diagram (duplicate)
+
+#### Knowledge Base (/knowledge):
+1. **structured_domains_full.json** - BIAN service domains catalog
+2. **330+ JSON files** - Individual BIAN service domain artifacts and patterns
+
+### Context Understanding
+
+**Business Requirement:**
+- Client wants to view FX derivatives overview in their portfolio
+- FX derivatives include: FX spot, FX outright, FX swap
+- FX derivatives should be part of portfolio valuation
+- ~200 clients currently use FX derivatives
+
+**Technical Context:**
+- Data sources: Blotter system (FX trades), RMR system (valuations)
+- Integration via Kafka topics: Trade topic (from Blotter), Valuation topic (from RMR)
+- Systems: DKCZ (Client web/mobile app), Enterprise Integrator (EI Kafka)
+- Architecture follows BIAN standards for financial services
+
+**Key Technical Components:**
+- **Blotter:** Holds FX spots, outrights, swaps with client/portfolio linkage
+- **RMR (Risk DB):** Provides valuations since 2021, older data in Quaestor
+- **DKCZ:** Client interface (web/mobile banking)
+- **EI Kafka:** Enterprise integration layer
+
+**Implementation Requirements:**
+- Display FX derivatives in portfolio overview and dedicated tab
+- Show profit/loss calculations in CZK
+- Support detailed view with trade specifics
+- Integrate with existing portfolio valuation calculations
+- Handle both portfolio-linked and business unit trades
+
+### BIAN Framework Alignment
+
+The solution aligns with BIAN service domains:
+- **Transaction Engine** - Core trade processing
+- **Position Management** - Portfolio position tracking
+- **Financial Market Analysis** - Valuation and risk assessment
+- **Customer Portfolio** - Client portfolio management
+
+### Next Steps Required
+
+This analysis provides foundation for:
+1. Detailed system design
+2. API specifications
+3. Data model definitions
+4. Integration patterns
+5. UI/UX specifications
+
+**Status:** Analysis phase completed successfully. Ready for design phase.
+
+---
+
+## Business Architecture Design Phase Summary
+
+**Date:** 2025-01-17  
+**Phase:** Business Architecture Design  
+
+### Business Architecture Mapping
+
+**Primary BIAN Service Domains Identified:**
+1. **Position_Keeping** - FX derivative transaction logs and positions
+2. **Customer_Portfolio** - Enhanced portfolio analysis including FX derivatives
+3. **Currency_Exchange** - FX transaction pricing and capture
+4. **Transaction_Engine** - FX derivative processing orchestration
+5. **Financial_Market_Analysis** - FX market analysis and valuation
+
+**Secondary BIAN Service Domains:**
+6. Investment_Portfolio_Analysis - Portfolio performance with FX derivatives
+7. Investment_Portfolio_Management - Portfolio management including FX components
+8. Market_Order_Execution - FX derivative transaction execution
+9. Securities_Position_Keeping - Securities-related FX derivative support
+
+### Key Business Process Impacts
+
+**BIAN Functional Patterns Affected:**
+- **FULFILL** - Process FX derivative transactions and maintain positions
+- **ANALYSE** - Enhanced portfolio analysis to include FX derivatives  
+- **TRANSACT** - Process FX transactions with preferential pricing
+- **MONITOR** - Real-time FX market monitoring and valuation
+- **MANAGE** - Portfolio management including FX derivatives
+- **TRACK** - Maintain running record of FX derivative transactions
+
+### Critical Business Requirements
+
+**Change Scope:** Extend DKCZ client portfolio interface to include FX derivatives visibility and valuation
+**Target Users:** ~200 clients (scalable to 1,000+)
+**FX Derivative Types:** Spot, Outright, Swap
+**Integration Method:** Kafka topics (Blotter → EI Kafka → DKCZ)
+**Valuation Sources:** RMR (post-2021), Quaestor (pre-2021)
+
+### Compliance & Risk Considerations
+
+**Regulatory Impact:** MiFID II, Basel III, EMIR, AML/KYC, GDPR
+**Risk Factors:** Market risk, operational risk, liquidity risk, credit risk
+**Security Requirements:** Data encryption, multi-factor authentication, role-based access
+
+### Deliverables Created
+
+**Business Description Document:** `/workinginprogress/business_description.md`
+- Complete AS-IS and TO-BE state analysis
+- Comprehensive BIAN service domain mapping
+- Business process impact assessment
+- Legal, compliance, and risk analysis
+- Non-functional requirements specification
+- Detailed acceptance criteria (20 criteria)
+
+**Status:** Business architecture design phase completed successfully. Ready for technical architecture phase.
