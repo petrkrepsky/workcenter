@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Deal 2.0 - Business Architecture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .nav-breadcrumb {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .nav-breadcrumb a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #4a5568;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #2d3748;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        h4 {
+            color: #4a5568;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight-box {
+            background: #f0f4ff;
+            border: 1px solid #667eea;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .bian-domains {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .bian-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .bian-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .bian-card .pattern {
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        
+        .system-integration {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .system-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .system-card strong {
+            color: #4a5568;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .process-card {
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .process-card h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .pattern-tag {
+            background: #48bb78;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .findings {
+            background: #fed7d7;
+            border: 1px solid #fc8181;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .findings h3 {
+            color: #c53030;
+            margin-top: 0;
+        }
+        
+        .recommendations {
+            background: #c6f6d5;
+            border: 1px solid #68d391;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .recommendations h3 {
+            color: #2f855a;
+            margin-top: 0;
+        }
+        
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .requirement-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .requirement-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .risk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .risk-card {
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .risk-card h4 {
+            color: #c53030;
+            margin-bottom: 10px;
+        }
+        
+        .acceptance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .acceptance-card {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .acceptance-card h4 {
+            color: #2f855a;
+            margin-bottom: 10px;
+        }
+        
+        .data-objects {
+            background: #e6fffa;
+            border: 1px solid #4fd1c7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .data-objects h3 {
+            color: #234e52;
+            margin-top: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .bian-domains {
+                grid-template-columns: 1fr;
+            }
+            
+            .system-integration {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏗️ Business Architecture</h1>
+            <p>Detailní popis business architektury s BIAN service domains</p>
+        </div>
+        
+        <div class="nav-breadcrumb">
+            <a href="index.html">← Zpět na hlavní stránku</a> | 
+            <span>Business Architecture</span>
+        </div>
+        
+        <div class="content">
+            <h1>AP-32 Clear Deal 2.0 - Business Description</h1>
+            
+            <div class="highlight-box">
+                <h2>Přehled transformace</h2>
+                <p>Clear Deal 2.0 představuje komplexní transformaci současných investičních služeb do mobilní aplikace pro retailové klienty. Projekt zahrnuje digitalizaci investičních služeb, nový onboarding proces přes Bank iD, automatizaci portfolio managementu a mobilní-first přístup k investičním službám.</p>
+            </div>
+            
+            <h2>Klíčové změny a transformace</h2>
+            
+            <div class="system-integration">
+                <div class="system-card">
+                    <strong>Digitalizace investičních služeb:</strong><br>
+                    Přechod od tradičních pobočkových investičních služeb k mobilní aplikaci
+                </div>
+                <div class="system-card">
+                    <strong>Nový onboarding proces:</strong><br>
+                    Implementace vzdálené identifikace přes Bank iD pro nové klienty
+                </div>
+                <div class="system-card">
+                    <strong>Automatizace portfolio managementu:</strong><br>
+                    Vytvoření systému pro automatické investiční strategie
+                </div>
+                <div class="system-card">
+                    <strong>Mobilní-first přístup:</strong><br>
+                    Kompletní přepracování uživatelského rozhraní pro mobilní zařízení
+                </div>
+            </div>
+            
+            <h2>AS-IS vs TO-BE analýza</h2>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <h4>AS-IS - Současný stav</h4>
+                    <ul>
+                        <li><strong>Investiční služby:</strong> Poskytované primárně prostřednictvím poboček a internetového bankovnictví</li>
+                        <li><strong>Onboarding:</strong> Manuální proces s fyzickou přítomností klienta</li>
+                        <li><strong>Portfolio management:</strong> Spravované investičními poradci s omezenou automatizací</li>
+                        <li><strong>Platby:</strong> Tradiční bankovní převody s manuálním zpracováním</li>
+                        <li><strong>Reporting:</strong> Statické výpisy a reporty generované na požádání</li>
+                    </ul>
+                </div>
+                
+                <div class="process-card">
+                    <h4>TO-BE - Budoucí stav</h4>
+                    <ul>
+                        <li><strong>Mobilní aplikace:</strong> Nativní iOS/Android aplikace s komplexním investičním portfolio</li>
+                        <li><strong>Digitální onboarding:</strong> Vzdálená identifikace přes Bank iD s automatickým zasmluvněním</li>
+                        <li><strong>Automatizované strategie:</strong> Systém pro vytváření a správu investičních strategií s AI podporou</li>
+                        <li><strong>Real-time platby:</strong> Okamžité investiční transakce s automatickým settlement</li>
+                        <li><strong>Interaktivní reporting:</strong> Real-time dashboardy s prediktivními modely a analýzami</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2>BIAN Business Architecture</h2>
+            
+            <h3>Primární Service Domains</h3>
+            <div class="bian-domains">
+                <div class="bian-card">
+                    <h4>Consumer Investments (SD-30)</h4>
+                    <span class="pattern">Transact</span>
+                    <p><strong>Artifacts:</strong> Consumer Securities Order, Transaction</p>
+                    <p><strong>Behavior Qualifiers:</strong> Order Initiation, Funding Check, Compliance, Quote</p>
+                    <p><strong>Justification:</strong> Klíčová doména pro zpracování investičních objednávek retailových klientů</p>
+                </div>
+                
+                <div class="bian-card">
+                    <h4>Investment Portfolio Management (SD-158)</h4>
+                    <span class="pattern">Fulfill</span>
+                    <p><strong>Artifacts:</strong> Managed Investment, Investment Portfolio</p>
+                    <p><strong>Behavior Qualifiers:</strong> Trade Initiation, Market Opportunities, Track</p>
+                    <p><strong>Justification:</strong> Správa investičních portfolií a implementace automatizovaných strategií</p>
+                </div>
+                
+                <div class="bian-card">
+                    <h4>Party Authentication (SD-202)</h4>
+                    <span class="pattern">Assess</span>
+                    <p><strong>Artifacts:</strong> Party Authentication</p>
+                    <p><strong>Behavior Qualifiers:</strong> Biometric, Device, Document, Password</p>
+                    <p><strong>Justification:</strong> Kritická doména pro autentifikaci klientů v mobilní aplikaci</p>
+                </div>
+                
+                <div class="bian-card">
+                    <h4>Party Lifecycle Management (SD-203)</h4>
+                    <span class="pattern">Administer</span>
+                    <p><strong>Artifacts:</strong> Party Relationship</p>
+                    <p><strong>Behavior Qualifiers:</strong> Identity Proofing, Qualification, Documentation</p>
+                    <p><strong>Justification:</strong> Správa životního cyklu klientských vztahů včetně onboardingu</p>
+                </div>
+                
+                <div class="bian-card">
+                    <h4>Customer Agreement (SD-72)</h4>
+                    <span class="pattern">Agree Terms</span>
+                    <p><strong>Artifacts:</strong> Customer Agreement</p>
+                    <p><strong>Behavior Qualifiers:</strong> Policy Terms, Regulatory Terms, Legal Terms</p>
+                    <p><strong>Justification:</strong> Správa investičních smluv a smluvních podmínek</p>
+                </div>
+                
+                <div class="bian-card">
+                    <h4>Payment Execution (SD-206)</h4>
+                    <span class="pattern">Process</span>
+                    <p><strong>Artifacts:</strong> Payment Execution</p>
+                    <p><strong>Behavior Qualifiers:</strong> Payment Execution, Payment Mechanism</p>
+                    <p><strong>Justification:</strong> Zpracování plateb pro investiční transakce</p>
+                </div>
+            </div>
+            
+            <h3>Podporné Service Domains</h3>
+            <ul>
+                <li><strong>Customer Relationship Management (SD-89)</strong> - Správa klientských vztahů a integrace s CRM JTB</li>
+                <li><strong>Product Directory (SD-222)</strong> - Katalog investičních produktů a fondů</li>
+                <li><strong>Regulatory Compliance (SD-248)</strong> - Dodržování MiFID II a dalších regulatorních požadavků</li>
+                <li><strong>Document Services (SD-102)</strong> - Správa dokumentů a elektronických podpisů</li>
+            </ul>
+            
+            <h2>Business Process Impact</h2>
+            
+            <h3>Nové procesy</h3>
+            <div class="process-grid">
+                <div class="process-card">
+                    <h4>Digitální onboarding</h4>
+                    <span class="pattern-tag">Party Lifecycle Management</span>
+                    <ul>
+                        <li>Vzdálená identifikace přes Bank iD</li>
+                        <li>Automatické KYC/AML kontroly</li>
+                        <li>Elektronické podpisy smluv</li>
+                        <li>Automatická validace investičních dotazníků</li>
+                    </ul>
+                </div>
+                
+                <div class="process-card">
+                    <h4>Automatizované portfolio management</h4>
+                    <span class="pattern-tag">Investment Portfolio Management</span>
+                    <ul>
+                        <li>AI-driven investiční strategie</li>
+                        <li>Automatické rebalancování portfolia</li>
+                        <li>Real-time monitoring tržních příležitostí</li>
+                        <li>Prediktivní modelování výkonu</li>
+                    </ul>
+                </div>
+                
+                <div class="process-card">
+                    <h4>Mobilní investiční transakce</h4>
+                    <span class="pattern-tag">Consumer Investments</span>
+                    <ul>
+                        <li>Okamžité zpracování objednávek</li>
+                        <li>Real-time pricing a quotes</li>
+                        <li>Automatické compliance kontroly</li>
+                        <li>Batch processing pro market execution</li>
+                    </ul>
+                </div>
+                
+                <div class="process-card">
+                    <h4>Modernizované platební procesy</h4>
+                    <span class="pattern-tag">Payment Execution</span>
+                    <ul>
+                        <li>Integrace s platebními kartami</li>
+                        <li>Automatické funding kontroly</li>
+                        <li>Real-time settlement</li>
+                        <li>Multi-currency support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2>Impaktované systémy</h2>
+            
+            <div class="system-integration">
+                <div class="system-card">
+                    <strong>CRM JTB:</strong><br>
+                    Rozšíření o investiční funkcionalitsy
+                </div>
+                <div class="system-card">
+                    <strong>TOPAS:</strong><br>
+                    Portfolio management systém - nové API pro mobilní aplikace
+                </div>
+                <div class="system-card">
+                    <strong>SEZAM:</strong><br>
+                    Autentifikační engine - rozšíření o biometrické ověření
+                </div>
+                <div class="system-card">
+                    <strong>ESB WSO2:</strong><br>
+                    Integrační platforma pro synchronní komunikaci
+                </div>
+                <div class="system-card">
+                    <strong>Bank iD:</strong><br>
+                    Identifikační služba pro nové klienty
+                </div>
+                <div class="system-card">
+                    <strong>DigiSign:</strong><br>
+                    Systém pro elektronické podpisy
+                </div>
+            </div>
+            
+            <h2>BIAN Business Model Objects</h2>
+            
+            <div class="data-objects">
+                <h3>Klíčové datové objekty</h3>
+                <div class="process-grid">
+                    <div class="process-card">
+                        <h4>Consumer Investments</h4>
+                        <p><strong>Business Objects:</strong> Consumer Securities Order, Transaction</p>
+                        <p><strong>Data Attributes:</strong> Order ID, Customer ID, Security ID, Order type, quantity, price, Order status, execution details</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <h4>Investment Portfolio Management</h4>
+                        <p><strong>Business Objects:</strong> Managed Investment, Investment Portfolio</p>
+                        <p><strong>Data Attributes:</strong> Portfolio ID, strategy type, risk profile, Asset allocation, performance metrics</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <h4>Party Authentication</h4>
+                        <p><strong>Business Objects:</strong> Party Authentication</p>
+                        <p><strong>Data Attributes:</strong> Authentication ID, method type, Biometric data, device tokens, Authentication status</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <h4>Payment Execution</h4>
+                        <p><strong>Business Objects:</strong> Payment Execution</p>
+                        <p><strong>Data Attributes:</strong> Payment ID, execution status, Payment method, amount, currency, Settlement details</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Compliance a rizika</h2>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <h4>MiFID II</h4>
+                    <p>Suitability Assessment, Best Execution, Product Governance, Transaction Reporting</p>
+                </div>
+                <div class="requirement-card">
+                    <h4>AML/KYC</h4>
+                    <p>Customer Due Diligence, Ongoing Monitoring, Suspicious Activity Reporting, Record Keeping</p>
+                </div>
+                <div class="requirement-card">
+                    <h4>GDPR</h4>
+                    <p>Data Protection, Consent Management, Right to be Forgotten, Data Breach Notification</p>
+                </div>
+            </div>
+            
+            <h2>Non-functional Requirements</h2>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <h4>Performance</h4>
+                    <p>Response Time: < 2 sekundy<br>Throughput: 1000 současných uživatelů<br>Market Data Latency: < 100ms</p>
+                </div>
+                <div class="requirement-card">
+                    <h4>Security</h4>
+                    <p>Encryption: AES-256<br>Authentication: Multi-factor<br>Authorization: RBAC<br>Audit: Kompletní audit trail</p>
+                </div>
+                <div class="requirement-card">
+                    <h4>Scalability</h4>
+                    <p>Horizontal Scaling: Mikroservisní architektura<br>Database Scaling: Distributed database<br>Cache Strategy: Multi-level caching</p>
+                </div>
+                <div class="requirement-card">
+                    <h4>Reliability</h4>
+                    <p>Availability: 99.9% uptime<br>Disaster Recovery: RTO < 4 hodiny<br>Backup Strategy: Automatické zálohy</p>
+                </div>
+            </div>
+            
+            <h2>Identifikovaná rizika</h2>
+            
+            <div class="risk-grid">
+                <div class="risk-card">
+                    <h4>Technická rizika</h4>
+                    <ul>
+                        <li>Integrace s legacy systémy</li>
+                        <li>Performance bottlenecks</li>
+                        <li>Data synchronization</li>
+                        <li>Mobile platform fragmentation</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <h4>Business rizika</h4>
+                    <ul>
+                        <li>User adoption</li>
+                        <li>Competitive pressure</li>
+                        <li>Regulatory changes</li>
+                        <li>Market volatility</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <h4>Bezpečnostní rizika</h4>
+                    <ul>
+                        <li>Cyber attacks</li>
+                        <li>Data breaches</li>
+                        <li>Authentication bypass</li>
+                        <li>Mobile malware</li>
+                    </ul>
+                </div>
+                <div class="risk-card">
+                    <h4>Provozní rizika</h4>
+                    <ul>
+                        <li>System outages</li>
+                        <li>Third-party dependencies</li>
+                        <li>Staff training</li>
+                        <li>Change management</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2>Acceptance Criteria</h2>
+            
+            <div class="acceptance-grid">
+                <div class="acceptance-card">
+                    <h4>Funkční kritéria</h4>
+                    <ul>
+                        <li>95% úspěšnost vzdálené identifikace přes Bank iD</li>
+                        <li>100% úspěšnost zpracování standardních objednávek</li>
+                        <li>Automatické rebalancování portfolia do 24 hodin</li>
+                        <li>99.9% úspěšnost platebních transakcí</li>
+                    </ul>
+                </div>
+                <div class="acceptance-card">
+                    <h4>Performance kritéria</h4>
+                    <ul>
+                        <li>Response time: < 2 sekundy pro 95% dotazů</li>
+                        <li>Concurrent users: Podpora 1000 současných uživatelů</li>
+                        <li>Market data: Real-time quotes s latencí < 100ms</li>
+                        <li>Batch processing: 10,000 transakcí/hodina</li>
+                    </ul>
+                </div>
+                <div class="acceptance-card">
+                    <h4>Security kritéria</h4>
+                    <ul>
+                        <li>100% úspěšnost multi-factor authentication</li>
+                        <li>100% dat šifrovaných AES-256</li>
+                        <li>100% transakcí auditovaných a logovaných</li>
+                        <li>0 high-severity vulnerabilities</li>
+                    </ul>
+                </div>
+                <div class="acceptance-card">
+                    <h4>User Experience kritéria</h4>
+                    <ul>
+                        <li>User satisfaction: > 4.5/5 v app store ratings</li>
+                        <li>App adoption: > 70% stávajících investičních klientů</li>
+                        <li>Support tickets: < 5% uživatelů vyžadujících podporu</li>
+                        <li>Completion rate: > 90% dokončených onboarding procesů</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><em>Dokument vytvořen: 2025-07-17 | Business Analytik: Claude Agent | JIRA: AP-32 | Verze: 1.0</em></p>
+        </div>
+    </div>
+</body>
+</html>

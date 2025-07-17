@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Deal 2.0 - Dokumentace Projektu AP-32</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .nav-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #e1e8ed;
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        
+        .nav-card h3 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        .nav-card p {
+            color: #666;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        
+        .nav-card a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.2s ease;
+        }
+        
+        .nav-card a:hover {
+            background: #5a67d8;
+        }
+        
+        .roles-section {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .roles-section h2 {
+            color: #2d3748;
+            margin-bottom: 24px;
+            font-size: 1.8em;
+            font-weight: 600;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+        
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .role-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .role-card h4 {
+            color: #4a5568;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .role-card p {
+            color: #718096;
+            font-size: 0.9em;
+        }
+        
+        .project-info {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .project-info h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .info-item {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        
+        .info-item strong {
+            color: #4a5568;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .info-item span {
+            color: #718096;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #48bb78;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .navigation {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Clear Deal 2.0</h1>
+            <p>Kompletní projektová dokumentace - AP-32</p>
+            <span class="badge">DESIGN PHASE COMPLETE</span>
+        </div>
+        
+        <div class="navigation">
+            <div class="nav-card">
+                <h3>📋 Business Idea & Analysis</h3>
+                <p>Kompletní analýza obchodního zadání, stakeholderů a systémové architektury s mapováním na BIAN framework.</p>
+                <a href="analysis.html">Zobrazit analýzu</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>🏗️ Business Architecture</h3>
+                <p>Detailní popis business architektury s BIAN service domains, functional patterns a business procesními dopady.</p>
+                <a href="business-architecture.html">Zobrazit architekturu</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>⚙️ Use Cases Specification</h3>
+                <p>Kompletní sada use cases validovaná proti business požadavkům s 100% pokrytím acceptance criteria.</p>
+                <a href="use-cases.html">Zobrazit use cases</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>🧪 Component Test Cases</h3>
+                <p>Detailní testovací případy pro jednotlivé komponenty systému včetně security a compliance testů.</p>
+                <a href="component-tests.html">Zobrazit component testy</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>🔄 End-to-End Test Cases</h3>
+                <p>Kompletní E2E testovací scénáře pokrývající business workflows napříč všemi systémy.</p>
+                <a href="end-to-end-tests.html">Zobrazit E2E testy</a>
+            </div>
+        </div>
+        
+        <div class="roles-section">
+            <h2>Dokumentace podle rolí</h2>
+            <div class="roles-grid">
+                <div class="role-card">
+                    <h4>🎯 Business Analyst</h4>
+                    <p>Business description, use cases, acceptance criteria</p>
+                </div>
+                <div class="role-card">
+                    <h4>🏛️ Business Architect</h4>
+                    <p>BIAN domains, functional patterns, business processes</p>
+                </div>
+                <div class="role-card">
+                    <h4>💻 IT Analyst</h4>
+                    <p>Technical requirements, system integration, data flows</p>
+                </div>
+                <div class="role-card">
+                    <h4>🔧 IT Architect</h4>
+                    <p>System architecture, component design, technical specification</p>
+                </div>
+                <div class="role-card">
+                    <h4>🧪 QA Engineer</h4>
+                    <p>Test cases, test strategies, quality assurance</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-info">
+            <h2>Informace o projektu</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>JIRA ID:</strong>
+                    <span>AP-32</span>
+                </div>
+                <div class="info-item">
+                    <strong>Git ID:</strong>
+                    <span>#10</span>
+                </div>
+                <div class="info-item">
+                    <strong>Branch:</strong>
+                    <span>AP-32_CD20</span>
+                </div>
+                <div class="info-item">
+                    <strong>Fáze:</strong>
+                    <span>Design Phase Complete</span>
+                </div>
+                <div class="info-item">
+                    <strong>BIAN Domains:</strong>
+                    <span>6 primárních + 4 podporných</span>
+                </div>
+                <div class="info-item">
+                    <strong>Use Cases:</strong>
+                    <span>16 validovaných</span>
+                </div>
+                <div class="info-item">
+                    <strong>Test Cases:</strong>
+                    <span>41 celkem (26 component + 15 E2E)</span>
+                </div>
+                <div class="info-item">
+                    <strong>Datum:</strong>
+                    <span>17.7.2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Vygenerováno Claude Code - Clear Deal 2.0 Documentation Portal</p>
+        </div>
+    </div>
+</body>
+</html>
