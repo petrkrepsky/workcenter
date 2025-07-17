@@ -122,3 +122,70 @@ This analysis provides foundation for:
 - Detailed acceptance criteria (20 criteria)
 
 **Status:** Business architecture design phase completed successfully. Ready for technical architecture phase.
+
+---
+
+## Functional Analysis - Use Cases Identification Phase Summary
+
+**Date:** 2025-01-17  
+**Phase:** Functional Analysis  
+**Role:** Functional Analyst  
+
+### Use Cases Analysis
+
+**Total Use Cases Identified:** 20  
+**Priority Distribution:**
+- High Priority: 11 use cases
+- Medium Priority: 8 use cases  
+- Low Priority: 1 use case
+
+**BIAN Domain Coverage:** 8 primary domains
+- Customer_Portfolio (3 use cases)
+- Position_Keeping (4 use cases)
+- Transaction_Engine (3 use cases)
+- Financial_Market_Analysis (3 use cases)
+- Currency_Exchange (2 use cases)
+- Investment_Portfolio_Analysis (3 use cases)
+- Market_Order_Execution (1 use case)
+- Investment_Portfolio_Management (1 use case)
+
+### Technical Component Impact Analysis
+
+**Total Technical Components Impacted:** 80 components  
+**Key Component Categories:**
+- **DKCZ Frontend/Backend** - Portfolio interface and data processing
+- **EI Kafka** - Event-driven integration layer
+- **Blotter System** - FX derivative transaction source
+- **RMR/Quaestor** - Valuation and risk systems
+- **Processing Engines** - Settlement, valuation, and portfolio calculations
+- **Support Services** - Authentication, monitoring, reference data
+
+### Critical Use Cases (High Priority)
+
+1. **View FX Derivatives in Portfolio Overview** - Core client functionality
+2. **Access Dedicated FX Derivatives Tab** - Specialized interface
+3. **Display FX Derivative Position Details** - Position transparency
+4. **Process FX Derivative Transactions** - Transaction processing
+5. **Calculate FX Derivative Valuations** - Valuation engine
+6. **Include FX Derivatives in Portfolio Valuation** - Portfolio integration
+7. **Handle FX Derivative Settlement Processing** - Settlement operations
+8. **Manage FX Derivative Position Keeping** - Position management
+9. **Authenticate Client Access to FX Derivatives** - Security
+10. **Handle FX Derivative Data Synchronization** - Data consistency
+
+### Implementation Approach
+
+**Phase 1 (Core):** Use cases 1-5 (Basic display and processing)
+**Phase 2 (Integration):** Use cases 6-12 (Portfolio integration and management)
+**Phase 3 (Enhancement):** Use cases 13-20 (Advanced features and operations)
+
+### Deliverables Created
+
+**Use Cases Document:** `/workinginprogress/use-cases.md`
+- 20 comprehensive use cases with technical component mapping
+- BIAN domain alignment for each use case
+- Priority classification for implementation planning
+- Technical component impact analysis (80 components)
+- Implementation phasing recommendations
+
+**Status:** Functional analysis phase completed successfully. Ready for technical component analysis phase.
