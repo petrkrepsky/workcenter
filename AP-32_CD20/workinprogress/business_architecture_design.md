@@ -5,7 +5,7 @@
 
 ## Executive Summary
 
-Tento dokument představuje výsledky business architecture design fáze projektu Clear Deal 2.0. Dokument navazuje na provedený business analysis a poskytuje strukturovaný pohled na business architekturu založenou na BIAN framework principech. Celková architektura zahrnuje 9 identifikovaných BIAN Service Domains, které pokrývají 18 business requirements napříč komplexní mobilní investiční platformou.
+Tento dokument představuje výsledky business architecture design fáze projektu Clear Deal 2.0. Dokument navazuje na provedený business analysis a poskytuje strukturovaný pohled na business architekturu založenou na BIAN framework principech. Celková architektura zahrnuje 10 identifikovaných BIAN Service Domains, které pokrývají 18 business requirements napříč komplexní mobilní investiční platformou. Klíčovou roli hraje Customer_Offer domain jako centrální orchestrátor celého customer journey.
 
 ---
 
@@ -170,58 +170,67 @@ Tento dokument představuje výsledky business architecture design fáze projekt
 
 ### 4.1 Přehled identifikovaných BIAN Service Domains:
 
-Z provedené analýzy bylo identifikováno **9 klíčových BIAN Service Domains**, které pokrývají implementaci všech 18 business requirements projektu Clear Deal 2.0:
+Z provedené analýzy bylo identifikováno **10 klíčových BIAN Service Domains**, které pokrývají implementaci všech 18 business requirements projektu Clear Deal 2.0:
+
+#### **GROUP 0: Central Orchestration Domain**
+1. **Customer_Offer** 
+   - **Role:** Centrální orchestrátor celého customer journey
+   - **Pokrývá:** Cross-process koordinace všech BRQ procesů
+   - **Use cases:** 6 orchestračních případů užití
+   - **Aplikace:** Integruje všechny systémy (CD 2.0, CRM, SEZAM, TOPAS, TA)
+   - **Zodpovědnost:** End-to-end řízení zákaznické cesty od prvního kontaktu po aktivní investování
 
 #### **GROUP 1: Customer Management Domains**
-1. **Party_Lifecycle_Management** 
+2. **Party_Lifecycle_Management** 
    - Pokrývá: BRQ03 (Remote Client Onboarding via Bank iD)
    - Use cases: 20 detailních kroků
    - Aplikace: CD 2.0, Bank iD, CRM, SEZAM, WAC, HD dokumenty
 
-2. **Customer_Agreement**
+3. **Customer_Agreement**
    - Pokrývá: BRQ03, BRQ04 (Contract generation and management)
    - Use cases: 29 detailních kroků
    - Aplikace: CRM, HD dokumenty, CD 2.0
 
-3. **Party_Authentication**
+4. **Party_Authentication**
    - Pokrývá: BRQ01, BRQ03 (Authentication processes)
    - Use cases: 11 detailních kroků
    - Aplikace: CD 2.0, SEZAM, SMS brána
 
-4. **Document_Directory**
+5. **Document_Directory**
    - Pokrývá: BRQ03, BRQ04 (Document management and signatures)
    - Use cases: 8 detailních kroků
    - Aplikace: HD dokumenty, e-mail systém, CD 2.0
 
 #### **GROUP 2: Investment Management Domains**
-5. **Investment_Portfolio_Planning**
+6. **Investment_Portfolio_Planning**
    - Pokrývá: BRQ02, BRQ05 (Strategy creation and validation)
    - Use cases: 20 detailních kroků
    - Aplikace: CD 2.0, Strategy Calculator, TOPAS, TA
 
-6. **Investment_Portfolio_Management**
+7. **Investment_Portfolio_Management**
    - Pokrývá: BRQ05, BRQ08, BRQ09, BRQ10, BRQ11, BRQ12
    - Use cases: 42 detailních kroků
    - Aplikace: TOPAS, TA, Fund Trading, Corporate Actions
 
-7. **Consumer_Investments**
+8. **Consumer_Investments**
    - Pokrývá: BRQ08, BRQ09 (Consumer trading activities)
    - Use cases: 18 detailních kroků
    - Aplikace: Fund Trading System, Settlement System
 
 #### **GROUP 3: Payment Processing Domains**
-8. **Payment_Execution**
+9. **Payment_Execution**
    - Pokrývá: BRQ06, BRQ10 (Bank transfers and withdrawals)
    - Use cases: 17 detailních kroků
    - Aplikace: Banking System, TOPAS, OBOFT
 
-9. **Payment_Initiation**
+10. **Payment_Initiation**
    - Pokrývá: BRQ07 (Card payments and recurring payments)
    - Use cases: 13 detailních kroků
    - Aplikace: Platební brána, Karetní centrum, TOPAS
 
 ### 4.2 Doménová distribuce coverage:
-- **Celkový počet pokrytých use cases:** 142 detailních procesních kroků
+- **Celkový počet pokrytých use cases:** 148+ detailních procesních kroků (včetně orchestrace)
+- **Orchestrační doména:** Customer_Offer (6 orchestračních use cases)
 - **Nejkomplexnější doména:** Investment_Portfolio_Management (42 kroků)
 - **Domain overlap:** Minimální - každá doména má jasně definované zodpovědnosti
 - **Automatizace level:** 45% kroků je plně automatizovaných
@@ -229,6 +238,35 @@ Z provedené analýzy bylo identifikováno **9 klíčových BIAN Service Domains
 ---
 
 ## 5. Detailed Service Domain Analysis
+
+### 5.0 Customer_Offer (Orchestrační doména)
+
+**BIAN Framework Context:**
+- **Business Object Model:** Orchestrace a správa zákaznických nabídek napříč životním cyklem
+- **Control Record:** Centrální řízení customer journey a cross-process koordinace
+- **Domain Scope:** Customer Management - komplexní orchestrace zákaznické cesty
+
+**Clear Deal 2.0 Implementation:**
+- **Role:** Centrální orchestrátor celého customer journey
+- **Orchestruje:** Všechny BRQ procesy prostřednictvím cross-domain koordinace
+- **Klíčové systémy:** Integruje všechny aplikace (CD 2.0, CRM, SEZAM, TOPAS, TA, HD dokumenty)
+- **Automatizace:** Kombinuje manuální rozhodovací body s automatizovanou orchestrací
+
+**Kritické orchestrační funkce:**
+- End-to-end řízení zákaznické cesty od prvního kontaktu po aktivní investování
+- Cross-process koordinace mezi všemi BIAN doménami  
+- Lifecycle management nabídek a their progression
+- Process governance a compliance orchestration
+- Customer-centric approach zajištění konzistence experience
+- Risk management coordination napříč doménami
+
+**Orchestrované use cases:**
+- UC-001: Strategická prezentace a tvorba nabídky
+- UC-002: Cross-process koordinace onboardingu zákazníků  
+- UC-003: End-to-end management zákaznické cesty
+- UC-004: Lifecycle management nabídek
+- UC-005: Orchestrace investičních služeb
+- UC-006: Cross-domain process coordination
 
 ### 5.1 Party_Lifecycle_Management
 
@@ -464,8 +502,9 @@ Z provedené analýzy bylo identifikováno **9 klíčových BIAN Service Domains
 ### 7.1 Shrnutí výsledků:
 
 **Úspěšná standardizace:**
-✅ 18 Business Requirements mapováno na 9 BIAN Service Domains  
-✅ 142 detailních procesních kroků pokryto  
+✅ 18 Business Requirements mapováno na 10 BIAN Service Domains  
+✅ 148+ detailních procesních kroků pokryto (včetně orchestrace)  
+✅ Customer_Offer jako centrální orchestrátor implementován
 ✅ Kompletní systémová integrace definována  
 ✅ BIAN framework compliance zajištěna  
 
@@ -486,11 +525,12 @@ Z provedené analýzy bylo identifikováno **9 klíčových BIAN Service Domains
 Dokument poskytuje kompletní business architecture foundation pro pokračování do system design phase. Všechny identifikované BIAN Service Domains jsou připraveny pro detailní technický design a implementační plánování.
 
 **Připravené deliverables:**
-- 9 BIAN Service Domain specifications
+- 10 BIAN Service Domain specifications (včetně Customer_Offer orchestrátoru)
 - Comprehensive business architecture document
-- Complete use case to domain mapping
+- Complete use case to domain mapping s orchestrací
 - System integration requirements
 - Implementation roadmap recommendations
+- Cross-domain orchestration patterns
 
 ---
 
