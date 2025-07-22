@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : AccruedInterest - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17339740.html">Instrument Prices - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="AccruedInterest_27626133.html">AccruedInterest</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : AccruedInterest - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Bře 01, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><span style="letter-spacing: 0.0px;">Na této stránce je definována datová entita:</span></p><ul><li>AccruedInterest</li></ul><p><span style="letter-spacing: 0.0px;">Technická realizace přenosů je pak popsána na stránkách:</span></p><ul><li class="with-breadcrumbs" title="undefined"><a href="AccruedInterest---Event-Stream_27626136.html">AccruedInterest - Event Stream</a></li><li class="with-breadcrumbs" title="undefined"><a class="createlink" href="/pages/createpage.action?spaceKey=EI&amp;title=AccruedInterest+-+REST+API&amp;linkCreation=true&amp;fromPageId=27626134">AccruedInterest - REST API</a></li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926601090 {padding: 0px;}
+div.rbtoc1684926601090 ul {margin-left: 0px;}
+div.rbtoc1684926601090 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926601090'>
+<ul class='toc-indentation'>
+<li><a href='#AccruedInterestDatovýmodel-Identifikovanéčíselníky'>Identifikované číselníky</a></li>
+<li><a href='#AccruedInterestDatovýmodel-AccruedInterest'>AccruedInterest</a></li>
+<li><a href='#AccruedInterestDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+<li><a href='#AccruedInterestDatovýmodel-Vazby'>Vazby</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="AccruedInterestDatovýmodel-Identifikovanéčíselníky"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Identifikované číselníky</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Název atributu v datovém modelu</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Název číselníku v aplikaci CSC:<a class="external-link" href="https://jtfg.sharepoint.com/:x:/s/JTB_CR_EXT_ORG_BA/ETFmqlQS1DNBmgXvPQcQ6BIBU1gceJshrwxRP4HVe3vjvg?e=4EtRKh" rel="nofollow"> _Číselníky_JTBank_CZ+SK.xlsx</a></th></tr><tr><td class="confluenceTd"><p>currency</p></td><td class="confluenceTd"><p>Currencies</p></td></tr></tbody></table></div><h1 id="AccruedInterestDatovýmodel-AccruedInterest">AccruedInterest</h1><p>Topic bude zasílán se změnou některého z atributů topicu.</p><p>Pro dluhopisy a směnky nebude taId evidováno.</p><div class="table-wrap"><table class="wrapped confluenceTable" data-snooker-col-series="numbers" data-snooker-locked-cols="0"><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th class="numberingColumn highlight-#fff0b3 confluenceTh" contenteditable="false" data-highlight-colour="#fff0b3" data-mce-resize="false">n</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);">lvl</span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><span style="color: rgb(0,0,0);">attribute_name</span></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);">multiplicity</span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);">data_type</span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);">format</span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);">constraints</span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p title=""><span style="color: rgb(0,0,0);"><strong style="text-align: left;">description</strong></span></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);">enum_value</span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);"><strong style="text-align: left;" title="">businessIdentifer</strong></span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);"><strong style="text-align: left;" title="">kafka_bcd</strong></span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><span style="color: rgb(0,0,0);">KEY</span></th></tr></thead><tbody><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">X-Correlation-ID</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">0..1</span></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Korelační identifikátor, povinné pro INIT a RECON</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">2</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">businessChangeDate</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">string</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">date-time</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Datum a čas poslední změny entity</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Y</span></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">3</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">status</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">string</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">enumerace</span></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Reflektuje stav fyzické existence záznamu</span></p><ul><li><span style="color: rgb(0,0,0);">active - aktivní </span></li><li><span style="color: rgb(0,0,0);">deleted - smazáno</span></li></ul></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">active|deleted</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">4</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">instrumentIds</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">object</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Identifikátory cenných papírů</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">5</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">2</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">ccpId</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">integer</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">min: &gt;0, max: bez omezení, dec: 0</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Identifikátory CP CCP</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Y</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Y</span></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">6</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">2</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">ebrokerId<br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">integer</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">min: &gt;0, max: bez omezení, dec: 0</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Identifikace CP v eBroker</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">7</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">2</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">topasId</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">0..1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">integer</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">min: &gt;0, max: bez omezení, dec: 0</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Identifikátory CP TOPAS</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">8</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">validityDate</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">string</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">date</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Datum platnosti AÚV</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">9</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">aiValue</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">number</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">min: bez omezení, max: bez omezení, dec: bez omezení</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">AI value</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">10</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">currency</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">string</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd">číselník</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Měna AÚV. ISO 4217 abecední kód (3 znaky). Číselník Currencies.</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="numberingColumn confluenceTd" contenteditable="false" data-mce-resize="false">11</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">nominalValue</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">number</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Nominální hodnota</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr></tbody></table></div><h1 id="AccruedInterestDatovýmodel-Vysvětleníidentifikátorů"><span>Vysvětlení identifikátorů</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td style="text-align: left;" class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">typ entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>businessIdentifier</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>KEY</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>BUSINESS_STATE</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>resource</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>body_parameter(s)</strong></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p><strong>AccruedInterest</strong></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">instrumentIds</span>.ccpId</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">instrumentIds</span>.ccpId</p></td><td style="text-align: left;" class="confluenceTd">status: active|deleted</td><td style="text-align: left;" class="confluenceTd"><p>accruedInterest</p></td><td style="text-align: left;" class="confluenceTd"><ul style="text-align: left;"><li>validityDateStart</li><li>validityDateEnd</li><li>businessChangeDateStart</li><li>businessChangeDateEnd</li><li>instrumentId</li></ul></td></tr></tbody></table></div><h1 id="AccruedInterestDatovýmodel-Vazby">Vazby</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1400" src="attachments/27626134/53215597.png" data-image-src="attachments/27626134/53215597.png" data-unresolved-comment-count="0" data-linked-resource-id="53215597" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="AccruedInterest - Vazby.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27626134" data-linked-resource-container-version="8" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626134/27626135.png">image2022-6-16_11-37-8.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626134/53215566.png">PortfolioValuationDaily - Vazby.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626134/53215632.png">AccruedInterest - Vazby.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626134/53215597.png">AccruedInterest - Vazby.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

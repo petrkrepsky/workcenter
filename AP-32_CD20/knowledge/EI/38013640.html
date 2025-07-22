@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-IBAN - požadavky/zadání</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="38014507.html">API-IBAN - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-IBAN - požadavky/zadání
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span>, last modified by <span class='editor'> Harvánek Jiří</span> on Pro 21, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout three-equal" data-layout="three-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Crede #CRCEJTBPTSCR73</p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIIBANpožadavky/zadání-Digitálníkanály-release2023-03">Digitální kanály - release 2023-03</h1><h2 id="APIIBANpožadavky/zadání-EvidencepožadavkůvJIRAaRedmine"><span>Evidence požadavků v JIRA a Redmine</span></h2><p><span>
+<span class="jira-issue resolved" data-jira-key="DSWF-1565" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-1565?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-1565</a>
+                            -
+            <span class="summary">[DKCZ] Validace IBAN - nová služba na PTS</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Done</span>
+                </span>
+</span></p><p><span><a class="external-link" href="https://helpdesk.jtfg.com/issues/19155" rel="nofollow">https://helpdesk.jtfg.com/issues/19155</a></span></p><p><span>Aktuální verze Open API definice je na stránce: <a href="17342899.html">Integračn&iacute; anal&yacute;zy - open api</a> pod názvem: payments_IBANInfo_API.yaml</span></p><h2 id="APIIBANpožadavky/zadání-Specifikacepožadavků"><span style="color: rgb(0,51,102);">Specifikace požadavků</span></h2><h3 id="APIIBANpožadavky/zadání-Funkčnípožadavkynarozhraní">Funkční požadavky na rozhraní</h3><p>Požadavky již byly diskutované v komunikaci <a href="attachments/38013640/38013643.msg" data-linked-resource-id="38013643" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="FW_ J&amp;T Služba _validace IBAN_.msg" data-linked-resource-content-type="application/vnd.ms-outlook" data-linked-resource-container-id="38013640" data-linked-resource-container-version="15">FW_ J&amp;T Služba _validace IBAN_.msg</a> a jsou následující:</p><ol><li><span style="letter-spacing: 0.0px;">Metoda vrátí BIC a identifikaci cílové banky.</span></li><li><span style="letter-spacing: 0.0px;">Metoda vrátí příznak, zda je banka ze zadaného IBAN v SEPA prostoru (EU i EHP) - (true, false).</span><ol><li><span style="letter-spacing: 0.0px;">PTS zatím nerozlišuje EU nebo EHP, nyní rozlišuje, zda je země v EU a EHP.</span></li><li><span style="letter-spacing: 0.0px;">Je potřeba přidat přehled registrací pro jednotlivé SEPA produkty:</span><ol><li><span style="letter-spacing: 0.0px;">Objekt Product:</span><ol><li><span style="letter-spacing: 0.0px;">SCT - true/false</span></li><li><span style="letter-spacing: 0.0px;">SDD COR - true/false</span></li><li><span style="letter-spacing: 0.0px;">SDD B2B - true/false</span></li><li><span style="letter-spacing: 0.0px;">SCT INST - true/false</span></li></ol></li></ol></li></ol></li><li><s><span style="letter-spacing: 0.0px;">Metoda vrátí informaci, zda cílová banka z IBAN akceptuje identifikaci na základě IBAN (typicky odpovídá exclude listu pro IBAN) - (true, false).</span></s><ol><li>Jedná se o validaci vůči IBAN Exclusion Listu. Tato kontrola je v PTS součástí validace IBANu (bod 1), takže tento bod je zbytečný. </li></ol></li></ol><p><span style="letter-spacing: 0.0px;">Doplňující informace: </span></p><ul><li>Metoda by v případě nevalidního IBAN na vstupu vracela 400 (validace formátu a validace kontrolních čísel), nebo 409 v případě, že IBAN je validní, ale aktuálně je na Exclusion Listu.<ul><li>Pokud toto není možné, je potřeba rozšířit odpověď 400 o parametr s kódem, na čem validace neprošla.</li><li>PTS v případě nevalidního IBANu vrací i důvod:<ul><li>NoIban - účet vůbec nemá tvar IBANu (<span style="color: rgb(23,43,77);">SYNTAX_ERROR</span>)</li><li>LengthFalse - chybná délka (<span style="color: rgb(23,43,77);">SYNTAX_ERROR</span>)</li><li>InvalidIban - chybný formát (<span style="color: rgb(23,43,77);">SYNTAX_ERROR</span>)</li><li>CheckDigitFalse - nevalidní kontrolní číslo (<span style="color: rgb(23,43,77);">SYNTAX_ERROR</span>)</li><li>LclCheckDigitFalse - nevalidní lokální formát, např. pro CZ a SK neodpovídá účet Mod11 (<span style="color: rgb(23,43,77);">SYNTAX_ERROR</span>)</li><li>ExclusionList - IBAN je sice validní, ale je uveden v Exclusion listu (<span style="color: rgb(23,43,77);">BUSINESS_ERROR)</span></li></ul></li></ul></li></ul><ul><li>Na vstupu by se akceptoval jak IBAN ve strojovém formátu bez mezer<s>, tak i ve formátu s mezerami.</s></li><li>Metoda by vracela i z IBANu přeložené číslo učtu (u CZ a SK v příslušném národním formátu).</li></ul><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 36.0px;"/><col style="width: 52.0px;"/><col style="width: 200.0px;"/><col style="width: 200.0px;"/><col style="width: 164.0px;"/><col style="width: 164.0px;"/><col style="width: 164.0px;"/><col style="width: 304.0px;"/><col style="width: 367.0px;"/></colgroup><tbody><tr><th class="highlight-#f4f5f7 confluenceTh" data-highlight-colour="#f4f5f7" rowspan="2" style="text-align: left;"><br/></th><th class="highlight-#f4f5f7 confluenceTh" data-highlight-colour="#f4f5f7" rowspan="2" style="text-align: left;">code</th><th colspan="4" style="text-align: left;" class="confluenceTh"><span style="color: rgb(0,51,102);">errors</span><span style="color: rgb(0,51,102);"><br/></span></th><th class="highlight-#f4f5f7 confluenceTh" colspan="2" data-highlight-colour="#f4f5f7" style="text-align: left;"><span style="color: rgb(0,51,102);">internalErrors</span></th><th class="highlight-#f4f5f7 confluenceTh" data-highlight-colour="#f4f5f7" style="text-align: left;">Poznámka</th></tr><tr><th style="text-align: left;" class="confluenceTh"><strong title=""><span><span style="color: rgb(0,51,102);">jtCode</span></span></strong></th><th style="text-align: left;" class="confluenceTh"><strong title=""><span>message<span title=""> </span></span></strong></th><th style="text-align: left;" class="confluenceTh"><strong title=""><span><span title=""><span style="color: rgb(0,51,102);">paramName</span></span></span></strong></th><th style="text-align: left;" class="confluenceTh"><strong title=""><span><span title="">paramValue</span></span></strong></th><th style="text-align: left;" class="confluenceTh"><strong title=""><span><span title="">code</span></span></strong></th><th style="text-align: left;" class="confluenceTh"><strong title=""><span><span title=""><strong>message</strong></span></span></strong></th><td class="highlight-#f4f5f7 confluenceTd" data-highlight-colour="#f4f5f7" style="text-align: left;"><br/></td></tr><tr><td class="highlight-#e6fcff confluenceTd" data-highlight-colour="#e6fcff" style="text-align: left;">1</td><td style="text-align: left;" class="confluenceTd">400</td><td style="text-align: left;" class="confluenceTd">9901</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"> Incorrect mandatory data %1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">1</span></td><td style="text-align: left;" class="confluenceTd"><ul><li><span>NoIban</span></li><li>LengthFalse</li><li>InvalidIban</li><li>CheckDigitFalse</li><li>LclCheckDigitFalse</li></ul></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">SYNTAX_ERROR</span></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">%1</td><td class="highlight-#ff8f73 confluenceTd" data-highlight-colour="#ff8f73" title="Barva pozadí: Středně červená 65 %">param value vždy právě jedna z hodnot na které skončila PTS validace.</td></tr><tr><td class="highlight-#b3f5ff confluenceTd" data-highlight-colour="#b3f5ff" style="text-align: left;">2</td><td style="text-align: left;" class="confluenceTd">400</td><td style="text-align: left;" class="confluenceTd">9903</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Mising or invalid element.</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">FIELD_MISSING</span></td><td style="text-align: left;" class="confluenceTd">MANDATORY FIELD X-Correlation-ID</td><td class="confluenceTd"><br/></td></tr><tr><td class="highlight-#b3f5ff confluenceTd" data-highlight-colour="#b3f5ff" style="text-align: left;">3</td><td style="text-align: left;" class="confluenceTd">400</td><td style="text-align: left;" class="confluenceTd">9903</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Mising or invalid element.</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">FIELD_INVALID</span></td><td style="text-align: left;" class="confluenceTd">INVALID LENGTH X-Correlation-ID</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td class="highlight-#b3f5ff confluenceTd" data-highlight-colour="#b3f5ff" style="text-align: left;">4</td><td style="text-align: left;" class="confluenceTd">400</td><td style="text-align: left;" class="confluenceTd">9903</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Mising or invalid element.</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">FIELD_MISSING</span></td><td style="text-align: left;" class="confluenceTd">MANDATORY FIELD traceparent</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td class="highlight-#b3f5ff confluenceTd" data-highlight-colour="#b3f5ff" style="text-align: left;">5</td><td style="text-align: left;" class="confluenceTd">400</td><td style="text-align: left;" class="confluenceTd">9903</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Mising or invalid element.</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">FIELD_INVALID </span></td><td style="text-align: left;" class="confluenceTd">INVALID LENGTH traceparent</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td class="highlight-#deebff confluenceTd" data-highlight-colour="#deebff" style="text-align: left;" title="Barva pozadí: Světle modrá 35 %">6</td><td style="text-align: left;" class="confluenceTd">409</td><td style="text-align: left;" class="confluenceTd">1203</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Bank is on ExclusionList IBAN.</span></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">BUSINESS_ERROR</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">ExclusionList</span></span></td><td class="confluenceTd"><br/></td></tr><tr><td class="highlight-#b3f5ff confluenceTd" data-highlight-colour="#b3f5ff" style="text-align: left;">7</td><td style="text-align: left;" class="confluenceTd">409</td><td style="text-align: left;" class="confluenceTd">1204</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">BIC not found.</span></span></span></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">BUSINESS_ERROR</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">BIC not found</span></span></td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">8</td><td style="text-align: left;" class="confluenceTd">500</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">9907</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">DB exception</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">SQL_ERROR</span></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><span style="color: rgb(23,43,77);">DETAILS IN EVENT LOG</span></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><span style="color: rgb(23,43,77);" title=""><span style="color: rgb(0,0,0);">&quot;%DB_hlaska&quot; nebude zasílána konkrétní chyba </span></span></td></tr><tr><td class="highlight-#b3f5ff confluenceTd" data-highlight-colour="#b3f5ff" style="text-align: left;">9</td><td style="text-align: left;" class="confluenceTd">500</td><td style="text-align: left;" class="confluenceTd">500</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">Internal Server Error.</span></span></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">FATAL_ERROR</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">DETAILS IN WALKBACK.LOG</span></span></td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td class="highlight-#b3f5ff confluenceTd" data-highlight-colour="#b3f5ff" style="text-align: left;">10</td><td style="text-align: left;" class="confluenceTd">501</td><td style="text-align: left;" class="confluenceTd">501</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">Not Implemented.</span></span></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><br/></span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">NOT_IMPLEMENTED</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">NOT IMPLEMENTED</span></span></td><td style="text-align: left;" class="confluenceTd"><br/></td></tr></tbody></table></div><h3 id="APIIBANpožadavky/zadání-Požadavkynastandardizaci">Požadavky na standardizaci</h3><h4 id="APIIBANpožadavky/zadání-Ošetřeníchybovýchstavůaerrorhandling"><span style="color: rgb(0,51,102);">Ošetření chybových stavů a error handling</span></h4><ul><li><span style="color: rgb(0,51,102);" title="undefined">Je potřeba implementovat ošetření chybových stavů podle kapitoly<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-O%C5%A1et%C5%99en%C3%ADchybov%C3%BDchstav%C5%AF" rel="nofollow">Ošetření chybových stavů</a><span> </span>v Připojovací analýze.</span></li><li title="undefined"><span style="color: rgb(23,43,77);">Error handling odpovídá standardu J&amp;T, viz<span> </span></span><a class="external-link" href="https://confluence.jtfg.com/x/gYS2Ag" rel="nofollow">Metodika a standardy J&amp;T</a>. Struktura chybové zprávy by měla odpovídat verzi 2.</li></ul><h4 id="APIIBANpožadavky/zadání-Rozšířenírequestaresponseparametrů"><span style="color: rgb(0,51,102);">Rozšíření request a response parametrů</span></h4><p title="undefined">Na rozhraní je potřeba upravit request a response parametry jednotlivých služeb, aby odpovídaly požadavkům uvedeným v<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Synchronn%C3%ADonlinepo%C5%BEadavek" rel="nofollow">Připojovací analýze - kapitola Synchronní online požadavek</a> a v metodice pro <a href="https://confluencedigi.jtfg.com/x/n4OlAQ" rel="nofollow">REST API</a>.</p><h5 style="margin-left: 40.0px;" id="APIIBANpožadavky/zadání-Ošetřeníduplicitníchvolání-X-Correlation-ID">Ošetření duplicitních volání - X-Correlation-ID</h5><ul><li style="list-style-type: none;"><ul><li><p>Specifikace požadavku:</p><ul><li>X-Correlation-ID je 36 znaků plněné UUID.</li><li>Tento parametr se musí přidat do header parametru na request i response v operacích na<span> </span><ins>vytvoření, změnu či smazání</ins><span> </span>datové entity.</li><li>Parametr je povinný.</li><li>Hodnota X-Correlation-ID je v response stejná jako v requestu.</li><li>Klient (digitální kanály) vyplňuje při volání http header parametr X-Correlation-ID.</li><li>Primární systém je povinen si při úspěšném zpracování ukládat X-Correlation-ID požadavku pro vytvoření, změnu či mazání datové entity.</li><li>Pokud v reakci na chybu (timeout, 5xx) provede klient opakování zaslání požadavku, vyplňuje stejné X-Correlation-ID.</li><li>Na příjem opětovného požadavku se stejným X-Correlation-ID reaguje primární sytém vrácením stejné odpovědi jako u prvotního volání, tj. např. HTTP kód 200 + JSON objekt.</li><li>Požadavek na uchování X-Correlation-ID pro účel ošetření duplicity je min. 7 dní.</li><li>Detekce duplicity se týká přijetí požadavku, nikoliv jeho vyřízení.</li></ul></li></ul></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: yml; gutter: false; theme: Confluence" data-theme="Confluence">     X-Correlation-ID: 
+      description: &quot;Correlation identifier for request and response pairing.&quot;
+      required: true
+      schema: 
+        type: &quot;string&quot;
+        format: &quot;uuid&quot;
+      example: &quot;4adde395-ebef-4552-bd39-cbdaf63305a9&quot;</pre>
+</div></div><h5 style="margin-left: 40.0px;" id="APIIBANpožadavky/zadání-Přidáníheaderparametrutraceparent">Přidání header parametru traceparent</h5><ul><li style="list-style-type: none;"><ul><li><p>Specifikace požadavku:</p><ul><li>Na rozhraní je požadováno přidat header parametr traceparent pro request i response.</li><li>Parametr je povinný typu string.</li><li>Parametr bude vyplňovat konzument rozhraní a bude se propagovat skrze všechny systémy, kterými volání prochází. Momentálně se neřeší jeho napojení do centrálního logování.</li><li>Hodnota traceparent v requestu je stejná jako v response.</li><li>Dokumentace: <a class="external-link" href="https://www.w3.org/TR/trace-context/" rel="nofollow" title="Follow link">https://www.w3.org/TR/trace-context/</a></li></ul></li></ul></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: yml; gutter: false; theme: Confluence" data-theme="Confluence">    traceparent: 
+      description: &quot;Tracing parameter according to W3C Trace Context standard.&quot;
+      required: true
+      schema: 
+        maxLength: 55
+        type: &quot;string&quot;
+      example: &quot;00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01&quot;</pre>
+</div></div><h5 style="margin-left: 40.0px;" id="APIIBANpožadavky/zadání-ValidaceBCDpřionlinepožadavkunazměnudatovéentity">Validace BCD při online požadavku na změnu datové entity</h5><ul><li style="list-style-type: none;"><ul><li><p>Specifikace požadavku:</p><ul><li>BCD = businessChangeDate = business datum změny, které je svázané s datovou entitou.</li><li>Jedná se o validaci, zda požadavek na<span> </span><ins>změnu</ins><span> </span>datové entity vychází z posledních informací.</li><li>Je potřeba přidat nepovinný query parametr BCD na rozhraní.</li><li>Při příjmu požadavku na změnu datové entity se provede porovnání BCD z požadavku s BCD vedeného u datové entity.</li><li>Pokud je u datové entity vedena novější hodnota, vrací se chyba s HTTP kódem 428 - Precondition Required.</li></ul></li></ul></li></ul><h4 id="APIIBANpožadavky/zadání-Definicerozhraní">Definice rozhraní</h4><h5 style="margin-left: 40.0px;" id="APIIBANpožadavky/zadání-Changelog-přidánídoOpenAPIdefinice">Changelog - přidání do OpenAPI definice</h5><ul><li style="list-style-type: none;"><ul><li>Specifikace požadavku:<ul><li>Při změně rozhraní do OpenAPI definice vložit vždy nový řádek s: datum, verze, autor, seznam změn.</li><li>Nedělat zpětně.</li><li>Pokud je OpenAPI definice generovaná a přidání changelogu nelze provést automaticky, je potřeba ho přidat ručně. Rozhraní by měla být dodávána s patřičnou dokumentací - ideálně changelog a manuál.</li><li>Příklad: # 2022-06-15 – 1.12.0 - Pavel Hrdlička - Added resource &quot;/client&quot;, added query parameter &quot;city&quot; in &quot;GET /userInfo&quot;</li></ul></li></ul></li></ul><h5 style="margin-left: 40.0px;" id="APIIBANpožadavky/zadání-BIDjakopathparametr">BID jako path parametr</h5><ul><li style="list-style-type: none;"><ul><li>Specifikace požadavku:<ul><li>BID = business ID datové entity</li><li>V operacích na změnu nebo smazání datové entity je potřeba BID datové entity vložit do path parametru.</li></ul></li></ul></li></ul><h5 style="margin-left: 40.0px;" id="APIIBANpožadavky/zadání-Verzování-přidánídoOpenAPIdefinice">Verzování - přidání do OpenAPI definice</h5><ul><li style="list-style-type: none;"><ul><li>Specifikace požadavku:<ul><li>Do OpenAPI definice rozhraní je potřeba přidat verzi API.</li><li>Verze API by měla mít formát MAJOR.MINOR.PATCH, přičemž MINOR a PATCH není povinné (například 1.2.1 nebo 1.1).</li><li>Nová MAJOR verze se vydá jen v případě zpětně nekompatibilních změn (odstranění resource, přidání povinného parametru...).</li><li>Změny, které mají pouze informativní charakter (aktualizace kontaktů, doplnění OpenAPI definice, doplnění dokumentace), znamenají navýšení PATCH verze.</li><li>Verze API na WSO2 se řídí podle verze uvedené v OpenAPI definici rozhraní od BE systému.</li><li>Odkaz do metodiky:<span> </span><a class="external-link" href="https://confluencedigi.jtfg.com/display/EI/REST+API" rel="nofollow" title="Follow link">https://confluencedigi.jtfg.com/display/EI/REST+API</a></li></ul></li></ul></li></ul><h2 id="APIIBANpožadavky/zadání-Otevřenébody">Otevřené body</h2><ul><li>Číselníky jsou v PTS zabudované, otázka je jejich plnění. V současné době není s bankou vyjasněno, odkud PTS vezme seznam TIPS účastníků. Stále toto platí?</li><li>Je potřeba sjednotit názvosloví.</li><li>Je potřeba definovat názvy služeb.</li><li>Ad bod 2 výše - dotaz od Crede:<ul><li><span>Z hlediska fungování platebního styku je jedno, jestli země má nebo nemá EURO. Je potřeba to rozlišovat?</span></li></ul></li><li><span>V zadání od DK jsou ještě tyto požadavky:</span><ul><li>Metoda vrátí BU informace o validaci IBAN - je tento požadavek splněný bodem 1 v Doplňujících informacích výše?</li></ul></li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926711116 {padding: 0px;}
+div.rbtoc1684926711116 ul {margin-left: 0px;}
+div.rbtoc1684926711116 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926711116'>
+<ul class='toc-indentation'>
+<li><a href='#APIIBANpožadavky/zadání-Digitálníkanály-release2023-03'>Digitální kanály - release 2023-03</a>
+<ul class='toc-indentation'>
+<li><a href='#APIIBANpožadavky/zadání-EvidencepožadavkůvJIRAaRedmine'>Evidence požadavků v JIRA a Redmine</a></li>
+<li><a href='#APIIBANpožadavky/zadání-Specifikacepožadavků'>Specifikace požadavků</a>
+<ul class='toc-indentation'>
+<li><a href='#APIIBANpožadavky/zadání-Funkčnípožadavkynarozhraní'>Funkční požadavky na rozhraní</a></li>
+<li><a href='#APIIBANpožadavky/zadání-Požadavkynastandardizaci'>Požadavky na standardizaci</a>
+<ul class='toc-indentation'>
+<li><a href='#APIIBANpožadavky/zadání-Ošetřeníchybovýchstavůaerrorhandling'>Ošetření chybových stavů a error handling</a></li>
+<li><a href='#APIIBANpožadavky/zadání-Rozšířenírequestaresponseparametrů'>Rozšíření request a response parametrů</a>
+<ul class='toc-indentation'>
+<li><a href='#APIIBANpožadavky/zadání-Ošetřeníduplicitníchvolání-X-Correlation-ID'>Ošetření duplicitních volání - X-Correlation-ID</a></li>
+<li><a href='#APIIBANpožadavky/zadání-Přidáníheaderparametrutraceparent'>Přidání header parametru traceparent</a></li>
+<li><a href='#APIIBANpožadavky/zadání-ValidaceBCDpřionlinepožadavkunazměnudatovéentity'>Validace BCD při online požadavku na změnu datové entity</a></li>
+</ul>
+</li>
+<li><a href='#APIIBANpožadavky/zadání-Definicerozhraní'>Definice rozhraní</a>
+<ul class='toc-indentation'>
+<li><a href='#APIIBANpožadavky/zadání-Changelog-přidánídoOpenAPIdefinice'>Changelog - přidání do OpenAPI definice</a></li>
+<li><a href='#APIIBANpožadavky/zadání-BIDjakopathparametr'>BID jako path parametr</a></li>
+<li><a href='#APIIBANpožadavky/zadání-Verzování-přidánídoOpenAPIdefinice'>Verzování - přidání do OpenAPI definice</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#APIIBANpožadavky/zadání-Otevřenébody'>Otevřené body</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div><hr/><p class="auto-cursor-target"><strong>
+
+    
+                    
+    
+
+<div class="plugin_attachments_container">
+    <div class="plugin_attachments_table_container">
+        <fieldset class="hidden">
+            <input type="hidden" class="plugin_attachments_macro_render_param" name="pageId" value="38013640">
+            <input type="hidden" name="deleteConfirmMessage" value="Jste si jisti, že chcete vyhodit přiložený soubor "{0}" do koše? Vzít zpět může tuto akci pouze systémový administrátor."/>
+                                                    <input type="hidden" name="outputType" value="html_export">
+        </fieldset>
+                
+
+
+
+
+
+
+    
+
+
+
+<table class="attachments aui">
+    <thead>
+    <tr>
+        <th class="expand-column attachment-summary-toggle">&nbsp;</th>
+        <th class="filename-column">            <a href="/pages/viewpage.action?pageId=38013640&amp;sortBy=name&sortOrder=ascending">Soubor</a>
+        </th>
+        <th class="modified-column">            <span class="propersortedby $sortOrder"><a href="/pages/viewpage.action?pageId=38013640&amp;sortBy=date&sortOrder=descending">Upravil</a></span>
+        </th>
+    </tr>
+    </thead>
+
+    <tbody>
+                    
+                            
+            <tr id="attachment-38013643"
+                class="attachment-row"
+                data-attachment-id="38013643"
+                data-attachment-idx="1">
+
+                <td class="attachment-summary-toggle">
+                    <span class="icon icon-section-closed" title="Zobrazit více informací"></span>
+                </td>
+
+                <td class="filename-column">
+                    
+
+    
+
+
+<span class="aui-icon content-type-attachment-unknown" title="Soubor">Soubor</span>                    <a class="filename" href="/download/attachments/38013640/FW_%20J%26T%20Slu%C5%BEba%20_validace%20IBAN_.msg?api=v2"
+                       title="Stáhnout"
+                       data-filename="FW_ J&amp;T Služba _validace IBAN_.msg"
+                       data-type="application/vnd.ms-outlook"
+                       data-linked-resource-container-id="38013640">
+                        FW_ J&amp;T Služba _validace IBAN_.msg
+                    </a>
+                                    </td>
+                <td class="attachment-created modified-column">
+                    <span>Lis 16, 2022</span>
+                    <span>by</span>
+                        <a href="    /display/~EX8101479
+"
+                       class="url fn confluence-userlink" data-username="EX8101479"
+                            >Otépka Milan</a>                </td>
+            </tr>
+            <tr class="attachment-summary attachment-summary-38013643 hidden"
+                data-attachment-id="38013643"
+                data-attachment-filename="FW_ J&amp;T Služba _validace IBAN_.msg">
+
+                <td class="attachment-summary-toggle"></td>
+                <td class="attachment-details-wrapper" colspan="2">
+
+                    
+                                        <p class="attachment-labels">Štítky</p>
+                    
+<div class="labels-section-content content-column" entityid="38013643" entitytype="attachment">
+	<div class="labels-content">
+		
+    <ul class="label-list  has-pen">
+            <li class="no-labels-message">
+            Žádné štítky
+        </li>
+                <li class="labels-edit-container">
+            <a href="#" class="show-labels-editor" title="Upravit štítky">
+                <span class="aui-icon aui-icon-small aui-iconfont-devtools-tag-small">Upravit štítky</span>
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</div>
+
+                                            <div class="attachment-history-wrapper"></div>
+                    
+                                            <div class="attachment-buttons">
+                                                            <a class="aui-button previewAttachmentLink"
+                                       data-filename="FW_ J&amp;T Služba _validace IBAN_.msg"
+                                       data-file-src="/download/attachments/38013640/FW_%20J%26T%20Slu%C5%BEba%20_validace%20IBAN_.msg?api=v2"
+                                       data-linked-resource-default-alias="FW_ J&amp;T Služba _validace IBAN_.msg"
+                                       data-mime-type="application/vnd.ms-outlook"
+                                       data-linked-resource-container-id="38013640"
+                                       data-linked-resource-id="38013643">Preview</a>
+                            
+                                                                                                                                                                                                                                    
+                                                                    <a class="aui-button editAttachmentLink" href="$itemRenderedUrl&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                                                            
+                                                                    <span true class="companion-edit-button-placeholder attachments-macro"                          data-linked-resource-container-id="38013640"
+                                data-linked-resource-id="38013643"
+                                data-source-location="attachments"
+                                     data-template-name="companionEditButon">
+                                    </span>
+                                                                                    </div>
+                                    </td>
+            </tr>
+            
+                            
+            <tr id="attachment-43288522"
+                class="attachment-row"
+                data-attachment-id="43288522"
+                data-attachment-idx="2">
+
+                <td class="attachment-summary-toggle">
+                    <span class="icon icon-section-closed" title="Zobrazit více informací"></span>
+                </td>
+
+                <td class="filename-column">
+                    
+
+    
+
+
+<span class="aui-icon content-type-attachment-word" title="Dokument aplikace Microsoft Word">Dokument aplikace Microsoft Word</span>                    <a class="filename" href="/download/attachments/38013640/Akcepta%C4%8Dn%C3%AD%20protokol_CR75_Error%20handling.docx?api=v2"
+                       title="Stáhnout"
+                       data-filename="Akceptační protokol_CR75_Error handling.docx"
+                       data-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                       data-linked-resource-container-id="38013640">
+                        Akceptační protokol_CR75_Error handling.docx
+                    </a>
+                                    </td>
+                <td class="attachment-created modified-column">
+                    <span>Pro 21, 2022</span>
+                    <span>by</span>
+                        <a href="    /display/~JT0025608
+"
+                       class="url fn confluence-userlink" data-username="JT0025608"
+                            >Harvánek Jiří</a>                </td>
+            </tr>
+            <tr class="attachment-summary attachment-summary-43288522 hidden"
+                data-attachment-id="43288522"
+                data-attachment-filename="Akceptační protokol_CR75_Error handling.docx">
+
+                <td class="attachment-summary-toggle"></td>
+                <td class="attachment-details-wrapper" colspan="2">
+
+                    
+                                        <p class="attachment-labels">Štítky</p>
+                    
+<div class="labels-section-content content-column" entityid="43288522" entitytype="attachment">
+	<div class="labels-content">
+		
+    <ul class="label-list  has-pen">
+            <li class="no-labels-message">
+            Žádné štítky
+        </li>
+                <li class="labels-edit-container">
+            <a href="#" class="show-labels-editor" title="Upravit štítky">
+                <span class="aui-icon aui-icon-small aui-iconfont-devtools-tag-small">Upravit štítky</span>
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</div>
+
+                                            <div class="attachment-history-wrapper"></div>
+                    
+                                            <div class="attachment-buttons">
+                                                            <a class="aui-button previewAttachmentLink"
+                                       data-filename="Akceptační protokol_CR75_Error handling.docx"
+                                       data-file-src="/download/attachments/38013640/Akcepta%C4%8Dn%C3%AD%20protokol_CR75_Error%20handling.docx?api=v2"
+                                       data-linked-resource-default-alias="Akceptační protokol_CR75_Error handling.docx"
+                                       data-mime-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                       data-linked-resource-container-id="38013640"
+                                       data-linked-resource-id="43288522">Preview</a>
+                            
+                                                                                                                                                                                                    
+                                                                    <a class="aui-button preview-attachment-link" href="$itemRenderedUrl&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                    
+                                                                    <a class="aui-button editAttachmentLink" href="$itemRenderedUrl&amp;isFromPageView=true&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                                                            
+                                                                    <span true class="companion-edit-button-placeholder attachments-macro"                          data-linked-resource-container-id="38013640"
+                                data-linked-resource-id="43288522"
+                                data-source-location="attachments"
+                                     data-template-name="companionEditButon">
+                                    </span>
+                                                                                    </div>
+                                    </td>
+            </tr>
+            
+                            
+            <tr id="attachment-43288523"
+                class="attachment-row"
+                data-attachment-id="43288523"
+                data-attachment-idx="3">
+
+                <td class="attachment-summary-toggle">
+                    <span class="icon icon-section-closed" title="Zobrazit více informací"></span>
+                </td>
+
+                <td class="filename-column">
+                    
+
+    
+
+
+<span class="aui-icon content-type-attachment-pdf" title="Soubor PDF">Soubor PDF</span>                    <a class="filename" href="/download/attachments/38013640/CR73_FS_Nov%C3%A1%20slu%C5%BEba%20ov%C4%9B%C5%99en%C3%AD%20%C3%BAdaj%C5%AF%20o%20bance%20z%20IBAN.pdf?api=v2"
+                       title="Stáhnout"
+                       data-filename="CR73_FS_Nová služba ověření údajů o bance z IBAN.pdf"
+                       data-type="application/pdf"
+                       data-linked-resource-container-id="38013640">
+                        CR73_FS_Nová služba ověření údajů o bance z IBAN.pdf
+                    </a>
+                                    </td>
+                <td class="attachment-created modified-column">
+                    <span>Pro 21, 2022</span>
+                    <span>by</span>
+                        <a href="    /display/~JT0025608
+"
+                       class="url fn confluence-userlink" data-username="JT0025608"
+                            >Harvánek Jiří</a>                </td>
+            </tr>
+            <tr class="attachment-summary attachment-summary-43288523 hidden"
+                data-attachment-id="43288523"
+                data-attachment-filename="CR73_FS_Nová služba ověření údajů o bance z IBAN.pdf">
+
+                <td class="attachment-summary-toggle"></td>
+                <td class="attachment-details-wrapper" colspan="2">
+
+                                        <div class="attachment-image-preview"></div>
+                    
+                                        <p class="attachment-labels">Štítky</p>
+                    
+<div class="labels-section-content content-column" entityid="43288523" entitytype="attachment">
+	<div class="labels-content">
+		
+    <ul class="label-list  has-pen">
+            <li class="no-labels-message">
+            Žádné štítky
+        </li>
+                <li class="labels-edit-container">
+            <a href="#" class="show-labels-editor" title="Upravit štítky">
+                <span class="aui-icon aui-icon-small aui-iconfont-devtools-tag-small">Upravit štítky</span>
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</div>
+
+                                            <div class="attachment-history-wrapper"></div>
+                    
+                                            <div class="attachment-buttons">
+                                                            <a class="aui-button previewAttachmentLink"
+                                       data-filename="CR73_FS_Nová služba ověření údajů o bance z IBAN.pdf"
+                                       data-file-src="/download/attachments/38013640/CR73_FS_Nov%C3%A1%20slu%C5%BEba%20ov%C4%9B%C5%99en%C3%AD%20%C3%BAdaj%C5%AF%20o%20bance%20z%20IBAN.pdf?api=v2"
+                                       data-linked-resource-default-alias="CR73_FS_Nová služba ověření údajů o bance z IBAN.pdf"
+                                       data-mime-type="application/pdf"
+                                       data-linked-resource-container-id="38013640"
+                                       data-linked-resource-id="43288523">Preview</a>
+                            
+                                                                                                                                                                                                    
+                                                                    <a class="aui-button preview-attachment-link" href="$itemRenderedUrl&amp;isFromPageView=true&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                    
+                                                                    <a class="aui-button editAttachmentLink" href="$itemRenderedUrl&amp;isFromPageView=true&amp;isFromPageView=true&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                                                            
+                                                                    <span true class="companion-edit-button-placeholder attachments-macro"                          data-linked-resource-container-id="38013640"
+                                data-linked-resource-id="43288523"
+                                data-source-location="attachments"
+                                     data-template-name="companionEditButon">
+                                    </span>
+                                                                                    </div>
+                                    </td>
+            </tr>
+            
+                            
+            <tr id="attachment-43288524"
+                class="attachment-row"
+                data-attachment-id="43288524"
+                data-attachment-idx="4">
+
+                <td class="attachment-summary-toggle">
+                    <span class="icon icon-section-closed" title="Zobrazit více informací"></span>
+                </td>
+
+                <td class="filename-column">
+                    
+
+    
+
+
+<span class="aui-icon content-type-attachment-pdf" title="Soubor PDF">Soubor PDF</span>                    <a class="filename" href="/download/attachments/38013640/CR73_Nov%C3%A1%20slu%C5%BEba%20ov%C4%9B%C5%99en%C3%AD%20%C3%BAdaj%C5%AF%20o%20bance%20z%20IBAN.pdf?api=v2"
+                       title="Stáhnout"
+                       data-filename="CR73_Nová služba ověření údajů o bance z IBAN.pdf"
+                       data-type="application/pdf"
+                       data-linked-resource-container-id="38013640">
+                        CR73_Nová služba ověření údajů o bance z IBAN.pdf
+                    </a>
+                                    </td>
+                <td class="attachment-created modified-column">
+                    <span>Pro 21, 2022</span>
+                    <span>by</span>
+                        <a href="    /display/~JT0025608
+"
+                       class="url fn confluence-userlink" data-username="JT0025608"
+                            >Harvánek Jiří</a>                </td>
+            </tr>
+            <tr class="attachment-summary attachment-summary-43288524 hidden"
+                data-attachment-id="43288524"
+                data-attachment-filename="CR73_Nová služba ověření údajů o bance z IBAN.pdf">
+
+                <td class="attachment-summary-toggle"></td>
+                <td class="attachment-details-wrapper" colspan="2">
+
+                                        <div class="attachment-image-preview"></div>
+                    
+                                        <p class="attachment-labels">Štítky</p>
+                    
+<div class="labels-section-content content-column" entityid="43288524" entitytype="attachment">
+	<div class="labels-content">
+		
+    <ul class="label-list  has-pen">
+            <li class="no-labels-message">
+            Žádné štítky
+        </li>
+                <li class="labels-edit-container">
+            <a href="#" class="show-labels-editor" title="Upravit štítky">
+                <span class="aui-icon aui-icon-small aui-iconfont-devtools-tag-small">Upravit štítky</span>
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</div>
+
+                                            <div class="attachment-history-wrapper"></div>
+                    
+                                            <div class="attachment-buttons">
+                                                            <a class="aui-button previewAttachmentLink"
+                                       data-filename="CR73_Nová služba ověření údajů o bance z IBAN.pdf"
+                                       data-file-src="/download/attachments/38013640/CR73_Nov%C3%A1%20slu%C5%BEba%20ov%C4%9B%C5%99en%C3%AD%20%C3%BAdaj%C5%AF%20o%20bance%20z%20IBAN.pdf?api=v2"
+                                       data-linked-resource-default-alias="CR73_Nová služba ověření údajů o bance z IBAN.pdf"
+                                       data-mime-type="application/pdf"
+                                       data-linked-resource-container-id="38013640"
+                                       data-linked-resource-id="43288524">Preview</a>
+                            
+                                                                                                                                                                                                    
+                                                                    <a class="aui-button preview-attachment-link" href="$itemRenderedUrl&amp;isFromPageView=true&amp;isFromPageView=true&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                    
+                                                                    <a class="aui-button editAttachmentLink" href="$itemRenderedUrl&amp;isFromPageView=true&amp;isFromPageView=true&amp;isFromPageView=true&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                                                            
+                                                                    <span true class="companion-edit-button-placeholder attachments-macro"                          data-linked-resource-container-id="38013640"
+                                data-linked-resource-id="43288524"
+                                data-source-location="attachments"
+                                     data-template-name="companionEditButon">
+                                    </span>
+                                                                                    </div>
+                                    </td>
+            </tr>
+            
+                            
+            <tr id="attachment-43288525"
+                class="attachment-row"
+                data-attachment-id="43288525"
+                data-attachment-idx="5">
+
+                <td class="attachment-summary-toggle">
+                    <span class="icon icon-section-closed" title="Zobrazit více informací"></span>
+                </td>
+
+                <td class="filename-column">
+                    
+
+    
+
+
+<span class="aui-icon content-type-attachment-unknown" title="Soubor">Soubor</span>                    <a class="filename" href="/download/attachments/38013640/payments_IBANInfo_API.yaml?api=v2"
+                       title="Stáhnout"
+                       data-filename="payments_IBANInfo_API.yaml"
+                       data-type="application/octet-stream"
+                       data-linked-resource-container-id="38013640">
+                        payments_IBANInfo_API.yaml
+                    </a>
+                                    </td>
+                <td class="attachment-created modified-column">
+                    <span>Pro 21, 2022</span>
+                    <span>by</span>
+                        <a href="    /display/~JT0025608
+"
+                       class="url fn confluence-userlink" data-username="JT0025608"
+                            >Harvánek Jiří</a>                </td>
+            </tr>
+            <tr class="attachment-summary attachment-summary-43288525 hidden"
+                data-attachment-id="43288525"
+                data-attachment-filename="payments_IBANInfo_API.yaml">
+
+                <td class="attachment-summary-toggle"></td>
+                <td class="attachment-details-wrapper" colspan="2">
+
+                    
+                                        <p class="attachment-labels">Štítky</p>
+                    
+<div class="labels-section-content content-column" entityid="43288525" entitytype="attachment">
+	<div class="labels-content">
+		
+    <ul class="label-list  has-pen">
+            <li class="no-labels-message">
+            Žádné štítky
+        </li>
+                <li class="labels-edit-container">
+            <a href="#" class="show-labels-editor" title="Upravit štítky">
+                <span class="aui-icon aui-icon-small aui-iconfont-devtools-tag-small">Upravit štítky</span>
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</div>
+
+                                            <div class="attachment-history-wrapper"></div>
+                    
+                                            <div class="attachment-buttons">
+                                                            <a class="aui-button previewAttachmentLink"
+                                       data-filename="payments_IBANInfo_API.yaml"
+                                       data-file-src="/download/attachments/38013640/payments_IBANInfo_API.yaml?api=v2"
+                                       data-linked-resource-default-alias="payments_IBANInfo_API.yaml"
+                                       data-mime-type="application/octet-stream"
+                                       data-linked-resource-container-id="38013640"
+                                       data-linked-resource-id="43288525">Preview</a>
+                            
+                                                                                                                                                                                                                                    
+                                                                    <a class="aui-button editAttachmentLink" href="$itemRenderedUrl&amp;isFromPageView=true&amp;isFromPageView=true&amp;isFromPageView=true&amp;isFromPageView=true&amp;isFromPageView=true" >$itemLabel</a>
+                                                                                                                                                                                                                                                                                                            
+                                                                    <span true class="companion-edit-button-placeholder attachments-macro"                          data-linked-resource-container-id="38013640"
+                                data-linked-resource-id="43288525"
+                                data-source-location="attachments"
+                                     data-template-name="companionEditButon">
+                                    </span>
+                                                                                    </div>
+                                    </td>
+            </tr>
+                        </tbody>
+</table>
+
+
+    </div>
+    <div class="plugin_attachments_upload_container">
+                                <div class="attachments-table-drop-zone">
+                                <li class="drop-zone-text">
+                    <div class="drop-zone-image"></div>
+                    <span>Přetáhněte soubor k nahrání nebo <a class="aui-button aui-button-link browse-files">procházet soubory</a></span>
+                    <img src="images/icons/wait.gif" class="plugin_attachments_dropzone_uploadwaiticon"/>
+                </li>
+                <form method="POST" class="plugin_attachments_uploadform aui hidden" action="/pages/plugins/attachments/doattachfile.action?pageId=38013640" enctype="multipart/form-data">
+                        <input type="hidden" name="atl_token" value="${xsrfTokenGenerator.generateToken($req)}">
+                    <div class="field-group">
+                        <label>Nahrát soubor</label>
+                        <input type="file" name="file_0" size="30">
+                    </div>
+                    <div class="field-group">
+                        <label>Popis souboru</label>
+                        <input type="text" class="blank-search text" name="comment_0" size="20" placeholder="Komentář" >
+                        <input type="hidden" name="labels" value="$macroParams.labels"/>
+                    </div>
+                    <div class="field-group">
+                        <input type="submit" class="submit aui-button" name="confirm" value="Nahrát">
+                    </div>
+                    <iframe class="plugin_attachments_uploadiframe hidden" name="fuDFgFIeUCCxSZi6FoZ7NGxhetdtLnqZyDsYZC4ONhpL7x3tdNlzYH5Lc1n8qKVv" src=""></iframe>
+                </form>
+            </div>
+            </div>
+
+    <div>
+                    <a class="download-all-link" href="/pages/downloadallattachments.action?pageId=38013640" title="Stáhněte si všechny nejnovější verze příloh na této stránce v jediném zip souboru.">Stáhnout všechny</a>
+            </div>
+</div>
+
+</strong></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38013640/38013643.msg">FW_ J&amp;T Služba _validace IBAN_.msg</a> (application/vnd.ms-outlook)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38013640/43288522.docx">Akceptační protokol_CR75_Error handling.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38013640/43288523.pdf">CR73_FS_Nová služba ověření údajů o bance z IBAN.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38013640/43288524.pdf">CR73_Nová služba ověření údajů o bance z IBAN.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38013640/43288525.yaml">payments_IBANInfo_API.yaml</a> (application/octet-stream)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-38013660"></a>
+                                    <font class="smallfont"><p>Navrhuji název služby &quot;IBANinfo&quot;</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0025608 at Lis 16, 2022 11:21
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-43286762"></a>
+                                    <font class="smallfont"><p><a class="external-link" href="https://www.ibancalculator.com/iban_validieren.html" rel="nofollow">https://www.ibancalculator.com/iban_validieren.html</a></p><p><br/></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0025608 at Lis 30, 2022 13:45
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-43286769"></a>
+                                    <font class="smallfont"><ol class="references" style=""><li><span> </span><span class="reference-text"><a class="external-link" href="https://cs.wikipedia.org/wiki/SWIFT" rel="nofollow" style="text-decoration: none;" title="SWIFT">SWIFT</a>:<span> </span><a class="external-link" href="https://www.swift.com/standards/data-standards/iban#topic-tabs-menu" rel="nofollow" style="text-decoration: none;"><em>IBAN Registry</em></a>, Release 92, květen 2022</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-2" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/andorra-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Andorru</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-3" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/belgium-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Belgii</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-4" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.nbrb.by/engl/payment/IBANBIC" rel="nofollow" style="text-decoration: none;"><em>IBAN &amp; BIC</em></a><span> </span>na stránkách Běloruské národní banky</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-5" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/bosnia-and-herzegovina-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Bosnu a Hercegovinu</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-6" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="https://www.bcb.gov.br/Pom/Spb/Ing/IBAN-Guidelines_English.pdf" rel="nofollow" style="text-decoration: none;"><em>IBAN Implementation Guidelines for Brazil. Circular 3.625.</em></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/w/index.php?title=Brazilsk%C3%A1_n%C3%A1rodn%C3%AD_banka&amp;action=edit&amp;redlink=1" rel="nofollow" style="text-decoration: none;" title="Brazilská národní banka (stránka neexistuje)">Brazilská národní banka</a>. 2013-02-14</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-7" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/bulgaria-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Bulharsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-8" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/montenegro-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Černou Horu</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-9" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/czech-replublic-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Česko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink">↑<span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-dk_10-0" rel="nofollow" style="text-decoration: none;"><span class="cite-accessibility-label">Skočit nahoru k:</span><sup>a</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-dk_10-1" rel="nofollow" style="text-decoration: none;"><sup>b</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-dk_10-2" rel="nofollow" style="text-decoration: none;"><sup>c</sup></a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/denmark-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Dánsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-11" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/estonia-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Estonsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-12" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/finland-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Finsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink">↑<span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-0" rel="nofollow" style="text-decoration: none;"><span class="cite-accessibility-label">Skočit nahoru k:</span><sup>a</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-1" rel="nofollow" style="text-decoration: none;"><sup>b</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-2" rel="nofollow" style="text-decoration: none;"><sup>c</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-3" rel="nofollow" style="text-decoration: none;"><sup>d</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-4" rel="nofollow" style="text-decoration: none;"><sup>e</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-5" rel="nofollow" style="text-decoration: none;"><sup>f</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-6" rel="nofollow" style="text-decoration: none;"><sup>g</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-7" rel="nofollow" style="text-decoration: none;"><sup>h</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-8" rel="nofollow" style="text-decoration: none;"><sup>i</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-9" rel="nofollow" style="text-decoration: none;"><sup>j</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-fr_13-10" rel="nofollow" style="text-decoration: none;"><sup>k</sup></a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/france-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Francii</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-14" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/gibraltar-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Gibraltar</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-15" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/croatia-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Chorvatsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-16" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/ireland-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Irsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-17" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/iceland-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Island</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-it_18-0" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/italy-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Itálii</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-19" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/israel-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Izrael</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-21" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/cyprus-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Kypr</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-22" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/liechtenstein-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Lichtenštejnsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-23" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/lithuania-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Litvu</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-24" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/latvia-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Lotyšsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-25" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/luxembourg-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Lucembursko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-26" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/hungary-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Maďarsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-27" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/malta-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Maltu</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-28" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/mauritius-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Mauricius</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-29" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/monaco-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Monako</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-30" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/germany-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Německo</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-31" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/netherlands-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Nizozemsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-32" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/norway-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Norsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-33" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/poland-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Polsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-34" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/portugal-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Portugalsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-35" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/austria-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Rakousko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-36" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/romania-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Rumunsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-37" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/greece-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Řecko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-38" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/san-marino-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro San Marino</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-39" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/macedonia-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Makedonii</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-40" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="https://www.nbs.sk/sk/platobne-systemy/iban/iban-slovenska-republika" rel="nofollow" style="text-decoration: none;"><em>IBAN - Slovenská republika</em></a><span> </span><a class="external-link" href="https://web.archive.org/web/20190503062638/https://www.nbs.sk/sk/platobne-systemy/iban/iban-slovenska-republika" rel="nofollow" style="text-decoration: none;">Archivováno</a><span> </span>3. 5. 2019 na<span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/Internet_Archive" rel="nofollow" style="text-decoration: none;" title="Internet Archive">Wayback Machine</a>..<span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/N%C3%A1rodn%C3%AD_banka_Slovenska" rel="nofollow" style="text-decoration: none;" title="Národní banka Slovenska">Národní banka Slovenska</a></span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-41" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/slovenia-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Slovinsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-42" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/serbia-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Srbsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-43" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/spain-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Španělsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-44" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/sweden-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Švédsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-45" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/switzerland-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Švýcarsko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink"><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-46" rel="nofollow" style="text-decoration: none;" title="Skočit nahoru">↑</a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/turkey-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Turecko</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li><li><span class="mw-cite-backlink">↑<span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-gb_47-0" rel="nofollow" style="text-decoration: none;"><span class="cite-accessibility-label">Skočit nahoru k:</span><sup>a</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-gb_47-1" rel="nofollow" style="text-decoration: none;"><sup>b</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-gb_47-2" rel="nofollow" style="text-decoration: none;"><sup>c</sup></a><span> </span><a class="external-link" href="https://cs.wikipedia.org/wiki/International_Bank_Account_Number#cite_ref-tr201-gb_47-3" rel="nofollow" style="text-decoration: none;"><sup>d</sup></a></span><span> </span><span class="reference-text"><a class="external-link" href="http://www.ecbs.org/iban/united-kingdom-uk-bank-account-number.html" rel="nofollow" style="text-decoration: none;">Formát IBAN pro Velkou Británii</a><span> </span>(<a class="external-link" href="http://ecbs.org" rel="nofollow">ecbs.org</a>)</span></li></ol></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0025608 at Lis 30, 2022 14:34
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-43288527"></a>
+                                    <font class="smallfont"><p><strong>update : přidány soubory z nabídky od Crede</strong></p><p><strong><br/>From:</strong> Křepský Petr &lt;krepsky@<a class="external-link" href="http://jtfg.com" rel="nofollow">jtfg.com</a>&gt; <br/><strong>Sent:</strong> Friday, December 9, 2022 4:31 PM<br/><strong>To:</strong> <a class="external-link" href="mailto:Michal.Cermak@credeexperto.cz" rel="nofollow">Michal.Cermak@credeexperto.cz</a><br/><strong>Cc:</strong> <a class="external-link" href="mailto:pts-support@credeexperto.com" rel="nofollow">pts-support@credeexperto.com</a>; Harvánek Jiří &lt;harvanek@<a class="external-link" href="http://jtbank.cz" rel="nofollow">jtbank.cz</a>&gt;; Husák Petr &lt;phusak@<a class="external-link" href="http://jtbank.cz" rel="nofollow">jtbank.cz</a>&gt;<br/><strong>Subject:</strong> RE: IBANInfo - update - #CRCEJTBPTSCR73</p><p>Dobrý den,</p><p>Schvaluji nabídku.</p><p>Ohledně akceptace čekám na potvrzení tetsingu.</p><p>Děkuji a přeji hezký den,</p><p>Petr</p><p><strong>From:</strong> <a class="external-link" href="mailto:Michal.Cermak@credeexperto.cz" rel="nofollow">Michal.Cermak@credeexperto.cz</a> &lt;<a class="external-link" href="mailto:Michal.Cermak@credeexperto.cz" rel="nofollow">Michal.Cermak@credeexperto.cz</a>&gt; <br/><strong>Sent:</strong> Friday, December 9, 2022 3:29 PM<br/><strong>To:</strong> Křepský Petr &lt;<a class="external-link" href="mailto:krepsky@jtbank.cz" rel="nofollow">krepsky@jtbank.cz</a>&gt;<br/><strong>Cc:</strong> <a class="external-link" href="mailto:pts-support@credeexperto.com" rel="nofollow">pts-support@credeexperto.com</a>; Harvánek Jiří &lt;<a class="external-link" href="mailto:harvanek@jtbank.cz" rel="nofollow">harvanek@jtbank.cz</a>&gt;; Husák Petr &lt;<a class="external-link" href="mailto:phusak@jtbank.cz" rel="nofollow">phusak@jtbank.cz</a>&gt;<br/><strong>Subject:</strong> Fw: IBANInfo - update - #CRCEJTBPTSCR73</p><p>Dobrý den pane Křepský, <br/>- v příloze zasílám nabídku (+ FS) k požadavku na vytěžení dat z IBANu. Požadavek máme už na vývoji, prosím o formální schválení nabídky. <br/>- dále zasílám akceptační protokol k požadavku na Error handling ke schválení - prosím o podpis (klidne elektronicky) a zaslání zpět. Potrebujeme ho k fakturaci za 2022. <br/>Předem děkuji a s pozdravem <br/>Ing. Michal Čermák</p><p>....</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0025608 at Pro 21, 2022 11:52
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

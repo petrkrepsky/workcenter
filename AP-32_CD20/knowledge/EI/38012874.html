@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-PTSCZPayments - požadavky/zadání</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="38012871.html">API-PTSCZPayments - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-PTSCZPayments - požadavky/zadání
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span>, last modified by <span class='editor'> Harvánek Jiří</span> on Lis 23, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPTSCZPaymentspožadavky/zadání-Digitálníkanály-release2022-11">Digitální kanály - release 2022-11</h1><h2 id="APIPTSCZPaymentspožadavky/zadání-Specifikacepožadavků"><span style="color: rgb(0,51,102);">Specifikace požadavků</span></h2><h3 id="APIPTSCZPaymentspožadavky/zadání-Ošetřeníchybovýchstavůaerrorhandling"><span style="color: rgb(0,51,102);">Ošetření chybových stavů a error handling</span></h3><p><span style="color: rgb(0,51,102);" title="undefined">Je potřeba implementovat ošetření chybových stavů podle kapitoly<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-O%C5%A1et%C5%99en%C3%ADchybov%C3%BDchstav%C5%AF" rel="nofollow">Ošetření chybových stavů</a><span> </span>v Připojovací analýze.</span></p><p><span style="color: rgb(23,43,77);">Error handling odpovídá standardu J&amp;T, viz<span> </span></span><a class="external-link" href="https://confluence.jtfg.com/x/gYS2Ag" rel="nofollow">Metodika a standardy J&amp;T</a>. <span style="color: rgb(23,43,77);">Struktura chybové zprávy by měla odpovídat verzi 1.</span></p><h3 id="APIPTSCZPaymentspožadavky/zadání-Rozšířenírequestaresponseparametrů"><span style="color: rgb(0,51,102);">Rozšíření request a response parametrů</span></h3><p>Na rozhraní pro zadávání plateb je potřeba upravit request a response parametry jednotlivých služeb, aby odpovídaly požadavkům uvedeným v<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Synchronn%C3%ADonlinepo%C5%BEadavek" rel="nofollow">Připojovací analýze - kapitola Synchronní online požadavek</a><span>.</span></p><h3 id="APIPTSCZPaymentspožadavky/zadání-NahrazeníPSD2stavůplateb">Nahrazení PSD2 stavů plateb</h3><p><span style="color: rgb(0,51,102);">Rozhraní vrací v odpovědích na validaci platby, založení platby a stav platby stavy odpovídající PSD2 stavům plateb. Tyto PSD2 stavy je nutné nahradit za business stavy plateb, které jsou uvedené v číselníku odkázaném v<span> </span><a href="https://confluencedigi.jtfg.com/display/EI/Payment+-+Event+Stream#PaymentEventStream-Popispublikaceud%C3%A1lost%C3%AD" rel="nofollow">Payment - Event Stream - kapitola Popis publikace událostí</a>.</span></p><p><span style="color: rgb(0,51,102);"><span>Atribut pro business stav plateb je potřeba pojmenovat tak, aby název reflektoval, že se tímto atributem vrací business stav, nikoliv interní PTS stav nebo PSD2 stav.</span></span></p><p><span style="color: rgb(0,51,102);"><span>Potvrzeno p. Plachým, že za DK CZ je možné provést tuto změnu.</span></span></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926700407 {padding: 0px;}
+div.rbtoc1684926700407 ul {margin-left: 0px;}
+div.rbtoc1684926700407 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926700407'>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Digitálníkanály-release2022-11'>Digitální kanály - release 2022-11</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Specifikacepožadavků'>Specifikace požadavků</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Ošetřeníchybovýchstavůaerrorhandling'>Ošetření chybových stavů a error handling</a></li>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Rozšířenírequestaresponseparametrů'>Rozšíření request a response parametrů</a></li>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-NahrazeníPSD2stavůplateb'>Nahrazení PSD2 stavů plateb</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Digitálníkanály-release2023-03'>Digitální kanály - release 2023-03</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-EvidencepožadavkůvJIRAaRedmine'>Evidence požadavků v JIRA a Redmine</a></li>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Specifikacepožadavků.1'>Specifikace požadavků</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Rozšířenírequestaresponseparametrů.1'>Rozšíření request a response parametrů</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Přidáníheaderparametrutraceparent'>Přidání header parametru traceparent</a></li>
+</ul>
+</li>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Definicerozhraní'>Definice rozhraní</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Changelog-přidánídoOpenAPIdefinice'>Changelog - přidání do OpenAPI definice</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#APIPTSCZPaymentspožadavky/zadání-Otevřenébody'>Otevřené body</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<hr/></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPTSCZPaymentspožadavky/zadání-Digitálníkanály-release2023-03">Digitální kanály - release 2023-03</h1><h2 id="APIPTSCZPaymentspožadavky/zadání-EvidencepožadavkůvJIRAaRedmine"><span>Evidence požadavků v JIRA a Redmine</span></h2><p><span>
+<span class="jira-issue resolved" data-jira-key="DSWF-1522" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-1522?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-1522</a>
+                            -
+            <span class="summary">[DKCZ] Payment - úprava existující služby pro platby PTSCZPayments</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Done</span>
+                </span>
+</span></p><p><span>
+<span class="jira-issue" data-jira-key="DSWF-2154" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2154?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-2154</a>
+                            -
+            <span class="summary">PTS - standardizace rozhraní</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-current
+     jira-macro-single-issue-export-pdf">PARKING</span>
+                </span>
+</span></p><p><span><a class="external-link" href="https://helpdesk.jtfg.com/issues/19877" rel="nofollow">https://helpdesk.jtfg.com/issues/19877</a></span></p><p><br/></p><p>Upozornění Nové řešení pro DK nesmí mít dopad do stávajícího procesu zpracování CZ domácích plateb v stávajícím ePortálu.</p><h2 id="APIPTSCZPaymentspožadavky/zadání-Specifikacepožadavků.1"><span style="color: rgb(0,51,102);">Specifikace požadavků</span></h2><p><span style="color: rgb(0,51,102);"><span>
+<span class="jira-issue resolved" data-jira-key="DSWF-1522" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-1522?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-1522</a>
+                            -
+            <span class="summary">[DKCZ] Payment - úprava existující služby pro platby PTSCZPayments</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Done</span>
+                </span>
+</span></span></p><p><span style="color: rgb(0,51,102);"><span style="color: rgb(23,43,77);">Business požadavek: <br/>V DKCZ bychom chtěli všechny domácí platby posílat jako instantní, v případě, že není možné danou platbu podat jako instantní, tak bychom chtěli aby byla platba automaticky odeslána jako obyčejná domácí platba.</span></span></p><p><span style="letter-spacing: 0.0px;">Zadání:<br/>1) Nastavení priority platby.</span></p><p><span style="color: rgb(0,51,102);">Všechny domácí platby z kanálu DK, budou odesílány bez definované priority, PTS se vždy nejprve pokusí zpracovat platbu jako instantní a pokud se to nepovede zpracuje platbu jako standartní (neprioritní) platbu.</span></p><p><span style="color: rgb(0,51,102);">Detail</span><span style="color: rgb(0,51,102);"> viz Proces Zpracování domácí IP v PTS: </span><span style="letter-spacing: 0.0px;">Stav k <time datetime="2022-11-23" class="date-past">23.11.2022</time> </span></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="150" src="attachments/38012874/38014187.png" data-image-src="attachments/38012874/38014187.png" data-unresolved-comment-count="0" data-linked-resource-id="38014187" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-2022-11-23_9-43-21.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="38012874" data-linked-resource-container-version="26" alt=""></span></p><p>  Aktuálně připomínkovaná verze v EA portálu <a class="external-link" href="https://eainfoport.jtfg.com/Repository?guid=%7BFD93796A-9BF8-4224-A593-647D211CDA4E%7D&amp;key=%7Bf0f15bbe-7db1-4a68-a58d-c49eb5c7bcda%7D&amp;repositoryId=3" rel="nofollow">https://eainfoport.jtfg.com/Repository?guid=%7BFD93796A-9BF8-4224-A593-647D211CDA4E%7D&amp;key=%7Bf0f15bbe-7db1-4a68-a58d-c49eb5c7bcda%7D&amp;repositoryId=3</a></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-external-resource" draggable="false" height="400" src="https://eainfoport.jtfg.com/Repository/PrintDiagram?guid=%7BFD93796A-9BF8-4224-A593-647D211CDA4E%7D" data-image-src="https://eainfoport.jtfg.com/Repository/PrintDiagram?guid=%7BFD93796A-9BF8-4224-A593-647D211CDA4E%7D"></span><br/>Pozn. element pro určování priority <span style="letter-spacing: 0.0px;color: rgb(85,85,85);">paymentTypeInformation / </span><span style="letter-spacing: 0.0px;">instructionPriority <br/>je nepovinný a je typu string s výběrem z hodnot (</span><span style="color: rgb(59,65,81);letter-spacing: 0.0px;">INST, NORM, HIGH). Kde</span></p><ul><li>INST - instantní platba</li><li>NORM - standartní platba</li><li>HIGH - prioritní platba (u standardní platby)</li><li>bez priority - pokud není zaslána priorita bude platba primárně zpracována jako instantní a pokud se nepovede IP bude automaticky převedena na standartní platbu s normální prioritou (obdobné chování u domácí, tak mezinárodní platby).</li></ul><p><span style="letter-spacing: 0.0px;">2) Metodu </span>validace<span style="letter-spacing: 0.0px;"> rozšířit o nový typ platby</span></p><ul><li><span>DICT - domácí platba</span><span> instantní</span></li></ul><p><span style="letter-spacing: 0.0px;">Která se bude vracet, pokud platba aktuálně spluje podmínky pro Instantní platbu.</span></p><p><span style="letter-spacing: 0.0px;">Součástí kontroly zda lze zaslat jako </span>instantní<span style="letter-spacing: 0.0px;"> platbu je kontrola plánovaných </span>odstávek<span style="letter-spacing: 0.0px;"> IS od ČNB, p</span><span style="letter-spacing: 0.0px;">roto informace, že je platba je validní pro IP je platná </span><strong style="letter-spacing: 0.0px;">&quot;jen&quot;</strong><span style="letter-spacing: 0.0px;"> v daném okamžiku volání.</span></p><p>Při volání metody Payment, už výsledek validace nemusí platit!!</p><p><br/></p><p>Výsledek validace se vrací v poli:</p><div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><td class="confluenceTd">serviceLevel<span style="color: red;">*</span></td><td class="confluenceTd"><span class="model" style="color: rgb(59,65,81);"><span class="prop"><span class="false prop-name">ServiceLevel</span><span class="prop-type" style="color: rgb(85,85,170);">string</span></span></span><p>Typ platby</p><span class="model" style="color: rgb(59,65,81);"><span class="prop"><span class="prop-enum">Enum:<br/><span>[<span> </span>DMCT, ESCT, EXCT, IBCT, NXCT, XBCT<span> </span></span></span></span></span></td></tr></tbody></table></div><ul>Obsahující aktuálně:</ul><ul><li><span>DMCT - domácí platba (nerozlišuje se, jestli je posílaná jako instantní nebo obyčejná)</span></li><li><span>ESCT - SEPA payment</span></li><li><span>EXCT - Cross border payment within the EEP</span></li><li><span>IBCT - Internal Bank Credit Transfer</span></li><li><span>NXCT - Cross border payment outside the EEP</span></li><li><span>XBCT - Cross border payment</span></li></ul><p><span>nově i bude DCMT jen pro standardní platby (zjistit Dopad do ePortálu  a zda rozlišovat Standartní na Prioritní a neprioritní?) ()</span></p><ul><li><span><em>DMCT – domácí (obyčejná) platba</em></span></li></ul><p><span>a pro instantní platby vznikne samostaný typ</span></p><ul><li><span>DICT - domácí platba</span><span> instantní</span></li></ul><p><br/></p><p>3) Informace o typu vzniklé platby </p><p>U plateb bez definované priority <span style="letter-spacing: 0.0px;">PTS v </span><span style="letter-spacing: -0.003em;">Respons vrátí ptsID, ale nebude vracet typ platby  (&quot;<span style="color: rgb(23,43,77);">type&quot;</span>) ani prioritu &quot;<span><span style="color: rgb(23,43,77);">instructionPriority&quot; </span></span>(protože ho ještě nezná).</span></p><p><span style="letter-spacing: -0.003em;">Po celou dobu </span><span style="letter-spacing: -0.042px;">zpracování</span><span style="letter-spacing: -0.003em;"> se nemění Bussines stav &quot;</span><span style="color: rgb(23,43,77);"><span style="letter-spacing: -0.003em;">inProgress&quot;. Ten se změní až při dokončení zpracování.</span></span></p><p><span style="color: rgb(23,43,77);"><span style="letter-spacing: -0.003em;"><span><span>Publikace do EI Kafka:</span></span></span></span></p><p><span style="color: rgb(23,43,77);"><span><span><span style="letter-spacing: -0.003em;">Při publikování založení </span></span><span style="letter-spacing: -0.042px;">platby</span><span><span style="letter-spacing: -0.003em;"> bez vyplněné priority (</span></span><span style="letter-spacing: -0.003em;">instructionPriority</span><span><span style="letter-spacing: -0.003em;">), PTS </span></span><span style="color: rgb(186,0,0);"><span style="letter-spacing: -0.042px;">neodesílá</span></span><span><span style="letter-spacing: -0.003em;"> prioritu do EI. Ta se odesílá až na konci procesu podle skutečné </span></span><span style="color: rgb(186,0,0);"><span style="letter-spacing: -0.042px;">realizovaného</span></span><span><span style="letter-spacing: -0.003em;"> typu. </span></span></span></span></p><p><br/></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" draggable="false" height="250" src="attachments/38012874/38014234.png" data-image-src="attachments/38012874/38014234.png" data-unresolved-comment-count="0" data-linked-resource-id="38014234" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-2022-11-23_13-35-7.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="38012874" data-linked-resource-container-version="26" alt=""></span></p><p><span style="font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">Požadavky na standardizaci</span></p><h4 id="APIPTSCZPaymentspožadavky/zadání-Rozšířenírequestaresponseparametrů.1"><span style="color: rgb(0,51,102);letter-spacing: -0.003em;">Rozšíření request a response parametrů</span></h4><p title="undefined">Na rozhraní pro zadávání plateb je potřeba upravit request a response parametry jednotlivých služeb, aby odpovídaly požadavkům uvedeným v<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Synchronn%C3%ADonlinepo%C5%BEadavek" rel="nofollow">Připojovací analýze - kapitola Synchronní online požadavek</a><span> </span>a v metodice pro<span> </span><a href="https://confluencedigi.jtfg.com/x/n4OlAQ" rel="nofollow">REST API</a>.</p><h5 style="margin-left: 40.0px;" id="APIPTSCZPaymentspožadavky/zadání-Přidáníheaderparametrutraceparent"><span style="letter-spacing: 0.0px;">Přidání header parametru traceparent</span></h5><ul><li style="list-style-type: none;"><ul><li><p>Specifikace požadavku:</p><ul><li>Na rozhraní je požadováno přidat header parametr traceparent pro request i response.</li><li>Parametr je povinný typu string.</li><li>Parametr bude vyplňovat konzument rozhraní a bude se propagovat skrze všechny systémy, kterými volání prochází. Momentálně se neřeší jeho napojení do centrálního logování.</li><li>Hodnota traceparent v requestu je stejná jako v response.</li><li>Dokumentace: <a class="external-link" href="https://www.w3.org/TR/trace-context/" rel="nofollow" title="Follow link">https://www.w3.org/TR/trace-context/</a></li></ul></li></ul></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: yml; gutter: false; theme: Confluence" data-theme="Confluence">    traceparent: 
+      description: &quot;Tracing parameter according to W3C Trace Context standard.&quot;
+      required: true
+      schema: 
+        maxLength: 55
+        type: &quot;string&quot;
+      example: &quot;00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01&quot;</pre>
+</div></div><h4 id="APIPTSCZPaymentspožadavky/zadání-Definicerozhraní">Definice rozhraní</h4><h5 style="margin-left: 40.0px;" id="APIPTSCZPaymentspožadavky/zadání-Changelog-přidánídoOpenAPIdefinice">Changelog - přidání do OpenAPI definice</h5><ul><li style="list-style-type: none;"><ul><li>Specifikace požadavku:<ul><li>Při změně rozhraní do OpenAPI definice vložit vždy nový řádek s: datum, verze, autor, seznam změn.</li><li>Nedělat zpětně.</li><li>Pokud je OpenAPI definice generovaná a přidání changelogu nelze provést automaticky, je potřeba ho přidat ručně. Rozhraní by měla být dodávána s patřičnou dokumentací - ideálně changelog a manuál.</li><li>Příklad: # 2022-06-15 – 1.12.0 - Pavel Hrdlička - Added resource &quot;/client&quot;, added query parameter &quot;city&quot; in &quot;GET /userInfo&quot;</li></ul></li></ul></li></ul><h2 id="APIPTSCZPaymentspožadavky/zadání-Otevřenébody">Otevřené body</h2><p>V požadavku <span>
+<span class="jira-issue resolved" data-jira-key="DSWF-1522" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-1522?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-1522</a>
+                            -
+            <span class="summary">[DKCZ] Payment - úprava existující služby pro platby PTSCZPayments</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Done</span>
+                </span>
+</span> je uveden ještě bod č. 3: „Při volání operace validate doplnit hlášku, která reflektuje výsledek validace na neexistenci/blokaci účtu“.</p><p>Komunikace, kde byl tento požadavek řešený s Crede je v emailu <a href="attachments/38012874/38013632.msg" data-linked-resource-id="38013632" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="RE DKCZ - dotaz na chování služby pro platby PTSCZPayments.msg" data-linked-resource-content-type="application/vnd.ms-outlook" data-linked-resource-container-id="38012874" data-linked-resource-container-version="26">RE DKCZ - dotaz na chov&aacute;n&iacute; služby pro platby PTSCZPayments.msg</a>.</p><p><span style="letter-spacing: 0.0px;">Požadovaný stav je tedy takový, že v response operace na validaci platby bude v případě neexistence nebo blokace účtu chodit následující informace:</span></p><p><span style="letter-spacing: 0.0px;">&quot;instructionStatus&quot;: { </span></p><p>    &quot;code&quot;: &quot;187&quot;, <br/>    &quot;description&quot;: &quot;Transakce byla zrušena pro neexistenci/blokaci účtu&quot;<br/>}</p><p>Situace je nyní ovšem taková, že s přepracováním error handlingu REST API pro platby došlo k odstranění atributu instructionStatus v odpovědi. <span style="letter-spacing: 0.0px;">S nynější podobou REST API pro platby tedy tento požadavek nelze naplnit.</span></p><p><span style="letter-spacing: 0.0px;">Momentálně se čeká na prověření od DK CZ, email </span><a href="attachments/38012874/38013633.msg" data-linked-resource-id="38013633" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="RE_ DKCZ - požadavek DSWF-1522 - PTSCZPayments.msg" data-linked-resource-content-type="application/vnd.ms-outlook" data-linked-resource-container-id="38012874" data-linked-resource-container-version="26">RE_ DKCZ - požadavek DSWF-1522 - PTSCZPayments.msg</a><span style="letter-spacing: 0.0px;">.</span></p><p><br/>Ověřeno u p. Wolného </p><p>ve stávajícím error handlingu už je ale ve 4 samostatných chybových hláškách.</p><div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><td colspan="1" style="text-align: left;" class="confluenceTd">409</td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);"><span style="color: rgb(32,33,34);">Conflict</span></span></td><td colspan="1" style="text-align: left;" class="confluenceTd">BUSINESS_ERROR</td></tr></tbody></table></div><ul><li><span style="color: rgb(23,43,77);">BLOCK CREDIT</span></li><li>BLOCK DEBIT</li><li>ACCOUNT OF DEBTOR NOT FOUND</li><li>ACCOUNT OF CREDITOR NOT FOUND</li></ul><p>To do definovat příslušné J&amp;T kódy</p><br/><p><br/><br/><span style="letter-spacing: 0.0px;">2) Konzultovat s DK zda budou posílat i </span>standartní<span style="letter-spacing: 0.0px;"> prioritní platby.</span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38012874/38013632.msg">RE DKCZ - dotaz na chování služby pro platby PTSCZPayments.msg</a> (application/vnd.ms-outlook)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38012874/38013633.msg">RE_ DKCZ - požadavek DSWF-1522 - PTSCZPayments.msg</a> (application/vnd.ms-outlook)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38012874/38014228.png">image-2022-11-23_9-43-21.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38012874/38014187.png">image-2022-11-23_9-43-21.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38012874/38014234.png">image-2022-11-23_13-35-7.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38012874/38014255.docx">CR68_3_FS_REST API-Automatické zasílání domácích plateb jako instantní.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

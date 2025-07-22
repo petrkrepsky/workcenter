@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : ApplicationStateNotification - Event stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="43286566.html">ApplicationStateNotification - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : ApplicationStateNotification - Event stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Bře 20, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="ApplicationStateNotificationEventstream-Datovéentity">Datové entity</h1><p>Pro vazbu mezi cenným papírem a trhem, na kterém se obchoduje. je definována následující datová entita:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Zdroj</p></th></tr><tr><td class="confluenceTd"><p>ApplicationStateNotification</p></td><td class="confluenceTd"><p>Camunda</p></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926667870 {padding: 0px;}
+div.rbtoc1684926667870 ul {margin-left: 0px;}
+div.rbtoc1684926667870 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926667870'>
+<ul class='toc-indentation'>
+<li><a href='#ApplicationStateNotificationEventstream-Datovéentity'>Datové entity</a></li>
+<li><a href='#ApplicationStateNotificationEventstream-Topicy'>Topicy</a></li>
+<li><a href='#ApplicationStateNotificationEventstream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#ApplicationStateNotificationEventstream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#ApplicationStateNotificationEventstream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#ApplicationStateNotificationEventstream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#ApplicationStateNotificationEventstream-Početudálostídenně'>Počet událostí denně</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 style="margin-top: 30.0px;color: rgb(23,43,77);" id="ApplicationStateNotificationEventstream-Topicy">Topicy</h1><div class="table-wrap"><table class="wrapped confluenceTable" style="margin-top: 10.0px;font-size: 14.0px;letter-spacing: normal;"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Entity Type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Název Topicu</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Typ Topicu</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Cíl</strong></td></tr><tr><td rowspan="2" class="confluenceTd"><p>ApplicationStateNotification</p></td><td class="confluenceTd"><span style="color: rgb(36,36,36);">JTB-CZ_PARTIES_APPLICATION-STATE-NOTIFICATION_SYNC_GNR</span></td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">DKCZ</td></tr><tr><td class="confluenceTd"><span style="color: rgb(36,36,36);">JTB-CZ_PARTIES_APPLICATION-STATE-NOTIFICATION_</span>RCN_GNR</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">DKCZ</td></tr><tr><td class="confluenceTd">-</td><td class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</td><td class="confluenceTd">Kontrolní</td><td class="confluenceTd">DKCZ,DKSK</td></tr></tbody></table></div><p class="auto-cursor-target"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Popis publikace dat</span></p><p><span style="letter-spacing: 0.0px;">Camunda vkládá datovou entitu přímo do Kafka topicu. </span></p><p>Spouštěče událostí pro vkládání dat jednotlivých datových entit do Kafky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 271.0px;"/><col style="width: 368.0px;"/><col style="width: 417.0px;"/><col style="width: 850.0px;"/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Spouštěč události</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Počet událostí za den</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Poznámka</strong></td></tr><tr><td class="confluenceTd">ApplicationStateNotification</td><td class="confluenceTd"><div class="content-wrapper"><p>Změna stavu události</p></div></td><td class="confluenceTd"><div class="content-wrapper"><p>Zřídka</p></div></td><td class="confluenceTd">-</td></tr></tbody></table></div><h1 id="ApplicationStateNotificationEventstream-JSONschémata"><span>JSON schémata</span></h1><p>JSON schémata obsahují nepovinný atribut X-Correlation-ID, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><h1 id="ApplicationStateNotificationEventstream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><p>  - počet partitions (8), pro číselník méně (1), počet replik (3), replication period (6 days)</p><h1 id="ApplicationStateNotificationEventstream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p><span style="color: rgb(23,43,77);">Je popsáno na stránce<span> <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=43286542&amp;src=contextnavpagetreemode" rel="nofollow" style="text-align: left;">Camunda - Připojovací analýza</a></span></span></p><h1 id="ApplicationStateNotificationEventstream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><h2 id="ApplicationStateNotificationEventstream-Početudálostídenně"><span>Počet událostí denně </span><strong style="color: rgb(255,0,0);font-size: 24.0px;letter-spacing: -0.01em;"> </strong></h2><p><span>Objem</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Objem</strong></td></tr><tr><td class="confluenceTd">ApplicationStateNotification</td><td class="confluenceTd"><div class="content-wrapper"><p>Bude doplněno</p></div></td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

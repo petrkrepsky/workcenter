@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : RegularInvestment - Event stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341511.html">Portfolio - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="53219899.html">RegularInvestment - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : RegularInvestment - Event stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span> on Dub 27, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="RegularInvestmentEventstream-Datovéentity">Datové entity</h1><p>Pro<span style="color: rgb(51,51,51);"><span> </span>data o realizovaných obchodech na portfoliích</span> je definována následující datová entita:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Zdroj</p></th></tr><tr><td class="confluenceTd"><p>InstrumentTransaction</p></td><td class="confluenceTd"><p>eBroker</p></td></tr></tbody></table></div><h1 id="RegularInvestmentEventstream-Topicy"><span>Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Název Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Typ Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3"><p>Consumer</p></th></tr><tr><td rowspan="6" class="confluenceTd"><p>InstrumentTransaction</p></td><td class="confluenceTd"><p>JTB-HQ_INVESTMENTS_INSTRUMENT-TRANSACTION_SYNC_APP</p></td><td class="confluenceTd"><p>Průběžný</p></td><td colspan="1" class="confluenceTd"><p>KStreams</p></td></tr><tr><td colspan="1" class="confluenceTd">JTB-HQ_INVESTMENTS_INSTRUMENT-TRANSACTION-INIT-AND-RECON_RSYNC_APP</td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_INVESTMENTS_INSTRUMENT-TRANSACTION_STREAM_GNR</td><td colspan="1" class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_INVESTMENTS_INSTRUMENT-TRANSACTION_RCN_GNR</td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" class="confluenceTd">JTB-SK_INVESTMENTS_INSTRUMENT-TRANSACTION_STREAM_GNR</td><td colspan="1" class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" class="confluenceTd">JTB-SK_INVESTMENTS_INSTRUMENT-TRANSACTION_RCN_GNR</td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">DKSK</td></tr><tr><td class="confluenceTd"><p><br/></p></td><td colspan="1" class="confluenceTd"><p>JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</p></td><td colspan="1" class="confluenceTd"><p>Kontrolní</p></td><td colspan="1" class="confluenceTd"><p>DKCZ,DKSK</p></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926613329 {padding: 0px;}
+div.rbtoc1684926613329 ul {margin-left: 0px;}
+div.rbtoc1684926613329 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926613329'>
+<ul class='toc-indentation'>
+<li><a href='#RegularInvestmentEventstream-Datovéentity'>Datové entity</a></li>
+<li><a href='#RegularInvestmentEventstream-Topicy'>Topicy</a>
+<ul class='toc-indentation'>
+<li><a href='#RegularInvestmentEventstream-Interfacetabulky'>Interface tabulky</a>
+<ul class='toc-indentation'>
+<li><a href='#RegularInvestmentEventstream-Key'>Key</a></li>
+<li><a href='#RegularInvestmentEventstream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#RegularInvestmentEventstream-Průběžný'>Průběžný</a>
+<ul class='toc-indentation'>
+<li><a href='#RegularInvestmentEventstream-Trades'>Trades</a></li>
+</ul>
+</li>
+<li><a href='#RegularInvestmentEventstream-Inicializační/Rekonciličaní'>Inicializační/Rekonciličaní</a>
+<ul class='toc-indentation'>
+<li><a href='#RegularInvestmentEventstream-Trades.1'>Trades</a></li>
+<li><a href='#RegularInvestmentEventstream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#RegularInvestmentEventstream-Popisodběrudat'>Popis odběru dat</a></li>
+<li><a href='#RegularInvestmentEventstream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#RegularInvestmentEventstream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#RegularInvestmentEventstream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#RegularInvestmentEventstream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#RegularInvestmentEventstream-Početudálostídenně'>Počet událostí denně</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="RegularInvestmentEventstream-Interfacetabulky"><span>Interface tabulky</span></h2><p>eBroker vytvoří, plní a spravuje tyto interface tabulky:</p><ul><li>Pro čerpání dat do Průběžného topicu</li><li>Pro čerpání dat do Inicializačního/Rekonciličaního topicu</li><li>Kontrolní</li></ul><p><span>Každá Kafka událost sestává z Key a Value:</span></p><ul><li>Key do sloupce KEY</li><li>Value do sloupce BODY</li></ul><h3 id="RegularInvestmentEventstream-Key">Key</h3><p><span style="color: rgb(0,0,0);">Ve sloupci KEY klíč události = tradeIds.ebrokerId.</span></p><h3 id="RegularInvestmentEventstream-Value"><span>Value</span></h3><p><strong style="letter-spacing: 0.0px;">Přehled interface tabulek:</strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>Průběžný topic</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>Inicializační/Rekonciliační topic</strong></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Datová entita</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Datová entita</strong></td></tr><tr><td class="confluenceTd">INSTRUMENT_TRANSACTION_CONTINUOUS</td><td class="confluenceTd">InstrumentTransaction</td><td class="confluenceTd">INSTRUMENT_TRANSACTION_INIT_AND_RECON</td><td class="confluenceTd">InstrumentTransaction</td></tr></tbody></table></div><h4 id="RegularInvestmentEventstream-Průběžný"><span>Průběžný</span></h4><h5 id="RegularInvestmentEventstream-Trades"><span style="color: rgb(0,51,102);">Trades</span></h5><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum změny datové entity.</li><li>BODY = <span style="color: rgb(0,0,0);">JSON tělo zprávy ve formátu CLOB datové entity InstrumentTransaction</span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 19.5925%;"/><col style="width: 80.4075%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><p>INSTRUMENT_TRANSACTION_CONTINUOUS</p></th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd">BUSINESS_CHANGE_DATE</td><td class="confluenceTd">Oracle Date</td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd">LOCATION</td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, &lt;prázdná_hodnota&gt;}</td></tr><tr><td class="confluenceTd">CREATED*</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd"><div class="content-wrapper">Varchar2(60) enumerace {InstrumentTransaction}</div></td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h4 id="RegularInvestmentEventstream-Inicializační/Rekonciličaní"><span>Inicializační/Rekonciličaní</span></h4><h5 id="RegularInvestmentEventstream-Trades.1"><span style="color: rgb(0,51,102);">Trades</span></h5><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum změny datové entity.</li><li>BODY = <span style="color: rgb(0,0,0);">JSON tělo zprávy ve formátu CLOB datové entity InstrumentTransaction</span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 19.5925%;"/><col style="width: 80.4075%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><p>INSTRUMENT_TRANSACTION_INIT_AND_RECON</p></th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd">BUSINESS_CHANGE_DATE</td><td class="confluenceTd">Oracle Date</td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd">LOCATION</td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, &lt;prázdná_hodnota&gt;}</td></tr><tr><td class="confluenceTd">CREATED*</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd"><div class="content-wrapper">Varchar2(60) enumerace {InstrumentTransaction}</div></td></tr><tr><td colspan="1" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h5 id="RegularInvestmentEventstream-Kontrolní"><span style="letter-spacing: -0.003em;">Kontrolní</span></h5><ul><li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);">CREATED - Čas vložení do interfacové tabulky.</span></p></li><li><span style="color: rgb(0,0,0);">TOTAL_EVENTS - <span style="color: rgb(23,43,77);">Počet událostí v rekonciliaci, inicializaci nebo v asynchronní odpovědi.</span></span></li><li><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">X_CORRELATION_ID - Unikátní identifikátor volání, který je zaslán v hlavičkovém parametru<span> </span>rekonciliačního REST API, na vstupu initu nebo v požadavku na asynchronní odpověď.</span></span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 631.0px;"><colgroup><col style="width: 22.7273%;"/><col style="width: 77.2727%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;">INTEGRATION_CONTROL</th></tr><tr><td class="confluenceTd">CREATED</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Datetime</span></td></tr><tr><td class="confluenceTd">TOTAL_EVENTS</td><td class="confluenceTd">Number</td></tr><tr><td colspan="1" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><h1 id="RegularInvestmentEventstream-Popisodběrudat">Popis odběru dat</h1><p>eBroker vkládá data do interface tabulek z nichž jsou vybírána Kafkou prostřednictvím JDBC konektoru.<br/>Spouštěče událostí pro vkládání dat jednotlivých datových entit do interface tabulky, jejich frekvence a další aspekty jsou popsány v následující tabulce: <a class="confluence-userlink user-mention" data-username="EX8100851" href="https://confluencedigi.jtfg.com/display/~EX8100851" data-linked-resource-id="17337139" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Rozsypal Jakub</a> <span style="color: rgb(255,0,0);"><strong>prosím o doplnění tabulky</strong></span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 271.0px;"/><col style="width: 368.0px;"/><col style="width: 417.0px;"/><col style="width: 850.0px;"/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Spouštěč události</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Počet událostí za den</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Poznámka</strong></td></tr><tr><td class="confluenceTd">InstrumentTransaction</td><td class="highlight-#ffebe6 confluenceTd" data-highlight-colour="#ffebe6" title="Barva pozadí: Světle červená 35 %"><div class="content-wrapper" title=""><p><br/></p></div></td><td class="highlight-#ffebe6 confluenceTd" data-highlight-colour="#ffebe6" title="Barva pozadí: Světle červená 35 %"><br/></td><td class="highlight-#ffebe6 confluenceTd" data-highlight-colour="#ffebe6" title="Barva pozadí: Světle červená 35 %"><br/></td></tr></tbody></table></div><h1 id="RegularInvestmentEventstream-JSONschémata"><span>JSON schémata</span></h1><p>JSON schémata obsahují nepovinný atribut X-Correlation-Id, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><h1 id="RegularInvestmentEventstream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><p>  - počet partitions (8), pro číselník méně (1), počet replik (3), replication period (6 days)</p><h1 id="RegularInvestmentEventstream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p>Je popsáno na stránce <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340311">eBroker/CCP - Čerp&aacute;n&iacute; a transformace ud&aacute;lost&iacute;</a></p><h1 id="RegularInvestmentEventstream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><h2 id="RegularInvestmentEventstream-Početudálostídenně"><span>Počet událostí denně </span><strong style="color: rgb(255,0,0);font-size: 24.0px;letter-spacing: -0.01em;"> </strong></h2><p><span>Objem <a class="confluence-userlink user-mention" data-username="EX8100851" href="https://confluencedigi.jtfg.com/display/~EX8100851" data-linked-resource-id="17337139" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Rozsypal Jakub</a> <span style="color: rgb(255,0,0);"><strong>prosím o doplnění tabulky</strong></span></span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Objem</strong></td></tr><tr><td class="confluenceTd">InstrumentTransaction</td><td class="highlight-#ffebe6 confluenceTd" data-highlight-colour="#ffebe6" title="Barva pozadí: Světle červená 35 %"><div class="content-wrapper" title=""><p><br/></p></div></td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

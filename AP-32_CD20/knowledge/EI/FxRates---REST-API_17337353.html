@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : FxRates - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="EXCHANGE-RATES_17339960.html">EXCHANGE-RATES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337351.html">FxRates - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : FxRates - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Říj 24, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="FxRatesRESTAPI-Předmětavýstuprekonciliace">Předmět a výstup rekonciliace</h1><p>Rekonciliační API bude <span class="inline-comment-marker" data-ref="1d2df3d5-8ce6-4d78-a779-cc6fd19b6af3">vystaveno ve WSO2</span>. Až se tak stane, některé detaily z této stránky budou odstraněny.</p><p>Specifikace rozhraní je na stránce <a href="17342899.html">Integračn&iacute; anal&yacute;zy - open api</a></p><h2 id="FxRatesRESTAPI-Princip">Princip</h2><p>Na vstupu lze omezit časový interval pro který se mají data poslat.</p><ul><li>Časový interval (businessChangeDateStart/businessChangeDateEnd) je definovaný = z<span style="letter-spacing: 0.0px;">novuzaslání </span><span class="inline-comment-marker" data-ref="391ec213-4ce7-41ef-9b13-a0589c98aac3">entit po poslední změně </span><span style="letter-spacing: 0.0px;">z časového intervalu, tedy pouze aktuální stavy entit</span></li><li>Časový interval (businessChangeDateStart/businessChangeDateEnd) není definovaný = znovuzaslání entit po poslední změně <span class="inline-comment-marker" data-ref="ff04b690-9939-47f9-98ba-3385872f3246">za poslední tři měsíce</span><span>, tedy pouze aktuální stavy entit</span></li><li>Algoritmus je následující:<ul><li>Není-li uvedeno businessChangeDateEnd, dosadí se aktuální datum a čas.</li><li>Není-li uvedeno businessChangeDateStart dosadí se businessChangeDateEnd minus 3 měsíce (včetně času).</li></ul></li><li><span>Status deleted - je aktuální podoba datové entity. V rekonciliaci se datové entity ve stavu deleted přenášejí.</span></li></ul><p>Východiska:</p><ul><li>Mřížka na obou osách grafu odpovídá kroku 1 den.</li><li>Volitelně lze filtrovat podle časových intervalů (jeden, druhý nebo kombinace obou)<ul><li><span style="color: rgb(23,43,77);">validityDateStart - validityDateEnd <em>(v příkladu níže se při takové volbě intervalu pošlou příslušné datové entity označeny modře a spadající do tohoto intervalu)</em></span></li><li><span style="color: rgb(23,43,77);">businessChangeDateStart - businessChangeDateEnd <em>(v příkladu níže se při takové volbě intervalu nepošle žádná entita)</em></span></li></ul></li><li>Princip je ilustrován na příkladu vývoje kurzovního lístku ECB v čase</li><li>Modré jsou platné záznamy</li><li>Šedé jsou zneplatněné záznamy</li></ul><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17337353/17338701.png" data-image-src="attachments/17337353/17338701.png" data-unresolved-comment-count="0" data-linked-resource-id="17338701" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="FxRateDaily - ECB - Recon - princip.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337353" data-linked-resource-container-version="56" alt=""></span></p><h2 id="FxRatesRESTAPI-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li><span class="inline-comment-marker" data-ref="256e9795-10b3-4632-b591-3f9adca0a3d6">POST</span> /fxRatesInstant/<span style="color: rgb(59,65,81);">query/</span></li><li>POST /fxRatesDaily/<span style="color: rgb(59,65,81);">query/</span></li></ul></li><li>header parametry (povinné):<ul><li><span class="inline-comment-marker" data-ref="ece66976-d1c0-437f-818f-613a9235e164">X-Correlation-ID</span></li><li><span style="color: rgb(59,65,81);">X-Request-ID</span></li></ul></li><li>body parametry (nepovinné):<ul><li><span style="color: rgb(23,43,77);">validityDateStart</span></li><li><span style="color: rgb(23,43,77);">validityDateEnd</span></li><li><span class="inline-comment-marker" data-ref="aa399b22-2780-43c0-af79-d908726653dd">businessChangeDateStart</span></li><li>businessChangeDateEnd</li><li><span class="inline-comment-marker" data-ref="77765da3-c041-4e45-8cc7-42dffc1db33e">fxRateListId - specifikuje druh kurzovního lístku (například ecb|čnb|valuty|devizy_standard|devizy_premium)</span></li></ul></li></ul><h1 id="FxRatesRESTAPI-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace. Zavoláním inicializace se rozumí vyvolní toku všech historických událostí od roku 2015.</p><p>Status deleted - je aktuální podoba datové entity. V inicializaci se datové entity ve stavu deleted nepřenášejí.</p><h2 id="FxRatesRESTAPI-Atributyvolání.1">Atributy volání</h2><ul><li>povinné<ul><li>X_Correlation_ID</li></ul></li><li>nepovinné<ul><li>Entity_Type</li><li>FX_Rate_List_ID</li></ul></li></ul><h1 id="FxRatesRESTAPI-Sekvenčníschémata"><span>Sekvenční schémata</span></h1><p class="with-breadcrumbs" title="undefined">Diagramy pro průběžná data jsou na stránce <a href="https://confluencedigi.jtfg.com/display/EI/FxRates+-+Event+Stream" rel="nofollow" style="text-decoration: none;">FxRates - Event Stream</a></p><h2 id="FxRatesRESTAPI-Rekonciliace"><span>Rekonciliace</span></h2><h3 id="FxRatesRESTAPI-ReconciliaceFxRatesInstant"><span style="color: rgb(0,0,0);">Reconciliace <span class="inline-comment-marker" data-ref="f984a3d5-c77f-4ebb-a7e8-e944503bfe1e">FxRatesInstant</span></span></h3><h3 id="FxRatesRESTAPI-ReconciliaceFxRatesDaily"><span style="color: rgb(0,0,0);">Reconciliace <span class="inline-comment-marker" data-ref="dc7dc825-815f-478c-ad96-d811f2db5eb2">FxRatesDaily</span></span></h3><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926595277 {padding: 0px;}
+div.rbtoc1684926595277 ul {margin-left: 0px;}
+div.rbtoc1684926595277 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926595277'>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesRESTAPI-Předmětavýstuprekonciliace'>Předmět a výstup rekonciliace</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesRESTAPI-Princip'>Princip</a></li>
+<li><a href='#FxRatesRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#FxRatesRESTAPI-Předmětavýstupinicializace'>Předmět a výstup inicializace</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesRESTAPI-Atributyvolání.1'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#FxRatesRESTAPI-Sekvenčníschémata'>Sekvenční schémata</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesRESTAPI-Rekonciliace'>Rekonciliace</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesRESTAPI-ReconciliaceFxRatesInstant'>Reconciliace FxRatesInstant</a></li>
+<li><a href='#FxRatesRESTAPI-ReconciliaceFxRatesDaily'>Reconciliace FxRatesDaily</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17337912.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338584.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338365.json">FxRates Reconciliation API.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338747.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338650.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338651.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338690.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338691.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338692.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338693.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338694.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338647.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338648.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338649.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17340147.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17340148.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338701.png">FxRateDaily - ECB - Recon - princip.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338936.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338978.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17339041.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17339319.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17337911.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341077.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341078.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17340583.yaml">FxRates_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341227.yaml">FxRates_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341168.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341080.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341083.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341082.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341087.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341088.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338625.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17338626.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341003.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341750.yaml">FxRates_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341353.png">FxRates - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341354.png">FxRates - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17341751.yaml">FxRates_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337353/17340577.yaml">FxRates_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

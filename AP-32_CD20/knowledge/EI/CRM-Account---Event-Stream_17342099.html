@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CRM Account - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17342097.html">CRM Account - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CRM Account - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Neznámý uživatel (ex8101446)</span>, last modified by <span class='editor'> Pipek Jiří</span> on Led 31, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><h1 style="color: rgb(23,43,77);" id="CRMAccountEventStream-Přenosy">Přenosy</h1><h2 style="color: rgb(23,43,77);" id="CRMAccountEventStream-Datovéentity">Datové entity</h2><p style="margin-top: 10.0px;font-size: 14.0px;letter-spacing: normal;"><span style="letter-spacing: 0.0px;">Jsou definovány následující datové entity:</span></p><ul><li><p>Account</p></li></ul><h2 style="margin-top: 30.0px;color: rgb(23,43,77);" id="CRMAccountEventStream-Topicy"><span style="letter-spacing: -0.008em;font-size: 20.0px;">Topicy</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Entity Type</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Název Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Typ Topicu</p></th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Zdroj</th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Cíl</th></tr><tr><td rowspan="4" class="confluenceTd"><p>Account</p></td><td class="confluenceTd"><p><span style="color: rgb(23,43,77);">JTB-CZ_PARTIES_ACCOUNT_</span><span style="color: rgb(23,43,77);">SYNC_GNR</span></p></td><td class="confluenceTd"><p><span style="color: rgb(23,43,77);">Průběžný</span></p></td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-CZ_PARTIES_ACCOUNT_R</span><span style="color: rgb(23,43,77);">CN_GNR</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-SK_PARTIES_ACCOUNT_</span><span style="color: rgb(23,43,77);">SYNC_GNR</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-SK_PARTIES_ACCOUNT_RCN</span><span style="color: rgb(23,43,77);">_GNR</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" class="confluenceTd">-</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Kontrolní</span></td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926664559 {padding: 0px;}
+div.rbtoc1684926664559 ul {margin-left: 0px;}
+div.rbtoc1684926664559 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926664559'>
+<ul class='toc-indentation'>
+<li><a href='#CRMAccountEventStream-Přenosy'>Přenosy</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMAccountEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#CRMAccountEventStream-Topicy'>Topicy</a></li>
+</ul>
+</li>
+<li><a href='#CRMAccountEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><p><br/></p><p><span style="letter-spacing: -0.008em;font-size: 20.0px;">Popis publikace dat<br/></span></p><p style="color: rgb(23,43,77);">CRM vkládá datovou entitu přímo do Kafka topicu. Výběr topicu se řídí parametrem <span style="color: rgb(23,43,77);">location (cz, sk, czsk) a informací, zda jde o průběžnou změnu nebo událost v rámci inicializace nebo rekonciliace. Více v <a href="https://confluencedigi.jtfg.com/display/EI/Aspekty+integrace">Aspekty integrace</a></span></p><p>Pokud je location czsk, pak je současný návrh umístění datového objektu do obout topiců.</p><p>Spouštěče událostí pro vkládání dat jednotlivých datových entit do Kafky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 7.6087%;"/><col style="width: 21.7995%;"/><col style="width: 28.0797%;"/><col style="width: 42.5121%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p>Datová entita</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p>Spouštěč události</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p>Frekvence</p></th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6"><p>Poznámka</p></th></tr><tr><td class="confluenceTd"><p>Account</p></td><td class="confluenceTd"><p>Jakákoliv změna na datovém objektu přes REST rozhraní a CRM konzoli</p></td><td class="confluenceTd"><p>Nyní není k dispozici odhad. Budeme revidovat na základě praxe</p></td><td colspan="1" class="confluenceTd"><p>Datový objekt je v CRM výrazně bohatší než je jeho publikovaná část. Z tohoto důvodu může docházet k vkládání stejných zpráv do Kafka topicu.</p><p>BCD bude fungovat, ale změna je možná i parametru, který není prezentován do Kafky a z pohledu jediné co se v události změní je bcd (timestamp).</p></td></tr></tbody></table></div><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schémata</span></p><p title="undefined">JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">Ošetření chybových stavů</span></p><p><span>Při publikaci může docházet k duplicitám až na BCD. Od konzumentů se očekává deduplikace.</span></p><p><span>Více o ošetření chybových stavů viz <a href="https://confluencedigi.jtfg.com/display/EI/Aspekty+integrace">Aspekty integrace</a></span></p><h1 id="CRMAccountEventStream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><p>Kapacitní požadavky nejsou nyní odhadnuté.</p><p><span style="letter-spacing: -0.008em;">Počet událostí denně</span></p><p><br/></p><p>Objem</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p>Datová entita</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p>Objem</p></th></tr><tr><td class="confluenceTd"><p>Account</p></td><td class="confluenceTd"><p><br/></p></td></tr></tbody></table></div><p><br/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342100.json">bisq_Account_v1.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342101.png">bisq-account-seq.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342102.json">account_v1.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342103.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342104.json">fxRate_aktivni.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342105.json">eBroker_FxRateList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342106.json">eBroker_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342107.json">eBroker_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342108.json">ccp_FxRateList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342109.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342110.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342111.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342112.json">ccp_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342113.json">ccp_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342114.json">ccp_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17342099/17342551.jsonc">Account-Topic.jsonc</a> (application/octet-stream)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

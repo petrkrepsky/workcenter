@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-standingOrdersReconciliation - požadavky/zadání</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341686.html">PTS StandingOrders - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341689.html">StandingOrder - Rekonciliace/Inicializace</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-standingOrdersReconciliation - požadavky/zadání
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span> on Lis 22, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIstandingOrdersReconciliationpožadavky/zadání-Digitálníkanály-release2023-03">Digitální kanály - release 2023-03</h1><h2 id="APIstandingOrdersReconciliationpožadavky/zadání-EvidencepožadavkůvJIRA"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Evidence požadavků v JIRA</span></h2><p><span class="aui-lozenge aui-lozenge-subtle aui-lozenge-default jira-macro-single-issue-export-pdf" style="text-decoration: none;">
+<span class="jira-issue" data-jira-key="DSWF-2154" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2154?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-2154</a>
+                            -
+            <span class="summary">PTS - standardizace rozhraní</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-current
+     jira-macro-single-issue-export-pdf">PARKING</span>
+                </span>
+</span></p><h2 title="undefined" id="APIstandingOrdersReconciliationpožadavky/zadání-Specifikacepožadavků">Specifikace požadavků</h2><h3 id="APIstandingOrdersReconciliationpožadavky/zadání-Požadavkynastandardizaci">Požadavky na standardizaci</h3><ul><li><span style="color: rgb(0,51,102);">Všechny níže uvedené požadavky jsou již přidané do swaggeru v integrační analýze: <a href="https://confluencedigi.jtfg.com/download/attachments/17342899/payments_StandingOrder_Reconciliation_API.yaml?version=4&amp;modificationDate=1662124235829&amp;api=v2" rel="nofollow" style="">payments_StandingOrder_Reconciliation_API.yaml</a></span></li><li><span style="color: rgb(0,51,102);">Požadavky je potřeba implementovat v CZ i SK verzi rozhraní.</span></li></ul><h4 id="APIstandingOrdersReconciliationpožadavky/zadání-Rozšířenírequestaresponseparametrů"><span style="color: rgb(0,51,102);">Rozšíření request a response parametrů</span></h4><h5 style="margin-left: 40.0px;" id="APIstandingOrdersReconciliationpožadavky/zadání-Přidáníheaderparametrutraceparent">Přidání header parametru traceparent</h5><ul><li style="list-style-type: none;"><ul><li><p>Specifikace požadavku:</p><ul><li>Na rozhraní je požadováno přidat header parametr traceparent pro request i response.</li><li>Parametr je povinný typu string.</li><li>Parametr bude vyplňovat konzument rozhraní a bude se propagovat skrze všechny systémy, kterými volání prochází. Momentálně se neřeší jeho napojení do centrálního logování.</li><li>Hodnota traceparent v requestu je stejná jako v response.</li><li>Dokumentace: <a class="external-link" href="https://www.w3.org/TR/trace-context/" rel="nofollow" title="Follow link">https://www.w3.org/TR/trace-context/</a></li></ul></li></ul></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: yml; gutter: false; theme: Confluence" data-theme="Confluence">    traceparent: 
+      description: &quot;Tracing parameter according to W3C Trace Context standard.&quot;
+      required: true
+      schema: 
+        maxLength: 55
+        type: &quot;string&quot;
+      example: &quot;00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01&quot;</pre>
+</div></div><h4 id="APIstandingOrdersReconciliationpožadavky/zadání-Definicerozhraní">Definice rozhraní</h4><h5 style="margin-left: 40.0px;" id="APIstandingOrdersReconciliationpožadavky/zadání-Changelog-přidánídoOpenAPIdefinice">Changelog - přidání do OpenAPI definice</h5><ul><li style="list-style-type: none;"><ul><li>Specifikace požadavku:<ul><li>Při změně rozhraní do OpenAPI definice vložit vždy nový řádek s: datum, verze, autor, seznam změn.</li><li>Nedělat zpětně.</li><li>Pokud je OpenAPI definice generovaná a přidání changelogu nelze provést automaticky, je potřeba ho přidat ručně. Rozhraní by měla být dodávána s patřičnou dokumentací - ideálně changelog a manuál.</li><li>Příklad: # 2022-06-15 – 1.12.0 - Pavel Hrdlička - Added resource &quot;/client&quot;, added query parameter &quot;city&quot; in &quot;GET /userInfo&quot;</li></ul></li></ul></li></ul><h5 style="margin-left: 40.0px;" id="APIstandingOrdersReconciliationpožadavky/zadání-Verzování-přidánídoOpenAPIdefinice">Verzování - přidání do OpenAPI definice</h5><ul><li style="list-style-type: none;"><ul><li>Specifikace požadavku:<ul><li>Do OpenAPI definice rozhraní je potřeba přidat verzi API.</li><li>Verze API by měla mít formát MAJOR.MINOR.PATCH, přičemž MINOR a PATCH není povinné (například 1.2.1 nebo 1.1).</li><li>Nová MAJOR verze se vydá jen v případě zpětně nekompatibilních změn (odstranění resource, přidání povinného parametru...).</li><li>Změny, které mají pouze informativní charakter (aktualizace kontaktů, doplnění OpenAPI definice, doplnění dokumentace), znamenají navýšení PATCH verze.</li><li>Verze API na WSO2 se řídí podle verze uvedené v OpenAPI definici rozhraní od BE systému.</li><li>Odkaz do metodiky:<span> </span><a class="external-link" href="https://confluencedigi.jtfg.com/display/EI/REST+API" rel="nofollow" title="Follow link">https://confluencedigi.jtfg.com/display/EI/REST+API</a></li></ul></li></ul></li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926703870 {padding: 0px;}
+div.rbtoc1684926703870 ul {margin-left: 0px;}
+div.rbtoc1684926703870 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926703870'>
+<ul class='toc-indentation'>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Digitálníkanály-release2023-03'>Digitální kanály - release 2023-03</a>
+<ul class='toc-indentation'>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-EvidencepožadavkůvJIRA'>Evidence požadavků v JIRA</a></li>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Specifikacepožadavků'>Specifikace požadavků</a>
+<ul class='toc-indentation'>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Požadavkynastandardizaci'>Požadavky na standardizaci</a>
+<ul class='toc-indentation'>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Rozšířenírequestaresponseparametrů'>Rozšíření request a response parametrů</a>
+<ul class='toc-indentation'>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Přidáníheaderparametrutraceparent'>Přidání header parametru traceparent</a></li>
+</ul>
+</li>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Definicerozhraní'>Definice rozhraní</a>
+<ul class='toc-indentation'>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Changelog-přidánídoOpenAPIdefinice'>Changelog - přidání do OpenAPI definice</a></li>
+<li><a href='#APIstandingOrdersReconciliationpožadavky/zadání-Verzování-přidánídoOpenAPIdefinice'>Verzování - přidání do OpenAPI definice</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

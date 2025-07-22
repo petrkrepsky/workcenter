@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : InstrumentEvent - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="27628534.html">Instrument - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="InstrumentEvent_53215610.html">InstrumentEvent</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : InstrumentEvent - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Bře 22, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="InstrumentEventRESTAPI-Předmětavýstuprekonciliace">Předmět a výstup rekonciliace</h1><p>Rekonciliační API bude vystaveno ve WSO2. Až se tak stane, některé detaily z této stránky budou odstraněny.</p><p>Specifikace rozhraní je na stránce <a href="17342899.html">Integračn&iacute; anal&yacute;zy - open api</a></p><h2 id="InstrumentEventRESTAPI-Princip">Princip</h2><p>Na vstupu lze omezit časový interval pro který se mají data poslat.</p><ul><li><span class="inline-comment-marker" data-ref="673c5039-685d-46ec-8829-3c24f810c364">Časový interval (BCD)</span> je definovaný = z<span>novuzaslání výsledných změn</span><span> </span>entit <span>z časového intervalu</span></li><li>Časový interval (BCD) není definovaný = znovuzaslání výsledných změn entit za poslední tři měsíce</li></ul><h2 id="InstrumentEventRESTAPI-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li>POST /instrumentEvent/<span style="color: rgb(59,65,81);">query/</span></li></ul></li><li><span class="inline-comment-marker" data-ref="d3f4ae97-2f16-4c94-8da1-d23ec433b432">header parametry (povinné):</span><ul><li>X-Correlation-ID</li><li>traceparent</li><li><span style="color: rgb(59,65,81);">X-Request-ID</span></li></ul></li><li>body parametry (nepovinné):<ul><li><span class="inline-comment-marker" data-ref="5d341401-7df1-4fef-8cb4-cd56ae619d9b">businessChangeDateStart</span></li><li>businessChangeDateEnd</li><li>validityDateStart</li><li>validityDateEnd</li><li><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="ecab2477-b240-4c83-bbf1-b7522d6f28ac">instrumentIds</span></span><ul style="text-align: left;"><li><span style="color: rgb(0,0,0);">ccpId</span></li></ul></li><li><span class="inline-comment-marker" data-ref="b80d1d6b-0eeb-4feb-b526-02f453b3f285">eventType</span></li></ul></li></ul><h1 id="InstrumentEventRESTAPI-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><p>Zavoláním inicializačního API se rozumí vyvolání všech událostí od roku 2015. <span class="inline-comment-marker" data-ref="4875c060-796f-42d4-a5df-9b650caa178c">API může na svém vstupu obsahovat filtr specifikující cenný papír (instrumentIds.ccpId) a/nebo druh události (eventType).</span></p><h2 id="InstrumentEventRESTAPI-Atributyvolání.1">Atributy volání</h2><ul><li>povinné<ul><li>X_Correlation_ID</li></ul></li><li>nepovinné<ul><li><span class="inline-comment-marker" data-ref="9cf56fa3-d9d5-4a8c-9d7c-6145affa916e">Event_Type</span></li><li>Instrument_ID</li></ul></li></ul><h1 id="InstrumentEventRESTAPI-Sekvenčnídiagram">Sekvenční diagram</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/53215618/53216034.bmp" data-image-src="attachments/53215618/53216034.bmp" data-unresolved-comment-count="0" data-linked-resource-id="53216034" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="InstrumentEvent - Recon.bmp" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/bmp" data-linked-resource-container-id="53215618" data-linked-resource-container-version="9" alt=""></span></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926619988 {padding: 0px;}
+div.rbtoc1684926619988 ul {margin-left: 0px;}
+div.rbtoc1684926619988 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926619988'>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentEventRESTAPI-Předmětavýstuprekonciliace'>Předmět a výstup rekonciliace</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentEventRESTAPI-Princip'>Princip</a></li>
+<li><a href='#InstrumentEventRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#InstrumentEventRESTAPI-Předmětavýstupinicializace'>Předmět a výstup inicializace</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentEventRESTAPI-Atributyvolání.1'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#InstrumentEventRESTAPI-Sekvenčnídiagram'>Sekvenční diagram</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53215619.png">PortfolioValuationDaily - Recon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53215620.yaml">Product_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53215621.png">Product - InitRecon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53215622.json">Product_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53215623.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53215672.png">AccruedInterest - Recon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53215627.png">AccruedInterest - Recon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53216035.bmp">InstrumentEvent - Recon.bmp</a> (image/bmp)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215618/53216034.bmp">InstrumentEvent - Recon.bmp</a> (image/bmp)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

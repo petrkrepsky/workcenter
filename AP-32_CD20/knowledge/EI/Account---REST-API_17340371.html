@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Account - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CURRENT-ACCOUNTS_17340355.html">CURRENT-ACCOUNTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17340356.html">Account - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Account - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified on Lis 07, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="AccountRESTAPI-Požadavkynarekonciliaci">Požadavky na rekonciliaci</h1><p><br/></p>Specifikace rozhraní je na stránce <a href="17342899.html">Integračn&iacute; anal&yacute;zy - open api</a><br/><h2 id="AccountRESTAPI-Atributyvolání">Atributy volání</h2><p>Na vstupu lze omezit konkrétní účet pro který lze data zaslat.</p><p>Zohlednění časových hodnot: API bude zasílat pouze aktuální informace o účtech.</p><p>Přehled metod a parametrů</p><ul><li>metody:<ul><li><span class="inline-comment-marker" data-ref="256e9795-10b3-4632-b591-3f9adca0a3d6">GET</span> /account/&quot;</li></ul></li><li>header parametry (povinné):<ul><li><span class="inline-comment-marker" data-ref="ece66976-d1c0-437f-818f-613a9235e164">X-Correlation-ID</span></li></ul></li><li>query parametry (nepovinné):<ul><li><span class="inline-comment-marker" data-ref="13b61656-7ac6-4051-893e-b2176990956b">accountId</span></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">partyId</span></li><li><s><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">productKind (CUA, CCR, LOA)</span></s></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f"><s>productAccountId</s> accountProductId (přidáno kvůli Deposits) (7.11.2022 oprava dle 
+<span class="jira-issue resolved" data-jira-key="DSWF-2716" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2716?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-2716</a>
+                            -
+            <span class="summary">INT QuaestoReconciliationSIT - v1 (API) - atribut: productAccountId</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+)<br/></span></li></ul></li></ul><h1 id="AccountRESTAPI-Požadavkynainicializaci">Požadavky na inicializaci</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace. </p><ul><li>Do INIT/REKONCILAČNÍHO  topicu budou vloženy všechny účty, které jsou v historii BISQ dostupné. A zároveň se pošlou účty ve všech stavech s výjimkou stavu &quot;A&quot; (Authorized).</li><li>V jednotlivých událostech budou účty v aktuálním stavu, historie změn není evidována.</li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926578240 {padding: 0px;}
+div.rbtoc1684926578240 ul {margin-left: 0px;}
+div.rbtoc1684926578240 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926578240'>
+<ul class='toc-indentation'>
+<li><a href='#AccountRESTAPI-Požadavkynarekonciliaci'>Požadavky na rekonciliaci</a>
+<ul class='toc-indentation'>
+<li><a href='#AccountRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#AccountRESTAPI-Požadavkynainicializaci'>Požadavky na inicializaci</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340372.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340373.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340374.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340375.png">FxRateDaily - ECB - Recon - princip.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340376.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340377.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340378.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17340379.json">FxRates Reconciliation API.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17341505.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17342735.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17342736.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340371/17341004.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-27626769"></a>
+                                    <font class="smallfont"><p>Yaml neodpovídá návrhu.</p><p><span style="color: rgb(23,43,77);">productKind<span> je </span></span>zbytečný</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101037 at Srp 01, 2022 14:51
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27627312"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(23,43,77);"> Nevalidní Yaml,  accountId musí byt v query. Pokud bude v cestě tak musí byt povinny, což neni.</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101037 at Srp 05, 2022 16:16
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38012772"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(23,43,77);">productAccountId v analýze, v REST API je accountProductId. Prosím o opravu dokumentace tady a případně v RLS V6 a pak zavření defektu  - 
+<span class="jira-issue resolved" data-jira-key="DSWF-2716" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2716?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-2716</a>
+                            -
+            <span class="summary">INT QuaestoReconciliationSIT - v1 (API) - atribut: productAccountId</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+  </span></p><p><span style="color: rgb(23,43,77);"><a class="confluence-userlink user-mention" data-username="EX8101838" href="https://confluencedigi.jtfg.com/display/~EX8101838" data-linked-resource-id="17336484" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Hrdlička Pavel</a> </span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101804 at Lis 03, 2022 17:24
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : RES Reservation - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="POSITION-KEEPING_17340845.html">POSITION-KEEPING</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="27623666.html">RES Reservation - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : RES Reservation - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified on Bře 17, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Na této stránce je definována datová entita RES Reservation.</p><p>Technická realizace přenosů je pak popsána na stránkách:</p><ul><li class="with-breadcrumbs" title="undefined"><a href="RES-Reservation---Event-Stream_27623668.html">RES Reservation - Event Stream</a> </li><li class="with-breadcrumbs" title="undefined"><a href="Transactions---REST-API_17341849.html">Transactions - REST API</a></li></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926722353 {padding: 0px;}
+div.rbtoc1684926722353 ul {margin-left: 0px;}
+div.rbtoc1684926722353 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926722353'>
+<ul class='toc-indentation'>
+<li><a href='#RESReservationDatovýmodel-DatováentitaRESReservation'>Datová entita RES Reservation</a>
+<ul class='toc-indentation'>
+<li><a href='#RESReservationDatovýmodel-RESReservation'>RES Reservation</a></li>
+</ul>
+</li>
+<li><a href='#RESReservationDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="RESReservationDatovýmodel-DatováentitaRESReservation">Datová entita RES Reservation</h1><h2 class="auto-cursor-target" id="RESReservationDatovýmodel-RESReservation"><span class="inline-comment-marker" data-ref="0bf5d978-12a7-4450-9542-d3edc8214fb6">RES Reservation<br/></span></h2><p>Celá kolekce se bude posílat v jedné události.</p><p>Struktura dle <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17337890">předepsan&eacute; metodiky</a>.</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 36.0px;"/><col style="width: 185.0px;"/><col style="width: 95.0px;"/><col style="width: 84.0px;"/><col style="width: 67.0px;"/><col style="width: 87.0px;"/><col style="width: 265.0px;"/><col style="width: 103.0px;"/><col style="width: 134.0px;"/><col style="width: 85.0px;"/><col style="width: 46.0px;"/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>lvl</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>attribute_name</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>multiplicity</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>data_type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>format</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>constraint</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>description</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong><span class="inline-comment-marker" data-ref="5f5c228a-23bb-463b-bfc4-3028a67695d4">enum values</span></strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>businessIdentifer</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>kafka_bcd</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>KEY</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3">change</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">X-Correlation-ID</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Correlation identifier</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">RES_ID</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">20</td><td class="confluenceTd">BISQ reservation internal ID</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">EVENT_TIMESTAMP</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd"><br/></td><td class="confluenceTd"> <span style="color: rgb(23,43,77);">Date and time of inserting into event table in BISQ</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y (náhrada za BCD)</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">ACT_ID</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">20</td><td class="confluenceTd">BISQ activity internal ID</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">STATE</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Reservation state (A)Authorised, (O)Opened, (C)Closed, (X)Deleted</td><td class="confluenceTd">A<span style="color: rgb(23,43,77);">|</span>O<span style="color: rgb(23,43,77);">|</span>C<span style="color: rgb(23,43,77);">|</span>X</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">CODE</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Reservation code:\nQ01 Non-fiat reservation\nQ02 Documentary credit reservation\nQ03 Bank guarantee reservation\nQ04 Commission reservation\nR01 Blokace pro platbu\nR02 Blokace jako zajištění\nR03 Blokace na žádost klienta\nR04 Blokace na žádost FÚ\nR05 Blokace na žádost soudu\nR06 Blokace na žádost ost.správních or\nR07 Blokace z důvodu dědického řízení\nR08 Blokace před zápisem do OR\nR09 Blokace banky\nR10 Blokace z provedení zahraniční plat\nR11 Blokace Vyrozumění právní moci\nV01 Výpověď z účtu</td><td class="confluenceTd"><p>Q01|Q02|Q03|Q04|R01|R02|</p><p>R03|R04|R05|R06|R07|R08|</p><p>R09|R10|R11|V01</p></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">ACT_TYPE</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">8</td><td class="confluenceTd">Activity type:\nCRD98A00 Cards settlement intermediate account booking\nCUA01080 Current Account reservation maintenance.\nCUA41100 Customer investment to instrument\nGLM06700 GL interbank transaction\nPTS93200 Príkaz k úhrade\nPTS94500 Príchozí platba\nPTS97100 Zahranicní platba banky\nPTS97200 Zahranicní platba klienta\nPTS98100 Zahranicní platba banky - príchozí\nPTS98200 Zahranicní platba klienta - príchozí\n</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">PC_ID</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">20</td><td class="confluenceTd">BISQ product contract internal ID</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">PR_NUMBER</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">2-35</td><td class="confluenceTd">Product number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">ACC_AMOUNT</td><td class="confluenceTd">1</td><td class="confluenceTd">number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Reservation amount</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">ACC_CURRENCY</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">3</td><td class="confluenceTd">Account currency</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">RES_BEGIN</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Reservation begin date</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">RES_END</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd">date</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Reservation end date</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">RES_AMOUNT</td><td class="confluenceTd">1</td><td class="confluenceTd">number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Activity amount</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">RES_CURRENCY</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">3</td><td class="confluenceTd">Activity currency</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">XRATE</td><td class="confluenceTd">0..1</td><td class="confluenceTd">array</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Used xrates</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">CURRENCY</span></td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd">3</td><td class="confluenceTd">exchange rate currency</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">EXCHANGE_RATE</td><td class="confluenceTd">1</td><td class="confluenceTd">number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">exchange rate</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">QUOTATION_UNIT</td><td class="confluenceTd">0..1</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">number</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">quotation unit</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">XRATE_DEVIATION</td><td class="confluenceTd">0..1</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">number</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">exchange rate deviation against the ECB</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">COMMENT</td><td class="confluenceTd">0..1</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">string<br/></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Comment about reservation</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Přidáno v rámci <a class="external-link" href="https://jiradigi.jtfg.com/browse/DSWF-2396" rel="nofollow">DSWF-2396</a><br/><a href="https://confluencedigi.jtfg.com/display/EI/Release+V7-2022-09-21">Release V7-2022-09-21</a></td></tr><tr><td class="confluenceTd"><s>2</s></td><td class="confluenceTd"><s>EXCHANGE</s></td><td class="confluenceTd"><s>0..1</s></td><td class="confluenceTd"><s>number</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>Exchange rate value</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd"><s>2</s></td><td class="confluenceTd"><s>MIDDLE</s></td><td class="confluenceTd"><s>1</s></td><td class="confluenceTd"><s>number</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>Middle rate value</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">PRODUCT_KIND</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">enum</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Product kind</td><td class="confluenceTd">CUA|CCR|LOA|RDA|NWB|CRD</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">17.3.2023: Rozšířeno v rámci <a class="external-link" href="https://jiradigi.jtfg.com/browse/DSWF-4641" rel="nofollow">DSWF-4641</a></td></tr></tbody></table></div><br/><p><br/></p><h1 class="auto-cursor-target" id="RESReservationDatovýmodel-Vysvětleníidentifikátorů">Vysvětlení identifikátorů</h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">typ entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">businessIdentifier</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">KEY</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">BUSINESS_STATE</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">resource</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">query_parameters</td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">CRD Transactions<br/></strong></td><td class="confluenceTd">BOOK_ID</td><td class="confluenceTd">BOOK_ID</td><td class="confluenceTd">STATE: A|B|S</td><td class="confluenceTd">/transactions/</td><td class="confluenceTd">accountId, transactionType, from, to</td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-27626547"></a>
+                                    <font class="smallfont"><p>Prosím bolo bz možné doplnenie informácie/popisu transakcie pre blokáciu, napr. v prospech koho, účel, ...., resp. nejakú textovú správu, kam to bankár/BO zapisuje.</p><p>predpokladám, že to bude analogicky k <span style="color: rgb(23,43,77);">TRN_MESSAGES u LCP</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8300688 at Čvc 28, 2022 13:27
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27630371"></a>
+                                    <font class="smallfont"><p>Aktuálně řešíme pomocí 
+<span class="jira-issue resolved" data-jira-key="DSWF-2396" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2396?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10322&amp;avatarType=issuetype"/>DSWF-2396</a>
+                            -
+            <span class="summary">[ChR] BISQ - RES Reservation - přidání elementu COMMENT</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101838 at Zář 14, 2022 08:50
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:12</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

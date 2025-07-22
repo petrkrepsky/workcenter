@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-documentConfirmationReconciliation</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="DOCUMENTS_27625158.html">DOCUMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-documentConfirmationReconciliation
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Havlena David</span>, last modified on Úno 13, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="APIdocumentConfirmationReconciliation-Předmětavýstupreconciliace">Předmět a výstup reconciliace</h1><p>Rekonciliační API bude vystaveno ve WSO2.</p><p>Specifikace rozhraní je na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17342899" rel="nofollow">Integrační analýzy - open api</a></p><p>Budou vystaveny dvě samostatné API a dva samostatné  End pointy pro DK CZ a DK SK, pro každý Digitální kanál je určeno samostatné API</p><h2 id="APIdocumentConfirmationReconciliation-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li><span class="inline-comment-marker" data-ref="d94331ac-81ec-4937-8a83-6693728c9873">GET /statements/query</span></li></ul></li><li>header parametry (povinné):<ul><li>X-Correlation-ID</li><li>traceparent</li></ul></li><li>query parametr (povinné):<ul><li><span style="color: rgb(255,0,255);">locations</span></li></ul></li><li>query parametr (nepovinné):<ul><li><span style="color: rgb(0,0,0);">confirmationId</span></li><li><span style="color: rgb(0,0,0);">crmid</span></li><li><span style="color: rgb(0,0,0);">confirmationTypeId</span></li><li><span style="color: rgb(0,0,0);">taId</span></li><li><span style="color: rgb(0,0,0);">topasId</span></li><li><span style="color: rgb(0,0,0);">businessChangeDateStart</span></li><li><span style="color: rgb(0,0,0);">businessChangeDateEnd</span></li></ul></li></ul><h2 id="APIdocumentConfirmationReconciliation-Princip"><span>Princip</span></h2><p><span style="color: rgb(0,0,0);">buď znovu zaslání jedné datové entity dle identifikátoru (pouze jeden identifikátor ve zprávě)</span></p><ul><li><span style="color: rgb(0,0,0);">confirmationId</span></li></ul><p><span style="color: rgb(0,0,0);">nebo znovu zaslání posledních změn entit </span></p><ul><li><span style="color: rgb(0,0,0);">crmid</span></li><li><span style="color: rgb(0,0,0);">taId</span></li><li><span style="color: rgb(0,0,0);">topasId</span></li><li><span style="color: rgb(0,0,0);">confirmationTypeId</span></li></ul><p><span style="color: rgb(0,0,0);"> včetně časového intervalu</span></p><ul><li><span style="color: rgb(0,0,0);">businessChangeDateStart</span></li><li><span style="color: rgb(0,0,0);">businessChangeDateEnd</span></li></ul><div class="table-wrap"><table class="wrapped confluenceTable"><thead><tr><th style="text-align: left;" class="confluenceTh"><span style="color: rgb(0,0,0);">priorita</span></th><th style="text-align: left;" class="confluenceTh"><span style="color: rgb(0,0,0);">atribut</span></th><th colspan="5" style="text-align: left;" class="confluenceTh">Z = zaslán, O = očekáván, x = ignorován</th></tr></thead><colgroup><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">confirmationId</span></p></td><td style="text-align: left;" class="confluenceTd">Z</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">2</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">crmid</span></p></td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">Z</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">3</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">confirmationTypeId</span></p></td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">Z</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">4</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">taId</span></p></td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">Z</td><td style="text-align: left;" class="confluenceTd">x</td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">5</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">topasId</span></p></td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">Z</td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">businessChangeDateStart</span></p></td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">O</td><td style="text-align: left;" class="confluenceTd">O</td><td style="text-align: left;" class="confluenceTd">O</td><td style="text-align: left;" class="confluenceTd">O</td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">businessChangeDateEnd</span></p></td><td style="text-align: left;" class="confluenceTd">x</td><td style="text-align: left;" class="confluenceTd">O</td><td style="text-align: left;" class="confluenceTd">O</td><td style="text-align: left;" class="confluenceTd">O</td><td style="text-align: left;" class="confluenceTd">O</td></tr></tbody></table></div><p>Pokud nepřijde v požadavku žádný z nepovinných atributů odpověď je 400 - Bad Request.</p><p>Pokud nepřijde v požadavku <span style="color: rgb(0,0,0);">businessChangeDateStart/end</span> bude se chovat rekonciliace chovat stejně jako inicializace, omezením poskytnutí dat - aktuální Time -90 dní.   </p><p><span style="color: rgb(0,0,0);">Pořadí kontroly atributů při plnění topicu je dáno prioritou (sloupec &quot;priorita&quot;)</span></p><h1 id="APIdocumentConfirmationReconciliation-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><p>Inicializace znamená:</p><ul><li>zaslání metadat ke stažení požadované konfirmace</li></ul>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

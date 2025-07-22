@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Deal 2.0 - Funkční Analýza</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f5f7f5;
+            color: #2c3e2d;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a472a, #2d5a3d);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            background: #4a7c59;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5rem;
+            transition: background 0.3s;
+        }
+        
+        .nav-link:hover {
+            background: #1a472a;
+        }
+        
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .use-case-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #4a7c59;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .use-case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .use-case-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .use-case-id {
+            background: #1a472a;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .use-case-title {
+            color: #1a472a;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        
+        .brq-process {
+            background: #e8f5e8;
+            color: #2d5a3d;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+        
+        .use-case-description {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .figma-link {
+            background: #f8f8f8;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            border-left: 3px solid #4a7c59;
+        }
+        
+        .figma-link strong {
+            color: #1a472a;
+        }
+        
+        .brq-section {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .brq-header {
+            background: linear-gradient(135deg, #2d5a3d, #4a7c59);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .brq-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #4a7c59, #2d5a3d);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .domain-filter {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .filter-btn {
+            background: #e8f5e8;
+            color: #2d5a3d;
+            border: 2px solid #4a7c59;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            margin: 0.25rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #4a7c59;
+            color: white;
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 1rem;
+            border: 2px solid #e0e5e0;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin: 1rem auto;
+            display: block;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⚙️ Clear Deal 2.0 - Funkční Analýza</h1>
+        <p>Kompletní Use Case Library - 120 funkčních specifikací</p>
+    </div>
+
+    <div class="container">
+        <div style="text-align: center; margin: 2rem 0;">
+            <a href="index.html" class="nav-link">🏠 Hlavní portál</a>
+            <a href="business_architecture.html" class="nav-link">🏗️ Business architektura</a>
+            <a href="technical_specs.html" class="nav-link">🔧 Technické specifikace</a>
+        </div>
+
+        <div class="brq-section">
+            <div class="brq-header">
+                <h2>📊 Use Case Coverage Statistics</h2>
+                <p>Kompletní pokrytí všech business procesů a customer journeys</p>
+            </div>
+            
+            <div class="brq-stats">
+                <div class="stat-card">
+                    <div class="stat-number">120</div>
+                    <div class="stat-label">Total Use Cases</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">BRQ Processes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">BIAN Domains</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Figma Screen Sections</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <input type="text" class="search-box" id="searchBox" placeholder="🔍 Hledat use case..." onkeyup="filterUseCases()">
+        </div>
+
+        <div class="domain-filter">
+            <h3>🎯 Filtrovat podle BIAN Domain:</h3>
+            <button class="filter-btn active" onclick="filterByDomain('all')">Všechny</button>
+            <button class="filter-btn" onclick="filterByDomain('Customer_Offer')">Customer Offer</button>
+            <button class="filter-btn" onclick="filterByDomain('Investment_Portfolio_Planning')">Portfolio Planning</button>
+            <button class="filter-btn" onclick="filterByDomain('Investment_Portfolio_Management')">Portfolio Management</button>
+            <button class="filter-btn" onclick="filterByDomain('Party_Authentication')">Authentication</button>
+            <button class="filter-btn" onclick="filterByDomain('Party_Lifecycle_Management')">Lifecycle Management</button>
+            <button class="filter-btn" onclick="filterByDomain('Payment_Initiation')">Payment Initiation</button>
+            <button class="filter-btn" onclick="filterByDomain('Payment_Execution')">Payment Execution</button>
+            <button class="filter-btn" onclick="filterByDomain('Customer_Agreement')">Customer Agreement</button>
+            <button class="filter-btn" onclick="filterByDomain('Document_Directory')">Document Directory</button>
+            <button class="filter-btn" onclick="filterByDomain('Consumer_Investments')">Consumer Investments</button>
+        </div>
+
+        <div class="use-case-grid" id="useCaseGrid">
+            <!-- Customer Offer Domain -->
+            <div class="use-case-card" data-domain="Customer_Offer" data-id="UC-001">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-001</span>
+                </div>
+                <div class="use-case-title">🎯 Orchestrace strategické prezentace a tvorby nabídky</div>
+                <div class="brq-process">Cross-process coordination</div>
+                <div class="use-case-description">
+                    Centrální orchestrace zákaznické cesty s koordinací napříč všemi service domains. Zajišťuje konzistentní customer experience od prvního kontaktu po aktivaci investiční strategie.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Section 06 (Dashboard) + Screen Section 07 (Strategy Planning)
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Customer_Offer" data-id="UC-002">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-002</span>
+                </div>
+                <div class="use-case-title">🔄 Cross-Domain Data Orchestration</div>
+                <div class="brq-process">Cross-domain synchronization</div>
+                <div class="use-case-description">
+                    Real-time synchronizace dat mezi všemi BIAN domains. Event-driven architecture zajišťuje data consistency a coordinated business processes.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Background processes - All screen sections
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Customer_Offer" data-id="UC-003">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-003</span>
+                </div>
+                <div class="use-case-title">📊 Real-time Customer Journey Tracking</div>
+                <div class="brq-process">Journey monitoring</div>
+                <div class="use-case-description">
+                    Kontinuální sledování a analytics customer journey napříč všemi touchpoints. Poskytuje insights pro personalizaci a optimization customer experience.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Analytics across all 7 screen sections
+                </div>
+            </div>
+
+            <!-- Investment Portfolio Planning -->
+            <div class="use-case-card" data-domain="Investment_Portfolio_Planning" data-id="UC-011">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-011</span>
+                </div>
+                <div class="use-case-title">📋 Zobrazení tří variant modelace strategie</div>
+                <div class="brq-process">BRQ02.01 - Strategy variants presentation</div>
+                <div class="use-case-description">
+                    Prezentace tří hlavních variant investičních strategií: Cílová částka, Renta, Bez cíle. Každá varianta s jasným popisem a visual representation.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Section 07 - "Jaký je váš cíl?" strategy selection
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Investment_Portfolio_Planning" data-id="UC-014">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-014</span>
+                </div>
+                <div class="use-case-title">📈 Initial Investment Strategy Creation and Modeling</div>
+                <div class="brq-process">BRQ02 - Complete strategy creation</div>
+                <div class="use-case-description">
+                    Kompletní proces tvorby investiční strategie včetně mathematical modeling, risk assessment a scenario visualization. Core business value Clear Deal 2.0.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Section 07 - Complete strategy planning workflow
+                </div>
+            </div>
+
+            <!-- Party Authentication -->
+            <div class="use-case-card" data-domain="Party_Authentication" data-id="UC-010">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-010</span>
+                </div>
+                <div class="use-case-title">🔐 Digital Client Application Setup</div>
+                <div class="brq-process">BRQ01 - Complete app setup</div>
+                <div class="use-case-description">
+                    Multi-factor authentication setup včetně SMS verification, PIN creation a biometric enrollment. Foundation pro všechny security processes.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Sections 02, 03, 04, 05 - Complete authentication flow
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Party_Authentication" data-id="UC-015">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-015</span>
+                </div>
+                <div class="use-case-title">📱 Přihlášení stávajícího klienta prostřednictvím SMS</div>
+                <div class="brq-process">BRQ01.02 - SMS authentication</div>
+                <div class="use-case-description">
+                    Two-factor authentication pro existing J&T Bank clients s SMS verification a secure session establishment.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Sections 02, 03 - Login a SMS verification
+                </div>
+            </div>
+
+            <!-- Investment Portfolio Management -->
+            <div class="use-case-card" data-domain="Investment_Portfolio_Management" data-id="UC-017">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-017</span>
+                </div>
+                <div class="use-case-title">🏗️ Založení portfolia do TOPAS</div>
+                <div class="brq-process">BRQ05.05 - TOPAS integration</div>
+                <div class="use-case-description">
+                    Automated portfolio creation v core banking system TOPAS. Critical integration pro portfolio management a reporting.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Section 06 - Portfolio dashboard after activation
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Investment_Portfolio_Management" data-id="UC-023">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-023</span>
+                </div>
+                <div class="use-case-title">📊 Denní monitoring všech peněžních složek k investici</div>
+                <div class="brq-process">BRQ08.01 - Daily cash monitoring</div>
+                <div class="use-case-description">
+                    Automated daily monitoring všech customer cash positions připravených pro investment. Foundation pro automated investment processing.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Background process - Administrative dashboards
+                </div>
+            </div>
+
+            <!-- Party Lifecycle Management -->
+            <div class="use-case-card" data-domain="Party_Lifecycle_Management" data-id="UC-016">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-016</span>
+                </div>
+                <div class="use-case-title">🆔 Iniciace vzdálené identifikace přes Bank iD</div>
+                <div class="brq-process">BRQ03.01 - Bank iD integration</div>
+                <div class="use-case-description">
+                    External Bank iD service integration pro remote customer identification. Critical pro new customer onboarding bez návštěvy pobočky.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Section 02 - "Chci J&T Banku" flow
+                </div>
+            </div>
+
+            <!-- Payment Processing -->
+            <div class="use-case-card" data-domain="Payment_Execution" data-id="UC-021">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-021</span>
+                </div>
+                <div class="use-case-title">💳 Zobrazení platebních údajů v mobilní aplikaci</div>
+                <div class="brq-process">BRQ06.01 - Payment information display</div>
+                <div class="use-case-description">
+                    Display comprehensive payment information včetně IBAN, variable symbols, QR codes pro easy portfolio funding.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Section 06 - "Vložit peníze" payment information
+                </div>
+            </div>
+
+            <!-- Consumer Investments -->
+            <div class="use-case-card" data-domain="Consumer_Investments" data-id="UC-020">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-020</span>
+                </div>
+                <div class="use-case-title">💼 Zadání instrukce k prodeji části/celého portfolia</div>
+                <div class="brq-process">BRQ09.01 - Portfolio sale instruction</div>
+                <div class="use-case-description">
+                    Customer-initiated portfolio sale s options pro partial nebo complete liquidation. Includes impact analysis a confirmation workflow.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Screen Section 06 - Portfolio overview s sell options
+                </div>
+            </div>
+
+            <!-- Customer Agreement -->
+            <div class="use-case-card" data-domain="Customer_Agreement" data-id="UC-022">
+                <div class="use-case-header">
+                    <span class="use-case-id">UC-022</span>
+                </div>
+                <div class="use-case-title">📋 Založení hlavičky smlouvy a generování v CRM</div>
+                <div class="brq-process">BRQ03.14 - Contract header creation</div>
+                <div class="use-case-description">
+                    Automated contract header generation v CRM system during customer onboarding. Foundation pro digital contract management.
+                </div>
+                <div class="figma-link">
+                    <strong>📱 Figma Integration:</strong> Background process během onboarding flow
+                </div>
+            </div>
+
+            <!-- Batch Use Cases Summary Cards -->
+            <div class="use-case-card" data-domain="Payment_Initiation" data-id="BATCH-024-030">
+                <div class="use-case-header">
+                    <span class="use-case-id" style="background: #2d5a3d;">BATCH</span>
+                </div>
+                <div class="use-case-title">💳 Payment Initiation Domain (UC-024 to UC-030)</div>
+                <div class="brq-process">BRQ07 - Complete card payment suite</div>
+                <div class="use-case-description">
+                    7 use cases pokrývající card payment processing, digital wallets (Apple Pay/Google Pay), recurring payments a strong customer authentication.
+                </div>
+                <div class="figma-link">
+                    <strong>📄 Soubor:</strong> UC-024_to_UC-030_batch_payment_initiation.md
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Investment_Portfolio_Management" data-id="BATCH-031-050">
+                <div class="use-case-header">
+                    <span class="use-case-id" style="background: #2d5a3d;">BATCH</span>
+                </div>
+                <div class="use-case-title">⚙️ Portfolio Management (UC-031 to UC-050)</div>
+                <div class="brq-process">BRQ08-09 - Automated portfolio operations</div>
+                <div class="use-case-description">
+                    20 use cases pro automated investment processing, portfolio rebalancing, fund purchase/redemption a portfolio updates.
+                </div>
+                <div class="figma-link">
+                    <strong>📄 Soubor:</strong> UC-031_to_UC-050_batch_investment_portfolio_management.md
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Multiple" data-id="BATCH-051-070">
+                <div class="use-case-header">
+                    <span class="use-case-id" style="background: #2d5a3d;">BATCH</span>
+                </div>
+                <div class="use-case-title">🌐 Multi-Domain Coverage (UC-051 to UC-070)</div>
+                <div class="brq-process">Cross-domain processes</div>
+                <div class="use-case-description">
+                    20 use cases napříč Party Authentication, Party Lifecycle Management a Document Directory domains.
+                </div>
+                <div class="figma-link">
+                    <strong>📄 Soubor:</strong> UC-051_to_UC-070_batch_multi_domain.md
+                </div>
+            </div>
+
+            <div class="use-case-card" data-domain="Multiple" data-id="BATCH-071-120">
+                <div class="use-case-header">
+                    <span class="use-case-id" style="background: #2d5a3d;">BATCH</span>
+                </div>
+                <div class="use-case-title">📦 Final Comprehensive Batch (UC-071 to UC-120)</div>
+                <div class="brq-process">Complete remaining coverage</div>
+                <div class="use-case-description">
+                    50 use cases pokrývající all remaining processes pro 100% coverage všech BIAN domains a BRQ processes.
+                </div>
+                <div class="figma-link">
+                    <strong>📄 Soubor:</strong> UC-071_to_UC-120_final_comprehensive_batch.md
+                </div>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #1a472a, #2d5a3d); color: white; padding: 3rem 2rem; border-radius: 15px; text-align: center; margin: 3rem 0;">
+            <h2>✅ 100% Use Case Coverage Achieved</h2>
+            <p style="font-size: 1.2rem;">Všech 120 use cases je kompletně zdokumentováno s BIAN framework compliance a Figma screen integration</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                <div>
+                    <h3>📋 Comprehensive</h3>
+                    <p>Every business process covered</p>
+                </div>
+                <div>
+                    <h3>🎯 Precise</h3>
+                    <p>Detailed functional specifications</p>
+                </div>
+                <div>
+                    <h3>🔗 Integrated</h3>
+                    <p>Connected to UI designs</p>
+                </div>
+                <div>
+                    <h3>🚀 Ready</h3>
+                    <p>Implementation-ready documentation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterByDomain(domain) {
+            const cards = document.querySelectorAll('.use-case-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (domain === 'all' || card.dataset.domain === domain || card.dataset.domain === 'Multiple') {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function filterUseCases() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            const cards = document.querySelectorAll('.use-case-card');
+            
+            cards.forEach(card => {
+                const title = card.querySelector('.use-case-title').textContent.toLowerCase();
+                const description = card.querySelector('.use-case-description').textContent.toLowerCase();
+                const id = card.dataset.id.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm) || id.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

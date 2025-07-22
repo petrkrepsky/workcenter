@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : DDM - Rekonciliace/Inicializace</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341701.html">PTS DDMs - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : DDM - Rekonciliace/Inicializace
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span>, last modified on Lis 22, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="DDMRekonciliace/Inicializace-Předmětavýstuprekonciliace">Předmět a výstup rekonciliace</h1><p>Rekonciliační API bude<span> </span>vystaveno ve WSO2. Až se tak stane, některé detaily z této stránky budou odstraněny.</p><p>Prozatím je specifikace rozhraní<span> připojena </span>sem pro případné<span> </span>diskuze<span> </span>nad ním:</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Rekonciliační API</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><a href="attachments/17342899/27623467.yaml" data-linked-resource-id="27623467" data-linked-resource-version="6" data-linked-resource-type="attachment" data-linked-resource-default-alias="payments_DDM_Reconciliation_API.yaml" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="17342899" data-linked-resource-container-version="2">payments_DDM_Reconciliation_API.yaml</a></p></div></div></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926707746 {padding: 0px;}
+div.rbtoc1684926707746 ul {margin-left: 0px;}
+div.rbtoc1684926707746 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926707746'>
+<ul class='toc-indentation'>
+<li><a href='#DDMRekonciliace/Inicializace-Předmětavýstuprekonciliace'>Předmět a výstup rekonciliace</a>
+<ul class='toc-indentation'>
+<li><a href='#DDMRekonciliace/Inicializace-Princip'>Princip</a></li>
+<li><a href='#DDMRekonciliace/Inicializace-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#DDMRekonciliace/Inicializace-Předmětavýstupinicializace'>Předmět a výstup inicializace</a></li>
+<li><a href='#DDMRekonciliace/Inicializace-Sekvenčníschémata'>Sekvenční schémata</a>
+<ul class='toc-indentation'>
+<li><a href='#DDMRekonciliace/Inicializace-Rekonciliace'>Rekonciliace</a></li>
+<li><a href='#DDMRekonciliace/Inicializace-Inicializace'>Inicializace</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 title="undefined" id="DDMRekonciliace/Inicializace-Princip"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Princip</span></h2><p><span style="color: rgb(23,43,77);">API slouží k zaslání SEPA inkas (DDM) ve stavu k okamžiku volání služby do rekonciliačního topicu.</span></p><p><span style="color: rgb(23,43,77);">Na vstupu lze zadat konkrétní DDM (ptsId), pro které se mají poslat data a také lze zadat konkrétní verzi platnosti mandátu vyplněním parametru requestedExecutionDate (datum, od kdy je DDM platné). </span></p><p>Zasílané DDM se při volání API také dají filtrovat podle zadaného časového intervalu. Zda dané DDM spadá do časového intervalu určuje jeho<span> </span><span style="color: rgb(23,43,77);">businessChangeDate (business datum změny stavu datové entity)</span>.</p><p>Pokud se na vstupu nevyplní nepovinné query parametry, pošlou se do topicu všechny DDM za poslední 3 měsíce.</p><h2 id="DDMRekonciliace/Inicializace-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li>GET<span> </span>/ddm/</li></ul></li><li>header parametry (povinné):<ul><li>X-Correlation-ID</li></ul></li><li>query parametry (nepovinné):<ul><li><span style="color: rgb(23,43,77);">ptsId</span></li><li><span style="color: rgb(23,43,77);">requestedExecutionDate</span></li><li>businessChangeDateFrom</li><li>businessChangeDateTo</li></ul></li></ul><div class="confluence-information-macro confluence-information-macro-warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><ul><li>PTS momentálně neumí získat účty, které jsou neplatné (zrušené atd.). PTS nedrží informace o účtech a získává je z Quaestoru. Nicméně z Quaestoru do PTS se vrací jen aktivní/platné účty. Pro DK to nyní znamená, že v topicu z PTS nenajdou záznamy, kde figurují tyto již neplatné účty (platba\trvalý příkaz\DDM založené z již neexistujícího účtu, případně odchází na již neexistující interní účet).</li><li>Týká se rekonciliace a inicializace.</li><li>Stávající službu/rozhraní nelze využít, neumí vrátit neplatné účty.</li><li>PTS navrhuje vznik nové služby na získání informací o neplatných účtech z Quaestoru. Neplánuje se změna stávající služby, zvýšilo by se její zatížení.</li><li>V případě, že by z jakéhokoliv důvodu nebylo možné problém vyřešit novou službou, jako záložní plán se jeví získávat informace o účtech z transakce (musela by proběhnout revize povinných polí v topicu, protože v transakci nemusí být všechny informace o účtu).</li><li><span>Více informací v zápisu ze schůzky </span><a href="https://confluencedigi.jtfg.com/x/vQNEAg" rel="nofollow">zde</a><span> a v JIRA ticketu </span>
+<span class="jira-issue resolved" data-jira-key="DSWF-2705" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2705?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-2705</a>
+                            -
+            <span class="summary">PTS nemá informace o neplatných účtech</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+<span>.</span></li></ul></div></div><h1 id="DDMRekonciliace/Inicializace-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><p><span style="color: rgb(23,43,77);">Do inicializačního topicu budou posílána všechna SEPA inkasa (DDM) ve všech stavech (poslední stav, ve kterém se DDM nachází).</span></p><div class="confluence-information-macro confluence-information-macro-warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><ul><li>PTS momentálně neumí získat účty, které jsou neplatné (zrušené atd.). PTS nedrží informace o účtech a získává je z Quaestoru. Nicméně z Quaestoru do PTS se vrací jen aktivní/platné účty. Pro DK to nyní znamená, že v topicu z PTS nenajdou záznamy, kde figurují tyto již neplatné účty (platba\trvalý příkaz\DDM založené z již neexistujícího účtu, případně odchází na již neexistující interní účet).</li><li>Týká se rekonciliace a inicializace.</li><li>Stávající službu/rozhraní nelze využít, neumí vrátit neplatné účty.</li><li>PTS navrhuje vznik nové služby na získání informací o neplatných účtech z Quaestoru. Neplánuje se změna stávající služby, zvýšilo by se její zatížení.</li><li>V případě, že by z jakéhokoliv důvodu nebylo možné problém vyřešit novou službou, jako záložní plán se jeví získávat informace o účtech z transakce (musela by proběhnout revize povinných polí v topicu, protože v transakci nemusí být všechny informace o účtu).</li><li><span>Více informací v zápisu ze schůzky </span><a href="https://confluencedigi.jtfg.com/x/vQNEAg" rel="nofollow">zde</a><span> a v JIRA ticketu </span>
+<span class="jira-issue resolved" data-jira-key="DSWF-2705" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2705?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-2705</a>
+                            -
+            <span class="summary">PTS nemá informace o neplatných účtech</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+<span>.</span></li></ul></div></div><h1 id="DDMRekonciliace/Inicializace-Sekvenčníschémata"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Sekvenční schémata</span></h1><h2 class="with-breadcrumbs" title="undefined" id="DDMRekonciliace/Inicializace-Rekonciliace"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Rekonciliace</span></h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17341704/17342908.png" data-image-src="attachments/17341704/17342908.png" data-unresolved-comment-count="0" data-linked-resource-id="17342908" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SD PTS SEPA inkasa - rekonciliace.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17341704" data-linked-resource-container-version="17" alt=""></span></p><h2 id="DDMRekonciliace/Inicializace-Inicializace"><span>Inicializace</span></h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17341704/17342910.png" data-image-src="attachments/17341704/17342910.png" data-unresolved-comment-count="0" data-linked-resource-id="17342910" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SD PTS SEPA inkasa - inicializace.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17341704" data-linked-resource-container-version="17" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17341704/17342780.yaml">DDM_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17341704/17342908.png">SD PTS SEPA inkasa - rekonciliace.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17341704/17342910.png">SD PTS SEPA inkasa - inicializace.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

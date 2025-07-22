@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : ApplicationStateNotification - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="43286566.html">ApplicationStateNotification - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : ApplicationStateNotification - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Dub 20, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><span>Na této stránce je definována datová entita:</span></p><ul><li><p><span class="inline-comment-marker" data-ref="66f90054-451d-4801-b166-cc0b3b806245">ApplicationStateNotification</span></p></li></ul><p><span>Technická realizace přenosů je pak popsána na stránkách:</span></p><ul><li class="with-breadcrumbs" title="undefined"><a href="ApplicationStateNotification---Event-stream_43286568.html">ApplicationStateNotification - Event stream</a></li></ul></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926667835 {padding: 0px;}
+div.rbtoc1684926667835 ul {margin-left: 0px;}
+div.rbtoc1684926667835 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926667835'>
+<ul class='toc-indentation'>
+<li><a href='#ApplicationStateNotificationDatovýmodel-InstrumentMarketRegistration'>InstrumentMarketRegistration</a>
+<ul class='toc-indentation'>
+<li><a href='#ApplicationStateNotificationDatovýmodel-Identifikovanéčíselníky'>Identifikované číselníky</a></li>
+</ul>
+</li>
+<li><a href='#ApplicationStateNotificationDatovýmodel-ApplicationStateNotification'>ApplicationStateNotification</a></li>
+<li><a href='#ApplicationStateNotificationDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="ApplicationStateNotificationDatovýmodel-InstrumentMarketRegistration">InstrumentMarketRegistration</h1><h2 id="ApplicationStateNotificationDatovýmodel-Identifikovanéčíselníky">Identifikované číselníky</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Název atributu v datovém modelu</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Název číselníku v aplikaci CSC:<a class="external-link" href="https://jtfg.sharepoint.com/:x:/s/JTB_CR_EXT_ORG_BA/ETFmqlQS1DNBmgXvPQcQ6BIBU1gceJshrwxRP4HVe3vjvg?e=4EtRKh" rel="nofollow"> _Číselníky_JTBank_CZ+SK.xlsx</a></th></tr><tr><td class="confluenceTd"><p>applicationKey</p></td><td class="confluenceTd"><p><span style="color: rgb(68,68,68);"><span style="color: rgb(23,43,77);">applicationType &gt; Function 1 (applicationKey)</span></span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(23,43,77);">applicationType</span></p></td><td class="confluenceTd"><p><span style="color: rgb(68,68,68);"><span style="color: rgb(23,43,77);">applicationType &gt; Key 1 (id)</span></span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(23,43,77);">applicationState</span></p></td><td class="confluenceTd"><p><span style="color: rgb(68,68,68);"><span style="color: rgb(23,43,77);">applicationState &gt; Key 1 (id)</span></span></p></td></tr></tbody></table></div><h1 id="ApplicationStateNotificationDatovýmodel-ApplicationStateNotification"><span class="inline-comment-marker" data-ref="ab80b521-1da7-446e-98a1-d8ae2338b359">ApplicationStateNotification</span></h1><p>Topic bude zasílán při změně stavu žádosti.</p><p>Datem a časem vytvoření žádosti se rozumí datum a čas přechodu žádosti do stavu plně podepsaná.</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 83.3194%;"><colgroup><col style="width: 2.76799%;"/><col style="width: 15.4504%;"/><col style="width: 7.14645%;"/><col style="width: 6.29089%;"/><col style="width: 4.98239%;"/><col style="width: 15.0478%;"/><col style="width: 20.9361%;"/><col style="width: 10.921%;"/><col style="width: 9.76346%;"/><col style="width: 4.37846%;"/><col style="width: 2.31505%;"/></colgroup><thead><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">lvl</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p title="">attribute_name</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">multiplicity</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">data_type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">format</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">constraints</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p title=""><strong style="text-align: left;">description</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">enum_value</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong style="text-align: left;" title="">businessIdentifer</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong style="text-align: left;" title="">kafka_bcd</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">KEY</th></tr></thead><tbody><tr><td class="confluenceTd">1</td><td class="confluenceTd">X-Correlation-ID</td><td class="confluenceTd">0..1</td><td class="confluenceTd"><p>string</p></td><td class="confluenceTd">-</td><td class="confluenceTd">-</td><td class="confluenceTd">Korelační identifikátor povinný pro inicializaci a rekonciliaci</td><td class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">businessChangeDate</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd">-</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Datum a čas poslední změny entity</span></td><td class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">applicationCreatedDate</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd">-</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Datum a čas vytvoření žádosti</span></td><td class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">applicationIds</td><td class="confluenceTd">1</td><td class="confluenceTd">object</td><td class="confluenceTd">-</td><td class="confluenceTd">-</td><td class="confluenceTd">Identifikátory žádosti</td><td style="text-align: left;" class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">applicationConsumerId</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">-</td><td class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">Identifikátor instance žádosti volajícího, který bude očekávat odpověď v topicu jako Consumer</span></td><td style="text-align: left;" class="confluenceTd">-</td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span class="inline-comment-marker" data-ref="695ec9de-f0f7-4319-8cf2-ab1c21b97d3a">Y</span></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd"><span class="inline-comment-marker" data-ref="71b99bc8-6ca3-4df8-b351-8cfca025d668"><span style="color: rgb(23,43,77);">processingSystemApplicationId</span></span></td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">uuid</td><td class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Identifikace žádosti v systému, který danou žádost zpracovává</span></td><td style="text-align: left;" class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">owner</td><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">object</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Objekt s identifikátory klienta</td><td style="text-align: left;" class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">2</td><td style="text-align: left;" class="confluenceTd">crmId</td><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">minimální délka: 10</span><br style="text-align: left;"/><span style="color: rgb(23,43,77);">maximální délka: 10</span></td><td style="text-align: left;" class="confluenceTd"><span class="inline-comment-marker" data-ref="36b3eabc-cb21-47be-94db-67459979d553">Identifikátor klienta v CRM (KLID)</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">applicationKey</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">-</td><td class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><p style="text-align: left;"><span style="color: rgb(23,43,77);">Číselník applicationType &gt; <span style="color: rgb(68,68,68);"><span style="color: rgb(23,43,77);">Function 1 (applicationKey)</span></span></span></p><p style="text-align: left;"><span style="color: rgb(23,43,77);">Klíč definice procesu (její nejnovější verze), který má být načten</span></p></td><td style="text-align: left;" class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">applicationType</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">-</td><td class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><p style="text-align: left;"><span style="color: rgb(23,43,77);">Číselník applicationType &gt; Key 1</span></p><p style="text-align: left;"><span style="color: rgb(23,43,77);">Typ žádosti určuje, na jakou řešitelskou skupinu bude přiřazena (není-li specifikováno, využije se defaultní)</span></p></td><td style="text-align: left;" class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">applicationState</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">-</td><td class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Číselník applicationState &gt; Key 1</span></p><p>Stav žádosti</p></td><td style="text-align: left;" class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd"><span class="inline-comment-marker" data-ref="b5d0df56-4f6a-4b30-b580-c3266ee59525">applicationTaskUrl</span></td><td style="text-align: left;" class="confluenceTd">0..1</td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">uri</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">-</span></td><td style="text-align: left;" class="confluenceTd">Odkaz na uživatelský úkol <span style="color: rgb(23,43,77);">v systému, který danou žádost zpracovává</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd"><span class="inline-comment-marker" data-ref="be373e8c-a7f3-4cfd-a1a8-345e014d6a0e">callingSystem</span></td><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">-</span></td><td style="text-align: left;" class="confluenceTd"><p><span class="inline-comment-marker" data-ref="b4e9fa6c-d3df-4fea-8b59-320e16381850">Číselník enterpriseSystemList &gt; Key 1</span></p><p><span style="color: rgb(0,0,0);">Identifikátor volajícího systému, který založil žádost v <span class="inline-comment-marker" data-ref="704259df-50a1-48a0-a382-1b71e0043051">systému zpracovávajícím žádost</span> (respektive obchodní místo)</span></p></td><td style="text-align: left;" class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td></tr></tbody></table></div><h1 id="ApplicationStateNotificationDatovýmodel-Vysvětleníidentifikátorů"><span>Vysvětlení identifikátorů</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">typ entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6">businessIdentifier</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6">KEY</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6">BUSINESS_STATE</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6">resource</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6">body_parameter(s)</td></tr><tr><td class="confluenceTd"><p>ApplicationStateNotification</p></td><td class="confluenceTd"><p>applicationIds.applicationConsumerId</p></td><td class="confluenceTd">callingSystem + applicationIds.applicationConsumerId</td><td class="confluenceTd">Signed|Finish</td><td class="confluenceTd">applicationStateNotification/query</td><td class="confluenceTd"><ul style="text-align: left;"><li><span style="color: rgb(0,0,0);">businessChangeDateStart</span></li><li><span style="color: rgb(0,0,0);">businessChangeDateEnd</span></li><li>applicationConsumerId</li><li>applicationState</li></ul></td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

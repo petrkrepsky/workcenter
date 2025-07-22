@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : FxRates - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="EXCHANGE-RATES_17339960.html">EXCHANGE-RATES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337351.html">FxRates - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : FxRates - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Zář 14, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="FxRatesEventStream-Datovéentity"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Datové entity</span></h1><p style="margin-top: 10.0px;font-size: 14.0px;letter-spacing: normal;"><span style="letter-spacing: 0.0px;">Pro kurzovní jsou definovány tři typy datových entit:</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Entity Type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Zdroj</th></tr><tr><td class="confluenceTd">FxRateLists</td><td class="confluenceTd">CSC</td></tr><tr><td class="confluenceTd">FxRatesInstant</td><td class="confluenceTd">CCP</td></tr><tr><td class="confluenceTd"><p>FxRatesDaily</p></td><td class="confluenceTd">CCP</td></tr></tbody></table></div><h1 style="margin-top: 10.0px;font-size: 14.0px;letter-spacing: normal;" id="FxRatesEventStream-Topicy"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><p title="">Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><p title="">Název Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><p title="">Typ Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Publisher</th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Consumer</th></tr><tr><td rowspan="4" class="confluenceTd"><p>FxRatesInstant</p></td><td class="confluenceTd"><p>JTB-HQ_<span>EXCHANGE-RATES</span>_FX-RATE-CONTINUOUS_SYNC_APP</p></td><td class="confluenceTd"><p>Průběžný</p></td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" class="confluenceTd"><p>JTB-HQ_<span>EXCHANGE-RATES</span>_FXRATES-INSTANT_STREAM_GNR</p></td><td colspan="1" class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr><tr><td colspan="1" class="confluenceTd"><p>JTB-HQ_<span>EXCHANGE-RATES</span>_FX-RATES-INIT-AND-RECON_RSYNC_APP</p></td><td colspan="1" class="confluenceTd"><p class="auto-cursor-target">Inicializační/Rekonciliační</p></td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" class="confluenceTd">JTB-HQ_<span>EXCHANGE-RATES</span>_FXRATES-INSTANT_RCN_GNR</td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr><tr><td rowspan="4" class="confluenceTd"><p>FxRatesDaily</p><p><br/></p></td><td colspan="1" class="confluenceTd"><p>JTB-HQ_<span>EXCHANGE-RATES</span>_FX-RATE-CONTINUOUS_SYNC_APP</p></td><td colspan="1" class="confluenceTd"><p>Průběžný</p></td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" class="confluenceTd">JTB-HQ_<span>EXCHANGE-RATES</span>_FXRATES-DAILY_STREAM_GNR</td><td colspan="1" class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr><tr><td colspan="1" class="confluenceTd"><p>JTB-HQ_<span>EXCHANGE-RATES</span>_FX-RATES-INIT-AND-RECON_RSYNC_APP</p></td><td colspan="1" class="confluenceTd"><p>Inicializační/Rekonciliační</p></td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" class="confluenceTd">JTB-HQ_<span>EXCHANGE-RATES</span>_FXRATES-DAILY_RCN_GNR</td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr><tr><td rowspan="2" class="confluenceTd">-</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_SYNC_APP</span></td><td colspan="1" class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">CCP - kafka conn</td><td colspan="1" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</span></td><td colspan="1" class="confluenceTd">Kontrolní</td><td colspan="1" class="confluenceTd">KStreams</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">FxRateLists</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);"><span class="inline-comment-marker" data-ref="783566ef-257b-481d-be01-2dd1a3e7f26f">JTB-HQ_CODEBOOKS</span></span><span style="color: rgb(23,43,77);"><span class="inline-comment-marker" data-ref="783566ef-257b-481d-be01-2dd1a3e7f26f">_BUSINESS_CB_GNR</span></span></td><td colspan="1" class="confluenceTd">Číselník - kompaktní</td><td colspan="1" class="confluenceTd">CSC</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926594064 {padding: 0px;}
+div.rbtoc1684926594064 ul {margin-left: 0px;}
+div.rbtoc1684926594064 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926594064'>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#FxRatesEventStream-Topicy'>Topicy</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesEventStream-Interfacetabulky'>Interface tabulky</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesEventStream-Key'>Key</a></li>
+<li><a href='#FxRatesEventStream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesEventStream-Průběžnýtopic'>Průběžný topic</a></li>
+<li><a href='#FxRatesEventStream-Inicializační/Rekonciličanítopic'>Inicializační/Rekonciličaní topic</a></li>
+<li><a href='#FxRatesEventStream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#FxRatesEventStream-Popisodběrudat'>Popis odběru dat</a></li>
+<li><a href='#FxRatesEventStream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#FxRatesEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#FxRatesEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#FxRatesEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesEventStream-Početudálostídenně'>Počet událostí denně</a></li>
+<li><a href='#FxRatesEventStream-Objem'>Objem</a></li>
+</ul>
+</li>
+<li><a href='#FxRatesEventStream-Sekvenčnídiagramy'>Sekvenční diagramy</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesEventStream-Průběžnádata'>Průběžná data</a>
+<ul class='toc-indentation'>
+<li><a href='#FxRatesEventStream-FxRateLists'>FxRateLists</a></li>
+<li><a href='#FxRatesEventStream-FxRatesInstant'>FxRatesInstant</a></li>
+<li><a href='#FxRatesEventStream-FxRatesDaily'>FxRatesDaily</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+ <h2 id="FxRatesEventStream-Interfacetabulky"><span style="letter-spacing: -0.008em;font-size: 20.0px;">Interface tabulky</span></h2><p>CCP vytvoří, plní a <span class="inline-comment-marker" data-ref="df8066fa-b0c6-403a-bd2d-911c9e145276">spravuje</span> tyto interface tabulky:</p><ul><li>Pro čerpání dat do Průběžného topicu</li><li>Pro čerpání dat do Inicializačního/Rekonciličaního topicu</li></ul><p style="color: rgb(23,43,77);"><span style="font-size: 14.0px;font-weight: 400;letter-spacing: 0.0px;">Každá Kafka událost sestává z Key a Value:</span></p><ul><li>Key do sloupce KEY</li><li>Value do sloupce BODY</li></ul><h3 id="FxRatesEventStream-Key">Key</h3><p><span style="color: rgb(0,0,0);">Ve sloupci KEY je část složeného klíče. Jeho obsah</span> pro jednotlivé datové entity:</p><ul><li><span style="letter-spacing: 0.0px;">FxRatesInstant&quot; KEY = fxRateListId</span></li><li>FxRatesDaily: KEY = fxRateListId</li></ul><h3 id="FxRatesEventStream-Value"><span style="letter-spacing: 0.0px;">Value</span></h3><h4 id="FxRatesEventStream-Průběžnýtopic"><span style="letter-spacing: 0.0px;">Průběžný topic</span></h4><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum a čas zápisu kurzu datafeedem do databáze = businessChangeDate z těla JSONu</li><li>BODY = <span>JSON tělo zprávy ve formátu CLOB datových entit:</span><ul><li><span style="letter-spacing: 0.0px;">FxRatesInstant</span></li><li><span>FxRatesDaily</span></li></ul></li><li><span>LOCATION - bude vždy prázdná hodnota</span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 19.5925%;"/><col style="width: 80.4075%;"/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %">FX_RATE_CONTINUOUS</th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd">BUSINESS_CHANGE_DATE</td><td class="confluenceTd"><span class="inline-comment-marker" data-ref="d8e97947-6a85-4a62-8b93-01688053a455">Oracle Date</span></td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd"><span>LOCATION</span></td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, <span class="inline-comment-marker" data-ref="5e85f83b-28a0-4346-9359-548b068bbab9">&lt;prázdná_hodnota&gt;</span>}</td></tr><tr><td class="confluenceTd"><span class="inline-comment-marker" data-ref="3a5392f5-0102-4707-b74a-e7e4f5362cf0">CREATED*</span></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target"><span class="inline-comment-marker" data-ref="d0f18b05-249f-4065-89c1-2a0df857a390">Varchar2(60)</span> enumerace {<span class="inline-comment-marker" data-ref="179a6bf3-2171-466f-8b01-c47d3b75ea38"><span class="inline-comment-marker" data-ref="d0829bfa-98e6-447a-bf85-8e84a2294b9d">FxRatesInstant</span>, FxRatesDaily</span>}</p></div></td></tr></tbody></table></div>* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas<h4 style="color: rgb(23,43,77);" id="FxRatesEventStream-Inicializační/Rekonciličanítopic"><span class="inline-comment-marker" data-ref="52354212-d139-46f7-9709-1db9629bcc79">Inicializační/Rekonciličaní topic</span></h4><ul><li><span style="color: rgb(0,0,0);">KEY - vysvětleno výše</span></li><li>businessChangeDate = Datum a čas zápisu kurzu datafeedem do databáze = businessChangeDate z těla JSONu</li><li>BODY = <span>JSON tělo zprávy ve formátu CLOB <span class="inline-comment-marker" data-ref="06190377-26f8-46fc-886e-39e3eb5b8347">datových entit</span>:</span><ul><li><span style="letter-spacing: 0.0px;">FxRatesInstant</span></li><li><span><span class="inline-comment-marker" data-ref="9983e265-ced4-45cb-8ab9-f5a3d7306779">FxRatesDaily</span></span></li></ul></li><li><span>LOCATION - bude vždy prázdná hodnota</span></li><li>X_CORRELATION_ID = Hodnota header parametru X-Correlation-ID z volání rekonciliačního API</li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 631.0px;"><colgroup><col style="width: 22.7273%;"/><col style="width: 77.2727%;"/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %">FX_RATE_INIT_AND_RECON</th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd">BUSINESS_CHANGE_DATE</td><td class="confluenceTd">Oracle Date</td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd"><span><span class="inline-comment-marker" data-ref="326cc127-8e00-4d9f-84e6-7586cbfbb8b4">LOCATION</span></span></td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, &lt;prázdná_hodnota&gt;}</td></tr><tr><td class="confluenceTd">CREATED*</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd">Varchar2(60) enumerace {FxRatesInstant, FxRatesDaily}</td></tr><tr><td colspan="1" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div>* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas<h4 id="FxRatesEventStream-Kontrolní">Kontrolní</h4><ul><li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);">CREATED - Čas vložení do interfacové tabulky.</span></p></li><li><span style="color: rgb(0,0,0);">TOTAL_EVENTS - <span style="color: rgb(23,43,77);">Počet událostí v rekonciliaci, inicializaci nebo v asynchronní odpovědi.</span></span></li><li><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">X_CORRELATION_ID - Unikátní identifikátor volání, který je zaslán v hlavičkovém parametru<span> </span>rekonciliačního REST API, na vstupu initu nebo v požadavku na asynchronní odpověď.</span></span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 631.0px;"><colgroup><col style="width: 22.7273%;"/><col style="width: 77.2727%;"/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %">INTEGRATION_CONTROL</th></tr><tr><td class="confluenceTd">CREATED</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">TOTAL_EVENTS</td><td class="confluenceTd">Number</td></tr><tr><td colspan="1" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><h1 id="FxRatesEventStream-Popisodběrudat">Popis odběru dat</h1><p>CCP vkládá data do interface tabulek z nichž jsou vybírána Kafkou prostřednictvím JDBC konektoru.<br/>Spouštěče událostí pro vkládání dat jednotlivých datových entit do interface tabulky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 7.62911%;"/><col style="width: 11.4437%;"/><col style="width: 29.1667%;"/><col style="width: 51.7606%;"/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Datová entita</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Spouštěč události</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Frekvence</th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Poznámka</th></tr><tr><td class="confluenceTd">FxRatesInstant</td><td class="confluenceTd">uložení nových hodnot</td><td class="confluenceTd">cca 1x denně v pracovních dnech, možná i vícekrát za den</td><td colspan="1" class="confluenceTd"><ul><li>Hodnoty obchodních kurzů měny se aktualizují z editoru.</li><li>Při uložení hodnot se do interface tabulky Kafka dostane nová sada dat <em>(implementační poznámka od SiteOne: nutno analyzovat a implementovat, nejde udělat na db trigger)</em></li></ul></td></tr><tr><td class="confluenceTd">FxRatesDaily</td><td class="confluenceTd">uložení nových hodnot</td><td class="confluenceTd">cca 1x denně v pracovních dnech, možná i vícekrát za den; změny kurzů ČNB a ECB budou různé události</td><td colspan="1" class="confluenceTd"><ul><li>Hodnoty se aktualizují importem dat pomocí datafeedu.</li><li>Při uložení hodnot se do interface tabulky Kafka dostane nová sada dat <em>(implementační poznámka od SiteOne: nutno analyzovat a implementovat, nejde udělat na db trigger)</em></li></ul></td></tr></tbody></table></div><h1 id="FxRatesEventStream-JSONschémata"><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schémata</span></h1><p>JSON schémata <span class="inline-comment-marker" data-ref="42e89aed-fcda-499f-9cc4-be6e98926c52">FxRatesInstant</span> a <span class="inline-comment-marker" data-ref="00f4fb9f-b41a-4680-b4b8-fbd3ecc3ede1">FxRatesDaily</span> obsahují nepovinný atribut X-Correlation-ID, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><h1 id="FxRatesEventStream-Požadavkynaintegraci"><span style="letter-spacing: -0.01em;">Požadavky na integraci</span></h1><ul><li>počet partitions (<span class="inline-comment-marker" data-ref="6f37f760-57a7-4789-9b41-56e1d7144cc6">8</span>), pro číselník méně (1)</li><li>počet <span class="inline-comment-marker" data-ref="424eeb50-116a-4295-bc56-659e9808de20">replik</span> (3)</li><li>retention period (6 days)</li></ul><h1 id="FxRatesEventStream-Ošetřeníchybovýchstavů"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Ošetření chybových stavů</span></h1><p><span style="color: rgb(255,0,0);"><span style="color: rgb(0,0,0);">Je popsáno na stránce</span> <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340311">eBroker/CCP - Čerp&aacute;n&iacute; a transformace ud&aacute;lost&iacute;</a></span></p><h1 id="FxRatesEventStream-Kapacitnípožadavky"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Kapacitní požadavky</span></h1><h2 id="FxRatesEventStream-Početudálostídenně"><span style="letter-spacing: -0.008em;">Počet událostí denně</span></h2><p>typicky 3:</p><ul><li>FxRatesInstant</li><li>FxRatesDaily - ČNB</li><li>FxRatesDaily - ECB</li></ul><h2 id="FxRatesEventStream-Objem">Objem</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Datová entita</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Objem</th></tr><tr><td class="confluenceTd">FxRateLists</td><td class="confluenceTd"><ul><li>zanedbatelné</li></ul></td></tr><tr><td class="confluenceTd">FxRatesInstant</td><td class="confluenceTd"><ul><li>1 aktualizace znamená cca 165 záznamů</li><li>velikost záznamu neumím odhadnout</li></ul></td></tr><tr><td class="confluenceTd">FxRatesDaily</td><td class="confluenceTd"><ul><li>1 aktualizace znamená cca 84 záznamů (2 události, ČNB 49, ECB 35)</li><li>velikost záznamu neumím odhadnout <em>(poznámka SiteOne)</em></li></ul></td></tr></tbody></table></div><h1 class="auto-cursor-target" id="FxRatesEventStream-Sekvenčnídiagramy"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Sekvenční diagramy</span></h1><h2 class="auto-cursor-target" id="FxRatesEventStream-Průběžnádata"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Průběžná data</span></h2><h3 id="FxRatesEventStream-FxRateLists"><span>FxRateLists</span></h3><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/17337291/17339690.png" data-image-src="attachments/17337291/17339690.png" data-unresolved-comment-count="0" data-linked-resource-id="17339690" data-linked-resource-version="3" data-linked-resource-type="attachment" data-linked-resource-default-alias="FxRate - Číselník.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337291" data-linked-resource-container-version="122" alt=""></span></p><h3 id="FxRatesEventStream-FxRatesInstant"><span><span class="inline-comment-marker" data-ref="515d39ee-73e8-4f67-aee6-425934d6ae0c">FxRatesInstant</span></span></h3><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/17337291/17341217.png" data-image-src="attachments/17337291/17341217.png" data-unresolved-comment-count="0" data-linked-resource-id="17341217" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="FxRates - Instant - Průběžný topic.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337291" data-linked-resource-container-version="122" alt=""></span></p><h3 id="FxRatesEventStream-FxRatesDaily"><span><span class="inline-comment-marker" data-ref="58e1e0a7-eb9a-4d84-aef4-b9c4442b843c">FxRatesDaily</span></span></h3><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/17337291/17341218.png" data-image-src="attachments/17337291/17341218.png" data-unresolved-comment-count="0" data-linked-resource-id="17341218" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="FxRates - Daily - Průběžný topic.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337291" data-linked-resource-container-version="122" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17337338.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17337343.json">fxRate_aktivni.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17337903.json">eBroker_FxRateList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338180.json">eBroker_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338181.json">eBroker_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17337904.json">eBroker_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17337905.json">eBroker_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338317.json">ccp_FxRateList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338974.json">ccp_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338975.json">ccp_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338571.json">ccp_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17339841.json">ccp_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17339842.json">ccp_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17339843.json">ccp_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341241.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17339691.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17339692.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341211.json">ccp_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338318.json">ccp_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338319.json">ccp_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17340972.json">ccp_FxRatesLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341460.json">ccp_FxRatesInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341461.json">ccp_FxRatesDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341324.json">ccp_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341217.png">FxRates - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341218.png">FxRates - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341242.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17339690.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17338567.json">ccp_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17341384.json">csc_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17340973.json">ccp_FxRatesInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337291/17340974.json">ccp_FxRatesDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

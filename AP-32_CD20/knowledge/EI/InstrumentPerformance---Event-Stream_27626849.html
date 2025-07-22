@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : InstrumentPerformance - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17339740.html">Instrument Prices - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="InstrumentPerformance_27626847.html">InstrumentPerformance</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : InstrumentPerformance - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Zář 14, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="InstrumentPerformanceEventStream-Přenosy"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Přenosy</span></h1><h2 style="color: rgb(23,43,77);" id="InstrumentPerformanceEventStream-Datovéentity">Datové entity</h2><p><span style="letter-spacing: 0.0px;">Pro výkonnosti finančních instrumentů jsou definovány následující typy datových entit:</span></p><ul><li style="font-size: 14.0px;letter-spacing: normal;"><span>InstrumentPerformanceMarketPriceDaily</span></li><li style="font-size: 14.0px;letter-spacing: normal;">InstrumentPerformanceValuePriceDaily</li></ul><h2 style="margin-top: 30.0px;color: rgb(23,43,77);" id="InstrumentPerformanceEventStream-Topicy"><span style="letter-spacing: -0.008em;font-size: 20.0px;">Topicy</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Entity Type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Název Topicu</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Typ Topicu</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Cíl</strong></td></tr><tr><td rowspan="4" class="confluenceTd">InstrumentPerformanceMarketPriceDaily</td><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-PRICE-DAILY_SYNC_APP</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">KStreams</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-MARKET-PRICE-DAILY_STREAM_GNR</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">DKCZ,DKSK</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-PRICE-DAILY_RSYNC_APP</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">KStreams</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-MARKET-PRICE-DAILY_RCN_GNR</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">DKCZ,DKSK</td></tr><tr><td rowspan="4" class="confluenceTd">InstrumentPerformanceValuePriceDaily</td><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-PRICE-DAILY_SYNC_APP</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">KStreams</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-VALUE-PRICE-DAILY_STREAM_GNR</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">DKCZ,DKSK</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-PRICE-DAILY_RSYNC_APP</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">KStreams</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-PERFORMANCE-VALUE-PRICE-DAILY_RCN_GNR</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">DKCZ,DKSK</td></tr><tr><td rowspan="2" class="confluenceTd">-</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_SYNC_APP</span></td><td colspan="1" class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</span></td><td colspan="1" class="confluenceTd">Kontrolní</td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926599926 {padding: 0px;}
+div.rbtoc1684926599926 ul {margin-left: 0px;}
+div.rbtoc1684926599926 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926599926'>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-Přenosy'>Přenosy</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#InstrumentPerformanceEventStream-Topicy'>Topicy</a></li>
+<li><a href='#InstrumentPerformanceEventStream-Interfacetabulky'>Interface tabulky</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-Key'>Key</a></li>
+<li><a href='#InstrumentPerformanceEventStream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-Průběžný'>Průběžný</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-InstrumentPerformance'>Instrument Performance</a></li>
+</ul>
+</li>
+<li><a href='#InstrumentPerformanceEventStream-Inicializační/Rekonciličaní'>Inicializační/Rekonciličaní</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-Performance'>Performance</a></li>
+</ul>
+</li>
+<li><a href='#InstrumentPerformanceEventStream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#InstrumentPerformanceEventStream-Popisodběrudat'>Popis odběru dat</a></li>
+<li><a href='#InstrumentPerformanceEventStream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#InstrumentPerformanceEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#InstrumentPerformanceEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#InstrumentPerformanceEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-Početudálostídenně'>Počet událostí denně</a></li>
+</ul>
+</li>
+<li><a href='#InstrumentPerformanceEventStream-Sekvenčnídiagramy'>Sekvenční diagramy</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-Průběžnádata'>Průběžná data</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentPerformanceEventStream-InstrumentPerformanceMarketPriceDaily'>InstrumentPerformanceMarketPriceDaily</a></li>
+<li><a href='#InstrumentPerformanceEventStream-InstrumentPerformanceValuePriceDaily'>InstrumentPerformanceValuePriceDaily</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="InstrumentPerformanceEventStream-Interfacetabulky"><span style="letter-spacing: -0.008em;font-size: 20.0px;">Interface tabulky</span></h2><p>eBroker vytvoří, plní a <span class="inline-comment-marker" data-ref="df8066fa-b0c6-403a-bd2d-911c9e145276">spravuje</span> tyto interface tabulky:</p><ul><li>Pro čerpání dat do Průběžného topicu</li><li>Pro čerpání dat do Inicializačního/Rekonciličaního topicu</li><li>Kontrolní</li></ul><p style="color: rgb(23,43,77);"><span style="font-size: 14.0px;font-weight: 400;letter-spacing: 0.0px;">Každá Kafka událost sestává z Key a Value:</span></p><ul><li>Key do sloupce KEY</li><li>Value do sloupce BODY</li></ul><h3 id="InstrumentPerformanceEventStream-Key">Key</h3><p><span style="color: rgb(0,0,0);">Ve sloupci KEY klíč události = instrumentId.</span></p><h3 id="InstrumentPerformanceEventStream-Value"><span style="letter-spacing: 0.0px;">Value</span></h3><p><strong><span style="letter-spacing: 0.0px;">Východiska:</span></strong></p><p><span style="letter-spacing: 0.0px;">Rozdělení dat do interface tabulek vychází z několika kritérií:</span></p><ul><li><span style="letter-spacing: 0.0px;">Mít pro OHLC samostatnou tabulku</span></li><li><span style="letter-spacing: 0.0px;">Mít samostatnou tabulku pro přenosy s vysokým počtem událostí za den</span></li><li><span style="letter-spacing: 0.0px;">Sdružovat do jedné interface tabulky události, které mají nízký počet událostí za den</span></li><li><span style="letter-spacing: 0.0px;">Mít zvláštní interface tabulku pro kontrolní topic</span></li></ul><p><span style="letter-spacing: 0.0px;">Se zohledněním těchto pravidel je <span>níže </span>definována množina tabulek pro průběžný topic, init/recon topic a kontrolní topic.</span></p><p><strong><span style="letter-spacing: 0.0px;">Přehled interface tabulek:</span></strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong>Průběžný topic</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong>Inicializační/Rekonciliační topic</strong></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><strong>Datová entita</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><strong>Datová entita</strong></td></tr><tr><td rowspan="2" class="confluenceTd">INSTRUMENT_PERFORMANCE_CONTINUOUS</td><td class="confluenceTd">InstrumentPerformanceMarketPriceDaily</td><td rowspan="2" class="confluenceTd">INSTRUMENT_PERFORMANCE_INIT_AND_RECON</td><td class="confluenceTd">InstrumentPerformanceMarketPriceDaily</td></tr><tr><td class="confluenceTd">InstrumentPerformanceValuePriceDaily</td><td class="confluenceTd">InstrumentPerformanceValuePriceDaily</td></tr></tbody></table></div><h4 id="InstrumentPerformanceEventStream-Průběžný"><span style="letter-spacing: 0.0px;font-weight: 600;">Průběžný</span></h4><h5 id="InstrumentPerformanceEventStream-InstrumentPerformance"><span style="color: rgb(23,43,77);letter-spacing: 0.0px;">Instrument Performance</span></h5><ul><li><p>KEY - vysvětleno výše</p></li><li><p>businessChangeDate = Datum změny datové entity.</p></li><li><p>BODY = <span>JSON tělo zprávy ve formátu CLOB datových entit: InstrumentPerformanceMarketPriceDaily<strong>|</strong>InstrumentPerformanceValuePriceDaily</span></p></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 19.5925%;"/><col style="width: 80.4075%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><span style="color: rgb(0,0,0);"><strong>INSTRUMENT_</strong></span>PERFORMANCE_CONTINUOUS</th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd"><span style="color: rgb(23,43,77);">BUSINESS_CHANGE_DATE</span></td><td class="confluenceTd">Oracle Date</td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd">LOCATION</td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, &lt;prázdná_hodnota&gt;}</td></tr><tr><td class="confluenceTd">CREATED*</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd"><div class="content-wrapper"><p class="auto-cursor-target">Varchar2(60) enumerace {InstrumentPerformanceMarketPriceDaily<strong>|</strong>InstrumentPerformanceValuePriceDaily}</p></div></td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h4 id="InstrumentPerformanceEventStream-Inicializační/Rekonciličaní"><span style="font-weight: 600;letter-spacing: -0.003em;">Inicializační/Rekonciličaní</span></h4><h5 id="InstrumentPerformanceEventStream-Performance"><span style="color: rgb(23,43,77);letter-spacing: 0.0px;">Performance</span></h5><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum změny datové entity.</li><li>BODY = <span>JSON tělo zprávy ve formátu CLOB datových entit: InstrumentPerformanceMarketPriceDaily; InstrumentPerformanceValuePriceDaily</span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 123.0px;"/><col style="width: 508.0px;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><span style="color: rgb(0,0,0);"><strong>INSTRUMENT_</strong></span>PERFORMANCE_INIT_AND_RECON</th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd"><span style="color: rgb(23,43,77);">BUSINESS_CHANGE_DATE</span></td><td class="confluenceTd">Oracle Date</td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd">LOCATION</td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, &lt;prázdná_hodnota&gt;}</td></tr><tr><td class="confluenceTd">CREATED*</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd">Varchar2(60) enumerace {InstrumentPerformanceMarketPriceDaily<strong>|</strong>InstrumentPerformanceValuePriceDaily}</td></tr><tr><td class="confluenceTd"><p style="text-align: left;">X_CORRELATION_ID</p></td><td class="confluenceTd">Varchar(255)</td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h4 id="InstrumentPerformanceEventStream-Kontrolní"><span style="font-weight: 600;letter-spacing: -0.003em;">Kontrolní</span></h4><ul><li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);"><span style="color: rgb(0,0,0);">CREATED - Čas vložení do interfacové tabulky.</span></span></p></li><li><span style="color: rgb(0,0,0);"><span style="color: rgb(0,0,0);">TOTAL_EVENTS - <span style="color: rgb(23,43,77);">Počet událostí v rekonciliaci, inicializaci nebo v asynchronní odpovědi.</span></span></span></li><li><span style="color: rgb(0,0,0);"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">X_CORRELATION_ID - Unikátní identifikátor volání, který je zaslán v hlavičkovém parametru<span> </span>rekonciliačního REST API, na vstupu initu nebo v požadavku na asynchronní odpověď.</span></span></span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 631.0px;"><colgroup><col style="width: 22.7273%;"/><col style="width: 77.2727%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;">INTEGRATION_CONTROL</th></tr><tr><td class="confluenceTd">CREATED</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Datetime</span></td></tr><tr><td class="confluenceTd">TOTAL_EVENTS</td><td class="confluenceTd">Number</td></tr><tr><td colspan="1" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><h1 id="InstrumentPerformanceEventStream-Popisodběrudat">Popis odběru dat</h1><p>eBroker vkládá data do interface tabulek z nichž jsou vybírána Kafkou prostřednictvím JDBC konektoru.<br/>Spouštěče událostí pro vkládání dat jednotlivých datových entit do interface tabulky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><p><em><strong>Poznámka 30. 5. 2022:</strong> aktuálně řešené datové entity jsou ty které nejsou v šedých řádcích. Tyto šedé řádky jsou přítomny, protože jsem v okamžiku tvorby tabulky měl k dispozici data pro všechny datové entity a zdá se mi vhodné zde tuto informaci podržet pro budoucí využití.</em></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col style="width: 271.0px;"/><col style="width: 368.0px;"/><col style="width: 417.0px;"/><col style="width: 850.0px;"/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3">Oblast</td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Spouštěč události</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Počet událostí za den</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Poznámka</strong></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" rowspan="4" title="Barva pozadí: Světle žlutá 35 %"><strong title="">Výkonnosti CP</strong><p><br/></p></td><td rowspan="2" class="confluenceTd"><p>InstrumentPerformanceMarketPriceDaily</p></td><td class="confluenceTd">Výpočet výkonností pro nový den (každý den ve 23:50).</td><td class="confluenceTd">9 700 (počítám jen s aktivními CP; nutno potvrdit, celkem jich je 30 000)</td><td class="confluenceTd">-</td></tr><tr><td class="confluenceTd">Datafeed zapíše kurz CP.</td><td class="confluenceTd"><p class="Hanging4cm">7 000 (v pracovní dny; v nepracovní je počet zanedbatelný) krát cca 1,5 (odhaduji, že u cca poloviny CP se close zapíše až po výpočtu výkonností pro nový den, a tedy se aktualizuje více záznamů Výkonnosti CP)</p></td><td class="confluenceTd">-</td></tr><tr><td rowspan="2" class="confluenceTd"><p>InstrumentPerformanceValuePriceDaily</p></td><td class="confluenceTd">Výpočet výkonností pro nový den (každý den ve 23:50).</td><td class="confluenceTd">9 700 (počítám jen s aktivními CP; nutno potvrdit, celkem jich je 30 000)</td><td class="confluenceTd">-</td></tr><tr><td class="confluenceTd">Datafeed zapíše kurz CP.</td><td class="confluenceTd"><p class="Hanging4cm">7 000 (v pracovní dny; v nepracovní je počet zanedbatelný) krát cca 1,5 (odhaduji, že u cca poloviny CP se close zapíše až po výpočtu výkonností pro nový den, a tedy se aktualizuje více záznamů Výkonnosti CP)</p></td><td class="confluenceTd">-</td></tr></tbody></table></div><h1 id="InstrumentPerformanceEventStream-JSONschémata"><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schémata</span></h1><p>JSON schémata obsahují nepovinný atribut X-Correlation-Id, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><h1 id="InstrumentPerformanceEventStream-Požadavkynaintegraci"><span style="letter-spacing: -0.01em;">Požadavky na integraci</span></h1><p>  - počet partitions (8), pro číselník méně (1), počet replik (3), replication period (6 days)</p><h1 id="InstrumentPerformanceEventStream-Ošetřeníchybovýchstavů"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Ošetření chybových stavů</span></h1>Je popsáno na stránce <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340311">eBroker/CCP - Čerp&aacute;n&iacute; a transformace ud&aacute;lost&iacute;</a><h1 id="InstrumentPerformanceEventStream-Kapacitnípožadavky"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Kapacitní požadavky</span></h1><h2 id="InstrumentPerformanceEventStream-Početudálostídenně"><span style="letter-spacing: -0.008em;">Počet událostí denně</span></h2><p><span style="font-size: 20.0px;letter-spacing: -0.008em;">Objem</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Objem</strong></td></tr><tr><td class="confluenceTd">InstrumentPerformanceMarketPriceDaily</td><td class="confluenceTd"><ul style="list-style-type: square;"><li>Výpočet výkonností pro nový den 23:50:<ul style="list-style-type: square;"><li>9 700 událostí denně (počítáme jen s aktivními CP; nutno potvrdit, celkem jich je 30 000)</li></ul></li><li>Datafeed:<ul style="list-style-type: square;"><li>7 000 událostí denně (v pracovní dny; v nepracovní je počet zanedbatelný) krát cca 1,5 (odhaduji, že u cca poloviny CP se close zapíše až po výpočtu výkonností pro nový den, a tedy se aktualizuje více záznamů Výkonnosti CP)</li></ul></li><li>velikost záznamu neumím odhadnout<span> </span><em>(poznámka SiteOne)</em></li></ul></td></tr><tr><td class="confluenceTd">InstrumentPerformanceValuePriceDaily</td><td class="confluenceTd"><ul><li>Výpočet výkonností pro nový den 23:50:<ul><li>9 700 událostí denně (počítáme jen s aktivními CP; nutno potvrdit, celkem jich je 30 000)</li></ul></li><li>Datafeed:<ul><li>7 000 událostí denně (v pracovní dny; v nepracovní je počet zanedbatelný) krát cca 1,5 (odhaduji, že u cca poloviny CP se close zapíše až po výpočtu výkonností pro nový den, a tedy se aktualizuje více záznamů Výkonnosti CP)</li></ul></li><li>velikost záznamu neumím odhadnout<span> </span><em>(poznámka SiteOne)</em></li></ul></td></tr></tbody></table></div><h1 class="auto-cursor-target" id="InstrumentPerformanceEventStream-Sekvenčnídiagramy">Sekvenční diagramy</h1><h2 id="InstrumentPerformanceEventStream-Průběžnádata"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Průběžná data</span></h2><h3 id="InstrumentPerformanceEventStream-InstrumentPerformanceMarketPriceDaily"><span style="font-size: 20.0px;letter-spacing: -0.008em;">InstrumentPerformanceMarketPriceDaily</span></h3><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/27626849/27626859.png" data-image-src="attachments/27626849/27626859.png" data-unresolved-comment-count="0" data-linked-resource-id="27626859" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Instrument Performance Market Price Daily - Průběžný topic.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27626849" data-linked-resource-container-version="6" alt=""></span></p><h3 id="InstrumentPerformanceEventStream-InstrumentPerformanceValuePriceDaily"><span style="font-size: 20.0px;letter-spacing: -0.008em;">InstrumentPerformanceValuePriceDaily</span></h3><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/27626849/27626858.png" data-image-src="attachments/27626849/27626858.png" data-unresolved-comment-count="0" data-linked-resource-id="27626858" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Instrument Performance Value Price Daily - Průběžný topic.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27626849" data-linked-resource-container-version="6" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626850.json">investments_InstrumentPerformanceValuePriceDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626851.json">investments_InstrumentPerformanceMarketPriceDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626852.json">investments_InstrumentValuePriceDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626853.json">investments_InstrumentValuePriceInstantDelayed_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626854.json">investments_InstrumentValuePriceInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626855.json">investments_InstrumentMarketPriceDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626856.json">investments_InstrumentMarketPriceInstantDelayed_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626857.json">investments_InstrumentMarketPriceInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626858.png">Instrument Performance Value Price Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626859.png">Instrument Performance Market Price Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626860.png">Instrument Value Price Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626861.png">Instrument Market Price Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626862.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626863.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626864.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626849/27626865.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

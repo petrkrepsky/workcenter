@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : InvestmentOrder - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341511.html">Portfolio - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="46367392.html">Investment Order - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : InvestmentOrder - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Dub 28, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="InvestmentOrderRESTAPI-Předmětavýstuprekonciliace">Předmět a <span class="inline-comment-marker" data-ref="2f234884-998c-43ad-a654-43eff198b81e">výstup rekonciliace</span></h1><p>Rekonciliační API bude <span class="inline-comment-marker" data-ref="1d2df3d5-8ce6-4d78-a779-cc6fd19b6af3">vystaveno ve WSO2</span>. Až se tak stane, některé detaily z této stránky budou odstraněny.</p><p>Specifikace rozhraní je na stránce <a href="17342899.html">Integračn&iacute; anal&yacute;zy - open api</a></p><h2 id="InvestmentOrderRESTAPI-Princip">Princip</h2><p>Na vstupu lze omezit časový interval pro který se mají data poslat.</p><ul><li>Časový interval je definovaný = z<span style="letter-spacing: 0.0px;">novuzaslání výsledných změn</span><span style="letter-spacing: 0.0px;"> </span><span class="inline-comment-marker" data-ref="391ec213-4ce7-41ef-9b13-a0589c98aac3">entit </span><span style="letter-spacing: 0.0px;">z časového intervalu</span></li><li>Časový interval není definovaný = znovuzaslání výsledných změn entit za poslední tři měsíce</li><li><span style="color: rgb(23,43,77);">Posílá se pouze aktuální (nejnovější) podoba každé entity</span></li><li><span style="color: rgb(23,43,77);">Spolu s obchodními pokyny budou při rekonciliaci publikovány všechny související pokyny rušicí</span></li><li><span style="color: rgb(23,43,77);">Pokud se v daném rozsahu BCD vyskytne rušicí pokyn, budou spolu s ním publikovány i příslušný obchodní pokyn a všechny jeho rušicí pokyny</span></li></ul><h2 id="InvestmentOrderRESTAPI-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li>POST /InvestmentOrder/<span style="color: rgb(59,65,81);">query</span></li></ul></li><li>header parametry (povinné):<ul><li>X-Correlation-ID</li><li>traceparent</li><li><span style="color: rgb(59,65,81);">X-Request-ID</span></li></ul></li><li>query (povinný)<ul><li>location</li></ul></li><li>body parametry (nepovinné):<ul><li>businessChangeDateStart</li><li><span style="color: rgb(0,51,102);">businessChangeDateEnd</span></li><li><span style="color: rgb(0,0,0);">portfolioIds</span><ul><li><span style="color: rgb(0,0,0);">ebrokerId</span></li></ul></li><li><span style="color: rgb(0,0,0);">orderIds</span><ul><li><span style="color: rgb(0,0,0);">ebrokerId</span></li></ul></li><li><span style="color: rgb(0,0,0);">submitter</span><ul><li><span style="color: rgb(0,0,0);">crmId</span></li></ul></li><li><span style="color: rgb(0,0,0);">intermediary</span><ul><li><span style="color: rgb(0,0,0);">crmId</span></li></ul></li><li><span style="color: rgb(0,51,102);">owner</span><ul><li><span style="color: rgb(0,51,102);">crmId</span></li></ul></li></ul></li></ul><h1 id="InvestmentOrderRESTAPI-Předmětavýstupinicializace">Předmět a <span class="inline-comment-marker" data-ref="0d706a29-47c8-4841-ab45-88d664900572">výstup inicializace</span></h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><p>Zavoláním inicializačního API se rozumí vyvolání všech událostí.</p><p><span style="color: rgb(23,43,77);">Posílá se pouze aktuální (nejnovější) podoba každé entity.</span></p><p><span style="color: rgb(23,43,77);">Neposílají se entity se Status &quot;deleted&quot;.</span></p><h2 id="InvestmentOrderRESTAPI-Atributyvolání.1">Atributy volání</h2><ul><li><p><br/></p><ul><li>povinné<ul><li>X_Correlation_ID</li><li>location</li></ul></li></ul><p><br/></p></li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926614388 {padding: 0px;}
+div.rbtoc1684926614388 ul {margin-left: 0px;}
+div.rbtoc1684926614388 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926614388'>
+<ul class='toc-indentation'>
+<li><a href='#InvestmentOrderRESTAPI-Předmětavýstuprekonciliace'>Předmět a výstup rekonciliace</a>
+<ul class='toc-indentation'>
+<li><a href='#InvestmentOrderRESTAPI-Princip'>Princip</a></li>
+<li><a href='#InvestmentOrderRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#InvestmentOrderRESTAPI-Předmětavýstupinicializace'>Předmět a výstup inicializace</a>
+<ul class='toc-indentation'>
+<li><a href='#InvestmentOrderRESTAPI-Atributyvolání.1'>Atributy volání</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367397.png">FxRateDaily - ECB - Recon - princip.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367398.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367399.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367400.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367401.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367402.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367403.png">Instrument Market Price Daily - InitRecon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367404.png">Instrument Value Price Daily- InitRecon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367405.png">Instrument Performance Market Price Daily - InitRecon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367406.png">Instrument Performance Value Price Daily - InitRecon.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367407.yaml">InstrumentPrices_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367408.json">FxRates Reconciliation API.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46367396/46367409.json">FxRates_Reconciliation_API_definition.json</a> (application/json)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

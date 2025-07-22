@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-FeesCalculation - Integrační analýza</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-FeesCalculation - Integrační analýza
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Pro 07, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" scope="col" title="Barva pozadí: Světle žlutá 35 %"><strong>Dodatavatel</strong></td><td scope="col" class="confluenceTd">SiteOne</td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><strong>Aplikační architekt/Analytik</strong></td><td class="confluenceTd"><div class="content-wrapper"><p><a class="confluence-userlink user-mention" data-username="JT8100775" href="https://confluencedigi.jtfg.com/display/~JT8100775" data-linked-resource-id="2457701" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Soukup Michal</a> </p></div></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" scope="col" title="Barva pozadí: Světle žlutá 35 %"><strong title="">Hlavní business analytik</strong></td><td scope="col" class="confluenceTd"><div class="content-wrapper"><p><a class="confluence-userlink user-mention" data-username="JT0025542" href="https://confluencedigi.jtfg.com/display/~JT0025542" data-linked-resource-id="2457719" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Zavadil Jindřich</a> </p></div></td></tr></tbody></table></div><h1 id="APIFeesCalculationIntegračníanalýza-Významslužby">Význam služby</h1><p>Služba vrací poplatky za podání pokynu.</p><p>S podám pokynu mohou být spojeny poplatky, které by měl zadavatel znát a souhlasit s nimi. Aktuálně se poplatky jsou rozděleny na:</p><ul><li>Broker</li><li>Makléř</li><li>Služby</li><li>Daň</li></ul><p>Algoritmus výpočtu poplatků je založen na vnitřních cenících J&amp;T a jednotlivých trzích. Vypočítání je možné až na základě vyplnění kompletního pokynu. Údaje o poplatcích<br/>poskytnuté službou, by měly být součástí volání založení pokynu.</p><h2 style="color: rgb(23,43,77);" id="APIFeesCalculationIntegračníanalýza-Pozadíazasazenídostrategie">Pozadí a zasazení do strategie</h2><p>Umožnit aplikacím pro podání pokynu získat informace o poplatcích. Předpokládáné použití</p><ul><li><span class="inline-comment-marker" data-ref="6ce4f7da-9d6f-4c36-960a-8904a5ebd4a4">ePortál</span> - ve fázi sloučení IU/TU (bude využívat novou službu orderInternal)</li><li>Klientské rozhraní DK - přechod na nový portál pro klienty (bude využívat novou službu orderInternal)</li><li><span class="inline-comment-marker" data-ref="84ba1e18-bb90-4449-ac99-0f9c52b6d5af">IQTrader</span> - zakládá pokyn přes FIX linku</li></ul><h2 style="color: rgb(23,43,77);" id="APIFeesCalculationIntegračníanalýza-Předpoklady">Předpoklady</h2><ul><li>Použití stávající TOP služby na poplatky která má tyto omezení:<br/><ul><li>atributy CP, trhu, portfolia v TOP souřadnicích (zřejmě budou součástí přenosů přes Kafku)</li><li>V případě že se jedná o fond tak identifikátor v souřadnichích TA (existují výjimky)</li><li>Měna na vstupu i výstupu je identická. Na vstupu se předpokládá částka v měně obchodu. Na výstupu jsou pak všechny částky ve stejné měně.</li></ul></li><li>Konzumenti služby nemusí znát všechny potřebné TOP/eBR souřadnice (mohou být mimo prostředí banky)</li><li><span style="color: rgb(23,43,77);">Poplatky jsou v měně obchodování tj. pokynu</span></li><li>Názvy atributů jsou v souladu s již navrženými služebami tak, aby stejný název napříč službami obsahoval významově stejné I/O hodnoty.</li></ul><h1 id="APIFeesCalculationIntegračníanalýza-Jakslužbukonzumovat">Jak službu konzumovat</h1><h2 id="APIFeesCalculationIntegračníanalýza-Manuálprokonzumaci">Manuál pro konzumaci</h2><p>Konzument musí následovat postup definovaný v dokument <a class="external-link" href="https://jtfg.sharepoint.com/:w:/s/Digitlnkanly/EXYvJnPFua5OgTTOWBo61JgB7A7OOdl1_2i2Va2KQVRmIw?e=jWv758" rel="nofollow">Manuál pro konzumaci API služeb na ESB</a>.</p><h2 id="APIFeesCalculationIntegračníanalýza-PožadavkyEInaRESTAPI">Požadavky EI na REST API</h2><p>Na stránce <a href="https://confluencedigi.jtfg.com/display/EI/REST+API?src=contextnavpagetreemode" rel="nofollow" style="text-align: left;">REST API</a> je metodický pokyn s popisem všech požadavků na REST API.</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926621150 {padding: 0px;}
+div.rbtoc1684926621150 ul {margin-left: 0px;}
+div.rbtoc1684926621150 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926621150'>
+<ul class='toc-indentation'>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Významslužby'>Význam služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Pozadíazasazenídostrategie'>Pozadí a zasazení do strategie</a></li>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Předpoklady'>Předpoklady</a></li>
+</ul>
+</li>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Jakslužbukonzumovat'>Jak službu konzumovat</a>
+<ul class='toc-indentation'>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Manuálprokonzumaci'>Manuál pro konzumaci</a></li>
+<li><a href='#APIFeesCalculationIntegračníanalýza-PožadavkyEInaRESTAPI'>Požadavky EI na REST API</a></li>
+</ul>
+</li>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Zúčastněnékomponenty'>Zúčastněné komponenty</a></li>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Zúčastněnéslužby'>Zúčastněné služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Integračníslužby'>Integrační služby</a></li>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Aplikačníslužby'>Aplikační služby</a></li>
+</ul>
+</li>
+<li><a href='#APIFeesCalculationIntegračníanalýza-Komponentnídiagram'>Komponentní diagram</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIFeesCalculationIntegračníanalýza-Zúčastněnékomponenty"><span>Zúčastněné komponenty</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1185.0px;"><colgroup><col style="width: 0.0px;"/><col style="width: 0.0px;"/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Name</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">FE - Digital Channels</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Systém, který umožňuje uživateli provádět bankovní operace přes internet. Je připojen k integrační vrstvě, kde konzumuje vystavená API.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>WSO2 API-M</p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 API Manager je platforma pro vytváření, integraci a vystavování digitálních služeb jako spravovaných API</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>eBroker</p></td><td style="text-align: left;" class="confluenceTd"><p>Systém poskytuje konsolidované informace o pokynech, jejich stavu (zobchodování, vypořádání, odmítnutí,<br/>vypršení, zrušení), o majetku obsaženém v klientských portfoliích, oprávnění k portfoliím a nastavení<br/>uživatelských přístupů, které jsou získávány ze systémů Topas, TA a CRM. Systém dále zajišťuje komunikaci s<br/>třetími stranami prostřednictvím FIX protokolu.</p><p><span style="letter-spacing: 0.0px;">Dodavatel: SiteOne</span></p></td></tr></tbody></table></div><h1 id="APIFeesCalculationIntegračníanalýza-Zúčastněnéslužby"><span>Zúčastněné služby</span></h1><h2 id="APIFeesCalculationIntegračníanalýza-Integračníslužby"><span class="inline-comment-marker" data-ref="b5380483-1475-4683-9287-fc2f845cdb7c">Integrační služby</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" colspan="2" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>URLs  - budou doplněny</strong></p></td></tr><tr><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>FeesCalculation</p><p><br/></p></td><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>REST API</p><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>UAT</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>SIT</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr></tbody></table></div><h2 id="APIFeesCalculationIntegračníanalýza-Aplikačníslužby"><span class="inline-comment-marker" data-ref="d4b92397-3094-4764-88a0-e0c6d55ba140">Aplikační služby</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>FeesCalculation</p></td><td style="text-align: left;" class="confluenceTd"><p>REST API</p></td></tr></tbody></table></div><h1 id="APIFeesCalculationIntegračníanalýza-Komponentnídiagram">Komponentní diagram</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/38013374/43287090.png" data-image-src="attachments/38013374/43287090.png" data-unresolved-comment-count="0" data-linked-resource-id="43287090" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="FeesCalculation - CD.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="38013374" data-linked-resource-container-version="17" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38013374/38013378.png">RelevantProduct - Component diagram.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38013374/43287090.png">FeesCalculation - CD.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

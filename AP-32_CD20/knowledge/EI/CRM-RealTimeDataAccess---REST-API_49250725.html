@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CRM RealTimeDataAccess - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="46367767.html">CRM RealTimeDataAccess - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CRM RealTimeDataAccess - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Kratochvíl Aleš</span>, last modified on Dub 19, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CRMRealTimeDataAccessRESTAPI-Požadavkynarekonciliaci">Požadavky na rekonciliaci</h1><p>Samostatné API (oddělené od druhého API <span><span class="ui-provider vf b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak">realTimeDataAccess</span></span>) sloužící pro rekonciliaci (a inicializaci) bude vystaveno na WSO2. Specifikace rozhraní je na stránce <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17342899" rel="nofollow">Integrační analýzy - open api</a>.</p><h2 id="CRMRealTimeDataAccessRESTAPI-Princip"><span>Princip</span></h2><p><span style="color: rgb(0,0,0);">Znovu zaslání pro určitého klienta nastavení přístupu k real-time datům včetně vyplněných dotazníků z časového intervalu pro všechny či konkrétní burzu, případně znovu zaslání konkrétního vyplněného formuláře včetně nastavení z něho vycházejících.</span></p><p><br/></p><h2 id="CRMRealTimeDataAccessRESTAPI-Aplikačníslužby"><span style="color: rgb(0,0,0);">Aplikační služby</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Jméno</strong></span></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Typ</strong></span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">realTimeData</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">REST API</span></p></td></tr></tbody></table></div><p><br/></p><h2 id="CRMRealTimeDataAccessRESTAPI-Atributyvolání">Atributy volání</h2><ul><li><span class="inline-comment-marker" data-ref="5e246519-0e9a-4334-85bb-7b102fef2a9b">metody</span>:<ul><li><span class="inline-comment-marker" data-ref="e05f5190-68ba-4312-b160-ceda26fb6b07">GET /realTimeDataAccess</span></li><li>GET /realTimeDataAccess/<span style="color: rgb(23,43,77);">{a<span style="color: rgb(0,0,0);">pplicationId</span>}</span></li><li>GET <span style="color: rgb(23,43,77);">/health (viz <a href="https://confluencedigi.jtfg.com/display/EI/healthcheck+endpoint" rel="nofollow">healthcheck endpoint</a>)</span></li></ul></li><li>header parametry:<ul><li>X-Correlation-ID</li><li>traceparent</li></ul></li><li>path parametry <ul><li><span style="color: rgb(23,43,77);">a<span style="color: rgb(0,0,0);">pplicationId</span> je instance formuláře v CRM</span></li></ul></li><li>query parametry (nepovinné a jen pro /realTimeDataAccess):<ul><li>accountId (AccountGUID) je číslo účtu nebo <span class="inline-comment-marker" data-ref="367a53ca-27fb-4b14-b58a-a869a56407d7">klientId</span> (AccountKLID) je číslo klienta</li><li><span style="color: rgb(23,43,77);">filledWhen</span>From (omezení výběru od - datum změny entity)</li><li><span style="color: rgb(23,43,77);">filledWhen</span>To (omezení výběru do - datum změny entity)</li><li><span class="inline-comment-marker" data-ref="a7a8bd82-10e3-41fa-99db-251735866553">marketFormId</span> (tj. burza), pro kterou byl vyplněn dotazník</li></ul></li></ul><h1 id="CRMRealTimeDataAccessRESTAPI-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><p>Inicializace znamená:</p><ul><li>zaslání všech nastavení v RealTimeDataAccess</li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926692019 {padding: 0px;}
+div.rbtoc1684926692019 ul {margin-left: 0px;}
+div.rbtoc1684926692019 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926692019'>
+<ul class='toc-indentation'>
+<li><a href='#CRMRealTimeDataAccessRESTAPI-Požadavkynarekonciliaci'>Požadavky na rekonciliaci</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMRealTimeDataAccessRESTAPI-Princip'>Princip</a></li>
+<li><a href='#CRMRealTimeDataAccessRESTAPI-Aplikačníslužby'>Aplikační služby</a></li>
+<li><a href='#CRMRealTimeDataAccessRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#CRMRealTimeDataAccessRESTAPI-Předmětavýstupinicializace'>Předmět a výstup inicializace</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-51544796"></a>
+                                    <font class="smallfont"><p style="text-align: left;">Změny:</p><ul style="text-align: left;"><li>clientId &gt; klientId</li></ul></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8102073 at Úno 17, 2023 22:01
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

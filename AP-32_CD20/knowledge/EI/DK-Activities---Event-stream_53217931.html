@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : DK Activities - Event stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="53217929.html">DK Activities - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : DK Activities - Event stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Kratochvíl Aleš</span>, last modified on Bře 29, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="DKActivitiesEventstream-Přenosy"><span>Přenosy</span></h1><h2 id="DKActivitiesEventstream-Datovéentity">Datové entity</h2><p><span>Jsou definovány následující datové entity a jejich druhy:</span></p><ul><li><p><strong>Activities</strong></p><ul><li>APPOINTMENT</li><li>EMAIL</li></ul></li></ul><p><br/></p><h2 id="DKActivitiesEventstream-Topicy"><span>Topicy</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Entity Type</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Název Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Typ Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;">Zdroj</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;">Cíl</th></tr><tr><td rowspan="4" class="confluenceTd">Activities</td><td class="confluenceTd">JTB-SK_PARTIES_DK-ACTIVITIES-APPOINTMENT_SYNC_GNR</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">CRM</td><td class="confluenceTd">DKSK</td></tr><tr><td class="confluenceTd">JTB-SK_PARTIES_DK-ACTIVITIES-APPOINTMENT_RCN_GNR</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">CRM</td><td class="confluenceTd">DKSK</td></tr><tr><td class="confluenceTd">JTB-SK_PARTIES_DK-ACTIVITIES-EMAIL_SYNC_GNR</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">CRM</td><td class="confluenceTd">DKSK</td></tr><tr><td class="confluenceTd">JTB-SK_PARTIES_DK-ACTIVITIES-EMAIL_RCN_GNR</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">CRM</td><td class="confluenceTd">DKSK</td></tr><tr><td class="confluenceTd">-</td><td class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</td><td class="confluenceTd">Kontrolní</td><td class="confluenceTd">CRM</td><td class="confluenceTd">DKCZ, DKSK</td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926667437 {padding: 0px;}
+div.rbtoc1684926667437 ul {margin-left: 0px;}
+div.rbtoc1684926667437 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926667437'>
+<ul class='toc-indentation'>
+<li><a href='#DKActivitiesEventstream-Přenosy'>Přenosy</a>
+<ul class='toc-indentation'>
+<li><a href='#DKActivitiesEventstream-Datovéentity'>Datové entity</a></li>
+<li><a href='#DKActivitiesEventstream-Topicy'>Topicy</a></li>
+<li><a href='#DKActivitiesEventstream-Popispublikacedat'>Popis publikace dat</a></li>
+</ul>
+</li>
+<li><a href='#DKActivitiesEventstream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#DKActivitiesEventstream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#DKActivitiesEventstream-Kapacitnípožadavky'>Kapacitní požadavky</a></li>
+<li><a href='#DKActivitiesEventstream-Solutionoverview'>Solution overview</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><h2 id="DKActivitiesEventstream-Popispublikacedat"><span>Popis publikace dat</span></h2><p>DK vkládají datovou entitu přímo do Kafka topicu. Výběr topicu se řídí parametrem <span style="color: rgb(23,43,77);">location (cz nebo sk) a informací, zda jde o průběžnou změnu nebo událost v rámci inicializace nebo rekonciliace. Více v <a href="https://confluencedigi.jtfg.com/display/EI/Aspekty+integrace">Aspekty integrace</a></span></p><p>Spouštěče událostí pro vkládání dat jednotlivých datových entit do Kafky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1314.0px;"><colgroup><col style="width: 99.8906px;"/><col style="width: 286.219px;"/><col style="width: 368.672px;"/><col style="width: 558.219px;"/></colgroup><thead><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>Datová entita</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>Spouštěč události</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p><strong style="text-align: left;" title="">Počet událostí za den</strong></p></th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6" style="text-align: left;"><p>Poznámka</p></th></tr></thead><tbody><tr><td style="text-align: left;" class="confluenceTd">Client</td><td style="text-align: left;" class="confluenceTd">Vytvoření záznamu o aktivitě v DK.</td><td style="text-align: left;" class="confluenceTd">Desítky</td><td colspan="1" style="text-align: left;" class="confluenceTd"><p>Lokace (CZ/SK) je v CRM vlastností klienta, ale topic tento atribut neobsahuje. Topic má totiž pro každou lokaci vlastní instanci. (Momentálně jsou požadavkem pouze SK topicy.)</p></td></tr></tbody></table></div><h1 id="DKActivitiesEventstream-JSONschémata"><span>JSON schémata</span></h1><p title="undefined">JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schémata a formáty</a>.</p><h1 id="DKActivitiesEventstream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p><span>Při publikaci může docházet k duplicitám až na BCD. Od konzumentů se očekává deduplikace.</span></p><p><span>Více o ošetření chybových stavů viz <a href="https://confluencedigi.jtfg.com/display/EI/Aspekty+integrace">Aspekty integrace</a>.</span></p><h1 id="DKActivitiesEventstream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><p><span>Více viz <a href="https://confluencedigi.jtfg.com/display/EI/CRM+Activities+-+Event+stream#CRMActivitiesEventStream-Popispublikacedat" rel="nofollow">Popis publikace dat</a>.</span></p><h1 id="DKActivitiesEventstream-Solutionoverview">Solution overview</h1><p><span>n/a</span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53217931/53217932.png">image-2023-3-2_0-23-12.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

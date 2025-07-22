@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Bond- Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PRODUCTS_17339910.html">PRODUCTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="51545033.html">Bond - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Bond- Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Rak Filip</span>, last modified by <span class='editor'> Pipek Jiří</span> on Kvě 02, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="BondEventStream-Datovéentity"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Datové entity</span></h1><p><span>Pro dluhopisy je definována datová entita:</span></p><ul><li><p>Bond</p></li></ul><h1 id="BondEventStream-Topicy"><span>Topicy</span></h1><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 72.55182%;"><colgroup><col style="width: 13.246471%;"/><col style="width: 34.31053%;"/><col style="width: 19.869707%;"/><col style="width: 0.325733%;"/><col style="width: 12.269273%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Entity Type</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Název Topicu*</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Typ Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Background colour : Light yellow 35%"><p title="">Producent</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p title="">Conzument</p></th></tr><tr><td rowspan="4" class="confluenceTd"><p>Bond</p><p><br/></p><p><br/></p></td><td class="confluenceTd"><p><span>JTB-HQ_PRODUCTS_BOND_SYNC_APP</span></p></td><td class="confluenceTd"><p>Aplikační Průběžný**</p></td><td class="confluenceTd"><p>Blotter</p></td><td class="confluenceTd"><p>Transformační aplikace </p></td></tr><tr><td class="confluenceTd"><p><span>JTB-HQ_PRODUCTS_BOND_RSYNC_APP</span></p></td><td class="confluenceTd"><p>Aplikační Inicializační/Rekonciliační**</p></td><td class="confluenceTd"><p>Blotter</p></td><td class="confluenceTd"><p>Transformační aplikace </p></td></tr><tr><td class="confluenceTd"><p><span>JTB-SK_PRODUCTS_BOND_STREAM_GNR</span></p></td><td class="confluenceTd"><p>Průběžný</p></td><td class="confluenceTd"><p>Blotter</p></td><td class="confluenceTd"><p>DKSK</p></td></tr><tr><td class="confluenceTd"><p>JTB-SK_PRODUCTS_BOND_RCN_GNR</p></td><td class="confluenceTd"><p class="auto-cursor-target">Inicializační/Rekonciliační</p></td><td class="confluenceTd"><p class="auto-cursor-target">Blotter</p></td><td class="confluenceTd"><p class="auto-cursor-target">DKSK</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">controllSchema</span></td><td style="text-align: left;" class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Kontrolní</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Blotter</span></td><td style="text-align: left;" class="confluenceTd">DKSK</td></tr><tr><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">errorSchema</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);text-decoration: none;">JTB-HQ_INTEGRATION_ERROR_STREAM_GNR</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Chybový</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Blotter</span></td><td style="text-align: left;" class="confluenceTd">DKSK</td></tr></tbody></table></div><p class="auto-cursor-target">**Po integraci Blotteru na Schema Registry budou aplikační topicy odstraněny.</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926731042 {padding: 0px;}
+div.rbtoc1684926731042 ul {margin-left: 0px;}
+div.rbtoc1684926731042 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926731042'>
+<ul class='toc-indentation'>
+<li><a href='#BondEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#BondEventStream-Topicy'>Topicy</a></li>
+<li><a href='#BondEventStream-Popisodběrudat'>Popis odběru dat</a>
+<ul class='toc-indentation'>
+<li><a href='#BondEventStream-Sekvenčnídiagramy'>Sekvenční diagramy</a></li>
+<li><a href='#BondEventStream-Průběžnádata'>Průběžná data</a>
+<ul class='toc-indentation'>
+<li><a href='#BondEventStream-Bond'>Bond</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="BondEventStream-Popisodběrudat"><span style="letter-spacing: -0.01em;">Popis odběru dat</span></h1><p>Spouštěče událostí pro vkládání dat produktů do Kafka streamu, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 7.62911%;"/><col style="width: 11.4437%;"/><col style="width: 29.1667%;"/><col style="width: 51.7606%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6">Datová entita</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6">Spouštěč události</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6">Frekvence</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6">Poznámka</th></tr><tr><td class="confluenceTd">Bond</td><td class="confluenceTd">Jakákoliv změna na objektě Bond. </td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Příklad ( změna ceny = nová zpráva)</span></p></td></tr></tbody></table></div><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schéma</span></p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><p><span style="letter-spacing: -0.008em;font-size: 20.0px;">Počet událostí denně</span></p><p>typick<span style="color: rgb(0,0,0);">y <strong>:</strong></span></p><ul><li><span style="color: rgb(0,0,0);">jednotky až desítky denně</span></li></ul><p><span style="color: rgb(0,0,0);"><em>Poznámka: nedá se paušalizovat. Záleží, zda/ a kolik vznikne nových událostí denně. </em></span></p><h2 id="BondEventStream-Sekvenčnídiagramy"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Sekvenční diagramy</span></h2><h2 id="BondEventStream-Průběžnádata"><span>Průběžná data</span></h2><h3 style="text-decoration: none;" id="BondEventStream-Bond"><span>Bond</span></h3><p><span class="confluence-embedded-file-wrapper"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/51545035/53215573.png" data-image-src="attachments/51545035/53215573.png" data-unresolved-comment-count="0" data-linked-resource-id="53215573" data-linked-resource-version="4" data-linked-resource-type="attachment" data-linked-resource-default-alias="sd Bond - průběžný topik.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="51545035" data-linked-resource-container-version="22" alt=""></span></span></p><p><br/></p><p><br/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/51545035/51545036.png">Product - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/51545035/51545037.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/51545035/53215575.png">sd Bond - průběžný topik.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/51545035/53215577.png">sd Bond - průběžný topik.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/51545035/53215578.png">sd Bond - průběžný topik.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/51545035/53215573.png">sd Bond - průběžný topik.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:12</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

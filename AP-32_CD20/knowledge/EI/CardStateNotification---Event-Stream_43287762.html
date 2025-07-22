@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CardStateNotification - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CARDS_43287750.html">CARDS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="43287756.html">CardStateNotification - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CardStateNotification - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Židek Vladimír</span>, last modified by <span class='editor'> Rosa Tomáš</span> on Pro 21, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CardStateNotificationEventStream-Datovéentity"><span>Datové entity</span></h1><p><span>Pro CardStateNotificationSK jsou </span>definované<span> datové entity:</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Entity Type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Zdroj</th></tr><tr><td class="confluenceTd">cafStat</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">SIA NR</span></td></tr><tr><td class="confluenceTd"><pre>cafLimit</pre></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">SIA NR</span><br/><br/></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926575650 {padding: 0px;}
+div.rbtoc1684926575650 ul {margin-left: 0px;}
+div.rbtoc1684926575650 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926575650'>
+<ul class='toc-indentation'>
+<li><a href='#CardStateNotificationEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#CardStateNotificationEventStream-Topicy'>Topicy</a></li>
+<li><a href='#CardStateNotificationEventStream-KaždáKafkaudálostsestávázKeyaValue:'>Každá Kafka událost sestává z Key a Value:</a>
+<ul class='toc-indentation'>
+<li><a href='#CardStateNotificationEventStream-Key'>Key</a></li>
+<li><a href='#CardStateNotificationEventStream-Value'>Value</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CardStateNotificationEventStream-Topicy"><span>Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p title="">Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p title="">Název Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p title="">Typ Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Publisher</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Consumer</th></tr><tr><td class="confluenceTd"><p>cafStat</p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">JTB-SK_CARDS_CARD-STATUS_SYNC_GNR</span></p></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Průběžný</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">SIA NR</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">DKSK</span></td></tr><tr><td class="confluenceTd"><p>cafLimit</p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">JTB-SK_CARDS_CARD-LIMITS_SYNC_GNR</span></p></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Průběžný</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">SIA NR</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">DKSK</span></td></tr></tbody></table></div><h1 id="CardStateNotificationEventStream-KaždáKafkaudálostsestávázKeyaValue:"><span style="font-size: 14.0px;letter-spacing: 0.0px;">Každá Kafka událost sestává z Key a Value:</span></h1><ul><li>Key do sloupce KEY</li><li>Value do sloupce BODY</li></ul><h3 id="CardStateNotificationEventStream-Key">Key</h3><p><span style="color: rgb(0,0,0);">Ve sloupci KEY klíč události = <span style="color: rgb(23,43,77);">X-Correlation-ID</span></span></p><h3 id="CardStateNotificationEventStream-Value"><span>Value</span></h3><p><span style="color: rgb(0,0,0);">Zpracovaná SOAP message odeslána ze SIA </span></p><p><br/></p></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><span>Popis odběru dat</span></p><p><span style="color: rgb(0,0,0);">SIA NR zpracuje přijatou SOAP message a transformuje je do JSON formátu.  </span><br/>Spouštěče událostí pro vkládání dat jednotlivých datových entit,  jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 7.62911%;"/><col style="width: 11.4437%;"/><col style="width: 29.1667%;"/><col style="width: 51.7606%;"/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Datová entita</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Spouštěč události</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Frekvence</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p><span style="color: rgb(0,0,0);">Poznámka</span></p></th></tr><tr><td class="confluenceTd"><p>cafStat</p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Přijatá SOAP message zo SIA na SIA NR</span></p></td><td class="confluenceTd"><p><span style="color: rgb(255,0,255);"><span style="color: rgb(0,0,0);">nepravidelně</span></span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">(šifrovaný cardNumber a cardExpiration) dešifrovaní pomocí klíče z topicu </span></p><p><span style="color: rgb(0,0,0);"><span style="color: rgb(0,0,0);">JTB-HQ_INTEGRATION_CRM-KEYS_CB_GNR</span></span></p></td></tr><tr><td class="confluenceTd"><p>cafLimit</p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">Přijatá SOAP message zo SIA na SIA NR</span></p></td><td class="confluenceTd"><p><span style="color: rgb(255,0,255);"><span style="color: rgb(0,0,0);"><span style="color: rgb(255,0,255);"><span style="color: rgb(0,0,0);">nepravidelně</span></span></span></span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">(šifrovaný cardNumber a cardExpiration) dešifrovaní pomocou klíče z topicu </span></p><p><span style="color: rgb(0,0,0);">JTB-HQ_INTEGRATION_CRM-KEYS_CB_GNR</span></p><p><span style="color: rgb(0,0,0);"><br/></span></p></td></tr></tbody></table></div><p><span><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" draggable="false" alt="image-2022-11-21_1-34-43.png" src="attachments/38013841/38013928.png" data-image-src="https://confluencedigi.jtfg.com/download/attachments/38013841/image-2022-11-21_1-34-43.png?version=1&amp;modificationDate=1668990883091&amp;api=v2"></span></span></p><p><span><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" draggable="false" alt="image-2022-11-21_1-35-19.png" src="attachments/38013841/38013929.png" data-image-src="https://confluencedigi.jtfg.com/download/attachments/38013841/image-2022-11-21_1-35-19.png?version=1&amp;modificationDate=1668990919185&amp;api=v2"></span></span></p><p><span>JSON schéma </span><span>obsahuje nepovinný atribut X-Correlation-ID, který se plní hodnotu header parametru stejného jména z volání init/recon API.</span></p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><p><span>Požadavky na integraci</span></p><ul><li><p>počet partitions (8), pro číselník méně (1)</p></li><li><p>počet replik (3)</p></li><li><p>replication period (6 days)</p></li></ul></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

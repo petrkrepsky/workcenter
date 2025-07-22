@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Bond- REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PRODUCTS_17339910.html">PRODUCTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="51545033.html">Bond - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Bond- REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Rak Filip</span>, last modified by <span class='editor'> Pipek Jiří</span> on Kvě 05, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="BondRESTAPI-Předmětavýstuprekonciliace">Předmět a výstup rekonciliace</h1><p>Rekonciliační API bude vystaveno ve WSO2. Až se tak stane, některé detaily z této stránky budou odstraněny. Metoda může být přidána jako součást některé už existující REST služby na entitě Bond. </p><p>Specifikace rozhraní je na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17342899" rel="nofollow">Integrační analýzy - open api</a></p><p><br/><strong>Obsah stránky</strong></p><ul><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-P%C5%99edm%C4%9Btav%C3%BDstuprekonciliace" rel="nofollow">Předmět a výstup rekonciliace</a></span></li><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-Princip" rel="nofollow">Princip</a></span><ul><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-Lokalizace" rel="nofollow">Lokalizace</a></span></li><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-Atributyvol%C3%A1n%C3%AD" rel="nofollow">Atributy volání</a></span></li></ul></li><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-P%C5%99edm%C4%9Btav%C3%BDstupinicializace" rel="nofollow">Předmět a výstup inicializace</a></span></li><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-Sekven%C4%8Dn%C3%ADsch%C3%A9mata" rel="nofollow">Sekvenční schémata</a></span><ul><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-Pr%C5%AFb%C4%9B%C5%BEn%C3%A1data" rel="nofollow">Průběžná data</a></span></li><li><span class="toc-item-body"><a class="toc-link" href="https://confluencedigi.jtfg.com/display/EI/Product+-+REST+API#ProductRESTAPI-Rekonciliace" rel="nofollow">Rekonciliace</a></span></li></ul></li></ul><h1 id="BondRESTAPI-Princip"><span>Princip</span></h1><p>API slouží k zaslání posledních stavů bond produktů k okamžiku volání služby.</p><p>Pomocí query parametru businessChangeDateStart lze filtrovat na požadované časové období.</p><h2 id="BondRESTAPI-Lokalizace">Lokalizace</h2><p>Toto api je lokalizované, tedy na WSO2 existuje jedna pro SK.</p><h2 id="BondRESTAPI-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li>POST /bond/query/</li><li>GET /health/</li></ul></li><li>header parametry (povinné):<ul><li>X-Correlation-ID</li><li><span style="color: rgb(59,65,81);">traceparent</span></li></ul></li><li>body parametry (nepovinné):<ul><li>validityDateStart</li><li>validityDateEnd</li><li>businessChangeDateStart</li><li>businessChangeDateEnd</li><li>portfolioIds<ul><li>topasId</li></ul></li><li>bondPriceDataId - specifikuje jednu cenu dluhopisu</li><li>isin - specifikuje dluhopis</li></ul></li></ul><h1 id="BondRESTAPI-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Zavoláním inicializace se rozumí vyvolní toku událostí, představujících aktuální obraz Bond katalogu.</p><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><h1 id="BondRESTAPI-Sekvenčníschémata"><span>Sekvenční schémata</span></h1><h2 id="BondRESTAPI-Průběžnádata"><span>Průběžná data</span></h2><p><span><span style="color: rgb(23,43,77);">Diagramy pro průběžná data jsou na stránce <a href="Bond--Event-Stream_51545035.html">Bond- Event Stream</a></span></span></p><h2 id="BondRESTAPI-Rekonciliace"><span>Rekonciliace</span></h2><p><span><span class="confluence-embedded-file-wrapper"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/53219244/53219246.png" data-image-src="attachments/53219244/53219246.png" data-unresolved-comment-count="0" data-linked-resource-id="53219246" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Product - InitRecon.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="53219244" data-linked-resource-container-version="6" alt=""></span></span></span></p><p><br/></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53219244/53219245.png">Bond.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53219244/53219246.png">Product - InitRecon.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:12</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

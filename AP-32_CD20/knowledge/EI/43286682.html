@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-Camunda - Integrační analýza</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-Camunda - Integrační analýza
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span>, last modified on Úno 11, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APICamundaIntegračníanalýza-Významslužby">Význam služby</h1><p>Služba zakládá v Camunda proces, který orchestruje manuální proces zpracování změny trvalé adresy v CRM a notifikaci konzumenta o stavu žádosti přes Kafka topic.</p><h1 id="APICamundaIntegračníanalýza-Jakslužbukonzumovat">Jak službu konzumovat</h1><p>Konzument musí následovat postup definovaný v dokumentu <a class="external-link" href="https://jtfg.sharepoint.com/:w:/s/Digitlnkanly/EXYvJnPFua5OgTTOWBo61JgB7A7OOdl1_2i2Va2KQVRmIw?e=jWv758" rel="nofollow">Manuál pro konzumaci API služeb na ESB</a>.</p><h1 id="APICamundaIntegračníanalýza-Kapitolyintegračníanalýzy">Kapitoly integrační analýzy</h1><p><ul class='childpages-macro'><li><a href="49250714.html">Process-definition - založen&iacute; manu&aacute;ln&iacute;ho vyhodnocen&iacute; ž&aacute;dosti o real-time data</a></li><li><a href="51544744.html">Process-definition - založen&iacute; univerz&aacute;ln&iacute; ž&aacute;dosti</a></li><li><a href="43286683.html">Process-definition - změna trval&eacute; adresy</a></li><li><a href="53220095.html">Process-definition - založen&iacute; ž&aacute;dosti o nastaven&iacute; DMA</a></li><li><a href="53215719.html">Process-instance - načten&iacute; univerz&aacute;ln&iacute; ž&aacute;dosti</a></li></ul></p><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926650277 {padding: 0px;}
+div.rbtoc1684926650277 ul {margin-left: 0px;}
+div.rbtoc1684926650277 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926650277'>
+<ul class='toc-indentation'>
+<li><a href='#APICamundaIntegračníanalýza-Významslužby'>Význam služby</a></li>
+<li><a href='#APICamundaIntegračníanalýza-Jakslužbukonzumovat'>Jak službu konzumovat</a></li>
+<li><a href='#APICamundaIntegračníanalýza-Kapitolyintegračníanalýzy'>Kapitoly integrační analýzy</a></li>
+<li><a href='#APICamundaIntegračníanalýza-Zúčastněnékomponenty'>Zúčastněné komponenty</a></li>
+<li><a href='#APICamundaIntegračníanalýza-Zúčastněnéslužby'>Zúčastněné služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APICamundaIntegračníanalýza-Integračníslužby'>Integrační služby</a></li>
+</ul>
+</li>
+<li><a href='#APICamundaIntegračníanalýza-Komponentnídiagram'>Komponentní diagram</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APICamundaIntegračníanalýza-Zúčastněnékomponenty"><span>Zúčastněné komponenty</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1185.0px;"><colgroup><col style="width: 0.0px;"/><col style="width: 0.0px;"/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Name</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">FE - Digital Channels</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Systém, který umožňuje uživateli provádět bankovní operace přes internet. Je připojen k integrační vrstvě, kde konzumuje vystavená API.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>WSO2 API-M</p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 API Manager je platforma pro vytváření, integraci a vystavování digitálních služeb jako spravovaných API</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>Camunda</p></td><td style="text-align: left;" class="confluenceTd"><p>BPM engine v J&amp;T - řídí business proces management - užito v projektu Onboarding klienta, řídí flow business procesu a zajišťuje business logiku frontend aplikacím</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>CRM</p></td><td style="text-align: left;" class="confluenceTd"><p>Systém slouží pro centrální správu dat o klientech J&amp;T Banky, která jsou obohacována o ekonomická data o fyzických a právnických subjektech ze systému BisNode (insolvence, úpadek, apod.).</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>Metada</p></td><td style="text-align: left;" class="confluenceTd"><p>Platforma pro vytváření integrací (ESB).</p></td></tr></tbody></table></div><h1 id="APICamundaIntegračníanalýza-Zúčastněnéslužby"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Zúčastněné služby</span></h1><h2 id="APICamundaIntegračníanalýza-Integračníslužby">Integrační služby</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" colspan="2" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>URLs</strong></p></td></tr><tr><td rowspan="4" style="text-align: left;" class="confluenceTd"><p><br/></p><p><br/></p><p>Camunda</p><p><br/></p></td><td rowspan="4" style="text-align: left;" class="confluenceTd"><p><br/></p><p><br/></p><p>REST API</p><p><br/></p><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>DEV</p></td><td style="text-align: left;" class="confluenceTd"><p>Endpoint WSO2: <a class="external-link" href="https://api-devint.jtfgtest.com/Camunda/v1" rel="nofollow" style="letter-spacing: 0.0px;">https://api-devint.jtfgtest.com/Camunda/v1</a></p></td><td style="text-align: left;" class="confluenceTd"><p>Umístění API na WSO2: <a class="external-link" href="https://developers-devint.jtfgtest.com/devportal/apis/de348a0d-f8eb-46d0-a998-76d996767e6e/overview" rel="nofollow">https://developers-devint.jtfgtest.com/devportal/apis/de348a0d-f8eb-46d0-a998-76d996767e6e/overview</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>INT</p></td><td style="text-align: left;" class="confluenceTd"><p>Endpoint WSO2: <a class="external-link" href="https://apitest.jtfg.com/CamundaSIT/v1" rel="nofollow">https://apitest.jtfg.com/CamundaSIT/v1</a></p></td><td style="text-align: left;" class="confluenceTd"><p>Umístění API na WSO2: <a class="external-link" href="https://developerstest.jtfg.com/devportal/apis/bc9aaecb-4e64-409c-aa72-8093f31fcab7/overview" rel="nofollow">https://developerstest.jtfg.com/devportal/apis/bc9aaecb-4e64-409c-aa72-8093f31fcab7/overview</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>AKC</p></td><td style="text-align: left;" class="confluenceTd"><p>Endpoint WSO2: <a class="external-link" href="https://apitest.jtfg.com/CamundaSIT/v1" rel="nofollow">https://apitest.jtfg.com/CamundaUAT/v1</a></p></td><td style="text-align: left;" class="confluenceTd"><p>Umístění API na WSO2: <a class="external-link" href="https://developerstest.jtfg.com/devportal/apis/509bd0c7-5bfa-4bda-aca7-7d6daaeccbaf/overview" rel="nofollow">https://developerstest.jtfg.com/devportal/apis/509bd0c7-5bfa-4bda-aca7-7d6daaeccbaf/overview</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>PPE</p></td><td style="text-align: left;" class="confluenceTd"><p>Endpoint WSO2: <a class="external-link" href="https://apitest.jtfg.com/CamundaSIT/v1" rel="nofollow">https://apitest.jtfg.com/CamundaPPE/v1</a></p></td><td style="text-align: left;" class="confluenceTd"><p>Umístění API na WSO2: <a class="external-link" href="https://developerstest.jtfg.com/devportal/apis/01f66fbf-4dc6-46cc-a699-049e757ea2d8/overview" rel="nofollow">https://developerstest.jtfg.com/devportal/apis/01f66fbf-4dc6-46cc-a699-049e757ea2d8/overview</a></p></td></tr></tbody></table></div><h1 id="APICamundaIntegračníanalýza-Komponentnídiagram"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Komponentní diagram</span></h1><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/43286682/49251880.png" data-image-src="attachments/43286682/49251880.png" data-unresolved-comment-count="0" data-linked-resource-id="49251880" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Camunda-zmena trvale adresy.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="43286682" data-linked-resource-container-version="5" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43286682/49251880.png">Camunda-zmena trvale adresy.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

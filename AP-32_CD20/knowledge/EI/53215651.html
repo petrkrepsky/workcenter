@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Relation - zrušení vazby klient-disponent SK</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="43288078.html">API-DigiClientOperations - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Relation - zrušení vazby klient-disponent SK
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Rak Filip</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Bře 09, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p class="auto-cursor-target"><span style="color: rgb(23,43,77);">Zrušení vazby mezi klientem a disponentem.</span><span> </span></p><p class="auto-cursor-target"><span style="color: rgb(23,43,77);">V případě, že daný klient nemá žádnou další disponentskou vazbu, je klient zrušen kromě CRM i v ASB Sezam.</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Dodatavatel</strong></td><td style="text-align: left;" class="confluenceTd">ACMARK</td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Aplikační architekt/Analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p>Pavel Baroch</p></div></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong title="">Hlavní business analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p title="undefined">Vojtěch Plachý, Škopová Markéta</p></div></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong title="">Analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p title="undefined">Filip Rak</p></div></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926658626 {padding: 0px;}
+div.rbtoc1684926658626 ul {margin-left: 0px;}
+div.rbtoc1684926658626 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926658626'>
+<ul class='toc-indentation'>
+<li><a href='#RelationzrušenívazbyklientdisponentSK-MetodaproDKSK'>Metoda pro DK SK</a>
+<ul class='toc-indentation'>
+<li><a href='#RelationzrušenívazbyklientdisponentSK-Parametryvstupní'>Parametry vstupní</a></li>
+<li><a href='#RelationzrušenívazbyklientdisponentSK-Parametryvýstupní'>Parametry výstupní</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p class="auto-cursor-target"><span style="color: rgb(23,43,77);">Zrušení vazby mezi klientem a disponentem je nutné</span><span style="color: rgb(0,0,0);letter-spacing: 0.0px;"> propsat do všech relevantních BE systémů a to jak samostatně pro jednu vazbu klient-disponent, tak pro více vazeb (klient-disponenti).</span></p><h1 id="RelationzrušenívazbyklientdisponentSK-MetodaproDKSK">Metoda pro DK SK</h1><p><span style="color: rgb(0,0,0);">Pro DK SK bude upravena stávající metoda /Relation/delete/{relationId} v</span> API DigiClientOperations pro <span style="color: rgb(0,0,0);">zrušení vztahu v CRM</span>. </p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 36.2239%;"><colgroup><col style="width: 12.2521%;"/><col style="width: 32.8424%;"/><col style="width: 54.9055%;"/></colgroup><thead><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><span style="color: rgb(0,0,0);">Metoda</span></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><span style="color: rgb(0,0,0);">URL</span></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><span style="color: rgb(0,0,0);">Popis</span></p></th></tr></thead><tbody><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(51,102,255);"><strong>PUT</strong></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">/relation/delete/{relationId}</span></p></td><td style="text-align: left;" class="confluenceTd">Zrušení vztahu klient-disponent plnohodnotná vazba<br/><p><br/></p></td></tr></tbody></table></div><h2 class="auto-cursor-target" id="RelationzrušenívazbyklientdisponentSK-Parametryvstupní">Parametry vstupní</h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 937.0px;"><colgroup><col style="width: 98.0px;"/><col style="width: 196.0px;"/><col style="width: 108.0px;"/><col style="width: 88.0px;"/><col style="width: 87.0px;"/><col style="width: 94.0px;"/><col style="width: 266.0px;"/></colgroup><thead><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong><span style="color: rgb(23,43,77);" title="">Umístění</span></strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Jméno</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Povinnost</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Datový ty</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Formát</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Omezení</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Popis</strong></p></th></tr></thead><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">X-Correlation-ID</span></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Korelační identifikátor pro inicializaci a rekonciliaci</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">traceparent</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Tracing parameter according to W3C Trace Context</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p>path</p></td><td class="confluenceTd"><p>relationId</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">uuid</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p>GUID odstraňované relace</p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>query</p></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">businessChangeDate</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">0..1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">string</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">date-time</span></td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Poslední změna statusu</td></tr></tbody></table></div><h2 id="RelationzrušenívazbyklientdisponentSK-Parametryvýstupní">Parametry výstupní</h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 937.0px;"><colgroup><col style="width: 98.0px;"/><col style="width: 196.0px;"/><col style="width: 108.0px;"/><col style="width: 88.0px;"/><col style="width: 87.0px;"/><col style="width: 94.0px;"/><col style="width: 266.0px;"/></colgroup><thead><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong><span style="color: rgb(23,43,77);" title="">Umístění</span></strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Jméno</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Povinnost</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Datový ty</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Formát</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Omezení</strong></p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p><strong>Popis</strong></p></th></tr></thead><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">X-Correlation-ID</span></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Korelační identifikátor pro inicializaci a rekonciliaci</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p><span style="color: rgb(23,43,77);" title="">header</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">traceparent</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Tracing parameter according to W3C Trace Context</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p><span style="color: rgb(23,43,77);" title="">header</span></p></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">businessChangeDate</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">string</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">date-time</span></td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Poslední změna statusu</td></tr></tbody></table></div><p class="auto-cursor-target"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Sekvenční diagram</span></p><p class="auto-cursor-target"><span style="font-size: 24.0px;letter-spacing: -0.01em;"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/53215651/53215815.png" data-image-src="attachments/53215651/53215815.png" data-unresolved-comment-count="0" data-linked-resource-id="53215815" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Zrušení vazby klient-disponent SK.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="53215651" data-linked-resource-container-version="7" alt=""></span></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215652.png">US 1622 - Zrušení disponentské vazbyuživatele - Metady - err- seq.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215653.png">US 1622 - Zrušení disponentské vazbyuživatele - Metady - err- seq (1).png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215654.png">US 1622 - Zrušení disponentské vazbyuživatele - Metady - happyday- seq.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215655.png">Propis klientských údajů na entitu kontakt_v1c.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215656.png">image-2023-1-18_22-49-29.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215657.png">Propis klientských údajů na entitu kontakt.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215658.wsdl">ApplicationWs.wsdl</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215659.png">Camunda_BPMN.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215651/53215815.png">Zrušení vazby klient-disponent SK.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

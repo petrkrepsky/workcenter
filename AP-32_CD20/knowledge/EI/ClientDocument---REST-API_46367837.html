@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : ClientDocument - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="46367834.html">CRM ClientDocument - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : ClientDocument - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Bře 13, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="ClientDocumentRESTAPI-Požadavkynarekonciliaci">Požadavky na rekonciliaci</h1><p><br/></p><p>Specifikace rozhraní je na stránce <a href="17342899.html">Integračn&iacute; anal&yacute;zy - open api</a></p><h2 style="" id="ClientDocumentRESTAPI-Aplikačníslužby"><span style="color: rgb(0,0,0);">Aplikační služby</span></h2><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><span style="color: rgb(0,0,0);"><strong>Jméno</strong></span></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><span style="color: rgb(0,0,0);"><strong>Typ</strong></span></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">clientDocumentReconciliation</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">REST API</span></p></td></tr></tbody></table></div><h2 id="ClientDocumentRESTAPI-Atributyvolání">Atributy volání</h2><p>Na vstupu lze omezit konkrétní dokument pro který lze data zaslat.</p><p>Zohlednění časových hodnot: API bude zasílat pouze aktuální informace o účtech.</p><p>Přehled metod a parametrů</p><ul><li>metody:<ul><li><span class="inline-comment-marker" data-ref="256e9795-10b3-4632-b591-3f9adca0a3d6">GET </span><span class="inline-comment-marker" data-ref="8cdfe589-eb2f-4d09-a2c8-7f2e493dfae8">/clientDocument</span></li><li>GET /clientDocument/{documentId}</li><li>GET<span> </span><span style="color: rgb(23,43,77);" title="undefined">/health (viz<span> </span><a href="https://confluencedigi.jtfg.com/display/EI/healthcheck+endpoint" rel="nofollow">healthcheck endpoint</a>)</span></li></ul></li><li>header parametry (povinné):<ul><li><span class="inline-comment-marker" data-ref="ece66976-d1c0-437f-818f-613a9235e164">X-Correlation-ID</span></li><li><span class="inline-comment-marker" data-ref="ece66976-d1c0-437f-818f-613a9235e164">traceparent</span></li></ul></li><li>query parametry pro metodu GET /portfolioPosition/{documentId}<br/><ul><li>parent<span class="inline-comment-marker" data-ref="13b61656-7ac6-4051-893e-b2176990956b">Id</span></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">parentType</span></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">businessChangeDateStart</span></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">businessChangeDateStartEnd</span></li></ul></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">Implementační detail</span><ul><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">všechny query parametry jsou nepovinné</span></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">pokud je vyplněno parentId, musí být zároveň vyplněno parentType</span></li><li><span class="inline-comment-marker" data-ref="4db17492-eea5-424d-8f23-563addea101f">pokud není vyplněno </span>businessChangeDateStart - automaticky se bere datum 90 dní zpět od teď</li></ul></li></ul><h1 id="ClientDocumentRESTAPI-Požadavkynainicializaci">Požadavky na inicializaci</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace. </p><ul><li>Do INIT/REKONCILAČNÍHO  topicu budou vloženy všechny stavy klientských dokumentů, které jsou v historii SHAREPOINT dostupné.</li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926672840 {padding: 0px;}
+div.rbtoc1684926672840 ul {margin-left: 0px;}
+div.rbtoc1684926672840 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926672840'>
+<ul class='toc-indentation'>
+<li><a href='#ClientDocumentRESTAPI-Požadavkynarekonciliaci'>Požadavky na rekonciliaci</a>
+<ul class='toc-indentation'>
+<li><a href='#ClientDocumentRESTAPI-Aplikačníslužby'>Aplikační služby</a></li>
+<li><a href='#ClientDocumentRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#ClientDocumentRESTAPI-Požadavkynainicializaci'>Požadavky na inicializaci</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-53219691"></a>
+                                    <font class="smallfont"><p>Dobrý den, </p><p>prosím o aktualizaci stránky vzhledem k defektu 
+<span class="jira-issue resolved" data-jira-key="DSWF-4925" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-4925?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-4925</a>
+                            -
+            <span class="summary">clientDocumentReconciliationSIT - není vystaveno na WSO2</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+ - je vystaveno v rámci API digiClientOperations v2.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0024356 at Dub 24, 2023 10:53
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Attendance - Event stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="MANAGEMENT_53217992.html">MANAGEMENT</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="53218200.html">Attendance - integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Attendance - Event stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Rak Filip</span>, last modified on Dub 17, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="AttendanceEventstream-Datovéentity"><span>Datové entity</span></h1><p><span>Pro topic docházka je definována datová entita:</span></p><ul><li><p>Attendance</p></li></ul><h1 id="AttendanceEventstream-Topicy"><span>Topicy</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 592.328px;"><colgroup><col style="width: 59.0px;"/><col style="width: 304.0px;"/><col style="width: 176.0px;"/><col style="width: 107.0px;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Entity Type</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Název Topicu*</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Typ Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Consument</p></th></tr><tr><td rowspan="2" style="text-align: left;" class="confluenceTd"><ul><li>Attendance</li></ul><p><br/></p><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><span>JTB-CZ_MANAGEMENT_ATTENDANCE_SYNC_GNR</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Průběžný</p></td><td style="text-align: left;" class="confluenceTd"><p>KS-MZDY CZ (modul Docházka)</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span>JTB-SK_MANAGEMENT_ATTENDANCE_SYNC_GNR</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Průběžný</p></td><td style="text-align: left;" class="confluenceTd"><p>KS-MZDY SK (modul Docházka)</p></td></tr></tbody></table></div><h1 id="AttendanceEventstream-Popisodběrudat"><span>Popis odběru dat</span></h1><p>Spouštěče událostí pro vkládání dat produktů do Kafka streamu, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1066.0px;"><colgroup><col style="width: 81.25px;"/><col style="width: 121.875px;"/><col style="width: 310.625px;"/><col style="width: 551.25px;"/></colgroup><thead><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>Datová entita</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>Spouštěč události</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>Frekvence</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>Poznámka</p></th></tr></thead><tbody><tr><td style="text-align: left;" class="confluenceTd">Attendance</td><td style="text-align: left;" class="confluenceTd">Nový záznam v DB view <span style="color: rgb(36,36,36);">MmxKafka</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td></tr></tbody></table></div><p><span>JSON schéma</span></p><p>JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><p><span>Počet událostí denně</span></p><p>typick<span style="color: rgb(0,0,0);">y<span> </span><strong>:</strong></span></p><ul><li><span style="color: rgb(0,0,0);">jednotky až desítky denně</span></li></ul><p><span style="color: rgb(0,0,0);"><em>Poznámka: nedá se paušalizovat. Záleží, zda/ a kolik vznikne nových událostí denně. </em></span></p><h2 id="AttendanceEventstream-Sekvenčnídiagramy"><span>Sekvenční diagramy</span></h2><h2 id="AttendanceEventstream-Průběžnádata"><span>Průběžná data</span></h2><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/53218205/53219121.png" data-image-src="attachments/53218205/53219121.png" data-unresolved-comment-count="0" data-linked-resource-id="53219121" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="Sd Attendance - průběžný topic.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="53218205" data-linked-resource-container-version="9" alt=""></span></p>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53218205/53219125.png">Sd Attendance - průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53218205/53219121.png">Sd Attendance - průběžný topic.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

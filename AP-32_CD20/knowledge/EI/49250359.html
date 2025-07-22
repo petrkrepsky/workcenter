@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : History - načtení vyplněných žádostí o real-time data včetně výsledku o přístupu</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="46367770.html">API-RealTimeDataAccess - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : History - načtení vyplněných žádostí o real-time data včetně výsledku o přístupu
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Havlena David</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Dub 19, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p class="auto-cursor-target"><span style="letter-spacing: 0.0px;">Operátor zobrazená data využívá k manuálnímu vyhodnocení dotazníku. Camunda řídí proces vyhodnocení dotazníku, Pokud se CRM nepodaří vyhodnotit dotazník automaticky, zavolá proces v Camundě, který spustí manuální vyhodnocení (pouze vrátí ID žádosti pro sledování stavu) Camunda pro získání historie volá CRM. </span></p><div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Dodavatel</strong></td><td style="text-align: left;" class="confluenceTd">ACMARK</td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Aplikační architekt/Analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p>Pavel Baroch</p></div></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong title="">Hlavní business analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p title="undefined">Vojtěch Plachý</p></div></td></tr></tbody></table></div><h2 style="margin-top: 0.0px;color: rgb(23,43,77);" id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Aplikačníslužby"><span style="color: rgb(0,0,0);">Aplikační služby</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Jméno</strong></span></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Typ</strong></span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">realTimeData</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">REST API</span></p></td></tr></tbody></table></div><h2 style="margin-top: 0.0px;color: rgb(23,43,77);" id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Request">Request</h2><h3 style="color: rgb(23,43,77);" id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Metoda">Metoda</h3><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><thead><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Metoda</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>URL</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Popis</p></th></tr></thead><tbody><tr><td class="confluenceTd"><span style="color: rgb(51,102,255);"><strong>GET</strong></span></td><td class="confluenceTd"><p>/history/{crmIdType}/{crmId}/{marketFormId}</p></td><td class="confluenceTd"><p>Získává historii nastavení přístupů k real time datům klienta pro jednu konkrétní burzu + otázky z jednotlivých dotazníků a odpovědi na ně.</p><p><br/></p></td></tr></tbody></table></div><p class="auto-cursor-target"><span style="color: rgb(23,43,77);">GET ~ /history/AccountKLID/1000018856/BCPP</span></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926663341 {padding: 0px;}
+div.rbtoc1684926663341 ul {margin-left: 0px;}
+div.rbtoc1684926663341 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926663341'>
+<ul class='toc-indentation'>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Aplikačníslužby'>Aplikační služby</a></li>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Request'>Request</a>
+<ul class='toc-indentation'>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Metoda'>Metoda</a></li>
+</ul>
+</li>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Parametryvstupní'>Parametry vstupní</a></li>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Response'>Response</a>
+<ul class='toc-indentation'>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Parametryvýstupní'>Parametry výstupní</a></li>
+</ul>
+</li>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Ostatní'>Ostatní</a>
+<ul class='toc-indentation'>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-'></a></li>
+</ul>
+</li>
+<li><a href='#Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Solutionoverview'>Solution overview</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 style="color: rgb(23,43,77);" id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Parametryvstupní"><span style="font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">Parametry vstupní</span></h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1422.0px;"><colgroup><col style="width: 85.0px;"/><col style="width: 58.0px;"/><col style="width: 147.0px;"/><col style="width: 126.0px;"/><col style="width: 113.0px;"/><col style="width: 90.0px;"/><col style="width: 145.0px;"/><col style="width: 317.0px;"/><col style="width: 341.0px;"/></colgroup><thead><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong><span style="color: rgb(23,43,77);" title="">where</span></strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>lvl</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>name</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>multiplicity</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>date_type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>format</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>enum_value</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>description</strong></p></td><td style="text-align: left;" class="confluenceTd"><p title=""><strong>COMMENT<br/></strong></p></td></tr></thead><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">X-Correlation-ID</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">uuid</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Korelační identifikátor sloužící k párování žádosti s odpovědí v async REST komunikaci skrze rozhraní a k deduplikaci zpráv v sync/async REST komunikaci, kde dochází ke změně dat</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);"><br/></span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><span class="inline-comment-marker" data-ref="79b74d7a-6582-4d1b-ba5a-501906842d34">header</span></td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">traceparent</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Tracing parameter according to W3C Trace Context standard</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Dle zadání zde: <a class="external-link" href="https://confluence.jtfg.com/pages/viewpage.action?spaceKey=DIS&amp;title=http+header+traceparent" rel="nofollow">https://confluence.jtfg.com/pages/viewpage.action?spaceKey=DIS&amp;title=http+header+traceparent</a><br/></span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %">path</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">crmIdType<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p>1</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">ENUM<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">AccountGUID, AccountKLID</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Typ CRM identifikátoru klienta</p><p>Variants:</p><ul><li><em>AccountGUID</em> - GUID entity klienta/firmy (AccountId).</li><li><em>AccountKLID</em> - KLID klienta/firmy (10kód).</li></ul><p><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="5a78b5d2-d17d-45f7-87b0-62fa7e24fd79"><br/></span></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="5a78b5d2-d17d-45f7-87b0-62fa7e24fd79">Analogicky jako Autosweep<br/></span></span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">path</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">crmId</span></p></td><td style="text-align: left;" class="confluenceTd"><p>1</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Hodnota CRM identifikátoru klienta, který dotazníky vyplňoval<br/></span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="5a78b5d2-d17d-45f7-87b0-62fa7e24fd79"><br/></span></span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><span style="color: rgb(0,0,0);">path</span></p></td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="75bce767-735e-4d89-aa32-a324fad3101c">marketFormId</span></span></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><ul><li>BCPP</li><li>BCPB</li><li>NYSE</li><li>NASDAQ</li></ul></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Identifikátor trhu (tj. burza), pro který jsou uvedená data relevantní (hodnota z číselníku RTDataForms)</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><br/></span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><span style="color: rgb(0,0,0);">query</span></p></td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">location</td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">0..1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><ul><li><em>CZ</em><span> </span>- CZ</li><li><em>SK</em><span> </span>- SK</li></ul></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Lokace</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);"><br/></span></p></td></tr></tbody></table></div><h2 id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Response"><span style="color: rgb(0,0,0);">Response</span></h2><p><span style="color: rgb(0,0,0);"><span style="color: rgb(255,0,0);">Response header - musí obsahovat parametry &quot;X-Correlation-ID&quot; a &quot;traceparent&quot;</span>, dle zadání: <span style="color: rgb(23,43,77);"><a class="external-link" href="https://confluence.jtfg.com/pages/viewpage.action?spaceKey=DIS&amp;title=http+header+traceparent" rel="nofollow">https://confluence.jtfg.com/pages/viewpage.action?spaceKey=DIS&amp;title=http+header+traceparent</a></span></span></p><h3 class="auto-cursor-target" id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Parametryvýstupní">Parametry výstupní</h3><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1235.0px;"><colgroup><col style="width: 41.0px;"/><col style="width: 187.0px;"/><col style="width: 98.0px;"/><col style="width: 91.0px;"/><col style="width: 74.0px;"/><col style="width: 130.0px;"/><col style="width: 190.0px;"/><col style="width: 142.0px;"/></colgroup><thead><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>lvl</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>name</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>multiplicity</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>date_type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>format</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>enum_value</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>description</strong></p></td><td style="text-align: left;" class="confluenceTd"><p title=""><strong>COMMENT<br/></strong></p></td></tr></thead><tbody><tr><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">questionnaires</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">0..1<br/></span></td><td style="text-align: left;" class="confluenceTd">array</td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd">Pole s dotazníky</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">2</td><td style="text-align: left;" class="confluenceTd">questionnaire</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1..N<br/></span></td><td style="text-align: left;" class="confluenceTd">object</td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd">Dotazník</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">3</td><td style="text-align: left;" class="confluenceTd">applicationId</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1</span></td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Id konkrétního dotazníku</td><td style="text-align: left;" class="confluenceTd">Nabízí se pojmenování &quot;questionnaireId&quot;, ale vycházíme z datového modelu topicu a tam se vychází z Camunda.</td></tr><tr><td style="text-align: left;" class="confluenceTd">3</td><td style="text-align: left;" class="confluenceTd">manualEvalBy</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1<br/></span></td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Doménové jméno uživatele, JTXXX</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">3</td><td style="text-align: left;" class="confluenceTd">processEndWhen</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1<br/></span></td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Datum a čas vyhodnocení (v Camunda)</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">3</td><td style="text-align: left;" class="confluenceTd">rtDataAccess</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">0..1<br/></span></td><td style="text-align: left;" class="confluenceTd">boolean</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Vyhodnocení, zda má (true) nebo nemá (false) klient zapnutá RT data</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">3</td><td style="text-align: left;" class="confluenceTd"><span class="inline-comment-marker" data-ref="09c56924-770a-448a-b771-a1913737f361">questionnaireState</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1<br/></span></td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">ENUM</td><td style="text-align: left;" class="confluenceTd">Draft, ClientAcquainted, ClientRefused, Authorized, Expired, Disabled, OnlyAml, Evaluated, ProfiAml</td><td style="text-align: left;" class="confluenceTd">Stav dotazníku</td><td style="text-align: left;" class="confluenceTd">Prosím za prověření za CRM, zda jsou nutné všechny stavy. - převzato z InvQuest.</td></tr><tr><td style="text-align: left;" class="confluenceTd">3</td><td style="text-align: left;" class="confluenceTd">questionnaireItems</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">0..1</span></td><td style="text-align: left;" class="confluenceTd">array</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Pole s položkami dotazníku pro příslušnou burzu</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">4</td><td style="text-align: left;" class="confluenceTd">questionnaireItem</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">1..N</span></td><td style="text-align: left;" class="confluenceTd">object</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Položka dotazníku pro příslušnou burzu</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">5</td><td style="text-align: left;" class="confluenceTd">questionKey</td><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Kód otázky v rámci položky dotazníku</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">5</td><td style="text-align: left;" class="confluenceTd">questionText</td><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Znění otázky v rámci položky dotazníku</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">5</td><td style="text-align: left;" class="confluenceTd">questionAnswer</td><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">-</td><td style="text-align: left;" class="confluenceTd">Odpověď na otázku v rámci položky dotazníku</td><td style="text-align: left;" class="confluenceTd"><br/></td></tr></tbody></table></div><br/><h2 id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Ostatní"><span style="color: rgb(0,0,0);">Ostatní</span></h2><p><span style="color: rgb(0,0,0);">náhled UX</span></p><h3 id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-"><span style="color: rgb(165,173,186);"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/49250359/49250373.png" data-image-src="attachments/49250359/49250373.png" data-unresolved-comment-count="0" data-linked-resource-id="49250373" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-2023-1-24_13-34-37.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="49250359" data-linked-resource-container-version="59" alt=""></span></span></h3><p><br/></p><h2 class="auto-cursor-target" id="Historynačtenívyplněnýchžádostíorealtimedatavčetněvýsledkuopřístupu-Solutionoverview">Solution overview</h2><p class="auto-cursor-target"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/49250359/53215780.png" data-image-src="attachments/49250359/53215780.png" data-unresolved-comment-count="0" data-linked-resource-id="53215780" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-2023-3-2_0-24-58.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="49250359" data-linked-resource-container-version="59" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250360.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250361.json">FxRates Reconciliation API.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250362.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250363.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250364.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250365.png">FxRateDaily - ECB - Recon - princip.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250366.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250367.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250368.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250369.yaml">account_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/49250373.png">image-2023-1-24_13-34-37.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250359/53215780.png">image-2023-3-2_0-24-58.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-51544318"></a>
+                                    <font class="smallfont"><p>Redukovány enum_value u crmIdType, aby se nedostaly do path parametru citlivé údaje.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8102073 at Úno 14, 2023 14:57
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-51544527"></a>
+                                    <font class="smallfont"><p>Přidán header parametr <span style="color: rgb(0,0,0);">X-Correlation-ID.</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8102073 at Úno 16, 2023 10:22
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

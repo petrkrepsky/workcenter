@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : StandingOrder - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341686.html">PTS StandingOrders - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : StandingOrder - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span>, last modified on Lis 29, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 style="text-align: left;" id="StandingOrderEventStream-Přenosy"><span style="letter-spacing: -0.01em;">Přenosy</span></h1><h2 id="StandingOrderEventStream-Datovéentity">Datové entity</h2><p>Pro trvalé příkazy je definována datová entita:</p><ul><li><span style="color: rgb(0,0,0);">StandingOrder</span></li></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926702563 {padding: 0px;}
+div.rbtoc1684926702563 ul {margin-left: 0px;}
+div.rbtoc1684926702563 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926702563'>
+<ul class='toc-indentation'>
+<li><a href='#StandingOrderEventStream-Přenosy'>Přenosy</a>
+<ul class='toc-indentation'>
+<li><a href='#StandingOrderEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#StandingOrderEventStream-Topicy'>Topicy</a></li>
+<li><a href='#StandingOrderEventStream-Popispublikovanýchdat'>Popis publikovaných dat</a>
+<ul class='toc-indentation'>
+<li><a href='#StandingOrderEventStream-Key'>Key</a>
+<ul class='toc-indentation'>
+<li><a href='#StandingOrderEventStream-PrůběžnýtopicaInicializační/Rekonciliačnítopic'>Průběžný topic a Inicializační/Rekonciliační topic</a></li>
+<li><a href='#StandingOrderEventStream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+<li><a href='#StandingOrderEventStream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#StandingOrderEventStream-Průběžnýtopic'>Průběžný topic</a></li>
+<li><a href='#StandingOrderEventStream-Inicializační/Rekonciliačnítopic'>Inicializační/Rekonciliační topic</a></li>
+<li><a href='#StandingOrderEventStream-Kontrolní.1'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#StandingOrderEventStream-Popispublikaceudálostí'>Popis publikace událostí</a></li>
+<li><a href='#StandingOrderEventStream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#StandingOrderEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#StandingOrderEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#StandingOrderEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#StandingOrderEventStream-Početudálostídenně'>Počet událostí denně</a></li>
+<li><a href='#StandingOrderEventStream-Objem'>Objem</a></li>
+</ul>
+</li>
+<li><a href='#StandingOrderEventStream-Sekvenčnídiagramy'>Sekvenční diagramy</a>
+<ul class='toc-indentation'>
+<li><a href='#StandingOrderEventStream-Publikováníudálostídoprůběžnéhotopicu'>Publikování událostí do průběžného topicu</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="StandingOrderEventStream-Topicy">Topicy</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Entity Type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Název Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Typ Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>Producent</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>Konzument</strong></td></tr><tr><td rowspan="4" class="confluenceTd"><p>StandingOrder</p></td><td class="confluenceTd"><p>JTB-SK_PAYMENTS_STANDING-ORDER_EVENT_GNR</p></td><td class="confluenceTd"><p><span style="color: rgb(23,43,77);">Průběžný</span></p></td><td colspan="1" class="confluenceTd">PTS SK</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKSK</span></td></tr><tr><td colspan="1" class="confluenceTd">JTB-SK_PAYMENTS_STANDING-ORDER_RCN_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">PTS SK</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKSK</span></td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_PAYMENTS_STANDING-ORDER_EVENT_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td colspan="1" class="confluenceTd">PTS CZ</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ</span></td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_PAYMENTS_STANDING-ORDER_RCN_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">PTS CZ</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(23,43,77);">controllSchema</span></td><td colspan="1" class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Kontrolní</span></td><td colspan="1" class="confluenceTd">PTS SK, PTS CZ</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ, DKSK</span></td></tr></tbody></table></div><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>PTS momentálně nezapisuje do *_GNR topiců, ale zapisuje do *_APP topiců v tabulce níže bez použití Schema Registry. Jedná se o workaround, když se nešlo napojit na Schema Registry. Konzumenti nicméně normálně čtou z topiců *_GNR, které jsou uvedené v tabulce výše.</p><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Entity Type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Název Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Typ Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>Producent</strong></td></tr><tr><td rowspan="4" class="confluenceTd"><p>StandingOrder</p></td><td class="confluenceTd"><p>JTB-SK_PAYMENTS_STANDING-ORDER_EVENT_APP</p></td><td class="confluenceTd"><p><span style="color: rgb(23,43,77);">Průběžný</span></p></td><td colspan="1" class="confluenceTd">PTS SK</td></tr><tr><td colspan="1" class="confluenceTd">JTB-SK_PAYMENTS_STANDING-ORDER_RCN_APP</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">PTS SK</td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_PAYMENTS_STANDING-ORDER_EVENT_APP</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td colspan="1" class="confluenceTd">PTS CZ</td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_PAYMENTS_STANDING-ORDER_RCN_APP</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">PTS CZ</td></tr><tr><td class="confluenceTd"><span style="color: rgb(23,43,77);">controllSchema</span></td><td colspan="1" class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_APP</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Kontrolní</span></td><td colspan="1" class="confluenceTd">PTS SK, PTS CZ</td></tr></tbody></table></div></div></div><p><br/></p><p><br/></p><h2 id="StandingOrderEventStream-Popispublikovanýchdat">Popis publikovaných dat</h2><p>Do Kafka topicu se publikuje Key a Value. Key a Value se liší podle typu topicu.</p><h3 id="StandingOrderEventStream-Key">Key</h3><h4 id="StandingOrderEventStream-PrůběžnýtopicaInicializační/Rekonciliačnítopic"><span style="color: rgb(23,43,77);">Průběžný topic a </span>Inicializační/Rekonciliační topic</h4><p><span style="color: rgb(23,43,77);">Jako klíč se použije ptsId, které slouží jako unikátní business identifikátor. Viz tabulka <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17341687#StandingOrderDatov%C3%BDmodel-StandingOrder" rel="nofollow">Datová entita trvalých příkazů</a>.</span></p><h4 id="StandingOrderEventStream-Kontrolní"><span style="color: rgb(23,43,77);">Kontrolní</span></h4><p><span style="color: rgb(23,43,77);" title="undefined">Klíč je definován v Připojovací analýze v kapitole<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Z%C3%A1pisdokontroln%C3%ADhotopicu" rel="nofollow">Zápis do kontrolního topicu</a>.</span></p><h3 id="StandingOrderEventStream-Value">Value</h3><h4 id="StandingOrderEventStream-Průběžnýtopic"><span style="color: rgb(23,43,77);">Průběžný topic</span></h4><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Obsah těla je definován JSON schématem uvedeným na této stránce v kapitole JSON schémata. Volitelný atribut X-Correlation-ID se nevyplňuje.</span></span></p><h4 id="StandingOrderEventStream-Inicializační/Rekonciliačnítopic"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační topic</span></h4><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);"><span>Obsah těla je definován JSON schématem uvedeným na této stránce v kapitole JSON schémata.</span></span></span></p><ul><li><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);"><span>Data</span></span><span> </span>v rekonciliačním topicu musí obsahovat atribut X-Correlation-ID, jehož hodnota je rovna hodnotě header parametru X-Correlation-ID z volání rekonciliačního API.</span></li><li><span style="color: rgb(23,43,77);">Data v inicializačním topicu musí obsahovat atribut X-Correlation-ID, jehož hodnota je rovna buď hodnotě header parametru X-Correlation-ID z volání inicializačního API (pokud je inicializace řešena REST rozhraním), nebo se vyplní předem definovanou hodnotou, kterou konzument inicializačního topicu musí znát.</span></li></ul><h4 id="StandingOrderEventStream-Kontrolní.1"><span style="color: rgb(23,43,77);">Kontrolní</span></h4><p><span style="color: rgb(23,43,77);" title="undefined">Obsah těla je definován schématem &quot;controllSchema_v1.json&quot; v Připojovací analýze v kapitole<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Z%C3%A1pisdokontroln%C3%ADhotopicu" rel="nofollow">Zápis do kontrolního topicu</a>.</span></p><h1 id="StandingOrderEventStream-Popispublikaceudálostí">Popis publikace událostí</h1><p><span style="letter-spacing: 0.0px;">Při změně business stavu trvalého příkazu musí dojít k aktualizaci atributu businessChangeDate (business datum <span style="color: rgb(23,43,77);">změny stavu datové entity)</span>. Jednotlivé business stavy budou uvedené v číselníku *<a class="external-link" href="https://jtfg.sharepoint.com/:x:/s/JTB_CR_EXT_ORG_BA/ETFmqlQS1DNBmgXvPQcQ6BIBU1gceJshrwxRP4HVe3vjvg?e=4EtRKh" rel="nofollow">StandingOrderState</a>, nebo vznikne číselník nový. <span style="color: rgb(23,43,77);">Je potřeba, aby tyto stavy z číselníku byly namapované na interní PTS stavy trvalých příkazů.</span></span></p><p><span style="letter-spacing: 0.0px;">Jakmile se po změně stavu trvalého příkazu aktualizuje hodnota v atributu businessChangeDate, musí se vygenerovat událost do průběžného topicu.</span></p><p><span style="letter-spacing: 0.0px;"><span><span><span style="color: rgb(23,43,77);">Do topiců (průběžný i rekonciliační/inicializační) se neposílají události pro business stav &quot;noStatus&quot;. V<span><span style="color: rgb(23,43,77);"> případě vyjmutí/přesunutí PTS interního stavu mimo business stav &quot;noStatus&quot; se m</span></span>usí spustit inicializace.</span></span></span></span></p><p>Je důležité, aby k aktualizaci atributu businessChangeDate a k publikování do průběžného topicu došlo vždy při změně stavu trvalého příkazu nezávisle na kanálu (aplikace/rozhraní), kde se s ním pracuje.</p><p>Při změně trvalého příkazu pravděpodobně nebude docházet k přechodu z jednoho stavu do druhého, trvalý příkaz bude stále v jednom business stavu. Nicméně i v tomto případě musí dojít k aktualizaci atributu businessChangeDate a k publikaci události do průběžného topicu.</p><p><br/></p><p><em>* Upřesnění číselníku<span style="color: rgb(23,43,77);"> a odkaz na něj bude doplněn po jeho aktualizaci/vytvoření. <em title="undefined">Zadání na jeho podobu a mapování na interní PTS stavy vytváří p. Husák a p. Harvánek a je v Confluence <a class="external-link" href="https://confluence.jtfg.com/x/-hV5Aw" rel="nofollow">zde</a></em><em>.</em></span></em></p><h1 id="StandingOrderEventStream-JSONschémata"><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schémata</span></h1><p><span><span style="color: rgb(23,43,77);">JSON schéma je stejné pro CZ i SK instanci PTS.</span></span></p><p title="undefined">JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><h1 id="StandingOrderEventStream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><ul><li>počet partitions (8), pro číselník méně (1)</li><li>počet<span> </span>replik<span> </span>(3)</li><li>retention period (6 days)</li></ul><h1 id="StandingOrderEventStream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p><span style="color: rgb(0,51,102);">Není požadováno další ošetření chybových stavů nad rámec kapitoly <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-O%C5%A1et%C5%99en%C3%ADchybov%C3%BDchstav%C5%AF" rel="nofollow">Ošetření chybových stavů</a> v Připojovací analýze.</span></p><h1 id="StandingOrderEventStream-Kapacitnípožadavky"><span style="letter-spacing: -0.01em;"><span style="color: rgb(23,43,77);">Kapacitní požadavky</span></span></h1><h2 id="StandingOrderEventStream-Početudálostídenně">Počet událostí denně</h2><p><span style="color: rgb(255,0,0);letter-spacing: 0.0px;">TODO - čeká se na dodání od PTS<span style="color: rgb(255,0,0);"><span> </span>- slíbeno do 24.6.</span></span></p><h2 id="StandingOrderEventStream-Objem">Objem</h2><p><span style="color: rgb(255,0,0);">TODO - čeká se na dodání od PTS<span> </span>- slíbeno do 24.6.</span></p><h1 id="StandingOrderEventStream-Sekvenčnídiagramy"><span style="letter-spacing: -0.01em;">Sekvenční diagramy</span></h1><h2 id="StandingOrderEventStream-Publikováníudálostídoprůběžnéhotopicu"><span>Publikování událostí do průběžného topicu</span></h2><p><span><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17341688/17342927.png" data-image-src="attachments/17341688/17342927.png" data-unresolved-comment-count="0" data-linked-resource-id="17342927" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SD PTS SO - publikace dat do průběžného topicu.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17341688" data-linked-resource-container-version="24" alt=""></span></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17341688/17341694.json">StandingOrder_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17341688/17342927.png">SD PTS SO - publikace dat do průběžného topicu.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

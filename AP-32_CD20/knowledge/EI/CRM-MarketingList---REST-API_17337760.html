@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CRM MarketingList - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337697.html">CRM MarketingList - integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CRM MarketingList - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hovorka Vojtěch</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Bře 09, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CRMMarketingListRESTAPI-Předmětavýstuprekonciliace">Předmět a výstup rekonciliace</h1><p>Rekonciliační API bude vystaveno ve WSO2. </p><p>Pro BankNews se zachová stávající API vystavené na WSO2. Přiložený soubor je jím i inspirován</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Rekonciliační API</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><a href="attachments/17342899/27623797.yaml" data-linked-resource-id="27623797" data-linked-resource-version="6" data-linked-resource-type="attachment" data-linked-resource-default-alias="parties_marketingList_Reconciliation_API.yaml" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="17342899" data-linked-resource-container-version="2">parties_marketingList_Reconciliation_API.yaml</a></p><p><a href="attachments/17342899/27623796.yaml" data-linked-resource-id="27623796" data-linked-resource-version="6" data-linked-resource-type="attachment" data-linked-resource-default-alias="parties_BankNews_Reconciliation_API.yaml" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="17342899" data-linked-resource-container-version="2">parties_BankNews_Reconciliation_API.yaml</a></p></div></div><h2 id="CRMMarketingListRESTAPI-Princip"><span>Princip</span></h2><p><span style="color: rgb(0,0,0);">Znovuzaslání výsledných změn všech entit nebo jedné datové entity z časového intervalu</span></p><h2 id="CRMMarketingListRESTAPI-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li>GET /marketingList/list</li><li>GET /marketingList/{marketingListId}/members</li><li>GET /BankNews/List</li><li>GET /<span class="inline-comment-marker" data-ref="83456c43-497f-4daf-8f54-7cfebc61439f">bankN</span>ews/settings/{crmIdType}/{crmId}</li></ul></li><li>header parametry (povinné):<ul><li>X-Correlation-ID</li></ul></li><li>query parametr (nepovinné):<ul><li>from (pouze pro /marketingList)</li><li>to (pouze pro /marketingList)</li><li>marketingListId (<span class="inline-comment-marker" data-ref="04213b44-90fd-46e9-b04d-03e50cffedc5">pouze</span> pro /marketingList/{marketingListId}/members)</li><li>mode</li></ul></li></ul><h1 id="CRMMarketingListRESTAPI-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializace znamená:</p><ul style="list-style-type: square;"><li>zaslání všech marketingových listů v posledním stavu</li><li>zaslání všech nastavení bankNews</li></ul><h1 id="CRMMarketingListRESTAPI-Sekvenčníschémata"><span>Sekvenční schémata</span></h1><h2 id="CRMMarketingListRESTAPI-Marketinglist">Marketing list</h2><h3 id="CRMMarketingListRESTAPI-Rekonciliačnítopic">Rekonciliační topic</h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/17337760/27623817.png" data-image-src="attachments/17337760/27623817.png" data-unresolved-comment-count="0" data-linked-resource-id="27623817" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-6-17_15-49-30.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337760" data-linked-resource-container-version="41" alt=""></span></p><h2 id="CRMMarketingListRESTAPI-Marketinglistmembers">Marketing list members</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/17337760/27623818.png" data-image-src="attachments/17337760/27623818.png" data-unresolved-comment-count="0" data-linked-resource-id="27623818" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-6-17_15-49-58.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337760" data-linked-resource-container-version="41" alt=""></span></p><p><br/></p><h2 id="CRMMarketingListRESTAPI-Banknewssettings">Bank news settings</h2><h3 id="CRMMarketingListRESTAPI-BanknewsList">BanknewsList</h3><p><img class="emoticon emoticon-warning" src="images/icons/emoticons/warning.svg" data-emoticon-name="warning" alt="(varování)"/> bankNews bude nakonec realizovaán pomocí číselníku. Jakmile bude znám název číselníkového topicu, tak bude doplněno do schématu</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/17337760/27624623.png" data-image-src="attachments/17337760/27624623.png" data-unresolved-comment-count="0" data-linked-resource-id="27624623" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-6-27_8-20-51.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337760" data-linked-resource-container-version="41" alt=""></span></p><h3 id="CRMMarketingListRESTAPI-BanknewsSettings">BanknewsSettings</h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/17337760/27623824.png" data-image-src="attachments/17337760/27623824.png" data-unresolved-comment-count="0" data-linked-resource-id="27623824" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-6-17_15-51-47.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337760" data-linked-resource-container-version="41" alt=""></span></p><h3 id="CRMMarketingListRESTAPI-Subscribe"><span class="inline-comment-marker" data-ref="dcafb624-7912-451b-90f4-74cc41085662">Subscribe</span></h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/17337760/27624612.png" data-image-src="attachments/17337760/27624612.png" data-unresolved-comment-count="0" data-linked-resource-id="27624612" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-6-27_7-55-12.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337760" data-linked-resource-container-version="41" alt=""></span></p><h3 id="CRMMarketingListRESTAPI-Unsubscribe">Unsubscribe</h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/17337760/27624611.png" data-image-src="attachments/17337760/27624611.png" data-unresolved-comment-count="0" data-linked-resource-id="27624611" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-6-27_7-54-53.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337760" data-linked-resource-container-version="41" alt=""></span></p><p><br/></p><h1 id="CRMMarketingListRESTAPI-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><p>  - všechna API jsou očekávaná, že budou provolávaná v řádech jednotek denně</p><h1 id="CRMMarketingListRESTAPI-ExistujívíAPI">Existujíví API</h1><p>API, která již existují a v době analýzi nepracují nijak s topicy. Budou upravea, aby splňovala podmínky pro začlenění do Enterprise integrace</p><p>Stávající popis pro integrační rozhraní je <a class="external-link" href="https://developerstest.jtfg.com/store/apis/info?name=DigiClientOperationsSIT&amp;version=v1&amp;provider=JTFG.COM%2FJT0020031#/MarketingList/get_api_v1_MarketingList_list" rel="nofollow">zde</a></p><h3 id="CRMMarketingListRESTAPI-Banknews">Bank news</h3><ul><li>GET​/api​/v1​/BankNews​/list</li><ul><li>Získání kolekce existujících rozesílek</li><li>bez vazby na klienta, jen seznam dostupných existujících rozesílek v crmku, které se dají použít</li><li>identifier se pak používá pro subscribe/unsubscribe </li></ul></ul><p><br/></p><ul><li>GET/api/v1/BankNews/settings/{identifierType}/{identifier}</li><ul><li>Získání nastavení rozesílek pro konkrétního klienta/kontakt</li><li>Otisk stávajícího nastavení na entitě Zprávy z banky</li></ul></ul><p><br/></p><ul><li>PATCH​/api​/v1​/BankNews​/{identifierType}​/{identifier}​/subscribe</li><ul><li>Úprava nastavení rozesílek</li><li>Nastaví na Zprávách z banky odpovídající rozesílku/y = true</li></ul></ul><p><br/></p><ul><li>PATCH​/api​/v1​/BankNews​/{identifierType}​/{identifier}​/unsubscribe</li><ul><li>Úprava nastavení rozesílek</li><li>Nastaví na Zprávách z banky odpovídající rozesílku/y = false</li></ul></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926686099 {padding: 0px;}
+div.rbtoc1684926686099 ul {margin-left: 0px;}
+div.rbtoc1684926686099 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926686099'>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListRESTAPI-Předmětavýstuprekonciliace'>Předmět a výstup rekonciliace</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListRESTAPI-Princip'>Princip</a></li>
+<li><a href='#CRMMarketingListRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#CRMMarketingListRESTAPI-Předmětavýstupinicializace'>Předmět a výstup inicializace</a></li>
+<li><a href='#CRMMarketingListRESTAPI-Sekvenčníschémata'>Sekvenční schémata</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListRESTAPI-Marketinglist'>Marketing list</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListRESTAPI-Rekonciliačnítopic'>Rekonciliační topic</a></li>
+</ul>
+</li>
+<li><a href='#CRMMarketingListRESTAPI-Marketinglistmembers'>Marketing list members</a></li>
+<li><a href='#CRMMarketingListRESTAPI-Banknewssettings'>Bank news settings</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListRESTAPI-BanknewsList'>BanknewsList</a></li>
+<li><a href='#CRMMarketingListRESTAPI-BanknewsSettings'>BanknewsSettings</a></li>
+<li><a href='#CRMMarketingListRESTAPI-Subscribe'>Subscribe</a></li>
+<li><a href='#CRMMarketingListRESTAPI-Unsubscribe'>Unsubscribe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#CRMMarketingListRESTAPI-Kapacitnípožadavky'>Kapacitní požadavky</a></li>
+<li><a href='#CRMMarketingListRESTAPI-ExistujívíAPI'>Existujíví API</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListRESTAPI-Banknews'>Bank news</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17338008.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17338052.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17338715.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339026.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339386.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339036.yaml">BankNews_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341368.yaml">BankNews_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341366.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339387.png">image2022-5-17_12-29-19.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339388.png">image2022-5-17_12-29-39.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339389.png">image2022-5-17_12-30-3.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339390.png">image2022-5-17_12-30-43.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339391.png">image2022-5-17_12-30-59.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339392.png">image2022-5-17_12-31-50.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339393.png">image2022-5-17_12-32-22.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17340184.png">image2022-5-24_9-56-17.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17340185.png">image2022-5-24_9-57-7.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17340186.png">image2022-5-24_9-57-29.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17340187.png">image2022-5-24_9-57-50.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17340188.png">image2022-5-24_9-58-17.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17340189.png">image2022-5-24_9-58-36.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341367.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341369.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17339034.yaml">BankNews_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341372.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17338007.yaml">marketingList_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341410.png">image2022-6-1_13-14-35.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341411.png">image2022-6-1_13-14-59.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341412.png">image2022-6-1_13-16-27.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/17341413.png">image2022-6-1_13-16-54.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623770.png">image2022-6-17_14-20-50.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623771.png">image2022-6-17_14-21-23.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623773.png">image2022-6-17_14-22-1.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623775.png">image2022-6-17_14-22-45.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623776.png">image2022-6-17_14-23-25.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623817.png">image2022-6-17_15-49-30.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623818.png">image2022-6-17_15-49-58.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623819.png">image2022-6-17_15-50-18.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623820.png">image2022-6-17_15-50-43.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623821.png">image2022-6-17_15-50-48.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623822.png">image2022-6-17_15-51-6.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623824.png">image2022-6-17_15-51-47.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623826.png">image2022-6-17_15-52-42.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27623827.png">image2022-6-17_15-53-26.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27624611.png">image2022-6-27_7-54-53.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27624612.png">image2022-6-27_7-55-12.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337760/27624623.png">image2022-6-27_8-20-51.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

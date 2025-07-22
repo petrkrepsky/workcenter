@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-CreatePortfolio - Integrační analýza</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-CreatePortfolio - Integrační analýza
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Bře 27, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Dodatavatel</strong></td><td style="text-align: left;" class="confluenceTd">Metada</td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Aplikační architekt/Analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p><br/></p></div></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong title="">Hlavní business analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p title="undefined"><br/></p></div></td></tr></tbody></table></div><h1 id="APICreatePortfolioIntegračníanalýza-Významslužby">Význam služby</h1><p>Služba pro založení portfolia v pro založení portfolia v systému Topas/TA a eBroker.</p><h1 id="APICreatePortfolioIntegračníanalýza-Jakslužbukonzumovat">Jak službu konzumovat</h1><p>Konzument musí následovat postup definovaný v dokument <a class="external-link" href="https://jtfg.sharepoint.com/:w:/s/Digitlnkanly/EXYvJnPFua5OgTTOWBo61JgB7A7OOdl1_2i2Va2KQVRmIw?e=jWv758" rel="nofollow">Manuál pro konzumaci API služeb na ESB</a>.</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926622785 {padding: 0px;}
+div.rbtoc1684926622785 ul {margin-left: 0px;}
+div.rbtoc1684926622785 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926622785'>
+<ul class='toc-indentation'>
+<li><a href='#APICreatePortfolioIntegračníanalýza-Významslužby'>Význam služby</a></li>
+<li><a href='#APICreatePortfolioIntegračníanalýza-Jakslužbukonzumovat'>Jak službu konzumovat</a></li>
+<li><a href='#APICreatePortfolioIntegračníanalýza-Zúčastněnékomponenty'>Zúčastněné komponenty</a></li>
+<li><a href='#APICreatePortfolioIntegračníanalýza-Zúčastněnéslužby'>Zúčastněné služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APICreatePortfolioIntegračníanalýza-Integračníslužby'>Integrační služby</a></li>
+<li><a href='#APICreatePortfolioIntegračníanalýza-Aplikačníslužby'>Aplikační služby</a></li>
+</ul>
+</li>
+<li><a href='#APICreatePortfolioIntegračníanalýza-Komponentnídiagram'>Komponentní diagram</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APICreatePortfolioIntegračníanalýza-Zúčastněnékomponenty"><span>Zúčastněné komponenty</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1185.0px;"><colgroup><col style="width: 453.0px;"/><col style="width: 731.0px;"/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Name</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">FE - Digital Channels</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Systém, který umožňuje uživateli provádět bankovní operace přes internet. Je připojen k integrační vrstvě, kde konzumuje vystavená API.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>WSO2 API-M</p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 API Manager je platforma pro vytváření, integraci a vystavování digitálních služeb jako spravovaných API</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>ADP</p></td><td style="text-align: left;" class="confluenceTd"><p>ARBES Digitální Platformy (ADP), která zapouzdří jednotlivé funkční celky implementované v podobě mikroservis na jednotný škálovatelný Java aplikační server a umožní komunikaci s třetími stranami pomocí rozhraní KAFKA, SOAP nebo REST podle jejich potřeby. ADP je technologický framework umožňující automatický provoz jednotlivých mikroservis, jejich konektivitu a komunikaci.</p><p>Dodatavel: Arbes</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>eBroker</p></td><td style="text-align: left;" class="confluenceTd"><p>Systém poskytuje konsolidované informace o pokynech, jejich stavu (zobchodování, vypořádání, odmítnutí,<br/>vypršení, zrušení), o majetku obsaženém v klientských portfoliích, oprávnění k portfoliím a nastavení<br/>uživatelských přístupů, které jsou získávány ze systémů Topas, TA a CRM. Systém dále zajišťuje komunikaci s<br/>třetími stranami prostřednictvím FIX protokolu.</p><p><span>Dodavatel: SiteOne</span></p></td></tr></tbody></table></div><h1 id="APICreatePortfolioIntegračníanalýza-Zúčastněnéslužby"><span>Zúčastněné služby</span></h1><h2 id="APICreatePortfolioIntegračníanalýza-Integračníslužby">Integrační služby</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p><strong>Endpoints</strong></p></td></tr><tr><td rowspan="5" style="text-align: left;" class="confluenceTd"><p>CreatePortfolio</p></td><td rowspan="5" style="text-align: left;" class="confluenceTd"><p>REST API</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr></tbody></table></div><h2 id="APICreatePortfolioIntegračníanalýza-Aplikačníslužby">Aplikační služby</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %"><p title=""><strong>Endpoints</strong></p></td></tr><tr><td rowspan="5" style="text-align: left;" class="confluenceTd"><p>CreatePortfolio</p></td><td rowspan="5" style="text-align: left;" class="confluenceTd"><p>REST API</p></td><td style="text-align: left;" class="confluenceTd"><p>dev-int </p></td><td style="text-align: left;" class="confluenceTd"><p style="text-align: left;"><a class="external-link" href="https://router-adp-dev-int.apps.oshift-dev-int.jtfgtest.com/api/v1/REC/subjects/portfolioCreate" rel="nofollow">https://router-adp-dev-int.apps.oshift-dev-int.jtfgtest.com/api/v1/REC/subjects/portfolioCreate</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>int </p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://router-adp.apps.oshift-int.jtfg.com/api/v1/REC/subjects/portfolioCreate" rel="nofollow" style="">https://router-adp.apps.oshift-int.jtfg.com/api/v1/REC/subjects/portfolioCreate</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>ack  </p></td><td style="text-align: left;" class="confluenceTd"><p><span class="nolink"><a class="external-link" href="https://router-adp.apps.oshift-akc.jtfg.com/api/v1/REC/subjects/portfolioCreate" rel="nofollow" style="">https://router-adp.apps.oshift-akc.jtfg.com/api/v1/REC/subjects/portfolioCreate</a></span></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>refa </p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://router-adp.apps.oshift-refa.jtfg.com/api/v1/REC/subjects/portfolioCreate" rel="nofollow" style="">https://router-adp.apps.oshift-refa.jtfg.com/api/v1/REC/subjects/portfolioCreate</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>refb  </p></td><td style="text-align: left;" class="confluenceTd"><p><span class="nolink"><a class="external-link" href="https://router-adp.apps.oshift-refa.jtfg.com/api/v1/REC/subjects/portfolioCreate" rel="nofollow" style="">https://router-adp.apps.oshift-refa.jtfg.com/api/v1/REC/subjects/portfolioCreate</a></span></p></td></tr><tr><td rowspan="5" style="text-align: left;" class="confluenceTd"><p>osoba.ZapisPortfolio</p></td><td rowspan="5" style="text-align: left;" class="confluenceTd"><p>SOAP web service</p></td><td style="text-align: left;" class="confluenceTd"><p>dev-int</p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://eur06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdev-int-core.czpav02034.jtfgtest.com%2Fws%2Fep%2Fv1.0%2Fosoba.wsdl&amp;data=05%7C01%7Cvit.joachymstal%40jtfg.com%7Cdc93a552bd4348aa301e08db1962c74c%7C9cca307deed747e0a567a3b37ba0308b%7C0%7C0%7C638131684277681468%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=fv4sUGMKvtCtQwhDV7CShabKFNIr7n4hBMc%2BpxBKLyk%3D&amp;reserved=0" rel="nofollow">https://dev-int-core.czpav02034.jtfgtest.com/ws/ep/v1.0/osoba.wsdl</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>int</p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://eur06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fintegr-core.czpav02129.jtfg.com%2Fws%2Fep%2Fv1.0%2Fosoba.wsdl&amp;data=05%7C01%7Cvit.joachymstal%40jtfg.com%7Cdc93a552bd4348aa301e08db1962c74c%7C9cca307deed747e0a567a3b37ba0308b%7C0%7C0%7C638131684277681468%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=CBpveLNEkEM9CLBEbuFQdlnbO35U0MQphX1ZXiWMhbo%3D&amp;reserved=0" rel="nofollow">https://integr-core.czpav02129.jtfg.com/ws/ep/v1.0/osoba.wsdl</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>akc</p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://eur06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fakcept-core.czpav02129.jtfg.com%2Fws%2Fep%2Fv1.0%2Fosoba.wsdl&amp;data=05%7C01%7Cvit.joachymstal%40jtfg.com%7Cdc93a552bd4348aa301e08db1962c74c%7C9cca307deed747e0a567a3b37ba0308b%7C0%7C0%7C638131684277681468%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=nlr1UnDw71iJbheTN1yZ7Xkd%2Fy9mhVxiFOn1h7jcwr8%3D&amp;reserved=0" rel="nofollow">https://akcept-core.czpav02129.jtfg.com/ws/ep/v1.0/osoba.wsdl</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>ref</p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://eur06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fref-core.czpav02129.jtfg.com%2Fws%2Fep%2Fv1.0%2Fosoba.wsdl&amp;data=05%7C01%7Cvit.joachymstal%40jtfg.com%7Cdc93a552bd4348aa301e08db1962c74c%7C9cca307deed747e0a567a3b37ba0308b%7C0%7C0%7C638131684277681468%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=hVoLOf9L1Hv%2F81LfICqOX%2FmHoTbGyu4c%2Frc5mqs68ns%3D&amp;reserved=0" rel="nofollow">https://ref-core.czpav02129.jtfg.com/ws/ep/v1.0/osoba.wsdl</a></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://eur06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcore.czpav02180.jtfg.com%2Fws%2Fep%2Fv1.0%2Fosoba.wsdl&amp;data=05%7C01%7Cvit.joachymstal%40jtfg.com%7Cdc93a552bd4348aa301e08db1962c74c%7C9cca307deed747e0a567a3b37ba0308b%7C0%7C0%7C638131684277681468%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=r9yeys51v8iHXa43ZVmd%2BxV8v0m3l2Va1%2Bq5w%2Bfny0k%3D&amp;reserved=0" rel="nofollow">https://core.czpav02180.jtfg.com/ws/ep/v1.0/osoba.wsdl</a></p></td></tr></tbody></table></div><h1 id="APICreatePortfolioIntegračníanalýza-Komponentnídiagram"><span style="color: rgb(0,51,102);">Komponentní diagram</span></h1><p>Služba je volaná integrační vrstvou Metada v rámci orchestračního procesu pro založení portfolia v bankovních backendech.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/43287822/51544548.png" data-image-src="attachments/43287822/51544548.png" data-unresolved-comment-count="0" data-linked-resource-id="51544548" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CreatePortfolio - CD.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="43287822" data-linked-resource-container-version="8" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43287822/43287823.png">CollectionAccountToCollectionAccount - Component SD.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43287822/43287824.png">CollAccToCollAcc - ComponentD.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43287822/43287825.png">RelevantProduct - Component diagram.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43287822/46367038.png">US 5701 - Založit nové portfolio.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43287822/51544548.png">CreatePortfolio - CD.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Application - odeslání manuálního vyhodnocení žádosti o real-time data</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="46367770.html">API-RealTimeDataAccess - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Application - odeslání manuálního vyhodnocení žádosti o real-time data
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Kratochvíl Aleš</span>, last modified on Dub 19, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p class="auto-cursor-target"><span style="letter-spacing: 0.0px;">Po skončení manuálního vyhodnocení žádosti<span> o přístup k Real-time datům dané burzy je nutné předat výsledek do CRM. Na základě této události poté CRM streamuje dostupné informace do průběžných topiců (JTB-CZ_PARTIES_REAL-TIME-DATA-ACCESS_SYNC_GNR/JTB-SK_PARTIES_REAL-TIME-DATA-ACCESS_SYNC_GNR)</span></span><span style="letter-spacing: 0.0px;">.</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Dodavatel</strong></td><td style="text-align: left;" class="confluenceTd">Acmark</td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Aplikační architekt/analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p>Martin Veselý</p></div></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong title="">Hlavní <strong>architekt/</strong>analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p title="undefined">Vojtěch Plachý</p></div></td></tr></tbody></table></div><p style="margin-top: 0.0px;color: rgb(23,43,77);"><br/></p><h2 style="margin-top: 0.0px;color: rgb(23,43,77);" id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Aplikačníslužby"><span style="color: rgb(0,0,0);">Aplikační služby</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Jméno</strong></span></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Typ</strong></span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">realTimeData</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">REST API</span></p></td></tr></tbody></table></div><p style="margin-top: 0.0px;color: rgb(23,43,77);"><br/></p><h2 style="margin-top: 0.0px;color: rgb(23,43,77);" id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Request">Request</h2><h3 style="color: rgb(23,43,77);" id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Metoda">Metoda</h3><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><thead><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Metoda</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>URL</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Popis</p></th></tr></thead><tbody><tr><td class="confluenceTd"><span style="color: rgb(51,102,255);"><strong>PUT</strong></span></td><td class="confluenceTd"><p>/application/{applicationId}</p></td><td class="confluenceTd"><p>Aktualizuje <span style="color: rgb(23,43,77);">instanci formuláře žádosti </span><span>o přístup k Real-time datům dané burzy o výsledek manuálního vyhodnocení</span>.</p></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926662905 {padding: 0px;}
+div.rbtoc1684926662905 ul {margin-left: 0px;}
+div.rbtoc1684926662905 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926662905'>
+<ul class='toc-indentation'>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Aplikačníslužby'>Aplikační služby</a></li>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Request'>Request</a>
+<ul class='toc-indentation'>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Metoda'>Metoda</a></li>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Parametryvstupní'>Parametry vstupní</a></li>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Příkladdatovéhovolání'>Příklad datového volání</a></li>
+</ul>
+</li>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Response'>Response</a>
+<ul class='toc-indentation'>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Parametryvýstupní'>Parametry výstupní</a></li>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Příkladdatovéodpovědi'>Příklad datové odpovědi</a></li>
+</ul>
+</li>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Errorhandling'>Error handling</a></li>
+<li><a href='#Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Solutionoverview'>Solution overview</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h3 id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Parametryvstupní"> Parametry vstupní</h3><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1027.0px;"><colgroup><col style="width: 66.0px;"/><col style="width: 54.0px;"/><col style="width: 133.0px;"/><col style="width: 96.0px;"/><col style="width: 86.0px;"/><col style="width: 72.0px;"/><col style="width: 124.0px;"/><col style="width: 395.0px;"/></colgroup><thead><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong><span style="color: rgb(23,43,77);" title="">where</span></strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>lvl</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>name</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>multiplicity</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>date_type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>format</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>enum_value</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>description</strong></p></td></tr></thead><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">X-Correlation-ID</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">uuid</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Korelační identifikátor sloužící k párování žádosti s odpovědí v async REST komunikaci skrze rozhraní a k deduplikaci zpráv v sync/async REST komunikaci, kde dochází ke změně dat</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">traceparent</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Parametr pro trasování podle standardu W3C Trace Context, vysvětlení viz <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=43288188" rel="nofollow">traceparent hlavičkový atribut</a></span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>path</p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p>applicationId</p></td><td style="text-align: left;" class="confluenceTd"><p>1</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p>uuid</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">crmId neboli instance formuláře žádosti z CRM</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><span style="color: rgb(0,0,0);">body</span></p></td><td style="text-align: left;" class="confluenceTd"><p>1</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">application</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">object</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Objekt s informacemi z manuálního vyhodnocení</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %"><p title=""><span style="color: rgb(0,0,0);">body</span></p></td><td style="text-align: left;" class="confluenceTd"><p>2</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">camundaId</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">uuid</span></p></td><td style="text-align: left;" class="confluenceTd"><p><em>-</em></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">camundaId neboli číslo instance procesu z BPM</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %"><p title=""><span style="color: rgb(0,0,0);">body</span></p></td><td style="text-align: left;" class="confluenceTd"><p>2</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">manualEvalBy</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><em>-</em></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Doménové jméno uživatele, JTXXX</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %"><p title=""><span style="color: rgb(0,0,0);">body</span></p></td><td style="text-align: left;" class="confluenceTd"><p>2</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">processEndWhen</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">date-time</span></p></td><td style="text-align: left;" class="confluenceTd"><p><em>-</em></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Datum a čas vyhodnocení (v Camunda)</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;" title="Barva pozadí: Světle žlutá 35 %"><p title=""><span style="color: rgb(0,0,0);">body</span></p></td><td style="text-align: left;" class="confluenceTd"><p>1</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">rtDataAccess</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">boolean</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><em>-</em></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Vyhodnocení, zda má (true) nebo nemá (false) klient zapnutá RT data</span></p></td></tr></tbody></table></div><p><br/></p><h3 id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Příkladdatovéhovolání"><span style="color: rgb(0,0,0);">Příklad datového volání</span></h3><p>POST ~/application/e850d522-d7d7-4815-81a2-64c04231c3b0</p><p>{<br/>  &quot;<span style="color: rgb(23,43,77);">application</span>&quot;: {<br/>    &quot;<span style="color: rgb(23,43,77);">camundaId</span>&quot;: <span style="color: rgb(23,43,77);">&quot;c96db4e5-00d9-49fc-815f-bb15d93550a2&quot;</span>,<br/>    &quot;<span style="color: rgb(23,43,77);">manualEvalBy</span>&quot;: &quot;<span style="color: rgb(23,43,77);">JT123</span>&quot;,<br/>    &quot;<span style="color: rgb(23,43,77);">processEndWhen</span>&quot;: &quot;<span style="color: rgb(23,43,77);">2022-08-24T05:14:15+02:00</span>&quot;<br/>  },<br/>  &quot;<span style="color: rgb(23,43,77);">rtDataAccess</span>&quot;: true<br/>}</p><p><br/></p><h2 id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Response"><span style="color: rgb(0,0,0);">Response</span></h2><h3 class="auto-cursor-target" id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Parametryvýstupní">Parametry výstupní</h3><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1027.0px;"><colgroup><col style="width: 66.0px;"/><col style="width: 53.0px;"/><col style="width: 155.0px;"/><col style="width: 96.0px;"/><col style="width: 86.0px;"/><col style="width: 72.0px;"/><col style="width: 122.0px;"/><col style="width: 376.0px;"/></colgroup><thead><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong><span style="color: rgb(23,43,77);" title="">where</span></strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>lvl</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>name</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>multiplicity</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>date_type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>format</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>enum_value</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><p title=""><strong>description</strong></p></td></tr></thead><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">X-Correlation-ID</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">uuid</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Korelační identifikátor sloužící k párování žádosti s odpovědí v async REST komunikaci skrze rozhraní a k deduplikaci zpráv v sync/async REST komunikaci, kde dochází ke změně dat</span></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p>header</p></td><td style="text-align: left;" class="confluenceTd"><p>-</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">traceparent</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">string</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">-</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Parametr pro trasování podle standardu W3C Trace Context, vysvětlení viz <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=43288188" rel="nofollow">traceparent hlavičkový atribut</a></span></p></td></tr></tbody></table></div><p><br/></p><h3 id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Příkladdatovéodpovědi"><span style="color: rgb(0,0,0);">Příklad datové odpovědi</span></h3><p class="example microlight">HTTP response code 200.</p><p class="example microlight"><br/></p><h2 id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Errorhandling"><span style="color: rgb(0,0,0);">Error handling</span></h2><p><span style="color: rgb(0,0,0);">Nepodaří-li se aktualizovat <span style="color: rgb(23,43,77);">instanci formuláře žádosti </span><span>o přístup k Real-time datům dané burzy o výsledek manuálního vyhodnocení,</span> <span>je vrácena operátorovi chyba.</span></span></p><p><br/></p><h2 id="Applicationodeslánímanuálníhovyhodnocenížádostiorealtimedata-Solutionoverview"><span style="color: rgb(0,0,0);"><span>Solution overview</span></span></h2><p><span style="color: rgb(0,0,0);"><span><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/49250721/53215782.png" data-image-src="attachments/49250721/53215782.png" data-unresolved-comment-count="0" data-linked-resource-id="53215782" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-2023-3-2_0-25-34.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="49250721" data-linked-resource-container-version="24" alt=""></span></span></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49250721/53215782.png">image-2023-3-2_0-25-34.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-53219288"></a>
+                                    <font class="smallfont"><p>Prosím o revizi: Jméno aplikační služby je zde uvedeno &quot;<span style="color: rgb(0,0,0);">realTimeDataAccess&quot; a na WSO2 &quot;realTimeData&quot;. Příklad datové odpovědi je zde uveden &quot;<span style="color: rgb(23,43,77);">HTTP response code 200.&quot; a na WSO2 swagger je možná pouze &quot;204 No Content&quot;. Děkuji mockrát.</span></span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0023135 at Dub 18, 2023 11:12
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

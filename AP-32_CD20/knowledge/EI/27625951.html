@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Statement - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="DOCUMENTS_27625158.html">DOCUMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="27625945.html">Statement - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Statement - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified by <span class='editor'> Havlena David</span> on Led 06, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><span style="color: rgb(23,43,77);">Na této stránce je definována datová entita Statement.</span></p><p><br/></p><p><span style="letter-spacing: 0.0px;">Technická realizace přenosů je pak popsána na stránkách:</span></p><p><a href="API-documentStatementReconciliation_27630477.html">API-documentStatementReconciliation</a></p><p><a href="Statement---Event-Stream_27630039.html">Statement - Event Stream</a></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926593733 {padding: 0px;}
+div.rbtoc1684926593733 ul {margin-left: 0px;}
+div.rbtoc1684926593733 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926593733'>
+<ul class='toc-indentation'>
+<li><a href='#StatementDatovýmodel-DatovéentityprodukovanéaplikacíXerox'>Datové entity produkované aplikací Xerox</a>
+<ul class='toc-indentation'>
+<li><a href='#StatementDatovýmodel-Statement'>Statement</a></li>
+</ul>
+</li>
+<li><a href='#StatementDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+<li><a href='#StatementDatovýmodel-Vzorovádata'>Vzorová data</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<span style="font-size: 24.0px;letter-spacing: -0.01em;">Identifikované číselníky</span><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>Název atributu v datovém modelu</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>Název číselníku v aplikaci CSC:<a class="external-link" href="https://jtfg.sharepoint.com/:x:/s/JTB_CR_EXT_ORG_BA/ETFmqlQS1DNBmgXvPQcQ6BIBU1gceJshrwxRP4HVe3vjvg?e=4EtRKh" rel="nofollow" style="letter-spacing: 0.0px;"> _Číselníky_JTBank_CZ+SK.xlsx</a></strong></td></tr><tr><td colspan="1" class="confluenceTd">statementTypeCode</td><td colspan="1" class="confluenceTd"><p class="auto-cursor-target"><span class="inline-comment-marker" data-ref="c56a4b93-a1f6-43d2-851f-a956a3c41cd5"><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17334732#StatementType!A1" rel="nofollow">statementTypeCode</a></span></p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(36,36,36);">InvStatementVersions</span></td><td class="confluenceTd"><span style="color: rgb(36,36,36);"><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17334732#StatementType!A1" rel="nofollow">InvStatementVersions</a></span></td></tr></tbody></table></div><h1 id="StatementDatovýmodel-DatovéentityprodukovanéaplikacíXerox">Datové entity produkované aplikací Xerox</h1><p>Celá kolekce se bude posílat v jedné události.</p><p title="undefined">Struktura dle<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17337890" rel="nofollow">předepsané metodiky</a>.</p><h2 class="auto-cursor-target" id="StatementDatovýmodel-Statement">Statement</h2><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 98.2148%;"><colgroup><col style="width: 2.48732%;"/><col style="width: 10.6763%;"/><col style="width: 4.13277%;"/><col style="width: 5.73996%;"/><col style="width: 3.55878%;"/><col style="width: 5.16597%;"/><col style="width: 10.0641%;"/><col style="width: 9.06914%;"/><col style="width: 4.24757%;"/><col style="width: 5.16597%;"/><col style="width: 3.32918%;"/><col style="width: 1.83679%;"/><col style="width: 13.5463%;"/><col style="width: 10.951%;"/><col style="width: 10.0641%;"/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>lvl</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>attribute_name</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>multiplicity</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>data_type</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>format</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>constraint</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>codebook</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>description</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong><span class="inline-comment-marker" data-ref="5f5c228a-23bb-463b-bfc4-3028a67695d4">enum values</span></strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>businessIdentifer</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>kafka_bcd</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>KEY</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><strong>notice</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Background colour : Light yellow 100%"><strong title="">DB value</strong></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Background colour : Light yellow 100%"><strong title="">DB table</strong></th></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><p>X-Correlation-ID</p></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">0..1</span></td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Korelační identifikátor, povinné pro INIT a RECON</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="5a7195d0-31ba-46c0-9c97-70e965e4dcf8">accountId</span></span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">0..1</span></td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">minLength = 0, maxLength = 20</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Unique account identifier</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">číslo účtu v QUESTORU (CUA, NWA...)  pro Quaestor je plněna hodnota ze sloupce ID  v tabulkce &quot;PRODUCT_CONTRACT&quot;</span></td><td class="confluenceTd">PC_ID</td><td class="confluenceTd"><span style="color: rgb(36,36,36);">EPO_DOCUMENTS</span></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">statementId</td><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">integer</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">ID dokumentu</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p>DOCUMENT_ID</p><p><br/></p></td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">accountNumber</span></td><td class="confluenceTd">0..1</td><td style="text-align: left;" class="confluenceTd"><span>string</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd">min: &gt;0, max: 10, </td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Hlavní část účtu dle BBAN formátu</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p>ACCOUNT_NUMBER</p></td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">owner</td><td style="text-align: left;" class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);"><br/></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd"><span class="inline-comment-marker" data-ref="de26952f-0bc9-40a7-b043-7328d0dd9b59">  quaestorId</span></td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">minLength = 0, maxLength = 10</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p><span style="color: rgb(23,43,77);">Unique Quaestor </span><span style="letter-spacing: 0.0px;">identifier</span></p></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">QID</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  crmId</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">minLength = 10, maxLength = 10</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Unique CRM identifier</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">není to number, protože je tak definováno v datovém slovníku</span></td><td class="confluenceTd">CLIENTID</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><p>quaestorStatementId</p></td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">minLength = 0, maxLength = 20</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">ID výpisu v quaestoru</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">DOCUMENT_BIS_ID</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">portfolioIds</td><td class="confluenceTd">0..1</td><td class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);"><br/></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Identifikátory portfolia</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td style="text-align: left;" class="confluenceTd">2</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">taId</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">0..1</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(0,0,0);">integer</span></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">minLength &gt; 0</span></p><p><span style="color: rgb(0,0,0);">dec: 0</span></p></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd">Identifikace Účtu podílníka v TA</td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd"><br/></td><td class="confluenceTd">TAID</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">topasId</td><td class="confluenceTd">0..1</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">integer</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">min: &gt;0, max: bez omezení, dec: 0</span></span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Identifikace Portfolia v TOPAS (KID)</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">TOPASID</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">documentLanguage</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">minLength = 3, maxLength = 3</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span class="inline-comment-marker" data-ref="54f39ec0-9137-4658-9d6f-7e2353b1cc4b"><span class="inline-comment-marker" data-ref="54f39ec0-9137-4658-9d6f-7e2353b1cc4b">Jazyk dokumentu - </span></span><span style="color: rgb(0,0,0);">CZE, ENG, SLO</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><a class="external-link" href="https://en.wikipedia.org/wiki/ISO_639-3" rel="nofollow">ALPHA3 Lang</a> ne country</td><td class="confluenceTd">DOCUMENT_LAnguage</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">generatedDate</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Čas vygenerování dokumentu</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td rowspan="3" class="confluenceTd"><p>ISO 8601 - povolené varianty:</p><ul><li style="list-style-type: none;"><ul><li>2022-04-25T22:09:34+02:00 (CET)</li><li>2022-04-25T20:09:34Z (UTC)</li></ul></li></ul></td><td class="confluenceTd">GENERATEDDATE</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">insertedDate</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Čas vložení záznamu do db</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">INSERTED_DATETIME</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">businessChangeDate</span></td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Datum a čas poslední změny entity</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd">DOCUMENT_LAST_STATUS_TIMESTAMP</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">startDate</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd">date</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Datum prvního dne výpisu</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td rowspan="2" class="confluenceTd"><p>ISO 8601 - 2022-04-25</p></td><td class="confluenceTd">STARTINGDATE</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">finalDate</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd">date</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Datum posledního dne výpisu</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">FINALDATE</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">statementTypeCodeId</span></td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">statementTypeCode</td><td class="confluenceTd">Typ výpisu</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p>BIS00 - Výpis z běžného účtu<br/>BIS01 - Výpis z běžného účtu<br/>BIS02  - Výpis z termínovaného vkladu<br/>BIS03 - Výpis z vkladu s výpovědní lhůtou<br/>BIS04 - Výpis z karetního účtu<br/>BIS05 - Výpis z vkladu s výpovědní lhůtou<br/>BIS06 - Výpis z karetního účtu<br/>BIS10 - Výpis poplatků<br/>OCP01 - Informace o stavu a pohybech majetku zákazníka  = IU<br/>OCP03 - Informace o stavu a pohybech majetku zákazníka  = TU<br/>OCP32 - Výpis z investičního účtu<br/>OCP33 - Výpis z majetkového účtu<br/>OCP39 - Výnosy<br/>OCP41 - Přehled nákladů a pobídek<br/>OCP42 - Přehled nákladů a pobídek<br/>OCP45 - Informace o nevypořádaných derivátových obchodech</p></td><td class="confluenceTd">DOCUMENT_TYPE_CODE</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">documentTitle</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Popis výpisu (lokalizovaný)</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p>Může být v různých jazycích v závislosti na tom, v jakém jazyce je výpis</p></td><td class="confluenceTd">DOCUMENT_TITLE</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">perex</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Definice perex v PK</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd">EPORTAL_MESSAGE_TEXT</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">stateId</td><td class="confluenceTd">1</td><td class="confluenceTd">integer</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Status zpracování - status = 9 (posláno do CRM)  nebo 10 (chyba), ostatní nejsou relevantní</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">DOCUMENT_PROCESSING_STATUS_ID</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">managingCompanyTag</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">enumerace</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Příslušnost portfolia ke společnosti - barva klienta. silver - J&amp;T ČR, green - J&amp;T SR</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">SILVER|GREEN</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p>Určuje jestli je to CZ-SK klient</p><p>pro zjednodušení select z DB proti datovému slovníku použita Velká písmena</p></td><td class="confluenceTd">PRISLUSNOST_K_FIRME</td><td class="confluenceTd">KLIENT</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">InvStatementVersions</span></td><td class="confluenceTd">0..1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">integer</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p><span style="letter-spacing: 0.0px;color: rgb(0,0,0);">InvStatementVersions</span></p></td><td class="confluenceTd"><span style="color: rgb(68,68,68);">Verze investičních výpisů</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><ol><li>Předběžný</li><li>Řádný</li><li>Opravný</li><li>Dodatečný</li></ol></td><td class="confluenceTd">VERSION_TYPE</td><td class="confluenceTd">EPO_DOCUMENTS</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">files</span></td><td class="confluenceTd"><br/></td><td class="confluenceTd">aray</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Soubory které jsou součástí výpisu</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  contentType</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">minLength = 0, maxLength = </span>20</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Content type</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">vždy jeden dokument</td><td class="confluenceTd">CONTENT_TYPE</td><td class="confluenceTd">EPO_DOC_FILE</td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  filename</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">minLength = 0, maxLength = </span>100</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Jméno souboru</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">FILE_NAME</td><td class="confluenceTd">EPO_DOC_FILE</td></tr></tbody></table></div><h1 class="auto-cursor-target" id="StatementDatovýmodel-Vysvětleníidentifikátorů">Vysvětlení identifikátorů</h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong style="text-align: left;" title="">typ entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">businessIdentifier*</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">KEY</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">BUSINESS_STATE</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">resource</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">imput_parameters</td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong>Statement</strong></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">documentId</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">documentId</span></td><td class="confluenceTd">stateId</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">statements</span></td><td class="confluenceTd"><br/></td></tr></tbody></table></div><h1 class="auto-cursor-target" id="StatementDatovýmodel-Vzorovádata">Vzorová data</h1><p>Vzorová data jsou uložena na stránce <a href="27623888.html">Integračn&iacute; anal&yacute;zy - vzorov&aacute; data</a></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-38012833"></a>
+                                    <font class="smallfont"><p>CRM id je string podle datového modelu EI</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0026851 at Lis 04, 2022 13:33
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38012834"></a>
+                                    <font class="smallfont"><p>CRM id je právě 10 znaků</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0026851 at Lis 04, 2022 13:36
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38012836"></a>
+                                    <font class="smallfont"><p>prosím o přejmenování na </p><ul style="text-align: left;"><li><span style="color: rgb(0,0,0);">statementTypeCode</span></li></ul><p><span style="color: rgb(0,0,0);">protože je to vázaný na číselníku</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT0026851 at Lis 04, 2022 13:39
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38013237"></a>
+                                    <font class="smallfont"><p>upraveno</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101961 at Lis 09, 2022 16:26
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38013238"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(23,43,77);">upraveno</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101961 at Lis 09, 2022 16:26
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38013239"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(23,43,77);">upraveno</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101961 at Lis 09, 2022 16:26
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38014525"></a>
+                                    <font class="smallfont"><p>Prosím o info - investiční výpisy by měly obsahovat id portfólia (viz. 
+<span class="jira-issue resolved" data-jira-key="DSWF-1580" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-1580?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-1580</a>
+                            -
+            <span class="summary">[DKCZ] Topic Výpisy (investice) - z Xeroxu</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Done</span>
+                </span>
+) - je tu tento atribut? nezapomněli jsme?</p><p>výpisy z BU a depozit související číslo účtu  - tady se tedy předpokládá, že DKCZ si číslo účtu zjistí podle identifikace produktu v Questoru  - atr. questorId ? nebo data mohou obsahovat přímo číslo účtu?</p><p><br/></p><p><br/></p><p><br/></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101514 at Lis 28, 2022 11:16
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-43288117"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(23,43,77);">Object portfolioIds je  dentifikátor portfolia, obsahuje atr.   topasId (Identifikace Portfolia v TOPAS (KID))</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101961 at Pro 14, 2022 15:46
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-43288420"></a>
+                                    <font class="smallfont"><p>atribut <span style="color: rgb(23,43,77);text-decoration: none;">statementId </span><span style="color: rgb(23,43,77);text-decoration: none;">ma byt nejspis <span style="color: rgb(0,0,0);text-decoration: none;">documentId</span></span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101554 at Pro 20, 2022 13:17
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-43288528"></a>
+                                    <font class="smallfont"><p>Investiční výpisy - je potřeba doplnit </p><ul style=""><li>popis výpisu - lokalizovaný DOCUMENT_TITLE</li></ul><p>(podle <a class="external-link" href="https://jiradigi.jtfg.com/browse/DSWF-1580" rel="nofollow" style="text-align: left;" title="undefined">DSWF-1580</a><span style="color: rgb(23,43,77);"><span>)</span></span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101514 at Pro 21, 2022 12:09
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-46366870"></a>
+                                    <font class="smallfont"><p>atribut přidán do Datového modelu</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101961 at Led 03, 2023 13:38
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-46366871"></a>
+                                    <font class="smallfont"><p>ano, je to documentId pro statementy</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101961 at Led 03, 2023 13:39
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

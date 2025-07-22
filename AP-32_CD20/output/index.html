@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clear Deal 2.0 - Dokumentace Projektu AP-32</title>
+    <title>Clear Deal 2.0 - Dokumentační Portál</title>
     <style>
+        :root {
+            --primary-color: #1a472a;
+            --secondary-color: #2d5a3d;
+            --accent-color: #4a7c59;
+            --background-color: #f5f7f5;
+            --text-color: #2c3e2d;
+            --card-background: #ffffff;
+            --border-color: #e0e5e0;
+            --success-color: #28a745;
+            --info-color: #17a2b8;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,308 +24,855 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 2rem;
         }
         
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .nav-tabs {
+            display: flex;
+            background: var(--card-background);
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 0;
+        }
+        
+        .nav-tab {
+            flex: 1;
+            padding: 1rem;
+            background: var(--border-color);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-right: 1px solid var(--border-color);
+        }
+        
+        .nav-tab:last-child {
+            border-right: none;
+        }
+        
+        .nav-tab.active {
+            background: var(--primary-color);
             color: white;
-            padding: 40px 0;
+        }
+        
+        .nav-tab:hover:not(.active) {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .content-area {
+            background: var(--card-background);
+            border-radius: 0 0 10px 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            min-height: 600px;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
             text-align: center;
-            margin-bottom: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
         
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 700;
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
         
-        .header p {
-            font-size: 1.2em;
+        .metric-label {
+            font-size: 1rem;
             opacity: 0.9;
         }
         
-        .navigation {
+        .section-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
         
-        .nav-card {
-            background: white;
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border: 1px solid #e1e8ed;
+        .section-card {
+            background: var(--card-background);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            padding: 2rem;
+            transition: all 0.3s ease;
         }
         
-        .nav-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        .section-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
         }
         
-        .nav-card h3 {
-            color: #667eea;
-            margin-bottom: 12px;
-            font-size: 1.3em;
-            font-weight: 600;
-        }
-        
-        .nav-card p {
-            color: #666;
-            margin-bottom: 16px;
-            line-height: 1.5;
-        }
-        
-        .nav-card a {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background 0.2s ease;
-        }
-        
-        .nav-card a:hover {
-            background: #5a67d8;
-        }
-        
-        .roles-section {
-            background: white;
-            border-radius: 12px;
-            padding: 32px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-        }
-        
-        .roles-section h2 {
-            color: #2d3748;
-            margin-bottom: 24px;
-            font-size: 1.8em;
-            font-weight: 600;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 8px;
-        }
-        
-        .roles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        
-        .role-card {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .role-card h4 {
-            color: #4a5568;
-            margin-bottom: 8px;
-            font-size: 1.1em;
-        }
-        
-        .role-card p {
-            color: #718096;
-            font-size: 0.9em;
-        }
-        
-        .project-info {
-            background: white;
-            border-radius: 12px;
-            padding: 32px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-        }
-        
-        .project-info h2 {
-            color: #2d3748;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            font-weight: 600;
-        }
-        
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        
-        .info-item {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 16px;
-        }
-        
-        .info-item strong {
-            color: #4a5568;
+        .section-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
             display: block;
-            margin-bottom: 4px;
         }
         
-        .info-item span {
-            color: #718096;
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
         }
         
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            color: #718096;
-            border-top: 1px solid #e2e8f0;
+        .section-description {
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
         }
         
-        .badge {
-            display: inline-block;
-            background: #48bb78;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
+        .section-links {
+            list-style: none;
+        }
+        
+        .section-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-links a {
+            color: var(--accent-color);
+            text-decoration: none;
             font-weight: 500;
-            margin-left: 8px;
+            transition: color 0.3s ease;
+        }
+        
+        .section-links a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        
+        .status-complete {
+            background-color: var(--success-color);
+            color: white;
+        }
+        
+        .status-progress {
+            background-color: var(--info-color);
+            color: white;
+        }
+        
+        .domain-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .domain-table th,
+        .domain-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .domain-table th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .domain-table tbody tr:hover {
+            background-color: var(--background-color);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: var(--border-color);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--success-color), var(--accent-color));
+            width: 100%;
         }
         
         @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
             .header h1 {
-                font-size: 2em;
+                font-size: 2rem;
             }
             
-            .navigation {
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .nav-tab {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
+    <header class="header">
+        <div class="header-content">
+            <h1>🏦 Clear Deal 2.0</h1>
+            <p>Mobilní investiční platforma - Kompletní dokumentační portál</p>
+        </div>
+    </header>
+
     <div class="container">
-        <div class="header">
-            <h1>Clear Deal 2.0</h1>
-            <p>Kompletní projektová dokumentace - AP-32</p>
-            <span class="badge">DESIGN PHASE COMPLETE</span>
-        </div>
-        
-        <div class="navigation">
-            <div class="nav-card">
-                <h3>📋 Business Idea & Analysis</h3>
-                <p>Kompletní analýza obchodního zadání, stakeholderů a systémové architektury s mapováním na BIAN framework.</p>
-                <a href="analysis.html">Zobrazit analýzu</a>
-            </div>
-            
-            <div class="nav-card">
-                <h3>🏗️ Business Architecture</h3>
-                <p>Detailní popis business architektury s BIAN service domains, functional patterns a business procesními dopady.</p>
-                <a href="business-architecture.html">Zobrazit architekturu</a>
-            </div>
-            
-            <div class="nav-card">
-                <h3>⚙️ Use Cases Specification</h3>
-                <p>Kompletní sada use cases validovaná proti business požadavkům s 100% pokrytím acceptance criteria.</p>
-                <a href="use-cases.html">Zobrazit use cases</a>
-            </div>
-            
-            <div class="nav-card">
-                <h3>🧪 Component Test Cases</h3>
-                <p>Detailní testovací případy pro jednotlivé komponenty systému včetně security a compliance testů.</p>
-                <a href="component-tests.html">Zobrazit component testy</a>
-            </div>
-            
-            <div class="nav-card">
-                <h3>🔄 End-to-End Test Cases</h3>
-                <p>Kompletní E2E testovací scénáře pokrývající business workflows napříč všemi systémy.</p>
-                <a href="end-to-end-tests.html">Zobrazit E2E testy</a>
-            </div>
-        </div>
-        
-        <div class="roles-section">
-            <h2>Dokumentace podle rolí</h2>
-            <div class="roles-grid">
-                <div class="role-card">
-                    <h4>🎯 Business Analyst</h4>
-                    <p>Business description, use cases, acceptance criteria</p>
+        <nav class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('overview')">📊 Přehled projektu</button>
+            <button class="nav-tab" onclick="showTab('business')">💼 Business architektura</button>
+            <button class="nav-tab" onclick="showTab('functional')">⚙️ Funkční analýza</button>
+            <button class="nav-tab" onclick="showTab('technical')">🔧 Technické specifikace</button>
+            <button class="nav-tab" onclick="showTab('implementation')">🚀 Implementace</button>
+        </nav>
+
+        <main class="content-area">
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content active">
+                <h2>📋 Executive Summary</h2>
+                <p><strong>Projekt AP-32 Clear Deal 2.0</strong> představuje kompletní mobilní investiční platformu pro J&T Banku. Dokumentace pokrývá všech 120 identifikovaných use cases napříč 10 BIAN Service Domains.</p>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">120</div>
+                        <div class="metric-label">Use Cases</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">10</div>
+                        <div class="metric-label">BIAN Domains</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">12</div>
+                        <div class="metric-label">BRQ Processes</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">29</div>
+                        <div class="metric-label">Dokumenty</div>
+                    </div>
                 </div>
-                <div class="role-card">
-                    <h4>🏛️ Business Architect</h4>
-                    <p>BIAN domains, functional patterns, business processes</p>
-                </div>
-                <div class="role-card">
-                    <h4>💻 IT Analyst</h4>
-                    <p>Technical requirements, system integration, data flows</p>
-                </div>
-                <div class="role-card">
-                    <h4>🔧 IT Architect</h4>
-                    <p>System architecture, component design, technical specification</p>
-                </div>
-                <div class="role-card">
-                    <h4>🧪 QA Engineer</h4>
-                    <p>Test cases, test strategies, quality assurance</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-info">
-            <h2>Informace o projektu</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <strong>JIRA ID:</strong>
-                    <span>AP-32</span>
-                </div>
-                <div class="info-item">
-                    <strong>Git ID:</strong>
-                    <span>#10</span>
-                </div>
-                <div class="info-item">
-                    <strong>Branch:</strong>
-                    <span>AP-32_CD20</span>
-                </div>
-                <div class="info-item">
-                    <strong>Fáze:</strong>
-                    <span>Design Phase Complete</span>
-                </div>
-                <div class="info-item">
-                    <strong>BIAN Domains:</strong>
-                    <span>6 primárních + 4 podporných</span>
-                </div>
-                <div class="info-item">
-                    <strong>Use Cases:</strong>
-                    <span>16 validovaných</span>
-                </div>
-                <div class="info-item">
-                    <strong>Test Cases:</strong>
-                    <span>41 celkem (26 component + 15 E2E)</span>
-                </div>
-                <div class="info-item">
-                    <strong>Datum:</strong>
-                    <span>17.7.2025</span>
+
+                <h3>🎯 Klíčové deliverables:</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>✅ <strong>Kompletní Use Case Library:</strong> 120 detailně specifikovaných use cases</li>
+                    <li>✅ <strong>BIAN Framework Compliance:</strong> Plná integrace s banking industry standards</li>
+                    <li>✅ <strong>Figma Screen Integration:</strong> Mapování na všechny UI komponenty</li>
+                    <li>✅ <strong>Technical Architecture:</strong> API, data, a integration requirements</li>
+                    <li>✅ <strong>Implementation Roadmap:</strong> 5-fázový implementační plán</li>
+                </ul>
+
+                <div class="section-grid">
+                    <div class="section-card">
+                        <span class="section-icon">💼</span>
+                        <h3 class="section-title">Pro Business Analytiky</h3>
+                        <p class="section-description">Kompletní business requirements a customer journey analýza</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/00_FINAL_comprehensive_use_case_summary.md">📊 Final Summary</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-003_real_time_customer_journey_tracking.md">🛤️ Customer Journey</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-014_initial_investment_strategy_creation.md">📈 Investment Strategy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <span class="section-icon">🔧</span>
+                        <h3 class="section-title">Pro IT Architekty</h3>
+                        <p class="section-description">Technické specifikace a integration requirements</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-017_zalozeni_portfolia_do_topas.md">🏗️ TOPAS Integration</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-031_to_UC-050_batch_investment_portfolio_management.md">⚙️ Portfolio Management</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-024_to_UC-030_batch_payment_initiation.md">💳 Payment Processing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <span class="section-icon">📋</span>
+                        <h3 class="section-title">Pro Funkční Analytiky</h3>
+                        <p class="section-description">Detailní funkční specifikace a use case dokumentace</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-010_digital_client_application_setup.md">🔐 Authentication</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-051_to_UC-070_batch_multi_domain.md">🌐 Multi-Domain</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-071_to_UC-120_final_comprehensive_batch.md">📦 Complete Coverage</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer">
-            <p>Vygenerováno Claude Code - Clear Deal 2.0 Documentation Portal</p>
-        </div>
+
+            <!-- Business Architecture Tab -->
+            <div id="business" class="tab-content">
+                <h2>🏗️ Business Architecture Overview</h2>
+                <p>Clear Deal 2.0 je postavena na <strong>BIAN (Banking Industry Architecture Network)</strong> framework standardech s kompletní orchestrací napříč 10 Service Domains.</p>
+
+                <h3>📊 BIAN Service Domain Coverage</h3>
+                <table class="domain-table">
+                    <thead>
+                        <tr>
+                            <th>Domain</th>
+                            <th>Use Cases</th>
+                            <th>Klíčová funkcionalita</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Customer_Offer</strong></td>
+                            <td>6</td>
+                            <td>Central orchestration, journey tracking</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Investment_Portfolio_Management</strong></td>
+                            <td>33</td>
+                            <td>Portfolio operations, TOPAS integration</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Investment_Portfolio_Planning</strong></td>
+                            <td>17</td>
+                            <td>Strategy creation, mathematical modeling</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Party_Authentication</strong></td>
+                            <td>9</td>
+                            <td>Multi-factor authentication, security</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Party_Lifecycle_Management</strong></td>
+                            <td>9</td>
+                            <td>Customer onboarding, GDPR compliance</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payment_Initiation</strong></td>
+                            <td>13</td>
+                            <td>Card payments, digital wallets</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payment_Execution</strong></td>
+                            <td>12</td>
+                            <td>Bank transfers, QR codes, OBOFT</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Customer_Agreement</strong></td>
+                            <td>13</td>
+                            <td>Contract management, digital signatures</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Document_Directory</strong></td>
+                            <td>10</td>
+                            <td>Document generation, email delivery</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consumer_Investments</strong></td>
+                            <td>4</td>
+                            <td>Customer-initiated investment actions</td>
+                            <td><span class="status-badge status-complete">COMPLETE</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p style="text-align: center; margin-top: 0.5rem;"><strong>100% Coverage - Všechny domény implementovány</strong></p>
+
+                <h3>🔄 Customer Journey Orchestration</h3>
+                <p><strong>Customer_Offer domain</strong> slouží jako centrální orchestrátor koordinující celou zákaznickou cestu napříč všemi ostatními doménami:</p>
+                <ul>
+                    <li><strong>Real-time Journey Tracking:</strong> Kontinuální sledování customer touchpoints</li>
+                    <li><strong>Cross-Domain Data Orchestration:</strong> Synchronizace dat mezi systémy</li>
+                    <li><strong>Intelligent Personalization:</strong> AI-driven personalizace nabídek</li>
+                    <li><strong>Compliance Coordination:</strong> Automatizovaná compliance kontrola</li>
+                    <li><strong>Omnichannel Experience:</strong> Konzistentní zážitek napříč kanály</li>
+                </ul>
+            </div>
+
+            <!-- Functional Analysis Tab -->
+            <div id="functional" class="tab-content">
+                <h2>⚙️ Funkční Analýza - Use Cases</h2>
+                <p>Kompletní funkční analýza pokrývající všech <strong>120 use cases</strong> organizovaných podle business procesů a customer journeys.</p>
+
+                <h3>📋 BRQ Process Coverage (12 procesů)</h3>
+                <div class="section-grid">
+                    <div class="section-card">
+                        <h4>🔐 BRQ01: Client Application Setup</h4>
+                        <p><strong>6 use cases</strong> - Authentication, PIN setup, biometric enrollment</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-010_digital_client_application_setup.md">UC-010: Application Setup</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-015_prihlaseni_stavajici_klient_sms.md">UC-015: SMS Authentication</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>📈 BRQ02: Investment Strategy Creation</h4>
+                        <p><strong>13 use cases</strong> - Strategy planning, mathematical modeling</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-011_tri_varianty_modelace_strategie.md">UC-011: Strategy Variants</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-014_initial_investment_strategy_creation.md">UC-014: Strategy Creation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>🆔 BRQ03: Remote Client Onboarding</h4>
+                        <p><strong>14 use cases</strong> - Bank iD integration, identity verification</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-016_iniciace_vzdalene_identifikace_bank_id.md">UC-016: Bank iD Integration</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-022_zalozeni_hlavicky_smlouvy_generovani_crm.md">UC-022: Contract Creation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>💼 BRQ04: Existing Client Extension</h4>
+                        <p><strong>7 use cases</strong> - Investment service extension pro existing clients</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-051_to_UC-070_batch_multi_domain.md">Multi-Domain Batch</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>⚡ BRQ05: Strategy Activation</h4>
+                        <p><strong>4 use cases</strong> - Portfolio setup, TOPAS integration</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-017_zalozeni_portfolia_do_topas.md">UC-017: TOPAS Integration</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>💳 BRQ06-07: Payment Processing</h4>
+                        <p><strong>20 use cases</strong> - Bank transfers, card payments, QR codes</p>
+                        <ul class="section-links">
+                            <li><a href="./workinprogress/use_cases/UC-021_zobrazeni_platebnich_udaju_mobilni_app.md">UC-021: Payment Info</a></li>
+                            <li><a href="./workinprogress/use_cases/UC-024_to_UC-030_batch_payment_initiation.md">Payment Batch</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>🎯 Use Case Categories</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">23</div>
+                        <div class="metric-label">Detailní individuální use cases</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">97</div>
+                        <div class="metric-label">Batch use cases ve 4 souborech</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">7</div>
+                        <div class="metric-label">Figma screen sections pokryto</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">100%</div>
+                        <div class="metric-label">BIAN compliance</div>
+                    </div>
+                </div>
+
+                <h3>📱 Figma Screen Integration</h3>
+                <p>Všechny use cases jsou propojeny s konkrétními Figma screen designs:</p>
+                <ul>
+                    <li><strong>Screen Section 01:</strong> App Launch (15 use cases)</li>
+                    <li><strong>Screen Section 02:</strong> Login Entry (20 use cases)</li>
+                    <li><strong>Screen Section 03:</strong> Authentication Flow (25 use cases)</li>
+                    <li><strong>Screen Section 04:</strong> PIN Setup (18 use cases)</li>
+                    <li><strong>Screen Section 05:</strong> PIN Authentication (12 use cases)</li>
+                    <li><strong>Screen Section 06:</strong> Main Dashboard (35 use cases)</li>
+                    <li><strong>Screen Section 07:</strong> Investment Strategy Planning (45 use cases)</li>
+                </ul>
+            </div>
+
+            <!-- Technical Specifications Tab -->
+            <div id="technical" class="tab-content">
+                <h2>🔧 Technické Specifikace</h2>
+                <p>Kompletní technické požadavky pro implementaci Clear Deal 2.0 platformy včetně API, data architecture, a integration specifications.</p>
+
+                <h3>🌐 API Architecture Requirements</h3>
+                <div class="section-grid">
+                    <div class="section-card">
+                        <h4>🔐 Authentication APIs</h4>
+                        <ul>
+                            <li>Multi-factor authentication service</li>
+                            <li>Biometric integration (Face ID, Touch ID)</li>
+                            <li>SMS verification gateway</li>
+                            <li>PIN management service</li>
+                            <li>Session management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>📊 Investment Strategy APIs</h4>
+                        <ul>
+                            <li>Mathematical calculation engine</li>
+                            <li>Strategy configuration service</li>
+                            <li>Risk assessment API</li>
+                            <li>Market data integration</li>
+                            <li>Scenario modeling service</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>💼 Portfolio Management APIs</h4>
+                        <ul>
+                            <li>TOPAS integration layer</li>
+                            <li>TA systém connectivity</li>
+                            <li>Automated investment processing</li>
+                            <li>Portfolio rebalancing engine</li>
+                            <li>Performance analytics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>💳 Payment Processing APIs</h4>
+                        <ul>
+                            <li>Card payment gateway</li>
+                            <li>Digital wallet integration</li>
+                            <li>QR code generation</li>
+                            <li>OBOFT integration</li>
+                            <li>Bank transfer processing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>🗄️ Data Architecture</h3>
+                <table class="domain-table">
+                    <thead>
+                        <tr>
+                            <th>Data Category</th>
+                            <th>Systems</th>
+                            <th>Integration Type</th>
+                            <th>Compliance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Customer Data</strong></td>
+                            <td>CRM, SEZAM</td>
+                            <td>Real-time sync</td>
+                            <td>GDPR, AML</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Investment Data</strong></td>
+                            <td>TOPAS, TA systém</td>
+                            <td>Event-driven</td>
+                            <td>MiFID II</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payment Data</strong></td>
+                            <td>WAC, OBOFT</td>
+                            <td>API integration</td>
+                            <td>PCI DSS</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Document Data</strong></td>
+                            <td>HD dokumenty</td>
+                            <td>Document workflow</td>
+                            <td>Digital signatures</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Market Data</strong></td>
+                            <td>External providers</td>
+                            <td>Real-time feeds</td>
+                            <td>Data quality</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🔗 System Integration Map</h3>
+                <div class="section-grid">
+                    <div class="section-card">
+                        <h4>🏦 Core Banking Systems</h4>
+                        <ul>
+                            <li><strong>TOPAS:</strong> Portfolio management core</li>
+                            <li><strong>SEZAM:</strong> Digital identity platform</li>
+                            <li><strong>CRM:</strong> Customer relationship management</li>
+                            <li><strong>WAC:</strong> Core banking platform</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>💼 Investment Systems</h4>
+                        <ul>
+                            <li><strong>TA systém:</strong> Transaction processing</li>
+                            <li><strong>Fund Administrators:</strong> External fund management</li>
+                            <li><strong>Market Data Providers:</strong> Real-time pricing</li>
+                            <li><strong>Risk Engines:</strong> Risk assessment tools</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>💳 Payment Systems</h4>
+                        <ul>
+                            <li><strong>Card Processing Gateway:</strong> PCI DSS compliant</li>
+                            <li><strong>Digital Wallets:</strong> Apple Pay, Google Pay</li>
+                            <li><strong>OBOFT:</strong> External bank transfers</li>
+                            <li><strong>QR Payment Systems:</strong> Mobile payments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>🆔 External Services</h4>
+                        <ul>
+                            <li><strong>Bank iD:</strong> Remote identity verification</li>
+                            <li><strong>SMS Gateway:</strong> Two-factor authentication</li>
+                            <li><strong>Email Service:</strong> Document delivery</li>
+                            <li><strong>Push Notifications:</strong> Mobile alerts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>🔒 Security & Compliance Framework</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>✅ <strong>GDPR Compliance:</strong> Complete data privacy management</li>
+                    <li>✅ <strong>MiFID II:</strong> Investment suitability assessment</li>
+                    <li>✅ <strong>PCI DSS:</strong> Card payment security</li>
+                    <li>✅ <strong>Banking Regulations:</strong> ČNB compliance</li>
+                    <li>✅ <strong>AML/KYC:</strong> Anti-money laundering</li>
+                    <li>✅ <strong>Strong Authentication:</strong> Multi-factor security</li>
+                </ul>
+            </div>
+
+            <!-- Implementation Tab -->
+            <div id="implementation" class="tab-content">
+                <h2>🚀 Implementation Roadmap</h2>
+                <p>5-fázový implementační plán pro postupné zavedení Clear Deal 2.0 platformy s jasně definovanými milníky a business impacts.</p>
+
+                <div class="section-grid">
+                    <div class="section-card">
+                        <h3 style="color: var(--primary-color);">📅 Phase 1: Core Foundation</h3>
+                        <p><strong>Months 1-3 | 25 Use Cases</strong></p>
+                        <h4>🔐 Authentication & Onboarding</h4>
+                        <ul>
+                            <li>Multi-factor authentication system</li>
+                            <li>Bank iD integration</li>
+                            <li>Customer onboarding flow</li>
+                            <li>GDPR compliance implementation</li>
+                        </ul>
+                        <p><strong>Business Impact:</strong> User acquisition foundation, regulatory compliance</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 20%"></div></div>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h3 style="color: var(--secondary-color);">📈 Phase 2: Investment Core</h3>
+                        <p><strong>Months 2-4 | 30 Use Cases</strong></p>
+                        <h4>💼 Investment Strategy & Planning</h4>
+                        <ul>
+                            <li>Three strategy variants implementation</li>
+                            <li>Mathematical calculation engines</li>
+                            <li>Risk assessment integration</li>
+                            <li>Strategy visualization</li>
+                        </ul>
+                        <p><strong>Business Impact:</strong> Core value proposition delivery</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 40%"></div></div>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h3 style="color: var(--accent-color);">⚙️ Phase 3: Portfolio Management</h3>
+                        <p><strong>Months 3-5 | 35 Use Cases</strong></p>
+                        <h4>🏗️ Automated Portfolio Operations</h4>
+                        <ul>
+                            <li>TOPAS integration</li>
+                            <li>Automated investment processing</li>
+                            <li>Portfolio rebalancing</li>
+                            <li>Corporate actions handling</li>
+                        </ul>
+                        <p><strong>Business Impact:</strong> Operational excellence and scalability</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h3 style="color: var(--info-color);">💳 Phase 4: Payment Processing</h3>
+                        <p><strong>Months 4-6 | 25 Use Cases</strong></p>
+                        <h4>💰 Complete Payment Suite</h4>
+                        <ul>
+                            <li>Card payment processing</li>
+                            <li>Digital wallet integration</li>
+                            <li>QR code payments</li>
+                            <li>Bank transfer automation</li>
+                        </ul>
+                        <p><strong>Business Impact:</strong> Revenue generation and user convenience</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h3 style="color: var(--success-color);">🎯 Phase 5: Advanced Features</h3>
+                        <p><strong>Months 5-7 | 15 Use Cases</strong></p>
+                        <h4>🌟 Orchestration & Differentiation</h4>
+                        <ul>
+                            <li>Customer offer orchestration</li>
+                            <li>AI-driven personalization</li>
+                            <li>Omnichannel experience</li>
+                            <li>Advanced analytics</li>
+                        </ul>
+                        <p><strong>Business Impact:</strong> Competitive differentiation</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+                    </div>
+                </div>
+
+                <h3>📊 Expected Business Results</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">85%</div>
+                        <div class="metric-label">Onboarding Completion Rate</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">70%</div>
+                        <div class="metric-label">Strategy Creation Conversion</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">95%</div>
+                        <div class="metric-label">Automated Processing Success</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">60%</div>
+                        <div class="metric-label">Manual Process Reduction</div>
+                    </div>
+                </div>
+
+                <h3>✅ Success Criteria</h3>
+                <div class="section-grid">
+                    <div class="section-card">
+                        <h4>🎯 Business Metrics</h4>
+                        <ul>
+                            <li>Monthly active users: 10,000+</li>
+                            <li>Average investment per user: 50,000 Kč</li>
+                            <li>Customer satisfaction (NPS): 4.5+</li>
+                            <li>Time to first investment: <7 days</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>⚡ Technical Performance</h4>
+                        <ul>
+                            <li>API response time: <500ms</li>
+                            <li>System availability: 99.9%</li>
+                            <li>Mobile app crash rate: <0.1%</li>
+                            <li>Payment success rate: 98%+</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>📋 Compliance Requirements</h4>
+                        <ul>
+                            <li>GDPR compliance: 100%</li>
+                            <li>MiFID II suitability: 100%</li>
+                            <li>PCI DSS certification: Level 1</li>
+                            <li>ČNB regulatory approval: Complete</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section-card">
+                        <h4>🔧 Operational Efficiency</h4>
+                        <ul>
+                            <li>Process automation: 80%+</li>
+                            <li>Manual intervention: <20%</li>
+                            <li>Error rate: <1%</li>
+                            <li>Support ticket reduction: 50%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: var(--accent-color); color: white; padding: 2rem; border-radius: 10px; text-align: center; margin-top: 2rem;">
+                    <h3>🎉 Projekt je připraven pro development fázi!</h3>
+                    <p>Všech 120 use cases je kompletně zdokumentováno s technical specifications a implementation roadmap.</p>
+                </div>
+            </div>
+        </main>
     </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>

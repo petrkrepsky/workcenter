@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Account - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CURRENT-ACCOUNTS_17340355.html">CURRENT-ACCOUNTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17340356.html">Account - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Account - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified on Bře 17, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Na této stránce je definována datová entita Account.</p><p>Technická realizace přenosů je pak popsána na stránkách:</p><ul><li class="with-breadcrumbs" title="undefined"><a href="Account---Event-Stream_17340358.html">Account - Event Stream</a> </li><li class="with-breadcrumbs" title="undefined"><a href="Account---REST-API_17340371.html">Account - REST API</a></li></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926577246 {padding: 0px;}
+div.rbtoc1684926577246 ul {margin-left: 0px;}
+div.rbtoc1684926577246 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926577246'>
+<ul class='toc-indentation'>
+<li><a href='#AccountDatovýmodel-DatováentitaAccount'>Datová entita Account</a>
+<ul class='toc-indentation'>
+<li><a href='#AccountDatovýmodel-Account'>Account</a></li>
+</ul>
+</li>
+<li><a href='#AccountDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="AccountDatovýmodel-DatováentitaAccount">Datová entita Account</h1><h2 class="auto-cursor-target" id="AccountDatovýmodel-Account"><span class="inline-comment-marker" data-ref="0bf5d978-12a7-4450-9542-d3edc8214fb6">Account</span></h2><p>Celá kolekce se bude posílat v jedné události.</p><p>Struktura dle <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17337890">předepsan&eacute; metodiky</a>.</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 36.0px;"/><col style="width: 185.0px;"/><col style="width: 95.0px;"/><col style="width: 84.0px;"/><col style="width: 67.0px;"/><col style="width: 87.0px;"/><col style="width: 265.0px;"/><col style="width: 103.0px;"/><col style="width: 134.0px;"/><col style="width: 85.0px;"/><col style="width: 46.0px;"/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>lvl</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>attribute_name</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>multiplicity</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>data_type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>format</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>constraint</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>description</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong><span class="inline-comment-marker" data-ref="5f5c228a-23bb-463b-bfc4-3028a67695d4">enum values</span></strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>businessIdentifer</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>kafka_bcd</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>KEY</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>change</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>notes</strong></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">X-Correlation-ID</td><td colspan="1" class="confluenceTd">0..1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">opravena multiplicita 20.9. 2022 - do IA release v7</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><span class="inline-comment-marker" data-ref="a5f61b02-ef71-4613-9b92-58ebb4bdae12">accountId</span></td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">-</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Unique account identifier.</td><td colspan="1" class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">accountKind</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ENUM</td><td colspan="1" class="confluenceTd">3</td><td colspan="1" class="confluenceTd">Account kind.</td><td colspan="1" class="confluenceTd">CUA|CCR|LOA<strong>|RDA|NWB|CRD</strong></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Rozšířeno v rámci <a class="external-link" href="https://jiradigi.jtfg.com/browse/DSWF-4641" rel="nofollow">DSWF-4641</a></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">eventTimestamp</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">datetime</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Date and time of inserting into event table in BISQ.</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y (<strong>Neodpovídá přímo BCD, ale nahrazuje ho</strong>)</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd"><span class="inline-comment-marker" data-ref="383335bd-6b3f-4593-aba7-3cd9314b92eb">accountNumberPrefix</span></td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">6</td><td colspan="1" class="confluenceTd">Account prefix in BBAN format.</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><strong>BISQ sem bude doplňovat hodnotu &quot;0&quot;.</strong><br/><strong>Důvod: Žádný produkt nemá prefix.</strong><br/><strong>Domluveno na schůzce: <a href="https://confluencedigi.jtfg.com/display/EI/2022-08-22+BISQ-status">2022-08-22 BISQ-status</a></strong></td></tr><tr><td colspan="1" class="confluenceTd"><s>1</s></td><td colspan="1" class="confluenceTd"><s>fullAccountNumber</s></td><td colspan="1" class="confluenceTd"><s>1</s></td><td colspan="1" class="confluenceTd"><s>string</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>Full account number</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>N</s></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">accountNumber</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Account number in BBAN format</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">bankCode</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ENUM</td><td colspan="1" class="confluenceTd">4</td><td colspan="1" class="confluenceTd">Code of the bank</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">??? - N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">iban</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">34</td><td colspan="1" class="confluenceTd">Account number in IBAN format</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">bic</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Bank BIC code issued by Swift</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">accountCurrency</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Account currency</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd"><s>1</s></td><td colspan="1" class="confluenceTd"><s>ownerAccountName</s></td><td colspan="1" class="confluenceTd"><s>1</s></td><td colspan="1" class="confluenceTd"><s>string</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>255</s></td><td colspan="1" class="confluenceTd"><s>Nickname of the account given by users</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>Y</s></td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>21.9.2022: Odstraněno v rámci 
+<span class="jira-issue resolved" data-jira-key="DSWF-2395" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2395?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10322&amp;avatarType=issuetype"/>DSWF-2395</a>
+                            -
+            <span class="summary">[ChR] BISQ - Accounts - odstranění elementu ownerAccountName</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+</p></div></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">accountDescription</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">35</td><td colspan="1" class="confluenceTd">Account description</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">accountName</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Account name</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">-</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">accountType</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ENUM</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Account type ID</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd"><strong>accountState</strong></td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ENUM</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Account status</td><td colspan="1" class="confluenceTd">A|C|OO|OB|OC|OD</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">creationDate</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">date</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Creation date</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">clearDate</td><td colspan="1" class="confluenceTd">0..1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">date</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Clear date</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">owner</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">object</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">quaestorId</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Unique Quaestor identifier</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">crmId</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd"><span class="inline-comment-marker" data-ref="43af76be-2ae5-4574-b74d-d2252f682079">Unique CRM identifier</span></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">personType</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ENUM</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Person type (LP = Právnická osoba, IP = fyzická osoba)</td><td colspan="1" class="confluenceTd">LP|IP</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">personIdentificationNumber</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Person identification depending on the personType value.</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">personFullName</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Full name of person</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">maximalDebitLimit</td><td colspan="1" class="confluenceTd">0..1</td><td colspan="1" class="confluenceTd">number</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Maximal debit limit</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>Kardinalita upravena v rámci: 
+<span class="jira-issue resolved" data-jira-key="DSWF-2566" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2566?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-2566</a>
+                            -
+            <span class="summary">BISQ - Accounts - změna povinnosti pro maximalDebitLimit, maximalDebitLimitCurrency</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+</p></div></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">maximalDebitLimitCurrency</td><td colspan="1" class="confluenceTd">0..1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ENUM</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Maximal debit limit currency</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>Přidáno v rámci 
+<span class="jira-issue resolved" data-jira-key="DSWF-2242" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2242?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10322&amp;avatarType=issuetype"/>DSWF-2242</a>
+                            -
+            <span class="summary">[ChR] maxDebitLimitCurrency nemusí odpovídat měně účtu</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+</p><p>Kardinalita upravena v rámci: 
+<span class="jira-issue resolved" data-jira-key="DSWF-2566" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2566?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-2566</a>
+                            -
+            <span class="summary">BISQ - Accounts - změna povinnosti pro maximalDebitLimit, maximalDebitLimitCurrency</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+</p></div></td></tr><tr><td colspan="1" class="confluenceTd"><s>1</s></td><td colspan="1" class="confluenceTd"><s>balance</s></td><td colspan="1" class="confluenceTd"><s>1</s></td><td colspan="1" class="confluenceTd"><s>string</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>Balance reference with same account ID</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>Y</s></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">interestCreditRate</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">number</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Interest rate of account (credit)</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">interestDebitRate</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">number</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Interest rate of account (debit)</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd"><s>closingBalance</s></td><td colspan="1" class="confluenceTd"><s>0..n</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>Closing balance at end of the day.</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">-</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd"><s>isDefault</s></td><td colspan="1" class="confluenceTd"><s>1</s></td><td colspan="1" class="confluenceTd"><s>boolean</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><s>Is account primary.</s></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">-</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">productId</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">20</td><td colspan="1" class="confluenceTd">productId in BISQ.</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">coowner</td><td colspan="1" class="confluenceTd">0..1</td><td colspan="1" class="confluenceTd">object</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">coowner</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">quaestorId</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Unique Quaestor identifier</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">crmId</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">10</td><td colspan="1" class="confluenceTd">Unique CRM identifier</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">personType</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd">ENUM</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Person type (LP = Právnická osoba, IP = fyzická osoba)</td><td colspan="1" class="confluenceTd">LP|IP</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">N</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">personIdentificationNumber</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Person identification depending on the personType value</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td colspan="1" class="confluenceTd">2</td><td colspan="1" class="confluenceTd">partyFullName</td><td colspan="1" class="confluenceTd">1</td><td colspan="1" class="confluenceTd">string</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Full name of person</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">Y</td><td colspan="1" class="confluenceTd"><br/></td></tr></tbody></table></div><br/><p><br/></p><h1 class="auto-cursor-target" id="AccountDatovýmodel-Vysvětleníidentifikátorů">Vysvětlení identifikátorů</h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">typ entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">businessIdentifier*</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">KEY</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">BUSINESS_STATE</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">resource</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">query_parameters</td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Accounts</strong></td><td class="confluenceTd">accountId</td><td class="confluenceTd">accountId</td><td class="confluenceTd">status: A|C|OO|OB|OC|OD</td><td class="confluenceTd">/accounts/</td><td class="confluenceTd">accountId, channel</td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-17341952"></a>
+                                    <font class="smallfont"><p>Potřebujeme přidat accountKind string(3) enum CUA|CCR|LOA - dle schůzky  3.6</p><p>atribut balance, co to je?</p><p>fullAccountNumber - je to zřetězení předčíslí - číslo učtu / kod banky? K čemu je dobry, da se vždy poskladat</p><p><strong style="text-align: left;">multiplicity </strong>u všech atributu musí byt  1 za výjimkou <span style="color: rgb(23,43,77);">clearDate</span></p><p><span style="color: rgb(23,43,77);">proti BDS chybí některé atributy.</span></p><p><span style="color: rgb(23,43,77);">productId - string(20) unikátní identifikace produktu</span></p><p><span style="color: rgb(23,43,77);">reservations - object - seznam aktivních reservaci/blokaci učtu </span></p><p>coowner object -spoluvlastník učtu </p><p><span style="color: rgb(23,43,77);">maximalDebitLimit - muže byt v jiné měně než učet</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101037 at Čer 06, 2022 15:48
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-17342177"></a>
+                                    <font class="smallfont"><p><a class="confluence-userlink user-mention" data-username="JT8101037" href="https://confluencedigi.jtfg.com/display/~JT8101037" data-linked-resource-id="17341162" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Syrokvash Oleh</a>  Díky za komentáře, vypořádáno následujícím způsobem:</p><ul><li>accountKind - přidáno</li><li>balance - odstraněno</li><li>fullAccountNumber - odstraněno</li><li>multiplicity - upraveno dle komentáře</li><li>atributy z BDS:<ul><li>productId - přidáno - možná bude dobré doplnit výstižnější komentář</li><li>reservations - nepřidával jsem - bude chodit v separátním topicu</li><li>coowner object - zatím nepřidáno - zasílám dotaz na pana Černého jestli vůbec využívají</li><li>maximalDebitLimit - tento parametr již ve struktuře je - váš komentář chápu tak, že by měla přibýt maximalDebitLimitCurrency?</li></ul></li></ul><p><br/></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101838 at Čer 08, 2022 16:04
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-17342792"></a>
+                                    <font class="smallfont"><p>Ano, <span style="color: rgb(23,43,77);">maximalDebitLimitCurrency bude nutné přidat. V CZ existuje 42 takových otevřených učtu a 48 uzavřených.</span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101037 at Čer 13, 2022 16:17
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27623588"></a>
+                                    <font class="smallfont"><p>Chybí podstatná věc - specifikace, o jaké úcty se  jedna. Po schůzce s p. Kucharikem jsem dozvěděl se že pro sběrné účty se chystá samostatný topik.  Ale tak jak navržené teď sběrné úcty potři  do Account. </p><p>Nebo se předpokládá, že tentýž objekt muže byt ukládán do různých topicu?</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101037 at Čer 15, 2022 16:43
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27626566"></a>
+                                    <font class="smallfont"><p>U ownera a coownera musí byť quaestorId povinné.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101039 at Čvc 28, 2022 13:41
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27627040"></a>
+                                    <font class="smallfont"><p>accountNumberPrefix - u nás neevidujeme predčíslie účtu, preto by tento atribút nemal byť povinný</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101039 at Srp 03, 2022 14:22
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27630187"></a>
+                                    <font class="smallfont"><p>Toto opraveno v rámci: <a class="external-link" href="https://jiradigi.jtfg.com/browse/DSWF-2257" rel="nofollow">DSWF-2257</a> Nová struktura - objekt Person, kde je quaestorId povinné.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101838 at Zář 12, 2022 13:49
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27630188"></a>
+                                    <font class="smallfont"><p>Opraveno do datového modelu - přidána poznámka, že accountNumberPrefix se bude plnit hodnotou &quot;0&quot;.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101838 at Zář 12, 2022 13:49
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-36471642"></a>
+                                    <font class="smallfont"><p>Na CZ aj SK existujú účty, ktoré nemajú zadaný description, tým pádom atribút accountDescription bude u nich prázdny a to vyhodí chybu, pretože tento atribút je mandatory.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101039 at Říj 05, 2022 17:12
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-38011403"></a>
+                                    <font class="smallfont"><p>Atribút iban musí byť nepovinný - niektoré uzavreté účty IBAN nemajú v DB.</p><p>Atribút owner.crmId musí byť nepovinný, existuje účet ktorého majiteľ nemá CRMID</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101039 at Říj 13, 2022 10:59
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

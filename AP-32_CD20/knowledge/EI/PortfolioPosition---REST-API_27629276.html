@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : PortfolioPosition - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341511.html">Portfolio - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PortfolioPosition_27625878.html">PortfolioPosition</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : PortfolioPosition - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Lis 01, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Rekonciliační API bude vystaveno ve WSO2. Až se tak stane, některé detaily z této stránky budou odstraněny.</p><p>Specifikace rozhraní je na <span class="inline-comment-marker" data-ref="46fc383a-7081-4cb0-be24-36b064b9da8a">stránce</span> <a href="17342899.html">Integračn&iacute; anal&yacute;zy - open api</a></p><h2 id="PortfolioPositionRESTAPI-Princip">Princip</h2><p>Na vstupu lze omezit časový interval pro který se mají data poslat.</p><ul><li><span style="color: rgb(0,0,0);">Časový interval je definovaný = znovuzaslání entit po poslední změně z časového intervalu, tedy pouze aktuální stavy entit</span></li><li><span style="color: rgb(0,0,0);">Časový interval není definovaný = znovuzaslání entit po poslední změně za poslední tři měsíce, tedy pouze aktuální stavy entit</span></li><li><span style="color: rgb(0,0,0);">V rekonciliaci se datové entity ve stavu deleted přenášejí.</span></li><li>Nulové pozice<ul><li>posílá se nulový stav pokud okamžik změny spadl do intervalu recon; stav pozice já aktivní</li></ul></li></ul><h2 id="PortfolioPositionRESTAPI-Atributyvolání">Atributy volání</h2><ul><li>metoda:<ul><li><span style="color: rgb(59,65,81);">POST </span>/portfolioPosition/<span style="color: rgb(59,65,81);">query/</span></li></ul></li><li>header parametry (povinné):<ul><li>X-Correlation-ID</li><li><span style="color: rgb(59,65,81);">X-Request-ID</span></li></ul></li><li>query parametr (povinný):<ul><li>location</li></ul></li><li>body parametry (nepovinné):<ul><li>businessChangeDateStart</li><li>businessChangeDateEnd</li><li>portfolioIds<ul><li>ebrokerId</li></ul></li><li>owner<ul><li>crmId</li></ul></li></ul></li></ul><h1 id="PortfolioPositionRESTAPI-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace. Zavoláním inicializace se rozumí vyvolání toku historických událostí od 1.1.2015<span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="65e402b3-0f5f-45ca-85c1-e2ab9d641e98">.</span></span></p><p><span style="color: rgb(0,0,0);"><span class="inline-comment-marker" data-ref="65e402b3-0f5f-45ca-85c1-e2ab9d641e98">V inicializaci se datové entity ve stavu deleted nepřenášejí.</span></span></p><p>Nulové pozice: </p><ul><li>Posílá nulový aktuální stav, pokud okamžik poslední změny spadl do intervalu &lt;minimální datum, aktuální okamžik); stav pozice já aktivní.</li><li>Neposílá se nulový aktuální stav, pokud okamžik poslední změny &lt;minimální datum.</li></ul><h2 style="" id="PortfolioPositionRESTAPI-Atributyvolání.1">Atributy volání</h2><ul style=""><li>povinné<ul><li>X_Correlation_ID</li></ul></li><li>nepovinné<ul style=""><li>location</li></ul></li></ul><h1 id="PortfolioPositionRESTAPI-Sekvenčníschémata"><span>Sekvenční schémata</span></h1><h2 id="PortfolioPositionRESTAPI-Průběžnádata"><span>Průběžná data</span></h2><p><span><span style="color: rgb(23,43,77);">Diagramy pro průběžná data jsou na stránce <em>doplnit</em></span></span></p><h2 id="PortfolioPositionRESTAPI-Rekonciliace"><span>Rekonciliace</span></h2><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926609784 {padding: 0px;}
+div.rbtoc1684926609784 ul {margin-left: 0px;}
+div.rbtoc1684926609784 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926609784'>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioPositionRESTAPI-Princip'>Princip</a></li>
+<li><a href='#PortfolioPositionRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+<li><a href='#PortfolioPositionRESTAPI-Předmětavýstupinicializace'>Předmět a výstup inicializace</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioPositionRESTAPI-Atributyvolání.1'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#PortfolioPositionRESTAPI-Sekvenčníschémata'>Sekvenční schémata</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioPositionRESTAPI-Průběžnádata'>Průběžná data</a></li>
+<li><a href='#PortfolioPositionRESTAPI-Rekonciliace'>Rekonciliace</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

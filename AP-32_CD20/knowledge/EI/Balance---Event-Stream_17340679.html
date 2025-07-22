@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Balance - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CURRENT-ACCOUNTS_17340355.html">CURRENT-ACCOUNTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17340677.html">Balance - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Balance - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified on Srp 29, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 style="color: rgb(23,43,77);" id="BalanceEventStream-Přenosy">Přenosy</h1><h2 style="color: rgb(23,43,77);" id="BalanceEventStream-Datovéentity">Datové entity</h2><p style="margin-top: 10.0px;font-size: 14.0px;letter-spacing: normal;"><span style="letter-spacing: 0.0px;">Jsou definovány následující datové entity:</span></p><ul><li><p>Balance</p></li></ul><h2 style="margin-top: 30.0px;color: rgb(23,43,77);" id="BalanceEventStream-Topicy"><span style="letter-spacing: -0.008em;font-size: 20.0px;">Topicy</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Entity Type</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Název Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Typ Topicu</p></th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Zdroj</th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Cíl</th></tr><tr><td rowspan="5" class="confluenceTd"><p>Balance</p></td><td class="confluenceTd"><p><span>JTB-CZ_CURRENT-ACCOUNTS_BALANCE_EVENT_GNR</span></p></td><td class="confluenceTd"><p>Průběžný</p></td><td colspan="1" class="confluenceTd">BISQ</td><td colspan="1" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" class="confluenceTd"><span>JTB-CZ_CURRENT-ACCOUNTS_BALANCE_RCN_GNR</span></td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">BISQ</td><td colspan="1" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" class="confluenceTd"><span>JTB-SK_CURRENT-ACCOUNTS_BALANCE_EVENT_GNR</span></td><td colspan="1" class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">BISQ</td><td colspan="1" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" class="confluenceTd"><span>JTB-SK_CURRENT-ACCOUNTS_BALANCE_RCN_GNR</span></td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">BISQ</td><td colspan="1" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</span></td><td colspan="1" class="confluenceTd">Kontrolní</td><td colspan="1" class="confluenceTd">-</td><td colspan="1" class="confluenceTd">DKCZ/DKSK</td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926579719 {padding: 0px;}
+div.rbtoc1684926579719 ul {margin-left: 0px;}
+div.rbtoc1684926579719 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926579719'>
+<ul class='toc-indentation'>
+<li><a href='#BalanceEventStream-Přenosy'>Přenosy</a>
+<ul class='toc-indentation'>
+<li><a href='#BalanceEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#BalanceEventStream-Topicy'>Topicy</a></li>
+<li><a href='#BalanceEventStream-PlněníKafka'>Plnění Kafka</a></li>
+</ul>
+</li>
+<li><a href='#BalanceEventStream-Vznikudálostí'>Vznik událostí</a></li>
+<li><a href='#BalanceEventStream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#BalanceEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#BalanceEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#BalanceEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#BalanceEventStream-Početudálostí-maximálníhodnotyzaBISQ(hodnotyjenproDK/CZ)'>Počet událostí - maximální hodnoty za BISQ (hodnoty jen pro DK/CZ)</a></li>
+</ul>
+</li>
+<li><a href='#BalanceEventStream-Sekvenčnídiagramy'>Sekvenční diagramy</a>
+<ul class='toc-indentation'>
+<li><a href='#BalanceEventStream-Průběžnádata'>Průběžná data</a>
+<ul class='toc-indentation'>
+<li><a href='#BalanceEventStream-Accounts'>Accounts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="BalanceEventStream-PlněníKafka"><span style="letter-spacing: -0.008em;font-size: 20.0px;">Plnění Kafka<br/></span></h2><br/><p><span>Každá Kafka událost sestává z Key a Value:</span></p><ul><li>Key do sloupce KEY</li></ul><br/><p><span>BISQ publikuje data o účtech přímo do Průběžných případně rekoncilizačních topiců.</span></p><p><span><strong>BID</strong> = accountId</span></p><p><s><span><strong>BUSINESS_STATE</strong> = accountState</span></s></p><p><span><strong>BCD</strong> (business change date) = Aktuálně nemá svůj evkvivalent.</span></p><ul><li><span><strong>Požadavek:</strong> Je třeba aby BCD mělo přesnost minimálně na vteřiny. A zároveň bylo evidováno při založení / update / smazání účtu.<br/></span></li><li><span><strong>Aktuální stav:</strong> Všechny parametry s časem/datumem, mají přesnost maximálně jako DATE. Pouze součástí PC_ID je datum s přesností na vteřiny - vzniká při založení účtu.</span></li><li><span><strong>Návrh:</strong> Bude použit nově vytvořený atribut &quot;event_timestamp&quot; - který bude odpovídat timestamp vložení do tabulky eventů</span></li></ul><br/><h1 id="BalanceEventStream-Vznikudálostí">Vznik událostí</h1><p>Spouštěče událostí pro vkládání dat jednotlivých datových entit do Kafky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 7.62911%;"/><col style="width: 11.4437%;"/><col style="width: 29.1667%;"/><col style="width: 51.7606%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">Datová entita</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">Spouštěč události</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">Frekvence</th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Poznámka</th></tr><tr><td class="confluenceTd">Balance</td><td class="confluenceTd"><ul><li>Při změně zůstatku.</li><li>Rezervace</li><li>Změna limitu</li></ul></td><td class="confluenceTd">velmi často</td><td colspan="1" class="confluenceTd"><ul><li>Ke spuštění události dochází vždy při změně zůstatku.</li><li>Ke změně dochází pouze uvnitř BISQ.</li><li>Zůstatek mohou měnit všechny druhy transakcí</li><li>Událost vyvolá i rezervace - dojde ke změně &quot;blockedAmount&quot;.<em><br/></em></li><li>Událost vyvolá i změna limitu.</li><li>BISQ změnu zůstatku váže na všechny druhy transakcí.</li><li>Vzniká i pro deposita - NWB, RDA (edit 29. srpna 2022)</li></ul></td></tr></tbody></table></div><h1 id="BalanceEventStream-JSONschémata"><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schémata</span></h1><p title="undefined">JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><h1 id="BalanceEventStream-Požadavkynaintegraci"><span style="letter-spacing: -0.01em;">Požadavky na integraci</span></h1><p>  - počet partitions (8), počet replik (3), replication period (6 days)</p><h1 id="BalanceEventStream-Ošetřeníchybovýchstavů"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Ošetření chybových stavů</span></h1><p><span style="color: rgb(255,0,0);"><em>Téma není prozatím dořešeno.</em></span></p><h1 id="BalanceEventStream-Kapacitnípožadavky"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Kapacitní požadavky</span></h1><h2 id="BalanceEventStream-Početudálostí-maximálníhodnotyzaBISQ(hodnotyjenproDK/CZ)"><span style="letter-spacing: -0.008em;">Počet událostí - maximální hodnoty za BISQ (hodnoty jen pro DK/CZ)<br/></span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh"><br/></th><th class="confluenceTh">Počet</th><th class="confluenceTh">Maximální vrchol</th><th class="confluenceTh">Reálný vrchol</th></tr><tr><td class="confluenceTd">1 den</td><td style="text-align: right;" class="confluenceTd">1.000 - 45.000</td><td style="text-align: right;" class="confluenceTd"><br/></td><td style="text-align: right;" class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1 hodina</td><td style="text-align: right;" class="confluenceTd"><br/></td><td style="text-align: right;" class="confluenceTd">20.000</td><td style="text-align: right;" class="confluenceTd">400 - 2.000</td></tr><tr><td class="confluenceTd">1 minuta</td><td style="text-align: right;" class="confluenceTd"><br/></td><td style="text-align: right;" class="confluenceTd">5.000</td><td style="text-align: right;" class="confluenceTd">200 - 1.000</td></tr><tr><td class="confluenceTd">1 vteřina</td><td style="text-align: right;" class="confluenceTd"><br/></td><td style="text-align: right;" class="confluenceTd">120</td><td style="text-align: right;" class="confluenceTd">70 - 100</td></tr></tbody></table></div><p><br/></p><p><br/></p><p>Objem</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">Datová entita</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">Objem</th></tr><tr><td class="confluenceTd">Balance</td><td class="confluenceTd"><ul><li>Frekvence změny: často</li><li>Počet aktuálních &quot;actualBalance&quot; je shodný s počtem účtů:<ul><li>celkem - 91.000 účtů (DK/CZ)</li><li>otevřených - 78.000 účtů (DK/CZ)</li></ul></li></ul></td></tr></tbody></table></div><h1 class="auto-cursor-target" id="BalanceEventStream-Sekvenčnídiagramy"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Sekvenční diagramy</span></h1><h2 class="auto-cursor-target" id="BalanceEventStream-Průběžnádata"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Průběžná data</span></h2><h3 id="BalanceEventStream-Accounts"><span>Accounts</span></h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-thumbnail" draggable="false" height="250" src="attachments/17340679/17341379.png" data-image-src="attachments/17340679/17341379.png" data-unresolved-comment-count="0" data-linked-resource-id="17341379" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Account2.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17340679" data-linked-resource-container-version="32" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340680.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340681.json">fxRate_aktivni.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340682.json">eBroker_FxRateList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340683.json">eBroker_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340684.json">eBroker_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340685.json">ccp_FxRateList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340686.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340687.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340688.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340689.json">ccp_FxRateLists_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340690.json">ccp_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17340691.json">ccp_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17341032.json">Balance_v1.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17341033.png">bisq-balance-seq.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17341379.png">Account2.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17342195.json">bisq_Balance_v1.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17342748.json">bisq_Balance_v1.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17340679/17341419.json">bisq_Balance_v1.json</a> (application/json)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

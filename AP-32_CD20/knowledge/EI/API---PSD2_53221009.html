@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API - PSD2</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CURRENT-ACCOUNTS_17340355.html">CURRENT-ACCOUNTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API - PSD2
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Rosa Tomáš</span>, last modified on Kvě 17, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPSD2-Významslužby">Význam služby</h1><p>Služba vrací kolekci technických identifikátorů produktů na základě vstupních filtračních parametrů.</p><h1 id="APIPSD2-Jakslužbukonzumovat">Jak službu konzumovat</h1><p>Konzument musí následovat postup definovaný v dokument <a class="external-link" href="https://jtfg.sharepoint.com/:w:/s/Digitlnkanly/EXYvJnPFua5OgTTOWBo61JgB7A7OOdl1_2i2Va2KQVRmIw?e=jWv758" rel="nofollow">Manuál pro konzumaci API služeb na ESB</a>.</p><h1 id="APIPSD2-OpenApidefinice">OpenApi definice</h1><p title="undefined">Aktualizovaná verze je na stránce: <a class="external-link" href="https://confluence.jtfg.com/pages/viewpage.action?pageId=86278363" rel="nofollow">https://confluence.jtfg.com/pages/viewpage.action?pageId=86278363</a></p><h1 id="APIPSD2-Kapitolyintegračníanalýzy">Kapitoly integrační analýzy</h1><p><ul class='childpages-macro'><li><a href="API---PSD2-AISP_53221020.html">API - PSD2 AISP</a></li><li><a href="API---PSD2-CISP_53221033.html">API - PSD2 CISP</a></li><li><a href="API---PSD2-PISP_53221029.html">API - PSD2 PISP</a></li></ul></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926579243 {padding: 0px;}
+div.rbtoc1684926579243 ul {margin-left: 0px;}
+div.rbtoc1684926579243 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926579243'>
+<ul class='toc-indentation'>
+<li><a href='#APIPSD2-Významslužby'>Význam služby</a></li>
+<li><a href='#APIPSD2-Jakslužbukonzumovat'>Jak službu konzumovat</a></li>
+<li><a href='#APIPSD2-OpenApidefinice'>OpenApi definice</a></li>
+<li><a href='#APIPSD2-Kapitolyintegračníanalýzy'>Kapitoly integrační analýzy</a></li>
+<li><a href='#APIPSD2-Zúčastněnékomponenty'>Zúčastněné komponenty</a></li>
+<li><a href='#APIPSD2-Zúčastněnéslužby'>Zúčastněné služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPSD2-Integračníslužby'>Integrační služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPSD2-PTSCZPayments'>PTSCZPayments</a></li>
+</ul>
+</li>
+<li><a href='#APIPSD2-Komponentnídiagram'>Komponentní diagram</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPSD2-Zúčastněnékomponenty"><span>Zúčastněné komponenty</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1185.0px;"><colgroup><col style="width: 0.0px;"/><col style="width: 0.0px;"/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Name</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">Third party providers (externí aplikace)</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Systém, který umožňuje uživateli provádět bankovní operace přes internet. Je připojen k integrační vrstvě, kde konzumuje vystavená API.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>WSO2 API-M</p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 API Manager je platforma pro vytváření, integraci a vystavování digitálních služeb jako spravovaných API</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>DK SK, DK CZ</p></td><td style="text-align: left;" class="confluenceTd"><p>Digitální kanály CZ, SK</p></td></tr></tbody></table></div><h1 id="APIPSD2-Zúčastněnéslužby"><span>Zúčastněné služby</span></h1><h2 id="APIPSD2-Integračníslužby">Integrační služby</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>URLs</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>umístění API</strong></p></td></tr><tr><td rowspan="3" style="text-align: left;" class="confluenceTd"><p><br/></p><h4 class="MuiTypography-root MuiTypography-h4" id="APIPSD2-PTSCZPayments"><span>PTSCZPayments</span></h4><p><br/></p></td><td rowspan="3" style="text-align: left;" class="confluenceTd"><p><br/></p><p>REST API</p><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>Integrační analýza</p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://confluence.jtfg.com/pages/viewpage.action?spaceKey=APP&amp;title=PSD2+for+DK" rel="nofollow">https://confluence.jtfg.com/pages/viewpage.action?spaceKey=APP&amp;title=PSD2+for+DK</a></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>AKC</p></td><td style="text-align: left;" class="confluenceTd"><p>není vystaveno</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>INT</p></td><td style="text-align: left;" class="confluenceTd"><p>není vystaveno</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr></tbody></table></div><h2 id="APIPSD2-Komponentnídiagram">Komponentní diagram</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="400" src="attachments/53221009/53221016.png" data-image-src="attachments/53221009/53221016.png" data-unresolved-comment-count="0" data-linked-resource-id="53221016" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="PSD2Component.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="53221009" data-linked-resource-container-version="5" alt=""></span></p><p><br/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53221009/53221016.png">PSD2Component.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

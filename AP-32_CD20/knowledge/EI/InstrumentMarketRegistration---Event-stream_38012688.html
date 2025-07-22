@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : InstrumentMarketRegistration - Event stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="27628534.html">Instrument - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="InstrumentMarketRegistration_38012683.html">InstrumentMarketRegistration</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : InstrumentMarketRegistration - Event stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hovorka Vojtěch</span>, last modified by <span class='editor'> Joachymstál Vít</span> on Lis 29, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="InstrumentMarketRegistrationEventstream-Datovéentity">Datové entity</h1><p>Pro vazbu mezi cenným papírem a trhem, na kterém se obchoduje. je definována následující datová entita:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Zdroj</p></th></tr><tr><td class="confluenceTd"><p>InstrumentMarketRegistration</p></td><td class="confluenceTd"><p>eBroker</p></td></tr></tbody></table></div><h1 id="InstrumentMarketRegistrationEventstream-Topicy"><span>Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Entity Type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Název Topicu</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Typ Topicu</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Cíl</strong></td></tr><tr><td rowspan="4" class="confluenceTd"><p>InstrumentMarketRegistration</p></td><td class="confluenceTd">JTB-HQ_INSTRUMENT-MARKET-REGISTRATION_SYNC_APP</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">KStreams</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-MARKET-REGISTRATION_STREAM_GNR</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">DKCZ,DKSK</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-MARKET-REGISTRATION_<span style="color: rgb(23,43,77);">RSYNC_</span>APP</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">KStreams</td></tr><tr><td class="confluenceTd">JTB-HQ_INSTRUMENT-MARKET-REGISTRATION_RCN_GNR</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd">DKCZ,DKSK</td></tr><tr><td rowspan="2" class="confluenceTd">-</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_SYNC_APP</span></td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">KStreams</td></tr><tr><td class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</span></td><td class="confluenceTd">Kontrolní</td><td class="confluenceTd">DKCZ,DKSK</td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926616463 {padding: 0px;}
+div.rbtoc1684926616463 ul {margin-left: 0px;}
+div.rbtoc1684926616463 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926616463'>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentMarketRegistrationEventstream-Datovéentity'>Datové entity</a></li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Topicy'>Topicy</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentMarketRegistrationEventstream-Interfacetabulky'>Interface tabulky</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentMarketRegistrationEventstream-Key'>Key</a></li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentMarketRegistrationEventstream-Průběžný'>Průběžný</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentMarketRegistrationEventstream-InstrumentMarketRegistration'>InstrumentMarketRegistration</a></li>
+</ul>
+</li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Inicializační/Rekonciličaní'>Inicializační/Rekonciličaní</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentMarketRegistrationEventstream-InstrumentMarketRegistration.1'>InstrumentMarketRegistration</a></li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Popisodběrudat'>Popis odběru dat</a></li>
+<li><a href='#InstrumentMarketRegistrationEventstream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#InstrumentMarketRegistrationEventstream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#InstrumentMarketRegistrationEventstream-Početudálostídenně'>Počet událostí denně</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="InstrumentMarketRegistrationEventstream-Interfacetabulky"><span>Interface tabulky</span></h2><p>eBroker vytvoří, plní a spravuje tyto interface tabulky:</p><ul><li>Pro čerpání dat do Průběžného topicu</li><li>Pro čerpání dat do Inicializačního/Rekonciličaního topicu</li><li>Kontrolní</li></ul><p><span>Každá Kafka událost sestává z Key a Value:</span></p><ul><li>Key do sloupce KEY</li><li>Value do sloupce BODY</li></ul><h3 id="InstrumentMarketRegistrationEventstream-Key">Key</h3><p><span style="color: rgb(0,0,0);">Ve sloupci KEY klíč události = instrumentIds.ccpId.</span></p><h3 id="InstrumentMarketRegistrationEventstream-Value"><span>Value</span></h3><p><strong style="letter-spacing: 0.0px;">Přehled interface tabulek:</strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>Průběžný topic</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>Inicializační/Rekonciliační topic</strong></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Datová entita</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><strong>Datová entita</strong></td></tr><tr><td class="confluenceTd">INSTRUMENT-MARKET-REGISTRATION_CONTINUOUS</td><td class="confluenceTd">InstrumentMarketRegistration</td><td class="confluenceTd">INSTRUMENT-MARKET-REGISTRATION_INIT_AND_RECON</td><td class="confluenceTd">InstrumentMarketRegistration</td></tr></tbody></table></div><h4 id="InstrumentMarketRegistrationEventstream-Průběžný"><span>Průběžný</span></h4><h5 id="InstrumentMarketRegistrationEventstream-InstrumentMarketRegistration"><span style="color: rgb(0,51,102);">InstrumentMarketRegistration</span></h5><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum změny datové entity.</li><li>BODY = <span style="color: rgb(0,0,0);">JSON tělo zprávy ve formátu CLOB datové entity <span>InstrumentMarketPriceInstant</span></span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 19.5925%;"/><col style="width: 80.4075%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><p>INSTRUMENT_MARKET_REGISTRATION_CONTINUOUS</p></th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd">BUSINESS_CHANGE_DATE</td><td class="confluenceTd">Oracle Date</td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd">LOCATION</td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, &lt;prázdná_hodnota&gt;}</td></tr><tr><td class="confluenceTd">CREATED*</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd"><div class="content-wrapper">Varchar2(60) enumerace {InstrumentMarketRegistration}</div></td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h4 id="InstrumentMarketRegistrationEventstream-Inicializační/Rekonciličaní"><span>Inicializační/Rekonciličaní</span></h4><h5 id="InstrumentMarketRegistrationEventstream-InstrumentMarketRegistration.1"><span style="color: rgb(0,51,102);">InstrumentMarketRegistration</span></h5><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum změny datové entity.</li><li>BODY = <span style="color: rgb(0,0,0);">JSON tělo zprávy ve formátu CLOB datové entity <span>InstrumentMarketPriceInstant</span></span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 19.5925%;"/><col style="width: 80.4075%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><p>INSTRUMENT_MARKET_REGISTRATION_INIT_AND_RECON</p></th></tr><tr><td class="confluenceTd">KEY</td><td class="confluenceTd">Varchar2(200)</td></tr><tr><td class="confluenceTd">BUSINESS_CHANGE_DATE</td><td class="confluenceTd">Oracle Date</td></tr><tr><td class="confluenceTd">BODY</td><td class="confluenceTd">CLOB</td></tr><tr><td class="confluenceTd">LOCATION</td><td class="confluenceTd">Varchar2(2) enumerace {CZ, SK, &lt;prázdná_hodnota&gt;}</td></tr><tr><td class="confluenceTd">CREATED*</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td class="confluenceTd">ENTITY_TYPE</td><td class="confluenceTd"><div class="content-wrapper">Varchar2(60) enumerace {InstrumentMarketRegistration}</div></td></tr><tr><td colspan="1" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h5 id="InstrumentMarketRegistrationEventstream-Kontrolní"><span style="letter-spacing: -0.003em;">Kontrolní</span></h5><ul><li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);">CREATED - Čas vložení do interfacové tabulky.</span></p></li><li><span style="color: rgb(0,0,0);">TOTAL_EVENTS - <span style="color: rgb(23,43,77);">Počet událostí v rekonciliaci, inicializaci nebo v asynchronní odpovědi.</span></span></li><li><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">X_CORRELATION_ID - Unikátní identifikátor volání, který je zaslán v hlavičkovém parametru<span> </span>rekonciliačního REST API, na vstupu initu nebo v požadavku na asynchronní odpověď.</span></span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 631.0px;"><colgroup><col style="width: 22.7273%;"/><col style="width: 77.2727%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;">INTEGRATION_CONTROL</th></tr><tr><td class="confluenceTd">CREATED</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Datetime</span></td></tr><tr><td class="confluenceTd">TOTAL_EVENTS</td><td class="confluenceTd">Number</td></tr><tr><td colspan="1" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><h1 id="InstrumentMarketRegistrationEventstream-Popisodběrudat">Popis odběru dat</h1><p>eBroker vkládá data do interface tabulek z nichž jsou vybírána Kafkou prostřednictvím JDBC konektoru.<br/>Spouštěče událostí pro vkládání dat jednotlivých datových entit do interface tabulky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 271.0px;"/><col style="width: 368.0px;"/><col style="width: 417.0px;"/><col style="width: 850.0px;"/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Spouštěč události</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Počet událostí za den</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Poznámka</strong></td></tr><tr><td class="confluenceTd">InstrumentMarketRegistration</td><td class="confluenceTd"><div class="content-wrapper"><p>Vytvoření registrace CP na trh v GUI CCP</p></div></td><td class="confluenceTd">~12</td><td class="confluenceTd">Hodnota vychází z výpočtu pro rok 2022 - dosud 3793 nových událostí za 323 dní</td></tr></tbody></table></div><h1 id="InstrumentMarketRegistrationEventstream-JSONschémata"><span>JSON schémata</span></h1><p>JSON schémata obsahují nepovinný atribut X-Correlation-Id, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><h1 id="InstrumentMarketRegistrationEventstream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><p>  - počet partitions (8), pro číselník méně (1), počet replik (3), replication period (6 days)</p><h1 id="InstrumentMarketRegistrationEventstream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p>Je popsáno na stránce <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340311">eBroker/CCP - Čerp&aacute;n&iacute; a transformace ud&aacute;lost&iacute;</a></p><h1 id="InstrumentMarketRegistrationEventstream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><h2 id="InstrumentMarketRegistrationEventstream-Početudálostídenně"><span>Počet událostí denně </span><strong style="color: rgb(255,0,0);font-size: 24.0px;letter-spacing: -0.01em;"> </strong></h2><p><span>Objem</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Objem</strong></td></tr><tr><td class="confluenceTd">InstrumentMarketRegistration</td><td class="confluenceTd"><div class="content-wrapper"><p><span class="inline-comment-marker" data-ref="fcdcf7a5-e4f5-401c-be7b-9217c31b88b7">~12 událostí denně</span></p><p><span class="inline-comment-marker" data-ref="fcdcf7a5-e4f5-401c-be7b-9217c31b88b7"><span style="color: rgb(23,43,77);">~12 kB denně</span></span></p></div></td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

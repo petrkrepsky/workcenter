@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-PTSCZStandingOrders - požadavky/zadání</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="38012892.html">API-PTSCZStandingOrders - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-PTSCZStandingOrders - požadavky/zadání
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span>, last modified on Lis 16, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPTSCZStandingOrderspožadavky/zadání-Digitálníkanály-release2022-11">Digitální kanály - release 2022-11</h1><h2 id="APIPTSCZStandingOrderspožadavky/zadání-Specifikacepožadavků"><span style="color: rgb(0,51,102);">Specifikace požadavků</span></h2><h3 id="APIPTSCZStandingOrderspožadavky/zadání-Ošetřeníchybovýchstavůaerrorhandling"><span style="color: rgb(0,51,102);">Ošetření chybových stavů a error handling</span></h3><p><span style="color: rgb(0,51,102);">Je potřeba implementovat ošetření chybových stavů podle kapitoly<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-O%C5%A1et%C5%99en%C3%ADchybov%C3%BDchstav%C5%AF" rel="nofollow">Ošetření chybových stavů</a><span> </span>v Připojovací analýze.</span></p><p><span style="color: rgb(23,43,77);">Error handling odpovídá standardu J&amp;T, viz<span> </span></span><a class="external-link" href="https://confluence.jtfg.com/x/gYS2Ag" rel="nofollow">Metodika a standardy J&amp;T</a>. <span style="color: rgb(23,43,77);">Struktura chybové zprávy by měla odpovídat verzi 1.</span></p><h3 id="APIPTSCZStandingOrderspožadavky/zadání-Rozšířenírequestaresponseparametrů"><span style="color: rgb(0,51,102);">Rozšíření request a response parametrů</span></h3><p>Na rozhraní pro zadávání trvalých příkazů je potřeba upravit request a response parametry jednotlivých služeb, aby odpovídaly požadavkům uvedeným v<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Synchronn%C3%ADonlinepo%C5%BEadavek" rel="nofollow">Připojovací analýze - kapitola Synchronní online požadavek</a><span>.</span></p><h3 id="APIPTSCZStandingOrderspožadavky/zadání-Nahrazenístavůtrvalýchpříkazů">Nahrazení stavů trvalých příkazů</h3><p><span style="color: rgb(0,51,102);">Na rozhraní pro zadávání trvalých příkazů je potřeba nahradit stavy, které se vrací v odpovědi na zjištění stavu trvalého příkazu, za business stavy trvalých příkazů, které jsou uvedené v číselníku odkázaném v<span> </span><a href="https://confluencedigi.jtfg.com/display/EI/StandingOrder+-+Event+Stream#StandingOrderEventStream-Popispublikaceud%C3%A1lost%C3%AD" rel="nofollow">StandingOrder - Event Stream - kapitola Popis publikace událostí</a>.</span></p><p><span style="color: rgb(0,51,102);">Atribut pro business stav trvalých příkazů je potřeba pojmenovat tak, aby název reflektoval, že se tímto atributem vrací business stav, nikoliv interní PTS stav.</span></p><p><span style="color: rgb(0,51,102);">Potvrzeno p. Plachým, že za DK CZ je možné provést tuto změnu.</span></p><h3 id="APIPTSCZStandingOrderspožadavky/zadání-Okamžitézměnytrvalýchpříkazů"><span>Okamžité změny trvalých příkazů</span></h3><p><span>Rozhraní pro zadávání trvalých příkazů nyní umožňuje změny s dopřednou platností. Stanovisko business analýzy je takové, že v J&amp;T bance se budou používat jen změny s okamžitou platností. Proto je potřeba, aby rozhraní pro zadávání trvalých příkazů umožňovalo také jen okamžité změny trvalých příkazů.</span></p><p><span>V J&amp;T bance nyní nejsou změny s dopřednou platností používané z žádného kanálu. PTS tuto funkcionalitu umožňuje, ale v provozu není využívaná. Z ePortálu a PSD2 rozhraní změny s dopřednou platností zadat nelze.</span></p><p><span>DKCZ a DKSK budou využívat jen okamžité změny trvalých příkazů.</span></p><p><span>Pokud by bylo možné zadávat změny s dopřednou platností, při stávajícím navrženém řešení by konzumenti dostávali topicem jen informace o trvalém příkazu s budoucí změnou (stav ACTUAL). Aby konzumenti mohli dostávat i aktuální stav trvalého příkazu (stav ACTIVE), bylo by potřeba využít druhého topicu, nebo rozšířit unikátní business identifikátor datové entity posílané topicem.</span></p><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Stanovisko business analýzy</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><a href="attachments/38012896/38012903.msg" data-linked-resource-id="38012903" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="RE_ PTS - trvalé příkazy - okamžité vs_ dopředné změny.msg" data-linked-resource-content-type="application/vnd.ms-outlook" data-linked-resource-container-id="38012896" data-linked-resource-container-version="3">RE_ PTS - trval&eacute; př&iacute;kazy - okamžit&eacute; vs_ dopředn&eacute; změny.msg</a></p></div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926704120 {padding: 0px;}
+div.rbtoc1684926704120 ul {margin-left: 0px;}
+div.rbtoc1684926704120 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926704120'>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Digitálníkanály-release2022-11'>Digitální kanály - release 2022-11</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Specifikacepožadavků'>Specifikace požadavků</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Ošetřeníchybovýchstavůaerrorhandling'>Ošetření chybových stavů a error handling</a></li>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Rozšířenírequestaresponseparametrů'>Rozšíření request a response parametrů</a></li>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Nahrazenístavůtrvalýchpříkazů'>Nahrazení stavů trvalých příkazů</a></li>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Okamžitézměnytrvalýchpříkazů'>Okamžité změny trvalých příkazů</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Digitálníkanály-release2023-03'>Digitální kanály - release 2023-03</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-EvidencepožadavkůvJIRAaRedmine'>Evidence požadavků v JIRA a Redmine</a></li>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Specifikacepožadavků.1'>Specifikace požadavků</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Požadavkynastandardizaci'>Požadavky na standardizaci</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Rozšířenírequestaresponseparametrů.1'>Rozšíření request a response parametrů</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Přidáníheaderparametrutraceparent'>Přidání header parametru traceparent</a></li>
+</ul>
+</li>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Definicerozhraní'>Definice rozhraní</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrderspožadavky/zadání-Changelog-přidánídoOpenAPIdefinice'>Changelog - přidání do OpenAPI definice</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<hr/></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPTSCZStandingOrderspožadavky/zadání-Digitálníkanály-release2023-03">Digitální kanály - release 2023-03</h1><h2 id="APIPTSCZStandingOrderspožadavky/zadání-EvidencepožadavkůvJIRAaRedmine"><span>Evidence požadavků v JIRA a Redmine</span></h2><p><span>
+<span class="jira-issue" data-jira-key="DSWF-2154" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2154?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-2154</a>
+                            -
+            <span class="summary">PTS - standardizace rozhraní</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-current
+     jira-macro-single-issue-export-pdf">PARKING</span>
+                </span>
+</span></p><h2 id="APIPTSCZStandingOrderspožadavky/zadání-Specifikacepožadavků.1"><span style="color: rgb(0,51,102);">Specifikace požadavků</span></h2><h3 id="APIPTSCZStandingOrderspožadavky/zadání-Požadavkynastandardizaci">Požadavky na standardizaci</h3><h4 id="APIPTSCZStandingOrderspožadavky/zadání-Rozšířenírequestaresponseparametrů.1"><span style="color: rgb(0,51,102);letter-spacing: -0.003em;">Rozšíření request a response parametrů</span></h4><p title="undefined">Na rozhraní pro zadávání plateb je potřeba upravit request a response parametry jednotlivých služeb, aby odpovídaly požadavkům uvedeným v<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Synchronn%C3%ADonlinepo%C5%BEadavek" rel="nofollow">Připojovací analýze - kapitola Synchronní online požadavek</a><span> </span>a v metodice pro<span> </span><a href="https://confluencedigi.jtfg.com/x/n4OlAQ" rel="nofollow">REST API</a>.</p><h5 style="margin-left: 40.0px;" id="APIPTSCZStandingOrderspožadavky/zadání-Přidáníheaderparametrutraceparent"><span style="letter-spacing: 0.0px;">Přidání header parametru traceparent</span></h5><ul><li style="list-style-type: none;"><ul><li><p>Specifikace požadavku:</p><ul><li>Na rozhraní je požadováno přidat header parametr traceparent pro request i response.</li><li>Parametr je povinný typu string.</li><li>Parametr bude vyplňovat konzument rozhraní a bude se propagovat skrze všechny systémy, kterými volání prochází. Momentálně se neřeší jeho napojení do centrálního logování.</li><li>Hodnota traceparent v requestu je stejná jako v response.</li><li>Dokumentace: <a class="external-link" href="https://www.w3.org/TR/trace-context/" rel="nofollow" title="Follow link">https://www.w3.org/TR/trace-context/</a></li></ul></li></ul></li></ul><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: yml; gutter: false; theme: Confluence" data-theme="Confluence">    traceparent: 
+      description: &quot;Tracing parameter according to W3C Trace Context standard.&quot;
+      required: true
+      schema: 
+        maxLength: 55
+        type: &quot;string&quot;
+      example: &quot;00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01&quot;</pre>
+</div></div><h4 id="APIPTSCZStandingOrderspožadavky/zadání-Definicerozhraní">Definice rozhraní</h4><h5 style="margin-left: 40.0px;" id="APIPTSCZStandingOrderspožadavky/zadání-Changelog-přidánídoOpenAPIdefinice">Changelog - přidání do OpenAPI definice</h5><ul><li style="list-style-type: none;"><ul><li>Specifikace požadavku:<ul><li>Při změně rozhraní do OpenAPI definice vložit vždy nový řádek s: datum, verze, autor, seznam změn.</li><li>Nedělat zpětně.</li><li>Pokud je OpenAPI definice generovaná a přidání changelogu nelze provést automaticky, je potřeba ho přidat ručně. Rozhraní by měla být dodávána s patřičnou dokumentací - ideálně changelog a manuál.</li><li>Příklad: # 2022-06-15 – 1.12.0 - Pavel Hrdlička - Added resource &quot;/client&quot;, added query parameter &quot;city&quot; in &quot;GET /userInfo&quot;</li></ul></li></ul></li></ul></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/38012896/38012903.msg">RE_ PTS - trvalé příkazy - okamžité vs_ dopředné změny.msg</a> (application/vnd.ms-outlook)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

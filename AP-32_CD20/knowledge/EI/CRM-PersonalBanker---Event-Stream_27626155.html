@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CRM PersonalBanker - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="27626153.html">CRM PersonalBanker - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CRM PersonalBanker - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Bře 09, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CRMPersonalBankerEventStream-Datovéentity"><span style="letter-spacing: 0.0px;">Datové entity</span></h1><p style="margin-top: 10.0px;font-size: 14.0px;letter-spacing: normal;"><span style="letter-spacing: 0.0px;">Jsou definovány následující datové entity:</span></p><ul><li><p>PersonalBanker</p></li></ul><h1 id="CRMPersonalBankerEventStream-Topicy"><span>Topicy</span></h1><p><span>Topicy nelze jednoduše rozdělit podle location parametru, ne všechny objekty jej mají vyplněn.</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Entity Type</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Název Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p title="">Typ Topicu</p></th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6" style="text-align: left;">Zdroj</th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6" style="text-align: left;">Cíl</th></tr><tr><td rowspan="4" style="text-align: left;" class="confluenceTd"><p>PersonalBanker</p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">JTB-CZ_PARTIES_PERSONAL-BANKER_</span><span style="color: rgb(23,43,77);">SYNC_GNR</span></p></td><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(23,43,77);">Průběžný</span></p></td><td colspan="1" style="text-align: left;" class="confluenceTd">CRM</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-CZ_PARTIES_PERSONAL-BANKER_RCN</span><span style="color: rgb(23,43,77);">_GNR</span></td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" style="text-align: left;" class="confluenceTd">CRM</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-SK_PARTIES_PERSONAL-BANKER_</span><span style="color: rgb(23,43,77);">SYNC_GNR</span></td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td colspan="1" style="text-align: left;" class="confluenceTd">CRM</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-SK_PARTIES_PERSONAL-BANKER_RCN</span><span style="color: rgb(23,43,77);">_GNR</span></td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" style="text-align: left;" class="confluenceTd">CRM</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">-</td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</span></td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Kontrolní</span></td><td colspan="1" style="text-align: left;" class="confluenceTd">CRM</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKCZ,DKSK</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd"><br/></td><td colspan="1" style="text-align: left;" class="confluenceTd"><br/></td><td colspan="1" style="text-align: left;" class="confluenceTd"><br/></td><td colspan="1" style="text-align: left;" class="confluenceTd"><br/></td><td colspan="1" style="text-align: left;" class="confluenceTd"><br/></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926691274 {padding: 0px;}
+div.rbtoc1684926691274 ul {margin-left: 0px;}
+div.rbtoc1684926691274 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926691274'>
+<ul class='toc-indentation'>
+<li><a href='#CRMPersonalBankerEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#CRMPersonalBankerEventStream-Topicy'>Topicy</a></li>
+<li><a href='#CRMPersonalBankerEventStream-Popispublikacedat'>Popis publikace dat</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMPersonalBankerEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+</ul>
+</li>
+<li><a href='#CRMPersonalBankerEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMPersonalBankerEventStream-Objem'>Objem</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CRMPersonalBankerEventStream-Popispublikacedat"><span>Popis publikace dat<br/></span></h1><p>CRM vkládá datovou entitu přímo do Kafka topicu. Výběr topicu se řídí parametrem <span style="color: rgb(23,43,77);">informací, zda jde o průběžnou změnu nebo událost v rámci inicializace nebo rekonciliace. Více v <a href="https://confluencedigi.jtfg.com/display/EI/Aspekty+integrace">Aspekty integrace</a></span></p><p>Spouštěče událostí pro vkládání dat jednotlivých datových entit do Kafky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 7.6087%;"/><col style="width: 21.7995%;"/><col style="width: 28.0797%;"/><col style="width: 42.5121%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p>Datová entita</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p>Spouštěč události</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p>Frekvence</p></th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6"><p>Poznámka</p></th></tr><tr><td class="confluenceTd"><p>PersonalBanker</p></td><td class="confluenceTd"><p>Jakákoliv změna na datovém objektu přes REST rozhraní a CRM konzoli</p></td><td class="confluenceTd"><p>Nyní není k dispozici odhad. Budeme revidovat na základě praxe</p></td><td colspan="1" class="confluenceTd"><p>Datový objekt je v CRM výrazně bohatší než je jeho publikovaná část. Z tohoto důvodu může docházet k vkládání stejných zpráv do Kafka topicu.</p><p>BCD bude fungovat, ale změna je možná i parametru, který není prezentován do Kafky a z pohledu jediné co se v události změní je bcd (timestamp).</p></td></tr></tbody></table></div><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schémata</span></p><p title="undefined">JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><h2 id="CRMPersonalBankerEventStream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h2><p><span>Při publikaci může docházet k duplicitám až na BCD. Od konzumentů se očekává deduplikace.</span></p><p><span>Více o ošetření chybových stavů viz <a href="https://confluencedigi.jtfg.com/display/EI/Aspekty+integrace" rel="nofollow">Aspekty integrace</a></span></p><h1 id="CRMPersonalBankerEventStream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><p>Kapacitní požadavky nejsou nyní odhadnuté.</p><h2 id="CRMPersonalBankerEventStream-Objem">Objem</h2><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 38.4359%;"><colgroup><col style="width: 16.763%;"/><col style="width: 22.1098%;"/><col style="width: 61.1272%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">Datová entita</th><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;" title="Barva pozadí: Světle žlutá 35 %">Objem</th></tr><tr><td rowspan="2" class="confluenceTd">PersonalBanker</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p title=""><strong><span style="color: rgb(0,0,0);">Celkem</span></strong></p></td><td class="highlight-#fffae6 confluenceTd" colspan="1" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><strong><span style="color: rgb(0,0,0);" title="">Denní změny</span></strong></td></tr><tr><td colspan="1" class="confluenceTd">cca 250 000 záznamů</td><td colspan="1" class="confluenceTd">Počet změn za den bohužel není jednoduše k dispozici.<br/>Odhad - desítky záznamů denně. Občas může docházet ke hromadným změnám u stovek až tisíců klientů. Toto jsou ale plánované operace, které neprovádí uživatelé, ale správci CRM.</td></tr></tbody></table></div><p><br/></p><p><br/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

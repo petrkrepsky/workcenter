@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : DispositionRightsForKUL - Workaround - API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="49251665.html">DispositionRightsForKUL - Workaround - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : DispositionRightsForKUL - Workaround - API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Rak Filip</span>, last modified on Bře 27, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="DispositionRightsForKULWorkaroundAPI-ProkomunikacisKUL(eBroker)využívámeslužbuzapisPravaPristupovehoUctuKPfDK">Pro komunikaci s KUL(eBroker) využíváme službu  zapisPravaPristupovehoUctuKPfDK</h1><p>API je vystaveno ve <a class="external-link" href="https://developerstest.jtfg.com/devportal/apis" rel="nofollow">WSO2</a>.</p><p>Tato služba WSDL se používá k zápisu přístupových práv k uživatelskému účtu v obchodním systému(eBroker). Umožňuje uživateli upravovat svá přístupová práva k různým portfoliím v rámci obchodního systému.</p><p>Služba využívá protokol SOAP (Simple Object Access Protocol) k výměně dat mezi klientem a serverem. Obálka SOAP obsahuje hlavičku s informacemi o kontextu zabezpečení, za kterou následuje tělo s hlavní zprávou požadavku.</p><h2 id="DispositionRightsForKULWorkaroundAPI-Mapovacítabulka">Mapovací tabulka </h2><p>K úspěšnému provolání SOAP služby, aplikace provede mapovaní z topicu a transformaci dat dle tabulek. </p><p>Mapovací Tabulka z topiku DispositionRights na soap službu zapisPravaPristupovehoUctuKPfDK.</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 620.0px;"><colgroup><col style="width: 122.0px;"/><col style="width: 56.0px;"/><col style="width: 123.0px;"/><col style="width: 122.0px;"/><col style="width: 85.0px;"/><col style="width: 65.0px;"/><col style="width: 101.0px;"/></colgroup><tbody><tr><th class="highlight-#ffe380 confluenceTh" colspan="3" data-highlight-colour="#ffe380" style="text-align: center;">Source location </th><th class="highlight-#ffe380 confluenceTh" data-highlight-colour="#ffe380" style="text-align: center;"><br/></th><th class="highlight-#ffe380 confluenceTh" colspan="3" data-highlight-colour="#ffe380" style="text-align: center;">Target location</th></tr><tr><th class="highlight-#fff0b3 confluenceTh" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;">TOPIC DispositionRights</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;"><br/></th><th class="highlight-#fff0b3 confluenceTh" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>zapisPravaPristupovehoUctuKPfDK</strong></th></tr><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Column</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Data type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Comments</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Transformation</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Column</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Data type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Comments</th></tr><tr><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(36,36,36);">CrmId</span><span style="color: rgb(36,36,36);"> </span></td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(36,36,36);">CRM ID klienta, který je  vlastníkem práv k portfoliu.</span></td><td style="text-align: center;" class="confluenceTd">→ </td><td style="text-align: left;" class="confluenceTd">userId</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(59,65,81);">string</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(36,36,36);">CRM ID <span class="inline-comment-marker" data-ref="ffc8bab2-69b8-4ebb-acec-b69a5d343df9">uživatele,</span> který je  vlastníkem práv k portfoliu</span></td></tr><tr><td style="text-align: left;" class="confluenceTd">ebrokerId</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(36,36,36);">string</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Portfolio identifikátor v eBroker</span></td><td style="text-align: center;" class="confluenceTd">→ </td><td style="text-align: left;" class="confluenceTd">idPortfolio</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(36,36,36);">integer</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(36,36,36);">eBroker ID portfolia ke kterému se vážou práva</span></td></tr><tr><td style="text-align: left;" class="confluenceTd">disponentRights</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">array</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Odkaz na číselníkovou kolekci DisponentRights</span></td><td style="text-align: center;" class="confluenceTd">Aplikace provede transformaci tabulky - <strong>Transformační tabulka pro zápis práv</strong></td><td style="text-align: left;" class="confluenceTd">prava</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(59,65,81);"><span style="color: rgb(23,43,77);">array of string </span></span></td><td style="text-align: left;" class="confluenceTd">Pole pro propis práv</td></tr><tr><td style="text-align: left;" class="confluenceTd">portfolios</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">array</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Kolekce disponentských opravnění k portfolií</span></td><td style="text-align: center;" class="confluenceTd">Aplikace provede transformaci tabulky - <strong>Transformační tabulka pro odstranění práv</strong></td><td style="text-align: left;" class="confluenceTd">prava</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(59,65,81);"><span style="color: rgb(23,43,77);">array of string </span></span></td><td style="text-align: left;" class="confluenceTd">Pole pro propis práv</td></tr></tbody></table></div><h2 id="DispositionRightsForKULWorkaroundAPI-Transformačnítabulka">Transformační tabulka </h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 123.0px;"/><col style="width: 81.0px;"/><col style="width: 123.0px;"/><col style="width: 87.0px;"/><col style="width: 218.0px;"/></colgroup><tbody><tr><th colspan="5" style="text-align: center;" class="confluenceTh">Transformační tabulka pro zápis práv</th></tr><tr><th class="highlight-#ffe380 confluenceTh" colspan="2" data-highlight-colour="#ffe380" style="text-align: center;">Source location </th><th class="highlight-#ffe380 confluenceTh" data-highlight-colour="#ffe380" style="text-align: center;"><br/></th><th class="highlight-#ffe380 confluenceTh" colspan="2" data-highlight-colour="#ffe380" style="text-align: center;">Target location</th></tr><tr><th class="highlight-#fff0b3 confluenceTh" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;">TOPIC DispositionRights</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;"><br/></th><th class="highlight-#fff0b3 confluenceTh" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>zapisPravaPristupovehoUctuKPfDK</strong></th></tr><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Column</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %">Value</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Transformation</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Column</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %">Value</th></tr><tr><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">disponentRights</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">buyOrder</span></td><td style="text-align: center;" class="confluenceTd">→ </td><td style="text-align: left;" class="confluenceTd">&lt;item&gt;</td><td style="text-align: left;" class="confluenceTd">opr_pok_web,opr_pok_pisemne, opr_pok_email, opr_pok_telefon </td></tr><tr><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">disponentRights</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">sellOrder</span></td><td style="text-align: center;" class="confluenceTd">→ </td><td style="text-align: left;" class="confluenceTd">&lt;item&gt;</td><td style="text-align: left;" class="confluenceTd">opr_pok_web,opr_pok_pisemne, opr_pok_email, opr_pok_telefon</td></tr><tr><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">disponentRights</span></td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">read</span></td><td style="text-align: center;" class="confluenceTd">→ </td><td style="text-align: left;" class="confluenceTd">&lt;item&gt;</td><td style="text-align: left;" class="confluenceTd">opr_cteni</td></tr></tbody></table></div><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 595.0px;"><colgroup><col style="width: 183.0px;"/><col style="width: 163.0px;"/><col style="width: 89.0px;"/><col style="width: 158.0px;"/></colgroup><tbody><tr><th colspan="4" style="text-align: center;" class="confluenceTh"><strong>Transformační tabulka pro odstranění práv</strong><strong><br/></strong></th></tr><tr><th class="highlight-#ffe380 confluenceTh" data-highlight-colour="#ffe380" style="text-align: center;">Source location </th><th class="highlight-#ffe380 confluenceTh" data-highlight-colour="#ffe380" style="text-align: center;"><br/></th><th class="highlight-#ffe380 confluenceTh" colspan="2" data-highlight-colour="#ffe380" style="text-align: center;">Target location</th></tr><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">TOPIC DispositionRights</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;"><br/></th><th class="highlight-#fff0b3 confluenceTh" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>zapisPravaPristupovehoUctuKPfDK</strong><br/><strong><br/></strong></th></tr><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Column</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: center;">Transformation</th><th class="highlight-#fff0b3 confluenceTh" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;">Column</th></tr><tr><td style="text-align: left;" class="confluenceTd">crmId</td><td style="text-align: center;" class="confluenceTd">→ </td><td style="text-align: left;" class="confluenceTd">&lt;klientId&gt;</td><td style="text-align: left;" class="confluenceTd">Vložíme hodnotu z topiku do soap req.</td></tr><tr><td style="text-align: left;" class="confluenceTd">portfolio</td><td style="text-align: center;" class="confluenceTd">→ </td><td style="text-align: left;" class="confluenceTd">&lt;prava&gt;</td><td style="text-align: left;" class="confluenceTd">Hodnota &quot;<strong>null</strong>&quot; representuje, že klient nemá žádné práva k žádným portfoliím, proto vkládáme do atributu &lt;prava&gt; jako prázdnou hodnotu. </td></tr></tbody></table></div><h2 id="DispositionRightsForKULWorkaroundAPI-MetodazapisPravaPristupovehoUctuKPfDK">Metoda zapisPravaPristupovehoUctuKPfDK</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" scope="col" title="Barva pozadí: Světle žlutá 100 %">Column</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" scope="col" title="Barva pozadí: Světle žlutá 100 %">Data type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" scope="col" title="Barva pozadí: Světle žlutá 100 %">Required</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" scope="col" title="Barva pozadí: Světle žlutá 100 %">Coment</th></tr><tr><td class="confluenceTd">klientId</td><td class="confluenceTd">string</td><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(36,36,36);">CRM ID klienta, který je  vlastníkem práv k portfoliu</span></td></tr><tr><td class="confluenceTd">idPortfolio</td><td class="confluenceTd">string</td><td class="confluenceTd">1</td><td class="confluenceTd"><span style="color: rgb(36,36,36);">eBroker ID portfolia ke kterému se vážou práva</span></td></tr><tr><td class="confluenceTd">prava</td><td class="confluenceTd">Array<br/>String</td><td class="confluenceTd">1</td><td class="confluenceTd">Pole pro propis práv</td></tr></tbody></table></div><p><br/></p><p>Přes soap službu je možné zapsat pouze jedny práva pro jedno portfolio. Tzv jestliže v Topicu přijde pro daného uživatele více portfolio. Aplikace vybere každé portfolio a zavolá soap službu per portfolio. </p><p><strong>Příklad zapsaní práv pro 2 a více portfolii:</strong></p><p>V daném jsonu máme 2 portfolia 1,2.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">&quot;portfolio&quot;: [{
+					&quot;portfolioIds&quot;: {
+						&quot;ebrokerId&quot;: 1
+					},
+					&quot;authorizations&quot;: [
+						{
+							&quot;channel&quot;: &quot;internetBanking&quot;,
+							&quot;disponentRights&quot;: [
+								&quot;read&quot;,
+								&quot;buyOrder&quot;
+							]
+						},
+						{
+							&quot;channel&quot;: &quot;mobileBanking&quot;,
+							&quot;disponentRights&quot;: [
+								&quot;read&quot;,
+								&quot;buyOrder&quot;
+							]
+						}
+					]
+				},
+				{
+					&quot;portfolioIds&quot;: {
+						&quot;ebrokerId&quot;: 2
+					},
+					&quot;authorizations&quot;: [
+						{
+							&quot;channel&quot;: &quot;internetBanking&quot;,
+							&quot;disponentRights&quot;: [
+								&quot;read&quot;,
+								&quot;buyOrder&quot;
+							]
+						},
+						{
+							&quot;channel&quot;: &quot;mobileBanking&quot;,
+							&quot;disponentRights&quot;: [
+								&quot;read&quot;,
+								&quot;buyOrder&quot;
+							]
+						}
+					]
+				}
+			]</pre>
+</div></div><p><br/></p><p><strong>Soap volání:</strong></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Request 1</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence"> &lt;request&gt;
+
+                        &lt;!--You may enter the following 3 items in any order--&gt;
+
+                        &lt;klientId&gt;12345&lt;/klientId&gt;
+
+                        &lt;idPortfolio&gt;1&lt;/idPortfolio&gt;
+
+                        &lt;prava&gt;
+
+                              &lt;!--Zero or more repetitions:--&gt;
+
+                              &lt;item&gt;opr_pok_web&lt;/item&gt;
+
+                              &lt;item&gt;opr_pok_pisemne&lt;/item&gt;
+
+                              &lt;item&gt;opr_pok_email&lt;/item&gt;
+
+                              &lt;item&gt;opr_pok_telefon&lt;/item&gt;
+
+                        &lt;/prava&gt;
+
+                  &lt;/request&gt;</pre>
+</div></div><p><br/></p><p>-------------------------------------------------------------------------------------------</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Request 2</b></div><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence"> &lt;request&gt;
+
+                        &lt;!--You may enter the following 3 items in any order--&gt;
+
+                        &lt;klientId&gt;12345&lt;/klientId&gt;
+
+                        &lt;idPortfolio&gt;2&lt;/idPortfolio&gt;
+
+                        &lt;prava&gt;
+
+                              &lt;!--Zero or more repetitions:--&gt;
+
+                              &lt;item&gt;opr_pok_web&lt;/item&gt;
+
+                              &lt;item&gt;opr_pok_pisemne&lt;/item&gt;
+
+                              &lt;item&gt;opr_pok_email&lt;/item&gt;
+
+                              &lt;item&gt;opr_pok_telefon&lt;/item&gt;
+
+                        &lt;/prava&gt;
+
+                  &lt;/request&gt;</pre>
+</div></div><p><strong>Příklad smazaní práv pro uživatele:</strong></p><p>V příkladu vidíme, že portfolio: null </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">{
+	&quot;businessChangeDate&quot;: &quot;2023-03-09T08:18:15.969738+01:00&quot;,
+	&quot;owner&quot;: {
+		&quot;crmId&quot;: &quot;1000117111&quot;
+	},
+	&quot;businessChangeApp&quot;: &quot;digitalBankingCZ&quot;,
+	&quot;businessChangeChannel&quot;: &quot;callcentrum&quot;,
+	&quot;products&quot;: {
+		&quot;investment&quot;: {
+			&quot;portfolio&quot;: null
+		}
+	},
+	&quot;X-Correlation-ID&quot;: &quot;c90647e3-76f5-ada4-06a3-3e54e5ba5c70&quot;
+}</pre>
+</div></div><p>Soap volání bude vypadat takto: </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">&lt;request&gt;
+     &lt;!--You may enter the following 3 items in any order--&gt;
+     &lt;klientId&gt;1000117111&lt;/klientId&gt;
+     &lt;prava&gt;     
+     &lt;/prava&gt;
+&lt;/request&gt;</pre>
+</div></div><p><br/></p><p><span class="confluence-embedded-file-wrapper"><a class="confluence-embedded-file" href="/download/attachments/49251668/osoba.zip?version=2&amp;modificationDate=1677604478200&amp;api=v2" data-nice-type="Zip Archive" data-file-src="/download/attachments/49251668/osoba.zip?version=2&amp;modificationDate=1677604478200&amp;api=v2" data-linked-resource-id="53215375" data-linked-resource-type="attachment" data-linked-resource-container-id="49251668" data-linked-resource-default-alias="osoba.zip" data-mime-type="application/zip" data-has-thumbnail="false" data-linked-resource-version="2" data-can-edit="true" aria-label="osoba.zip" draggable="false"><img src="download/resources/com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-resources/images/placeholder-medium-zip.png" height="250" alt="" draggable="false"/><span class="title">osoba.zip</span></a><span class="companion-edit-button-placeholder edit-button-overlay" data-linked-resource-container-id="49251668" data-linked-resource-id="53215375" data-template-name="companionEditIcon" data-source-location="embedded-attachment"></span></span></p><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926678487 {padding: 0px;}
+div.rbtoc1684926678487 ul {margin-left: 0px;}
+div.rbtoc1684926678487 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926678487'>
+<ul class='toc-indentation'>
+<li><a href='#DispositionRightsForKULWorkaroundAPI-ProkomunikacisKUL(eBroker)využívámeslužbuzapisPravaPristupovehoUctuKPfDK'>Pro komunikaci s KUL(eBroker) využíváme službu zapisPravaPristupovehoUctuKPfDK</a>
+<ul class='toc-indentation'>
+<li><a href='#DispositionRightsForKULWorkaroundAPI-Mapovacítabulka'>Mapovací tabulka</a></li>
+<li><a href='#DispositionRightsForKULWorkaroundAPI-Transformačnítabulka'>Transformační tabulka</a></li>
+<li><a href='#DispositionRightsForKULWorkaroundAPI-MetodazapisPravaPristupovehoUctuKPfDK'>Metoda zapisPravaPristupovehoUctuKPfDK</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251669.png">FxRate - Recon Daily.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251670.png">FxRate - Recon Instant.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251671.json">FxRates_Reconciliation_API_definition.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251672.png">FxRateDaily - ECB - Recon - princip.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251673.png">FxRate - Daily - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251674.png">FxRate - Instant - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251675.png">FxRate - Číselník.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251676.json">FxRates Reconciliation API.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251677.yaml">Accounts_Reconcilitaion_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/49251678.yaml">contact_Reconciliation_API_definition.yaml</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/51544738.xml">parties_DispositionRightsForKUL_workaround.xml</a> (text/xml)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/53215492.zip">osoba.zip</a> (application/zip)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251668/53215375.zip">osoba.zip</a> (application/zip)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

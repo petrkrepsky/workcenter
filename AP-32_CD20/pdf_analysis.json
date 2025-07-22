@@ -1,0 +1,210 @@
+{
+  "high_level_components": {
+    "strategy": [
+      "vstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie)",
+      "Potvrzení strategie klientem",
+      "BRQ11: Reinvestování peněžních prostředků v rámci strategie",
+      "cílová částka, měsíční investice - detail viz BRQ01 Vytvoření první strategie ",
+      "05Strategie Aktivace první strategie",
+      "vstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie), předpokládaná míra inflace",
+      "vstupem od klienta jsou: cílová částka, výše pravidelného měsíčného vkladu, výše jednorázového vkladu",
+      "vstupem od banky je: doba investování, předpokládaný výnos (stanovený na základě zvolené strategie)",
+      "Uložení strategie pro pozdější použití (po zasmluvnění)",
+      "14Strategie Změna parametrů investiční strategie",
+      "Založení strategie do TA",
+      "po obdržení platby banka připíše peněžní prostředky na peněžní složku portfolia (strategie) k investici",
+      "BRQ05: Aktivace první strategie",
+      "výstupem je cílová částka se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)",
+      "rámci strategie",
+      "BRQ13: Vytvoření a aktivace další strategie",
+      "Cílová částka - Klient ví, kdy chce mít cílovou částku",
+      "BRQ02: Vytvoření první strategie",
+      "po obdržení platby banka připíše peněžní prostředky na peněžní složku portfolia (strategie) k investici ",
+      "vstupem od klienta jsou: cílová částka, doba investování, výše jednorázového vkladu",
+      "Banka převede příslušné peněžní prostředky z peněžní složky portfolia (strategie) pro výnosy na peněžní složku k investicím",
+      "cílová částka, měsíční investice",
+      "BRQ08: Nákup fondů Investují se všechny peněžní prostředky evidované na peněžní složce portfolia (strategie) určené k investicím - každý den, pokud je dost peněz na celou ",
+      "Cílová částka - Klient ví, kolik chce pravidelně měsíčně vkládat",
+      "Vytvoří se X objednávek v poměru mezi jednotlivými fondy dle strategie",
+      "Bez cíle - Klient ví, kolik si chce odkládat, ale neví, na jak dlouho",
+      "BRQ11: Reinvestování peněžních prostředků v rámci strategie Převod peněžních prostředků z peněžní složky portfolia (strategie) pro výnosy na peněžní složku k investicím",
+      "02Strategie Vytvoření první strategie",
+      "BRQ13: Vytvoření a aktivace další strategie Modelace strategie – jsou dostupné tři varianty (cílová částka, renta, bez cíle), součástí je výběr přednastavené strategie – výsledkem je cíl, investiční horizont, ",
+      "BRQ02: Vytvoření první strategie Modelace strategie – jsou dostupné tři varianty (cílová částka, renta, bez cíle), součástí je výběr přednastavené strategie – výsledkem je cíl, investiční horizont, ",
+      "strategii (minimální částka strategie)",
+      "Zobrazení vytvořené strategie",
+      "Po vypořádání zpětných odkupů jsou peněžní prostředky připsány bankou na peněžní složce portfolia (strategie) pro výnosy",
+      "Validace strategie (vůči Investičnímu dotazníku) - pouze nový klient",
+      "Validace strategie (vůči Investičnímu dotazníku)",
+      "Dividendy jsou připsány na peněžní složku portfolia (strategie) pro výnosy (automaticky se nereinvestují)",
+      "Výběr peněžních prostředků z peněžní složky portfolia (strategie) pro výnosy na autorizovaný účet (i mimo JTB)",
+      "BRQ14: Změna parametrů investiční strategie",
+      "po autorizaci platby banka připíše peněžní prostředky na peněžní složku portfolia (strategie) k investici (vzniká technický debet)",
+      "Pokyn k nákupu se na investiční dotazník klienta nevaliduje, validace proběhla při zadání strategie",
+      "Mění se pouze parametry strategie, nemění se obsah strategie (fondy ve strategii a jejich poměr) Cílová částka - Klient ví, kdy chce mít cílovou částku",
+      "13Strategie Vytvoření a aktivace další strategie"
+    ],
+    "locations": [],
+    "capabilities": [],
+    "processes": [],
+    "actors": [
+      "Pokyn k nákupu se na investiční dotazník klienta nevaliduje, validace proběhla při zadání strategie",
+      "klient si zobrazí v mobilní aplikaci platební údaje (číslo sběrného účtu, variabilní číslo (KID portfolia)), případně si vygeneruje QR kód (může zadat ",
+      "Potvrzení strategie klientem",
+      "platební brána odešle požadavek do karetního centra a klient autorizuje platbu platební kartou dle pravidel své banky (případně v rámci ApplePay",
+      "vstupem od klienta jsou: výše pravidelného měsíčného vkladu, výše jednorázového vkladu",
+      "vstupem od klienta jsou: cílová částka, výše pravidelného měsíčného vkladu, výše jednorázového vkladu",
+      "Přihlášení klienta (pokud jde o stávajícího klienta) - prostřednictvím SMS (jméno, heslo do DK, potvrzení SMS) ",
+      "klient zadá v mobilní aplikaci (resp",
+      "15Klientské údaje Zadání/změna autorizovaného účtu",
+      "vstupem od klienta jsou: výše měsíční renty, výše pravidelného měsíčného vkladu, výše jednorázového vkladu, doba investování",
+      "Potvrzení identifikačních údajů (bez možnosti editace) a kontaktních údajů klientem",
+      "Cílová částka - Klient ví, kdy chce mít cílovou částku",
+      "Renta - Klient ví, jak dlouho chce čerpat rentu",
+      "platební brána odešle požadavek do karetního centra a klient autorizuje platbu platební kartou dle pravidel své banky (pokud je to relevantní)",
+      "BRQ03: Zasmluvnění klienta - nový klient (Bank iD) Vzdálená identifikace přes Bank iD",
+      "Založení klienta do CRM - klienti budou zakládáni pod novou úroveň obsluhy",
+      "Vytvoření hesla do Sezam (uživatelské jméno je CRM ID) ",
+      "vstupem od klienta jsou: cílová částka, doba investování, výše jednorázového vkladu",
+      "Nastavení biometrie - nepovinně (pokud jde o stávajícího klienta)",
+      "Cílová částka - Klient ví, kolik chce pravidelně měsíčně vkládat",
+      "BRQ03: Zasmluvnění klienta - nový klient (Bank iD)",
+      "Klient zadá v mobilní aplikaci pokyn k prodeji části/celého portfolia - definuje objem v CZK nebo vše",
+      "Klient zadá v mobilní aplikaci pokyn k výběru peněz - částka nebo celý disponibilní zůstatek, vybere autorizovaný účet",
+      "Renta - Klient ví, kolik chce pravidelně měsíčně vkládat",
+      "pro nového i stávajícího klienta)",
+      "03Zasmluvnění klienta Zasmluvnění nového klienta s ",
+      "Bez cíle - Klient ví, kolik si chce odkládat, ale neví, na jak dlouho",
+      "klient zadá v mobilní aplikaci požadavek na změnu pravidelného převodu peněžních prostředků z platební karty - zadá novou platební kartu (jméno a ",
+      "klient zadá v mobilní aplikaci požadavek na zrušení pravidelného převodu peněžních prostředků z platební karty",
+      "Nastavení PIN aplikace (pokud jde o stávajícího klienta)",
+      "Zobrazení identifikačních údajů získaných z CRM Potvrzení identifikačních údajů klientem (bez možnosti editace)",
+      "Prodej konkrétního fondu – pokyn na ks nebo vše Klient zadá v mobilní aplikaci pokyn k prodeji konkrétního fondu na portfoliu - definuje počet ks nebo vše",
+      "BRQ04: Zasmluvnění stávajícího klienta",
+      "16Klientské údaje Aktualizace AML a Investičního ",
+      "Validace strategie (vůči Investičnímu dotazníku) - pouze nový klient",
+      "klient zadá ze svého platebního účtu trvalý platební příkaz (zadá platební údaje nebo použije QR kód)",
+      "klient zadá v mobilní aplikaci požadavek (resp",
+      "dokumenty (shodné pro nového i stávajícího klienta)",
+      "Mění se pouze parametry strategie, nemění se obsah strategie (fondy ve strategii a jejich poměr) Cílová částka - Klient ví, kdy chce mít cílovou částku",
+      "vstupem od klienta jsou: výše měsíční renty, doba čerpání renty, výše jednorázového vkladu, doba investování",
+      "Automatické AML a obchodní schválení klienta v CRM ",
+      "klient zadá ze svého platebního účtu platební příkaz (zadá platební údaje nebo použije QR kód)",
+      "Klient zadá v mobilní aplikaci pokyn k reinvestování peněžních prostředků - částka nebo vše",
+      "Založení klienta ve WAC",
+      "Nový klient si nastaví PIN aplikace a biometrii v rámci zasmluvnění (po jeho ztotožnění a vytvoření identity v Sezam)",
+      "04Zasmluvnění klienta Zasmluvnění stávajícího klienta"
+    ],
+    "applications": [
+      "BRQ01: Instalace aplikace",
+      "01Aplikace Instalace aplikace Instalace, nastavení PIN, biometrie",
+      "Nastavení PIN aplikace (pokud jde o stávajícího klienta)",
+      "Potvrzení hesla / Ověření držení telefonního čísla (zasláním SMS kódu a jejím zadáním do aplikace CD 2",
+      "banka zruší platbu platební kartou ve svém systému (a na platební bráně)",
+      "Nový klient si nastaví PIN aplikace a biometrii v rámci zasmluvnění (po jeho ztotožnění a vytvoření identity v Sezam)",
+      "BRQ01: Instalace aplikace Stažení mobilní aplikace",
+      "banka zaeviduje nové parametry platby platební kartou do svého systému (a na platební bráně)"
+    ]
+  },
+  "business_requirements": [
+    "BRQ06: Převod peněžních prostředků - z účtu",
+    "BRQ11: Reinvestování peněžních prostředků v rámci strategie",
+    "BRQ05: Aktivace první strategie",
+    "BRQ13: Vytvoření a aktivace další strategie",
+    "BRQ03: Zasmluvnění klienta - nový klient (Bank iD) Vzdálená identifikace přes Bank iD",
+    "BRQ02: Vytvoření první strategie",
+    "BRQ12: Korporátní akce",
+    "BRQ10: Výběr peněžních prostředků",
+    "BRQ08: Nákup fondů Investují se všechny peněžní prostředky evidované na peněžní složce portfolia (strategie) určené k investicím - každý den, pokud je dost peněz na celou ",
+    "BRQ03: Zasmluvnění klienta - nový klient (Bank iD)",
+    "BRQ11: Reinvestování peněžních prostředků v rámci strategie Převod peněžních prostředků z peněžní složky portfolia (strategie) pro výnosy na peněžní složku k investicím",
+    "BRQ01: Instalace aplikace",
+    "BRQ08: Nákup fondů",
+    "BRQ13: Vytvoření a aktivace další strategie Modelace strategie – jsou dostupné tři varianty (cílová částka, renta, bez cíle), součástí je výběr přednastavené strategie – výsledkem je cíl, investiční horizont, ",
+    "BRQ02: Vytvoření první strategie Modelace strategie – jsou dostupné tři varianty (cílová částka, renta, bez cíle), součástí je výběr přednastavené strategie – výsledkem je cíl, investiční horizont, ",
+    "BRQ06: Převod peněžních prostředků - z účtu Jednorázový převod z účtu - QR kód",
+    "BRQ04: Zasmluvnění stávajícího klienta",
+    "BRQ18: Správa strategií a fondů dostupných ve strategiích",
+    "BRQ15: Zadání/změna autorizovaného účtu",
+    "BRQ07: Zaslání peněžních prostředků - platební kartou",
+    "BRQ17: Výpisy a konfirmace",
+    "BRQ12: Korporátní akce Korporátní akce standardně",
+    "BRQ14: Změna parametrů investiční strategie",
+    "BRQ16: Aktualizace AML a Investičního dotazníku",
+    "BRQ16: Aktualizace AML a Investičního dotazníku BRQ17: Výpisy a konfirmace",
+    "BRQ09: Prodej fondů",
+    "BRQ01 Vytvoření první strategie ",
+    "BRQ01: Instalace aplikace Stažení mobilní aplikace"
+  ],
+  "process_steps": [],
+  "full_text_by_pages": [
+    {
+      "page": 1,
+      "text": "01 Businessové zadání - Business Architektura - požadavky BA\nHigh level pohled\nSeznam BRQ\nBRQ01: Instalace aplikace\nBRQ02: Vytvoření první strategie\nBRQ03: Zasmluvnění klienta - nový klient (Bank iD)\nBRQ04: Zasmluvnění stávajícího klienta\nBRQ05: Aktivace první strategie\nBRQ06: Převod peněžních prostředků - z účtu\nBRQ07: Zaslání peněžních prostředků - platební kartou\nBRQ08: Nákup fondů\nBRQ09: Prodej fondů\nBRQ10: Výběr peněžních prostředků\nBRQ11: Reinvestování peněžních prostředků v rámci strategie\nBRQ12: Korporátní akce\nBRQ13: Vytvoření a aktivace další strategie\nBRQ14: Změna parametrů investiční strategie\nBRQ15: Zadání/změna autorizovaného účtu\nBRQ16: Aktualizace AML a Investičního dotazníku\nBRQ17: Výpisy a konfirmace\nBRQ18: Správa strategií a fondů dostupných ve strategiích\nHigh level pohled"
+    },
+    {
+      "page": 3,
+      "text": "Seznam BRQ\nID Oblast Název Popis\nBRQ\n01Aplikace Instalace aplikace Instalace, nastavení PIN, biometrie\nBRQ\n02Strategie Vytvoření první strategie\nBRQ\n03Zasmluvnění klienta Zasmluvnění nového klienta s \nidentifikací přes Bank iD\nBRQ\n04Zasmluvnění klienta Zasmluvnění stávajícího klienta\nBRQ\n05Strategie Aktivace první strategie\nBRQ\n06Převody peněžních \nprostředkůPřevod peněžních prostředků - z účtu\nBRQ\n07Převody peněžních \nprostředkůPřevod peněžních prostředků - \nplatební kartou\nBRQ\n08Obchody s fondy Nákup fondů\nBRQ\n09Obchody s fondy Prodej fondů\nBRQ\n10Převody peněžních \nprostředkůVýběr peněžních prostředků\nBRQ\n11Převody peněžních \nprostředkůReinvestování peněžních prostředků v \nrámci strategie\nBRQ\n12Korporátní akce Výplata dividend\nBRQ\n13Strategie Vytvoření a aktivace další strategie\nBRQ\n14Strategie Změna parametrů investiční strategie\nBRQ\n15Klientské údaje Zadání/změna autorizovaného účtu\nBRQ\n16Klientské údaje Aktualizace AML a Investičního \ndotazníku\nBRQ\n17Výpisy Výpisy a konfirmace Konfirmace (potvrzení) o jednotlivých obchodech, m ěsíční výpis portfolia (stav, pohyby, vývoj), roční výpis \nnákladů a pobídek, roční výpis výnosů (dividend)\nBRQ\n18Nabídka produktů Správa strategií a fondů dostupných \nve strategiíchDopady na Produktový katalog\nBRQ01: Instalace aplikace"
+    },
+    {
+      "page": 4,
+      "text": "Stažení mobilní aplikace\nPřihlášení klienta (pokud jde o stávajícího klienta) - prostřednictvím SMS (jméno, heslo do DK, potvrzení SMS) \nNastavení PIN aplikace (pokud jde o stávajícího klienta)\nNastavení biometrie - nepovinně (pokud jde o stávajícího klienta)\nNový klient si nastaví PIN aplikace a biometrii v rámci zasmluvnění (po jeho ztotožnění a vytvoření identity v Sezam)\nBRQ02: Vytvoření první strategie"
+    },
+    {
+      "page": 5,
+      "text": "Modelace strategie – jsou dostupné tři varianty (cílová částka, renta, bez cíle), součástí je výběr přednastavené strategie – výsledkem je cíl, investiční horizont, \ncílová částka, měsíční investice\nCílová částka - Klient ví, kdy chce mít cílovou částku\nvstupem od klienta jsou: cílová částka, doba investování, výše jednorázového vkladu\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie)\nvýstupem je potřebná výše pravidelného vkladu se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nCílová částka - Klient ví, kolik chce pravidelně měsíčně vkládat\nvstupem od klienta jsou: cílová částka, výše pravidelného měsíčného vkladu, výše jednorázového vkladu\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie)\nvýstupem je potřebná dobra pravidelného investování se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nRenta - Klient ví, kolik chce pravidelně měsíčně vkládat\nvstupem od klienta jsou: výše měsíční renty, výše pravidelného měsíčného vkladu, výše jednorázového vkladu, doba investování\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie), předpokládaná míra inflace\nvýstupem je potřebná doba čerpání renty se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nRenta - Klient ví, jak dlouho chce čerpat rentu\nvstupem od klienta jsou: výše měsíční renty, doba čerpání renty, výše jednorázového vkladu, doba investování\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie), předpokládaná míra inflace\nvýstupem je potřebná výše pravidelného vkladu se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nBez cíle - Klient ví, kolik si chce odkládat, ale neví, na jak dlouho\nvstupem od klienta jsou: výše pravidelného měsíčného vkladu, výše jednorázového vkladu\nvstupem od banky je: doba investování, předpokládaný výnos (stanovený na základě zvolené strategie)\nvýstupem je cílová částka se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nUložení strategie pro pozdější použití (po zasmluvnění)\nBRQ03: Zasmluvnění klienta - nový klient (Bank iD)"
+    },
+    {
+      "page": 6,
+      "text": "Vzdálená identifikace přes Bank iD\nZobrazení identifikačních údajů získaných přes Bank iD\nPřípadná editace/vyplnění kontaktních údajů (telefon, e-mail, korespondenční adresa)\nPotvrzení identifikačních údajů (bez možnosti editace) a kontaktních údajů klientem\nKontrola jedinečnosti telefonu vůči SEZAM\nOvěření jedinečnosti RČ vůči CRM\nZaložení klienta do CRM - klienti budou zakládáni pod novou úroveň obsluhy\nVyplnění AML a Investičního dotazníku\nAutomatické AML a obchodní schválení klienta v CRM \nZaložení digitální identity v Sezam\nVytvoření hesla do Sezam (uživatelské jméno je CRM ID) \nPotvrzení hesla / Ověření držení telefonního čísla (zasláním SMS kódu a jejím zadáním do aplikace CD 2.0)\nZaložení hlavičky smlouvy, vygenerování smlouvy v CRM (HD dokumenty) -  je potřebné založit nový typ (kód) smlouvy a nový vzor do HD dokumentů\nZobrazení smlouvy a předsmluvních informací, možnost zaslání na e-mail - nutno založit nové úložiště předsmluvních dokumentů a doplnit příslušné \ndokumenty\nPodpis smlouvy (autorizace aplikací CD 2.0), zaslání na e-mail\nPropis uzavření smlouvy do CRM\nZaložení klienta ve WAC\nBRQ04: Zasmluvnění stávajícího klienta\nZobrazení identifikačních údajů získaných z CRM"
+    },
+    {
+      "page": 7,
+      "text": "Potvrzení identifikačních údajů klientem (bez možnosti editace)\nZaložení hlavičky smlouvy, vygenerování smlouvy v CRM (HD dokumenty) - je potřebné založit nový typ (kód) smlouvy a nový vzor do HD dokumentů (shodné \npro nového i stávajícího klienta)\nZobrazení smlouvy a předsmluvních informací, možnost zaslání na e-mail - nutno založit nové úložiště předsmluvních dokumentů a doplnit příslušné \ndokumenty (shodné pro nového i stávajícího klienta)\nPodpis smlouvy (autorizace aplikací CD 2.0), zaslání na e-mail\nPropis uzavření smlouvy do CRM\nBRQ05: Aktivace první strategie\nZobrazení vytvořené strategie\nValidace strategie (vůči Investičnímu dotazníku) - pouze nový klient\nPotvrzení strategie klientem\nZaložení portfolia do TOPAS\nZaložení strategie do TA\nBRQ06: Převod peněžních prostředků - z účtu"
+    },
+    {
+      "page": 8,
+      "text": "Jednorázový převod z účtu - QR kód\nklient si zobrazí v mobilní aplikaci platební údaje (číslo sběrného účtu, variabilní číslo (KID portfolia)), případně si vygeneruje QR kód (může zadat \nvolitelně i částku)\nklient zadá ze svého platebního účtu platební příkaz (zadá platební údaje nebo použije QR kód)\npo obdržení platby banka připíše peněžní prostředky na peněžní složku portfolia (strategie) k investici \nPravidelný převod měsíčně (trvalý příkaz) – QR kód, zadání/změna (výše, datum)\nklient si zobrazí v mobilní aplikaci platební údaje (číslo sběrného účtu, variabilní číslo (KID portfolia)), případně si vygeneruje QR kód (může zadat \nvolitelně i částku, frekvenci a datum v období)\nklient zadá ze svého platebního účtu trvalý platební příkaz (zadá platební údaje nebo použije QR kód)\npo obdržení platby banka připíše peněžní prostředky na peněžní složku portfolia (strategie) k investici\nBRQ07: Zaslání peněžních prostředků - platební kartou\nJednorázová platba kartou – zadání, převod peněžních prostředků"
+    },
+    {
+      "page": 9,
+      "text": " \nklient zadá v mobilní aplikaci požadavek (resp. na platební bráně) na převod peněžních prostředků z platební karty - zadá platební kartu (jméno a \npříjmení držitele, číslo karty, platnost karty, CVC kód) a výši převodu, případně vybere platbu přes ApplePay/GooglePay (zadá výši převodu a vybere \nplatební kartu)\nplatební brána odešle požadavek do karetního centra a klient autorizuje platbu platební kartou dle pravidel své banky (případně v rámci ApplePay\n/GooglePay)\npo autorizaci platby banka připíše peněžní prostředky na peněžní složku portfolia (strategie) k investici (vzniká technický debet)\npo obdržení platby banka vyrovná technický debet\nPravidelná platba kartou – zadání, převod peněžních prostředků\n \nklient zadá v mobilní aplikaci (resp. na platební bráně) požadavek na pravidelný převod peněžních prostředků z platební karty - zadá platební kartu \n(jméno a příjmení držitele, číslo karty, platnost karty, CVC kód) a výši převodu, frekvenci a datum v období, případně vybere platbu přes ApplePay\n/GooglePay (zadá výši převodu, frekvenci a datum v období a vybere platební kartu)\nplatební brána odešle požadavek do karetního centra a klient autorizuje platbu platební kartou dle pravidel své banky (případně v rámci ApplePay\n/GooglePay)\nplatební brána v pravidelných intervalech předává do karetního centra požadavek na realizaci platby v definované výši \npo obdržení platby banka připíše peněžní prostředky na peněžní složku portfolia (strategie) k investici\nPravidelná platba kartou – změna"
+    },
+    {
+      "page": 10,
+      "text": " \nklient zadá v mobilní aplikaci požadavek na změnu pravidelného převodu peněžních prostředků z platební karty - zadá novou platební kartu (jméno a \npříjmení držitele, číslo karty, platnost karty, CVC kód) nebo novou výši převodu, frekvenci a datum v období, případně vybere platbu přes ApplePay\n/GooglePay (vybere novou platební kartu nebo zadá novou výši převodu, frekvenci a datum v období)\nplatební brána odešle požadavek do karetního centra a klient autorizuje platbu platební kartou dle pravidel své banky (pokud je to relevantní)\nbanka zaeviduje nové parametry platby platební kartou do svého systému (a na platební bráně)\nPravidelná platba kartou – zrušení"
+    },
+    {
+      "page": 11,
+      "text": " \nklient zadá v mobilní aplikaci požadavek na zrušení pravidelného převodu peněžních prostředků z platební karty\nbanka zruší platbu platební kartou ve svém systému (a na platební bráně)\nBRQ08: Nákup fondů"
+    },
+    {
+      "page": 12,
+      "text": "Investují se všechny peněžní prostředky evidované na peněžní složce portfolia (strategie) určené k investicím - každý den, pokud je dost peněz na celou \nstrategii (minimální částka strategie)\nPokyn k nákupu se na investiční dotazník klienta nevaliduje, validace proběhla při zadání strategie\nVytvoří se X objednávek v poměru mezi jednotlivými fondy dle strategie\nObjednávka fondů a vypořádání obchodů - standardně\nBRQ09: Prodej fondů\nProdej části/celého portfolia - pokyn na objem nebo vše\nKlient zadá v mobilní aplikaci pokyn k prodeji části/celého portfolia - definuje objem v CZK nebo vše\nBanka dle podílu jednotlivých fondů na portfoliu zadá X pokynů ke zpětnému odkupu\nProdej konkrétního fondu – pokyn na ks nebo vše"
+    },
+    {
+      "page": 13,
+      "text": "Klient zadá v mobilní aplikaci pokyn k prodeji konkrétního fondu na portfoliu - definuje počet ks nebo vše\nBanka zadá pokyn ke zpětnému odkupu konkrétního fondu\nPo vypořádání zpětných odkupů jsou peněžní prostředky připsány bankou na peněžní složce portfolia (strategie) pro výnosy\nBRQ10: Výběr peněžních prostředků\nVýběr peněžních prostředků z peněžní složky portfolia (strategie) pro výnosy na autorizovaný účet (i mimo JTB)\nKlient zadá v mobilní aplikaci pokyn k výběru peněz - částka nebo celý disponibilní zůstatek, vybere autorizovaný účet\nPokud se jedná o výběr peněžních prostředků na účet v JTB, proběhne převod peněžních prostředků automaticky\nPokud se jedná o výběr peněžních prostředků na účet mimo JTB, je vygenerován požadavek na OBOFT k realizaci výběru peněžních prostředků dle \npokynu\nOBOFT následně zajistí převod peněžních prostředků dle pokynu - standardně\nBRQ11: Reinvestování peněžních prostředků v rámci strategie"
+    },
+    {
+      "page": 14,
+      "text": "Převod peněžních prostředků z peněžní složky portfolia (strategie) pro výnosy na peněžní složku k investicím\nKlient zadá v mobilní aplikaci pokyn k reinvestování peněžních prostředků - částka nebo vše\nBanka převede příslušné peněžní prostředky z peněžní složky portfolia (strategie) pro výnosy na peněžní složku k investicím\nBRQ12: Korporátní akce"
+    },
+    {
+      "page": 15,
+      "text": "Korporátní akce standardně\nDividendy jsou připsány na peněžní složku portfolia (strategie) pro výnosy (automaticky se nereinvestují)\nBRQ13: Vytvoření a aktivace další strategie"
+    },
+    {
+      "page": 16,
+      "text": "Modelace strategie – jsou dostupné tři varianty (cílová částka, renta, bez cíle), součástí je výběr přednastavené strategie – výsledkem je cíl, investiční horizont, \ncílová částka, měsíční investice - detail viz BRQ01 Vytvoření první strategie \nValidace strategie (vůči Investičnímu dotazníku)\nPotvrzení strategie klientem\nZaložení portfolia do TOPAS\nZaložení strategie do TA\nBRQ14: Změna parametrů investiční strategie\n \nNeuplatní se na již realizované investice (včetně již spuštěných), platí pro nové peněžní prostředky na peněžní složce pro investice\nMění se pouze parametry strategie, nemění se obsah strategie (fondy ve strategii a jejich poměr)"
+    },
+    {
+      "page": 17,
+      "text": "Cílová částka - Klient ví, kdy chce mít cílovou částku\nvstupem od klienta jsou: cílová částka, doba investování, výše jednorázového vkladu\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie)\nvýstupem je potřebná výše pravidelného vkladu se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nCílová částka - Klient ví, kolik chce pravidelně měsíčně vkládat\nvstupem od klienta jsou: cílová částka, výše pravidelného měsíčného vkladu, výše jednorázového vkladu\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie)\nvýstupem je potřebná dobra pravidelného investování se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nRenta - Klient ví, kolik chce pravidelně měsíčně vkládat\nvstupem od klienta jsou: výše měsíční renty, výše pravidelného měsíčného vkladu, výše jednorázového vkladu, doba investování\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie), předpokládaná míra inflace\nvýstupem je potřebná doba čerpání renty se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nRenta - Klient ví, jak dlouho chce čerpat rentu\nvstupem od klienta jsou: výše měsíční renty, doba čerpání renty, výše jednorázového vkladu, doba investování\nvstupem od banky je: předpokládaný výnos (stanovený na základě zvolené strategie), předpokládaná míra inflace\nvýstupem je potřebná výše pravidelného vkladu se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nBez cíle - Klient ví, kolik si chce odkládat, ale neví, na jak dlouho\nvstupem od klienta jsou: výše pravidelného měsíčného vkladu, výše jednorázového vkladu\nvstupem od banky je: doba investování, předpokládaný výnos (stanovený na základě zvolené strategie)\nvýstupem je cílová částka se zobrazením vývoje v grafu (tři scénáře - realistický, pesimistický, optimistický)\nBRQ15: Zadání/změna autorizovaného účtu\nBRQ16: Aktualizace AML a Investičního dotazníku"
+    },
+    {
+      "page": 18,
+      "text": "BRQ17: Výpisy a konfirmace\njedná se konfirmace (potvrzení) o jednotlivých obchodech, měsíční výpis stavu a pohybů na portfoliu, roční výpis nákladů a pobídek, roční výpis výnosů\nnové kódy konfirmací/výpisů (OCPXX) - pokud bude třeba\nobsah bude stejný jako u standardních výpisů (OCP03, OCP39, OCP41), pouze bude jiný design (logo, grafika)\nBRQ18: Správa strategií a fondů dostupných ve strategiích"
+    }
+  ]
+}

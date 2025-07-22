@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Payment - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17338516.html">PTS Payments - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Payment - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Neznámý uživatel (ex8101842)</span>, last modified by <span class='editor'> Otépka Milan</span> on Lis 29, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 style="text-align: left;" id="PaymentEventStream-Přenosy"><span style="letter-spacing: -0.01em;">Přenosy</span></h1><h2 id="PaymentEventStream-Datovéentity">Datové entity</h2><p>Pro platby je definována datová entita:</p><ul><li><span style="color: rgb(0,0,0);">Payment</span></li></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926697467 {padding: 0px;}
+div.rbtoc1684926697467 ul {margin-left: 0px;}
+div.rbtoc1684926697467 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926697467'>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Přenosy'>Přenosy</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#PaymentEventStream-Topicy'>Topicy</a></li>
+<li><a href='#PaymentEventStream-Popispublikovanýchdat'>Popis publikovaných dat</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Key'>Key</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-PrůběžnýtopicaInicializační/Rekonciliačnítopic'>Průběžný topic a Inicializační/Rekonciliační topic</a></li>
+<li><a href='#PaymentEventStream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+<li><a href='#PaymentEventStream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Průběžnýtopic'>Průběžný topic</a></li>
+<li><a href='#PaymentEventStream-Inicializační/Rekonciliačnítopic'>Inicializační/Rekonciliační topic</a></li>
+<li><a href='#PaymentEventStream-Kontrolní.1'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#PaymentEventStream-Popispublikaceudálostí'>Popis publikace událostí</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Stavovédiagramyplateb'>Stavové diagramy plateb</a></li>
+</ul>
+</li>
+<li><a href='#PaymentEventStream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#PaymentEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#PaymentEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#PaymentEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Početudálostídenně'>Počet událostí denně</a></li>
+<li><a href='#PaymentEventStream-Objem'>Objem</a></li>
+</ul>
+</li>
+<li><a href='#PaymentEventStream-Sekvenčnídiagramy'>Sekvenční diagramy</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Publikováníudálostídoprůběžnéhotopicu'>Publikování událostí do průběžného topicu</a></li>
+<li><a href='#PaymentEventStream-Instantníplatby'>Instantní platby</a>
+<ul class='toc-indentation'>
+<li><a href='#PaymentEventStream-Internídomácíinstantníplatba(TOBEstavDKCZ)'>Interní domácí instantní platba (TO BE stav DKCZ)</a></li>
+<li><a href='#PaymentEventStream-Příchozíexternídomácíinstantníplatba(TOBEstavDKCZ)'>Příchozí externí domácí instantní platba (TO BE stav DKCZ)</a></li>
+<li><a href='#PaymentEventStream-Odchozíexternídomácíinstantníplatba(TOBEstavDKCZ)'>Odchozí externí domácí instantní platba (TO BE stav DKCZ)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="PaymentEventStream-Topicy">Topicy</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Entity Type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Název Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Typ Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>Producent</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="1" data-highlight-colour="#fff0b3"><strong>Konzument</strong></td></tr><tr><td rowspan="4" class="confluenceTd"><p>Payment</p></td><td class="confluenceTd">JTB-SK_PAYMENTS_PAYMENT_EVENT_GNR</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td colspan="1" class="confluenceTd">PTS SK</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKSK</span></td></tr><tr><td colspan="1" class="confluenceTd">JTB-SK_PAYMENTS_PAYMENT_RCN_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">PTS SK</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKSK</span></td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_PAYMENTS_PAYMENT_EVENT_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td colspan="1" class="confluenceTd">PTS CZ</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ</span></td></tr><tr><td colspan="1" class="confluenceTd">JTB-CZ_PAYMENTS_PAYMENT_RCN_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td colspan="1" class="confluenceTd">PTS CZ</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(23,43,77);">controllSchema</span></td><td colspan="1" class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">Kontrolní</span></td><td colspan="1" class="confluenceTd">PTS SK, PTS CZ</td><td colspan="1" class="confluenceTd"><p>DKCZ, DKSK</p></td></tr></tbody></table></div><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>PTS momentálně nezapisuje do *_GNR topiců, ale zapisuje do *_APP topiců v tabulce níže bez použití Schema Registry. Jedná se o workaround, když se nešlo napojit na Schema Registry. Konzumenti nicméně normálně čtou z topiců *_GNR, které jsou uvedené v tabulce výše.</p><div class="table-wrap"><table class="confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Entity Type</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Název Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><p title=""><strong>Typ Topicu</strong></p></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>Producent</strong></td></tr><tr><td rowspan="4" class="confluenceTd"><p>Payment</p></td><td class="confluenceTd">JTB-SK_PAYMENTS_PAYMENT_EVENT_APP</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td class="confluenceTd">PTS SK</td></tr><tr><td class="confluenceTd">JTB-SK_PAYMENTS_PAYMENT_RCN_APP</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td class="confluenceTd">PTS SK</td></tr><tr><td class="confluenceTd">JTB-CZ_PAYMENTS_PAYMENT_EVENT_APP</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Průběžný</span></td><td class="confluenceTd">PTS CZ</td></tr><tr><td class="confluenceTd">JTB-CZ_PAYMENTS_PAYMENT_RCN_APP</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační</span></td><td class="confluenceTd">PTS CZ</td></tr><tr><td class="confluenceTd"><span style="color: rgb(23,43,77);">controllSchema</span></td><td class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_APP</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">Kontrolní</span></td><td class="confluenceTd">PTS SK, PTS CZ</td></tr></tbody></table></div></div></div><h2 id="PaymentEventStream-Popispublikovanýchdat"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Popis publikovaných dat</span></h2><p>Do Kafka topicu se publikuje Key a Value. Key a Value se liší podle typu topicu.</p><h3 id="PaymentEventStream-Key">Key</h3><h4 id="PaymentEventStream-PrůběžnýtopicaInicializační/Rekonciliačnítopic"><span style="color: rgb(23,43,77);">Průběžný topic a </span>Inicializační/Rekonciliační topic</h4><p><span style="color: rgb(23,43,77);">Jako klíč se použije ptsId, které slouží jako unikátní business identifikátor. Viz tabulka <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338856#PaymentDatov%C3%BDmodel-Payment" rel="nofollow">Datová entita plateb</a>.</span></p><h4 id="PaymentEventStream-Kontrolní"><span style="color: rgb(23,43,77);">Kontrolní</span></h4><p><span style="color: rgb(23,43,77);">Klíč je definován v Připojovací analýze v kapitole <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Z%C3%A1pisdokontroln%C3%ADhotopicu" rel="nofollow">Zápis do kontrolního topicu</a>.</span></p><h3 id="PaymentEventStream-Value">Value</h3><h4 id="PaymentEventStream-Průběžnýtopic"><span style="color: rgb(23,43,77);">Průběžný topic</span></h4><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Obsah těla je definován JSON schématem uvedeným<span> </span>na této stránce v kapitole JSON schémata. Volitelný atribut X-Correlation-ID se nevyplňuje.</span></span></p><h4 id="PaymentEventStream-Inicializační/Rekonciliačnítopic"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační topic</span></h4><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Obsah těla je definován JSON schématem uvedeným<span> </span>na této stránce v kapitole JSON schémata.</span></span></p><ul><li><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);"><span>Data</span></span> v rekonciliačním topicu musí obsahovat atribut X-Correlation-ID, jehož hodnota je rovna hodnotě header parametru X-Correlation-ID z volání rekonciliačního API.</span></li><li><span style="color: rgb(23,43,77);">Data v inicializačním topicu musí obsahovat atribut X-Correlation-ID, jehož hodnota je rovna buď hodnotě header parametru X-Correlation-ID z volání inicializačního API (pokud je inicializace řešena REST rozhraním), nebo se vyplní předem definovanou hodnotou, kterou konzument inicializačního topicu musí znát.</span></li></ul><h4 id="PaymentEventStream-Kontrolní.1"><span style="color: rgb(23,43,77);">Kontrolní</span></h4><p><span style="color: rgb(23,43,77);">Obsah těla je definován schématem &quot;controllSchema_v1.json&quot; v Připojovací analýze v kapitole <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-Z%C3%A1pisdokontroln%C3%ADhotopicu" rel="nofollow">Zápis do kontrolního topicu</a>.</span></p><h1 id="PaymentEventStream-Popispublikaceudálostí">Popis publikace událostí</h1><p><span>Při změně business stavu platby musí dojít k aktualizaci atributu businessChangeDate (business datum <span style="color: rgb(23,43,77);">změny stavu datové entity)</span>. Jednotlivé business stavy jsou uvedené v číselníku *<span style="color: rgb(23,43,77);"><a class="external-link" href="https://jtfg.sharepoint.com/:x:/s/JTB_CR_EXT_ORG_BA/ETFmqlQS1DNBmgXvPQcQ6BIBU1gceJshrwxRP4HVe3vjvg?e=4EtRKh" rel="nofollow">PaymentStatus</a>. Je potřeba, aby tyto stavy z číselníku byly namapované na interní PTS stavy plateb, viz připojené stavové diagramy níže.</span></span></p><p><span style="letter-spacing: 0.0px;">Jakmile se po změně stavu platby aktualizuje hodnota v atributu businessChangeDate, musí se vygenerovat událost do průběžného topicu.</span></p><p><span style="letter-spacing: 0.0px;"><span><span style="color: rgb(23,43,77);">Do topiců (průběžný i rekonciliační/inicializační) se neposílají události pro business stav &quot;noStatus&quot;. V<span><span style="color: rgb(23,43,77);"> případě vyjmutí/přesunutí PTS interního stavu mimo business stav &quot;noStatus&quot; se m</span></span>usí spustit inicializace.</span></span></span></p><p>Je důležité, aby k aktualizaci atributu businessChangeDate a k publikování do průběžného topicu došlo vždy při změně stavu platby nezávisle na kanálu (aplikace/rozhraní), kde se s ní pracuje.</p><p><br/></p><p><em>* Číselník momentálně není aktuální. Zadání na jeho úpravu a mapování na interní PTS stavy vytváří p. Husák a p. Harvánek a je v Confluence <a class="external-link" href="https://confluence.jtfg.com/x/-hV5Aw" rel="nofollow">zde</a></em><em>.</em></p><h2 id="PaymentEventStream-Stavovédiagramyplateb">Stavové diagramy plateb</h2><p>Připojené stavové diagramy popisují jednotlivé stavy plateb při jejich zpracování v PTS.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border" draggable="false" height="150" width="120" src="attachments/17338862/17341679.png" data-image-src="attachments/17338862/17341679.png" data-unresolved-comment-count="0" data-linked-resource-id="17341679" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="odchozi.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span>   <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border" draggable="false" height="150" width="187" src="attachments/17338862/17341680.png" data-image-src="attachments/17338862/17341680.png" data-unresolved-comment-count="0" data-linked-resource-id="17341680" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="odchozi_inst.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span>   <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border" draggable="false" height="150" width="114" src="attachments/17338862/17341681.png" data-image-src="attachments/17338862/17341681.png" data-unresolved-comment-count="0" data-linked-resource-id="17341681" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="prichozi.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span>   <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border" draggable="false" height="150" width="208" src="attachments/17338862/17341682.png" data-image-src="attachments/17338862/17341682.png" data-unresolved-comment-count="0" data-linked-resource-id="17341682" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="prichozi_inst.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span></p><h1 id="PaymentEventStream-JSONschémata"><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schémata</span></h1><p><span style="color: rgb(23,43,77);">JSON schéma je stejné pro CZ i SK instanci PTS.</span></p><p title="undefined">JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><h1 id="PaymentEventStream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><ul><li>počet partitions (8), pro číselník méně (1)</li><li>počet<span> </span>replik<span> </span>(3)</li><li>retention period (6 days)</li></ul><h1 id="PaymentEventStream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p><span style="color: rgb(0,51,102);letter-spacing: 0.0px;">Není požadováno další ošetření chybových stavů nad rámec kapitoly <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17338370#PTSP%C5%99ipojovac%C3%ADanal%C3%BDza-O%C5%A1et%C5%99en%C3%ADchybov%C3%BDchstav%C5%AF" rel="nofollow">Ošetření chybových stavů</a> v Připojovací analýze.</span></p><h1 id="PaymentEventStream-Kapacitnípožadavky"><span style="letter-spacing: -0.01em;"><span style="color: rgb(23,43,77);">Kapacitní požadavky</span></span></h1><h2 id="PaymentEventStream-Početudálostídenně">Počet událostí denně</h2><p>Přibližný počet plateb provedených za jeden den je uveden v tabulce níže. Pro každou platbu bude vznikat několik událostí. Počet událostí pro jednu platbu odpovídá business stavům v tabulce v kapitole <a href="https://confluencedigi.jtfg.com/display/EI/Payment+-+Event+Stream#PaymentEventStream-Popispublikaceud%C3%A1lost%C3%AD" rel="nofollow">Popis publikace událostí</a>.</p><h2 id="PaymentEventStream-Objem">Objem</h2><p>Tabulka obsahuje zaokrouhlený počet plateb od začátku roku 2022 / počet pracovních dní.</p><div class="table-wrap"><table class="fixed-table wrapped confluenceTable"><colgroup><col style="width: 110.0px;"/><col style="width: 274.0px;"/><col style="width: 150.0px;"/><col style="width: 123.0px;"/></colgroup><thead><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>Datová entita</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" style="text-align: left;"><p>PTS instance</p></th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Platba</th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Počet za den</th></tr></thead><tbody><tr><td rowspan="4" style="text-align: left;" class="confluenceTd">Payment</td><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>CZ</p></td><td colspan="1" class="confluenceTd">Příchozí (i interní)</td><td colspan="1" class="confluenceTd">3200</td></tr><tr><td colspan="1" class="confluenceTd">Odchozí</td><td colspan="1" class="confluenceTd">1510</td></tr><tr><td rowspan="2" class="confluenceTd">SK</td><td colspan="1" class="confluenceTd">Příchozí (i interní)</td><td colspan="1" class="confluenceTd">590</td></tr><tr><td colspan="1" class="confluenceTd">Odchozí</td><td colspan="1" class="confluenceTd">530</td></tr></tbody></table></div><h1 id="PaymentEventStream-Sekvenčnídiagramy"><span style="letter-spacing: -0.01em;">Sekvenční diagramy</span></h1><h2 id="PaymentEventStream-Publikováníudálostídoprůběžnéhotopicu"><span style="letter-spacing: -0.01em;">Publikování událostí do průběžného topicu</span></h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17338862/17342933.png" data-image-src="attachments/17338862/17342933.png" data-unresolved-comment-count="0" data-linked-resource-id="17342933" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SD PTS Platby - publikace dat do průběžného topicu.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span></p><h2 id="PaymentEventStream-Instantníplatby"><span style="letter-spacing: -0.01em;">Instantní platby</span></h2><p><span style="letter-spacing: 0.0px;">Na diagramech níže jsou popsané pouze české instantní platby. Instantní SEPA platby nyní nelze provádět, momentálně probíhá analýza na jejich implementaci do banky.</span></p><p>V případě instantních plateb je nyní ePortál notifikován ze strany PTS ohledně detailu platby. Pro DK notifikace nebude potřeba, informace o platbě a jejím stavu budou posílány topicem. V PTS by tedy měl být implementován &quot;switch&quot;, aby notifikace ePortálu bylo možné ve správný čas vypnout. </p><h3 id="PaymentEventStream-Internídomácíinstantníplatba(TOBEstavDKCZ)">Interní domácí instantní platba (TO BE stav DKCZ)</h3><p>Diagram je stejný pro příchozí i odchozí platbu, účtování probíhá na účet plátce i příjemce ve stejnou chvíli.</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17338862/17342482.png" data-image-src="attachments/17338862/17342482.png" data-unresolved-comment-count="0" data-linked-resource-id="17342482" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SD Interní domácí instantní platba TO BE.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span></p><h3 id="PaymentEventStream-Příchozíexternídomácíinstantníplatba(TOBEstavDKCZ)">Příchozí externí domácí instantní platba (TO BE stav DKCZ)</h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17338862/17342483.png" data-image-src="attachments/17338862/17342483.png" data-unresolved-comment-count="0" data-linked-resource-id="17342483" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SD Příchozí externí domácí instantní platba TO BE.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span></p><h3 id="PaymentEventStream-Odchozíexternídomácíinstantníplatba(TOBEstavDKCZ)">Odchozí externí domácí instantní platba (TO BE stav DKCZ)</h3><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/17338862/17342484.png" data-image-src="attachments/17338862/17342484.png" data-unresolved-comment-count="0" data-linked-resource-id="17342484" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="SD Odchozí externí domácí instantní platba TO BE.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17338862" data-linked-resource-container-version="55" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17338889.json">Payment json.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340413.xlsx">JSON_spec.xlsx</a> (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340414.json">DDM_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340419.json">Payment_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340421.json">StandingOrder_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340420.json">StandingOrder_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340438.png">PTS SD Interní instantní platba.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340439.png">PTS SD Odchozí externí instantní platba.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17340440.png">PTS SD Příchozí externí instantní platba.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17341679.png">odchozi.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17341680.png">odchozi_inst.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17341681.png">prichozi.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17341682.png">prichozi_inst.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17342482.png">SD Interní domácí instantní platba TO BE.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17342483.png">SD Příchozí externí domácí instantní platba TO BE.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17342484.png">SD Odchozí externí domácí instantní platba TO BE.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17342671.png">image2022-6-13_8-56-6.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17342672.png">SD PTS Platby - publikace dat do průběžného topicu.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17342931.png">SD PTS Platby - publikace dat do průběžného topicu.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17338862/17342933.png">SD PTS Platby - publikace dat do průběžného topicu.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

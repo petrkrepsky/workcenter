@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : DispositionRightsForKUL - Workaround - Popis řešení</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="49251665.html">DispositionRightsForKUL - Workaround - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : DispositionRightsForKUL - Workaround - Popis řešení
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Rak Filip</span>, last modified on Bře 26, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+Na této stránce je definována aplikace DispositionRightsForKUL aneb propis práv do KUL(eBroker).<p>Technická realizace přenosů je pak popsána na stránkách:</p><ul><li class="with-breadcrumbs" title="undefined"><a href="DispositionRightsForKUL---Workaround---API_49251668.html">DispositionRightsForKUL - Workaround - API</a></li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926678060 {padding: 0px;}
+div.rbtoc1684926678060 ul {margin-left: 0px;}
+div.rbtoc1684926678060 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926678060'>
+<ul class='toc-indentation'>
+<li><a href='#DispositionRightsForKULWorkaroundPopisřešení-Aplikace'>Aplikace</a></li>
+<li><a href='#DispositionRightsForKULWorkaroundPopisřešení-Topicprocesing:'>Topic procesing:</a></li>
+<li><a href='#DispositionRightsForKULWorkaroundPopisřešení-APIGW:'>API GW:</a></li>
+<li><a href='#DispositionRightsForKULWorkaroundPopisřešení-ConsumerGroupManagement:'>Consumer Group Management:</a></li>
+<li><a href='#DispositionRightsForKULWorkaroundPopisřešení-StartwithResetOffset:'>Start with Reset Offset:</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+0..1<h1 id="DispositionRightsForKULWorkaroundPopisřešení-Aplikace"><span style="letter-spacing: -0.01em;">Aplikace</span></h1><p>Tato technická dokumentace popisuje návrh a funkčnost aplikace(mikroslužby), která se integruje s Kafka topickem <span style="color: rgb(51,102,255);"><a href="49250606.html">DispositionRight </a></span>a rozhraním <span class="inline-comment-marker" data-ref="1ee7fb52-cf3d-4def-9efa-753e015a4eee">zapisPravaPristupovehoUctuKPfDK</span>  vystavené na WSO2. Aplikace čte zprávy z topiku <span style="color: rgb(51,102,255);"><a href="49250606.html">DispositionRight</a></span>, provádí mapování podle <span style="color: rgb(0,0,255);">mapovací tabulky</span> a odesílá data do rozhraní SOAP prostřednictvím rozhraní API GW. Zároveň ošetřuje chybové hlášky, které loguje a odesílá do retry topicku <span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_EBROKER_RETRY_APP</span>.</p><p><br/></p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/49251666/51544076.png" data-image-src="attachments/49251666/51544076.png" data-unresolved-comment-count="0" data-linked-resource-id="51544076" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="US 3815 - Propis práv do KUL - workaround.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="49251666" data-linked-resource-container-version="32" alt=""></span></p><h1 id="DispositionRightsForKULWorkaroundPopisřešení-Topicprocesing:">Topic procesing:</h1><p><br/></p><p>Aplikace bude číst topic <span style="color: rgb(51,102,255);"><a href="49250606.html">DispositionRight</a></span>, Při nové zprávě v topicu, aplikace předčte zprávu, provede mapování a transformaci a následně odešle do eBrokeru.</p><p><span style="letter-spacing: 0.0px;">Mapování najdeme zde </span><a href="DispositionRightsForKUL---Workaround---API_49251668.html">DispositionRightsForKUL - Workaround - API</a><span style="letter-spacing: 0.0px;">.</span></p><h1 id="DispositionRightsForKULWorkaroundPopisřešení-APIGW:">API GW:</h1><p><br/></p><p>WSDL služba bude vystavena na WSO2 . <span style="color: rgb(23,43,77);">Specifikace rozhraní je na stránce<span> <a href="DispositionRightsForKUL---Workaround---API_49251668.html">DispositionRightsForKUL - Workaround - API</a>.</span></span></p><p><br/></p><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">Error handling:</span></p><p><br/></p><p>Aplikace zaznamená všechny chyby, které se vyskytnou během volání SOAP API na WSO2. To zahrnuje časové limity(timeout), 500s a 401s. Logy budou uloženy v <span style="color: rgb(255,102,0);"><span style="color: rgb(0,0,0);">centralizovaném úložišti </span></span>logů pro snadný přístup a analýzu.</p><p>V případě vypršení časového limitu (timeout) nebo chyby 500,400 při volání SOAP API aplikace odešle data do Retry Topicu. Aplikace má v sobě zabudovaný scheduler(časovač), který hlídá počet opakovaní a ve stanovený čas(configurovatelná hodnota, dle potřeby DKCZ) se zpráva vytahuje z retry topiku a posílá znovu do eBroker. </p><p>Počet opakovaní chybných voláni bude stanoven na 6. Po 6 neúspěšném volání se chyba uloží do logu.</p><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th scope="col" class="confluenceTh"><br/></th><th scope="col" class="confluenceTh">code</th><th scope="col" class="confluenceTh"><strong title=""><span>message</span></strong><span title=""> </span></th><th scope="col" class="confluenceTh">Poznámka</th></tr><tr><td class="confluenceTd"><br/></td><td class="confluenceTd">401</td><td class="confluenceTd"><span style="color: rgb(32,33,36);">Unauthorized<span>  - </span></span>the client request has not been completed because it lacks valid authentication credentials for the requested resource</td><td class="confluenceTd">V případě chyby 401 při volání SOAP API aplikace zaznamená chybu a odešle data do retry topicu Kafka.</td></tr><tr><td class="confluenceTd"><br/></td><td class="confluenceTd">500</td><td class="confluenceTd">Internal error - the server encountered an unexpected condition that prevented it from fulfilling the request.</td><td class="confluenceTd">V případě chyby 500 při volání SOAP API aplikace zaznamená chybu a odešle data do retry topicu Kafka.</td></tr><tr><td class="confluenceTd"><br/></td><td class="confluenceTd">504</td><td class="confluenceTd">Timeout - the server, while acting as a gateway or proxy, did not get a response in time from the upstream server that it needed in order to complete the request.</td><td class="confluenceTd">V případě chyby 504(Timeout) při volání SOAP API aplikace zaznamená chybu a odešle data do retry topicu Kafka.</td></tr></tbody></table></div><p><span style="letter-spacing: -0.01em;font-size: 24.0px;"><span>Retry Topic:</span></span></p><p><span style="letter-spacing: 0.0px;">Pro účely error-handlingu vznikne nový retry topic JTB-HQ_INTEGRATION_EBROKER_RETRY_APP. Kam aplikace zapisuje zprávy z neúspěšného volání.</span></p><p>Topic bude mít stejné schéma jako <a href="49250606.html">DispositionRights - Integračn&iacute; anal&yacute;za</a>. </p><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/49251666/51544661.png" data-image-src="attachments/49251666/51544661.png" data-unresolved-comment-count="0" data-linked-resource-id="51544661" data-linked-resource-version="3" data-linked-resource-type="attachment" data-linked-resource-default-alias="retrytopic.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="49251666" data-linked-resource-container-version="32" alt=""></span></p><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">Logs:</span></p><p><br/></p>Aplikace uloží logy do<span style="color: rgb(0,51,102);"> <span style="color: rgb(0,0,0);">STDout </span></span>i do místního souboru v kontejneru. To umožňuje snadný přístup a analýzu logů a pomáhá řešit případné problémy<br/><p><br/></p><p><span style="letter-spacing: -0.01em;font-size: 24.0px;">Container OCP:</span></p><p><br/></p><p><span style="letter-spacing: 0.0px;">Aplikace bude nasazena jako kontejner na OpenShift Container Platform (OCP). To poskytuje bezpečné a škálovatelné prostředí pro nasazení a správu aplikace.</span></p><h1 id="DispositionRightsForKULWorkaroundPopisřešení-ConsumerGroupManagement:"><span style="letter-spacing: 0.0px;">Consumer Group Management:</span></h1><p><br/></p><p><span style="letter-spacing: 0.0px;">Aplikace po spuštění naváže na odeslané zprávy podle offsetu své skupiny Consumer v Kafka.  To zajišťuje, že aplikace může sledovat zprávy, které zpracovala, a pokračovat od místa, kde skončila, pokud nastane neočekáváný restart.</span></p><h1 id="DispositionRightsForKULWorkaroundPopisřešení-StartwithResetOffset:"><span style="letter-spacing: 0.0px;">Start with Reset Offset:<br/></span></h1><p><span style="letter-spacing: 0.0px;">Aplikace podporuje začátek s resetovaným posunem na začátek Topicku. To umožňuje aplikaci v případě potřeby začít zpracovávat zprávy od začátku Topicku.</span></p><p><br/></p><p><br/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251666/51544074.png">US 1622 - Zrušení disponentské vazbyuživatele - Metady - err- seq.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251666/51544076.png">US 3815 - Propis práv do KUL - workaround.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251666/51545024.png">retrytopic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251666/51545027.png">retrytopic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/49251666/51544661.png">retrytopic.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Deal 2.0 - Professional Documentation Portal</title>
+    <style>
+        :root {
+            --primary-color: #1a472a;
+            --secondary-color: #2d5a3d;
+            --accent-color: #4a7c59;
+            --background-color: #f8faf8;
+            --card-background: #ffffff;
+            --text-color: #2c3e2d;
+            --border-color: #e0e5e0;
+            --success-color: #28a745;
+            --info-color: #17a2b8;
+            --warning-color: #ffc107;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        
+        .header-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .navigation {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .nav-item {
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .nav-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .section-card {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .section-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .section-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .artifact-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .artifact-list li {
+            margin-bottom: 0.8rem;
+            padding: 0.8rem;
+            background: var(--background-color);
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .artifact-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .artifact-list a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .artifact-meta {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: normal;
+        }
+        
+        .status-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        
+        .status-complete {
+            background-color: var(--success-color);
+            color: white;
+        }
+        
+        .status-progress {
+            background-color: var(--info-color);
+            color: white;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .search-section {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .search-box {
+            width: 100%;
+            max-width: 600px;
+            padding: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            font-size: 1.1rem;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>🏦 Clear Deal 2.0</h1>
+            <p>Professional Documentation Portal - Kompletní přehled všech projektových deliverables</p>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-number">120</span>
+                    <span class="stat-label">Use Cases</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">BIAN Domains</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Technical Artifacts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">29</span>
+                    <span class="stat-label">Documentation Files</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="navigation">
+            <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary-color);">🧭 Quick Navigation</h2>
+            <div class="nav-grid">
+                <a href="#business-idea" class="nav-item">💡 Business Idea</a>
+                <a href="#business-architecture" class="nav-item">🏗️ Business Architecture</a>
+                <a href="#business-analysis" class="nav-item">📊 Business Analysis</a>
+                <a href="#use-cases" class="nav-item">⚙️ Use Cases</a>
+                <a href="#test-cases" class="nav-item">🧪 Test Cases</a>
+                <a href="#technical-artifacts" class="nav-item">🔧 Technical Artifacts</a>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <h2 style="text-align: center; margin-bottom: 1rem; color: var(--primary-color);">🔍 Search Documentation</h2>
+            <input type="text" class="search-box" placeholder="Search artifacts, use cases, or documentation..." onkeyup="searchContent()">
+        </section>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-number">100%</div>
+                <div class="metric-label">BIAN Compliance</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">7</div>
+                <div class="metric-label">Screen Sections</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">12</div>
+                <div class="metric-label">BRQ Processes</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">6</div>
+                <div class="metric-label">BIAN Domains</div>
+            </div>
+        </div>
+
+        <div class="section-grid">
+            <!-- Business Idea Section -->
+            <div class="section-card" id="business-idea">
+                <span class="section-icon">💡</span>
+                <h2 class="section-title">Business Idea</h2>
+                <p class="section-description">
+                    Konceptuální dokumentace a business vize pro Clear Deal 2.0 mobilní investiční platformu
+                </p>
+                <ul class="artifact-list">
+                    <li>
+                        <a href="JIRA_STAMP_AP-32_Use_Cases_Complete.md">
+                            📋 JIRA Project Summary
+                            <span class="artifact-meta">Executive overview</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/00_FINAL_comprehensive_use_case_summary.md">
+                            🎯 Business Vision & Strategy
+                            <span class="artifact-meta">Strategic overview</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-003_real_time_customer_journey_tracking.md">
+                            🛤️ Customer Experience Vision
+                            <span class="artifact-meta">Journey design</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Business Architecture Section -->
+            <div class="section-card" id="business-architecture">
+                <span class="section-icon">🏗️</span>
+                <h2 class="section-title">Business Architecture</h2>
+                <p class="section-description">
+                    BIAN framework-based business architecture s kompletním pokrytím všech Service Domains
+                </p>
+                <ul class="artifact-list">
+                    <li>
+                        <a href="business_architecture.html">
+                            🌐 BIAN Service Domain Architecture
+                            <span class="artifact-meta">10 domains</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/business_architecture_design.md">
+                            📐 Complete Architecture Design
+                            <span class="artifact-meta">Comprehensive design</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../knowledge/EI_BIAN_Artifacts/00_EI_BIAN_Artifacts_Summary.md">
+                            🔧 Technical Architecture Mapping
+                            <span class="artifact-meta">500+ artifacts</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Business Analysis Section -->
+            <div class="section-card" id="business-analysis">
+                <span class="section-icon">📊</span>
+                <h2 class="section-title">Business Analysis</h2>
+                <p class="section-description">
+                    Detailní business analýza včetně procesních map, požadavků a customer journey
+                </p>
+                <ul class="artifact-list">
+                    <li>
+                        <a href="../workinprogress/figma/00_comprehensive_screen_analysis_overview.md">
+                            📱 Figma Screen Analysis
+                            <span class="artifact-meta">7 screen sections</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-001_orchestrace_strategicke_prezentace.md">
+                            🎯 Customer Journey Orchestration
+                            <span class="artifact-meta">Process flows</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-014_initial_investment_strategy_creation.md">
+                            📈 Investment Strategy Analysis
+                            <span class="artifact-meta">Core business process</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Use Cases Section -->
+            <div class="section-card" id="use-cases">
+                <span class="section-icon">⚙️</span>
+                <h2 class="section-title">Use Cases</h2>
+                <p class="section-description">
+                    Kompletní use case library s 120 funkčními specifikacemi napříč všemi BIAN domains
+                </p>
+                <ul class="artifact-list">
+                    <li>
+                        <a href="functional_analysis.html">
+                            📋 Interactive Use Case Browser
+                            <span class="artifact-meta">120 use cases</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/">
+                            📁 Complete Use Case Directory
+                            <span class="artifact-meta">Individual files</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-024_to_UC-030_batch_payment_initiation.md">
+                            💳 Payment Processing Use Cases
+                            <span class="artifact-meta">7 use cases</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-031_to_UC-050_batch_investment_portfolio_management.md">
+                            📊 Portfolio Management Use Cases
+                            <span class="artifact-meta">20 use cases</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-071_to_UC-120_final_comprehensive_batch.md">
+                            📦 Complete Coverage Batch
+                            <span class="artifact-meta">50 use cases</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Test Cases Section -->
+            <div class="section-card" id="test-cases">
+                <span class="section-icon">🧪</span>
+                <h2 class="section-title">Test Cases</h2>
+                <p class="section-description">
+                    Test case specifikace a testing strategy pro všechny use cases a business procesy
+                </p>
+                <ul class="artifact-list">
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-010_digital_client_application_setup.md#testing-strategy-topics">
+                            🔐 Authentication Testing Strategy
+                            <span class="artifact-meta">Security testing</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-014_initial_investment_strategy_creation.md#testing-strategy-topics">
+                            📊 Investment Strategy Testing
+                            <span class="artifact-meta">Mathematical accuracy</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-024_to_UC-030_batch_payment_initiation.md">
+                            💳 Payment Processing Testing
+                            <span class="artifact-meta">PCI DSS compliance</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../workinprogress/use_cases/UC-017_zalozeni_portfolia_do_topas.md">
+                            🏗️ Integration Testing Strategy
+                            <span class="artifact-meta">TOPAS integration</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Technical Artifacts Section -->
+            <div class="section-card" id="technical-artifacts">
+                <span class="section-icon">🔧</span>
+                <h2 class="section-title">Technical Artifacts</h2>
+                <p class="section-description">
+                    EI technical artifacts inventory s kompletním mapováním na BIAN domains
+                </p>
+                <ul class="artifact-list">
+                    <li>
+                        <a href="../knowledge/EI_BIAN_Artifacts/00_EI_BIAN_Artifacts_Summary.md">
+                            📊 Complete Artifacts Summary
+                            <span class="artifact-meta">500+ artifacts</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../knowledge/EI_BIAN_Artifacts/Investment_Portfolio_Management_EI_Artifacts.md">
+                            📈 Investment Management Artifacts
+                            <span class="artifact-meta">Portfolio operations</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../knowledge/EI_BIAN_Artifacts/Payment_Execution_EI_Artifacts.md">
+                            💳 Payment Execution Artifacts
+                            <span class="artifact-meta">Payment processing</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../knowledge/EI_BIAN_Artifacts/Party_Lifecycle_Management_EI_Artifacts.md">
+                            👤 Customer Lifecycle Artifacts
+                            <span class="artifact-meta">CRM integration</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                    <li>
+                        <a href="../knowledge/EI_BIAN_Artifacts/Current_Account_Management_EI_Artifacts.md">
+                            🏦 Account Management Artifacts
+                            <span class="artifact-meta">BISQ integration</span>
+                        </a>
+                        <span class="status-badge status-complete">COMPLETE</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Implementation Roadmap Section -->
+        <section style="background: var(--card-background); border-radius: 15px; padding: 2rem; margin: 2rem 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <h2 style="color: var(--primary-color); text-align: center; margin-bottom: 2rem;">🚀 Implementation Roadmap</h2>
+            <div class="metrics-grid">
+                <div class="metric-card" style="background: linear-gradient(135deg, #28a745, #20c997);">
+                    <div class="metric-number">Phase 1</div>
+                    <div class="metric-label">Authentication & Onboarding<br>25 Use Cases</div>
+                </div>
+                <div class="metric-card" style="background: linear-gradient(135deg, #17a2b8, #6f42c1);">
+                    <div class="metric-number">Phase 2</div>
+                    <div class="metric-label">Investment Strategy Core<br>30 Use Cases</div>
+                </div>
+                <div class="metric-card" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">
+                    <div class="metric-number">Phase 3</div>
+                    <div class="metric-label">Portfolio Management<br>35 Use Cases</div>
+                </div>
+                <div class="metric-card" style="background: linear-gradient(135deg, #dc3545, #e83e8c);">
+                    <div class="metric-number">Phase 4</div>
+                    <div class="metric-label">Payment Processing<br>25 Use Cases</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Clear Deal 2.0 Project - J&T Bank | Professional Documentation Portal</p>
+        <p>Complete BIAN-compliant business architecture with 120 use cases and 500+ technical artifacts</p>
+    </footer>
+
+    <script>
+        function searchContent() {
+            const searchTerm = document.querySelector('.search-box').value.toLowerCase();
+            const cards = document.querySelectorAll('.section-card');
+            const artifactLinks = document.querySelectorAll('.artifact-list a');
+            
+            // Reset visibility
+            cards.forEach(card => card.style.display = 'block');
+            artifactLinks.forEach(link => link.parentElement.style.display = 'block');
+            
+            if (searchTerm.length > 2) {
+                // Hide cards that don't match
+                cards.forEach(card => {
+                    const cardText = card.textContent.toLowerCase();
+                    if (!cardText.includes(searchTerm)) {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Hide artifact links that don't match
+                artifactLinks.forEach(link => {
+                    const linkText = link.textContent.toLowerCase();
+                    if (!linkText.includes(searchTerm)) {
+                        link.parentElement.style.display = 'none';
+                    }
+                });
+            }
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

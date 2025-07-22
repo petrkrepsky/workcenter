@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Balance - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CURRENT-ACCOUNTS_17340355.html">CURRENT-ACCOUNTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17340677.html">Balance - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Balance - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified on Bře 17, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Na této stránce je definována datová entita Balance.</p><p>Technická realizace přenosů je pak popsána na stránkách:</p><ul><li class="with-breadcrumbs" title="undefined"><a href="Balance---Event-Stream_17340679.html">Balance - Event Stream</a> </li><li class="with-breadcrumbs" title="undefined"><a href="Balance---REST-API_17340692.html">Balance - Rekonciliačn&iacute; API</a></li></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926579479 {padding: 0px;}
+div.rbtoc1684926579479 ul {margin-left: 0px;}
+div.rbtoc1684926579479 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926579479'>
+<ul class='toc-indentation'>
+<li><a href='#BalanceDatovýmodel-DatováentitaBalance'>Datová entita Balance</a>
+<ul class='toc-indentation'>
+<li><a href='#BalanceDatovýmodel-Balance'>Balance</a></li>
+</ul>
+</li>
+<li><a href='#BalanceDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="BalanceDatovýmodel-DatováentitaBalance">Datová entita Balance</h1><h2 class="auto-cursor-target" id="BalanceDatovýmodel-Balance"><span class="inline-comment-marker" data-ref="0bf5d978-12a7-4450-9542-d3edc8214fb6">Balance</span></h2><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">lvl</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">attribute_name</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">multiplicity</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">data_type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">format</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">constraint</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">description</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">enum values</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">businessIdentifer</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">kafka_bcd</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">KEY</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3">change</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">X-Correlation-ID</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">accountId</td><td class="confluenceTd">1</td><td class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Internal account identification.</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd">N</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">accountKind</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">ENUM</td><td class="confluenceTd">3</td><td class="confluenceTd">Account kind.</td><td class="confluenceTd">CUA|CCR|LOA|<strong>RDA|NWB|CRD</strong></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">přidáno 23.11 do analýzy RDA, NWB.<br/>17.3.2023: Rozšířeno v rámci <a class="external-link" href="https://jiradigi.jtfg.com/browse/DSWF-4641" rel="nofollow">DSWF-4641</a></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">eventTimestamp</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Datetime of insertion to events table in BISQ.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y (slouží jako náhrada za BCD)</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">actualBalance</td><td class="confluenceTd">1</td><td class="confluenceTd">number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Actual accounting balance.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">availableBalance</td><td class="confluenceTd">0..1</td><td class="confluenceTd">number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Actual available balance.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><div class="content-wrapper"><p>Kardinalita upravena v rámci: 
+<span class="jira-issue resolved" data-jira-key="DSWF-2567" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-2567?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10304&amp;avatarType=issuetype"/>DSWF-2567</a>
+                            -
+            <span class="summary">BISQ - Balance - availableBalance - změna elementu na nepovinný</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-success
+     jira-macro-single-issue-export-pdf">Closed</span>
+                </span>
+</p></div></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">blockedAmount</td><td class="confluenceTd">1</td><td class="confluenceTd">number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Blocked amount.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd"><s>1</s></td><td class="confluenceTd"><s>unAccounted</s></td><td class="confluenceTd"><s>0..1</s></td><td class="confluenceTd"><s>number</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>Nezaúčtované transakce</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>Y</s></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><s>valueDate</s></td><td class="confluenceTd"><s>0..1</s></td><td class="confluenceTd"><s>string</s></td><td class="confluenceTd"><s>date-time</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>stav k dátu</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y (může být zpětně)</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">effectiveFrom</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Date and time of loading balance (account)</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y (datum a čas události - event_timestamp)</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd"><s>1</s></td><td class="confluenceTd"><s>effective_to</s></td><td class="confluenceTd"><s>0..1</s></td><td class="confluenceTd"><s>string</s></td><td class="confluenceTd"><s>date-time</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>je vždy platný</s></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><s>ownFunds</s></td><td class="confluenceTd"><s>1</s></td><td class="confluenceTd"><s>number</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>vlastní prostředky</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>????</s></td><td class="confluenceTd"><br/></td></tr></tbody></table></div><p><br/><br/></p><p><br/></p><p><br/></p><p><br/></p><h1 class="auto-cursor-target" id="BalanceDatovýmodel-Vysvětleníidentifikátorů">Vysvětlení identifikátorů</h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">typ entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">businessIdentifier*</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">KEY</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">BUSINESS_STATE</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">resource</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">query_parameters</td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Balance</strong></td><td class="confluenceTd">accountId</td><td class="confluenceTd">accountId</td><td class="confluenceTd">X</td><td class="confluenceTd">/balance/</td><td class="confluenceTd">accountId</td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-17341972"></a>
+                                    <font class="smallfont"><p>Chybí domluveny accountKind</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101037 at Čer 07, 2022 09:18
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27624909"></a>
+                                    <font class="smallfont"><p>accountKind doplněn to datového modelu i do JSON schématu.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101838 at Čer 28, 2022 15:22
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-36471620"></a>
+                                    <font class="smallfont"><p>ENUM accountKind je potrebné royšíriť o RDA a NWB, inak pre tieto kindy nebude možné volať balance reconcile</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101039 at Říj 05, 2022 16:11
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

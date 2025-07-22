@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CRM MarketingList - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337697.html">CRM MarketingList - integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CRM MarketingList - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hovorka Vojtěch</span>, last modified by <span class='editor'> Kratochvíl Aleš</span> on Bře 09, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CRMMarketingListEventStream-Přenosy">Přenosy</h1><h2 id="CRMMarketingListEventStream-Datovéentity">Datové entity</h2><p><span>Pro kurzovní jsou definovány tři typy datových entit:</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Entity Type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Zdroj</th></tr><tr><td class="confluenceTd"><p>MarketingList</p></td><td class="confluenceTd">CRM</td></tr><tr><td class="confluenceTd"><p>MarketingListMember</p></td><td class="confluenceTd">CRM</td></tr><tr><td class="confluenceTd"><p>BankNewsList</p></td><td class="confluenceTd">CRM</td></tr><tr><td colspan="1" class="confluenceTd"><p>BankNewsSettings</p></td><td colspan="1" class="confluenceTd">CRM</td></tr></tbody></table></div><h1 style="color: rgb(23,43,77);" id="CRMMarketingListEventStream-Topicy"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable" style="margin-top: 10.0px;font-size: 14.0px;letter-spacing: normal;"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Entity Type</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Název Topicu</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Typ Topicu</th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3">Publisher</th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3">Consumer</th></tr><tr><td rowspan="2" class="confluenceTd"><p><span class="inline-comment-marker" data-ref="b382d0a7-fb9c-4ecb-b5f6-970ef06e1331">MarketingList</span></p></td><td class="confluenceTd">JTB-HQ_CRM_MARKETING-LIST_SYNC_GNR</td><td class="confluenceTd">Průběžný</td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ,DKSK</span></td></tr><tr><td class="confluenceTd">JTB-HQ_CRM_MARKETING-LIST_RCN_GNR</td><td class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ,DKSK</span></td></tr><tr><td class="confluenceTd">MarketingListMember</td><td colspan="1" class="confluenceTd"><span class="inline-comment-marker" data-ref="6a6c3273-2ba7-4bd0-b63b-2d8e74c07ccd">JTB-HQ_CRM_MARKETING-LIST-MEMBERS_RCN_GNR</span></td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ,DKSK</span></td></tr><tr><td class="confluenceTd">BankNewsList</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_CODEBOOKS</span><span style="color: rgb(23,43,77);">_TECHNICAL_CB_GNR</span></td><td colspan="1" class="confluenceTd">Kompaktní</td><td colspan="1" class="confluenceTd">CSC</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ,DKSK</span></td></tr><tr><td rowspan="2" class="confluenceTd"><span class="inline-comment-marker" data-ref="e4a68173-8338-4019-92f2-ea3b7a33d37a">BankNewsSettings</span></td><td class="confluenceTd">JTB-HQ_CRM_BANK-NEWS-SETTINGS_SYNC_GNR</td><td class="confluenceTd">Průběžný</td><td class="confluenceTd">CRM</td><td class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ,DKSK</span></td></tr><tr><td colspan="1" class="confluenceTd">JTB-HQ_CRM_BANK-NEWS-SETTINGS_RCN_GNR</td><td colspan="1" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" class="confluenceTd">CRM</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">DKCZ,DKSK</span></td></tr><tr><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</span></td><td colspan="1" class="confluenceTd">Kontrolní</td><td colspan="1" class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd">DKCZ,DKSK</td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926683182 {padding: 0px;}
+div.rbtoc1684926683182 ul {margin-left: 0px;}
+div.rbtoc1684926683182 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926683182'>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-Přenosy'>Přenosy</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-Datovéentity'>Datové entity</a></li>
+</ul>
+</li>
+<li><a href='#CRMMarketingListEventStream-Topicy'>Topicy</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-NázvyKSQLstreamů'>Názvy KSQL streamů</a></li>
+<li><a href='#CRMMarketingListEventStream-Názvyinterfacetabulek'>Názvy interface tabulek</a></li>
+</ul>
+</li>
+<li><a href='#CRMMarketingListEventStream-Popispublikacedat'>Popis publikace dat</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-Marketinglist'>Marketing list</a></li>
+<li><a href='#CRMMarketingListEventStream-Marketinglistmember'>Marketing list member</a></li>
+<li><a href='#CRMMarketingListEventStream-Banknews'>Bank news</a></li>
+</ul>
+</li>
+<li><a href='#CRMMarketingListEventStream-JSONschémata'>JSON schémata</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-Identifikátory'>Identifikátory</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-IdentifikaceBID,BCD,Bstatus'>Identifikace BID, BCD, Bstatus</a></li>
+<li><a href='#CRMMarketingListEventStream-Definiceeventkey'>Definice event key</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#CRMMarketingListEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-Průběžnádata'>Průběžná data</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMMarketingListEventStream-Marketinglist.1'>Marketing list</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="CRMMarketingListEventStream-NázvyKSQLstreamů">Názvy KSQL streamů</h2><p>Nevyužívají se KSQL streamy</p><h2 id="CRMMarketingListEventStream-Názvyinterfacetabulek"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Názvy interface tabulek</span></h2><p>Nevyužívají se interfaceové tabulky</p><h1 id="CRMMarketingListEventStream-Popispublikacedat"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Popis publikace dat</span></h1><h2 id="CRMMarketingListEventStream-Marketinglist"><span style="letter-spacing: -0.01em;font-size: 24.0px;">Marketing list</span></h2><p><span style="letter-spacing: 0.0px;">CRM publikuje data o Marketingových listech přímo do Průběžných případně rekoncilizačních topiců. Spouštěčem je změna jakéhokoliv atributu z topicu. Zároveň existuje rekonciliační API. Pro získání členů marketingového seznamu musí konzument provolat <span>API </span>/marketingList/{marketingListId}/members. Čímž dostane seznam členů do topicu JTB-HD_CRM_MARKETING-LIST-MEMBERS_RCN_GNR. Seznam členů marketingového listu nemá průběžný topic.</span></p><h2 id="CRMMarketingListEventStream-Marketinglistmember"><span>Marketing list member</span></h2><p><span>Data o členech marketingových seznamů budou poskytována v rámci kafka topicu na základě provolání REST služby. Topic na členy je jen jeden a nerozlišují se čeští a slovenští členové seznamu.</span></p><h2 id="CRMMarketingListEventStream-Banknews"><span>Bank news</span></h2><p><span>Seznam rozesílek, ani jejich členů není poskytovaný do průběžného topicu, ale pouze do rekonciliačního. API pro rekonciliaci funuje v synchronním i asynchronním módu,</span></p><div class="table-wrap"><table class="relative-table wrapped confluenceTable"><colgroup><col style="width: 7.62911%;"/><col style="width: 11.4437%;"/><col style="width: 29.1667%;"/><col style="width: 51.7606%;"/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Datová entita</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Spouštěč události</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3">Frekvence</th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3">Poznámka</th></tr><tr><td class="confluenceTd">MarketingList</td><td class="confluenceTd">uložení nových hodnot</td><td class="confluenceTd">jednotky denně</td><td colspan="1" class="confluenceTd"><p>-</p></td></tr><tr><td class="confluenceTd">MarketingListMember</td><td class="confluenceTd">provolání API</td><td class="confluenceTd">jednotky denně</td><td colspan="1" class="confluenceTd"><p>data se aktualizují na základě provolání API</p></td></tr><tr><td colspan="1" class="confluenceTd">BankNewsList</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">uložení nových hodnot/ provolání API</span></td><td colspan="1" class="confluenceTd">méně než jeden za den</td><td colspan="1" class="confluenceTd">-</td></tr><tr><td colspan="1" class="confluenceTd">BankNewsSettings</td><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">uložení nových hodnot/ provolání API</span></td><td colspan="1" class="confluenceTd">jednotky - desítky denně</td><td colspan="1" class="confluenceTd">hodnoty se aktualizují klientovým přihlášením/odhlášením k seznamu. Při velkých rozesílkách nebo nových kampaních může být frekvence nižší</td></tr></tbody></table></div><h1 id="CRMMarketingListEventStream-JSONschémata">JSON schémata</h1><p title="undefined">JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><h2 id="CRMMarketingListEventStream-Identifikátory">Identifikátory</h2><h3 id="CRMMarketingListEventStream-IdentifikaceBID,BCD,Bstatus"><span style="font-size: 16.0px;font-weight: bold;letter-spacing: -0.006em;">Identifikace BID, BCD, Bstatus</span></h3><p>BID = marketingListId</p><p>BCD = businessChangeDate</p><p>Bstatus = businessStatus</p><h3 id="CRMMarketingListEventStream-Definiceeventkey">Definice event key</h3><p>businessChangeDate</p><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">Požadavky na integraci</span></p><ul><li>počet partitions (8), pro číselník méně (1)</li><li>počet replik (3)</li><li>retention period (6 days)</li></ul><h1 id="CRMMarketingListEventStream-Ošetřeníchybovýchstavů"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Ošetření chybových stavů</span></h1><p><br/></p><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">Sekvenční diagramy</span></p><h2 class="auto-cursor-target" id="CRMMarketingListEventStream-Průběžnádata"><span>Průběžná data</span></h2><h3 id="CRMMarketingListEventStream-Marketinglist.1"><span>Marketing list</span></h3><p><span><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/17337772/17341408.png" data-image-src="attachments/17337772/17341408.png" data-unresolved-comment-count="0" data-linked-resource-id="17341408" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-6-1_13-12-56.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337772" data-linked-resource-container-version="42" alt=""></span></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17337773.json">fxRate_aktivni.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17337774.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339267.json">marketingList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339272.json">marketingList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339273.json">marketingListMember.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339285.json">marketingList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339288.json">marketingListMember.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339287.json">BankNewsList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339286.json">BankNewsSettings.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17340291.json">marketingList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339462.json">BankNewsSettings.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339463.json">BankNewsList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339268.json">marketingListMember.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339275.json">BankNewsSettings.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17339274.json">BankNewsList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17338002.json">marketingList.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341453.json">crm_MarketingList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341454.json">crm_MarketingListMember_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341455.json">crm_BankNewsList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341456.json">crm_BankNewsSettings_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341408.png">image2022-6-1_13-12-56.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341361.json">crm_MarketingList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341362.json">crm_MarketingListMember_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341363.json">crm_BankNewsList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337772/17341364.json">crm_BankNewsSettings_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

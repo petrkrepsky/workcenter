@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Closing Balance - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="CURRENT-ACCOUNTS_17340355.html">CURRENT-ACCOUNTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17343030.html">Closing Balance - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Closing Balance - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified on Bře 17, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Na této stránce je definována datová entita Closing Balance.</p><p>Technická realizace přenosů je pak popsána na stránkách:</p><ul><li class="with-breadcrumbs" title="undefined"><a href="Closing-Balance---Event-Stream_17343032.html">Closing Balance - Event Stream</a> </li><li class="with-breadcrumbs" title="undefined"><a href="Closing-Balance---REST-API_17343039.html">Closing Balance - Rekonciliačn&iacute; API</a></li></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926581347 {padding: 0px;}
+div.rbtoc1684926581347 ul {margin-left: 0px;}
+div.rbtoc1684926581347 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926581347'>
+<ul class='toc-indentation'>
+<li><a href='#ClosingBalanceDatovýmodel-DatováentitaClosingBalance'>Datová entita Closing Balance</a>
+<ul class='toc-indentation'>
+<li><a href='#ClosingBalanceDatovýmodel-ClosingBalance'>Closing Balance</a></li>
+</ul>
+</li>
+<li><a href='#ClosingBalanceDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="ClosingBalanceDatovýmodel-DatováentitaClosingBalance">Datová entita Closing Balance</h1><h2 class="auto-cursor-target" id="ClosingBalanceDatovýmodel-ClosingBalance"><span class="inline-comment-marker" data-ref="0bf5d978-12a7-4450-9542-d3edc8214fb6">Closing Balance</span></h2><p>Objekt: closing balance</p><ul><li>průběžný topic - může být více jak N záznamů</li><li>init/recon topic - může být několik (N) záznamů</li></ul><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">lvl</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">attribute_name</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">multiplicity</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">data_type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">format</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">constraint</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">description</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">enum values</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">businessIdentifer</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">kafka_bcd</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">KEY</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3">change</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">X-Correlation-ID</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Correlation identifier</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">accountId</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Internal account identification.</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">accountKind</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">ENUM</td><td class="confluenceTd">3</td><td class="confluenceTd">Account kind</td><td class="confluenceTd">CUA|CCR|LOA|<strong>RDA|NWB|CRD</strong></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">17.3.2023: Rozšířeno v rámci <a class="external-link" href="https://jiradigi.jtfg.com/browse/DSWF-4641" rel="nofollow">DSWF-4641</a></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">eventTimestamp</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date-time</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Datetime of insertion to events table in BISQ.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y (slouží jako náhrada za BCD)</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">closingBalance</td><td class="confluenceTd">1..N</td><td class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Collection of closing balances at end of the day.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">closingBalance</td><td class="confluenceTd">1</td><td class="confluenceTd">number</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Closing balance.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">closingBalanceDate</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">date</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Booking day.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd"><s>2</s></td><td class="confluenceTd"><s>credit</s></td><td class="confluenceTd"><s>0..1</s></td><td class="confluenceTd"><s>number</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>Sum of all incoming items.</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd"><s>2</s></td><td class="confluenceTd"><s>debit</s></td><td class="confluenceTd"><s>0..1</s></td><td class="confluenceTd"><s>number</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><s>Sum of all outcoming items.</s></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr></tbody></table></div><p><br/><br/></p><h1 class="auto-cursor-target" id="ClosingBalanceDatovýmodel-Vysvětleníidentifikátorů">Vysvětlení identifikátorů</h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;" title="Barva pozadí: Světle žlutá 100 %"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">typ entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">businessIdentifier*</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">KEY</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">BUSINESS_STATE</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">resource</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %">query_parameters</td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %"><strong title="">Balance</strong></td><td class="confluenceTd">accountId</td><td class="confluenceTd">accountId</td><td class="confluenceTd">X</td><td class="confluenceTd">/closing-balance/</td><td class="confluenceTd">accountId</td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-38014189"></a>
+                                    <font class="smallfont"><p>Bude jen pro CURRENT-ACCOUNT (běžné úcty)? Nebude pro deposity a nějaké jene typy učtu? </p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by JT8101037 at Lis 23, 2022 09:45
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

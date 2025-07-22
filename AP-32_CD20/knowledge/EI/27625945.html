@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Statement - Integrační analýza</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="DOCUMENTS_27625158.html">DOCUMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Statement - Integrační analýza
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified by <span class='editor'> Havlena David</span> on Led 16, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 class="auto-cursor-target" id="StatementIntegračníanalýza-Typyvýpisů">Typy výpisů</h1><p>Datová entita statement obsahuje tyto typy výpisů.   </p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" scope="col" title="Background colour : Light yellow 100%"><span style="color: rgb(0,0,0);" title="">statementTypeCodeId</span></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" scope="col" title="Background colour : Light yellow 100%">Název výpisu</th></tr><tr><td class="confluenceTd">BIS00</td><td class="confluenceTd">Výpis z běžného účtu</td></tr><tr><td class="confluenceTd">BIS01</td><td class="confluenceTd">Výpis z běžného účtu</td></tr><tr><td class="confluenceTd">BIS02 </td><td class="confluenceTd">Výpis z termínovaného vkladu</td></tr><tr><td class="confluenceTd">BIS03</td><td class="confluenceTd">Výpis z vkladu s výpovědní lhůtou</td></tr><tr><td class="confluenceTd">BIS04</td><td class="confluenceTd">Výpis z karetního účtu</td></tr><tr><td class="confluenceTd">BIS05</td><td class="confluenceTd">Výpis z vkladu s výpovědní lhůtou</td></tr><tr><td class="confluenceTd">BIS06</td><td class="confluenceTd">Výpis z karetního účtu</td></tr><tr><td class="confluenceTd">BIS10</td><td class="confluenceTd">Výpis poplatků</td></tr><tr><td class="confluenceTd">OCP01</td><td class="confluenceTd">Informace o stavu a pohybech majetku zákazníka  = IU</td></tr><tr><td class="confluenceTd">OCP03</td><td class="confluenceTd">Informace o stavu a pohybech majetku zákazníka  = TU</td></tr><tr><td class="confluenceTd">OCP32</td><td class="confluenceTd">Výpis z investičního účtu</td></tr><tr><td class="confluenceTd">OCP33</td><td class="confluenceTd">Výpis z majetkového účtu</td></tr><tr><td class="confluenceTd">OCP39*</td><td class="confluenceTd">Výnosy</td></tr><tr><td class="confluenceTd">OCP41</td><td class="confluenceTd">Přehled nákladů a pobídek</td></tr><tr><td class="confluenceTd">OCP42</td><td class="confluenceTd">Přehled nákladů a pobídek</td></tr><tr><td class="confluenceTd">OCP45</td><td class="confluenceTd">Informace o nevypořádaných derivátových obchodechDatový model</td></tr></tbody></table></div><p class="auto-cursor-target">*i když v SD je, že zobrazujeme jako konfirmace, bylo rozhodnuto zařadit mezi výpisy.</p><h1 class="auto-cursor-target" id="StatementIntegračníanalýza-ProvázáníhistorickýchdatmeziCRMaXEROX">Provázání historických dat mezi CRM a XEROX</h1><p>V současné době jsou všechny příkazy provázány v DB JTDOC s přílohami přes &quot;DocumentID&quot;</p><h1 class="auto-cursor-target" id="StatementIntegračníanalýza-Popispřenosu">Popis přenosu</h1><p class="auto-cursor-target"><span style="color: rgb(23,43,77);">Při požadavku na přenos souboru s přílohou, bude přenesena, buď jedna příloha (XML, PDF).</span></p><p class="auto-cursor-target"><span style="color: rgb(23,43,77);">Přenos metadat je volán metodou:</span></p><ul><li class="auto-cursor-target"><span style="color: rgb(23,43,77);">POST /Document/download/statement/metadata (Stažení metadat konfirmace dle kolekce ConfirmationId odeslané zprávy s konfirmací)</span></li></ul><p class="auto-cursor-target"><span style="color: rgb(23,43,77);">Přenos souborů s konfirmacemi je volán metodou:</span></p><ul><li class="auto-cursor-target"><span style="color: rgb(23,43,77);">POST /Document/download/statement (Stažení konfirmace dle kolekce ConfirmationId odeslané zprávy s konfirmací. V případě požadavku na stažení více konfirmací se vrací ZIP archiv)</span></li></ul><p class="auto-cursor-target"><span style="color: rgb(23,43,77);">Funkcionalita je nasazena v API DigiClientOperations verze 2.1</span></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926593663 {padding: 0px;}
+div.rbtoc1684926593663 ul {margin-left: 0px;}
+div.rbtoc1684926593663 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926593663'>
+<ul class='toc-indentation'>
+<li><a href='#StatementIntegračníanalýza-Typyvýpisů'>Typy výpisů</a></li>
+<li><a href='#StatementIntegračníanalýza-ProvázáníhistorickýchdatmeziCRMaXEROX'>Provázání historických dat mezi CRM a XEROX</a></li>
+<li><a href='#StatementIntegračníanalýza-Popispřenosu'>Popis přenosu</a></li>
+</ul>
+</div></p>
+</div></div><div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Rozcestník integrační analýzy Statements</b></div><div class="panelContent">
+<ul class='childpages-macro'><li><a href="27625951.html">Statement - Datov&yacute; model</a></li><li><a href="Statement---Event-Stream_27630039.html">Statement - Event Stream</a></li></ul>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

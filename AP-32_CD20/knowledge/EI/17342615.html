@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CRM Autosweep - Datový model</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17342614.html">CRM Autosweep - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CRM Autosweep - Datový model
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Neznámý uživatel (ex8101446)</span>, last modified by <span class='editor'> Havlena David</span> on Říj 03, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p>Na této stránce je definována datová entita Autosweep.</p><p>Technická realizace přenosů je pak popsána na stránkách:</p><ul><li class="with-breadcrumbs" title="undefined"><a href="CRM-Autosweep---Event-Stream_17342616.html">CRM Autosweep - Event Stream</a> </li><li class="with-breadcrumbs" title="undefined"><a href="CRM-Autosweep---REST-API_17342633.html">CRM Autosweep - REST API</a></li></ul><p><br/></p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926670586 {padding: 0px;}
+div.rbtoc1684926670586 ul {margin-left: 0px;}
+div.rbtoc1684926670586 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926670586'>
+<ul class='toc-indentation'>
+<li><a href='#CRMAutosweepDatovýmodel-Identifikacečíselníků'>Identifikace číselníků</a></li>
+<li><a href='#CRMAutosweepDatovýmodel-DatováentitaAutosweep'>Datová entita Autosweep</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMAutosweepDatovýmodel-Autosweep'>Autosweep</a></li>
+</ul>
+</li>
+<li><a href='#CRMAutosweepDatovýmodel-Vysvětleníidentifikátorů'>Vysvětlení identifikátorů</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CRMAutosweepDatovýmodel-Identifikacečíselníků">Identifikace číselníků</h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Název atributu</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Název číselníku</th></tr><tr><td class="confluenceTd">location</td><td class="highlight-#ff5630 confluenceTd" data-highlight-colour="#ff5630" title="Barva pozadí: Středně červená 100 %">???</td></tr></tbody></table></div><h1 id="CRMAutosweepDatovýmodel-DatováentitaAutosweep">Datová entita Autosweep</h1><h2 class="auto-cursor-target" id="CRMAutosweepDatovýmodel-Autosweep"><span class="inline-comment-marker" data-ref="0bf5d978-12a7-4450-9542-d3edc8214fb6">Autosweep</span></h2><p>Celá kolekce se bude posílat v jedné události.</p><p>Struktura dle <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17337890">předepsan&eacute; metodiky</a>.</p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 83.0171%;"><colgroup><col style="width: 2.75588%;"/><col style="width: 10.7931%;"/><col style="width: 7.349%;"/><col style="width: 6.50693%;"/><col style="width: 5.05244%;"/><col style="width: 6.66003%;"/><col style="width: 13.5497%;"/><col style="width: 11.2532%;"/><col style="width: 10.258%;"/><col style="width: 6.66003%;"/><col style="width: 3.5214%;"/><col style="width: 15.5401%;"/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>lvl</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>attribute_name</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>multiplicity</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>data_type</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>format</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>constraint</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>description</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong><span class="inline-comment-marker" data-ref="5f5c228a-23bb-463b-bfc4-3028a67695d4">enum values</span></strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>businessIdentifer</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>kafka_bcd</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>KEY</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong>notice</strong></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><p>X-Correlation-ID</p></td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Korelační identifikátor pro inicializaci a rekonciliaci</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">action</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd">enum</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Typ operace. NULL pro rekonciliaci/inicializaci</td><td class="confluenceTd">create|update|delete</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td style="text-align: left;" class="confluenceTd">timestamp</td><td style="text-align: left;" class="confluenceTd">0..1</td><td style="text-align: left;" class="confluenceTd">string</td><td style="text-align: left;" class="confluenceTd">date-time</td><td style="text-align: left;" class="confluenceTd"><br/></td><td style="text-align: left;" class="confluenceTd">Datum a čas operace</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">autosweepId</td><td class="confluenceTd"><strong><span style="color: rgb(255,0,0);">1</span></strong></td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Interní CRM GUID primární klíč, vždy vyplněno</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Y</td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">before</td><td class="confluenceTd">0..1</td><td class="confluenceTd">oneOf</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Stav záznamu před provedením změn. NULL při vytvoření záznamu a při rekonciliaci/inicializaci</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">#/definitions/AutosweepData</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd">after</td><td class="confluenceTd">0..1</td><td class="confluenceTd">oneOf</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Stav záznamu po provedení změn. NULL při smazání záznamu</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">#/definitions/AutosweepData</td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><p>state</p></td><td class="confluenceTd">0..1</td><td class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Technický stav záznamu</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">CRM má interně stav záznamu dvojstupňový, ve většině případů bude stačit řídit se pouze<span> </span></span><span style="color: rgb(23,43,77);">&quot;</span><span style="color: rgb(23,43,77);">statecode&quot;. Ale např. u aktivit je &quot;statecode&quot; dále upřesněn &quot;Statuscode&quot;</span></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  statecode</td><td class="confluenceTd">1</td><td class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Statecode</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">stav karty</span></td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">    value</td><td class="confluenceTd">1</td><td class="confluenceTd">integer</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Hodnota CRM enumerátoru/OptionSetu</td><td class="confluenceTd">0|1</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><p style="text-align: left;"><span style="color: rgb(23,43,77);">0 = Active (aktivni)</span></p><p style="text-align: left;"><span style="color: rgb(23,43,77);">1= Inactive (neaktivní)</span></p></td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">    label</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Popisek číselníkové hodnoty z CRM</td><td class="confluenceTd">Aktivní|Neaktivní</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  statuscode</td><td class="confluenceTd">1</td><td class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Statuscode</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><span style="color: rgb(23,43,77);">důvod stavu</span></td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">    value</td><td class="confluenceTd">1</td><td class="confluenceTd">integer</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">hodnota číselníku v CRM</td><td class="confluenceTd">1|2</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">    label</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">popisek číselníkové hodnoty</td><td class="confluenceTd">Aktivní|Neaktivní</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  anonymized</td><td class="confluenceTd">0..1</td><td class="confluenceTd">bool</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Záznam byl anonymizován</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  deleted</td><td class="confluenceTd">0..1</td><td class="confluenceTd">bool</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Záznam byl smazán</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  merged</td><td class="confluenceTd">0..1</td><td class="confluenceTd">bool</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Záznam byl sloučen a deaktivován</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  masterid</td><td class="confluenceTd">0..1</td><td class="confluenceTd">guid</td><td class="confluenceTd">uuid</td><td class="confluenceTd"><br/></td><td class="confluenceTd">GUID vítězného záznamu při slučování</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">1</td><td class="confluenceTd"><strong><span style="color: rgb(0,0,0);"><span style="color: rgb(255,0,0);">AutosweepData</span></span></strong></td><td class="confluenceTd"><strong><span style="color: rgb(255,0,255);">0..1</span></strong></td><td class="confluenceTd"><p>anyOf</p></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  accountId</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd">uuid</td><td class="confluenceTd"><br/></td><td class="confluenceTd">Klient/firma (GUID klienta/firmy v CRM)</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  klientId</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Klient ID (KLID); examples:       1000018856</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  location</td><td class="confluenceTd">1</td><td class="confluenceTd">object</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Lokace</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">    value</td><td class="confluenceTd">1</td><td class="confluenceTd">integer</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Hodnota CRM enumerátoru/OptionSetu;  examples: 500000000</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">3</td><td class="confluenceTd">    label</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Popisek číselníkové hodnoty z CRM; examples:  CZ, SK, CZ i SK</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  currency</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Měna (apicode); examples: CZK, EUR, USD</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  iban</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Číslo účtu ve formátu IBAN. Vyplněn je vždy buď IBAN nebo BBAN.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd">  bban</td><td class="confluenceTd">1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">Číslo účtu ve formátu BBAN. Vyplněn je vždy buď IBAN nebo BBAN.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">2</td><td class="confluenceTd"> quaestorId</td><td class="confluenceTd">0..1</td><td class="confluenceTd">string</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd">ID bankovního účtu v BIS Quaestor.</td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td><td class="confluenceTd"><br/></td></tr></tbody></table></div><br/><h1 class="auto-cursor-target" id="CRMAutosweepDatovýmodel-Vysvětleníidentifikátorů">Vysvětlení identifikátorů</h1><p><br/></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><td style="text-align: left;" class="confluenceTd"><u> </u></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;"><strong title="">datový model</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="3" data-highlight-colour="#fff0b3" style="text-align: center;"><strong title="">REST API reconciliation<u> </u></strong></td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title=""> entity</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">businessIdentifier</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">KEY</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">BUSINESS_STATE</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">resource</td><td class="highlight-#fffae6 confluenceTd" colspan="1" data-highlight-colour="#fffae6" style="text-align: left;">path parameters</td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;">query_parameters</td></tr><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">Autosweep</strong></td><td style="text-align: left;" class="confluenceTd">autosweepId</td><td style="text-align: left;" class="confluenceTd">autosweepId</td><td style="text-align: left;" class="confluenceTd">statusCode + anonymized + deleted</td><td style="text-align: left;" class="confluenceTd">Autosweep</td><td colspan="1" style="text-align: left;" class="confluenceTd"><span style="color: rgb(59,65,81);" title="">autosweepId, crmIdType</span><span style="color: rgb(59,65,81);" title=""><span style="color: rgb(255,0,0);"><span> </span>+ crmId</span></span></td><td style="text-align: left;" class="confluenceTd">from, to, bcd, location</td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-27628890"></a>
+                                    <font class="smallfont"><p>za DKCZ teprve nyní připravujeme SD pro autosweep, nicméně bych se chtěl co nejvíce odrazit od této integrační analýzy, aby nemusel někdo prohledávat znovu naše požadavky s tímto navrhovaným.</p><p>V rámci tohoto se prosím chci zeptat, jak poznám, že je autosweep na klientovi aktivní/neaktivní. Jsou tu dvě informace se stateCode = aktivní,neaktivní a statusCode = aktivní, neaktivní.</p><p>Která z těchto hodnot je pro DKCZ informací, že klient má zapnutý autosweep? Předem děkuji za doplnění.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101478 at Srp 30, 2022 10:28
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-27629891"></a>
+                                    <font class="smallfont"><p>Po zapracovaní ClientID (KLID) a QST_accountID.</p><p>Location je súčasťou členenia topicov. Zvážiť úpravu vo forme vyhodenia.</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8300688 at Zář 07, 2022 14:31
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-36471158"></a>
+                                    <font class="smallfont"><p>prosím o aktualizaci datového modelu vzhledem ke KlientId a QuaestorId <a class="confluence-userlink user-mention" data-username="EX8101961" href="https://confluencedigi.jtfg.com/display/~EX8101961" data-linked-resource-id="27627041" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Havlena David</a> <a class="confluence-userlink user-mention" data-username="EX8100685" href="https://confluencedigi.jtfg.com/display/~EX8100685" data-linked-resource-id="17335660" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Rosa Tom&aacute;&scaron;</a> <a class="confluence-userlink user-mention" data-username="EX8101910" href="https://confluencedigi.jtfg.com/display/~EX8101910" data-linked-resource-id="17341976" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">&Scaron;kabrada Jan</a></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101804 at Zář 30, 2022 08:37
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-36471373"></a>
+                                    <font class="smallfont"><p><span style="color: rgb(23,43,77);">Datový model aktualizován, bohužel v API jsem nalezl chyby, jdu na ně na dodavatele zadat defekt.<span> </span></span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101961 at Říj 03, 2022 11:49
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

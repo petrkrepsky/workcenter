@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : Product - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PRODUCTS_17339910.html">PRODUCTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337914.html">Product - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : Product - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified by <span class='editor'> Rak Filip</span> on Úno 08, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="ProductEventStream-Datovéentity"><span style="font-size: 20.0px;letter-spacing: -0.008em;">Datové entity</span></h1><p><span>Pro produktový katalog je definována datová entita:</span></p><ul><li><p>Product</p></li></ul><h1 id="ProductEventStream-Topicy"><span>Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Entity Type</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Název Topicu*</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6"><p title="">Typ Topicu</p></th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><p title="">Poznámka </p></th></tr><tr><td rowspan="5" class="confluenceTd"><p>Product</p></td><td class="confluenceTd"><p><span>JTB-HQ_PRODUCTS_PRODUCT</span>_SYNC_GNR_v2</p></td><td class="confluenceTd"><p>Průběžný</p></td><td class="confluenceTd"><p>Topic <strong>udržujeme do 15.3  </strong>z důvodu walkaroundu</p></td></tr><tr><td class="confluenceTd"><p><span>JTB-HQ_PRODUCTS_PRODUCT</span>_RCN_GNR_v2</p></td><td class="confluenceTd"><p class="auto-cursor-target">Inicializační/Rekonciliační</p></td><td class="confluenceTd"><p class="auto-cursor-target">Topic <strong>udržujeme do 15.3  </strong>z důvodu walkaroundu</p></td></tr><tr><td class="confluenceTd"><p><span>JTB-HQ_PRODUCTS_PRODUCT</span>_SYNC_GNR_v3</p></td><td class="confluenceTd"><p>Průběžný</p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p><span>JTB-HQ_PRODUCTS_PRODUCT</span>_RCN_GNR_v3</p></td><td class="confluenceTd"><p class="auto-cursor-target">Inicializační/Rekonciliační</p></td><td class="confluenceTd" /></tr><tr><td class="confluenceTd">JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</td><td class="confluenceTd">Kontrolní</td><td class="confluenceTd"><br/></td></tr></tbody></table></div><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Posílají se konfigurace produktů, nikoliv šablony.</p></div></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926732238 {padding: 0px;}
+div.rbtoc1684926732238 ul {margin-left: 0px;}
+div.rbtoc1684926732238 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926732238'>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#ProductEventStream-Topicy'>Topicy</a></li>
+<li><a href='#ProductEventStream-Řídícíatributy'>Řídící atributy</a>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Prořízenídostupnostiproduktů'>Pro řízení dostupnosti produktů</a></li>
+<li><a href='#ProductEventStream-Pravidlaprořízeníkonzumacedat'>Pravidla pro řízení konzumace dat</a></li>
+<li><a href='#ProductEventStream-KeyaValue'>Key a Value</a>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Key'>Key</a>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Kontrolnítopic'>Kontrolní topic</a></li>
+<li><a href='#ProductEventStream-Průběžnýtopic'>Průběžný topic</a></li>
+</ul>
+</li>
+<li><a href='#ProductEventStream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Kontrolnítopic.1'>Kontrolní topic</a></li>
+<li><a href='#ProductEventStream-Průběžnýtopic.1'>Průběžný topic</a></li>
+<li><a href='#ProductEventStream-Inicializační/Rekonciličanítopic'>Inicializační/Rekonciličaní topic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#ProductEventStream-Popisodběrudat'>Popis odběru dat</a>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Strukturaschématu'>Struktura schématu</a></li>
+<li><a href='#ProductEventStream-Mapovánínaprodukty'>Mapování na produkty</a></li>
+</ul>
+</li>
+<li><a href='#ProductEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#ProductEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Početudálostídenně'>Počet událostí denně</a></li>
+<li><a href='#ProductEventStream-Sekvenčnídiagramy'>Sekvenční diagramy</a></li>
+<li><a href='#ProductEventStream-Průběžnádata'>Průběžná data</a>
+<ul class='toc-indentation'>
+<li><a href='#ProductEventStream-Product'>Product</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="ProductEventStream-Řídícíatributy">Řídící atributy</h1><h2 id="ProductEventStream-Prořízenídostupnostiproduktů">Pro řízení dostupnosti produktů</h2><p>Digitální kanály jsou zodpovědné za to, že konzumují pouze ta data, která:</p><ul><li>jsou určena pouze pro danou zemi digitální kanálů <em>(DK CZ nekonzumují data určená pro DK SK a naopak)</em></li><li>jsou určeny pouze pro dané publikační místo</li></ul><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Řídící atribut</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Povinný</th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" title="Barva pozadí: Světle žlutá 100 %">Poznámka</th></tr><tr><td class="confluenceTd">Poskytovatel</td><td class="confluenceTd"><p>Ano</p></td><td class="confluenceTd">Bude řídit dostupnost produktů pro jednotlivé země</td></tr><tr><td class="confluenceTd"><span>Publikační místo</span></td><td class="confluenceTd">Ano</td><td class="confluenceTd"><span>Bude řídit dostupnost v jednotlivých publikačních místech</span></td></tr><tr><td colspan="1" class="confluenceTd"><p>Typ smlouvy</p></td><td colspan="1" class="confluenceTd">Ano</td><td colspan="1" class="confluenceTd">-</td></tr><tr><td colspan="1" class="confluenceTd"><p>Segment</p></td><td colspan="1" class="confluenceTd">Ano</td><td colspan="1" class="confluenceTd">Pouze pro investiční produkty</td></tr><tr><td colspan="1" class="confluenceTd">Úroveň obsluhy</td><td colspan="1" class="confluenceTd">Ano</td><td colspan="1" class="confluenceTd">-</td></tr></tbody></table></div><h2 id="ProductEventStream-Pravidlaprořízeníkonzumacedat">Pravidla pro řízení konzumace dat</h2><ul><li style="list-style-type: none;"><ul><li style="list-style-type: none;"><ul><li>Bude existovat filtrace při odebírání dat na úrovni Digitálních kanálů</li><li>Každá nová verze prochází standardním vývojovým cyklem končícím akceptací business zadavatelů</li><li>Odpovědnost za správnou filtraci bude na aplikaci, tedy aplikační správce za DK</li><li>Dostupnost produktové definice bude řízena pomocí konfigurace v produktovém katalogu - možnost omezení až na úroveň segmentu/typu smlouvy</li></ul></li></ul></li></ul><h2 id="ProductEventStream-KeyaValue"><span>Key a Value</span></h2><p><span style="letter-spacing: 0.0px;">Každá Kafka událost sestává z Key a Value.</span></p><h3 id="ProductEventStream-Key">Key</h3><h4 id="ProductEventStream-Kontrolnítopic">Kontrolní topic</h4><p>Klíč je definovan na stránce <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17337611">Produktov&yacute; katalog - C&iacute;lov&yacute; koncept připojen&iacute;</a></p><h4 id="ProductEventStream-Průběžnýtopic">Průběžný topic</h4><p><span style="color: rgb(0,0,0);">V tuto chvíli se jako unikátní identifikátor používá technicalProductId.</span></p><h3 id="ProductEventStream-Value"><span>Value</span></h3><p>Data produktu ve formátu JSON.</p><h4 id="ProductEventStream-Kontrolnítopic.1">Kontrolní topic</h4><p>Obsah těla je definován schématem &quot;controllSchema_v1.json&quot; na stránce <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17337611">Produktov&yacute; katalog - C&iacute;lov&yacute; koncept připojen&iacute;</a></p><h4 id="ProductEventStream-Průběžnýtopic.1"><span>Průběžný topic</span></h4><p><span style="color: rgb(0,0,0);">Obsah těla je definován schématem &quot;ProduktovyKatalog_Product_v1.json&quot; uloženým na této stránce v kapitole JSON schéma. Volitelný atribut X-Correlation-ID se nevyplňuje.</span></p><h4 id="ProductEventStream-Inicializační/Rekonciličanítopic">Inicializační/Rekonciličaní topic</h4><p><span style="color: rgb(0,0,0);">Obsah těla je definován schématem &quot;ProduktovyKatalog_Product_v1.json&quot; uloženým na této stránce v kapitole JSON schéma. </span>Oproti průběžnému topicu musí události v inicializačním/rekonciliačním topicu obsahovat atribut X-Correlation-ID, jehož h<span style="letter-spacing: 0.0px;">odnota je rovna hodnotě header parametru X-Correlation-ID z volání rekonciliačního API.</span></p><h1 id="ProductEventStream-Popisodběrudat">Popis odběru dat</h1><p>Spouštěče událostí pro vkládání dat produktů do Kafka streamu, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 100.0%;"><colgroup><col style="width: 7.62911%;"/><col style="width: 11.4437%;"/><col style="width: 29.1667%;"/><col style="width: 51.7606%;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6">Datová entita</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6">Spouštěč události</th><th class="highlight-#fffae6 confluenceTh" data-highlight-colour="#fffae6">Frekvence</th><th class="highlight-#fffae6 confluenceTh" colspan="1" data-highlight-colour="#fffae6">Poznámka</th></tr><tr><td class="confluenceTd">Product</td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Kompletní synchronizace s CCP, Quaestor a CRM</span></td><td class="confluenceTd"><span style="color: rgb(0,0,0);">Pracovní dny 4:00</span></td><td colspan="1" class="confluenceTd"><ul><li><span style="color: rgb(0,0,0);">CCP - Dluhopisy, Fondy, Certifikáty, Deriváty, Akcie a číselníky</span></li><li><span style="color: rgb(0,0,0);">Quaestor - Termínované vklady, Vklady v výpovědní lhůtou, platební karty, běžné účty a číselníky</span></li><li><span style="color: rgb(0,0,0);">CRM - číselníky</span></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Product</td><td colspan="1" class="confluenceTd">Částečná synchronizace CCP</td><td colspan="1" class="confluenceTd">Pracovní dny 10:00, 13:00, 15:00, 17:00</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0,0,0);">Dluhopisy, Fondy, Certifikáty, Deriváty, Akcie. Data co v CCP přibyla od poslední synchronizace</span></td></tr></tbody></table></div><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">JSON schéma</span></p><p>JSON schémata Product obsahuje nepovinný atribut X-Correlation-ID, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na stránce <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><h2 id="ProductEventStream-Strukturaschématu">Struktura schématu</h2><p>Schéma má plochou strukturu s následujícím významem sekcí:</p><ul><li>product - atributy společné všem produktům (nikoliv průnik, ale sjednocení)</li><li>banking - atributy společné daily banking produktům (nikoliv průnik, ale sjednocení)</li><li>investment - atributy společné investičním produktům (nikoliv průnik, ale sjednocení)</li><li>currentAccount</li><li>mutualFund</li><li>termDeposit</li><li>deposit - atributy společné vkladům <em>(notice a term deposit) (nikoliv průnik, ale sjednocení)</em></li><li>noticeDeposit</li><li>card</li><li>combined</li></ul><h2 id="ProductEventStream-Mapovánínaprodukty">Mapování na produkty</h2><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 68.0%;"><colgroup><col style="width: 9.55631%;"/><col style="width: 14.1638%;"/><col style="width: 20.4778%;"/><col style="width: 10.4096%;"/><col style="width: 11.8601%;"/><col style="width: 15.4437%;"/><col style="width: 18.0887%;"/></colgroup><tbody><tr><td class="confluenceTd"><br/></td><td class="highlight-#fffae6 confluenceTd" colspan="2" data-highlight-colour="#fffae6"><p title=""><strong>produkt</strong></p></td><td class="highlight-#fffae6 confluenceTd" colspan="4" data-highlight-colour="#fffae6"><p title=""><strong>entity popisující produkt</strong></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" rowspan="6"><p title=""><strong>investiční</strong></p></td><td class="confluenceTd"><p>Stock</p></td><td class="confluenceTd"><p><em>akcie</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>investment</p></td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p>Bond</p></td><td class="confluenceTd"><p><em>dluhopis</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>investment</p></td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p>Investment Certificate</p></td><td class="confluenceTd"><p><em>certifikát</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>investment</p></td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p>Bill</p></td><td class="confluenceTd"><p><em>směnka</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>investment</p></td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p>Derivative</p></td><td class="confluenceTd"><p><em>deriváty</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>investment</p></td><td class="confluenceTd"><p><br/></p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p>MutualFund</p></td><td class="confluenceTd"><p><em>podílový fond</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>investment</p></td><td class="confluenceTd"><p>mutualFund</p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" rowspan="4"><p title=""><strong>bankovní</strong></p></td><td class="confluenceTd"><p>Card</p></td><td class="confluenceTd"><p><em>platební karta</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>banking</p></td><td class="confluenceTd"><p>card</p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p>CurrentAccount</p></td><td class="confluenceTd"><p><em>běžný účet</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>banking</p></td><td class="confluenceTd"><p>currentAccount</p></td><td class="confluenceTd"><p><br/></p></td></tr><tr><td class="confluenceTd"><p>NoticeDeposit</p></td><td class="confluenceTd"><p><em>vklad s výpovědní lhůtou</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>banking</p></td><td class="confluenceTd"><p>deposit</p></td><td class="confluenceTd"><p>noticeDeposit</p></td></tr><tr><td class="confluenceTd"><p>TermDeposit</p></td><td class="confluenceTd"><p><em>termínovaný vklad</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p>banking</p></td><td class="confluenceTd"><p>deposit</p></td><td class="confluenceTd"><p>termDeposit</p></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><strong>kombinovaný</strong></p></td><td class="confluenceTd"><p>Combined</p></td><td class="confluenceTd"><p><em>kombinovaný produkt</em></p></td><td class="confluenceTd"><p>product</p></td><td class="confluenceTd"><p title=""><span style="color: rgb(0,0,0);">banking, investment</span></p></td><td class="confluenceTd"><p>combined, termDeposit</p></td><td class="confluenceTd"><p><br/></p></td></tr></tbody></table></div><h1 id="ProductEventStream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><p>  - počet partitions (8), pro číselník méně (1), počet replik (3), retention period (6 days)</p><h1 id="ProductEventStream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p><span style="color: rgb(36,36,36);">V Produktovém katalogu běží job, který kontroluje, jestli nastal commit a jestli byla zpráva do Kafka poslaná. Po odeslání se zpráva označí jako zpracovaná. V případně nedostupnosti Kafky se další pokusy o odeslání neodeslaných zpráv opakují po definovaném čase. Perioda opakování bude upřesněna.</span></p><p><span style="font-size: 24.0px;letter-spacing: -0.01em;">Kapacitní požadavky</span></p><h2 id="ProductEventStream-Početudálostídenně"><span>Počet událostí denně</span></h2><p>typick<span style="color: rgb(0,0,0);">y <strong>:</strong></span></p><ul><li><span style="color: rgb(0,0,0);">jednotky až nižší desítky denně</span></li></ul><p><span style="color: rgb(0,0,0);"><em>Poznámka: nedá se paušalizovat. Záleží, zda/ a kolik vznikne nových produktů a zda PK obdrží nové podněty pro úpravu produktů, případně musím aktualizovat některé dokumenty, či hodnoty. </em></span></p><h2 id="ProductEventStream-Sekvenčnídiagramy"><span style="font-size: 24.0px;letter-spacing: -0.01em;">Sekvenční diagramy</span></h2><h2 id="ProductEventStream-Průběžnádata"><span>Průběžná data</span></h2><h3 id="ProductEventStream-Product"><span>Product</span></h3><p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" draggable="false" src="attachments/17337918/17341123.png" data-image-src="attachments/17337918/17341123.png" data-unresolved-comment-count="0" data-linked-resource-id="17341123" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="Product - Průběžný topic.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="17337918" data-linked-resource-container-version="45" alt=""></span></p><p><br/></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17337919.json">eBroker_FxRateDaily_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17337920.json">eBroker_FxRateInstant_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17337921.json">eBroker_FxRateList_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17337922.json">fxRate_aktivni.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17337923.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17339845.json">product_schema.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17340589.json">product_schema.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17339328.json">product_schema.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17340599.json">ProduktovyKatalog_Product_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17341205.json">ProduktovyKatalog_Product_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17341468.png">Product - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17341464.json">ProduktovyKatalog_Product_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17341465.json">ProduktovyKatalog_Product_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17340590.json">ProduktovyKatalog_Product_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17341467.json">produktovyKatalog_Product_v1.json</a> (application/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17341123.png">Product - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17342215.json">produktovyKatalog_Product_v2.json</a> (application/json)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/17337918/17342216.json">produktovyKatalog_Product_v1.json</a> (application/json)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:12</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

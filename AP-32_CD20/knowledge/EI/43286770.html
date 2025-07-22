@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-CollectionAccountToCollectionAccount - Integrační analýza</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-CollectionAccountToCollectionAccount - Integrační analýza
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Pro 07, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="table-wrap"><table style="" class="confluenceTable"><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Dodatavatel</strong></td><td style="text-align: left;" class="confluenceTd">Arbes</td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Aplikační architekt/Analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p><br/></p></div></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong title="">Hlavní business analytik</strong></td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper"><p title="undefined"><br/></p></div></td></tr></tbody></table></div><h1 id="APICollectionAccountToCollectionAccountIntegračníanalýza-Významslužby">Význam služby</h1><p>Požadavek na převod peněz mezi sběrnými účty daného klienta a portfolia s FX konverzí.</p><p>Parametry metody jsou portfolio, čísla nebo měny sběrných účtů a převáděná částka v měně zdrojového účtu. Ve službě může být uveden i měnový kurz. Není-li uveden, systém použije obchodní kurz uložený v TOPAS jinak vrátí chybu.</p><h1 id="APICollectionAccountToCollectionAccountIntegračníanalýza-Jakslužbukonzumovat">Jak službu konzumovat</h1><p>Konzument musí následovat postup definovaný v dokument <a class="external-link" href="https://jtfg.sharepoint.com/:w:/s/Digitlnkanly/EXYvJnPFua5OgTTOWBo61JgB7A7OOdl1_2i2Va2KQVRmIw?e=jWv758" rel="nofollow">Manuál pro konzumaci API služeb na ESB</a>.</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926621724 {padding: 0px;}
+div.rbtoc1684926621724 ul {margin-left: 0px;}
+div.rbtoc1684926621724 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926621724'>
+<ul class='toc-indentation'>
+<li><a href='#APICollectionAccountToCollectionAccountIntegračníanalýza-Významslužby'>Význam služby</a></li>
+<li><a href='#APICollectionAccountToCollectionAccountIntegračníanalýza-Jakslužbukonzumovat'>Jak službu konzumovat</a></li>
+<li><a href='#APICollectionAccountToCollectionAccountIntegračníanalýza-Zúčastněnékomponenty'>Zúčastněné komponenty</a></li>
+<li><a href='#APICollectionAccountToCollectionAccountIntegračníanalýza-Zúčastněnéslužby'>Zúčastněné služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APICollectionAccountToCollectionAccountIntegračníanalýza-Integračníslužby'>Integrační služby</a></li>
+<li><a href='#APICollectionAccountToCollectionAccountIntegračníanalýza-Aplikačníslužby'>Aplikační služby</a></li>
+</ul>
+</li>
+<li><a href='#APICollectionAccountToCollectionAccountIntegračníanalýza-Komponentnídiagram'>Komponentní diagram</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APICollectionAccountToCollectionAccountIntegračníanalýza-Zúčastněnékomponenty"><span>Zúčastněné komponenty</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1185.0px;"><colgroup><col style="width: 0.0px;"/><col style="width: 0.0px;"/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Name</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">FE - Digital Channels</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Systém, který umožňuje uživateli provádět bankovní operace přes internet. Je připojen k integrační vrstvě, kde konzumuje vystavená API.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>WSO2 API-M</p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 API Manager je platforma pro vytváření, integraci a vystavování digitálních služeb jako spravovaných API</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>ADP</p></td><td style="text-align: left;" class="confluenceTd"><p>ARBES Digitální Platformy (ADP), která zapouzdří jednotlivé funkční celky implementované v podobě mikroservis na jednotný škálovatelný Java aplikační server a umožní komunikaci s třetími stranami pomocí rozhraní KAFKA, SOAP nebo REST podle jejich potřeby. ADP je technologický framework umožňující automatický provoz jednotlivých mikroservis, jejich konektivitu a komunikaci. </p></td></tr></tbody></table></div><h1 id="APICollectionAccountToCollectionAccountIntegračníanalýza-Zúčastněnéslužby"><span>Zúčastněné služby</span></h1><h2 id="APICollectionAccountToCollectionAccountIntegračníanalýza-Integračníslužby">Integrační služby</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" colspan="2" data-highlight-colour="#fffae6" style="text-align: left;"><p><strong>URLs  - budou doplněny</strong></p></td></tr><tr><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>CollectionAccountToCollectionAccount</p><p><br/></p></td><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>REST API</p><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>UAT</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>SIT</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr></tbody></table></div><h2 id="APICollectionAccountToCollectionAccountIntegračníanalýza-Aplikačníslužby">Aplikační služby</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>collAccToCollAcc</p></td><td style="text-align: left;" class="confluenceTd"><p>REST API</p></td></tr></tbody></table></div><h1 id="APICollectionAccountToCollectionAccountIntegračníanalýza-Komponentnídiagram">Komponentní diagram</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/43286770/43286862.png" data-image-src="attachments/43286770/43286862.png" data-unresolved-comment-count="0" data-linked-resource-id="43286862" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CollectionAccountToCollectionAccount - Component SD.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="43286770" data-linked-resource-container-version="9" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43286770/43286771.png">RelevantProduct - Component diagram.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43286770/43286787.png">CollAccToCollAcc - ComponentD.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/43286770/43286862.png">CollectionAccountToCollectionAccount - Component SD.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

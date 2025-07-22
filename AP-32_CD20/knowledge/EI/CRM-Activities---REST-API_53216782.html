@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : CRM Activities - REST API</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PARTIES_17339956.html">PARTIES</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="43286564.html">CRM Activities - Integrační analýza</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : CRM Activities - REST API
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Kratochvíl Aleš</span>, last modified on Dub 17, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="CRMActivitiesRESTAPI-Požadavkynarekonciliaci">Požadavky na rekonciliaci</h1><p>Samostatné API (oddělené od druhého API <span style="color: rgb(0,0,0);">activities</span>) sloužící pro rekonciliaci (a inicializaci) bude vystaveno na WSO2. Specifikace rozhraní je na stránce <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17342899" rel="nofollow">Integrační analýzy - open api</a>.</p><h2 id="CRMActivitiesRESTAPI-Princip"><span>Princip</span></h2><p><span style="color: rgb(0,0,0);">Znovu zaslání pro určitého klienta zaznamenaných aktivit.</span></p><p><br/></p><h2 id="CRMActivitiesRESTAPI-Aplikačníslužby"><span style="color: rgb(0,0,0);">Aplikační služby</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Jméno</strong></span></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6"><p title=""><span style="color: rgb(0,0,0);"><strong>Typ</strong></span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">activitiesReconciliation</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">REST API</span></p></td></tr></tbody></table></div><p><br/></p><h2 id="CRMActivitiesRESTAPI-Atributyvolání">Atributy volání</h2><ul><li><span class="inline-comment-marker" data-ref="5e246519-0e9a-4334-85bb-7b102fef2a9b">metody</span>:<ul><li>GET /activity/{<span style="color: rgb(23,43,77);">activityType</span>}</li><li>GET /activity/{<span style="color: rgb(23,43,77);">activityType</span>}/{<span style="color: rgb(23,43,77);">activityId</span>}</li><li>GET /client/{crmIdType}/{crmId}</li><li>GET <span style="color: rgb(23,43,77);">/health (viz <a href="https://confluencedigi.jtfg.com/display/EI/healthcheck+endpoint" rel="nofollow">healthcheck endpoint</a>)</span></li></ul></li><li>header parametry:<ul><li>X-Correlation-ID</li><li>traceparent</li></ul></li><li>path parametry <ul><li><span style="color: rgb(23,43,77);">activityType je druh aktivity - např. schůzka, e-mail, telefonát, ...</span></li><li><span style="color: rgb(23,43,77);">activityId je identifikátor instance aktivity v CRM</span></li><li><span style="color: rgb(23,43,77);">crmIdType je druh identifikátoru klienta - např. AccountGUID nebo AccountKLID (kvůli bezpečnosti nelze využít pro RČ nebo IČ)</span></li><li><span style="color: rgb(23,43,77);">crmId je identifikátor instance klienta v CRM</span></li></ul></li><li>query parametry (nepovinné):<ul><li><span class="inline-comment-marker" data-ref="a96af69c-9c8e-4416-94c0-c150a793c7bb">klientId</span> (AccountKLID) je číslo klienta (nemá smysl pro /client/{crmIdType}/{crmId})</li><li><span style="color: rgb(23,43,77);">filledWhen</span>From (omezení výběru od - datum změny entity)</li><li><span style="color: rgb(23,43,77);">filledWhen</span>To (omezení výběru do - datum změny entity)</li></ul></li></ul><h1 id="CRMActivitiesRESTAPI-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><p>Inicializace znamená:</p><ul><li>zaslání všech nastavení v Activities</li></ul></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926667245 {padding: 0px;}
+div.rbtoc1684926667245 ul {margin-left: 0px;}
+div.rbtoc1684926667245 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926667245'>
+<ul class='toc-indentation'>
+<li><a href='#CRMActivitiesRESTAPI-Požadavkynarekonciliaci'>Požadavky na rekonciliaci</a>
+<ul class='toc-indentation'>
+<li><a href='#CRMActivitiesRESTAPI-Princip'>Princip</a></li>
+<li><a href='#CRMActivitiesRESTAPI-Aplikačníslužby'>Aplikační služby</a></li>
+<li><a href='#CRMActivitiesRESTAPI-Atributyvolání'>Atributy volání</a></li>
+</ul>
+</li>
+<li><a href='#CRMActivitiesRESTAPI-Předmětavýstupinicializace'>Předmět a výstup inicializace</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

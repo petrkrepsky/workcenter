@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : PortfolioOverviewPartial - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341511.html">Portfolio - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PortfolioOverviewPartial_53216563.html">PortfolioOverviewPartial</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : PortfolioOverviewPartial - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Bře 22, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 style="color: rgb(23,43,77);" id="PortfolioOverviewPartialEventStream-Datovéentity">Datové entity</h1><p>Pro portfolio overview partial je definována následující datová entita:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Zdroj</p></th></tr><tr><td class="confluenceTd"><p>PorfolioOverviewPartial</p></td><td class="confluenceTd"><p>ADP</p></td></tr></tbody></table></div><h1 id="PortfolioOverviewPartialEventStream-Topicy"><span style="letter-spacing: -0.01em;font-size: 24.0px;">Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Název Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Typ Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3"><p>Consumer</p></th></tr><tr><td rowspan="2" class="confluenceTd"><p>PorfolioOverviewPartial</p></td><td class="confluenceTd"><p>JTB-HQ_INVESTMENTS_PORTFOLIO-OVERVIEW-PARTIAL_STREAM_APP</p></td><td class="confluenceTd"><p>Průběžný</p></td><td class="confluenceTd"><p>eBroker</p></td></tr><tr><td style="text-align: left;" class="confluenceTd">JTB-HQ_INVESTMENTS_PORTFOLIO-OVERVIEW-PARTIAL-INIT-AND-RECON_RSYNC_APP</td><td style="text-align: left;" class="confluenceTd">Inicializační/Rekonciliační</td><td class="confluenceTd"><p>eBroker</p></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926608479 {padding: 0px;}
+div.rbtoc1684926608479 ul {margin-left: 0px;}
+div.rbtoc1684926608479 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926608479'>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioOverviewPartialEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Topicy'>Topicy</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Publikacedat'>Publikace dat</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioOverviewPartialEventStream-Key'>Key</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioOverviewPartialEventStream-Průběžnýtopic'>Průběžný topic</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Inicializační/Rekonciliačnítopic'>Inicializační/Rekonciliační topic</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#PortfolioOverviewPartialEventStream-JSONschéma'>JSON schéma</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a></li>
+<li><a href='#PortfolioOverviewPartialEventStream-Sekvenčnídiagram'>Sekvenční diagram</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="PortfolioOverviewPartialEventStream-Publikacedat">Publikace dat</h1><p><span style="letter-spacing: 0.0px;">Každá Kafka událost sestává z Key a Value.</span></p><h3 id="PortfolioOverviewPartialEventStream-Key">Key</h3><p><span style="color: rgb(0,0,0);">V datovém modelu <a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=53216564&amp;src=contextnavpagetreemode" rel="nofollow" style="text-align: left;">PortfolioOverviewDraft - Datový model</a> ve sloupci KEY klíč události = <span style="color: rgb(23,43,77);">portfolioIds.adpId</span>.</span></p><h3 id="PortfolioOverviewPartialEventStream-Value"><span>Value</span></h3><h4 id="PortfolioOverviewPartialEventStream-Průběžnýtopic"><span style="color: rgb(23,43,77);">Průběžný topic</span></h4><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Obsah těla je definován JSON schématem uvedeným<span> </span>na této stránce v kapitole JSON schémata. Volitelný atribut X-Correlation-ID se nevyplňuje.</span></span></p><h4 id="PortfolioOverviewPartialEventStream-Inicializační/Rekonciliačnítopic"><span style="color: rgb(23,43,77);">Inicializační/Rekonciliační topic</span></h4><p><span style="color: rgb(23,43,77);"><span style="color: rgb(0,0,0);">Obsah těla je definován JSON schématem uvedeným<span> </span>na této stránce v kapitole JSON schémata. Volitelný atribut X-Correlation-ID se vyplňuje.</span></span></p><h4 id="PortfolioOverviewPartialEventStream-Kontrolní"><span style="color: rgb(23,43,77);">Kontrolní</span></h4><p>Out of scope</p><p><span style="font-size: 24.0px;letter-spacing: -0.01em;"><br/>Popis publikace událostí </span></p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 99.7273%;"><colgroup><col style="width: 19.4346%;"/><col style="width: 20.5281%;"/><col style="width: 20.8032%;"/><col style="width: 39.2341%;"/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Spouštěč události</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Počet událostí za den</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Poznámka</strong></td></tr><tr><td class="confluenceTd">PorfolioOverviewPartial</td><td class="confluenceTd"><p>bude se generovat pri každém insert/update portfolia v TOPASu.</p><p>update portfolia v TOPASu může vyvolat </p><p> - insert/update klienta z Kafka, Epo</p><p><span style="letter-spacing: 0.0px;"> - požadavek na portfolio z Digi.</span></p><p> - insert/update přes gui v TOPASu. </p><p><span style="letter-spacing: 0.0px;">ke vytvoření Topicu nedojde v případě, kdy budou změny v okolních entitách - vazby, účty apod.  </span></p></td><td class="confluenceTd">viz níže kapacitní požadavky.</td><td class="confluenceTd"><br/></td></tr></tbody></table></div><h1 id="PortfolioOverviewPartialEventStream-JSONschéma"><span>JSON schéma</span></h1><p>JSON schémata obsahují nepovinný atribut X-Correlation-ID, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na <span class="inline-comment-marker" data-ref="606a86db-3402-4d21-8e93-3f2a0ac6f9d6">stránce</span> <a href="17340548.html">Integračn&iacute; anal&yacute;zy - schemata a form&aacute;ty</a></p><h1 id="PortfolioOverviewPartialEventStream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><p>  - počet partitions (8), pro číselník méně (1), počet replik (3), replication period (6 days)</p><h1 id="PortfolioOverviewPartialEventStream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p class="auto-cursor-target"><span style="color: rgb(0,51,102);">Není požadováno další ošetření chybových stavů nad rámec kapitoly<span> </span></span><a class="createlink" href="/pages/createpage.action?spaceKey=EI&amp;title=ADP+-+P%C5%99ipojovac%26iacute%3B+anal%26yacute%3Bza&amp;linkCreation=true&amp;fromPageId=53216567">O&scaron;etřen&iacute; chybov&yacute;ch stavů&nbsp;v Připojovac&iacute; anal&yacute;ze.</a></p><h1 id="PortfolioOverviewPartialEventStream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><p><strong>Počet událostí denně </strong></p><div class="table-wrap"><table class="wrapped relative-table confluenceTable" style="width: 53.3138%;"><colgroup><col style="width: 14.1097%;"/><col style="width: 85.7783%;"/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3"><strong title="">Objem</strong></td></tr><tr><td class="confluenceTd">PorfolioOverviewPartial</td><td class="confluenceTd"><p title="">Nová portfolia:</p><p title="">Zjištěno na datech v TOP_CLIENT.CREATEDAT v posledním roce.</p><p title="">Průměrně 51 portfolií denně, maximum 193 denně. </p><p title="">z toho lze odhadnout kapacitní požadavky - např. 2 násobek stávajícího průměru - 100 portfolií denně a maxima - 400 portfolií denně. </p><p title=""><br/></p><p title="">Aktualizace portfolií:</p><p title="">Zjištěno na datech TOP_CLIENTLOG.EDITEDAT v poslednim roce.</p><p title="">Průměrně 5913 aktualizací denně, maximum 70 395 denně. </p><p title="">z toho lze odhadnout kapacitní požadavky - např. 2 násobek stávajícího průměru - 10 000 aktualizací denně a maxima - 150 000 aktualizací denně. </p><p title=""><br/></p><p title="">Iniciální naplnění systémů (rekonciliační api).</p><p title=""><span style="letter-spacing: 0.0px;">Zde máme informace, že v systémech je 121 404 aktivních klientů a 151 694 veškerých klientů včetně neaktivních (kategorie K, X, SILVER, GREEN)</span></p><p title="">z toho lze odhadnout kapacitní požadavky - např 2 násobek stávajícího počtu tzn. 300 000 </p></td></tr></tbody></table></div><h1 class="auto-cursor-target" id="PortfolioOverviewPartialEventStream-Sekvenčnídiagram">Sekvenční diagram</h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="1000" src="attachments/53216567/53216869.png" data-image-src="attachments/53216567/53216869.png" data-unresolved-comment-count="0" data-linked-resource-id="53216869" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="PortfolioOverviewPartial - Průběžný.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="53216567" data-linked-resource-container-version="11" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53216567/53216568.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53216567/53216569.png">Product - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53216567/53217365.png">PortfolioOverviewPartial - Průběžný.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53216567/53216869.png">PortfolioOverviewPartial - Průběžný.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

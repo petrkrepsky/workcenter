@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-collectionAccountDisponibleBalance - Integrační analýza</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-collectionAccountDisponibleBalance - Integrační analýza
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Hrdlička Pavel</span>, last modified on Bře 01, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" scope="col" title="Barva pozadí: Světle žlutá 35 %"><strong>Dodatavatel</strong></td><td scope="col" class="confluenceTd">METADA</td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" title="Barva pozadí: Světle žlutá 35 %"><strong>Aplikační architekt/Analytik</strong></td><td class="confluenceTd"><br/></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" scope="col" title="Barva pozadí: Světle žlutá 35 %"><strong title="">Hlavní business analytik</strong></td><td scope="col" class="confluenceTd"><br/></td></tr></tbody></table></div><h1 id="APIcollectionAccountDisponibleBalanceIntegračníanalýza-Významslužby">Význam služby</h1><p>Orchestrační služba vrací disponibilní zůstatek.</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Disponibilní zůstatek</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Jedná se o disponibilní zůstatek pro výběr peněz ze sběrného účtu na běžný účet.</p><p>Pojem disponibilní zůstatek se používá také v kontextu pro obchodování a ten je zjišťován jiným způsobem.</p></div></div><ul><li>získání hodnoty <strong>PreSetled zůstatků</strong> na všech sběrných účtech daného portfolia (vstup) v měně sběrného účtu a referenční měně (vstup, možnosti CZK, EUR, USD)</li><li>hodnotu <strong>BuyPower</strong> daného portfolia  ve všech definovaných měnách v MRM</li><li>výpočet <strong>disponibilního zůstatku </strong>pro všechny sběrné účty v dané měně: jako minimum z presetledZůstatku a ptfBuyPowerTotal.</li></ul><br/><br/><h2 style="color: rgb(23,43,77);" id="APIcollectionAccountDisponibleBalanceIntegračníanalýza-Předpoklady">Předpoklady</h2><ul><li>změnový požadavek na eBroker (S1) na změnu výstupu API Trading, GET /AccountBalances - API by měla vracet ID portfolia z obou systémů - Topas/eBroker. V atributu  portfolioID  by měla vracet Id portfolia z Topasu, v portfolioID2 by měla vracet  ID portfolia z eBroker. V současné verzi API vrácí ID portfolia toho systému, který byl použitý na vstupu v atributu referenceSystem.</li></ul><br/><h2 id="APIcollectionAccountDisponibleBalanceIntegračníanalýza-Manuálprokonzumaci">Manuál pro konzumaci</h2><p>Konzument musí následovat postup definovaný v dokument <a class="external-link" href="https://jtfg.sharepoint.com/:w:/s/Digitlnkanly/EXYvJnPFua5OgTTOWBo61JgB7A7OOdl1_2i2Va2KQVRmIw?e=jWv758" rel="nofollow">Manuál pro konzumaci API služeb na ESB</a>.</p><h2 id="APIcollectionAccountDisponibleBalanceIntegračníanalýza-PožadavkyEInaRESTAPI">Požadavky EI na REST API</h2><p>Na stránce <a href="https://confluencedigi.jtfg.com/display/EI/REST+API?src=contextnavpagetreemode" rel="nofollow" style="text-align: left;">REST API</a> je metodický pokyn s popisem všech požadavků na REST API.</p></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926620438 {padding: 0px;}
+div.rbtoc1684926620438 ul {margin-left: 0px;}
+div.rbtoc1684926620438 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926620438'>
+<ul class='toc-indentation'>
+<li><a href='#APIcollectionAccountDisponibleBalanceIntegračníanalýza-Významslužby'>Význam služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIcollectionAccountDisponibleBalanceIntegračníanalýza-Předpoklady'>Předpoklady</a></li>
+<li><a href='#APIcollectionAccountDisponibleBalanceIntegračníanalýza-Manuálprokonzumaci'>Manuál pro konzumaci</a></li>
+<li><a href='#APIcollectionAccountDisponibleBalanceIntegračníanalýza-PožadavkyEInaRESTAPI'>Požadavky EI na REST API</a></li>
+</ul>
+</li>
+<li><a href='#APIcollectionAccountDisponibleBalanceIntegračníanalýza-Zúčastněnékomponenty'>Zúčastněné komponenty</a></li>
+<li><a href='#APIcollectionAccountDisponibleBalanceIntegračníanalýza-Zúčastněnéslužby'>Zúčastněné služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIcollectionAccountDisponibleBalanceIntegračníanalýza-Integračníslužby'>Integrační služby</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIcollectionAccountDisponibleBalanceIntegračníanalýza-Zúčastněnékomponenty"><span>Zúčastněné komponenty</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1185.0px;"><colgroup><col style="width: 0.0px;"/><col style="width: 0.0px;"/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Name</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">FE - Digital Channels</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Systém, který umožňuje uživateli provádět bankovní operace přes internet. Je připojen k integrační vrstvě, kde konzumuje vystavená API.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>WSO2 API-M</p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 API Manager je platforma pro vytváření, integraci a vystavování digitálních služeb jako spravovaných API</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>eBroker</p></td><td style="text-align: left;" class="confluenceTd"><p>Systém poskytuje konsolidované informace o pokynech, jejich stavu (zobchodování, vypořádání, odmítnutí,<br/>vypršení, zrušení), o majetku obsaženém v klientských portfoliích, oprávnění k portfoliím a nastavení<br/>uživatelských přístupů, které jsou získávány ze systémů Topas, TA a CRM. Systém dále zajišťuje komunikaci s<br/>třetími stranami prostřednictvím FIX protokolu.</p><p><span style="letter-spacing: 0.0px;">Dodavatel: SiteOne</span></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>Topas</p></td><td style="text-align: left;" class="confluenceTd"><p>Systém pro investování a obchodování s CP. Systém zajišťuje pořizování obchodních pokynů, komunikaci s trhy a jinými subjekty účastnícími se obchodů, vypořádání obchodů a souvisejících backoffice operací a tržní oceňování portfolií. </p><p>Systém je přímo napojen na burzy cenných papírů Praha a Bratislava a na centrální depozitáře cenných papírů české a slovenské republiky. </p><p>Dále systém TOPAS zadává data do systému TA a zajišťuje kompletní zaúčtování výše uvedených skutečností do systému FEIS.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>MRM</p></td><td style="text-align: left;" class="confluenceTd"><p>MRM - Margin risk management </p><p>Systém pro kontrolu finančního zajištění klientů čerpajících úvěr na obchodování s cennými papíry (tzv. margin trading), včetně validace objednávek, řízení parametrů obchodů a cenných papíru souvisících s magrin trading obchodováním a generování infolistů o čerpání úvěru.<br/>Sleduje ceny CP a zajištění klientů obchodujících na FT</p></td></tr></tbody></table></div><h1 id="APIcollectionAccountDisponibleBalanceIntegračníanalýza-Zúčastněnéslužby"><span>Zúčastněné služby</span></h1><h2 id="APIcollectionAccountDisponibleBalanceIntegračníanalýza-Integračníslužby"><span class="inline-comment-marker" data-ref="b5380483-1475-4683-9287-fc2f845cdb7c">Integrační služby</span></h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" colspan="2" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>URLs</strong></p></td></tr><tr><td rowspan="3" style="text-align: left;" class="confluenceTd"><p>API Trading, metoda GET /AccountBalances</p><p><br/></p></td><td rowspan="3" style="text-align: left;" class="confluenceTd"><p>REST API</p><p><br/></p><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>UAT</p></td><td colspan="2" style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>SIT</p></td><td colspan="2" style="text-align: left;" class="confluenceTd"><p><br/></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>DEVINT</p></td><td colspan="2" style="text-align: left;" class="confluenceTd"><p><span><a class="external-link" href="https://api-devint.jtfgtest.com/Trading/v1" rel="nofollow">https://api-devint.jtfgtest.com/Trading/v1</a></span></p></td></tr><tr><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>API ClientRiskInfo, metoda GET /BuyPowerInfoAllCurencies</p><p><br/></p><p><br/></p><p><br/></p></td><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>REST API</p><p><br/></p><p><br/></p><p><br/></p></td><td rowspan="2" style="text-align: left;" class="confluenceTd"><p>UAT</p><p>SIT</p></td><td colspan="2" rowspan="2" style="text-align: left;" class="confluenceTd"><p><span><a class="external-link" href="https://apitest.jtfg.com/ClientRiskInfo/v1" rel="nofollow">https://apitest.jtfg.com/ClientRiskInfo/v1</a></span></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>DEVINT</p></td><td colspan="2" style="text-align: left;" class="confluenceTd"><p><span><a class="external-link" href="https://api-devint.jtfgtest.com/ClientRiskInfo/v1" rel="nofollow">https://api-devint.jtfgtest.com/ClientRiskInfo/v1</a></span></p></td></tr></tbody></table></div></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215508/53215509.png">FeesCalculation - CD.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/53215508/53215510.png">RelevantProduct - Component diagram.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-53219098"></a>
+                                    <font class="smallfont"><p><a class="confluence-userlink user-mention" data-username="EX8101838" href="https://confluencedigi.jtfg.com/display/~EX8101838" data-linked-resource-id="17336484" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Hrdlička Pavel</a>  <a class="confluence-userlink user-mention" data-username="JT0026851" href="https://confluencedigi.jtfg.com/display/~JT0026851" data-linked-resource-id="4653796" data-linked-resource-version="2" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Nezn&aacute;m&yacute; uživatel (jt0026851)</a> tady je 
+<span class="jira-issue" data-jira-key="DSWF-1520" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-1520?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/images/icons/issuetypes/story.svg"/>DSWF-1520</a>
+                            -
+            <span class="summary">[DKCZ] AccountBalances - Metoda na zjištění zůstatku pro výběr z investic (eBroker), přidání výstupu portfolioIds</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-current
+     jira-macro-single-issue-export-pdf">TEST IN PROGRESS</span>
+                </span>
+ zmen pozadavek na pridani noveho pole do <span style="color: rgb(23,43,77);">API Trading, metoda GET /AccountBalances, je nutne zde zohlednit. </span></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101329 at Dub 17, 2023 10:57
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-documentStatementReconciliation</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="DOCUMENTS_27625158.html">DOCUMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-documentStatementReconciliation
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Havlena David</span>, last modified by <span class='editor'> Rak Filip</span> on Dub 21, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h1 id="APIdocumentStatementReconciliation-Předmětavýstuprekonciliace">Předmět a výstup rekonciliace</h1><p>Rekonciliační API bude vystaveno ve WSO2.</p><p>Specifikace rozhraní je na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17342899" rel="nofollow">Integrační analýzy - open api</a></p><p>Budou vystaveny dvě samostatné API a dva samostatné  End pointy pro DK CZ a DK SK, pro každý Digitální kanál je určeno samostatné API</p><h2 id="APIdocumentStatementReconciliation-Atributyvolání">Atributy volání</h2><ul><li>metody:<ul><li><span class="inline-comment-marker" data-ref="325eafa4-eea6-430e-b64f-2df47de1f2aa">GET /statements</span></li></ul></li><li>header parametry (povinné):<ul><li>X-Correlation-ID</li><li><span class="inline-comment-marker" data-ref="b2c44d0c-4278-4395-9294-352feeb98a6a">traceparent</span></li></ul></li><li>query parametr (povinné):<ul><li><span style="color: rgb(255,0,255);">locations</span></li></ul></li><li>query parametr (nepovinné):<ul><li><span style="color: rgb(0,0,0);">statementId</span></li><li><span style="color: rgb(0,0,0);">crmid</span></li><li><span style="color: rgb(0,0,0);">quaestorId</span></li><li><span style="color: rgb(0,0,0);">topasId</span></li><li><span style="color: rgb(0,0,0);">statementTypeCodeId</span></li><li><span style="color: rgb(0,0,0);">businessChangeDateStart</span></li><li><span style="color: rgb(0,0,0);">businessChangeDateEnd</span></li></ul></li></ul><h2 id="APIdocumentStatementReconciliation-Princip"><span>Princip</span></h2><p><span style="color: rgb(0,0,0);">buď znovu zaslání jedné datové entity dle identifikátoru (pouze jeden identifikátor ve zprávě)</span></p><ul><li><span style="color: rgb(0,0,0);">statementId</span></li></ul><p><span style="color: rgb(0,0,0);">bez časového intervalu</span></p><p><span style="color: rgb(0,0,0);">nebo znovu zaslání posledních změn entit  </span></p><ul><li><span style="color: rgb(0,0,0);">crmid</span></li><li><span style="color: rgb(0,0,0);">quaestorId</span></li><li><span style="color: rgb(0,0,0);">topasId</span></li><li><span style="color: rgb(0,0,0);">statementTypeCodeId</span></li></ul><p><span style="color: rgb(0,0,0);"> z časovým intervalem</span></p><ul><li><span style="color: rgb(0,0,0);">businessChangeDateStart</span></li><li><span style="color: rgb(0,0,0);">businessChangeDateEnd</span></li></ul><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/><col/><col/></colgroup><tbody><tr><th class="confluenceTh"><span style="color: rgb(0,0,0);">priorita</span></th><th class="confluenceTh"><span style="color: rgb(0,0,0);">atribut</span></th><th colspan="5" class="confluenceTh">Z = zaslán, O = očekáván, x= ignorován</th></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">1</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">statementId</span></p></td><td class="confluenceTd">Z</td><td class="confluenceTd">x</td><td class="confluenceTd">x</td><td class="confluenceTd">x</td><td class="confluenceTd">x</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">2</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">crmid</span></p></td><td class="confluenceTd">x</td><td class="confluenceTd">Z</td><td class="confluenceTd">x</td><td class="confluenceTd">x</td><td class="confluenceTd">x</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">3</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">quaestorId</span></p></td><td class="confluenceTd">x</td><td class="confluenceTd">x</td><td class="confluenceTd">Z</td><td class="confluenceTd">x</td><td class="confluenceTd">x</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);"><br/></span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">topasId</span></p></td><td class="confluenceTd">X</td><td class="confluenceTd">X</td><td class="confluenceTd">X</td><td class="confluenceTd">Z</td><td class="confluenceTd">x</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">4</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">statementTypeCode</span></p></td><td class="confluenceTd">x</td><td class="confluenceTd">x</td><td class="confluenceTd">x</td><td class="confluenceTd">X</td><td class="confluenceTd">Z</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);"><br/></span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">businessChangeDateStart</span></p></td><td class="confluenceTd">x</td><td class="confluenceTd">O</td><td class="confluenceTd">O</td><td class="confluenceTd">O</td><td class="confluenceTd">O</td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0,0,0);"><br/></span></p></td><td class="confluenceTd"><p><span style="color: rgb(0,0,0);">businessChangeDateEnd</span></p></td><td class="confluenceTd">x</td><td class="confluenceTd">O</td><td class="confluenceTd">O</td><td class="confluenceTd">O</td><td class="confluenceTd">O</td></tr></tbody></table></div><p>Pokud nepřijde v požadavku žádný z nepovinných atributů odpověď je 400 - Bad Request.</p><p>Pokud nepřijde v požadavku <span style="color: rgb(0,0,0);">businessChangeDateStart/end</span> bude se chovat rekonciliace chovat stejně jako inicializace, omezením poskytnutí dat - aktuální Time -90 dní.   </p><p><span style="color: rgb(0,0,0);">Pořadí kontroly atributů při plnění topicu je dáno prioritou (sloupec &quot;priorita&quot;)</span></p><h1 id="APIdocumentStatementReconciliation-Předmětavýstupinicializace">Předmět a výstup inicializace</h1><p>Inicializační API může, ale také nemusí, být REST služba. Záleží na konkrétní realizaci preferované vlastníkem aplikace.</p><p>Inicializace znamená:</p><ul><li>zaslání metadat ke stažení požadovaného výpisu</li></ul>
+                    </div>
+
+                                        
+                                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="comments" class="pageSectionTitle">Comments:</h2>
+                        </div>
+
+                        <table border="0" width="100%">
+                                                        <tr>
+                                <td >
+                                    <a name="comment-53219357"></a>
+                                    <font class="smallfont"><p><a class="confluence-userlink user-mention" data-username="EX8102078" href="https://confluencedigi.jtfg.com/display/~EX8102078" data-linked-resource-id="46367798" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Rak Filip</a> přidán nový atribut, nutné zohlednit v definici swagger a zde. </p><p><br/></p><p>Change: 
+<span class="jira-issue" data-jira-key="DSWF-3456" >
+                    <a href="https://jiradigi.jtfg.com/browse/DSWF-3456?src=confmacro" class="jira-issue-key"><img class="icon"
+                                                                                      src="https://jiradigi.jtfg.com/secure/viewavatar?size=xsmall&amp;avatarId=10322&amp;avatarType=issuetype"/>DSWF-3456</a>
+                            -
+            <span class="summary">[ChR] recon api pro xerox</span>
+                                                <span class="aui-lozenge aui-lozenge-subtle             aui-lozenge-current
+     jira-macro-single-issue-export-pdf">In Review</span>
+                </span>
+</p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8101329 at Dub 19, 2023 10:20
+                                    </div>
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td  style="border-top: 1px dashed #666666">
+                                    <a name="comment-53219376"></a>
+                                    <font class="smallfont"><p><a class="confluence-userlink user-mention current-user-mention" data-username="EX8101329" href="https://confluencedigi.jtfg.com/display/~EX8101329" data-linked-resource-id="2457725" data-linked-resource-version="1" data-linked-resource-type="userinfo" data-base-url="https://confluencedigi.jtfg.com">Křepsk&yacute; Petr</a> Upraveno, bude vydáno v R20 →  <a href="https://confluencedigi.jtfg.com/display/EI/Draft+Release+V20-2023-04-19" rel="nofollow" style="">Release V20-2023-04-19</a></p></font>
+                                    <div align="left" class="smallfont" style="color: #666666; width: 98%; margin-bottom: 10px;">
+                                        <img src="images/icons/contenttypes/comment_16.png" height="16" width="16" border="0" align="absmiddle"/>
+                                        Posted by EX8102078 at Dub 19, 2023 11:28
+                                    </div>
+                                </td>
+                            </tr>
+                                                    </table>
+                    </div>
+                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:09</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

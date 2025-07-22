@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : PortfolioValuationDaily - Event Stream</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="INVESTMENTS_17339912.html">INVESTMENTS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17341511.html">Portfolio - Integrační analýza</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PortfolioValuationDaily_27626088.html">PortfolioValuationDaily</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : PortfolioValuationDaily - Event Stream
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joachymstál Vít</span>, last modified on Bře 01, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-right-sidebar" data-layout="two-right-sidebar">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="PortfolioValuationDailyEventStream-Datovéentity">Datové entity</h1><p>Pro<span style="color: rgb(51,51,51);"><span> </span>data o realizovaných obchodech na portfoliích</span><span> </span>je definována následující datová entita:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><thead><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p>Zdroj</p></th></tr></thead><tbody><tr><td style="text-align: left;" class="confluenceTd"><p>PortfolioValuationDaily </p></td><td style="text-align: left;" class="confluenceTd"><p>eBroker</p></td></tr></tbody></table></div><h1 id="PortfolioValuationDailyEventStream-Topicy"><span>Topicy</span></h1><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p>Entity Type</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p>Název Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" data-highlight-colour="#fff0b3" style="text-align: left;"><p>Typ Topicu</p></th><th class="highlight-#fff0b3 confluenceTh" colspan="1" data-highlight-colour="#fff0b3" style="text-align: left;"><p>Consumer</p></th></tr><tr><td rowspan="6" style="text-align: left;" class="confluenceTd"><p>PortfolioValuationDaily </p></td><td style="text-align: left;" class="confluenceTd"><p>JTB-HQ_INVESTMENTS_PORTFOLIO-VALUATION-DAILY_SYNC_APP</p></td><td style="text-align: left;" class="confluenceTd"><p>Průběžný</p></td><td colspan="1" style="text-align: left;" class="confluenceTd"><p>KStreams</p></td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">JTB-HQ_INVESTMENTS_PORTFOLIO-VALUATION-DAILY-INIT-AND-RECON_RSYNC_APP</td><td colspan="1" style="text-align: left;" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" style="text-align: left;" class="confluenceTd">KStreams</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">JTB-CZ_INVESTMENTS_PORTFOLIO-VALUATION-DAILY_STREAM_GNR</td><td colspan="1" style="text-align: left;" class="confluenceTd">Průběžný</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">JTB-CZ_INVESTMENTS_PORTFOLIO-VALUATION-DAILY_RCN_GNR</td><td colspan="1" style="text-align: left;" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKCZ</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">JTB-SK_INVESTMENTS_PORTFOLIO-VALUATION-DAILY_STREAM_GNR</td><td colspan="1" style="text-align: left;" class="confluenceTd">Průběžný</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKSK</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">JTB-SK_INVESTMENTS_PORTFOLIO-VALUATION-DAILY_RCN_GNR</td><td colspan="1" style="text-align: left;" class="confluenceTd">Inicializační/Rekonciliační</td><td colspan="1" style="text-align: left;" class="confluenceTd">DKSK</td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td colspan="1" style="text-align: left;" class="confluenceTd"><p>JTB-HQ_INTEGRATION_CONTROL_STREAM_GNR</p></td><td colspan="1" style="text-align: left;" class="confluenceTd"><p>Kontrolní</p></td><td colspan="1" style="text-align: left;" class="confluenceTd"><p>DKCZ,DKSK</p></td></tr></tbody></table></div></div>
+</div>
+<div class="cell aside" data-type="aside">
+<div class="innerCell">
+<div class="panel" style="border-color: #b8a875;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #b8a875;background-color: #b8a875;"><b>Obsah stránky</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926610230 {padding: 0px;}
+div.rbtoc1684926610230 ul {margin-left: 0px;}
+div.rbtoc1684926610230 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926610230'>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioValuationDailyEventStream-Datovéentity'>Datové entity</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-Topicy'>Topicy</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioValuationDailyEventStream-Interfacetabulky'>Interface tabulky</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioValuationDailyEventStream-Key'>Key</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-Value'>Value</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioValuationDailyEventStream-Průběžný'>Průběžný</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-Inicializační/Rekonciliační'>Inicializační/Rekonciliační</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-Kontrolní'>Kontrolní</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='#PortfolioValuationDailyEventStream-Popisodběrudat'>Popis odběru dat</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-JSONschémata'>JSON schémata</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-Požadavkynaintegraci'>Požadavky na integraci</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-Ošetřeníchybovýchstavů'>Ošetření chybových stavů</a></li>
+<li><a href='#PortfolioValuationDailyEventStream-Kapacitnípožadavky'>Kapacitní požadavky</a>
+<ul class='toc-indentation'>
+<li><a href='#PortfolioValuationDailyEventStream-Početudálostídenně'>Počet událostí denně</a></li>
+</ul>
+</li>
+<li><a href='#PortfolioValuationDailyEventStream-Sekvenčnídiagram'>Sekvenční diagram</a></li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h2 id="PortfolioValuationDailyEventStream-Interfacetabulky"><span>Interface tabulky</span></h2><p>eBroker vytvoří, plní a spravuje tyto interface tabulky:</p><ul><li>Pro čerpání dat do Průběžného topicu</li><li>Pro čerpání dat do Inicializačního/Rekonciličaního topicu</li><li>Kontrolní</li></ul><p><span>Každá Kafka událost sestává z Key a Value:</span></p><ul><li>Key do sloupce KEY</li><li>Value do sloupce BODY</li></ul><h3 id="PortfolioValuationDailyEventStream-Key">Key</h3><p><span style="color: rgb(0,0,0);">Ve sloupci KEY klíč události = portfolioIds.ebrokerId.</span></p><h3 id="PortfolioValuationDailyEventStream-Value"><span>Value</span></h3><p><strong>Přehled interface tabulek:</strong></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>Průběžný topic</strong></td><td class="highlight-#fff0b3 confluenceTd" colspan="2" data-highlight-colour="#fff0b3" style="text-align: center;"><strong>Inicializační/Rekonciliační topic</strong></td></tr><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Datová entita</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Název tabulky</strong></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><strong>Datová entita</strong></td></tr><tr><td style="text-align: left;" class="confluenceTd">PORTFOLIO_VALUATION_DAILY_CONTINUOUS</td><td style="text-align: left;" class="confluenceTd">PortfolioValuationDaily </td><td style="text-align: left;" class="confluenceTd">PORTFOLIO_VALUATION_DAILY_INIT_AND_RECON</td><td style="text-align: left;" class="confluenceTd">PortfolioValuationDaily </td></tr></tbody></table></div><h4 id="PortfolioValuationDailyEventStream-Průběžný"><span>Průběžný</span></h4><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum změny datové entity.</li><li>BODY =<span> </span><span style="color: rgb(0,0,0);">JSON tělo zprávy ve formátu CLOB datové entity PortfolioValuationDaily </span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 180.694px;"/><col style="width: 450.191px;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><p>PORTFOLIO_VALUATION_DAILY_CONTINUOUS</p></th></tr><tr><td style="text-align: left;" class="confluenceTd">KEY</td><td style="text-align: left;" class="confluenceTd">Varchar2(200)</td></tr><tr><td style="text-align: left;" class="confluenceTd">BUSINESS_CHANGE_DATE</td><td style="text-align: left;" class="confluenceTd">Oracle Date</td></tr><tr><td style="text-align: left;" class="confluenceTd">BODY</td><td style="text-align: left;" class="confluenceTd">CLOB</td></tr><tr><td style="text-align: left;" class="confluenceTd">LOCATION</td><td style="text-align: left;" class="confluenceTd">Varchar2(2) enumerace {CZ, SK}</td></tr><tr><td style="text-align: left;" class="confluenceTd">CREATED*</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td style="text-align: left;" class="confluenceTd">ENTITY_TYPE</td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper">Varchar2(60) enumerace {PortfolioValuationDaily }</div></td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h4 id="PortfolioValuationDailyEventStream-Inicializační/Rekonciliační"><span>Inicializační/Rekoncili<span class="inline-comment-marker" data-ref="8f991552-b1a4-41a4-aa38-d88cb0637cc5">ač</span>ní</span></h4><ul><li>KEY - vysvětleno výše</li><li>businessChangeDate = Datum změny datové entity.</li><li>BODY =<span> </span><span style="color: rgb(0,0,0);">JSON tělo zprávy ve formátu CLOB datové entity PortfolioValuationDaily </span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 632.0px;"><colgroup><col style="width: 180.694px;"/><col style="width: 450.191px;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;"><p>PORTFOLIO_VALUATION_DAILY_INIT_AND_RECON</p></th></tr><tr><td style="text-align: left;" class="confluenceTd">KEY</td><td style="text-align: left;" class="confluenceTd">Varchar2(200)</td></tr><tr><td style="text-align: left;" class="confluenceTd">BUSINESS_CHANGE_DATE</td><td style="text-align: left;" class="confluenceTd">Oracle Date</td></tr><tr><td style="text-align: left;" class="confluenceTd">BODY</td><td style="text-align: left;" class="confluenceTd">CLOB</td></tr><tr><td style="text-align: left;" class="confluenceTd">LOCATION</td><td style="text-align: left;" class="confluenceTd">Varchar2(2) enumerace {CZ, SK}</td></tr><tr><td style="text-align: left;" class="confluenceTd">CREATED*</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Oracle Timestamp</span></td></tr><tr><td style="text-align: left;" class="confluenceTd">ENTITY_TYPE</td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper">Varchar2(60) enumerace {PortfolioValuationDaily }</div></td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" style="text-align: left;" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><p><span style="color: rgb(23,43,77);">* CREATED TIMESTAMP(6) default SYS_EXTRACT_UTC(CURRENT_TIMESTAMP) not null → CURRENT_TIMESTAMP dává timestamp + timezone, i přes změnu timezony (nebo změny z letního na zimní) SYS_EXTRACT_UTC funkce formátuje vždy na UTC jednotný čas</span></p><h4 id="PortfolioValuationDailyEventStream-Kontrolní"><span>Kontrolní</span></h4><ul><li><p class="auto-cursor-target"><span style="color: rgb(0,0,0);">CREATED - Čas vložení do interfacové tabulky.</span></p></li><li><span style="color: rgb(0,0,0);">TOTAL_EVENTS -<span> </span><span style="color: rgb(23,43,77);">Počet událostí v rekonciliaci, inicializaci nebo v asynchronní odpovědi.</span></span></li><li><span style="color: rgb(0,0,0);"><span style="color: rgb(23,43,77);">X_CORRELATION_ID - Unikátní identifikátor volání, který je zaslán v hlavičkovém parametru<span> </span>rekonciliačního REST API, na vstupu initu nebo v požadavku na asynchronní odpověď.</span></span></li></ul><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 631.0px;"><colgroup><col style="width: 144.323px;"/><col style="width: 485.556px;"/></colgroup><tbody><tr><th class="highlight-#fffae6 confluenceTh" colspan="2" data-highlight-colour="#fffae6" style="text-align: center;">INTEGRATION_CONTROL</th></tr><tr><td style="text-align: left;" class="confluenceTd">CREATED</td><td style="text-align: left;" class="confluenceTd"><span style="color: rgb(23,43,77);">Datetime</span></td></tr><tr><td style="text-align: left;" class="confluenceTd">TOTAL_EVENTS</td><td style="text-align: left;" class="confluenceTd">Number</td></tr><tr><td colspan="1" style="text-align: left;" class="confluenceTd">X_CORRELATION_ID</td><td colspan="1" style="text-align: left;" class="confluenceTd">Varchar2(255)</td></tr></tbody></table></div><h1 id="PortfolioValuationDailyEventStream-Popisodběrudat">Popis odběru dat</h1><p>eBroker vkládá data do interface tabulek z nichž jsou vybírána Kafkou prostřednictvím JDBC konektoru.<br/>Spouštěče událostí pro vkládání dat jednotlivých datových entit do interface tabulky, jejich frekvence a další aspekty jsou popsány v následující tabulce:</p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">Spouštěč události</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">Počet událostí za den</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">Poznámka</strong></td></tr><tr><td style="text-align: left;" class="confluenceTd">PortfolioValuationDaily</td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper" title=""><ol><li>denní přepočet ocenění portfolií v ranních hodinách (bude upřesněno) - vznik nových entit<br/><em>Poznámka: Entity se negenerují pro prázdná portfolia, tj. pro portfolia, která nemají nenulovou pozici CP (traded ani settled) ani nenulovou pozici účtů (blocked, traded, presettled ani settled).</em></li><li>změny relevantních Obchodů, Pohybů peněz, Oceňovacích cen CP a Kurzů měn vzniklé po přepočtu ocenění - aktualizace entit, případně (Obchody, Pohyby peněz) i vznik nových</li></ol></div></td><td style="text-align: left;" class="confluenceTd"><ol><li>cca 55 000 CZ, 15 000 SK</li><li>odhadem 1/2 počtů z (1.)</li></ol></td><td style="text-align: left;" class="confluenceTd">select<br/>    i.Apl_Kod                                   as AK_Spolecnost,<br/>    count(distinct s.ID_Portfolio)              as Cnt_Dist_ID_Portfolio,<br/>    sum(count(distinct s.ID_Portfolio)) over () as Ttl_Dist_ID_Portfolio<br/>  from A_Stav_CP s<br/>    inner join Portfolio p on p.ID=s.ID_Portfolio<br/>    inner join Instituce i on i.ID=p.ID_Spolecnost<br/>  where Pocet_Ks&lt;&gt;0<br/>    and i.Apl_Kod in ('jnt_cr', 'jnt_sr')<br/>  group by i.APl_Kod<br/>  order by i.Apl_Kod;</td></tr></tbody></table></div><h1 id="PortfolioValuationDailyEventStream-JSONschémata"><span>JSON schémata</span></h1><p>JSON schémata obsahují nepovinný atribut X-Correlation-Id, který se plní hodnotu header parametru stejného jména z volání init/recon API.</p><p>JSON Schéma je uloženo na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340548" rel="nofollow">Integrační analýzy - schemata a formáty</a></p><h1 id="PortfolioValuationDailyEventStream-Požadavkynaintegraci"><span>Požadavky na integraci</span></h1><p>  - počet partitions (8), pro číselník méně (1), počet replik (3), replication period (6 days)</p><h1 id="PortfolioValuationDailyEventStream-Ošetřeníchybovýchstavů"><span>Ošetření chybových stavů</span></h1><p>Je popsáno na stránce<span> </span><a href="https://confluencedigi.jtfg.com/pages/viewpage.action?pageId=17340311" rel="nofollow">eBroker/CCP - Čerpání a transformace událostí</a></p><h1 id="PortfolioValuationDailyEventStream-Kapacitnípožadavky"><span>Kapacitní požadavky</span></h1><h2 id="PortfolioValuationDailyEventStream-Početudálostídenně"><span>Počet událostí denně </span><strong> </strong></h2><p><span>Objem</span></p><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">Datová entita</strong></td><td class="highlight-#fff0b3 confluenceTd" data-highlight-colour="#fff0b3" style="text-align: left;"><strong title="">Objem</strong></td></tr><tr><td style="text-align: left;" class="confluenceTd">PortfolioValuationDaily </td><td style="text-align: left;" class="confluenceTd"><div class="content-wrapper" title=""><p>(KMA: neumím odhadnout objem entity, jinak odvodit z Počtu událostí za den a objemu entity)</p></div></td></tr></tbody></table></div><h1 id="PortfolioValuationDailyEventStream-Sekvenčnídiagram"><span>Sekvenční diagram</span></h1><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" width="900" src="attachments/27626091/53215552.png" data-image-src="attachments/27626091/53215552.png" data-unresolved-comment-count="0" data-linked-resource-id="53215552" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="PortfolioValuationDaily - Průběžný.png" data-base-url="https://confluencedigi.jtfg.com" data-linked-resource-content-type="image/png" data-linked-resource-container-id="27626091" data-linked-resource-container-version="10" alt=""></span></p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                                            <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626091/27626092.png">FX_RATES_INTERFACE_TABLES.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626091/27626093.png">Product - Průběžný topic.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626091/53215562.png">PortfolioValuationDaily - Průběžný.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/27626091/53215552.png">PortfolioValuationDaily - Průběžný.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:10</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

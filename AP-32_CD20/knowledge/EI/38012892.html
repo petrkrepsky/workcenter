@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise Integration : API-PTSCZStandingOrders - Integrační analýza</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Enterprise Integration</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="17337288.html">Integrační analýzy</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="PAYMENTS_17339914.html">PAYMENTS</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Enterprise Integration : API-PTSCZStandingOrders - Integrační analýza
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+    
+        
+    
+        
+        
+            Created by <span class='author'> Otépka Milan</span>, last modified by <span class='editor'> Rosa Tomáš</span> on Lis 28, 2022
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div class="contentLayout2">
+<div class="columnLayout two-equal" data-layout="two-equal">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPTSCZStandingOrdersIntegračníanalýza-Významslužby">Význam služby</h1><p>Služba vrací kolekci technických identifikátorů produktů na základě vstupních filtračních parametrů.</p><h1 id="APIPTSCZStandingOrdersIntegračníanalýza-Jakslužbukonzumovat">Jak službu konzumovat</h1><p>Konzument musí následovat postup definovaný v dokument <a class="external-link" href="https://jtfg.sharepoint.com/:w:/s/Digitlnkanly/EXYvJnPFua5OgTTOWBo61JgB7A7OOdl1_2i2Va2KQVRmIw?e=jWv758" rel="nofollow">Manuál pro konzumaci API služeb na ESB</a>.</p><h1 id="APIPTSCZStandingOrdersIntegračníanalýza-Kapitolyintegračníanalýzy">Kapitoly integrační analýzy</h1><p><ul class='childpages-macro'><li><a href="38012896.html">API-PTSCZStandingOrders - požadavky/zad&aacute;n&iacute;</a></li></ul></p></div>
+</div>
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<p><br/></p><div class="panel" style="border-color: black;border-style: solid;border-width: 1px;"><div class="panelHeader" style="border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: black;background-color: #ba8235;color: white;"><b>Obsah</b></div><div class="panelContent">
+<p><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1684926703896 {padding: 0px;}
+div.rbtoc1684926703896 ul {margin-left: 0px;}
+div.rbtoc1684926703896 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1684926703896'>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-Významslužby'>Význam služby</a></li>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-Jakslužbukonzumovat'>Jak službu konzumovat</a></li>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-Kapitolyintegračníanalýzy'>Kapitoly integrační analýzy</a></li>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-Zúčastněnékomponenty'>Zúčastněné komponenty</a></li>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-Zúčastněnéslužby'>Zúčastněné služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-Integračníslužby'>Integrační služby</a>
+<ul class='toc-indentation'>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-PTSCZStandingOrders'>PTSCZStandingOrders</a></li>
+</ul>
+</li>
+<li><a href='#APIPTSCZStandingOrdersIntegračníanalýza-Komponentnídiagram'>Komponentní diagram</a></li>
+</ul>
+</li>
+</ul>
+</div></p>
+</div></div></div>
+</div>
+</div>
+<div class="columnLayout single" data-layout="single">
+<div class="cell normal" data-type="normal">
+<div class="innerCell">
+<h1 id="APIPTSCZStandingOrdersIntegračníanalýza-Zúčastněnékomponenty"><span>Zúčastněné komponenty</span></h1><div class="table-wrap"><table class="relative-table wrapped confluenceTable" style="width: 1185.0px;"><colgroup><col style="width: 0.0px;"/><col style="width: 0.0px;"/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Name</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Description</strong></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p><span style="color: rgb(0,0,0);">FE - Digital Channels</span></p></td><td style="text-align: left;" class="confluenceTd"><p>Systém, který umožňuje uživateli provádět bankovní operace přes internet. Je připojen k integrační vrstvě, kde konzumuje vystavená API.</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>WSO2 API-M</p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 API Manager je platforma pro vytváření, integraci a vystavování digitálních služeb jako spravovaných API</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>PTS</p></td><td style="text-align: left;" class="confluenceTd"><p>Platební styk</p></td></tr></tbody></table></div><h1 id="APIPTSCZStandingOrdersIntegračníanalýza-Zúčastněnéslužby"><span>Zúčastněné služby</span></h1><h2 id="APIPTSCZStandingOrdersIntegračníanalýza-Integračníslužby">Integrační služby</h2><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/><col/><col/><col/></colgroup><tbody><tr><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Jméno</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Typ</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>Prostředí</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>URLs</strong></p></td><td class="highlight-#fffae6 confluenceTd" data-highlight-colour="#fffae6" style="text-align: left;"><p title=""><strong>umístění API</strong></p></td></tr><tr><td rowspan="3" style="text-align: left;" class="confluenceTd"><p><br/></p><h4 class="MuiTypography-root MuiTypography-h4" id="APIPTSCZStandingOrdersIntegračníanalýza-PTSCZStandingOrders">PTSCZStandingOrders</h4><p><br/></p></td><td rowspan="3" style="text-align: left;" class="confluenceTd"><p><br/></p><p>REST API</p><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>Integrační analýza</p></td><td style="text-align: left;" class="confluenceTd"><p><br/></p></td><td style="text-align: left;" class="confluenceTd"><p>není změna</p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>AKC</p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://apitest.jtfg.com/PTSCZStandingOrdersUAT/v1" rel="nofollow">https://apitest.jtfg.com/PTSCZStandingOrdersUAT/v1</a></p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 devportal PTSCZStandingOrders<span>UAT</span></p></td></tr><tr><td style="text-align: left;" class="confluenceTd"><p>INT</p></td><td style="text-align: left;" class="confluenceTd"><p><a class="external-link" href="https://apitest.jtfg.com/PTSCZStandingOrdersSIT/v1" rel="nofollow">https://apitest.jtfg.com/PTSCZStandingOrdersSIT/v1</a></p></td><td style="text-align: left;" class="confluenceTd"><p>WSO2 devportal PTSCZStandingOrders<span>SIT</span></p></td></tr></tbody></table></div><h2 id="APIPTSCZStandingOrdersIntegračníanalýza-Komponentnídiagram">Komponentní diagram</h2><p>ToDo</p></div>
+</div>
+</div>
+</div>
+                    </div>
+
+                                        
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Kvě 24, 2023 13:11</p>
+                    <div id="footer-logo"><a href="https://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

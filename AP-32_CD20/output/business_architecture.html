@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Deal 2.0 - Business Architecture</title>
+    <link href="./styles.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f5f7f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a472a, #2d5a3d);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .domain-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #4a7c59;
+        }
+        
+        .domain-header {
+            color: #1a472a;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .use-case-count {
+            background: #4a7c59;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            float: right;
+        }
+        
+        .domain-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .key-functions {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .key-functions li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .key-functions li:before {
+            content: "✓ ";
+            color: #4a7c59;
+            font-weight: bold;
+        }
+        
+        .orchestration-section {
+            background: linear-gradient(135deg, #2d5a3d, #4a7c59);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .nav-link {
+            display: inline-block;
+            background: #4a7c59;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5rem;
+            transition: background 0.3s;
+        }
+        
+        .nav-link:hover {
+            background: #1a472a;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏗️ Clear Deal 2.0 - Business Architecture</h1>
+        <p>BIAN Framework-based Service Domain Architecture</p>
+    </div>
+
+    <div class="container">
+        <div style="text-align: center; margin: 2rem 0;">
+            <a href="index.html" class="nav-link">🏠 Hlavní portál</a>
+            <a href="functional_analysis.html" class="nav-link">⚙️ Funkční analýza</a>
+            <a href="technical_specs.html" class="nav-link">🔧 Technické specifikace</a>
+        </div>
+
+        <h2>🌐 BIAN Service Domain Overview</h2>
+        <p>Clear Deal 2.0 je architektonicky postavena na <strong>Banking Industry Architecture Network (BIAN)</strong> standardech, které zajišťují modulární, škálovatelnou a compliance-ready architekturu. Implementace pokrývá 10 klíčových Service Domains s kompletní orchestrací.</p>
+
+        <div class="orchestration-section">
+            <h2>🎯 Customer_Offer - Central Orchestration Domain</h2>
+            <p>Customer_Offer domain slouží jako <strong>centrální orchestrátor</strong> koordinující celou zákaznickou cestu napříč všemi ostatními service domains. Zajišťuje konzistentní customer experience a cross-domain data synchronization.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                    <h4>🛤️ Journey Orchestration</h4>
+                    <p>Real-time customer journey tracking a optimization</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                    <h4>🔄 Data Synchronization</h4>
+                    <p>Cross-domain data consistency a event coordination</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                    <h4>🤖 AI Personalization</h4>
+                    <p>Intelligent offer personalization a recommendations</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;">
+                    <h4>📋 Compliance Coordination</h4>
+                    <p>Automated compliance validation across domains</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="architecture-grid">
+            <!-- Group 1: Customer Foundation Domains -->
+            <div class="domain-card">
+                <div class="domain-header">
+                    👤 Party_Lifecycle_Management
+                    <span class="use-case-count">9 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Komplexní správa životního cyklu zákazníka od onboardingu po dlouhodobé relationship management.
+                </div>
+                <ul class="key-functions">
+                    <li>Bank iD remote identification</li>
+                    <li>Customer onboarding orchestration</li>
+                    <li>GDPR compliance & data governance</li>
+                    <li>AML/KYC processing</li>
+                    <li>Customer lifecycle analytics</li>
+                </ul>
+            </div>
+
+            <div class="domain-card">
+                <div class="domain-header">
+                    🔐 Party_Authentication
+                    <span class="use-case-count">9 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Multi-factor authentication system s biometrickou podporou a mobile-first security approach.
+                </div>
+                <ul class="key-functions">
+                    <li>SMS two-factor authentication</li>
+                    <li>PIN management & setup</li>
+                    <li>Biometric authentication (Face ID/Touch ID)</li>
+                    <li>SEZAM digital identity integration</li>
+                    <li>Session security management</li>
+                </ul>
+            </div>
+
+            <!-- Group 2: Investment Core Domains -->
+            <div class="domain-card">
+                <div class="domain-header">
+                    📊 Investment_Portfolio_Planning
+                    <span class="use-case-count">17 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Strategické plánování investičního portfolia s matematickým modelováním tří variant strategií.
+                </div>
+                <ul class="key-functions">
+                    <li>Tři varianty strategií (Cílová částka, Renta, Bez cíle)</li>
+                    <li>Mathematical calculation engines</li>
+                    <li>Risk-return scenario modeling</li>
+                    <li>MiFID suitability assessment</li>
+                    <li>Strategy validation & activation</li>
+                </ul>
+            </div>
+
+            <div class="domain-card">
+                <div class="domain-header">
+                    ⚙️ Investment_Portfolio_Management
+                    <span class="use-case-count">33 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Automatizovaná správa investičních portfolií s TOPAS integrací a real-time processing.
+                </div>
+                <ul class="key-functions">
+                    <li>TOPAS core system integration</li>
+                    <li>Automated daily investment processing</li>
+                    <li>Portfolio rebalancing & optimization</li>
+                    <li>Corporate actions & dividend processing</li>
+                    <li>Fund purchase/redemption automation</li>
+                </ul>
+            </div>
+
+            <div class="domain-card">
+                <div class="domain-header">
+                    💼 Consumer_Investments
+                    <span class="use-case-count">4 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Customer-initiated investment actions a self-service portfolio management capabilities.
+                </div>
+                <ul class="key-functions">
+                    <li>Portfolio sale instructions</li>
+                    <li>Specific fund redemptions</li>
+                    <li>Investment amount modifications</li>
+                    <li>Customer-driven rebalancing</li>
+                </ul>
+            </div>
+
+            <!-- Group 3: Payment Processing Domains -->
+            <div class="domain-card">
+                <div class="domain-header">
+                    💳 Payment_Initiation
+                    <span class="use-case-count">13 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Comprehensive payment initiation suite s podporou karet, digital wallets a recurring payments.
+                </div>
+                <ul class="key-functions">
+                    <li>Card payment processing (PCI DSS)</li>
+                    <li>Apple Pay & Google Pay integration</li>
+                    <li>Recurring payment management</li>
+                    <li>Strong customer authentication</li>
+                    <li>Payment authorization workflows</li>
+                </ul>
+            </div>
+
+            <div class="domain-card">
+                <div class="domain-header">
+                    🏦 Payment_Execution
+                    <span class="use-case-count">12 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Back-end payment processing s bankovními převody, QR kódy a OBOFT integrací.
+                </div>
+                <ul class="key-functions">
+                    <li>Bank transfer processing</li>
+                    <li>QR code payment generation</li>
+                    <li>OBOFT external transfers</li>
+                    <li>Standing order management</li>
+                    <li>Payment status tracking</li>
+                </ul>
+            </div>
+
+            <!-- Group 4: Agreement & Document Domains -->
+            <div class="domain-card">
+                <div class="domain-header">
+                    📋 Customer_Agreement
+                    <span class="use-case-count">13 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Master customer agreement management s digital signatures a contract lifecycle automation.
+                </div>
+                <ul class="key-functions">
+                    <li>Contract header generation</li>
+                    <li>Digital signature workflows</li>
+                    <li>Investment service agreements</li>
+                    <li>Contract status management</li>
+                    <li>CRM contract integration</li>
+                </ul>
+            </div>
+
+            <div class="domain-card">
+                <div class="domain-header">
+                    📄 Document_Directory
+                    <span class="use-case-count">10 Use Cases</span>
+                </div>
+                <div class="domain-description">
+                    Document generation, management a delivery system s HD dokumenty integrací.
+                </div>
+                <ul class="key-functions">
+                    <li>Automated document generation</li>
+                    <li>Email document delivery</li>
+                    <li>Digital signature processing</li>
+                    <li>Document template management</li>
+                    <li>Audit trail maintenance</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>🔄 Cross-Domain Integration Patterns</h2>
+        <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+            <h3>Event-Driven Architecture</h3>
+            <p>Všechny domény komunikují prostřednictvím <strong>event-driven architecture</strong> s Customer_Offer domain jako centrálním orchestrátorem:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                <div style="border-left: 4px solid #4a7c59; padding-left: 1rem;">
+                    <h4>🎯 Customer Journey Events</h4>
+                    <p>Real-time tracking customer touchpoints across všechny domény</p>
+                </div>
+                <div style="border-left: 4px solid #2d5a3d; padding-left: 1rem;">
+                    <h4>💾 Data Synchronization Events</h4>
+                    <p>Automatic data consistency maintenance napříč systémy</p>
+                </div>
+                <div style="border-left: 4px solid #1a472a; padding-left: 1rem;">
+                    <h4>📋 Compliance Events</h4>
+                    <p>Automated regulatory compliance validation</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>📈 Business Value Architecture</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
+            <div style="background: linear-gradient(135deg, #1a472a, #2d5a3d); color: white; padding: 2rem; border-radius: 10px; text-align: center;">
+                <h3>85%</h3>
+                <p>Expected onboarding completion rate</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #2d5a3d, #4a7c59); color: white; padding: 2rem; border-radius: 10px; text-align: center;">
+                <h3>70%</h3>
+                <p>Strategy creation conversion rate</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #4a7c59, #2d5a3d); color: white; padding: 2rem; border-radius: 10px; text-align: center;">
+                <h3>95%</h3>
+                <p>Automated processing success</p>
+            </div>
+            <div style="background: linear-gradient(135deg, #2d5a3d, #1a472a); color: white; padding: 2rem; border-radius: 10px; text-align: center;">
+                <h3>60%</h3>
+                <p>Manual process reduction</p>
+            </div>
+        </div>
+
+        <div style="background: #f0f4f0; padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+            <h3>🏆 BIAN Compliance Benefits</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>✅ <strong>Industry Standard Architecture:</strong> Alignment s banking industry best practices</li>
+                <li>✅ <strong>Modular Design:</strong> Independent service domains pro scalability</li>
+                <li>✅ <strong>Regulatory Compliance:</strong> Built-in compliance s banking regulations</li>
+                <li>✅ <strong>Future-Proof:</strong> Extensible architecture pro future enhancements</li>
+                <li>✅ <strong>Integration Ready:</strong> Standard interfaces pro third-party integrations</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
