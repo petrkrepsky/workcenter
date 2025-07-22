@@ -1,0 +1,110 @@
+{
+  "domainName": "Customer Surveys",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33538",
+      "artifactName": "Customer Surveys"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34213",
+      "artifactName": "Customer Surveys"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111486",
+      "artifactName": "Customer Survey"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "42975",
+      "artifactName": "Customer Survey"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "195968",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "195981",
+      "artifactName": "Procedure_Instantiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "196007",
+      "artifactName": "Procedure_Invocation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "195992",
+      "artifactName": "Procedure_Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110702",
+      "artifactName": "Survey Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106236",
+      "artifactName": "Execution"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105850",
+      "artifactName": "Reviewer Selection"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105734",
+      "artifactName": "Definition"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Customer Surveys SD Overview",
+      "bizzsemantic": "353776",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Surveys",
+      "bizzsemantic": "42976",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Customer Surveys",
+      "bizzsemantic": "34214",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Customer Surveys",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

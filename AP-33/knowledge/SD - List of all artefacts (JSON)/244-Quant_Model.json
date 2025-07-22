@@ -1,0 +1,50 @@
+{
+  "domainName": "Quant Model",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33907",
+      "artifactName": "Quant Model"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132221",
+      "artifactName": "Quant Model"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111235",
+      "artifactName": "Quant Model Specification_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130967",
+      "artifactName": "Quant Model Specification"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217652",
+      "artifactName": "Quant Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217638",
+      "artifactName": "Quant Model"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "217636",
+      "artifactName": "Quant Model"
+    }
+  ]
+}

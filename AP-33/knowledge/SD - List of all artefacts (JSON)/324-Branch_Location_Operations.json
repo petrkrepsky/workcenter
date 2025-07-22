@@ -1,0 +1,110 @@
+{
+  "domainName": "Branch Location Operations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "34007",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132189",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111241",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210549",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210547",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210558",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210551",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "Branch Location Operations SD Overview",
+      "bizzsemantic": "353885",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Branch Location",
+      "bizzsemantic": "46097",
+      "artifactName": "Operations Control"
+    },
+    {
+      "artifactType": "Branch Location",
+      "bizzsemantic": "53355",
+      "artifactName": "Operations BOM"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "40936",
+      "artifactName": "Branch Location"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32735",
+      "artifactName": "Staff Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35782",
+      "artifactName": "Cash Inventory Handling"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29131",
+      "artifactName": "Non-cash Inventory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33507",
+      "artifactName": "Safe Custody"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39979",
+      "artifactName": "Location Security"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "39083",
+      "artifactName": "Workforce"
+    },
+    {
+      "artifactType": "Branch Location",
+      "bizzsemantic": "",
+      "artifactName": "Operations API"
+    }
+  ]
+}

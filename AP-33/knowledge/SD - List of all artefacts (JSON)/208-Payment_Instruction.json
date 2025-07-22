@@ -1,0 +1,95 @@
+{
+  "domainName": "Payment Instruction",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39133",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "87641",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "87646",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36279",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87648",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87685",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87678",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "87683",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45676",
+      "artifactName": "Payment Instruction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "38123",
+      "artifactName": "Compliance Check"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "47774",
+      "artifactName": "Agreement Confirmation"
+    },
+    {
+      "artifactType": "Payment Instruction SD Overview",
+      "bizzsemantic": "347734",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Payment Instruction",
+      "bizzsemantic": "49859",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Payment Instruction",
+      "bizzsemantic": "53171",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Payment Instruction",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

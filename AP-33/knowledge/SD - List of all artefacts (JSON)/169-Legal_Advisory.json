@@ -1,0 +1,90 @@
+{
+  "domainName": "Legal Advisory",
+  "artifacts": [
+    {
+      "artifactType": "Legal Advisory SD Overview",
+      "bizzsemantic": "353746",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32993",
+      "artifactName": "Legal Advisory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "35452",
+      "artifactName": "Legal Advice"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111118",
+      "artifactName": "Legal Advice"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43045",
+      "artifactName": "Legal Advice Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128433",
+      "artifactName": "Legal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128438",
+      "artifactName": "Legal Advice"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128435",
+      "artifactName": "Legal Advice"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "128431",
+      "artifactName": "Legal Advice"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34451",
+      "artifactName": "Legal Advisory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "Legal Advisory",
+      "bizzsemantic": "43046",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Legal Advisory",
+      "bizzsemantic": "35453",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Legal Advisory API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

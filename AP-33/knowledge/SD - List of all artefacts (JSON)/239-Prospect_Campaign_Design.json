@@ -1,0 +1,100 @@
+{
+  "domainName": "Prospect Campaign Design",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39556",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34096",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111253",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41261",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58118",
+      "artifactName": "Design"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58189",
+      "artifactName": "Specification"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58177",
+      "artifactName": "Aspect"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218082",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218100",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218092",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218074",
+      "artifactName": "Prospect Campaign"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Prospect Campaign Design SD Overview",
+      "bizzsemantic": "343989",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Prospect Campaign",
+      "bizzsemantic": "41262",
+      "artifactName": "Design Control"
+    },
+    {
+      "artifactType": "Prospect Campaign",
+      "bizzsemantic": "42405",
+      "artifactName": "Design BOM"
+    },
+    {
+      "artifactType": "Prospect Campaign",
+      "bizzsemantic": "",
+      "artifactName": "Design API"
+    }
+  ]
+}

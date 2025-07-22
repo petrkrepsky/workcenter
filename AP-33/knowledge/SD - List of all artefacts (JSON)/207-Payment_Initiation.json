@@ -1,0 +1,100 @@
+{
+  "domainName": "Payment Initiation",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29967",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "46402",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111233",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30408",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "219000",
+      "artifactName": "Payment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218983",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "219014",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "219009",
+      "artifactName": "Payment Initiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104675",
+      "artifactName": "Order Initiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108049",
+      "artifactName": "Funding Check"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108385",
+      "artifactName": "Compliance"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67874",
+      "artifactName": "Regulatory Regulations"
+    },
+    {
+      "artifactType": "Payment Initiation SD Overview",
+      "bizzsemantic": "353062",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Payment Initiation",
+      "bizzsemantic": "30409",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Payment Initiation",
+      "bizzsemantic": "46403",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Payment Initiation API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

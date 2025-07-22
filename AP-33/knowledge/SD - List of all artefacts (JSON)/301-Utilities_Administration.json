@@ -1,0 +1,50 @@
+{
+  "domainName": "Utilities Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32750",
+      "artifactName": "Utilities"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130481",
+      "artifactName": "Utilities"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111415",
+      "artifactName": "Utilities Administrative"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "132270",
+      "artifactName": "Utilities Administrative Plan"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208187",
+      "artifactName": "Utilities Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208185",
+      "artifactName": "Utilities Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "208189",
+      "artifactName": "Utilities Administrative"
+    }
+  ]
+}

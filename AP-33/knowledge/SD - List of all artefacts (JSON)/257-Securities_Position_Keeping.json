@@ -1,0 +1,85 @@
+{
+  "domainName": "Securities Position Keeping",
+  "artifacts": [
+    {
+      "artifactType": "Securities Position Keeping SD Overview",
+      "bizzsemantic": "353669",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40524",
+      "artifactName": "Securities Position"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "46346",
+      "artifactName": "Securities Position"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37657",
+      "artifactName": "Securities Position Log"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58223",
+      "artifactName": "Event"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173510",
+      "artifactName": "Securities Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173493",
+      "artifactName": "Securities Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173504",
+      "artifactName": "Securities Position"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "173514",
+      "artifactName": "Securities Position"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108000",
+      "artifactName": "Securities Transaction"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Securities Position",
+      "bizzsemantic": "37658",
+      "artifactName": "Keeping Control"
+    },
+    {
+      "artifactType": "Securities Position",
+      "bizzsemantic": "46347",
+      "artifactName": "Keeping BOM"
+    },
+    {
+      "artifactType": "Securities Position",
+      "bizzsemantic": "",
+      "artifactName": "Keeping API"
+    }
+  ]
+}

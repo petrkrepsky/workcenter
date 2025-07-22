@@ -1,0 +1,100 @@
+{
+  "domainName": "Regulatory And Legal Authority",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44219",
+      "artifactName": "Regulatory And"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132905",
+      "artifactName": "Regulatory And Legal"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110972",
+      "artifactName": "Regulatory And Legal"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38897",
+      "artifactName": "Regulatory And Legal"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58229",
+      "artifactName": "Duty"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "205247",
+      "artifactName": "Regulatory And Legal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "205257",
+      "artifactName": "Regulatory And Legal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "205261",
+      "artifactName": "Regulatory And Legal"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "205270",
+      "artifactName": "Regulatory And Legal"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "64550",
+      "artifactName": "Troubleshooting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106266",
+      "artifactName": "Represent Bank Interests"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108815",
+      "artifactName": "Maintain Relations"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109010",
+      "artifactName": "Establish Relations"
+    },
+    {
+      "artifactType": "Regulatory And Legal Authority SD Overview",
+      "bizzsemantic": "353611",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Regulatory And",
+      "bizzsemantic": "49495",
+      "artifactName": "Legal Authority"
+    },
+    {
+      "artifactType": "Regulatory And",
+      "bizzsemantic": "53083",
+      "artifactName": "Legal Authority"
+    },
+    {
+      "artifactType": "Regulatory And Legal",
+      "bizzsemantic": "",
+      "artifactName": "Authority API"
+    }
+  ]
+}

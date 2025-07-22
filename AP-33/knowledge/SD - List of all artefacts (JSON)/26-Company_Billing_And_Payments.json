@@ -1,0 +1,50 @@
+{
+  "domainName": "Company Billing And Payments",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "29087",
+      "artifactName": "Company Billing and"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "130471",
+      "artifactName": "Enterprise Billing And"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111193",
+      "artifactName": "Enterprise Billing And"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "130916",
+      "artifactName": "Enterprise Billing And"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "165502",
+      "artifactName": "Enterprise Billing And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "165500",
+      "artifactName": "Enterprise Billing And"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "165491",
+      "artifactName": "Enterprise Billing And"
+    }
+  ]
+}

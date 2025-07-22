@@ -1,0 +1,90 @@
+{
+  "domainName": "Securities Fails Processing",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44402",
+      "artifactName": "Securities Fails"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "80351",
+      "artifactName": "Security Trading Fails"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "80347",
+      "artifactName": "Security Trading Fails"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38097",
+      "artifactName": "Security Trading Fails"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58066",
+      "artifactName": "Process"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58164",
+      "artifactName": "Procedure"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58209",
+      "artifactName": "Workstep"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80328",
+      "artifactName": "Securities Fails"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80335",
+      "artifactName": "Security Trading Fails"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80356",
+      "artifactName": "Security Trading Fails"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "80358",
+      "artifactName": "Security Trading Fails"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33597",
+      "artifactName": "Securities Fail"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35668",
+      "artifactName": "Securities Fail Analysis"
+    },
+    {
+      "artifactType": "Securities Fails Processing SD Overview",
+      "bizzsemantic": "353873",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Securities Fails",
+      "bizzsemantic": "47331",
+      "artifactName": "Processing Control"
+    },
+    {
+      "artifactType": "Securities Fails",
+      "bizzsemantic": "53043",
+      "artifactName": "Processing BOM"
+    },
+    {
+      "artifactType": "Securities Fails",
+      "bizzsemantic": "",
+      "artifactName": "Processing API"
+    }
+  ]
+}

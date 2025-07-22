@@ -1,0 +1,95 @@
+{
+  "domainName": "Issued Device Tracking",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30205",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29919",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111041",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "46189",
+      "artifactName": "Issued Device State"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58090",
+      "artifactName": "Monitor"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58175",
+      "artifactName": "State"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58201",
+      "artifactName": "Indicator"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218767",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218761",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218775",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218777",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108354",
+      "artifactName": "External Report"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109732",
+      "artifactName": "Internal Notification"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65898",
+      "artifactName": "Accessed External IP"
+    },
+    {
+      "artifactType": "Issued Device Tracking SD Overview",
+      "bizzsemantic": "348517",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Issued Device",
+      "bizzsemantic": "46190",
+      "artifactName": "Tracking Control"
+    },
+    {
+      "artifactType": "Issued Device",
+      "bizzsemantic": "30615",
+      "artifactName": "Tracking BOM"
+    },
+    {
+      "artifactType": "Issued Device",
+      "bizzsemantic": "",
+      "artifactName": "Tracking API"
+    }
+  ]
+}

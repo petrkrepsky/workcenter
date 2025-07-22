@@ -1,0 +1,50 @@
+{
+  "domainName": "System Deployment",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30027",
+      "artifactName": "System Deployment"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133247",
+      "artifactName": "IT System Deployment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111013",
+      "artifactName": "IT System Deployment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131786",
+      "artifactName": "IT System Deployment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58047",
+      "artifactName": "Develop"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157933",
+      "artifactName": "IT System Deployment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157950",
+      "artifactName": "IT System Deployment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157953",
+      "artifactName": "IT System Deployment"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58162",
+      "artifactName": "Development"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "domainName": "Public Offering",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44552",
+      "artifactName": "Public Offering"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133256",
+      "artifactName": "Public Offering"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111187",
+      "artifactName": "Public Offering Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34714",
+      "artifactName": "Public Offering Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "200318",
+      "artifactName": "Public"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "200325",
+      "artifactName": "Public Offering"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "200304",
+      "artifactName": "Public Offering"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "200327",
+      "artifactName": "Public Offering"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36241",
+      "artifactName": "Public Placement IPO and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45663",
+      "artifactName": "Public Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34043",
+      "artifactName": "Public Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31131",
+      "artifactName": "Public Placement Financial"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42731",
+      "artifactName": "Public Placement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34808",
+      "artifactName": "Public Placement"
+    },
+    {
+      "artifactType": "Public Offering SD Overview",
+      "bizzsemantic": "353860",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Public Offering",
+      "bizzsemantic": "34715",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Public Offering",
+      "bizzsemantic": "53699",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Public Offering API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

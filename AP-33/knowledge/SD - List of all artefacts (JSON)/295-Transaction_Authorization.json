@@ -1,0 +1,95 @@
+{
+  "domainName": "Transaction Authorization",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48811",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "31181",
+      "artifactName": "Interactive Transaction"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111307",
+      "artifactName": "Interactive Transaction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210090",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210086",
+      "artifactName": "Interactive"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210082",
+      "artifactName": "Interactive"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210094",
+      "artifactName": "Interactive"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "103317",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "210084",
+      "artifactName": "Fraud Models"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "149526",
+      "artifactName": "Customer Behavior Models"
+    },
+    {
+      "artifactType": "Transaction Authorization SD Overview",
+      "bizzsemantic": "353693",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Transaction",
+      "bizzsemantic": "33331",
+      "artifactName": "Authorization"
+    },
+    {
+      "artifactType": "Transaction",
+      "bizzsemantic": "31182",
+      "artifactName": "Authorization BOM"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "33330",
+      "artifactName": "Interactive Transaction"
+    },
+    {
+      "artifactType": "Transaction",
+      "bizzsemantic": "",
+      "artifactName": "Authorization API"
+    }
+  ]
+}

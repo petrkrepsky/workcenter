@@ -1,0 +1,100 @@
+{
+  "domainName": "Systems Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48356",
+      "artifactName": "Systems"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40286",
+      "artifactName": "IT System"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111021",
+      "artifactName": "IT System Administrative"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "41771",
+      "artifactName": "IT System Administrative"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210938",
+      "artifactName": "Systems"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210962",
+      "artifactName": "IT System Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210943",
+      "artifactName": "IT System Administrative"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210964",
+      "artifactName": "IT System Administrative"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108595",
+      "artifactName": "Capacity Planningand"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105749",
+      "artifactName": "Assurance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104865",
+      "artifactName": "Configuration"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104772",
+      "artifactName": "Inventory"
+    },
+    {
+      "artifactType": "Systems Administration SD Overview",
+      "bizzsemantic": "353817",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Systems",
+      "bizzsemantic": "49367",
+      "artifactName": "Administration"
+    },
+    {
+      "artifactType": "Systems",
+      "bizzsemantic": "52988",
+      "artifactName": "Administration BOM"
+    },
+    {
+      "artifactType": "Systems",
+      "bizzsemantic": "",
+      "artifactName": "Administration API"
+    }
+  ]
+}

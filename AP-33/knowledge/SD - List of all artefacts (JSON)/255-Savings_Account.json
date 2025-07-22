@@ -1,0 +1,145 @@
+{
+  "domainName": "Savings Account",
+  "artifacts": [
+    {
+      "artifactType": "Savings Account SD Overview",
+      "bizzsemantic": "353626",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "38858",
+      "artifactName": "Savings Account"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "34353",
+      "artifactName": "Savings Account"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111441",
+      "artifactName": "Savings Account Facility_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34058",
+      "artifactName": "Savings Account Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209558",
+      "artifactName": "Savings"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209531",
+      "artifactName": "Savings Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209538",
+      "artifactName": "Savings Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209521",
+      "artifactName": "Savings Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63758",
+      "artifactName": "Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91578",
+      "artifactName": "Deposits and Withdrawals"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91584",
+      "artifactName": "Account Sweep"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "91576",
+      "artifactName": "Account Lien"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "33662",
+      "artifactName": "Service Fees"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "63786",
+      "artifactName": "Interest"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91558",
+      "artifactName": "Bank Rates"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91554",
+      "artifactName": "Product and Service"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91564",
+      "artifactName": "Accounting Rules"
+    },
+    {
+      "artifactType": "Savings Account",
+      "bizzsemantic": "34059",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Savings Account",
+      "bizzsemantic": "34354",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28871",
+      "artifactName": "Account Statement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30103",
+      "artifactName": "Issued Device"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "Savings Account API",
+      "bizzsemantic": "",
+      "artifactName": ""
+    }
+  ]
+}

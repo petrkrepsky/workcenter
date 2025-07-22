@@ -1,0 +1,50 @@
+{
+  "domainName": "Property Portfolio",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30151",
+      "artifactName": "Property Portfolio"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132186",
+      "artifactName": "Building Portfolio"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111397",
+      "artifactName": "Building Portfolio Analysis_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131803",
+      "artifactName": "Building Portfolio Analysis"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209796",
+      "artifactName": "Building Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209808",
+      "artifactName": "Building Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209810",
+      "artifactName": "Building Portfolio"
+    }
+  ]
+}

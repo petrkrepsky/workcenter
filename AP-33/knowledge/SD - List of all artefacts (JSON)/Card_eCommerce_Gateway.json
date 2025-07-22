@@ -1,0 +1,115 @@
+{
+  "domainName": "Card eCommerce Gateway",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40009",
+      "artifactName": "Card eCommerce"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111221",
+      "artifactName": "eCommerce Gateway"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "196203",
+      "artifactName": "Card eCommerce"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "196224",
+      "artifactName": "Card eCommerce"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "196230",
+      "artifactName": "Card eCommerce"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "196201",
+      "artifactName": "Card eCommerce"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107761",
+      "artifactName": "Transaction Authorization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108403",
+      "artifactName": "Card Authentication"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108537",
+      "artifactName": "Transaction Batch"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105675",
+      "artifactName": "Card Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "80874",
+      "artifactName": "Help Service Selection"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Card eCommerce Gateway SD Overview",
+      "bizzsemantic": "353657",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Card eCommerce",
+      "bizzsemantic": "34974",
+      "artifactName": "Gateway Control"
+    },
+    {
+      "artifactType": "Card eCommerce",
+      "bizzsemantic": "29752",
+      "artifactName": "Gateway BOM"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34973",
+      "artifactName": "eCommerce Gateway"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "29751",
+      "artifactName": "eCommerce Gateway"
+    },
+    {
+      "artifactType": "Card eCommerce",
+      "bizzsemantic": "",
+      "artifactName": "Gateway API"
+    }
+  ]
+}

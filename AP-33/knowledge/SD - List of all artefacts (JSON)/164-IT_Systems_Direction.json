@@ -1,0 +1,50 @@
+{
+  "domainName": "IT Systems Direction",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "39103",
+      "artifactName": "IT Systems Direction"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133304",
+      "artifactName": "IT Systems"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111317",
+      "artifactName": "IT Systems Strategy_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "131724",
+      "artifactName": "IT Systems Strategy"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58041",
+      "artifactName": "Direct"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58187",
+      "artifactName": "Strategy"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207602",
+      "artifactName": "IT Systems"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207613",
+      "artifactName": "IT Systems"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207605",
+      "artifactName": "IT Systems"
+    }
+  ]
+}

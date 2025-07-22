@@ -1,0 +1,115 @@
+{
+  "domainName": "Document Directory",
+  "artifacts": [
+    {
+      "artifactType": "Document Directory SD Overview",
+      "bizzsemantic": "353702",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44708",
+      "artifactName": "Document Directory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "32238",
+      "artifactName": "Document"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111033",
+      "artifactName": "Document Directory Entry_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "37489",
+      "artifactName": "Document Directory Entry"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58136",
+      "artifactName": "Catalog"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58183",
+      "artifactName": "Directory Entry"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58122",
+      "artifactName": "Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210916",
+      "artifactName": "Document"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210930",
+      "artifactName": "Document Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210926",
+      "artifactName": "Document Directory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210888",
+      "artifactName": "Document Directory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29952",
+      "artifactName": "Document Archiving"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "29608",
+      "artifactName": "Document Update History"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "44711",
+      "artifactName": "Document Amendment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40582",
+      "artifactName": "Document Verification"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32126",
+      "artifactName": "Document Version"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40790",
+      "artifactName": "Document Reference"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Document Directory",
+      "bizzsemantic": "37490",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Document Directory",
+      "bizzsemantic": "32239",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Document Directory",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

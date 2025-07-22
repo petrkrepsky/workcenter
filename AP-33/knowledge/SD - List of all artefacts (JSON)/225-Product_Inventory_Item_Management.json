@@ -1,0 +1,90 @@
+{
+  "domainName": "Product Inventory Item Management",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35580",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "41638",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110984",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29575",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58134",
+      "artifactName": "Allocate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58168",
+      "artifactName": "Allocation"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58217",
+      "artifactName": "Criteria"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207913",
+      "artifactName": "Product Inventory Item"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207902",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207915",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207924",
+      "artifactName": "Product Inventory"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104941",
+      "artifactName": "Assignment"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "Product Inventory Item Management SD Overview",
+      "bizzsemantic": "348182",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Product Inventory",
+      "bizzsemantic": "29576",
+      "artifactName": "Item Management"
+    },
+    {
+      "artifactType": "Product Inventory",
+      "bizzsemantic": "41639",
+      "artifactName": "Item Management"
+    },
+    {
+      "artifactType": "Product Inventory",
+      "bizzsemantic": "",
+      "artifactName": "Item Management API"
+    }
+  ]
+}

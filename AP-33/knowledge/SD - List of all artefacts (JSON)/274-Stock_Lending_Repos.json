@@ -1,0 +1,50 @@
+{
+  "domainName": "Stock Lending/Repos",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "48297",
+      "artifactName": "Stock Lending and"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133051",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111071",
+      "artifactName": "Repo Transaction_"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31302",
+      "artifactName": "Repo Transaction"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213285",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213282",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "213287",
+      "artifactName": "Repo"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    }
+  ]
+}

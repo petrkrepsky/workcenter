@@ -1,0 +1,95 @@
+{
+  "domainName": "Investment Portfolio Analysis",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "37857",
+      "artifactName": "Investment Portfolio"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "33722",
+      "artifactName": "Managed Investment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111361",
+      "artifactName": "Managed Investment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "32597",
+      "artifactName": "Managed Investment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210258",
+      "artifactName": "Investment Portfolio"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210270",
+      "artifactName": "Managed Investment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210238",
+      "artifactName": "Managed Investment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210264",
+      "artifactName": "Managed Investment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106833",
+      "artifactName": "Performance Analysis"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "81442",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "Investment Portfolio Analysis SD Overview",
+      "bizzsemantic": "351692",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Investment Portfolio",
+      "bizzsemantic": "32598",
+      "artifactName": "Analysis Control"
+    },
+    {
+      "artifactType": "Investment Portfolio",
+      "bizzsemantic": "46166",
+      "artifactName": "Analysis BOM"
+    },
+    {
+      "artifactType": "Investment Portfolio",
+      "bizzsemantic": "",
+      "artifactName": "Analysis API"
+    }
+  ]
+}

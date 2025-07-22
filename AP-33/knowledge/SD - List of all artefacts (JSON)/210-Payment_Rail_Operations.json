@@ -1,0 +1,100 @@
+{
+  "domainName": "Payment Rail Operations",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40093",
+      "artifactName": "Payment Rail"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90560",
+      "artifactName": "Payment Rail"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111151",
+      "artifactName": "Payment Rail Operating"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "38317",
+      "artifactName": "Payment Rail Operating"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210028",
+      "artifactName": "Payment Rail"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210000",
+      "artifactName": "Payment Rail Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210012",
+      "artifactName": "Payment Rail Operating"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "209996",
+      "artifactName": "Payment Rail Operating"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31172",
+      "artifactName": "Payment Clearing and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "45668",
+      "artifactName": "Payment Account"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40499",
+      "artifactName": "Outbound Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "30784",
+      "artifactName": "Inbound Transaction"
+    },
+    {
+      "artifactType": "Payment Rail Operations SD Overview",
+      "bizzsemantic": "347471",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Payment Rail",
+      "bizzsemantic": "49848",
+      "artifactName": "Operations Control"
+    },
+    {
+      "artifactType": "Payment Rail",
+      "bizzsemantic": "53590",
+      "artifactName": "Operations BOM"
+    },
+    {
+      "artifactType": "Payment Rail",
+      "bizzsemantic": "",
+      "artifactName": "Operations API"
+    }
+  ]
+}

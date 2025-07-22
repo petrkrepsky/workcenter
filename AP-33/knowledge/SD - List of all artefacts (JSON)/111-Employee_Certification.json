@@ -1,0 +1,50 @@
+{
+  "domainName": "Employee Certification",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40852",
+      "artifactName": "Employee"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133183",
+      "artifactName": "Employee Certification"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111189",
+      "artifactName": "Employee Certification"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133208",
+      "artifactName": "Employee Certification"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214622",
+      "artifactName": "Employee Certification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214626",
+      "artifactName": "Employee Certification"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "214624",
+      "artifactName": "Employee Certification"
+    }
+  ]
+}

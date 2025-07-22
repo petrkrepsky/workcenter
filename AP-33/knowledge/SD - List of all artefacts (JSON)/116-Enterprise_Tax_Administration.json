@@ -1,0 +1,50 @@
+{
+  "domainName": "Enterprise Tax Administration",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "41825",
+      "artifactName": "Enterprise Tax"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132293",
+      "artifactName": "Tax Administration"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110954",
+      "artifactName": "Tax Administration"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "133033",
+      "artifactName": "Tax Administration"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58116",
+      "artifactName": "Manage"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58181",
+      "artifactName": "Management Plan"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218555",
+      "artifactName": "Tax Administration"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218566",
+      "artifactName": "Tax Administration"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218562",
+      "artifactName": "Tax Administration"
+    }
+  ]
+}

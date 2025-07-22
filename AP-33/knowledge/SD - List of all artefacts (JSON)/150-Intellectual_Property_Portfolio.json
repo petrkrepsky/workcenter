@@ -1,0 +1,95 @@
+{
+  "domainName": "Intellectual Property Portfolio",
+  "artifacts": [
+    {
+      "artifactType": "Intellectual Property Portfolio SD Overview",
+      "bizzsemantic": "353717",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43362",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "35428",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111303",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "43056",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58096",
+      "artifactName": "Administer"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58173",
+      "artifactName": "Administrative Plan"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58211",
+      "artifactName": "Routine"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "206007",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "206011",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "206001",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "205989",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104941",
+      "artifactName": "Assignment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108863",
+      "artifactName": "Maintenance"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67872",
+      "artifactName": "Legal Terms and"
+    },
+    {
+      "artifactType": "Intellectual Property",
+      "bizzsemantic": "43057",
+      "artifactName": "Portfolio Control"
+    },
+    {
+      "artifactType": "Intellectual Property",
+      "bizzsemantic": "35429",
+      "artifactName": "Portfolio BOM"
+    },
+    {
+      "artifactType": "Intellectual Property",
+      "bizzsemantic": "",
+      "artifactName": "Portfolio API"
+    }
+  ]
+}

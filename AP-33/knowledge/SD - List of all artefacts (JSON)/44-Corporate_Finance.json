@@ -1,0 +1,100 @@
+{
+  "domainName": "Corporate Finance",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32352",
+      "artifactName": "Corporate Finance"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133281",
+      "artifactName": "Corporate Finance"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111335",
+      "artifactName": "Corporate Finance"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36166",
+      "artifactName": "Corporate Finance"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58035",
+      "artifactName": "Advise"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58025",
+      "artifactName": "Advice"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58213",
+      "artifactName": "Topic"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "136907",
+      "artifactName": "Corporate"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "136923",
+      "artifactName": "Corporate Finance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "136904",
+      "artifactName": "Corporate Finance"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "136929",
+      "artifactName": "Corporate Finance"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "40972",
+      "artifactName": "Strategic Funding Topic"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "34040",
+      "artifactName": "Tactical Funding Topic"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "31567",
+      "artifactName": "Capital Structuring Topic"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "35955",
+      "artifactName": "Tax Optimization Topic"
+    },
+    {
+      "artifactType": "Corporate Finance SD Overview",
+      "bizzsemantic": "343097",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Corporate Finance",
+      "bizzsemantic": "36167",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Corporate Finance",
+      "bizzsemantic": "53446",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Corporate Finance",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domainName": "Customer Product And Service Eligibility",
+  "artifacts": [
+    {
+      "artifactType": "Customer Product And Service Eligibility SD Overview",
+      "bizzsemantic": "353823",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "36792",
+      "artifactName": "Customer Product"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40363",
+      "artifactName": "Customer Eligibility"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111333",
+      "artifactName": "Customer Eligibility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58027",
+      "artifactName": "Assess"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58179",
+      "artifactName": "Assessment"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58236",
+      "artifactName": "Test"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119607",
+      "artifactName": "Customer Productand"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119609",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119614",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "119638",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108287",
+      "artifactName": "Next Best"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108377",
+      "artifactName": "Eligibility Check"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "80881",
+      "artifactName": "Product Directory"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "60895",
+      "artifactName": "Company Policies"
+    },
+    {
+      "artifactType": "Customer Product",
+      "bizzsemantic": "29977",
+      "artifactName": "And Service"
+    },
+    {
+      "artifactType": "Customer Product",
+      "bizzsemantic": "40364",
+      "artifactName": "And Service"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29976",
+      "artifactName": "Customer Eligibility"
+    },
+    {
+      "artifactType": "Customer Product",
+      "bizzsemantic": "",
+      "artifactName": "And Service Eligibility"
+    }
+  ]
+}

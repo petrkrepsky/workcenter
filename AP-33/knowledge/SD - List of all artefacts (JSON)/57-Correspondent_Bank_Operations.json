@@ -1,0 +1,105 @@
+{
+  "domainName": "Correspondent Bank Operations",
+  "artifacts": [
+    {
+      "artifactType": "Correspondent Bank Operations SD Overview",
+      "bizzsemantic": "353821",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "32729",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30267",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111498",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "44914",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211054",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211056",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211071",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211074",
+      "artifactName": "Correspondent Bank"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "77990",
+      "artifactName": "Clearing and Settlement"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105960",
+      "artifactName": "Inbound Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106494",
+      "artifactName": "Outbound Payments"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "78023",
+      "artifactName": "Reconciliation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "Correspondent",
+      "bizzsemantic": "44915",
+      "artifactName": "Bank Operations"
+    },
+    {
+      "artifactType": "Correspondent",
+      "bizzsemantic": "31663",
+      "artifactName": "Bank Operations"
+    },
+    {
+      "artifactType": "Correspondent Bank",
+      "bizzsemantic": "",
+      "artifactName": "Operations API"
+    }
+  ]
+}

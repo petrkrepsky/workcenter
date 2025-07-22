@@ -1,0 +1,50 @@
+{
+  "domainName": "Business Unit Accounting",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "40840",
+      "artifactName": "Business Unit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "117570",
+      "artifactName": "Business Unit Accounting"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110986",
+      "artifactName": "Business Unit Accounting"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "117573",
+      "artifactName": "Business Unit Accounting"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58126",
+      "artifactName": "Track"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58191",
+      "artifactName": "Log"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "117576",
+      "artifactName": "Business Unit Accounting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "117567",
+      "artifactName": "Business Unit Accounting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "117589",
+      "artifactName": "Business Unit Accounting"
+    }
+  ]
+}

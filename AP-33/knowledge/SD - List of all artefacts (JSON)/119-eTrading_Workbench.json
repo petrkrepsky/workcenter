@@ -1,0 +1,100 @@
+{
+  "domainName": "eTrading Workbench",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "28742",
+      "artifactName": "eTrading"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90594",
+      "artifactName": "eTrading Workbench"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111365",
+      "artifactName": "e Trading Workbench"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "36485",
+      "artifactName": "eTrading Workbench"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218657",
+      "artifactName": "eTrading"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218639",
+      "artifactName": "eTrading Workbench"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218672",
+      "artifactName": "eTrading Workbench"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218661",
+      "artifactName": "eTrading Workbench"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "32912",
+      "artifactName": "Market Order Initiation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "42488",
+      "artifactName": "Market Order Quotation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "36648",
+      "artifactName": "Market Price Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "37723",
+      "artifactName": "Investment Portfolio"
+    },
+    {
+      "artifactType": "eTrading Workbench SD Overview",
+      "bizzsemantic": "353680",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "eTrading",
+      "bizzsemantic": "36486",
+      "artifactName": "Workbench Control"
+    },
+    {
+      "artifactType": "eTrading",
+      "bizzsemantic": "53707",
+      "artifactName": "Workbench BOM"
+    },
+    {
+      "artifactType": "eTrading Workbench",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

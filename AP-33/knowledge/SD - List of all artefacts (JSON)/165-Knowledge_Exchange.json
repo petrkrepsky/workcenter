@@ -1,0 +1,105 @@
+{
+  "domainName": "Knowledge Exchange",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "31178",
+      "artifactName": "Knowledge"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133055",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111174",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31528",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "202180",
+      "artifactName": "Knowledge"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "202174",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "202140",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "202162",
+      "artifactName": "Intellectual Property"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107115",
+      "artifactName": "Archiving"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105276",
+      "artifactName": "Maintenance and Access"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104892",
+      "artifactName": "Indexingand Publication"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106591",
+      "artifactName": "Review, Refinement and"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109992",
+      "artifactName": "Captureand Classification"
+    },
+    {
+      "artifactType": "Knowledge Exchange SD Overview",
+      "bizzsemantic": "353835",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Knowledge",
+      "bizzsemantic": "49514",
+      "artifactName": "Exchange Control"
+    },
+    {
+      "artifactType": "Knowledge",
+      "bizzsemantic": "53957",
+      "artifactName": "Exchange BOM"
+    },
+    {
+      "artifactType": "Knowledge Exchange",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

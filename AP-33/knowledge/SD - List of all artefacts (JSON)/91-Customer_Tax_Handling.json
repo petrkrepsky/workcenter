@@ -1,0 +1,100 @@
+{
+  "domainName": "Customer Tax Handling",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35884",
+      "artifactName": "Customer Tax"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "40864",
+      "artifactName": "Customer Tax Obligation"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111305",
+      "artifactName": "Customer Tax Obligation"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "45465",
+      "artifactName": "Customer Tax Obligation"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170468",
+      "artifactName": "Customer Tax"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170484",
+      "artifactName": "Customer Tax Obligation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170465",
+      "artifactName": "Customer Tax Obligation"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "170493",
+      "artifactName": "Customer Tax Obligation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107781",
+      "artifactName": "Reporting"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105383",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "108524",
+      "artifactName": "Consolidation"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "91543",
+      "artifactName": "Taxation Rules"
+    },
+    {
+      "artifactType": "Customer Tax Handling SD Overview",
+      "bizzsemantic": "353712",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Tax",
+      "bizzsemantic": "45466",
+      "artifactName": "Handling Control"
+    },
+    {
+      "artifactType": "Customer Tax",
+      "bizzsemantic": "40865",
+      "artifactName": "Handling BOM"
+    },
+    {
+      "artifactType": "Customer Tax",
+      "bizzsemantic": "",
+      "artifactName": "Handling API"
+    }
+  ]
+}

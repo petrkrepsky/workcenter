@@ -1,0 +1,95 @@
+{
+  "domainName": "Cheque Processing",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43944",
+      "artifactName": "Cheque Processing"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "133193",
+      "artifactName": "Cheque Processing"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "110996",
+      "artifactName": "Cheque Processing"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "35388",
+      "artifactName": "Cheque Processing"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207715",
+      "artifactName": "Cheque"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207717",
+      "artifactName": "Cheque Processing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207739",
+      "artifactName": "Cheque Processing"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "207733",
+      "artifactName": "Cheque Processing"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "105535",
+      "artifactName": "Financial Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107524",
+      "artifactName": "Cheque Exception Handling"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "110412",
+      "artifactName": "Cheque Extraction"
+    },
+    {
+      "artifactType": "Cheque Processing SD Overview",
+      "bizzsemantic": "353970",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Cheque Processing",
+      "bizzsemantic": "49381",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Cheque Processing",
+      "bizzsemantic": "53676",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Cheque Processing",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

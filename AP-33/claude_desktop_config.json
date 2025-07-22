@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "browser-tools-mcp": {
+      "command": "npx",
+      "args": ["@agentdeskai/browser-tools-mcp@latest"],
+      "env": {
+        "BROWSER_TOOLS_SERVER_URL": "http://localhost:3025"
+      }
+    },
+    "chrome-mcp": {
+      "command": "npx",
+      "args": ["mcp-chrome@latest"]
+    },
+    "figma": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-figma@latest"],
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "YOUR_FIGMA_TOKEN_HERE"
+      }
+    }
+  }
+}

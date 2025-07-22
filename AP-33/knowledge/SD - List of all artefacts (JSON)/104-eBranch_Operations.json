@@ -1,0 +1,95 @@
+{
+  "domainName": "eBranch Operations",
+  "artifacts": [
+    {
+      "artifactType": "eBranch Operations SD Overview",
+      "bizzsemantic": "353684",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "30829",
+      "artifactName": "eBranch Operations"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "38832",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111057",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "29809",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58234",
+      "artifactName": "Function"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210999",
+      "artifactName": "eBranch"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211009",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211030",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "211025",
+      "artifactName": "eBranch Channel"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84408",
+      "artifactName": "Outbound"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "84396",
+      "artifactName": "Inbound"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "67617",
+      "artifactName": "NA"
+    },
+    {
+      "artifactType": "eBranch Operations",
+      "bizzsemantic": "29810",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "eBranch Operations",
+      "bizzsemantic": "47290",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "eBranch Operations",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

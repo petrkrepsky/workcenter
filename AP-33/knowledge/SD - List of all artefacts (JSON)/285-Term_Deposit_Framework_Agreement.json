@@ -1,0 +1,80 @@
+{
+  "domainName": "Term Deposit Framework Agreement",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "33675",
+      "artifactName": "Term Deposit"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "44182",
+      "artifactName": "Term Deposit Framework"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111413",
+      "artifactName": "Term Deposit Framework"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "48746",
+      "artifactName": "Term Deposit Framework"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218038",
+      "artifactName": "Term Deposit Framework"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218040",
+      "artifactName": "Term Deposit Framework"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218061",
+      "artifactName": "Term Deposit Framework"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "218044",
+      "artifactName": "Term Deposit Framework"
+    },
+    {
+      "artifactType": "Term Deposit Framework Agreement SD Overview",
+      "bizzsemantic": "343535",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Term Deposit",
+      "bizzsemantic": "48747",
+      "artifactName": "Framework"
+    },
+    {
+      "artifactType": "Term Deposit",
+      "bizzsemantic": "44183",
+      "artifactName": "Framework"
+    },
+    {
+      "artifactType": "Term Deposit",
+      "bizzsemantic": "",
+      "artifactName": "Framework"
+    }
+  ]
+}

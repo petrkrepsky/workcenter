@@ -1,0 +1,50 @@
+{
+  "domainName": "Trade/Price Reporting",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "44349",
+      "artifactName": "Trade and Price"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "132946",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111502",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "30579",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58128",
+      "artifactName": "Operate"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58171",
+      "artifactName": "Operating Session"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212070",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212064",
+      "artifactName": "Market Trade Reporting"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212068",
+      "artifactName": "Market Trade Reporting"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "domainName": "Internal Bank Account",
+  "artifacts": [
+    {
+      "artifactType": "Internal Bank Account SD Overview",
+      "bizzsemantic": "353652",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "46477",
+      "artifactName": "Internal Bank"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "47237",
+      "artifactName": "Internal Bank Account"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "33279",
+      "artifactName": "Internal Bank Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157841",
+      "artifactName": "Internal Bank"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157850",
+      "artifactName": "Internal Bank Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157843",
+      "artifactName": "Internal Bank Account"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "157839",
+      "artifactName": "Internal Bank Account"
+    },
+    {
+      "artifactType": "Internal Bank",
+      "bizzsemantic": "33280",
+      "artifactName": "Account Control"
+    },
+    {
+      "artifactType": "Internal Bank",
+      "bizzsemantic": "47238",
+      "artifactName": "Account BOM"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58185",
+      "artifactName": "Facility"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58132",
+      "artifactName": "Fulfill"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58207",
+      "artifactName": "Fulfillment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "28874",
+      "artifactName": "Booking Authorization"
+    },
+    {
+      "artifactType": "Internal Bank Account",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

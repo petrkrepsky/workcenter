@@ -1,0 +1,100 @@
+{
+  "domainName": "Customer Portfolio",
+  "artifacts": [
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "43359",
+      "artifactName": "Customer Portfolio"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "30814",
+      "artifactName": "Customer Segment"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111339",
+      "artifactName": "Customer Segment"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "31519",
+      "artifactName": "Customer Segment"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "58100",
+      "artifactName": "Analyze"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "58156",
+      "artifactName": "Analysis"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "58203",
+      "artifactName": "Algorithm"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212976",
+      "artifactName": "Customer"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212965",
+      "artifactName": "Customer Segment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212981",
+      "artifactName": "Customer Segment"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "212983",
+      "artifactName": "Customer Segment"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "106833",
+      "artifactName": "Performance Analysis"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "65889",
+      "artifactName": "Production History"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "81442",
+      "artifactName": "Financial Market Research"
+    },
+    {
+      "artifactType": "ReferenceInformation",
+      "bizzsemantic": "64540",
+      "artifactName": "Market Research"
+    },
+    {
+      "artifactType": "Customer Portfolio SD Overview",
+      "bizzsemantic": "346695",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "Customer Portfolio",
+      "bizzsemantic": "31520",
+      "artifactName": "Control Record"
+    },
+    {
+      "artifactType": "Customer Portfolio",
+      "bizzsemantic": "30815",
+      "artifactName": "BOM Diagram"
+    },
+    {
+      "artifactType": "Customer Portfolio",
+      "bizzsemantic": "",
+      "artifactName": "API"
+    }
+  ]
+}

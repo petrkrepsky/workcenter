@@ -1,0 +1,100 @@
+{
+  "domainName": "Card Transaction Capture",
+  "artifacts": [
+    {
+      "artifactType": "Card Transaction Capture SD Overview",
+      "bizzsemantic": "353788",
+      "artifactName": ""
+    },
+    {
+      "artifactType": "ServiceDomain",
+      "bizzsemantic": "35397",
+      "artifactName": "Card Transaction"
+    },
+    {
+      "artifactType": "AssetType",
+      "bizzsemantic": "90579",
+      "artifactName": "Credit Charge Card"
+    },
+    {
+      "artifactType": "AnalyticsObject",
+      "bizzsemantic": "111217",
+      "artifactName": "Credit Card Financial"
+    },
+    {
+      "artifactType": "ControlRecord",
+      "bizzsemantic": "34693",
+      "artifactName": "Credit Charge Card"
+    },
+    {
+      "artifactType": "FunctionalPattern",
+      "bizzsemantic": "55809",
+      "artifactName": "Transact"
+    },
+    {
+      "artifactType": "GenericArtifact",
+      "bizzsemantic": "55819",
+      "artifactName": "Transaction"
+    },
+    {
+      "artifactType": "BehaviorQualifierType",
+      "bizzsemantic": "55831",
+      "artifactName": "Task"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210410",
+      "artifactName": "Card Transaction"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210398",
+      "artifactName": "Credit Charge Card"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210389",
+      "artifactName": "Credit Charge Card"
+    },
+    {
+      "artifactType": "ServiceGroup",
+      "bizzsemantic": "210416",
+      "artifactName": "Credit Charge Card"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "104135",
+      "artifactName": "Transaction Capture"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "109810",
+      "artifactName": "Transaction Consolidation"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107761",
+      "artifactName": "Transaction Authorization"
+    },
+    {
+      "artifactType": "BehaviorQualifier",
+      "bizzsemantic": "107678",
+      "artifactName": "Transaction Reversal"
+    },
+    {
+      "artifactType": "Card Transaction",
+      "bizzsemantic": "49528",
+      "artifactName": "Capture Control"
+    },
+    {
+      "artifactType": "Card Transaction",
+      "bizzsemantic": "53619",
+      "artifactName": "Capture BOM"
+    },
+    {
+      "artifactType": "Card Transaction",
+      "bizzsemantic": "",
+      "artifactName": "Capture API"
+    }
+  ]
+}
